@@ -177,7 +177,8 @@
           sourceUrl: c.sourceUrl || '#',
           archers: Array.isArray(c.archers) ? c.archers : []
         }));
-        return { competitions };
+        const nonEmptyCompetitions = competitions.filter(c => c.archers.length > 0);
+        return { competitions: nonEmptyCompetitions.length ? nonEmptyCompetitions : competitions };
       }
 
       const legacy = {
@@ -236,7 +237,12 @@
         const p = c.place || '—';
         counts[p] = (counts[p] || 0) + c.archers.length;
       }
-      const chips = Object.entries(counts).map(([place, count]) => `<span class="chip">${escapeHtml(place)} : ${count}</span>`);
+      const entries = Object.entries(counts).filter(([, count]) => count > 0);
+      if (entries.length <= 1) {
+        el('placeBreakdown').innerHTML = '';
+        return;
+      }
+      const chips = entries.map(([place, count]) => `<span class="chip">${escapeHtml(place)} : ${count}</span>`);
       el('placeBreakdown').innerHTML = chips.join('');
     }
 

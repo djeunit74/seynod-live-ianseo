@@ -149,6 +149,26 @@ def parse_ianseo(page_html: str, club_keywords: List[str], source_url: str) -> D
             if any(k in club_lc for k in club_keywords):
                 results.append(row)
 
+    # Deduplicate same athlete/category on one competition.
+    # Keep the most relevant row: live first, otherwise highest score.
+    dedup: Dict[str, Dict[str, Any]] = {}
+    for row in results:
+        key = f"{row.get('name','').strip().upper()}|{row.get('category','').strip().upper()}"
+        existing = dedup.get(key)
+        if existing is None:
+            dedup[key] = row
+            continue
+
+        existing_live = not bool(existing.get("finished"))
+        row_live = not bool(row.get("finished"))
+        if row_live and not existing_live:
+            dedup[key] = row
+            continue
+        if row_live == existing_live and int(row.get("score", 0)) > int(existing.get("score", 0)):
+            dedup[key] = row
+
+    results = list(dedup.values())
+
     return {
         "competitionName": competition_name,
         "sourceUrl": source_url,
