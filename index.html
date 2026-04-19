@@ -23,6 +23,9 @@
     .summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}@media (max-width:700px){.summary{grid-template-columns:repeat(2,minmax(0,1fr));}}
     .stat{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:18px;padding:14px}.label{color:var(--muted);font-size:13px;margin-bottom:6px}.value{font-size:32px;font-weight:800;line-height:1.15}.value.small{font-size:18px}
     .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.btn{appearance:none;border:0;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 15px;border-radius:14px;font-weight:700;font-size:14px;color:white;background:#2563eb}.btn.secondary{background:#374151}
+    .floating-live{position:fixed;right:16px;bottom:16px;z-index:9999;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .floating-live.on{background:#16a34a}
+    .floating-live.off{background:#dc2626}
     .status{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:14px}.dot{width:10px;height:10px;border-radius:50%;background:var(--info);box-shadow:0 0 0 6px rgba(56,189,248,.12)}.dot.ok{background:var(--ok);box-shadow:0 0 0 6px rgba(34,197,94,.12)}.dot.err{background:var(--err);box-shadow:0 0 0 6px rgba(239,68,68,.12)}
     .badge{display:inline-block;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700}.badge.ok{background:rgba(34,197,94,.12);color:#bbf7d0;border:1px solid rgba(34,197,94,.18)}.badge.warn{background:rgba(245,158,11,.12);color:#fde68a;border:1px solid rgba(245,158,11,.18)}
     table{width:100%;border-collapse:collapse} th,td{padding:12px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top} th{color:var(--muted);font-size:13px}
@@ -51,7 +54,6 @@
         </div>
         <div class="row">
           <button class="btn" id="refreshBtn">Actualiser maintenant</button>
-          <button class="btn secondary" id="toggleCompetitionBtn">Mode competition : ON</button>
           <a class="btn secondary" id="sourceLink" href="#" target="_blank" rel="noopener">Ouvrir la source</a>
         </div>
         <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">En attente du premier chargement…</span></div>
@@ -93,6 +95,7 @@
       </section>
     </div>
   </div>
+  <button class="btn floating-live on" id="toggleCompetitionBtn">Mode competition : ON</button>
 
   <script>
     const API_URL='data/live.json';
@@ -139,7 +142,7 @@
     function updateCompetitionButton(){
       const btn = el('toggleCompetitionBtn');
       btn.textContent = 'Mode competition : ' + (autoRefreshEnabled ? 'ON' : 'OFF');
-      btn.className = autoRefreshEnabled ? 'btn secondary' : 'btn';
+      btn.className = autoRefreshEnabled ? 'btn floating-live on' : 'btn floating-live off';
     }
 
     function stopAutoRefresh(){
