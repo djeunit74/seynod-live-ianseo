@@ -8,13 +8,13 @@
       "place": "Bonneville",
       "name": "KOZUCHOWICZ Johanna",
       "club": "0174246 - Seynod",
-      "position": "3",
-      "score": 532,
-      "scoreLabel": "532 (après 66 flèches)",
+      "position": "2",
+      "score": 585,
+      "scoreLabel": "585 (après 72 flèches)",
       "category": "Arc Classique - U18 Femmes",
-      "progress": "En cours (66 flèches)",
-      "detail": "60m-1: 287 • 60m-2: 245",
-      "finished": false
+      "progress": "Terminé (72 flèches)",
+      "detail": "60m-1: 287, 60m-2: 298",
+      "finished": true
     },
     {
       "place": "Bonneville",
@@ -25,31 +25,31 @@
       "scoreLabel": "680 (après 72 flèches)",
       "category": "Arc à Poulies - Senior 2 Hommes",
       "progress": "Terminé (72 flèches)",
-      "detail": "50m-1: 336 • 50m-2: 344",
+      "detail": "50m-1: 336, 50m-2: 344",
       "finished": true
     },
     {
       "place": "Bonneville",
       "name": "BOURGEAIS Stephane",
       "club": "0174246 - Seynod",
-      "position": "2",
+      "position": "3",
       "score": 670,
       "scoreLabel": "670 (après 72 flèches)",
       "category": "Arc à Poulies - Senior 2 Hommes",
       "progress": "Terminé (72 flèches)",
-      "detail": "50m-1: 330 • 50m-2: 340",
+      "detail": "50m-1: 330, 50m-2: 340",
       "finished": true
     },
     {
       "place": "Bonneville",
       "name": "CATIN Daniel",
       "club": "0174246 - Seynod",
-      "position": "8",
+      "position": "11",
       "score": 573,
       "scoreLabel": "573 (après 72 flèches)",
       "category": "Arc à Poulies - Senior 2 Hommes",
       "progress": "Terminé (72 flèches)",
-      "detail": "50m-1: 279 • 50m-2: 294",
+      "detail": "50m-1: 279, 50m-2: 294",
       "finished": true
     }
   ]
