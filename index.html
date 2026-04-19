@@ -24,6 +24,7 @@
     .stat{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:18px;padding:14px}.label{color:var(--muted);font-size:13px;margin-bottom:6px}.value{font-size:32px;font-weight:800;line-height:1.15}.value.small{font-size:18px}
     .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.btn{appearance:none;border:0;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 15px;border-radius:14px;font-weight:700;font-size:14px;color:white;background:#2563eb}.btn.secondary{background:#374151}
     .floating-live{position:fixed;right:16px;bottom:16px;z-index:9999;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .hidden{display:none !important}
     .floating-live.on{background:#16a34a}
     .floating-live.off{background:#dc2626}
     .status{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:14px}.dot{width:10px;height:10px;border-radius:50%;background:var(--info);box-shadow:0 0 0 6px rgba(56,189,248,.12)}.dot.ok{background:var(--ok);box-shadow:0 0 0 6px rgba(34,197,94,.12)}.dot.err{background:var(--err);box-shadow:0 0 0 6px rgba(239,68,68,.12)}
@@ -95,12 +96,14 @@
       </section>
     </div>
   </div>
-  <button class="btn floating-live on" id="toggleCompetitionBtn">Mode competition : ON</button>
+  <button class="btn floating-live on hidden" id="toggleCompetitionBtn">Mode competition : ON</button>
 
   <script>
     const API_URL='data/live.json';
     const REFRESH_MS=30000;
     const el=id=>document.getElementById(id);
+    const ADMIN_QUERY_KEY='seynod-admin';
+    const adminMode=(new URLSearchParams(window.location.search).get('admin')===ADMIN_QUERY_KEY) || window.location.hostname==='localhost';
     let previousSignature=null, nextRefresh=Date.now()+REFRESH_MS, lastGoodData=null, refreshTimer=null, autoRefreshEnabled=true;
 
     function setStatus(kind,text){
@@ -141,6 +144,7 @@
 
     function updateCompetitionButton(){
       const btn = el('toggleCompetitionBtn');
+      if(!btn || !adminMode) return;
       btn.textContent = 'Mode competition : ' + (autoRefreshEnabled ? 'ON' : 'OFF');
       btn.className = autoRefreshEnabled ? 'btn floating-live on' : 'btn floating-live off';
     }
@@ -189,19 +193,22 @@
     }
 
     el('refreshBtn').addEventListener('click', refresh);
-    el('toggleCompetitionBtn').addEventListener('click', () => {
-      autoRefreshEnabled = !autoRefreshEnabled;
-      if (autoRefreshEnabled) {
-        nextRefresh = Date.now() + REFRESH_MS;
-        if (!refreshTimer) refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
-        setStatus('ok','Mode competition active (30s)');
-      } else {
-        if (refreshTimer){ clearInterval(refreshTimer); refreshTimer = null; }
-        el('countdown').textContent='arrêté';
-        setStatus('','Mode competition desactive');
-      }
-      updateCompetitionButton();
-    });
+    if(adminMode){
+      el('toggleCompetitionBtn').classList.remove('hidden');
+      el('toggleCompetitionBtn').addEventListener('click', () => {
+        autoRefreshEnabled = !autoRefreshEnabled;
+        if (autoRefreshEnabled) {
+          nextRefresh = Date.now() + REFRESH_MS;
+          if (!refreshTimer) refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
+          setStatus('ok','Mode competition active (30s)');
+        } else {
+          if (refreshTimer){ clearInterval(refreshTimer); refreshTimer = null; }
+          el('countdown').textContent='arrêté';
+          setStatus('','Mode competition desactive');
+        }
+        updateCompetitionButton();
+      });
+    }
     updateCompetitionButton();
     refresh();
     refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
