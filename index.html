@@ -126,6 +126,7 @@
       <section class="card span12 admin-card hidden" id="adminPanel">
         <h2 class="sectionTitle">Admin</h2>
         <div class="admin-actions">
+          <button class="btn" id="allInOneBtn">Tout en 1 : Démarrer compétition</button>
           <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
           <button class="btn" id="findNextCompetitionBtn">Chercher prochaine compétition Seynod</button>
         </div>
@@ -144,6 +145,7 @@
     const API_URL = 'data/live.json';
     const NEXT_API_URL = 'data/next_competition.json';
     const REFRESH_MS = 30000;
+    const SOURCE_FRESH_SEC = 95;
     const ADMIN_QUERY_KEY = 'seynod-admin';
 
     const el = id => document.getElementById(id);
@@ -152,6 +154,7 @@
     let previousSignature = null;
     let nextRefresh = Date.now() + REFRESH_MS;
     let lastGoodData = null;
+    let lastDataGeneratedAtMs = null;
     let refreshTimer = null;
     let autoRefreshEnabled = true;
     let selectedCompetitionId = 'all';
@@ -289,6 +292,23 @@
       btn.className = autoRefreshEnabled ? 'btn floating-live on' : 'btn floating-live off';
     }
 
+    function setCompetitionMode(enabled, statusMessage = null) {
+      autoRefreshEnabled = !!enabled;
+      if (autoRefreshEnabled) {
+        nextRefresh = Date.now() + REFRESH_MS;
+        if (!refreshTimer) refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
+        if (statusMessage) setStatus('ok', statusMessage);
+      } else {
+        if (refreshTimer) {
+          clearInterval(refreshTimer);
+          refreshTimer = null;
+        }
+        el('countdown').textContent = 'arrêté';
+        if (statusMessage) setStatus('', statusMessage);
+      }
+      updateCompetitionButton();
+    }
+
     function stopAutoRefresh() {
       autoRefreshEnabled = false;
       if (refreshTimer) {
@@ -303,6 +323,11 @@
     function render(rawData, keepStatus = false) {
       const data = normalizeData(rawData);
       lastGoodData = data;
+      lastDataGeneratedAtMs = null;
+      if (rawData && rawData.generatedAtUtc) {
+        const parsed = Date.parse(rawData.generatedAtUtc);
+        if (!Number.isNaN(parsed)) lastDataGeneratedAtMs = parsed;
+      }
 
       if (selectedCompetitionId !== 'all' && !data.competitions.some(c => c.id === selectedCompetitionId)) {
         selectedCompetitionId = 'all';
@@ -350,6 +375,29 @@
       if (target) target.innerHTML = text;
     }
 
+    function getSourceAgeSec() {
+      if (!lastDataGeneratedAtMs) return null;
+      return Math.max(0, Math.round((Date.now() - lastDataGeneratedAtMs) / 1000));
+    }
+
+    async function startCompetitionAllInOne() {
+      setCompetitionMode(true, 'Mode compétition actif (30s)');
+      await refresh();
+      const age = getSourceAgeSec();
+
+      if (age !== null && age <= SOURCE_FRESH_SEC) {
+        setAdminResult(`Tout en 1 OK: mode compétition activé + source fraîche (${age}s).`);
+        return;
+      }
+
+      const ageText = age === null ? 'inconnue' : `${age}s`;
+      setAdminResult(
+        `Mode compétition activé, mais fraîcheur source = ${ageText}.<br>` +
+        `Pour du vrai 30s IANSEO, lance aussi l'updater local:<br>` +
+        `<code>python scripts/run_live_updater.py --interval 30</code>`
+      );
+    }
+
     function clearCompetitionView() {
       const emptyData = { competitions: [] };
       lastGoodData = emptyData;
@@ -392,23 +440,11 @@
     if (adminMode) {
       el('adminPanel').classList.remove('hidden');
       el('toggleCompetitionBtn').classList.remove('hidden');
+      el('allInOneBtn').addEventListener('click', startCompetitionAllInOne);
       el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
       el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
       el('toggleCompetitionBtn').addEventListener('click', () => {
-        autoRefreshEnabled = !autoRefreshEnabled;
-        if (autoRefreshEnabled) {
-          nextRefresh = Date.now() + REFRESH_MS;
-          if (!refreshTimer) refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
-          setStatus('ok', 'Mode compétition actif (30s)');
-        } else {
-          if (refreshTimer) {
-            clearInterval(refreshTimer);
-            refreshTimer = null;
-          }
-          el('countdown').textContent = 'arrêté';
-          setStatus('', 'Mode compétition désactivé');
-        }
-        updateCompetitionButton();
+        setCompetitionMode(!autoRefreshEnabled, !autoRefreshEnabled ? 'Mode compétition actif (30s)' : 'Mode compétition désactivé');
       });
     }
 
