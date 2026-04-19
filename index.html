@@ -38,7 +38,7 @@
         <h1>Suivi live club Seynod</h1>
         <div class="sub">Suivi live des archers de Seynod.</div>
       </div>
-      <div class="pill">Source : données GitHub</div>
+      <div class="pill">Source : IANSEO (sync auto GitHub)</div>
     </div>
 
     <div class="grid">
@@ -51,6 +51,7 @@
         </div>
         <div class="row">
           <button class="btn" id="refreshBtn">Actualiser maintenant</button>
+          <button class="btn secondary" id="toggleCompetitionBtn">Mode competition : ON</button>
           <a class="btn secondary" id="sourceLink" href="#" target="_blank" rel="noopener">Ouvrir la source</a>
         </div>
         <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">En attente du premier chargement…</span></div>
@@ -135,11 +136,18 @@
       return !!(data && data.archers && data.archers.some(a => !a.finished));
     }
 
+    function updateCompetitionButton(){
+      const btn = el('toggleCompetitionBtn');
+      btn.textContent = 'Mode competition : ' + (autoRefreshEnabled ? 'ON' : 'OFF');
+      btn.className = autoRefreshEnabled ? 'btn secondary' : 'btn';
+    }
+
     function stopAutoRefresh(){
       autoRefreshEnabled = false;
       if (refreshTimer){ clearInterval(refreshTimer); refreshTimer = null; }
       el('countdown').textContent = 'arrêté';
       el('statusText').textContent = 'Tous les archers sont terminés : actualisation automatique arrêtée';
+      updateCompetitionButton();
     }
 
     function render(data){
@@ -178,6 +186,20 @@
     }
 
     el('refreshBtn').addEventListener('click', refresh);
+    el('toggleCompetitionBtn').addEventListener('click', () => {
+      autoRefreshEnabled = !autoRefreshEnabled;
+      if (autoRefreshEnabled) {
+        nextRefresh = Date.now() + REFRESH_MS;
+        if (!refreshTimer) refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
+        setStatus('ok','Mode competition active (30s)');
+      } else {
+        if (refreshTimer){ clearInterval(refreshTimer); refreshTimer = null; }
+        el('countdown').textContent='arrêté';
+        setStatus('','Mode competition desactive');
+      }
+      updateCompetitionButton();
+    });
+    updateCompetitionButton();
     refresh();
     refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
     setInterval(updateCountdown, 500);
