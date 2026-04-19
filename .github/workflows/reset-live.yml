@@ -1,0 +1,43 @@
+name: Reset Live Competition Data
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_url:
+        description: "New IANSEO source URL (optional)"
+        required: false
+        default: ""
+      place:
+        description: "Competition place label (optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  reset-live:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Reset live data
+        run: |
+          python scripts/reset_live_data.py \
+            --output data/live.json \
+            --source-url "${{ github.event.inputs.source_url }}" \
+            --place "${{ github.event.inputs.place }}"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/live.json
+          git commit -m "chore(data): reset live competition" || echo "No changes"
+          git push

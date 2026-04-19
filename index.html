@@ -27,6 +27,9 @@
     .hidden{display:none !important}
     .floating-live.on{background:#16a34a}
     .floating-live.off{background:#dc2626}
+    .admin-card{border:1px solid rgba(56,189,248,.35);background:rgba(2,132,199,.08)}
+    .admin-result{margin-top:10px;font-size:14px;line-height:1.45;color:#dbeafe}
+    .admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
     .status{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:14px}.dot{width:10px;height:10px;border-radius:50%;background:var(--info);box-shadow:0 0 0 6px rgba(56,189,248,.12)}.dot.ok{background:var(--ok);box-shadow:0 0 0 6px rgba(34,197,94,.12)}.dot.err{background:var(--err);box-shadow:0 0 0 6px rgba(239,68,68,.12)}
     .badge{display:inline-block;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700}.badge.ok{background:rgba(34,197,94,.12);color:#bbf7d0;border:1px solid rgba(34,197,94,.18)}.badge.warn{background:rgba(245,158,11,.12);color:#fde68a;border:1px solid rgba(245,158,11,.18)}
     table{width:100%;border-collapse:collapse} th,td{padding:12px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top} th{color:var(--muted);font-size:13px}
@@ -94,12 +97,26 @@
           </table>
         </div>
       </section>
+
+      <section class="card span12 admin-card hidden" id="adminPanel">
+        <h2 class="sectionTitle">Admin</h2>
+        <div class="admin-actions">
+          <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne competition</button>
+          <button class="btn" id="findNextCompetitionBtn">Chercher prochaine competition Seynod</button>
+        </div>
+        <div class="admin-actions">
+          <a class="btn secondary" id="runResetWorkflowLink" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/reset-live.yml" target="_blank" rel="noopener">Ouvrir workflow reset</a>
+          <a class="btn secondary" id="runFindWorkflowLink" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/find-next-competition.yml" target="_blank" rel="noopener">Ouvrir workflow recherche</a>
+        </div>
+        <div class="admin-result" id="adminResult">Mode admin actif.</div>
+      </section>
     </div>
   </div>
   <button class="btn floating-live on hidden" id="toggleCompetitionBtn">Mode competition : ON</button>
 
   <script>
     const API_URL='data/live.json';
+    const NEXT_API_URL='data/next_competition.json';
     const REFRESH_MS=30000;
     const el=id=>document.getElementById(id);
     const ADMIN_QUERY_KEY='seynod-admin';
@@ -192,9 +209,61 @@
       el('countdown').textContent=Math.max(0,Math.ceil((nextRefresh-Date.now())/1000))+' s';
     }
 
+    function setAdminResult(text){
+      const target = el('adminResult');
+      if(target) target.innerHTML = text;
+    }
+
+    function escapeHtml(value){
+      return String(value || '')
+        .replaceAll('&','&amp;')
+        .replaceAll('<','&lt;')
+        .replaceAll('>','&gt;');
+    }
+
+    function clearCompetitionView(){
+      const emptyData={sourceUrl:'#',places:[],archers:[]};
+      lastGoodData=emptyData;
+      render(emptyData);
+      setStatus('','Competition vidée localement. Lance le workflow reset pour publier.');
+      setAdminResult('Competition effacee en local. Clique sur "Ouvrir workflow reset" puis "Run workflow" pour publier le reset.');
+    }
+
+    async function findNextCompetition(){
+      try{
+        setAdminResult('Recherche de la prochaine competition Seynod...');
+        const res=await fetch(NEXT_API_URL + '?t=' + Date.now(), {cache:'no-store'});
+        const data=await res.json();
+
+        if(!data.found || !data.next_competition){
+          const msg = data.message || 'Aucune competition future trouvee.';
+          setAdminResult(escapeHtml(msg) + '<br>Tu peux relancer la recherche via le workflow.');
+          return;
+        }
+
+        const next=data.next_competition;
+        const entries=(next.seynod_entries || []).map(e=>`${escapeHtml(e.name)} (${escapeHtml(e.category)})`).slice(0,12);
+        const names = entries.length ? entries.join('<br>') : 'Inscrits detectes (details indisponibles).';
+        const ic = next.ic_url ? `<a href="${next.ic_url}" target="_blank" rel="noopener">Ouvrir IC</a>` : '';
+        const ena = next.ena_url ? `<a href="${next.ena_url}" target="_blank" rel="noopener">Ouvrir ENA</a>` : '';
+
+        setAdminResult(
+          `<strong>Prochaine competition detectee :</strong> ${escapeHtml(next.name)} (${escapeHtml(next.date_text)})<br>` +
+          `Organisateur: ${escapeHtml(next.organizer)}<br>` +
+          `Tournoi: <a href="${next.details_url}" target="_blank" rel="noopener">Details IANSEO</a> ${ic} ${ena}<br><br>` +
+          `<strong>Archers Seynod inscrits:</strong><br>${names}`
+        );
+      }catch(err){
+        setAdminResult('Erreur de lecture du fichier next_competition.json: ' + escapeHtml(err.message));
+      }
+    }
+
     el('refreshBtn').addEventListener('click', refresh);
     if(adminMode){
+      el('adminPanel').classList.remove('hidden');
       el('toggleCompetitionBtn').classList.remove('hidden');
+      el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
+      el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
       el('toggleCompetitionBtn').addEventListener('click', () => {
         autoRefreshEnabled = !autoRefreshEnabled;
         if (autoRefreshEnabled) {
