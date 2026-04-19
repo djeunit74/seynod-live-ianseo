@@ -23,11 +23,12 @@ jobs:
       - name: Fetch latest IANSEO data
         env:
           IANSEO_URL: ${{ vars.IANSEO_URL }}
+          IANSEO_URLS: ${{ vars.IANSEO_URLS }}
           IANSEO_CLUB_KEYWORDS: ${{ vars.IANSEO_CLUB_KEYWORDS }}
         run: |
-          URL="${IANSEO_URL:-https://www.ianseo.net/TourData/2026/27251/IC.php}"
+          URLS="${IANSEO_URLS:-${IANSEO_URL:-https://www.ianseo.net/TourData/2026/27251/IC.php}}"
           CLUBS="${IANSEO_CLUB_KEYWORDS:-Seynod,0174246}"
-          python scripts/fetch_ianseo.py --url "$URL" --club-keywords "$CLUBS" --output data/live.json
+          python scripts/build_live_data.py --urls "$URLS" --sources-file data/competition_sources.json --club-keywords "$CLUBS" --output data/live.json
 
       - name: Commit and push if changed
         run: |

@@ -49,6 +49,17 @@ def parse_place(page_html: str) -> str:
     return second_line.split(",")[0].strip()
 
 
+def parse_competition_name(page_html: str) -> str:
+    m = re.search(
+        r'<div class="results-header-center">\s*<div>(.*?)</div>',
+        page_html,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    if not m:
+        return ""
+    return strip_tags(m.group(1))
+
+
 def parse_category_meta(category_title: str) -> Dict[str, Any]:
     title = strip_tags(category_title)
     category = title.split("[", 1)[0].strip()
@@ -119,6 +130,7 @@ def parse_table_rows(tbody_html: str, category_meta: Dict[str, Any], place: str)
 
 def parse_ianseo(page_html: str, club_keywords: List[str], source_url: str) -> Dict[str, Any]:
     place = parse_place(page_html)
+    competition_name = parse_competition_name(page_html)
     results = []
 
     blocks = re.findall(
@@ -138,6 +150,7 @@ def parse_ianseo(page_html: str, club_keywords: List[str], source_url: str) -> D
                 results.append(row)
 
     return {
+        "competitionName": competition_name,
         "sourceUrl": source_url,
         "places": [place] if place else [],
         "archers": results,

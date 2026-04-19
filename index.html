@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -20,30 +20,48 @@
     .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:18px}
     .card{grid-column:span 12;background:rgba(17,24,39,.88);border:1px solid var(--border);border-radius:22px;padding:18px;box-shadow:0 12px 40px rgba(0,0,0,.25)}
     .span8{grid-column:span 8}.span4{grid-column:span 4}@media (max-width:900px){.span8,.span4{grid-column:span 12}}
-    .summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}@media (max-width:700px){.summary{grid-template-columns:repeat(2,minmax(0,1fr));}}
+    .summary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}@media (max-width:920px){.summary{grid-template-columns:repeat(2,minmax(0,1fr));}}
     .stat{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:18px;padding:14px}.label{color:var(--muted);font-size:13px;margin-bottom:6px}.value{font-size:32px;font-weight:800;line-height:1.15}.value.small{font-size:18px}
-    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.btn{appearance:none;border:0;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 15px;border-radius:14px;font-weight:700;font-size:14px;color:white;background:#2563eb}.btn.secondary{background:#374151}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{appearance:none;border:0;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 15px;border-radius:14px;font-weight:700;font-size:14px;color:white;background:#2563eb}
+    .btn.secondary{background:#374151}
+    .btn.ghost{background:transparent;border:1px solid var(--border);color:#dbeafe}
+    .btn.small{padding:8px 10px;font-size:12px;border-radius:10px}
+    .btn.active{background:#16a34a}
     .floating-live{position:fixed;right:16px;bottom:16px;z-index:9999;box-shadow:0 10px 30px rgba(0,0,0,.35)}
     .hidden{display:none !important}
     .floating-live.on{background:#16a34a}
     .floating-live.off{background:#dc2626}
+    .status{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:14px}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--info);box-shadow:0 0 0 6px rgba(56,189,248,.12)}
+    .dot.ok{background:var(--ok);box-shadow:0 0 0 6px rgba(34,197,94,.12)}
+    .dot.err{background:var(--err);box-shadow:0 0 0 6px rgba(239,68,68,.12)}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700}
+    .badge.ok{background:rgba(34,197,94,.12);color:#bbf7d0;border:1px solid rgba(34,197,94,.18)}
+    .badge.warn{background:rgba(245,158,11,.12);color:#fde68a;border:1px solid rgba(245,158,11,.18)}
+    .chip{display:inline-flex;align-items:center;padding:6px 10px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:999px;color:#cbd5e1;font-size:12px}
+    .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:12px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top}
+    th{color:var(--muted);font-size:13px}
+    tr.finished td{font-weight:800}
+    tr.live td{color:var(--live)}
+    .mini{font-size:12px;color:var(--muted);line-height:1.5}
+    .detailBox{font-size:13px;line-height:1.5}
+    .sectionTitle{margin:0 0 10px}
+    .footer{margin-top:18px;color:var(--muted);font-size:13px;line-height:1.55}
     .admin-card{border:1px solid rgba(56,189,248,.35);background:rgba(2,132,199,.08)}
     .admin-result{margin-top:10px;font-size:14px;line-height:1.45;color:#dbeafe}
     .admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .status{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:14px}.dot{width:10px;height:10px;border-radius:50%;background:var(--info);box-shadow:0 0 0 6px rgba(56,189,248,.12)}.dot.ok{background:var(--ok);box-shadow:0 0 0 6px rgba(34,197,94,.12)}.dot.err{background:var(--err);box-shadow:0 0 0 6px rgba(239,68,68,.12)}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700}.badge.ok{background:rgba(34,197,94,.12);color:#bbf7d0;border:1px solid rgba(34,197,94,.18)}.badge.warn{background:rgba(245,158,11,.12);color:#fde68a;border:1px solid rgba(245,158,11,.18)}
-    table{width:100%;border-collapse:collapse} th,td{padding:12px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top} th{color:var(--muted);font-size:13px}
-    tr.finished td{font-weight:800} tr.live td{color:var(--live)} .mini{font-size:12px;color:var(--muted);line-height:1.5} .detailBox{font-size:13px;line-height:1.5} .sectionTitle{margin:0 0 10px}
-    .footer{margin-top:18px;color:var(--muted);font-size:13px;line-height:1.55}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="banner">VERSION GITHUB PAGES V15</div>
+    <div class="banner">VERSION GITHUB PAGES V16</div>
     <div class="hero">
       <div>
         <h1>Suivi live club Seynod</h1>
-        <div class="sub">Suivi live des archers de Seynod.</div>
+        <div class="sub">Suivi live des archers de Seynod, prêt pour plusieurs compétitions.</div>
       </div>
       <div class="pill">Source : IANSEO (sync auto GitHub)</div>
     </div>
@@ -51,16 +69,22 @@
     <div class="grid">
       <section class="card span8">
         <div class="summary">
+          <div class="stat"><div class="label">Concours suivis</div><div class="value" id="countCompetitions">—</div></div>
           <div class="stat"><div class="label">Archers Seynod</div><div class="value" id="countTotal">—</div></div>
           <div class="stat"><div class="label">Terminés</div><div class="value" id="countFinished">—</div></div>
           <div class="stat"><div class="label">En cours</div><div class="value" id="countLive">—</div></div>
           <div class="stat"><div class="label">Lieu</div><div class="value small" id="competitionPlace">—</div></div>
         </div>
+
         <div class="row">
           <button class="btn" id="refreshBtn">Actualiser maintenant</button>
           <a class="btn secondary" id="sourceLink" href="#" target="_blank" rel="noopener">Ouvrir la source</a>
         </div>
-        <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">En attente du premier chargement…</span></div>
+
+        <div class="stack" id="competitionList"></div>
+        <div class="stack" id="placeBreakdown"></div>
+
+        <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">En attente du premier chargement...</span></div>
         <div class="row"><span class="badge warn" id="changeBadge">Pas encore de comparaison</span></div>
       </section>
 
@@ -71,17 +95,17 @@
           <div><strong>Dernier changement :</strong> <span id="lastChange">—</span></div>
           <div><strong>Prochaine vérification :</strong> <span id="countdown">30 s</span></div>
         </div>
-        <div class="footer">Quand il n’y a plus d’archer en cours, l’actualisation automatique s’arrête.</div>
+        <div class="footer">Quand il n'y a plus d'archer en cours sur tous les concours, l'actualisation automatique s'arrête.</div>
       </aside>
 
       <section class="card span12" style="border:2px solid rgba(191,219,254,.45); box-shadow:0 0 0 2px rgba(191,219,254,.08), 0 18px 48px rgba(0,0,0,.3);">
-        <h2 class="sectionTitle" style="font-size:36px; color:#bfdbfe;">Archers encore en cours</h2>
+        <h2 class="sectionTitle" style="font-size:30px; color:#bfdbfe;">Archers encore en cours</h2>
         <div style="overflow:auto">
           <table>
             <thead>
               <tr><th>Lieu</th><th>Archer</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr>
             </thead>
-            <tbody id="tbodyLive"><tr><td colspan="7">Chargement…</td></tr></tbody>
+            <tbody id="tbodyLive"><tr><td colspan="7">Chargement...</td></tr></tbody>
           </table>
         </div>
       </section>
@@ -93,7 +117,7 @@
             <thead>
               <tr><th>Lieu</th><th>Archer</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr>
             </thead>
-            <tbody id="tbodyFinished"><tr><td colspan="7">Chargement…</td></tr></tbody>
+            <tbody id="tbodyFinished"><tr><td colspan="7">Chargement...</td></tr></tbody>
           </table>
         </div>
       </section>
@@ -101,165 +125,278 @@
       <section class="card span12 admin-card hidden" id="adminPanel">
         <h2 class="sectionTitle">Admin</h2>
         <div class="admin-actions">
-          <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne competition</button>
-          <button class="btn" id="findNextCompetitionBtn">Chercher prochaine competition Seynod</button>
+          <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
+          <button class="btn" id="findNextCompetitionBtn">Chercher prochaine compétition Seynod</button>
         </div>
         <div class="admin-actions">
-          <a class="btn secondary" id="runResetWorkflowLink" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/reset-live.yml" target="_blank" rel="noopener">Ouvrir workflow reset</a>
-          <a class="btn secondary" id="runFindWorkflowLink" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/find-next-competition.yml" target="_blank" rel="noopener">Ouvrir workflow recherche</a>
+          <a class="btn secondary" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/reset-live.yml" target="_blank" rel="noopener">Ouvrir workflow reset</a>
+          <a class="btn secondary" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/find-next-competition.yml" target="_blank" rel="noopener">Ouvrir workflow recherche</a>
         </div>
         <div class="admin-result" id="adminResult">Mode admin actif.</div>
       </section>
     </div>
   </div>
-  <button class="btn floating-live on hidden" id="toggleCompetitionBtn">Mode competition : ON</button>
+
+  <button class="btn floating-live on hidden" id="toggleCompetitionBtn">Mode compétition : ON</button>
 
   <script>
-    const API_URL='data/live.json';
-    const NEXT_API_URL='data/next_competition.json';
-    const REFRESH_MS=30000;
-    const el=id=>document.getElementById(id);
-    const ADMIN_QUERY_KEY='seynod-admin';
-    const adminMode=(new URLSearchParams(window.location.search).get('admin')===ADMIN_QUERY_KEY) || window.location.hostname==='localhost';
-    let previousSignature=null, nextRefresh=Date.now()+REFRESH_MS, lastGoodData=null, refreshTimer=null, autoRefreshEnabled=true;
+    const API_URL = 'data/live.json';
+    const NEXT_API_URL = 'data/next_competition.json';
+    const REFRESH_MS = 30000;
+    const ADMIN_QUERY_KEY = 'seynod-admin';
 
-    function setStatus(kind,text){
-      el('statusDot').className='dot '+(kind||'');
-      el('statusText').textContent=text;
-      el('lastCheck').textContent=new Date().toLocaleString('fr-FR');
+    const el = id => document.getElementById(id);
+    const adminMode = (new URLSearchParams(window.location.search).get('admin') === ADMIN_QUERY_KEY) || window.location.hostname === 'localhost';
+
+    let previousSignature = null;
+    let nextRefresh = Date.now() + REFRESH_MS;
+    let lastGoodData = null;
+    let refreshTimer = null;
+    let autoRefreshEnabled = true;
+    let selectedCompetitionId = 'all';
+
+    function setStatus(kind, text) {
+      el('statusDot').className = 'dot ' + (kind || '');
+      el('statusText').textContent = text;
+      el('lastCheck').textContent = new Date().toLocaleString('fr-FR');
     }
 
-    function renderRows(targetId, archers, live=false){
-      const tbody=el(targetId);
-      if(!archers.length){
-        tbody.innerHTML=`<tr><td colspan="7">${live?'Aucun archer en cours.':'Aucun résultat terminé.'}</td></tr>`;
+    function escapeHtml(value) {
+      return String(value || '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;');
+    }
+
+    function normalizeData(raw) {
+      if (raw && Array.isArray(raw.competitions) && raw.competitions.length) {
+        const competitions = raw.competitions.map((c, idx) => ({
+          id: String(c.id || idx + 1),
+          name: c.name || `Concours ${idx + 1}`,
+          place: c.place || (c.places && c.places[0]) || '—',
+          sourceUrl: c.sourceUrl || '#',
+          archers: Array.isArray(c.archers) ? c.archers : []
+        }));
+        return { competitions };
+      }
+
+      const legacy = {
+        id: 'legacy',
+        name: raw?.competitionName || 'Concours actuel',
+        place: (raw?.places && raw.places[0]) || '—',
+        sourceUrl: raw?.sourceUrl || '#',
+        archers: Array.isArray(raw?.archers) ? raw.archers : []
+      };
+      return { competitions: [legacy] };
+    }
+
+    function getCurrentCompetition(data) {
+      if (!data.competitions.length) return null;
+      if (selectedCompetitionId === 'all') return null;
+      return data.competitions.find(c => c.id === selectedCompetitionId) || data.competitions[0];
+    }
+
+    function getCurrentArchers(data) {
+      if (selectedCompetitionId === 'all') {
+        return data.competitions.flatMap(c => c.archers.map(a => ({ ...a, competitionName: c.name, competitionId: c.id })));
+      }
+      const comp = getCurrentCompetition(data);
+      return comp ? comp.archers.map(a => ({ ...a, competitionName: comp.name, competitionId: comp.id })) : [];
+    }
+
+    function hasLiveArchers(data) {
+      return data.competitions.some(c => c.archers.some(a => !a.finished));
+    }
+
+    function renderCompetitionTabs(data) {
+      const container = el('competitionList');
+      const buttons = [];
+
+      const allCount = data.competitions.reduce((sum, c) => sum + c.archers.length, 0);
+      buttons.push(`<button class="btn small ${selectedCompetitionId === 'all' ? 'active' : 'ghost'}" data-competition-id="all">Tous les concours (${allCount})</button>`);
+
+      for (const c of data.competitions) {
+        const count = c.archers.length;
+        const label = `${c.place} · ${count} archer${count > 1 ? 's' : ''}`;
+        buttons.push(`<button class="btn small ${selectedCompetitionId === c.id ? 'active' : 'ghost'}" data-competition-id="${escapeHtml(c.id)}">${escapeHtml(c.name)} (${escapeHtml(label)})</button>`);
+      }
+
+      container.innerHTML = buttons.join('');
+      container.querySelectorAll('[data-competition-id]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          selectedCompetitionId = btn.getAttribute('data-competition-id') || 'all';
+          if (lastGoodData) render(lastGoodData, true);
+        });
+      });
+    }
+
+    function renderPlaceBreakdown(data) {
+      const counts = {};
+      for (const c of data.competitions) {
+        const p = c.place || '—';
+        counts[p] = (counts[p] || 0) + c.archers.length;
+      }
+      const chips = Object.entries(counts).map(([place, count]) => `<span class="chip">${escapeHtml(place)} : ${count}</span>`);
+      el('placeBreakdown').innerHTML = chips.join('');
+    }
+
+    function renderRows(targetId, archers, live = false) {
+      const tbody = el(targetId);
+      if (!archers.length) {
+        tbody.innerHTML = `<tr><td colspan="7">${live ? 'Aucun archer en cours.' : 'Aucun résultat terminé.'}</td></tr>`;
         return;
       }
-      tbody.innerHTML=archers.map(a=>`<tr class="${a.finished?'finished':'live'}"><td>${a.place || '—'}</td><td>${a.name}<div class="mini">${a.club}</div></td><td>${a.category}</td><td>${a.progress}</td><td>${a.position}</td><td>${a.scoreLabel}</td><td><div class="detailBox">${a.detail}</div></td></tr>`).join('');
+
+      const showCompetitionName = selectedCompetitionId === 'all';
+      tbody.innerHTML = archers.map(a => {
+        const infoLine = showCompetitionName ? `<div class="mini">${escapeHtml(a.club || '')} · ${escapeHtml(a.competitionName || '')}</div>` : `<div class="mini">${escapeHtml(a.club || '')}</div>`;
+        return `<tr class="${a.finished ? 'finished' : 'live'}"><td>${escapeHtml(a.place || '—')}</td><td>${escapeHtml(a.name || '')}${infoLine}</td><td>${escapeHtml(a.category || '')}</td><td>${escapeHtml(a.progress || '')}</td><td>${escapeHtml(a.position || '')}</td><td>${escapeHtml(a.scoreLabel || '')}</td><td><div class="detailBox">${escapeHtml(a.detail || '')}</div></td></tr>`;
+      }).join('');
     }
 
-    function renderSummary(data){
-      el('countTotal').textContent=data.archers.length;
-      el('countFinished').textContent=data.archers.filter(a=>a.finished).length;
-      el('countLive').textContent=data.archers.filter(a=>!a.finished).length;
-      el('competitionPlace').textContent=(data.places && data.places.length ? data.places.join(' • ') : '—');
-      el('sourceLink').href = data.sourceUrl || '#';
+    function renderSummary(data, archers) {
+      const finished = archers.filter(a => a.finished).length;
+      const live = archers.filter(a => !a.finished).length;
+      const selected = getCurrentCompetition(data);
+
+      el('countCompetitions').textContent = data.competitions.length;
+      el('countTotal').textContent = archers.length;
+      el('countFinished').textContent = finished;
+      el('countLive').textContent = live;
+      el('competitionPlace').textContent = selected ? (selected.place || '—') : 'Multi-sites';
+
+      const source = selected ? selected.sourceUrl : '#';
+      el('sourceLink').href = source;
+      el('sourceLink').style.pointerEvents = selected ? 'auto' : 'none';
+      el('sourceLink').style.opacity = selected ? '1' : '.6';
     }
 
-    function updateChangeBadge(data){
-      const signature=JSON.stringify(data.archers.map(a=>[a.name,a.position,a.score,a.detail,a.finished,a.progress,a.category]));
-      const badge=el('changeBadge');
-      if(previousSignature===null){badge.className='badge warn'; badge.textContent='Premier chargement effectué';}
-      else if(signature!==previousSignature){badge.className='badge ok'; badge.textContent='Changement détecté sur le tableau du club'; el('lastChange').textContent=new Date().toLocaleString('fr-FR');}
-      else {badge.className='badge warn'; badge.textContent='Aucun nouveau changement détecté';}
-      previousSignature=signature;
+    function updateChangeBadge(data) {
+      const signature = JSON.stringify(data.competitions.map(c => [c.id, c.archers.map(a => [a.name, a.position, a.score, a.detail, a.finished, a.progress, a.category])]))
+      const badge = el('changeBadge');
+      if (previousSignature === null) {
+        badge.className = 'badge warn';
+        badge.textContent = 'Premier chargement effectué';
+      } else if (signature !== previousSignature) {
+        badge.className = 'badge ok';
+        badge.textContent = 'Changement détecté sur le tableau du club';
+        el('lastChange').textContent = new Date().toLocaleString('fr-FR');
+      } else {
+        badge.className = 'badge warn';
+        badge.textContent = 'Aucun nouveau changement détecté';
+      }
+      previousSignature = signature;
     }
 
-    function hasLiveArchers(data){
-      return !!(data && data.archers && data.archers.some(a => !a.finished));
-    }
-
-    function updateCompetitionButton(){
+    function updateCompetitionButton() {
       const btn = el('toggleCompetitionBtn');
-      if(!btn || !adminMode) return;
-      btn.textContent = 'Mode competition : ' + (autoRefreshEnabled ? 'ON' : 'OFF');
+      if (!btn || !adminMode) return;
+      btn.textContent = 'Mode compétition : ' + (autoRefreshEnabled ? 'ON' : 'OFF');
       btn.className = autoRefreshEnabled ? 'btn floating-live on' : 'btn floating-live off';
     }
 
-    function stopAutoRefresh(){
+    function stopAutoRefresh() {
       autoRefreshEnabled = false;
-      if (refreshTimer){ clearInterval(refreshTimer); refreshTimer = null; }
+      if (refreshTimer) {
+        clearInterval(refreshTimer);
+        refreshTimer = null;
+      }
       el('countdown').textContent = 'arrêté';
       el('statusText').textContent = 'Tous les archers sont terminés : actualisation automatique arrêtée';
       updateCompetitionButton();
     }
 
-    function render(data){
-      lastGoodData=data;
-      renderSummary(data);
-      renderRows('tbodyFinished', data.archers.filter(a=>a.finished), false);
-      renderRows('tbodyLive', data.archers.filter(a=>!a.finished), true);
+    function render(rawData, keepStatus = false) {
+      const data = normalizeData(rawData);
+      lastGoodData = data;
+
+      if (selectedCompetitionId !== 'all' && !data.competitions.some(c => c.id === selectedCompetitionId)) {
+        selectedCompetitionId = 'all';
+      }
+
+      const archers = getCurrentArchers(data);
+      renderCompetitionTabs(data);
+      renderPlaceBreakdown(data);
+      renderSummary(data, archers);
+      renderRows('tbodyFinished', archers.filter(a => a.finished), false);
+      renderRows('tbodyLive', archers.filter(a => !a.finished), true);
       updateChangeBadge(data);
-      setStatus('ok','Mise à jour réussie');
+
+      if (!keepStatus) setStatus('ok', 'Mise à jour réussie');
       if (!hasLiveArchers(data)) stopAutoRefresh();
     }
 
-    async function refresh(){
-      try{
-        setStatus('','Actualisation en cours…');
-        const res=await fetch(API_URL + '?t=' + Date.now(), {cache:'no-store'});
-        const data=await res.json();
+    async function refresh() {
+      try {
+        setStatus('', 'Actualisation en cours...');
+        const res = await fetch(API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        const data = await res.json();
         render(data);
-      }catch(err){
-        if(lastGoodData){
-          setStatus('err','Lecture instable, dernier état conservé');
-          renderSummary(lastGoodData);
-          renderRows('tbodyFinished', lastGoodData.archers.filter(a=>a.finished), false);
-          renderRows('tbodyLive', lastGoodData.archers.filter(a=>!a.finished), true);
+      } catch (err) {
+        if (lastGoodData) {
+          setStatus('err', 'Lecture instable, dernier état conservé');
+          render(lastGoodData, true);
         } else {
-          setStatus('err','Échec : ' + err.message);
+          setStatus('err', 'Échec : ' + err.message);
         }
-      }finally{
-        if (autoRefreshEnabled) nextRefresh=Date.now()+REFRESH_MS;
+      } finally {
+        if (autoRefreshEnabled) nextRefresh = Date.now() + REFRESH_MS;
       }
     }
 
-    function updateCountdown(){
-      if (!autoRefreshEnabled) { el('countdown').textContent='arrêté'; return; }
-      el('countdown').textContent=Math.max(0,Math.ceil((nextRefresh-Date.now())/1000))+' s';
+    function updateCountdown() {
+      if (!autoRefreshEnabled) {
+        el('countdown').textContent = 'arrêté';
+        return;
+      }
+      el('countdown').textContent = Math.max(0, Math.ceil((nextRefresh - Date.now()) / 1000)) + ' s';
     }
 
-    function setAdminResult(text){
+    function setAdminResult(text) {
       const target = el('adminResult');
-      if(target) target.innerHTML = text;
+      if (target) target.innerHTML = text;
     }
 
-    function escapeHtml(value){
-      return String(value || '')
-        .replaceAll('&','&amp;')
-        .replaceAll('<','&lt;')
-        .replaceAll('>','&gt;');
+    function clearCompetitionView() {
+      const emptyData = { competitions: [] };
+      lastGoodData = emptyData;
+      render(emptyData, true);
+      setStatus('', 'Compétition vidée localement. Lance le workflow reset pour publier.');
+      setAdminResult('Compétition effacée en local. Clique sur "Ouvrir workflow reset" puis "Run workflow" pour publier le reset.');
     }
 
-    function clearCompetitionView(){
-      const emptyData={sourceUrl:'#',places:[],archers:[]};
-      lastGoodData=emptyData;
-      render(emptyData);
-      setStatus('','Competition vidée localement. Lance le workflow reset pour publier.');
-      setAdminResult('Competition effacee en local. Clique sur "Ouvrir workflow reset" puis "Run workflow" pour publier le reset.');
-    }
+    async function findNextCompetition() {
+      try {
+        setAdminResult('Recherche de la prochaine compétition Seynod...');
+        const res = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        const data = await res.json();
 
-    async function findNextCompetition(){
-      try{
-        setAdminResult('Recherche de la prochaine competition Seynod...');
-        const res=await fetch(NEXT_API_URL + '?t=' + Date.now(), {cache:'no-store'});
-        const data=await res.json();
-
-        if(!data.found || !data.next_competition){
-          const msg = data.message || 'Aucune competition future trouvee.';
+        if (!data.found || !data.next_competition) {
+          const msg = data.message || 'Aucune compétition future trouvée.';
           setAdminResult(escapeHtml(msg) + '<br>Tu peux relancer la recherche via le workflow.');
           return;
         }
 
-        const next=data.next_competition;
-        const entries=(next.seynod_entries || []).map(e=>`${escapeHtml(e.name)} (${escapeHtml(e.category)})`).slice(0,12);
-        const names = entries.length ? entries.join('<br>') : 'Inscrits detectes (details indisponibles).';
+        const next = data.next_competition;
+        const entries = (next.seynod_entries || []).map(e => `${escapeHtml(e.name)} (${escapeHtml(e.category)})`).slice(0, 12);
+        const names = entries.length ? entries.join('<br>') : 'Inscrits détectés (détails indisponibles).';
         const ic = next.ic_url ? `<a href="${next.ic_url}" target="_blank" rel="noopener">Ouvrir IC</a>` : '';
         const ena = next.ena_url ? `<a href="${next.ena_url}" target="_blank" rel="noopener">Ouvrir ENA</a>` : '';
 
         setAdminResult(
-          `<strong>Prochaine competition detectee :</strong> ${escapeHtml(next.name)} (${escapeHtml(next.date_text)})<br>` +
+          `<strong>Prochaine compétition détectée :</strong> ${escapeHtml(next.name)} (${escapeHtml(next.date_text)})<br>` +
           `Organisateur: ${escapeHtml(next.organizer)}<br>` +
           `Tournoi: <a href="${next.details_url}" target="_blank" rel="noopener">Details IANSEO</a> ${ic} ${ena}<br><br>` +
           `<strong>Archers Seynod inscrits:</strong><br>${names}`
         );
-      }catch(err){
+      } catch (err) {
         setAdminResult('Erreur de lecture du fichier next_competition.json: ' + escapeHtml(err.message));
       }
     }
 
     el('refreshBtn').addEventListener('click', refresh);
-    if(adminMode){
+
+    if (adminMode) {
       el('adminPanel').classList.remove('hidden');
       el('toggleCompetitionBtn').classList.remove('hidden');
       el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
@@ -269,15 +406,19 @@
         if (autoRefreshEnabled) {
           nextRefresh = Date.now() + REFRESH_MS;
           if (!refreshTimer) refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
-          setStatus('ok','Mode competition active (30s)');
+          setStatus('ok', 'Mode compétition actif (30s)');
         } else {
-          if (refreshTimer){ clearInterval(refreshTimer); refreshTimer = null; }
-          el('countdown').textContent='arrêté';
-          setStatus('','Mode competition desactive');
+          if (refreshTimer) {
+            clearInterval(refreshTimer);
+            refreshTimer = null;
+          }
+          el('countdown').textContent = 'arrêté';
+          setStatus('', 'Mode compétition désactivé');
         }
         updateCompetitionButton();
       });
     }
+
     updateCompetitionButton();
     refresh();
     refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
