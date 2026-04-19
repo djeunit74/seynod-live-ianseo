@@ -1,8 +1,7 @@
 {
-  "generatedAtUtc": "2026-04-19T20:49:13.900370+00:00",
+  "generatedAtUtc": "2026-04-19T21:04:55.739452+00:00",
   "sourceUrl": "https://www.ianseo.net/TourData/2026/27251/IC.php",
   "places": [
-    "1313092",
     "Bonneville"
   ],
   "archers": [
@@ -30,20 +29,6 @@
       "category": "Arc à Poulies - Senior 2 Hommes",
       "progress": "Terminé (72 flèches)",
       "detail": "50m-1: 336, 50m-2: 344",
-      "finished": true,
-      "competitionId": "27251",
-      "competitionName": "Concours TAE Les archers du Faucigny"
-    },
-    {
-      "place": "Bonneville",
-      "name": "BOURGEAIS Stephane",
-      "club": "0174246 - Seynod",
-      "position": "3",
-      "score": 670,
-      "scoreLabel": "670 (après 72 flèches)",
-      "category": "Arc à Poulies - Senior 2 Hommes",
-      "progress": "Terminé (72 flèches)",
-      "detail": "50m-1: 330, 50m-2: 340",
       "finished": true,
       "competitionId": "27251",
       "competitionName": "Concours TAE Les archers du Faucigny"
@@ -96,18 +81,6 @@
         },
         {
           "place": "Bonneville",
-          "name": "BOURGEAIS Stephane",
-          "club": "0174246 - Seynod",
-          "position": "3",
-          "score": 670,
-          "scoreLabel": "670 (après 72 flèches)",
-          "category": "Arc à Poulies - Senior 2 Hommes",
-          "progress": "Terminé (72 flèches)",
-          "detail": "50m-1: 330, 50m-2: 340",
-          "finished": true
-        },
-        {
-          "place": "Bonneville",
           "name": "CATIN Daniel",
           "club": "0174246 - Seynod",
           "position": "11",
@@ -119,13 +92,6 @@
           "finished": true
         }
       ]
-    },
-    {
-      "id": "27697",
-      "name": "Division Régionale Excellence - Manche n°1",
-      "place": "1313092",
-      "sourceUrl": "https://www.ianseo.net/TourData/2026/27697/IC.php",
-      "archers": []
     }
   ]
 }
