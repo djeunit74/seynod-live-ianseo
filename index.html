@@ -82,7 +82,6 @@
         </div>
 
         <div class="stack" id="competitionList"></div>
-        <div class="stack" id="placeBreakdown"></div>
 
         <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">En attente du premier chargement...</span></div>
         <div class="row"><span class="badge warn" id="changeBadge">Pas encore de comparaison</span></div>
@@ -231,20 +230,6 @@
       });
     }
 
-    function renderPlaceBreakdown(data) {
-      const counts = {};
-      for (const c of data.competitions) {
-        const p = c.place || '—';
-        counts[p] = (counts[p] || 0) + c.archers.length;
-      }
-      const entries = Object.entries(counts).filter(([, count]) => count > 0);
-      if (entries.length <= 1) {
-        el('placeBreakdown').innerHTML = '';
-        return;
-      }
-      const chips = entries.map(([place, count]) => `<span class="chip">${escapeHtml(place)} : ${count}</span>`);
-      el('placeBreakdown').innerHTML = chips.join('');
-    }
 
     function renderRows(targetId, archers, live = false) {
       const tbody = el(targetId);
@@ -322,7 +307,6 @@
 
       const archers = getCurrentArchers(data);
       renderCompetitionTabs(data);
-      renderPlaceBreakdown(data);
       renderSummary(data, archers);
       renderRows('tbodyFinished', archers.filter(a => a.finished), false);
       renderRows('tbodyLive', archers.filter(a => !a.finished), true);
