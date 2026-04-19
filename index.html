@@ -241,7 +241,8 @@
       const showCompetitionName = selectedCompetitionId === 'all';
       tbody.innerHTML = archers.map(a => {
         const infoLine = showCompetitionName ? `<div class="mini">${escapeHtml(a.club || '')} · ${escapeHtml(a.competitionName || '')}</div>` : `<div class="mini">${escapeHtml(a.club || '')}</div>`;
-        return `<tr class="${a.finished ? 'finished' : 'live'}"><td>${escapeHtml(a.place || '—')}</td><td>${escapeHtml(a.name || '')}${infoLine}</td><td>${escapeHtml(a.category || '')}</td><td>${escapeHtml(a.progress || '')}</td><td>${escapeHtml(a.position || '')}</td><td>${escapeHtml(a.scoreLabel || '')}</td><td><div class="detailBox">${escapeHtml(a.detail || '')}</div></td></tr>`;
+        const scoreValue = (a.score !== undefined && a.score !== null && String(a.score).trim() !== '') ? String(a.score) : String(a.scoreLabel || '').replace(/\s*\(.*?\)\s*/g, '').trim();
+        return `<tr class="${a.finished ? 'finished' : 'live'}"><td>${escapeHtml(a.place || '—')}</td><td>${escapeHtml(a.name || '')}${infoLine}</td><td>${escapeHtml(a.category || '')}</td><td>${escapeHtml(a.progress || '')}</td><td>${escapeHtml(a.position || '')}</td><td>${escapeHtml(scoreValue)}</td><td><div class="detailBox">${escapeHtml(a.detail || '')}</div></td></tr>`;
       }).join('');
     }
 
