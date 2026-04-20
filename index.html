@@ -205,6 +205,7 @@
         <h2 class="sectionTitle">Admin</h2>
         <div class="admin-input">
           <input id="clubFilterInput" type="text" placeholder="Club à suivre (numéro ou mots-clés, ex: 0174246,seynod)" />
+          <input id="countryCodeInput" type="text" placeholder="Pays IANSEO (ex: FRA)" style="max-width:220px;min-width:180px" />
           <button class="btn secondary" id="applyClubFilterBtn">Appliquer club</button>
         </div>
         <div class="admin-actions">
@@ -240,8 +241,10 @@
     const WORKFLOW_RESET = 'reset-live.yml';
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
     const CLUB_FILTER_STORAGE_KEY = 'seynod_tracked_club_keywords';
+    const COUNTRY_STORAGE_KEY = 'seynod_country_code';
     const TRACKED_IC_URLS_STORAGE_KEY = 'seynod_tracked_ic_urls';
     const DEFAULT_TRACKED_CLUB = '0174246,seynod';
+    const DEFAULT_COUNTRY_CODE = 'FRA';
     const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
 
     const el = id => document.getElementById(id);
@@ -257,6 +260,7 @@
     let selectedCompetitionId = 'all';
     let trackedClubRaw = DEFAULT_TRACKED_CLUB;
     let trackedClubKeywords = [];
+    let trackedCountryCode = DEFAULT_COUNTRY_CODE;
     let trackedIcUrls = [];
     let adminBridgeUrl = '';
     let lastNextCompetitionData = null;
@@ -410,7 +414,7 @@
       return out;
     }
 
-    async function findNextCompetitionDirect(keywords, country = 'FRA') {
+    async function findNextCompetitionDirect(keywords, country = DEFAULT_COUNTRY_CODE) {
       const now = new Date();
       const todayUtc = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 12, 0, 0));
       const keys = (keywords || []).map(k => normalizeForMatch(k)).filter(Boolean);
@@ -625,7 +629,7 @@
         return;
       }
       try {
-        const data = await findNextCompetitionDirect(trackedClubKeywords, 'FRA');
+        const data = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCode);
         lastNextCompetitionData = data;
         nextDataLockUntilMs = 0;
         renderNextParticipantsPanel(data);
@@ -678,6 +682,26 @@
       trackedClubRaw = (stored && stored.trim()) ? stored.trim() : DEFAULT_TRACKED_CLUB;
       trackedClubKeywords = normalizeClubKeywords(trackedClubRaw);
       updateClubUiTexts();
+    }
+
+    function normalizeCountryCode(raw) {
+      return String(raw || '')
+        .trim()
+        .toUpperCase()
+        .replace(/[^A-Z]/g, '')
+        .slice(0, 3) || DEFAULT_COUNTRY_CODE;
+    }
+
+    function loadCountryCode() {
+      const stored = localStorage.getItem(COUNTRY_STORAGE_KEY);
+      trackedCountryCode = normalizeCountryCode(stored || DEFAULT_COUNTRY_CODE);
+    }
+
+    function saveCountryCode(raw) {
+      trackedCountryCode = normalizeCountryCode(raw);
+      localStorage.setItem(COUNTRY_STORAGE_KEY, trackedCountryCode);
+      const input = el('countryCodeInput');
+      if (input) input.value = trackedCountryCode;
     }
 
     function parseCompetitionHeader(markdown) {
@@ -1414,7 +1438,7 @@
     async function startCompetitionAllInOne() {
       setCompetitionMode(true, 'Mode compétition actif (30s)');
       try {
-        const direct = await findNextCompetitionDirect(trackedClubKeywords, 'FRA');
+        const direct = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCode);
         lastNextCompetitionData = direct;
         nextDataLockUntilMs = Date.now() + 20 * 60 * 1000;
         renderNextCompetitionResult(direct);
@@ -1430,7 +1454,7 @@
 
       if (adminBridgeUrl) {
         setAdminResult(`Démarrage automatique compétition pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
-        await callAdminBridge('start_competition', { club_keywords: trackedClubRaw, country: 'FRA' });
+        await callAdminBridge('start_competition', { club_keywords: trackedClubRaw, country: trackedCountryCode });
         const [nextData, liveData] = await Promise.all([
           waitForNextCompetitionUpdate(previousNextGeneratedAt, 140000),
           waitForLiveUpdate(previousLiveGeneratedAt, 140000)
@@ -1460,7 +1484,7 @@
     async function findNextCompetition() {
       try {
         setAdminResult(`Recherche automatique des prochaines compétitions pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
-        const direct = await findNextCompetitionDirect(trackedClubKeywords, 'FRA');
+        const direct = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCode);
         lastNextCompetitionData = direct;
         nextDataLockUntilMs = Date.now() + 20 * 60 * 1000;
         renderNextCompetitionResult(direct);
@@ -1470,7 +1494,7 @@
             const lastRes = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
             const lastData = await lastRes.json();
             const previousGeneratedAt = String(lastData.generated_at_utc || '');
-            await callAdminBridge('find_next', { club_keywords: trackedClubRaw });
+            await callAdminBridge('find_next', { club_keywords: trackedClubRaw, country: trackedCountryCode });
             const updated = await waitForNextCompetitionUpdate(previousGeneratedAt, 130000);
             lastNextCompetitionData = updated;
             nextDataLockUntilMs = 0;
@@ -1484,6 +1508,7 @@
 
     async function initPage() {
       loadClubFilter();
+      loadCountryCode();
       loadTrackedIcUrls();
       await loadAdminConfig();
       await resolveAdminMode();
@@ -1497,16 +1522,20 @@
         renderMoodPresentationExample();
         setAdminResult('Mode admin actif. Renseigne le club puis clique "Chercher prochaine compétition".');
         const clubInput = el('clubFilterInput');
+        const countryInput = el('countryCodeInput');
         if (clubInput) clubInput.value = trackedClubRaw;
+        if (countryInput) countryInput.value = trackedCountryCode;
         renderTrackedTournamentsList();
         el('applyClubFilterBtn').addEventListener('click', () => {
           const input = el('clubFilterInput');
+          const countryRaw = countryInput ? countryInput.value : '';
           const raw = input ? input.value : '';
           saveClubFilter(raw);
+          saveCountryCode(countryRaw);
           lastNextCompetitionData = null;
           nextDataLockUntilMs = 0;
           renderNextParticipantsPanel({ found: false });
-          setAdminResult(`Club suivi mis à jour : <strong>${escapeHtml(getClubDisplayName())}</strong>.`);
+          setAdminResult(`Club suivi mis à jour : <strong>${escapeHtml(getClubDisplayName())}</strong> · Pays : <strong>${escapeHtml(trackedCountryCode)}</strong>.`);
           if (lastRawData) {
             render(lastRawData, true);
           } else if (lastGoodData) {
@@ -1549,6 +1578,13 @@
         });
         if (clubInput) {
           clubInput.addEventListener('keydown', (evt) => {
+            if (evt.key !== 'Enter') return;
+            evt.preventDefault();
+            el('applyClubFilterBtn').click();
+          });
+        }
+        if (countryInput) {
+          countryInput.addEventListener('keydown', (evt) => {
             if (evt.key !== 'Enter') return;
             evt.preventDefault();
             el('applyClubFilterBtn').click();
