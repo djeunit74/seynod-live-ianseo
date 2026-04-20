@@ -1,7 +1,97 @@
 {
-  "generatedAtUtc": "2026-04-20T18:39:19.810010+00:00",
-  "sourceUrl": "",
-  "places": [],
-  "archers": [],
-  "competitions": []
+  "generatedAtUtc": "2026-04-20T18:56:46.933053+00:00",
+  "sourceUrl": "https://www.ianseo.net/TourData/2026/27251/IC.php",
+  "places": [
+    "Bonneville"
+  ],
+  "archers": [
+    {
+      "place": "Bonneville",
+      "name": "KOZUCHOWICZ Johanna",
+      "club": "0174246 - Seynod",
+      "position": "2",
+      "score": 585,
+      "scoreLabel": "585 (après 72 flèches)",
+      "category": "Arc Classique - U18 Femmes",
+      "progress": "Terminé (72 flèches)",
+      "detail": "60m-1: 287, 60m-2: 298",
+      "finished": true,
+      "competitionId": "27251",
+      "competitionName": "Concours TAE Les archers du Faucigny"
+    },
+    {
+      "place": "Bonneville",
+      "name": "BOURGEAIS Stephane",
+      "club": "0174246 - Seynod",
+      "position": "1",
+      "score": 680,
+      "scoreLabel": "680 (après 72 flèches)",
+      "category": "Arc à Poulies - Senior 2 Hommes",
+      "progress": "Terminé (72 flèches)",
+      "detail": "50m-1: 336, 50m-2: 344",
+      "finished": true,
+      "competitionId": "27251",
+      "competitionName": "Concours TAE Les archers du Faucigny"
+    },
+    {
+      "place": "Bonneville",
+      "name": "CATIN Daniel",
+      "club": "0174246 - Seynod",
+      "position": "11",
+      "score": 573,
+      "scoreLabel": "573 (après 72 flèches)",
+      "category": "Arc à Poulies - Senior 2 Hommes",
+      "progress": "Terminé (72 flèches)",
+      "detail": "50m-1: 279, 50m-2: 294",
+      "finished": true,
+      "competitionId": "27251",
+      "competitionName": "Concours TAE Les archers du Faucigny"
+    }
+  ],
+  "competitions": [
+    {
+      "id": "27251",
+      "name": "Concours TAE Les archers du Faucigny",
+      "place": "Bonneville",
+      "sourceUrl": "https://www.ianseo.net/TourData/2026/27251/IC.php",
+      "archers": [
+        {
+          "place": "Bonneville",
+          "name": "KOZUCHOWICZ Johanna",
+          "club": "0174246 - Seynod",
+          "position": "2",
+          "score": 585,
+          "scoreLabel": "585 (après 72 flèches)",
+          "category": "Arc Classique - U18 Femmes",
+          "progress": "Terminé (72 flèches)",
+          "detail": "60m-1: 287, 60m-2: 298",
+          "finished": true
+        },
+        {
+          "place": "Bonneville",
+          "name": "BOURGEAIS Stephane",
+          "club": "0174246 - Seynod",
+          "position": "1",
+          "score": 680,
+          "scoreLabel": "680 (après 72 flèches)",
+          "category": "Arc à Poulies - Senior 2 Hommes",
+          "progress": "Terminé (72 flèches)",
+          "detail": "50m-1: 336, 50m-2: 344",
+          "finished": true
+        },
+        {
+          "place": "Bonneville",
+          "name": "CATIN Daniel",
+          "club": "0174246 - Seynod",
+          "position": "11",
+          "score": 573,
+          "scoreLabel": "573 (après 72 flèches)",
+          "category": "Arc à Poulies - Senior 2 Hommes",
+          "progress": "Terminé (72 flèches)",
+          "detail": "50m-1: 279, 50m-2: 294",
+          "finished": true
+        }
+      ]
+    }
+  ]
 }
