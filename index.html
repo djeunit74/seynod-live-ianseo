@@ -53,6 +53,19 @@
     .admin-card{border:1px solid rgba(56,189,248,.35);background:rgba(2,132,199,.08)}
     .admin-result{margin-top:10px;font-size:14px;line-height:1.45;color:#dbeafe}
     .admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .volley-card{border:1px solid rgba(148,163,184,.35)}
+    .volley-grid{display:grid;grid-template-columns:280px 1fr;gap:14px}@media (max-width:900px){.volley-grid{grid-template-columns:1fr}}
+    .volley-panel{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px;padding:12px}
+    .volley-title{margin:0 0 8px;font-size:18px}
+    .volley-last{display:flex;align-items:center;gap:10px;font-size:15px}
+    .volley-last-score{font-size:28px;font-weight:800;line-height:1}
+    .volley-last-type{color:#cbd5e1;font-size:13px}
+    .volley-list{margin:10px 0 0;padding:0;list-style:none;max-height:220px;overflow:auto}
+    .volley-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}
+    .volley-list li:last-child{border-bottom:0}
+    .volley-muted{color:var(--muted);font-size:13px}
+    .volley-chart{width:100%;height:220px;border:1px solid var(--border);border-radius:12px;background:rgba(15,23,42,.55)}
+    .volley-legend{margin-top:8px;color:var(--muted);font-size:12px}
   </style>
 </head>
 <body>
@@ -123,6 +136,30 @@
         </div>
       </section>
 
+      <section class="card span12 volley-card">
+        <h2 class="sectionTitle">Stat volée</h2>
+        <div class="row" style="margin-top:0;">
+          <label for="volleyArcherSelect" class="volley-muted">Archer suivi :</label>
+          <select id="volleyArcherSelect" class="btn secondary" style="padding:10px 12px;"></select>
+        </div>
+        <div class="volley-grid">
+          <div class="volley-panel">
+            <h3 class="volley-title">Dernière volée</h3>
+            <div class="volley-last">
+              <span class="volley-last-score" id="lastVolleyScore">—</span>
+              <span id="lastVolleySmiley">—</span>
+            </div>
+            <div class="volley-last-type" id="lastVolleyType">Pas encore de volée déduite.</div>
+            <ul class="volley-list" id="volleyHistoryList"></ul>
+          </div>
+          <div class="volley-panel">
+            <h3 class="volley-title">Évolution des volées</h3>
+            <svg id="volleyChart" class="volley-chart" viewBox="0 0 800 220" preserveAspectRatio="none"></svg>
+            <div class="volley-legend">Courbe bleue: volées plausibles. Les mises à jour groupées sont listées à gauche.</div>
+          </div>
+        </div>
+      </section>
+
       <section class="card span12 admin-card hidden" id="adminPanel">
         <h2 class="sectionTitle">Admin</h2>
         <div class="admin-actions">
@@ -158,6 +195,13 @@
     let refreshTimer = null;
     let autoRefreshEnabled = true;
     let selectedCompetitionId = 'all';
+    let selectedVolleyArcherKey = '';
+    const archerVolleyState = {};
+    const volleyArcherIndex = {};
+    const VOLLEY_CONFIG = {
+      maxVolleyScore: 60,
+      maxHistory: 40
+    };
 
     function setStatus(kind, text) {
       el('statusDot').className = 'dot ' + (kind || '');
@@ -170,6 +214,87 @@
         .replaceAll('&', '&amp;')
         .replaceAll('<', '&lt;')
         .replaceAll('>', '&gt;');
+    }
+
+    function getVolleyDelta(previousTotal, currentTotal) {
+      if (previousTotal === null || previousTotal === undefined) return null;
+      if (currentTotal === null || currentTotal === undefined) return null;
+      const prev = Number(previousTotal);
+      const curr = Number(currentTotal);
+      if (!Number.isFinite(prev) || !Number.isFinite(curr)) return null;
+      return curr - prev;
+    }
+
+    function isLikelySingleVolley(delta, config) {
+      if (!Number.isFinite(delta)) return false;
+      if (delta <= 0) return false;
+      return delta <= Number(config.maxVolleyScore || 60);
+    }
+
+    function getSmiley(currentVolley, previousVolley) {
+      if (!Number.isFinite(currentVolley) || !Number.isFinite(previousVolley)) return '—';
+      if (currentVolley > previousVolley) return '🙂';
+      if (currentVolley === previousVolley) return '😐';
+      return '🙁';
+    }
+
+    function buildVolleyChartData(volleyHistory) {
+      const valid = (volleyHistory || []).filter(v => v.type === 'volley' && Number.isFinite(Number(v.score)));
+      return valid.map((v, index) => ({
+        x: index + 1,
+        y: Number(v.score),
+        smiley: v.smiley || '—',
+        timestamp: v.timestamp || ''
+      }));
+    }
+
+    function getArcherKey(archer) {
+      return [
+        archer.competitionId || 'legacy',
+        archer.name || '',
+        archer.category || '',
+        archer.club || ''
+      ].join('|');
+    }
+
+    function getArcherTotalScore(archer) {
+      if (archer && Number.isFinite(Number(archer.score))) return Number(archer.score);
+      const fromLabel = String(archer?.scoreLabel || '').match(/\d+/);
+      return fromLabel ? Number(fromLabel[0]) : null;
+    }
+
+    function updateVolleyHistory(archerState, newTotal, config) {
+      if (!archerState.volleyHistory) archerState.volleyHistory = [];
+
+      const previousTotal = archerState.lastTotal;
+      const delta = getVolleyDelta(previousTotal, newTotal);
+      archerState.lastTotal = Number.isFinite(Number(newTotal)) ? Number(newTotal) : previousTotal;
+
+      if (delta === null || delta <= 0) return null;
+
+      const timestamp = new Date().toISOString();
+      if (!isLikelySingleVolley(delta, config)) {
+        const groupedEntry = {
+          score: delta,
+          smiley: '—',
+          timestamp,
+          type: 'grouped_update'
+        };
+        archerState.volleyHistory.push(groupedEntry);
+        if (archerState.volleyHistory.length > (config.maxHistory || 40)) archerState.volleyHistory.shift();
+        return groupedEntry;
+      }
+
+      const previousVolley = [...archerState.volleyHistory].reverse().find(v => v.type === 'volley' && Number.isFinite(Number(v.score)));
+      const currentEntry = {
+        score: delta,
+        smiley: previousVolley ? getSmiley(delta, Number(previousVolley.score)) : '—',
+        timestamp,
+        type: 'volley'
+      };
+      archerState.volleyHistory.push(currentEntry);
+      if (archerState.volleyHistory.length > (config.maxHistory || 40)) archerState.volleyHistory.shift();
+      return currentEntry;
     }
 
     function normalizeData(raw) {
@@ -233,6 +358,125 @@
           if (lastGoodData) render(lastGoodData, true);
         });
       });
+    }
+
+    function syncVolleyStates(data) {
+      const allArchers = data.competitions.flatMap(c =>
+        c.archers.map(a => ({ ...a, competitionId: c.id, competitionName: c.name, competitionPlace: c.place }))
+      );
+
+      for (const archer of allArchers) {
+        const key = getArcherKey(archer);
+        volleyArcherIndex[key] = archer;
+        if (!archerVolleyState[key]) {
+          archerVolleyState[key] = { lastTotal: null, volleyHistory: [] };
+        }
+        const total = getArcherTotalScore(archer);
+        updateVolleyHistory(archerVolleyState[key], total, VOLLEY_CONFIG);
+      }
+    }
+
+    function renderVolleyChart(volleyHistory) {
+      const svg = el('volleyChart');
+      if (!svg) return;
+
+      const width = 800;
+      const height = 220;
+      const padX = 42;
+      const padY = 20;
+
+      const data = buildVolleyChartData(volleyHistory);
+      if (!data.length) {
+        svg.innerHTML = `<text x="20" y="40" fill="#94a3b8" font-size="14">Pas assez de volées déduites pour tracer une courbe.</text>`;
+        return;
+      }
+
+      const maxX = Math.max(...data.map(p => p.x), 1);
+      const maxY = Math.max(...data.map(p => p.y), 1);
+      const minY = Math.min(...data.map(p => p.y), 0);
+      const plotW = width - padX * 2;
+      const plotH = height - padY * 2;
+
+      const xPos = x => padX + ((x - 1) / Math.max(1, maxX - 1)) * plotW;
+      const yPos = y => padY + (1 - ((y - minY) / Math.max(1, maxY - minY))) * plotH;
+
+      const points = data.map(p => `${xPos(p.x)},${yPos(p.y)}`).join(' ');
+      const circles = data.map(p => `<circle cx="${xPos(p.x)}" cy="${yPos(p.y)}" r="3.5" fill="#38bdf8"></circle>`).join('');
+      const labels = data.map(p => `<text x="${xPos(p.x)}" y="${height - 4}" fill="#94a3b8" font-size="10" text-anchor="middle">${p.x}</text>`).join('');
+
+      svg.innerHTML = `
+        <line x1="${padX}" y1="${height - padY}" x2="${width - padX}" y2="${height - padY}" stroke="rgba(148,163,184,.45)" />
+        <line x1="${padX}" y1="${padY}" x2="${padX}" y2="${height - padY}" stroke="rgba(148,163,184,.45)" />
+        <polyline fill="none" stroke="#38bdf8" stroke-width="2.4" points="${points}"></polyline>
+        ${circles}
+        ${labels}
+      `;
+    }
+
+    function renderVolleyPanel() {
+      const select = el('volleyArcherSelect');
+      const list = el('volleyHistoryList');
+      const lastScore = el('lastVolleyScore');
+      const lastSmiley = el('lastVolleySmiley');
+      const lastType = el('lastVolleyType');
+      if (!select || !list || !lastScore || !lastSmiley || !lastType) return;
+      const visibleArchers = lastGoodData ? getCurrentArchers(lastGoodData) : [];
+
+      const uniqueArchers = [];
+      const seen = new Set();
+      for (const a of visibleArchers) {
+        const key = getArcherKey(a);
+        if (seen.has(key)) continue;
+        seen.add(key);
+        uniqueArchers.push({ key, archer: a });
+      }
+
+      if (!selectedVolleyArcherKey || !uniqueArchers.some(u => u.key === selectedVolleyArcherKey)) {
+        const johanna = uniqueArchers.find(u => (u.archer.name || '').toLowerCase().includes('johanna'));
+        selectedVolleyArcherKey = johanna ? johanna.key : (uniqueArchers[0]?.key || '');
+      }
+
+      if (!select.dataset.bound) {
+        select.addEventListener('change', () => {
+          selectedVolleyArcherKey = select.value;
+          renderVolleyPanel();
+        });
+        select.dataset.bound = '1';
+      }
+
+      select.innerHTML = uniqueArchers.map(u => {
+        const label = `${u.archer.name} · ${u.archer.competitionName || ''}`;
+        return `<option value="${escapeHtml(u.key)}">${escapeHtml(label)}</option>`;
+      }).join('');
+      select.value = selectedVolleyArcherKey;
+
+      const state = archerVolleyState[selectedVolleyArcherKey];
+      const history = state?.volleyHistory || [];
+      const lastEvent = history[history.length - 1] || null;
+
+      if (!lastEvent) {
+        lastScore.textContent = '—';
+        lastSmiley.textContent = '—';
+        lastType.textContent = 'Pas encore de volée déduite.';
+        list.innerHTML = '<li class="volley-muted">Aucun événement pour cet archer.</li>';
+        renderVolleyChart([]);
+        return;
+      }
+
+      lastScore.textContent = String(lastEvent.score);
+      lastSmiley.textContent = lastEvent.smiley || '—';
+      lastType.textContent = lastEvent.type === 'grouped_update'
+        ? 'Mise à jour groupée (delta trop grand pour une volée unique).'
+        : 'Volée déduite fiable.';
+
+      const ordered = [...history].reverse();
+      list.innerHTML = ordered.map((entry, idx) => {
+        const typeText = entry.type === 'grouped_update' ? 'mise à jour groupée' : `volée ${history.length - idx}`;
+        const smiley = entry.type === 'grouped_update' ? '—' : (entry.smiley || '—');
+        return `<li><strong>${escapeHtml(typeText)}</strong> : ${escapeHtml(entry.score)} ${smiley}<br><span class="volley-muted">${escapeHtml(new Date(entry.timestamp).toLocaleTimeString('fr-FR'))}</span></li>`;
+      }).join('');
+
+      renderVolleyChart(history);
     }
 
 
@@ -333,11 +577,13 @@
         selectedCompetitionId = 'all';
       }
 
+      syncVolleyStates(data);
       const archers = getCurrentArchers(data);
       renderCompetitionTabs(data);
       renderSummary(data, archers);
       renderRows('tbodyFinished', archers.filter(a => a.finished), false);
       renderRows('tbodyLive', archers.filter(a => !a.finished), true);
+      renderVolleyPanel();
       updateChangeBadge(data);
 
       if (!keepStatus) setStatus('ok', 'Mise à jour réussie');
