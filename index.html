@@ -175,7 +175,7 @@
         </div>
       </section>
 
-      <section class="card span12 volley-card" id="volleySection">
+      <section class="card span12 volley-card hidden" id="volleySection">
         <h2 class="sectionTitle">Stat volée</h2>
         <div class="row" style="margin-top:0;">
           <label for="volleyArcherSelect" class="volley-muted">Archer suivi :</label>
@@ -1097,7 +1097,7 @@
       if (hasLive) {
         if (liveSection) liveSection.classList.remove('hidden');
         if (finishedSection) finishedSection.classList.remove('hidden');
-        if (volleySection) volleySection.classList.remove('hidden');
+        if (volleySection) volleySection.classList.add('hidden');
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge ok';
         badge.textContent = 'Pendant compétition';
@@ -1107,7 +1107,7 @@
       if (hasAny) {
         if (liveSection) liveSection.classList.add('hidden');
         if (finishedSection) finishedSection.classList.remove('hidden');
-        if (volleySection) volleySection.classList.remove('hidden');
+        if (volleySection) volleySection.classList.add('hidden');
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge warn';
         badge.textContent = 'Après compétition';
