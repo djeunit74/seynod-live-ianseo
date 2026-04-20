@@ -57,6 +57,13 @@
     .admin-input input{min-width:280px;max-width:460px;width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(15,23,42,.7);color:#e2e8f0;outline:none}
     .admin-input input:focus{border-color:rgba(56,189,248,.65);box-shadow:0 0 0 2px rgba(56,189,248,.15)}
     .admin-list{margin-top:10px;padding:10px;border:1px dashed rgba(148,163,184,.35);border-radius:12px}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .tab-btn{padding:8px 12px;border-radius:10px;border:1px solid var(--border);background:#1f2937;color:#e5e7eb;cursor:pointer;font-weight:700}
+    .tab-btn.active{background:#2563eb}
+    .tab-pane{margin-top:10px}
+    .tracked-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
+    .tracked-card{border:1px solid rgba(52,211,153,.35);background:rgba(16,185,129,.05);border-radius:14px;padding:10px}
+    @media (max-width:900px){.tracked-grid{grid-template-columns:1fr}}
     .volley-card{border:1px solid rgba(148,163,184,.35)}
     .volley-grid{display:grid;grid-template-columns:280px 1fr;gap:14px}@media (max-width:900px){.volley-grid{grid-template-columns:1fr}}
     .volley-panel{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px;padding:12px}
@@ -160,25 +167,9 @@
       </section>
 
       <section class="card span12 next-card" id="nextParticipantsCard">
-        <h2 class="sectionTitle">Participants prochaine compétition</h2>
+        <h2 class="sectionTitle">Participants prochains tournois suivis</h2>
         <div class="mini" id="nextCompetitionMeta">Chargement...</div>
-        <div class="row" style="margin-top:8px;">
-          <label class="mini" for="nextCompetitionSelect" id="nextCompetitionSelectLabel">Compétition :</label>
-          <select id="nextCompetitionSelect" class="btn secondary" style="padding:8px 10px;"></select>
-          <button class="btn secondary small hidden" id="followSelectedNextCompetitionBtn">Suivre cette compétition</button>
-        </div>
-        <div class="row" style="margin-top:8px;">
-          <a class="btn secondary small" id="nextCompetitionDetailsLink" href="#" target="_blank" rel="noopener">Ouvrir la fiche IANSEO</a>
-          <a class="btn secondary small hidden" id="nextCompetitionENALink" href="#" target="_blank" rel="noopener">Ouvrir ENA</a>
-        </div>
-        <div style="overflow:auto; margin-top:8px;">
-          <table>
-            <thead>
-              <tr><th>Archer</th><th>Club</th><th>Catégorie</th><th>Départ</th></tr>
-            </thead>
-            <tbody id="nextParticipantsBody"><tr><td colspan="4">Chargement...</td></tr></tbody>
-          </table>
-        </div>
+        <div class="tracked-grid" id="trackedUpcomingGrid"></div>
       </section>
 
       <section class="card span12 volley-card hidden" id="volleySection">
@@ -208,24 +199,37 @@
 
       <section class="card span12 admin-card hidden" id="adminPanel">
         <h2 class="sectionTitle">Admin</h2>
-        <div class="admin-input">
-          <input id="clubFilterInput" type="text" placeholder="Club à suivre (numéro ou mots-clés, ex: 0174246,seynod)" />
-          <input id="countryCodeInput" type="text" placeholder="Pays IANSEO (ex: FRA)" style="max-width:220px;min-width:180px" />
-          <button class="btn secondary" id="applyClubFilterBtn">Appliquer club</button>
+        <div class="tabs">
+          <button class="tab-btn active" id="adminTabClubBtn">Club</button>
+          <button class="tab-btn" id="adminTabTournamentsBtn">Tournois</button>
         </div>
-        <div class="admin-actions">
-          <button class="btn" id="allInOneBtn">Tout en 1 : Démarrer compétition</button>
-          <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
-          <button class="btn" id="findNextCompetitionBtn">Chercher prochaine compétition Seynod</button>
-          <button class="btn secondary" id="addCurrentTournamentBtn">Ajouter ce tournoi au suivi</button>
-          <button class="btn secondary" id="clearTrackedTournamentsBtn">Vider tournois suivis</button>
-          <button class="btn secondary hidden" id="copyClubKeywordsBtn">Copier club pour workflow</button>
+        <div class="tab-pane" id="adminTabClubPane">
+          <div class="admin-input">
+            <input id="clubFilterInput" type="text" placeholder="Club à suivre (numéro ou mots-clés, ex: 0174246,seynod)" />
+            <input id="countryCodeInput" type="text" placeholder="Pays IANSEO (ex: FRA)" style="max-width:220px;min-width:180px" />
+            <button class="btn secondary" id="applyClubFilterBtn">Appliquer club</button>
+          </div>
         </div>
-        <div class="admin-input">
-          <input id="manualIcUrlInput" type="text" placeholder="Ajouter URL IC manuelle (https://.../IC.php)" />
-          <button class="btn secondary" id="addManualIcBtn">Ajouter URL IC</button>
+        <div class="tab-pane hidden" id="adminTabTournamentsPane">
+          <div class="admin-actions">
+            <button class="btn" id="allInOneBtn">Tout en 1 : Démarrer compétition</button>
+            <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
+            <button class="btn" id="findNextCompetitionBtn">Chercher prochaine compétition Seynod</button>
+          </div>
+          <div class="admin-input">
+            <label class="mini" for="adminSearchCompetitionSelect">Compétitions trouvées :</label>
+            <select id="adminSearchCompetitionSelect" class="btn secondary" style="padding:8px 10px;"></select>
+            <button class="btn secondary" id="followSelectedNextCompetitionBtn">Suivre cette compétition</button>
+          </div>
+          <div class="admin-actions">
+            <button class="btn secondary" id="clearTrackedTournamentsBtn">Vider tournois suivis</button>
+          </div>
+          <div class="admin-input">
+            <input id="manualIcUrlInput" type="text" placeholder="Ajouter URL IC manuelle (https://.../IC.php)" />
+            <button class="btn secondary" id="addManualIcBtn">Ajouter URL IC</button>
+          </div>
+          <div class="admin-list" id="trackedTournamentsList"></div>
         </div>
-        <div class="admin-list" id="trackedTournamentsList"></div>
         <div class="admin-result" id="adminResult">Mode admin actif.</div>
       </section>
     </div>
@@ -247,6 +251,7 @@
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
     const CLUB_FILTER_STORAGE_KEY = 'seynod_tracked_club_keywords';
     const COUNTRY_STORAGE_KEY = 'seynod_country_code';
+    const TRACKED_TOURNAMENTS_STORAGE_KEY = 'seynod_tracked_tournaments';
     const TRACKED_IC_URLS_STORAGE_KEY = 'seynod_tracked_ic_urls';
     const DEFAULT_TRACKED_CLUB = '0174246,seynod';
     const DEFAULT_COUNTRY_CODE = 'FRA';
@@ -265,6 +270,7 @@
     let selectedCompetitionId = 'all';
     let trackedClubRaw = DEFAULT_TRACKED_CLUB;
     let trackedClubKeywords = [];
+    let trackedTournaments = [];
     let trackedCountryCode = DEFAULT_COUNTRY_CODE;
     let trackedIcUrls = [];
     let adminBridgeUrl = '';
@@ -560,13 +566,16 @@
       }
 
       const next = data.next_competition;
-      const entries = ((next.club_entries || next.seynod_entries || [])).map(e => `${escapeHtml(e.name)} (${escapeHtml(e.category)})`).slice(0, 12);
+      const entries = ((next.club_entries || next.seynod_entries || []))
+        .map(e => `${escapeHtml(e.name)} (${escapeHtml(e.category)})`)
+        .slice(0, 12);
       const names = entries.length ? entries.join('<br>') : 'Inscrits détectés (détails indisponibles).';
       const ic = next.ic_url ? `<a href="${next.ic_url}" target="_blank" rel="noopener">Ouvrir IC</a>` : '';
       const ena = next.ena_url ? `<a href="${next.ena_url}" target="_blank" rel="noopener">Ouvrir ENA</a>` : '';
 
       setAdminResult(
-        `<strong>Prochaine compétition détectée :</strong> ${escapeHtml(next.name)} (${escapeHtml(next.date_text)})<br>` +
+        `<strong>Compétitions trouvées :</strong> ${(data.matches || []).length || 1}<br>` +
+        `<strong>Sélection actuelle :</strong> ${escapeHtml(next.name)} (${escapeHtml(next.date_text)})<br>` +
         `Organisateur: ${escapeHtml(next.organizer)}<br>` +
         `Tournoi: <a href="${next.details_url}" target="_blank" rel="noopener">Details IANSEO</a> ${ic} ${ena}<br><br>` +
         `<strong>Archers ${escapeHtml(getClubDisplayName())} inscrits:</strong><br>${names}`
@@ -574,98 +583,248 @@
       renderNextParticipantsPanel(data);
     }
 
+    function normalizeTrackedTournament(raw) {
+      const toId = String(raw?.to_id || raw?.toId || '').trim();
+      const name = String(raw?.name || '').trim();
+      const detailsUrl = String(raw?.details_url || raw?.detailsUrl || '').trim();
+      const icUrl = normalizeIcUrl(raw?.ic_url || raw?.icUrl || '');
+      const enaUrl = String(raw?.ena_url || raw?.enaUrl || '').trim();
+      const id = String(raw?.id || toId || detailsUrl || icUrl || name || ('manual-' + Date.now())).trim();
+      const entriesRaw = Array.isArray(raw?.club_entries) ? raw.club_entries : (Array.isArray(raw?.seynod_entries) ? raw.seynod_entries : []);
+      const entries = entriesRaw.map(e => ({
+        name: String(e?.name || '').trim(),
+        club: String(e?.club || '').trim(),
+        category: String(e?.category || e?.session || '').trim(),
+        session: String(e?.session || '').trim(),
+        target: String(e?.target || '').trim()
+      }));
+      return {
+        id,
+        to_id: toId,
+        year: String(raw?.year || '').trim(),
+        name: name || `Compétition ${toId || ''}`.trim(),
+        organizer: String(raw?.organizer || '').trim(),
+        date_text: String(raw?.date_text || raw?.dateText || '').trim(),
+        end_date: String(raw?.end_date || raw?.endDate || '').trim(),
+        details_url: detailsUrl,
+        ena_url: enaUrl,
+        ic_url: icUrl || '',
+        club_entries: entries,
+        selected_at_utc: String(raw?.selected_at_utc || new Date().toISOString())
+      };
+    }
+
+    function syncTrackedIcUrlsFromTrackedTournaments() {
+      trackedIcUrls = Array.from(new Set(
+        trackedTournaments
+          .map(t => normalizeIcUrl(t.ic_url))
+          .filter(Boolean)
+      ));
+      localStorage.setItem(TRACKED_IC_URLS_STORAGE_KEY, JSON.stringify(trackedIcUrls));
+    }
+
+    function loadTrackedTournaments() {
+      trackedTournaments = [];
+      try {
+        const raw = localStorage.getItem(TRACKED_TOURNAMENTS_STORAGE_KEY);
+        const arr = raw ? JSON.parse(raw) : [];
+        if (Array.isArray(arr)) {
+          trackedTournaments = arr.map(normalizeTrackedTournament).filter(t => t.id);
+        }
+      } catch (_) {}
+
+      if (!trackedTournaments.length) {
+        try {
+          const oldRaw = localStorage.getItem(TRACKED_IC_URLS_STORAGE_KEY);
+          const oldArr = oldRaw ? JSON.parse(oldRaw) : [];
+          if (Array.isArray(oldArr)) {
+            trackedTournaments = oldArr
+              .map(normalizeIcUrl)
+              .filter(Boolean)
+              .map((url, idx) => normalizeTrackedTournament({
+                id: `legacy-${idx + 1}-${url}`,
+                name: `Tournoi suivi ${idx + 1}`,
+                ic_url: url,
+                details_url: url.replace(/\/IC\.php.*$/i, '/Details.php')
+              }));
+          }
+        } catch (_) {}
+      }
+      syncTrackedIcUrlsFromTrackedTournaments();
+    }
+
+    function saveTrackedTournaments() {
+      localStorage.setItem(TRACKED_TOURNAMENTS_STORAGE_KEY, JSON.stringify(trackedTournaments));
+      syncTrackedIcUrlsFromTrackedTournaments();
+      renderTrackedTournamentsList();
+    }
+
+    function addTrackedTournament(rawTournament) {
+      const t = normalizeTrackedTournament(rawTournament);
+      if (!t.id) return false;
+
+      const index = trackedTournaments.findIndex(x =>
+        (t.to_id && x.to_id && x.to_id === t.to_id) ||
+        (t.ic_url && x.ic_url && x.ic_url === t.ic_url) ||
+        x.id === t.id
+      );
+
+      if (index >= 0) {
+        trackedTournaments[index] = {
+          ...trackedTournaments[index],
+          ...t,
+          club_entries: t.club_entries.length ? t.club_entries : trackedTournaments[index].club_entries
+        };
+      } else {
+        trackedTournaments.push(t);
+      }
+      saveTrackedTournaments();
+      return true;
+    }
+
+    function removeTrackedTournament(id) {
+      trackedTournaments = trackedTournaments.filter(t => t.id !== id);
+      saveTrackedTournaments();
+      renderNextParticipantsPanel(lastNextCompetitionData || { found: false });
+    }
+
+    function clearTrackedTournaments() {
+      trackedTournaments = [];
+      saveTrackedTournaments();
+      renderNextParticipantsPanel(lastNextCompetitionData || { found: false });
+    }
+
+    function renderAdminSearchCompetitionOptions() {
+      const select = el('adminSearchCompetitionSelect');
+      if (!select) return;
+      if (!nextCompetitionMatches.length) {
+        select.innerHTML = '<option value="">Aucune compétition trouvée</option>';
+        select.disabled = true;
+        return;
+      }
+      select.disabled = false;
+      select.innerHTML = nextCompetitionMatches.map(m => {
+        const c = (m.club_entries || m.seynod_entries || []).length;
+        const id = String(m.to_id || '');
+        return `<option value="${escapeHtml(id)}">${escapeHtml(m.name || 'Compétition')} (${escapeHtml(m.date_text || '')} · ${c} inscrit${c > 1 ? 's' : ''})</option>`;
+      }).join('');
+      if (!selectedNextCompetitionId || !nextCompetitionMatches.some(m => String(m.to_id) === selectedNextCompetitionId)) {
+        selectedNextCompetitionId = String(nextCompetitionMatches[0].to_id || '');
+      }
+      select.value = selectedNextCompetitionId;
+    }
+
+    function renderTrackedTournamentsList() {
+      const box = el('trackedTournamentsList');
+      if (!box) return;
+      if (!trackedTournaments.length) {
+        box.innerHTML = '<div class="mini">Aucun tournoi suivi. Cherche une compétition puis clique "Suivre cette compétition".</div>';
+        return;
+      }
+      box.innerHTML = trackedTournaments.map((t, i) => {
+        const entriesCount = (t.club_entries || []).length;
+        const links = [
+          t.details_url ? `<a class="btn small secondary" href="${t.details_url}" target="_blank" rel="noopener">Fiche IANSEO</a>` : '',
+          t.ena_url ? `<a class="btn small secondary" href="${t.ena_url}" target="_blank" rel="noopener">ENA</a>` : '',
+          t.ic_url ? `<a class="btn small secondary" href="${t.ic_url}" target="_blank" rel="noopener">IC</a>` : '<span class="mini">IC non publié</span>'
+        ].filter(Boolean).join(' ');
+        return `
+          <div class="row" style="margin-top:8px;align-items:center;justify-content:space-between;">
+            <div>
+              <div><strong>${i + 1}. ${escapeHtml(t.name)}</strong> <span class="mini">(${escapeHtml(t.date_text || 'date inconnue')})</span></div>
+              <div class="mini">${entriesCount} inscrit(s) · ${t.to_id ? `toId: ${escapeHtml(t.to_id)}` : 'manuel'}</div>
+              <div class="row" style="margin-top:6px;">${links}</div>
+            </div>
+            <button class="btn small secondary" data-remove-tracked="${escapeHtml(t.id)}">Retirer</button>
+          </div>
+        `;
+      }).join('');
+      box.querySelectorAll('[data-remove-tracked]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-remove-tracked') || '';
+          removeTrackedTournament(id);
+        });
+      });
+    }
+
+    function renderTrackedUpcomingGrid() {
+      const grid = el('trackedUpcomingGrid');
+      if (!grid) return;
+      if (!trackedTournaments.length) {
+        grid.innerHTML = '<div class="tracked-card"><div class="mini">Aucun tournoi choisi. Va dans Admin > Tournois puis clique "Suivre cette compétition".</div></div>';
+        return;
+      }
+      grid.innerHTML = trackedTournaments.map(t => {
+        const entries = Array.isArray(t.club_entries) ? t.club_entries : [];
+        const rows = entries.length
+          ? entries.map(e => `
+              <tr>
+                <td>${escapeHtml(e.name || '')}</td>
+                <td>${escapeHtml(e.club || '')}</td>
+                <td>${escapeHtml(e.session || e.category || '')}</td>
+                <td>${escapeHtml(e.target || '')}</td>
+              </tr>
+            `).join('')
+          : '<tr><td colspan="4">Participants non disponibles pour ce tournoi.</td></tr>';
+        const links = [
+          t.details_url ? `<a class="btn small secondary" href="${t.details_url}" target="_blank" rel="noopener">Ouvrir fiche IANSEO</a>` : '',
+          t.ena_url ? `<a class="btn small secondary" href="${t.ena_url}" target="_blank" rel="noopener">Ouvrir ENA</a>` : '',
+          t.ic_url ? `<a class="btn small secondary" href="${t.ic_url}" target="_blank" rel="noopener">Ouvrir IC</a>` : ''
+        ].filter(Boolean).join('');
+        return `
+          <article class="tracked-card">
+            <h3 style="margin:0 0 6px;">${escapeHtml(t.name)}</h3>
+            <div class="mini">${escapeHtml(t.date_text || 'Date non renseignée')} · ${entries.length} inscrit(s)</div>
+            <div class="row" style="margin-top:8px;">${links}</div>
+            <div style="overflow:auto;margin-top:8px;">
+              <table>
+                <thead><tr><th>Archer</th><th>Club</th><th>Catégorie</th><th>Départ</th></tr></thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+            ${adminMode ? `<div class="row" style="margin-top:8px;"><button class="btn small secondary" data-remove-tracked-public="${escapeHtml(t.id)}">Ne plus suivre</button></div>` : ''}
+          </article>
+        `;
+      }).join('');
+      grid.querySelectorAll('[data-remove-tracked-public]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-remove-tracked-public') || '';
+          removeTrackedTournament(id);
+          setAdminResult('Tournoi retiré du suivi.');
+        });
+      });
+    }
+
     function renderNextParticipantsPanel(data) {
       const card = el('nextParticipantsCard');
       const meta = el('nextCompetitionMeta');
-      const tbody = el('nextParticipantsBody');
-      const details = el('nextCompetitionDetailsLink');
-      const ena = el('nextCompetitionENALink');
-      const select = el('nextCompetitionSelect');
-      const selectLabel = el('nextCompetitionSelectLabel');
-      const followBtn = el('followSelectedNextCompetitionBtn');
-      if (!card || !meta || !tbody || !details || !ena || !select || !selectLabel || !followBtn) return;
+      if (!card || !meta) return;
 
-      if (!data || !data.found || !data.next_competition) {
-        card.classList.remove('hidden');
-        const usedKeywords = Array.isArray(data?.keywords) && data.keywords.length ? data.keywords.join(', ') : 'non renseigné';
-        const checked = Number.isFinite(Number(data?.checked_candidates)) ? Number(data.checked_candidates) : 0;
-        meta.innerHTML = `<strong>Aucune prochaine compétition trouvée</strong> · mots-clés: ${escapeHtml(usedKeywords)} · candidats vérifiés: ${checked}`;
-        tbody.innerHTML = '<tr><td colspan="4">Aucun participant détecté pour le moment. Clique sur "Chercher prochaine compétition".</td></tr>';
-        select.classList.add('hidden');
-        selectLabel.classList.add('hidden');
-        followBtn.classList.add('hidden');
-        details.href = '#';
-        details.style.pointerEvents = 'none';
-        details.style.opacity = '.6';
-        ena.classList.add('hidden');
-        updateCompetitionPhase(lastGoodData || { competitions: [] });
-        return;
+      if (data && data.found && data.next_competition) {
+        const matches = Array.isArray(data.matches) && data.matches.length ? data.matches : [data.next_competition];
+        nextCompetitionMatches = matches;
+        if (!selectedNextCompetitionId || !nextCompetitionMatches.some(m => String(m.to_id) === selectedNextCompetitionId)) {
+          selectedNextCompetitionId = String(nextCompetitionMatches[0]?.to_id || '');
+        }
+      } else if (data && data.found === false) {
+        nextCompetitionMatches = [];
+        selectedNextCompetitionId = '';
       }
 
-      const matches = Array.isArray(data.matches) && data.matches.length ? data.matches : [data.next_competition];
-      nextCompetitionMatches = matches;
-      if (!selectedNextCompetitionId || !nextCompetitionMatches.some(m => String(m.to_id) === selectedNextCompetitionId)) {
-        selectedNextCompetitionId = String(nextCompetitionMatches[0]?.to_id || '');
-      }
-      const next = nextCompetitionMatches.find(m => String(m.to_id) === selectedNextCompetitionId) || nextCompetitionMatches[0];
-      const entries = (next?.club_entries || next?.seynod_entries || []);
-
-      if (!select.dataset.bound) {
-        select.addEventListener('change', () => {
-          selectedNextCompetitionId = select.value || '';
-          renderNextParticipantsPanel({ found: true, next_competition: nextCompetitionMatches[0], matches: nextCompetitionMatches });
-        });
-        select.dataset.bound = '1';
-      }
-
-      if (matches.length > 1) {
-        selectLabel.classList.remove('hidden');
-        select.classList.remove('hidden');
-        select.innerHTML = matches.map(m => {
-          const c = (m.club_entries || m.seynod_entries || []).length;
-          return `<option value="${escapeHtml(String(m.to_id || ''))}">${escapeHtml(m.name || 'Compétition')} (${escapeHtml(m.date_text || '')} · ${c} inscrit${c > 1 ? 's' : ''})</option>`;
-        }).join('');
-        select.value = selectedNextCompetitionId;
-      } else {
-        select.classList.add('hidden');
-        selectLabel.classList.add('hidden');
-      }
-      if (adminMode) {
-        followBtn.classList.remove('hidden');
-      } else {
-        followBtn.classList.add('hidden');
-      }
-
+      renderAdminSearchCompetitionOptions();
+      renderTrackedTournamentsList();
+      renderTrackedUpcomingGrid();
       card.classList.remove('hidden');
-      meta.innerHTML =
-        `<strong>${escapeHtml(next.name || 'Compétition')}</strong> · ${escapeHtml(next.date_text || '')}` +
-        ` · ${entries.length} inscrit(s) · ${matches.length} concours trouvé(s)`;
 
-      details.href = next.details_url || '#';
-      details.style.pointerEvents = next.details_url ? 'auto' : 'none';
-      details.style.opacity = next.details_url ? '1' : '.6';
-
-      if (next.ena_url) {
-        ena.classList.remove('hidden');
-        ena.href = next.ena_url;
+      const checked = Number.isFinite(Number(data?.checked_candidates)) ? Number(data.checked_candidates) : 0;
+      if (trackedTournaments.length > 0) {
+        meta.innerHTML = `<strong>${trackedTournaments.length} tournoi(x) suivi(s)</strong> · Club: ${escapeHtml(getClubDisplayName())}`;
+      } else if (nextCompetitionMatches.length > 0) {
+        meta.innerHTML = `Aucun tournoi encore sélectionné · ${nextCompetitionMatches.length} tournoi(x) trouvé(s) · candidats vérifiés: ${checked}`;
       } else {
-        ena.classList.add('hidden');
+        const usedKeywords = Array.isArray(data?.keywords) && data.keywords.length ? data.keywords.join(', ') : getClubDisplayName();
+        meta.innerHTML = `Aucun prochain tournoi suivi · mots-clés: ${escapeHtml(usedKeywords)} · candidats vérifiés: ${checked}`;
       }
-
-      if (!entries.length) {
-        tbody.innerHTML = '<tr><td colspan="4">Aucun inscrit trouvé pour ce club.</td></tr>';
-        updateCompetitionPhase(lastGoodData || { competitions: [] });
-        return;
-      }
-
-      tbody.innerHTML = entries.map(e => `
-        <tr>
-          <td>${escapeHtml(e.name || '')}</td>
-          <td>${escapeHtml(e.club || '')}</td>
-          <td>${escapeHtml(e.session || e.category || '')}</td>
-          <td>${escapeHtml(e.target || '')}</td>
-        </tr>
-      `).join('');
       updateCompetitionPhase(lastGoodData || { competitions: [] });
     }
 
@@ -721,6 +880,19 @@
 
       const btn = el('findNextCompetitionBtn');
       if (btn) btn.textContent = `Chercher prochaine compétition ${getClubDisplayName()}`;
+    }
+
+    function setAdminTab(tabName) {
+      const clubBtn = el('adminTabClubBtn');
+      const tourBtn = el('adminTabTournamentsBtn');
+      const clubPane = el('adminTabClubPane');
+      const tourPane = el('adminTabTournamentsPane');
+      if (!clubBtn || !tourBtn || !clubPane || !tourPane) return;
+      const clubActive = tabName !== 'tournois';
+      clubBtn.classList.toggle('active', clubActive);
+      tourBtn.classList.toggle('active', !clubActive);
+      clubPane.classList.toggle('hidden', !clubActive);
+      tourPane.classList.toggle('hidden', clubActive);
     }
 
     function loadClubFilter() {
@@ -837,68 +1009,22 @@
       return v;
     }
 
-    function loadTrackedIcUrls() {
-      trackedIcUrls = [];
-      try {
-        const raw = localStorage.getItem(TRACKED_IC_URLS_STORAGE_KEY);
-        if (!raw) return;
-        const arr = JSON.parse(raw);
-        if (!Array.isArray(arr)) return;
-        trackedIcUrls = arr.map(normalizeIcUrl).filter(Boolean);
-      } catch (_) {}
-    }
-
-    function saveTrackedIcUrls() {
-      localStorage.setItem(TRACKED_IC_URLS_STORAGE_KEY, JSON.stringify(trackedIcUrls));
-      renderTrackedTournamentsList();
-    }
-
-    function addTrackedIcUrl(url) {
-      const clean = normalizeIcUrl(url);
-      if (!clean) return false;
-      if (trackedIcUrls.includes(clean)) return true;
-      trackedIcUrls.push(clean);
-      saveTrackedIcUrls();
-      return true;
-    }
-
-    function removeTrackedIcUrl(url) {
-      trackedIcUrls = trackedIcUrls.filter(u => u !== url);
-      saveTrackedIcUrls();
-    }
-
-    function clearTrackedIcUrls() {
-      trackedIcUrls = [];
-      saveTrackedIcUrls();
-    }
-
-    function renderTrackedTournamentsList() {
-      const box = el('trackedTournamentsList');
-      if (!box) return;
-      if (!trackedIcUrls.length) {
-        box.innerHTML = '<div class="mini">Aucun tournoi suivi. Ajoute un tournoi détecté ou une URL IC.</div>';
-        return;
-      }
-      box.innerHTML = trackedIcUrls.map((u, i) =>
-        `<div class="row" style="margin-top:6px;"><span class="chip">${i + 1}. ${escapeHtml(u)}</span><button class="btn small secondary" data-remove-ic="${escapeHtml(u)}">Retirer</button></div>`
-      ).join('');
-      box.querySelectorAll('[data-remove-ic]').forEach(btn => {
-        btn.addEventListener('click', () => removeTrackedIcUrl(btn.getAttribute('data-remove-ic') || ''));
-      });
-    }
-
     async function followSelectedNextCompetition() {
       const selected = nextCompetitionMatches.find(m => String(m.to_id) === selectedNextCompetitionId) || nextCompetitionMatches[0];
-      const ic = String(selected?.ic_url || '').trim();
-      if (!ic) {
-        setAdminResult('Cette compétition n’a pas encore de lien IC publié. Réessaie plus tard.');
+      if (!selected) {
+        setAdminResult('Aucune compétition sélectionnée.');
         return false;
       }
-      if (!addTrackedIcUrl(ic)) {
+
+      if (!addTrackedTournament({ ...selected, id: String(selected.to_id || selected.details_url || selected.name || '') })) {
         setAdminResult('Impossible d’ajouter cette compétition au suivi.');
         return false;
       }
-      setAdminResult(`Compétition suivie ajoutée : <strong>${escapeHtml(selected?.name || 'Compétition')}</strong>.`);
+      renderNextParticipantsPanel(lastNextCompetitionData || { found: true, next_competition: selected, matches: nextCompetitionMatches });
+      setAdminResult(
+        `Compétition suivie ajoutée : <strong>${escapeHtml(selected?.name || 'Compétition')}</strong>. ` +
+        (selected.ic_url ? 'Lien IC disponible pour le live.' : 'Lien IC pas encore publié: le live basculera dès qu’il sera disponible.')
+      );
       await refresh();
       return true;
     }
@@ -1307,7 +1433,7 @@
       const finished = archers.filter(a => a.finished).length;
       const live = archers.filter(a => !a.finished).length;
       const selected = getCurrentCompetition(data);
-      const followedCount = trackedIcUrls.length > 0 ? trackedIcUrls.length : data.competitions.length;
+      const followedCount = trackedTournaments.length > 0 ? trackedTournaments.length : data.competitions.length;
 
       el('countCompetitions').textContent = followedCount;
       el('countTotal').textContent = archers.length;
@@ -1333,7 +1459,7 @@
       const archers = data?.competitions ? getCurrentArchers(data) : [];
       const hasLive = archers.some(a => !a.finished);
       const hasAny = archers.length > 0;
-      const hasNext = !!(lastNextCompetitionData && lastNextCompetitionData.found && lastNextCompetitionData.next_competition);
+      const hasNext = trackedTournaments.length > 0 || !!(lastNextCompetitionData && lastNextCompetitionData.found && lastNextCompetitionData.next_competition);
 
       if (hasLive) {
         if (liveSection) liveSection.classList.remove('hidden');
@@ -1572,7 +1698,7 @@
     async function initPage() {
       loadClubFilter();
       loadCountryCode();
-      loadTrackedIcUrls();
+      loadTrackedTournaments();
       await loadAdminConfig();
       await resolveAdminMode();
 
@@ -1588,7 +1714,10 @@
         const countryInput = el('countryCodeInput');
         if (clubInput) clubInput.value = trackedClubRaw;
         if (countryInput) countryInput.value = trackedCountryCode;
+        setAdminTab('club');
         renderTrackedTournamentsList();
+        el('adminTabClubBtn').addEventListener('click', () => setAdminTab('club'));
+        el('adminTabTournamentsBtn').addEventListener('click', () => setAdminTab('tournois'));
         el('applyClubFilterBtn').addEventListener('click', () => {
           const input = el('clubFilterInput');
           const countryRaw = countryInput ? countryInput.value : '';
@@ -1607,28 +1736,26 @@
             render(lastGoodData, true);
           }
         });
-        el('addCurrentTournamentBtn').addEventListener('click', async () => {
-          const ic = String(lastNextCompetitionData?.next_competition?.ic_url || '').trim();
-          if (!ic) {
-            setAdminResult('Ce tournoi n’a pas encore de lien IC publié. Réessaie plus tard.');
-            return;
-          }
-          addTrackedIcUrl(ic);
-          setAdminResult('Tournoi ajouté au suivi multi-tournois.');
-          await refresh();
-        });
         el('clearTrackedTournamentsBtn').addEventListener('click', async () => {
-          clearTrackedIcUrls();
+          clearTrackedTournaments();
           setAdminResult('Liste des tournois suivis vidée.');
           await refresh();
         });
         el('addManualIcBtn').addEventListener('click', async () => {
           const input = el('manualIcUrlInput');
           const url = input ? input.value : '';
-          if (!addTrackedIcUrl(url)) {
+          const clean = normalizeIcUrl(url);
+          if (!clean) {
             setAdminResult('URL IC invalide. Format attendu: https://.../IC.php');
             return;
           }
+          addTrackedTournament({
+            id: `manual-${Date.now()}`,
+            name: `Tournoi manuel ${new Date().toLocaleDateString('fr-FR')}`,
+            date_text: 'manuel',
+            ic_url: clean,
+            details_url: clean.replace(/\/IC\.php.*$/i, '/Details.php')
+          });
           if (input) input.value = '';
           setAdminResult('URL IC ajoutée au suivi.');
           await refresh();
@@ -1636,14 +1763,21 @@
         el('followSelectedNextCompetitionBtn').addEventListener('click', async () => {
           await followSelectedNextCompetition();
         });
-        el('copyClubKeywordsBtn').addEventListener('click', async () => {
-          const ok = await copyClubKeywords();
-          setAdminResult(
-            ok
-              ? `Valeur club copiée : <code>${escapeHtml(trackedClubRaw)}</code>.`
-              : `Copie impossible automatiquement. Valeur à coller manuellement : <code>${escapeHtml(trackedClubRaw)}</code>.`
-          );
-        });
+        const adminSelect = el('adminSearchCompetitionSelect');
+        if (adminSelect) {
+          adminSelect.addEventListener('change', () => {
+            selectedNextCompetitionId = adminSelect.value || '';
+          });
+          renderAdminSearchCompetitionOptions();
+        }
+        const manualInput = el('manualIcUrlInput');
+        if (manualInput) {
+          manualInput.addEventListener('keydown', (evt) => {
+            if (evt.key !== 'Enter') return;
+            evt.preventDefault();
+            el('addManualIcBtn').click();
+          });
+        }
         if (clubInput) {
           clubInput.addEventListener('keydown', (evt) => {
             if (evt.key !== 'Enter') return;
