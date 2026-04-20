@@ -69,6 +69,16 @@
     .volley-muted{color:var(--muted);font-size:13px}
     .volley-chart{width:100%;height:220px;border:1px solid var(--border);border-radius:12px;background:rgba(15,23,42,.55)}
     .volley-legend{margin-top:8px;color:var(--muted);font-size:12px}
+    .presentation-example{margin-top:14px;padding:12px;border:1px dashed rgba(148,163,184,.35);border-radius:14px;background:rgba(255,255,255,.02)}
+    .presentation-example h4{margin:0 0 8px;font-size:15px;color:#cbd5e1}
+    .presentation-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+    .presentation-row:last-child{border-bottom:0}
+    .presentation-label{min-width:84px;color:#93c5fd;font-size:12px;font-weight:700;letter-spacing:.02em}
+    .presentation-text{font-size:14px}
+    .presentation-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px}
+    .presentation-pill{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:8px}
+    .presentation-pill .mini{margin-top:4px}
+    @media (max-width:700px){.presentation-summary{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -161,6 +171,7 @@
             <div class="volley-legend">Courbe bleue: volées plausibles. Les mises à jour groupées sont listées à gauche.</div>
           </div>
         </div>
+        <div class="presentation-example" id="moodPresentationExample"></div>
       </section>
 
       <section class="card span12 admin-card hidden" id="adminPanel">
@@ -512,6 +523,62 @@
       renderVolleyChart(history);
     }
 
+    function renderMoodPresentationExample() {
+      const target = el('moodPresentationExample');
+      if (!target) return;
+
+      const sampleRows = [
+        { label: 'Volée 1', score: 52, moodType: null, note: 'Première volée déduite' },
+        { label: 'Volée 2', score: 54, moodType: 'good', note: 'Meilleure que la précédente' },
+        { label: 'Volée 3', score: 54, moodType: 'neutral', note: 'Identique à la précédente' },
+        { label: 'Volée 4', score: 49, moodType: 'bad', note: 'Inférieure à la précédente' },
+        { label: 'Delta 88', score: 88, moodType: null, note: 'Mise à jour groupée' }
+      ];
+
+      const rowsHtml = sampleRows.map(row => {
+        const icon = row.moodType ? renderMoodIcon(row.moodType, 30) : '<span class="volley-muted">—</span>';
+        return `
+          <div class="presentation-row">
+            <div class="presentation-label">${escapeHtml(row.label)}</div>
+            <div class="presentation-text">Score ${escapeHtml(row.score)}</div>
+            ${icon}
+            <div class="volley-muted">${escapeHtml(row.note)}</div>
+          </div>
+        `;
+      }).join('');
+
+      target.innerHTML = `
+        <h4>Exemple de présentation</h4>
+        ${rowsHtml}
+        <div class="presentation-summary">
+          <div class="presentation-pill">
+            <strong>Dernière volée</strong>
+            <div class="mood-inline" style="margin-top:8px;">
+              <span class="volley-last-score" style="font-size:22px;">54</span>
+              ${renderMoodIcon('good', 32)}
+            </div>
+            <div class="mini">Volée fiable</div>
+          </div>
+          <div class="presentation-pill">
+            <strong>Volée égale</strong>
+            <div class="mood-inline" style="margin-top:8px;">
+              <span class="volley-last-score" style="font-size:22px;">54</span>
+              ${renderMoodIcon('neutral', 32)}
+            </div>
+            <div class="mini">Pas de variation</div>
+          </div>
+          <div class="presentation-pill">
+            <strong>Volée en baisse</strong>
+            <div class="mood-inline" style="margin-top:8px;">
+              <span class="volley-last-score" style="font-size:22px;">49</span>
+              ${renderMoodIcon('bad', 32)}
+            </div>
+            <div class="mini">À surveiller</div>
+          </div>
+        </div>
+      `;
+    }
+
 
     function renderRows(targetId, archers, live = false) {
       const tbody = el(targetId);
@@ -728,6 +795,7 @@
     }
 
     updateCompetitionButton();
+    renderMoodPresentationExample();
     refresh();
     refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
     setInterval(updateCountdown, 500);
