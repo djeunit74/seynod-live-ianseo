@@ -1,0 +1,74 @@
+name: Start Club Competition (All-in-One)
+
+on:
+  workflow_dispatch:
+    inputs:
+      club_keywords:
+        description: "Club keywords/ids (comma separated), ex: 0174246,seynod"
+        required: false
+        default: ""
+      country:
+        description: "IANSEO country code, ex: FRA"
+        required: false
+        default: "FRA"
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+jobs:
+  start-competition:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Find next and switch source
+        env:
+          WF_CLUB_KEYWORDS: ${{ github.event.inputs.club_keywords }}
+          WF_COUNTRY: ${{ github.event.inputs.country }}
+          NEXT_KEYWORDS: ${{ vars.IANSEO_CLUB_KEYWORDS }}
+          NEXT_COUNTRY: ${{ vars.IANSEO_COUNTRY }}
+        run: |
+          KEYWORDS="${WF_CLUB_KEYWORDS:-${NEXT_KEYWORDS:-Seynod,0174246}}"
+          COUNTRY="${WF_COUNTRY:-${NEXT_COUNTRY:-FRA}}"
+          python scripts/start_competition.py --keywords "$KEYWORDS" --country "$COUNTRY" --next-output data/next_competition.json --live-output data/live.json --sources-output data/competition_sources.json
+
+      - name: Print outputs
+        run: |
+          echo "=== next_competition.json ==="
+          cat data/next_competition.json
+          echo "=== competition_sources.json ==="
+          cat data/competition_sources.json
+          echo "=== live.json (head) ==="
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("data/live.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          print(json.dumps({
+            "generatedAtUtc": data.get("generatedAtUtc"),
+            "competitions": len(data.get("competitions", [])),
+            "archers": len(data.get("archers", [])),
+            "sourceUrl": data.get("sourceUrl", "")
+          }, ensure_ascii=False))
+          PY
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/next_competition.json data/competition_sources.json data/live.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): start competition all-in-one"
+          git push

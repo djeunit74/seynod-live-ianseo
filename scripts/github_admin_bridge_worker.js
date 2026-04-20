@@ -6,6 +6,7 @@ export default {
     const body = await request.json().catch(() => ({}));
     const action = String(body.action || "");
     const clubKeywords = String(body.club_keywords || "").trim();
+    const country = String(body.country || "").trim();
 
     if (!env.GITHUB_OWNER || !env.GITHUB_REPO || !env.GITHUB_TOKEN) {
       return cors(json({ error: "Missing required env vars" }, 500));
@@ -15,6 +16,7 @@ export default {
     if (action === "find_next") workflowFile = "find-next-competition.yml";
     else if (action === "update_live") workflowFile = "update-live.yml";
     else if (action === "reset_live") workflowFile = "reset-live.yml";
+    else if (action === "start_competition") workflowFile = "start-competition.yml";
     else return cors(json({ error: "Unsupported action" }, 400));
 
     const url = `https://api.github.com/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/actions/workflows/${workflowFile}/dispatches`;
@@ -23,6 +25,7 @@ export default {
       inputs: {}
     };
     if (clubKeywords) payload.inputs.club_keywords = clubKeywords;
+    if (country) payload.inputs.country = country;
 
     const ghRes = await fetch(url, {
       method: "POST",
@@ -40,7 +43,7 @@ export default {
       return cors(json({ ok: false, status: ghRes.status, error: txt.slice(0, 3000) }, 500));
     }
 
-    return cors(json({ ok: true, workflow: workflowFile, club_keywords: clubKeywords || null }, 200));
+    return cors(json({ ok: true, workflow: workflowFile, club_keywords: clubKeywords || null, country: country || null }, 200));
   }
 };
 

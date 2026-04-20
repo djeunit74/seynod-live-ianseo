@@ -22,5 +22,6 @@ Objectif: permettre au bouton Admin de lancer automatiquement les workflows GitH
 ## 3) Utilisation
 - Dans l'Admin:
   - remplir `Club à suivre`
-  - cliquer `Chercher prochaine compétition ...`
-- Si la passerelle est configurée, l'app déclenche automatiquement le workflow et attend le nouveau résultat.
+  - cliquer `Tout en 1 : Démarrer compétition` pour trouver la prochaine compétition et basculer la source live automatiquement
+  - ou cliquer `Chercher prochaine compétition ...` pour une recherche seule
+- Si la passerelle est configurée, l'app déclenche automatiquement les workflows et attend les nouveaux fichiers.

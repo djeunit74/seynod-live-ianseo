@@ -190,6 +190,7 @@
           <button class="btn secondary" id="copyClubKeywordsBtn">Copier club pour workflow</button>
         </div>
         <div class="admin-actions">
+          <a class="btn secondary" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/start-competition.yml" target="_blank" rel="noopener">Ouvrir workflow tout-en-1</a>
           <a class="btn secondary" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/reset-live.yml" target="_blank" rel="noopener">Ouvrir workflow reset</a>
           <a class="btn secondary" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/find-next-competition.yml" target="_blank" rel="noopener">Ouvrir workflow recherche</a>
         </div>
@@ -207,6 +208,7 @@
     const REFRESH_MS = 30000;
     const SOURCE_FRESH_SEC = 95;
     const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
+    const WORKFLOW_START_COMPETITION = 'start-competition.yml';
     const WORKFLOW_UPDATE_LIVE = 'update-live.yml';
     const WORKFLOW_RESET = 'reset-live.yml';
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
@@ -322,6 +324,21 @@
         }
       }
       throw new Error('Timeout: résultat non publié dans next_competition.json');
+    }
+
+    async function waitForLiveUpdate(previousGeneratedAt, timeoutMs = 130000) {
+      const started = Date.now();
+      while (Date.now() - started < timeoutMs) {
+        await new Promise(r => setTimeout(r, 4000));
+        const res = await fetch(API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        const data = await res.json();
+        const currentGeneratedAt = String(data.generatedAtUtc || '');
+        if (!previousGeneratedAt || (currentGeneratedAt && currentGeneratedAt !== previousGeneratedAt)) {
+          lastRawData = data;
+          return data;
+        }
+      }
+      throw new Error('Timeout: live.json non mis à jour');
     }
 
     function renderNextCompetitionResult(data) {
@@ -914,24 +931,32 @@
     }
 
     async function startCompetitionAllInOne() {
-      const copied = await copyClubKeywords();
-      openWorkflowPage(WORKFLOW_UPDATE_LIVE);
       setCompetitionMode(true, 'Mode compétition actif (30s)');
-      await refresh();
-      const age = getSourceAgeSec();
+      const lastNextRes = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+      const lastNextData = await lastNextRes.json();
+      const previousNextGeneratedAt = String(lastNextData.generated_at_utc || '');
 
-      if (age !== null && age <= SOURCE_FRESH_SEC) {
-        setAdminResult(`Mode compétition activé + source fraîche (${age}s). Lancement du workflow live...`);
-      } else {
-        const ageText = age === null ? 'inconnue' : `${age}s`;
-        setAdminResult(
-          `Mode compétition activé, source = ${ageText}.<br>` +
-          `Lancement du workflow live demandé.`
-        );
+      const lastLiveRes = await fetch(API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+      const lastLiveData = await lastLiveRes.json();
+      const previousLiveGeneratedAt = String(lastLiveData.generatedAtUtc || '');
+
+      if (adminBridgeUrl) {
+        setAdminResult(`Démarrage automatique compétition pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
+        await callAdminBridge('start_competition', { club_keywords: trackedClubRaw, country: 'FRA' });
+        const [nextData, liveData] = await Promise.all([
+          waitForNextCompetitionUpdate(previousNextGeneratedAt, 140000),
+          waitForLiveUpdate(previousLiveGeneratedAt, 140000)
+        ]);
+        renderNextCompetitionResult(nextData);
+        render(liveData, true);
+        setAdminResult(el('adminResult').innerHTML + '<br><strong>Source live basculée automatiquement.</strong>');
+        return;
       }
 
+      const copied = await copyClubKeywords();
+      openWorkflowPage(WORKFLOW_START_COMPETITION);
       setAdminResult(
-        `Mode compétition activé. Ouvre "Update IANSEO Live Data", clique "Run workflow", puis renseigne <strong>club_keywords</strong> avec <code>${escapeHtml(trackedClubRaw)}</code>.` +
+        `Mode manuel. Ouvre "Start Club Competition (All-in-One)", clique "Run workflow", puis renseigne <strong>club_keywords</strong> avec <code>${escapeHtml(trackedClubRaw)}</code>.` +
         (copied ? '<br>Valeur copiée dans le presse-papiers.' : '')
       );
     }
