@@ -54,6 +54,7 @@ jobs:
           lines = ["## Next Seynod Competition Result", ""]
           lines.append(f"- Generated: `{data.get('generated_at_utc', '-')}`")
           lines.append(f"- Country: `{data.get('country', '-')}`")
+          lines.append(f"- Keywords: `{', '.join(data.get('keywords', [])) or '-'}`")
           lines.append(f"- Checked candidates: `{data.get('checked_candidates', 0)}`")
 
           if data.get("found") and data.get("next_competition"):
