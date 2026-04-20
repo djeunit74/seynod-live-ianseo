@@ -88,7 +88,7 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="banner">VERSION GITHUB PAGES V18</div>
+    <div class="banner">VERSION GITHUB PAGES V19</div>
     <div class="hero">
       <div>
         <h1>SUIVI LIVE COMPETTE</h1>
@@ -615,8 +615,7 @@
         return;
       }
       try {
-        const res = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
-        const data = await res.json();
+        const data = await findNextCompetitionDirect(trackedClubKeywords, 'FRA');
         lastNextCompetitionData = data;
         nextDataLockUntilMs = 0;
         renderNextParticipantsPanel(data);
