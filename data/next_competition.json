@@ -1,192 +1,93 @@
 {
-  "generated_at_utc": "2026-04-20T19:05:12.903803+00:00",
+  "generated_at_utc": "2026-04-20T19:13:27.844907+00:00",
   "today": "2026-04-20",
   "country": "FRA",
   "keywords": [
-    "0163157",
-    "riom"
+    "0163151 - clermont ferrand cie"
   ],
   "found": true,
   "next_competition": {
-    "to_id": "26028",
+    "to_id": "27216",
     "year": "2026",
-    "name": "Tournoi National Jeune - Sarcelles",
-    "organizer": "A.A.S. Arc Club Sarcelles - FFTA",
-    "date_text": "24-26 Apr",
-    "end_date": "2026-04-26",
-    "details_url": "https://www.ianseo.net/Details.php?toId=26028",
-    "ena_url": "https://www.ianseo.net/TourData/2026/26028/ENA.php",
+    "name": "WIAWIS French Tour 2026 - Etape 2",
+    "organizer": "Cie Archers de Rennes / FFTA",
+    "date_text": "30 May",
+    "end_date": "2026-05-30",
+    "details_url": "https://www.ianseo.net/Details.php?toId=27216",
+    "ena_url": "https://www.ianseo.net/TourData/2026/27216/ENA.php",
     "ic_url": null,
     "club_entries": [
       {
-        "name": "ARTANCE Matheo",
+        "name": "ACHA GONZALEZ Pablo",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Homme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       },
       {
-        "name": "DUWICQUET Maxence",
+        "name": "CHIRAULT Thomas",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U15 Homme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       },
       {
-        "name": "ER'RAHMOUNI Siham",
+        "name": "JACQUEY Clement",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U21 Femme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       },
       {
-        "name": "GERARDIN Arthur",
+        "name": "VAUTRIN Jules",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Homme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       },
       {
-        "name": "HEPP Kylan",
+        "name": "VIALE Romain",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Homme Arc Classique"
-      },
-      {
-        "name": "LAPOUGE Aurane",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Femme Arc Classique"
-      },
-      {
-        "name": "NIZET Maxence",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Homme Arc Classique"
-      },
-      {
-        "name": "PETIT Paul",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U15 Homme Arc Classique"
-      },
-      {
-        "name": "POMARAT Alex",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U21 Homme Arc Classique"
-      },
-      {
-        "name": "ROMAIN Hugo",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U15 Homme Arc Classique"
-      },
-      {
-        "name": "SEYCHAL Lena",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Femme Arc Classique"
-      },
-      {
-        "name": "TERRAT Solea",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Femme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       }
     ],
     "seynod_entries": [
       {
-        "name": "ARTANCE Matheo",
+        "name": "ACHA GONZALEZ Pablo",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Homme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       },
       {
-        "name": "DUWICQUET Maxence",
+        "name": "CHIRAULT Thomas",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U15 Homme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       },
       {
-        "name": "ER'RAHMOUNI Siham",
+        "name": "JACQUEY Clement",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U21 Femme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       },
       {
-        "name": "GERARDIN Arthur",
+        "name": "VAUTRIN Jules",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Homme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       },
       {
-        "name": "HEPP Kylan",
+        "name": "VIALE Romain",
         "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Homme Arc Classique"
-      },
-      {
-        "name": "LAPOUGE Aurane",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Femme Arc Classique"
-      },
-      {
-        "name": "NIZET Maxence",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Homme Arc Classique"
-      },
-      {
-        "name": "PETIT Paul",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U15 Homme Arc Classique"
-      },
-      {
-        "name": "POMARAT Alex",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U21 Homme Arc Classique"
-      },
-      {
-        "name": "ROMAIN Hugo",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U15 Homme Arc Classique"
-      },
-      {
-        "name": "SEYCHAL Lena",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Femme Arc Classique"
-      },
-      {
-        "name": "TERRAT Solea",
-        "target": "",
-        "club": "0163157 - RIOM",
-        "category": "0163157 - RIOM",
-        "session": "U18 Femme Arc Classique"
+        "club": "0163151 - CLERMONT FERRAND CIE",
+        "category": "0163151 - CLERMONT FERRAND CIE",
+        "session": "Scratch Homme Arc Classique"
       }
     ]
   }
