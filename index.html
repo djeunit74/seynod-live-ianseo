@@ -6,7 +6,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <title>Suivi live club Seynod</title>
+  <title>SUIVI LIVE COMPETTE</title>
   <style>
     :root{--bg:#0f172a;--card:#111827;--muted:#94a3b8;--text:#e5e7eb;--ok:#22c55e;--info:#38bdf8;--warn:#f59e0b;--err:#ef4444;--border:rgba(255,255,255,.08);--live:#bfdbfe}
     *{box-sizing:border-box}
@@ -88,11 +88,11 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="banner">VERSION GITHUB PAGES V17</div>
+    <div class="banner">VERSION GITHUB PAGES V18</div>
     <div class="hero">
       <div>
-        <h1>Suivi live club Seynod</h1>
-        <div class="sub">Suivi live des archers de Seynod, prêt pour plusieurs compétitions.</div>
+        <h1>SUIVI LIVE COMPETTE</h1>
+        <div class="sub">Suivi live des archers du club, prêt pour plusieurs compétitions.</div>
       </div>
       <div class="pill">Source : IANSEO (sync auto GitHub)</div>
     </div>
@@ -158,7 +158,7 @@
         </div>
       </section>
 
-      <section class="card span12 next-card hidden" id="nextParticipantsCard">
+      <section class="card span12 next-card" id="nextParticipantsCard">
         <h2 class="sectionTitle">Participants prochaine compétition</h2>
         <div class="mini" id="nextCompetitionMeta">Chargement...</div>
         <div class="row" style="margin-top:8px;">
@@ -561,7 +561,15 @@
       if (!card || !meta || !tbody || !details || !ena) return;
 
       if (!data || !data.found || !data.next_competition) {
-        card.classList.add('hidden');
+        card.classList.remove('hidden');
+        const usedKeywords = Array.isArray(data?.keywords) && data.keywords.length ? data.keywords.join(', ') : 'non renseigné';
+        const checked = Number.isFinite(Number(data?.checked_candidates)) ? Number(data.checked_candidates) : 0;
+        meta.innerHTML = `<strong>Aucune prochaine compétition trouvée</strong> · mots-clés: ${escapeHtml(usedKeywords)} · candidats vérifiés: ${checked}`;
+        tbody.innerHTML = '<tr><td colspan="4">Aucun participant détecté pour le moment. Clique sur "Chercher prochaine compétition".</td></tr>';
+        details.href = '#';
+        details.style.pointerEvents = 'none';
+        details.style.opacity = '.6';
+        ena.classList.add('hidden');
         updateCompetitionPhase(lastGoodData || { competitions: [] });
         return;
       }
@@ -1127,6 +1135,7 @@
       if (liveSection) liveSection.classList.add('hidden');
       if (finishedSection) finishedSection.classList.add('hidden');
       if (volleySection) volleySection.classList.add('hidden');
+      if (nextCard) nextCard.classList.remove('hidden');
       badge.className = 'badge warn';
       badge.textContent = 'Avant compétition';
       help.textContent = 'Renseigne le club puis clique sur "Chercher prochaine compétition".';
