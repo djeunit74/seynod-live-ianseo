@@ -165,6 +165,7 @@
         <div class="row" style="margin-top:8px;">
           <label class="mini" for="nextCompetitionSelect" id="nextCompetitionSelectLabel">Compétition :</label>
           <select id="nextCompetitionSelect" class="btn secondary" style="padding:8px 10px;"></select>
+          <button class="btn secondary small hidden" id="followSelectedNextCompetitionBtn">Suivre cette compétition</button>
         </div>
         <div class="row" style="margin-top:8px;">
           <a class="btn secondary small" id="nextCompetitionDetailsLink" href="#" target="_blank" rel="noopener">Ouvrir la fiche IANSEO</a>
@@ -581,7 +582,8 @@
       const ena = el('nextCompetitionENALink');
       const select = el('nextCompetitionSelect');
       const selectLabel = el('nextCompetitionSelectLabel');
-      if (!card || !meta || !tbody || !details || !ena || !select || !selectLabel) return;
+      const followBtn = el('followSelectedNextCompetitionBtn');
+      if (!card || !meta || !tbody || !details || !ena || !select || !selectLabel || !followBtn) return;
 
       if (!data || !data.found || !data.next_competition) {
         card.classList.remove('hidden');
@@ -591,6 +593,7 @@
         tbody.innerHTML = '<tr><td colspan="4">Aucun participant détecté pour le moment. Clique sur "Chercher prochaine compétition".</td></tr>';
         select.classList.add('hidden');
         selectLabel.classList.add('hidden');
+        followBtn.classList.add('hidden');
         details.href = '#';
         details.style.pointerEvents = 'none';
         details.style.opacity = '.6';
@@ -627,11 +630,16 @@
         select.classList.add('hidden');
         selectLabel.classList.add('hidden');
       }
+      if (adminMode) {
+        followBtn.classList.remove('hidden');
+      } else {
+        followBtn.classList.add('hidden');
+      }
 
       card.classList.remove('hidden');
       meta.innerHTML =
         `<strong>${escapeHtml(next.name || 'Compétition')}</strong> · ${escapeHtml(next.date_text || '')}` +
-        ` · ${entries.length} inscrit(s)`;
+        ` · ${entries.length} inscrit(s) · ${matches.length} concours trouvé(s)`;
 
       details.href = next.details_url || '#';
       details.style.pointerEvents = next.details_url ? 'auto' : 'none';
@@ -877,6 +885,22 @@
       box.querySelectorAll('[data-remove-ic]').forEach(btn => {
         btn.addEventListener('click', () => removeTrackedIcUrl(btn.getAttribute('data-remove-ic') || ''));
       });
+    }
+
+    async function followSelectedNextCompetition() {
+      const selected = nextCompetitionMatches.find(m => String(m.to_id) === selectedNextCompetitionId) || nextCompetitionMatches[0];
+      const ic = String(selected?.ic_url || '').trim();
+      if (!ic) {
+        setAdminResult('Cette compétition n’a pas encore de lien IC publié. Réessaie plus tard.');
+        return false;
+      }
+      if (!addTrackedIcUrl(ic)) {
+        setAdminResult('Impossible d’ajouter cette compétition au suivi.');
+        return false;
+      }
+      setAdminResult(`Compétition suivie ajoutée : <strong>${escapeHtml(selected?.name || 'Compétition')}</strong>.`);
+      await refresh();
+      return true;
     }
 
     function saveClubFilter(raw) {
@@ -1283,8 +1307,9 @@
       const finished = archers.filter(a => a.finished).length;
       const live = archers.filter(a => !a.finished).length;
       const selected = getCurrentCompetition(data);
+      const followedCount = trackedIcUrls.length > 0 ? trackedIcUrls.length : data.competitions.length;
 
-      el('countCompetitions').textContent = data.competitions.length;
+      el('countCompetitions').textContent = followedCount;
       el('countTotal').textContent = archers.length;
       el('countFinished').textContent = finished;
       el('countLive').textContent = live;
@@ -1607,6 +1632,9 @@
           if (input) input.value = '';
           setAdminResult('URL IC ajoutée au suivi.');
           await refresh();
+        });
+        el('followSelectedNextCompetitionBtn').addEventListener('click', async () => {
+          await followSelectedNextCompetition();
         });
         el('copyClubKeywordsBtn').addEventListener('click', async () => {
           const ok = await copyClubKeywords();
