@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-04-20T19:25:13.149734+00:00",
+  "generated_at_utc": "2026-04-20T19:28:09.265671+00:00",
   "today": "2026-04-20",
   "country": "FRA",
   "keywords": [
-    "0163151 - clermont ferrand cie"
+    "0169188 - lyon 8eme"
   ],
   "found": true,
   "next_competition": {
@@ -18,76 +18,76 @@
     "ic_url": null,
     "club_entries": [
       {
-        "name": "ACHA GONZALEZ Pablo",
+        "name": "BEAUDROIT Laurent",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       },
       {
-        "name": "CHIRAULT Thomas",
+        "name": "CLAUDIN Anthony",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       },
       {
-        "name": "JACQUEY Clement",
+        "name": "PAYET Stephane",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       },
       {
-        "name": "VAUTRIN Jules",
+        "name": "ROBERT Mathieu",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       },
       {
-        "name": "VIALE Romain",
+        "name": "VALLEMONT Antoine",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       }
     ],
     "seynod_entries": [
       {
-        "name": "ACHA GONZALEZ Pablo",
+        "name": "BEAUDROIT Laurent",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       },
       {
-        "name": "CHIRAULT Thomas",
+        "name": "CLAUDIN Anthony",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       },
       {
-        "name": "JACQUEY Clement",
+        "name": "PAYET Stephane",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       },
       {
-        "name": "VAUTRIN Jules",
+        "name": "ROBERT Mathieu",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       },
       {
-        "name": "VIALE Romain",
+        "name": "VALLEMONT Antoine",
         "target": "",
-        "club": "0163151 - CLERMONT FERRAND CIE",
-        "category": "0163151 - CLERMONT FERRAND CIE",
-        "session": "Scratch Homme Arc Classique"
+        "club": "0169188 - LYON 8EME",
+        "category": "0169188 - LYON 8EME",
+        "session": "Scratch Homme Arc à Poulies"
       }
     ]
   }
