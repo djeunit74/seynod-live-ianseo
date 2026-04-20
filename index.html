@@ -203,6 +203,7 @@
   <script>
     const API_URL = 'data/live.json';
     const NEXT_API_URL = 'data/next_competition.json';
+    const ADMIN_CONFIG_URL = 'data/admin_config.json';
     const REFRESH_MS = 30000;
     const SOURCE_FRESH_SEC = 95;
     const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
@@ -225,6 +226,7 @@
     let selectedCompetitionId = 'all';
     let trackedClubRaw = DEFAULT_TRACKED_CLUB;
     let trackedClubKeywords = [];
+    let adminBridgeUrl = '';
     let selectedVolleyArcherKey = '';
     const archerVolleyState = {};
     const volleyArcherIndex = {};
@@ -281,6 +283,66 @@
     function openWorkflowPage(workflowFile) {
       const url = `https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/${workflowFile}`;
       window.open(url, '_blank', 'noopener');
+    }
+
+    async function loadAdminConfig() {
+      adminBridgeUrl = '';
+      try {
+        const res = await fetch(ADMIN_CONFIG_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) return;
+        const cfg = await res.json();
+        const raw = String(cfg?.adminBridgeUrl || '').trim();
+        if (raw && /^https?:\/\//i.test(raw)) adminBridgeUrl = raw;
+      } catch (_) {}
+    }
+
+    async function callAdminBridge(action, payload = {}) {
+      if (!adminBridgeUrl) throw new Error('Passerelle admin non configurée.');
+      const res = await fetch(adminBridgeUrl, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ action, ...payload })
+      });
+      if (!res.ok) {
+        const txt = await res.text().catch(() => '');
+        throw new Error(`Bridge HTTP ${res.status}${txt ? ': ' + txt.slice(0, 180) : ''}`);
+      }
+      return res.json().catch(() => ({}));
+    }
+
+    async function waitForNextCompetitionUpdate(previousGeneratedAt, timeoutMs = 130000) {
+      const started = Date.now();
+      while (Date.now() - started < timeoutMs) {
+        await new Promise(r => setTimeout(r, 4000));
+        const res = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        const data = await res.json();
+        const currentGeneratedAt = String(data.generated_at_utc || '');
+        if (!previousGeneratedAt || (currentGeneratedAt && currentGeneratedAt !== previousGeneratedAt)) {
+          return data;
+        }
+      }
+      throw new Error('Timeout: résultat non publié dans next_competition.json');
+    }
+
+    function renderNextCompetitionResult(data) {
+      if (!data.found || !data.next_competition) {
+        const msg = data.message || 'Aucune compétition future trouvée.';
+        setAdminResult(escapeHtml(msg) + '<br>Tu peux relancer la recherche via le workflow.');
+        return;
+      }
+
+      const next = data.next_competition;
+      const entries = (next.seynod_entries || []).map(e => `${escapeHtml(e.name)} (${escapeHtml(e.category)})`).slice(0, 12);
+      const names = entries.length ? entries.join('<br>') : 'Inscrits détectés (détails indisponibles).';
+      const ic = next.ic_url ? `<a href="${next.ic_url}" target="_blank" rel="noopener">Ouvrir IC</a>` : '';
+      const ena = next.ena_url ? `<a href="${next.ena_url}" target="_blank" rel="noopener">Ouvrir ENA</a>` : '';
+
+      setAdminResult(
+        `<strong>Prochaine compétition détectée :</strong> ${escapeHtml(next.name)} (${escapeHtml(next.date_text)})<br>` +
+        `Organisateur: ${escapeHtml(next.organizer)}<br>` +
+        `Tournoi: <a href="${next.details_url}" target="_blank" rel="noopener">Details IANSEO</a> ${ic} ${ena}<br><br>` +
+        `<strong>Archers ${escapeHtml(getClubDisplayName())} inscrits:</strong><br>${names}`
+      );
     }
 
     async function copyClubKeywords() {
@@ -885,34 +947,26 @@
 
     async function findNextCompetition() {
       try {
-        const copied = await copyClubKeywords();
-        openWorkflowPage(WORKFLOW_FIND_NEXT);
-        setAdminResult(
-          `Ouvre "Find Next Seynod Competition", clique "Run workflow", puis renseigne <strong>club_keywords</strong> avec <code>${escapeHtml(trackedClubRaw)}</code>.` +
-          (copied ? '<br>Valeur copiée dans le presse-papiers.' : '') +
-          '<br>Lecture du dernier résultat disponible...'
-        );
-        const res = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
-        const data = await res.json();
+        const lastRes = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        const lastData = await lastRes.json();
+        const previousGeneratedAt = String(lastData.generated_at_utc || '');
 
-        if (!data.found || !data.next_competition) {
-          const msg = data.message || 'Aucune compétition future trouvée.';
-          setAdminResult(escapeHtml(msg) + '<br>Tu peux relancer la recherche via le workflow.');
+        if (adminBridgeUrl) {
+          setAdminResult(`Recherche automatique lancée pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
+          await callAdminBridge('find_next', { club_keywords: trackedClubRaw });
+          const updated = await waitForNextCompetitionUpdate(previousGeneratedAt, 130000);
+          renderNextCompetitionResult(updated);
           return;
         }
 
-        const next = data.next_competition;
-        const entries = (next.seynod_entries || []).map(e => `${escapeHtml(e.name)} (${escapeHtml(e.category)})`).slice(0, 12);
-        const names = entries.length ? entries.join('<br>') : 'Inscrits détectés (détails indisponibles).';
-        const ic = next.ic_url ? `<a href="${next.ic_url}" target="_blank" rel="noopener">Ouvrir IC</a>` : '';
-        const ena = next.ena_url ? `<a href="${next.ena_url}" target="_blank" rel="noopener">Ouvrir ENA</a>` : '';
-
+        const copied = await copyClubKeywords();
+        openWorkflowPage(WORKFLOW_FIND_NEXT);
         setAdminResult(
-          `<strong>Prochaine compétition détectée :</strong> ${escapeHtml(next.name)} (${escapeHtml(next.date_text)})<br>` +
-          `Organisateur: ${escapeHtml(next.organizer)}<br>` +
-          `Tournoi: <a href="${next.details_url}" target="_blank" rel="noopener">Details IANSEO</a> ${ic} ${ena}<br><br>` +
-          `<strong>Archers ${escapeHtml(getClubDisplayName())} inscrits:</strong><br>${names}`
+          `Mode manuel. Ouvre "Find Next Seynod Competition", clique "Run workflow", puis renseigne <strong>club_keywords</strong> avec <code>${escapeHtml(trackedClubRaw)}</code>.` +
+          (copied ? '<br>Valeur copiée dans le presse-papiers.' : '') +
+          '<br>Lecture du dernier résultat disponible...'
         );
+        renderNextCompetitionResult(lastData);
       } catch (err) {
         setAdminResult('Erreur de lecture du fichier next_competition.json: ' + escapeHtml(err.message));
       }
@@ -920,6 +974,7 @@
 
     async function initPage() {
       loadClubFilter();
+      await loadAdminConfig();
       await resolveAdminMode();
 
       el('refreshBtn').addEventListener('click', refresh);
@@ -929,6 +984,11 @@
         el('toggleCompetitionBtn').classList.remove('hidden');
         el('moodPresentationExample').classList.remove('hidden');
         renderMoodPresentationExample();
+        setAdminResult(
+          adminBridgeUrl
+            ? 'Mode admin actif. Détection automatique activée.'
+            : 'Mode admin actif. Détection en mode manuel (workflow).'
+        );
         const clubInput = el('clubFilterInput');
         if (clubInput) clubInput.value = trackedClubRaw;
         el('applyClubFilterBtn').addEventListener('click', () => {
