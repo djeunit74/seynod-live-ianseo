@@ -32,6 +32,50 @@ jobs:
           COUNTRY="${NEXT_COUNTRY:-FRA}"
           python scripts/find_next_competition.py --keywords "$KEYWORDS" --country "$COUNTRY" --output data/next_competition.json
 
+      - name: Print result JSON
+        run: cat data/next_competition.json
+
+      - name: Add human summary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          p = Path("data/next_competition.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          out = Path(__import__("os").environ["GITHUB_STEP_SUMMARY"])
+
+          lines = ["## Next Seynod Competition Result", ""]
+          lines.append(f"- Generated: `{data.get('generated_at_utc', '-')}`")
+          lines.append(f"- Country: `{data.get('country', '-')}`")
+          lines.append(f"- Checked candidates: `{data.get('checked_candidates', 0)}`")
+
+          if data.get("found") and data.get("next_competition"):
+            comp = data["next_competition"]
+            lines.append("")
+            lines.append("### Found")
+            lines.append(f"- Name: **{comp.get('name', '-')}**")
+            lines.append(f"- Date: `{comp.get('date_text', '-')}`")
+            lines.append(f"- Organizer: `{comp.get('organizer', '-')}`")
+            lines.append(f"- Details: {comp.get('details_url', '-')}")
+            lines.append(f"- IC: {comp.get('ic_url', '-')}")
+            lines.append(f"- ENA: {comp.get('ena_url', '-')}")
+            entries = comp.get("seynod_entries", [])
+            lines.append(f"- Seynod entries: `{len(entries)}`")
+            if entries:
+              lines.append("")
+              lines.append("| Archer | Category |")
+              lines.append("|---|---|")
+              for e in entries[:30]:
+                lines.append(f"| {e.get('name', '-')} | {e.get('category', '-')} |")
+          else:
+            lines.append("")
+            lines.append("### Not found")
+            lines.append(f"- Message: {data.get('message', 'No message')}")
+
+          out.write_text("\n".join(lines) + "\n", encoding="utf-8")
+          PY
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
