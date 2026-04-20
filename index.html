@@ -82,6 +82,7 @@
     .presentation-pill{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:8px}
     .presentation-pill .mini{margin-top:4px}
     @media (max-width:700px){.presentation-summary{grid-template-columns:1fr}}
+    .next-card{border:1px solid rgba(34,197,94,.35);background:rgba(16,185,129,.05)}
   </style>
 </head>
 <body>
@@ -148,6 +149,23 @@
               <tr><th>Lieu</th><th>Archer</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr>
             </thead>
             <tbody id="tbodyFinished"><tr><td colspan="7">Chargement...</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card span12 next-card hidden" id="nextParticipantsCard">
+        <h2 class="sectionTitle">Participants prochaine compétition</h2>
+        <div class="mini" id="nextCompetitionMeta">Chargement...</div>
+        <div class="row" style="margin-top:8px;">
+          <a class="btn secondary small" id="nextCompetitionDetailsLink" href="#" target="_blank" rel="noopener">Ouvrir la fiche IANSEO</a>
+          <a class="btn secondary small hidden" id="nextCompetitionENALink" href="#" target="_blank" rel="noopener">Ouvrir ENA</a>
+        </div>
+        <div style="overflow:auto; margin-top:8px;">
+          <table>
+            <thead>
+              <tr><th>Archer</th><th>Club</th><th>Catégorie</th><th>Départ</th></tr>
+            </thead>
+            <tbody id="nextParticipantsBody"><tr><td colspan="4">Chargement...</td></tr></tbody>
           </table>
         </div>
       </section>
@@ -229,6 +247,7 @@
     let trackedClubRaw = DEFAULT_TRACKED_CLUB;
     let trackedClubKeywords = [];
     let adminBridgeUrl = '';
+    let lastNextCompetitionData = null;
     let selectedVolleyArcherKey = '';
     const archerVolleyState = {};
     const volleyArcherIndex = {};
@@ -345,6 +364,7 @@
       if (!data.found || !data.next_competition) {
         const msg = data.message || 'Aucune compétition future trouvée.';
         setAdminResult(escapeHtml(msg) + '<br>Tu peux relancer la recherche via le workflow.');
+        renderNextParticipantsPanel(data);
         return;
       }
 
@@ -360,6 +380,64 @@
         `Tournoi: <a href="${next.details_url}" target="_blank" rel="noopener">Details IANSEO</a> ${ic} ${ena}<br><br>` +
         `<strong>Archers ${escapeHtml(getClubDisplayName())} inscrits:</strong><br>${names}`
       );
+      renderNextParticipantsPanel(data);
+    }
+
+    function renderNextParticipantsPanel(data) {
+      const card = el('nextParticipantsCard');
+      const meta = el('nextCompetitionMeta');
+      const tbody = el('nextParticipantsBody');
+      const details = el('nextCompetitionDetailsLink');
+      const ena = el('nextCompetitionENALink');
+      if (!card || !meta || !tbody || !details || !ena) return;
+
+      if (!data || !data.found || !data.next_competition) {
+        card.classList.add('hidden');
+        return;
+      }
+
+      const next = data.next_competition;
+      const entries = (next.club_entries || next.seynod_entries || []);
+      card.classList.remove('hidden');
+      meta.innerHTML =
+        `<strong>${escapeHtml(next.name || 'Compétition')}</strong> · ${escapeHtml(next.date_text || '')}` +
+        ` · ${entries.length} inscrit(s)`;
+
+      details.href = next.details_url || '#';
+      details.style.pointerEvents = next.details_url ? 'auto' : 'none';
+      details.style.opacity = next.details_url ? '1' : '.6';
+
+      if (next.ena_url) {
+        ena.classList.remove('hidden');
+        ena.href = next.ena_url;
+      } else {
+        ena.classList.add('hidden');
+      }
+
+      if (!entries.length) {
+        tbody.innerHTML = '<tr><td colspan="4">Aucun inscrit trouvé pour ce club.</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = entries.map(e => `
+        <tr>
+          <td>${escapeHtml(e.name || '')}</td>
+          <td>${escapeHtml(e.club || '')}</td>
+          <td>${escapeHtml(e.session || e.category || '')}</td>
+          <td>${escapeHtml(e.target || '')}</td>
+        </tr>
+      `).join('');
+    }
+
+    async function refreshNextParticipants() {
+      try {
+        const res = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        const data = await res.json();
+        lastNextCompetitionData = data;
+        renderNextParticipantsPanel(data);
+      } catch (_) {
+        if (lastNextCompetitionData) renderNextParticipantsPanel(lastNextCompetitionData);
+      }
     }
 
     async function copyClubKeywords() {
@@ -900,6 +978,7 @@
         const data = await res.json();
         lastRawData = data;
         render(data);
+        await refreshNextParticipants();
       } catch (err) {
         if (lastGoodData) {
           setStatus('err', 'Lecture instable, dernier état conservé');
@@ -1052,6 +1131,7 @@
 
       updateCompetitionButton();
       refresh();
+      refreshNextParticipants();
       refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
       setInterval(updateCountdown, 500);
     }
