@@ -134,7 +134,7 @@
         <div class="footer">Quand il n'y a plus d'archer en cours sur tous les concours, l'actualisation automatique s'arrête.</div>
       </aside>
 
-      <section class="card span12" style="border:2px solid rgba(191,219,254,.45); box-shadow:0 0 0 2px rgba(191,219,254,.08), 0 18px 48px rgba(0,0,0,.3);">
+      <section class="card span12" id="liveSection" style="border:2px solid rgba(191,219,254,.45); box-shadow:0 0 0 2px rgba(191,219,254,.08), 0 18px 48px rgba(0,0,0,.3);">
         <h2 class="sectionTitle" style="font-size:30px; color:#bfdbfe;">Archers en concours</h2>
         <div style="overflow:auto">
           <table>
@@ -146,7 +146,7 @@
         </div>
       </section>
 
-      <section class="card span12" style="opacity:.88;">
+      <section class="card span12" id="finishedSection" style="opacity:.88;">
         <h2 class="sectionTitle" style="font-size:24px; opacity:.75;">Résultats terminés du week-end</h2>
         <div style="overflow:auto">
           <table>
@@ -175,7 +175,7 @@
         </div>
       </section>
 
-      <section class="card span12 volley-card">
+      <section class="card span12 volley-card" id="volleySection">
         <h2 class="sectionTitle">Stat volée</h2>
         <div class="row" style="margin-top:0;">
           <label for="volleyArcherSelect" class="volley-muted">Archer suivi :</label>
@@ -1084,6 +1084,10 @@
       const badge = el('phaseBadge');
       const help = el('phaseHelp');
       if (!badge || !help) return;
+      const liveSection = el('liveSection');
+      const finishedSection = el('finishedSection');
+      const volleySection = el('volleySection');
+      const nextCard = el('nextParticipantsCard');
 
       const archers = data?.competitions ? getCurrentArchers(data) : [];
       const hasLive = archers.some(a => !a.finished);
@@ -1091,23 +1095,38 @@
       const hasNext = !!(lastNextCompetitionData && lastNextCompetitionData.found && lastNextCompetitionData.next_competition);
 
       if (hasLive) {
+        if (liveSection) liveSection.classList.remove('hidden');
+        if (finishedSection) finishedSection.classList.remove('hidden');
+        if (volleySection) volleySection.classList.remove('hidden');
+        if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge ok';
         badge.textContent = 'Pendant compétition';
         help.textContent = 'Le live score est en cours. Les tableaux se mettent à jour.';
         return;
       }
       if (hasAny) {
+        if (liveSection) liveSection.classList.add('hidden');
+        if (finishedSection) finishedSection.classList.remove('hidden');
+        if (volleySection) volleySection.classList.remove('hidden');
+        if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge warn';
         badge.textContent = 'Après compétition';
         help.textContent = 'Compétition terminée. Résultats conservés.';
         return;
       }
       if (hasNext) {
+        if (liveSection) liveSection.classList.add('hidden');
+        if (finishedSection) finishedSection.classList.add('hidden');
+        if (volleySection) volleySection.classList.add('hidden');
+        if (nextCard) nextCard.classList.remove('hidden');
         badge.className = 'badge ok';
         badge.textContent = 'Avant compétition';
         help.textContent = 'Participants détectés. En attente de l’ouverture du live IC.';
         return;
       }
+      if (liveSection) liveSection.classList.add('hidden');
+      if (finishedSection) finishedSection.classList.add('hidden');
+      if (volleySection) volleySection.classList.add('hidden');
       badge.className = 'badge warn';
       badge.textContent = 'Avant compétition';
       help.textContent = 'Renseigne le club puis clique sur "Chercher prochaine compétition".';
