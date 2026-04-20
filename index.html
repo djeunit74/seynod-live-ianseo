@@ -83,6 +83,7 @@
     .presentation-pill .mini{margin-top:4px}
     @media (max-width:700px){.presentation-summary{grid-template-columns:1fr}}
     .next-card{border:1px solid rgba(34,197,94,.35);background:rgba(16,185,129,.05)}
+    .phase-box{margin-top:10px;padding:10px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.02)}
   </style>
 </head>
 <body>
@@ -125,6 +126,10 @@
           <div><strong>Dernière vérification :</strong> <span id="lastCheck">—</span></div>
           <div><strong>Dernier changement :</strong> <span id="lastChange">—</span></div>
           <div><strong>Prochaine vérification :</strong> <span id="countdown">30 s</span></div>
+        </div>
+        <div class="phase-box">
+          <div><strong>Cycle:</strong> <span class="badge warn" id="phaseBadge">Avant compétition</span></div>
+          <div class="mini" id="phaseHelp">Recherche de la prochaine compétition en attente.</div>
         </div>
         <div class="footer">Quand il n'y a plus d'archer en cours sur tous les concours, l'actualisation automatique s'arrête.</div>
       </aside>
@@ -205,12 +210,7 @@
           <button class="btn" id="allInOneBtn">Tout en 1 : Démarrer compétition</button>
           <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
           <button class="btn" id="findNextCompetitionBtn">Chercher prochaine compétition Seynod</button>
-          <button class="btn secondary" id="copyClubKeywordsBtn">Copier club pour workflow</button>
-        </div>
-        <div class="admin-actions">
-          <a class="btn secondary" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/start-competition.yml" target="_blank" rel="noopener">Ouvrir workflow tout-en-1</a>
-          <a class="btn secondary" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/reset-live.yml" target="_blank" rel="noopener">Ouvrir workflow reset</a>
-          <a class="btn secondary" href="https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/find-next-competition.yml" target="_blank" rel="noopener">Ouvrir workflow recherche</a>
+          <button class="btn secondary hidden" id="copyClubKeywordsBtn">Copier club pour workflow</button>
         </div>
         <div class="admin-result" id="adminResult">Mode admin actif.</div>
       </section>
@@ -232,6 +232,7 @@
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
     const CLUB_FILTER_STORAGE_KEY = 'seynod_tracked_club_keywords';
     const DEFAULT_TRACKED_CLUB = '0174246,seynod';
+    const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
 
     const el = id => document.getElementById(id);
     let adminMode = window.location.hostname === 'localhost';
@@ -248,6 +249,7 @@
     let trackedClubKeywords = [];
     let adminBridgeUrl = '';
     let lastNextCompetitionData = null;
+    let nextDataLockUntilMs = 0;
     let selectedVolleyArcherKey = '';
     const archerVolleyState = {};
     const volleyArcherIndex = {};
@@ -304,6 +306,166 @@
     function openWorkflowPage(workflowFile) {
       const url = `https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/${workflowFile}`;
       window.open(url, '_blank', 'noopener');
+    }
+
+    function toProxyUrl(url) {
+      return IANSEO_PROXY_PREFIX + String(url || '').replace(/^https?:\/\//i, '');
+    }
+
+    async function fetchText(url) {
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.text();
+    }
+
+    function extractUniqueToIds(text) {
+      const ids = [];
+      const seen = new Set();
+      const regex = /Details\.php\?toId=(\d+)/gi;
+      let m;
+      while ((m = regex.exec(text))) {
+        const id = m[1];
+        if (seen.has(id)) continue;
+        seen.add(id);
+        ids.push(id);
+      }
+      return ids;
+    }
+
+    function parseEndDateFromLabel(label) {
+      const m = String(label || '').match(/(\d{1,2})(?:\s*-\s*(\d{1,2}))?\s+([A-Za-z]{3})\s+(\d{4})/);
+      if (!m) return null;
+      const monthMap = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+      const month = monthMap[(m[3] || '').toLowerCase()];
+      if (month === undefined) return null;
+      const endDay = Number(m[2] || m[1]);
+      const year = Number(m[4]);
+      const d = new Date(Date.UTC(year, month, endDay, 12, 0, 0));
+      return Number.isNaN(d.getTime()) ? null : d;
+    }
+
+    function parseDetailsMarkdown(toId, text) {
+      const lines = String(text || '').split('\n');
+      const markerIndex = lines.findIndex(l => l.includes('Markdown Content:'));
+      const contentLines = (markerIndex >= 0 ? lines.slice(markerIndex + 1) : lines)
+        .map(l => l.trim())
+        .map(l => l.replace(/!\[[^\]]*]\([^)]*\)/g, '').replace(/\[[^\]]*]\(([^)]+)\)/g, '$1').trim())
+        .filter(Boolean);
+
+      const name = contentLines.find(l => !l.startsWith('http')) || `Compétition ${toId}`;
+      const organizer = contentLines.find((l, idx) => idx > 0 && !l.startsWith('http')) || '';
+      const dateMatch = String(text || '').match(/(\d{1,2}(?:\s*-\s*\d{1,2})?\s+[A-Za-z]{3}\s+\d{4})/);
+      const dateText = dateMatch ? dateMatch[1].replace(/\s+/g, ' ').trim() : '';
+      const endDate = parseEndDateFromLabel(dateText);
+
+      const enaMatch = String(text || '').match(new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${toId}/ENA\\.php`, 'i'));
+      const icMatch = String(text || '').match(new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${toId}/IC\\.php`, 'i'));
+
+      return {
+        name,
+        organizer,
+        dateText,
+        endDate,
+        detailsUrl: `https://www.ianseo.net/Details.php?toId=${toId}`,
+        enaUrl: enaMatch ? enaMatch[0] : '',
+        icUrl: icMatch ? icMatch[0] : ''
+      };
+    }
+
+    function extractClubEntriesFromEnaMarkdown(text, keywords) {
+      const out = [];
+      const keys = (keywords || []).map(k => String(k || '').toLowerCase()).filter(Boolean);
+      const lines = String(text || '').split('\n');
+      for (const raw of lines) {
+        const line = raw.trim();
+        if (!line.startsWith('|')) continue;
+        const cells = line.split('|').map(v => v.trim()).filter(Boolean);
+        if (cells.length < 5) continue;
+        if (/^---/.test(cells[0])) continue;
+        if (/^athl[eè]te$/i.test(cells[0])) continue;
+        if (/^[A-Z]$/.test(cells[0])) continue;
+
+        const row = {
+          name: cells[0] || '',
+          target: cells[1] || '',
+          club: cells[2] || '',
+          category: cells[3] || '',
+          session: cells[4] || ''
+        };
+        const hay = `${row.club} ${row.name} ${row.category}`.toLowerCase();
+        if (keys.length && !keys.some(k => hay.includes(k))) continue;
+        out.push(row);
+      }
+      return out;
+    }
+
+    async function findNextCompetitionDirect(keywords, country = 'FRA') {
+      const now = new Date();
+      const todayUtc = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 12, 0, 0));
+      const years = [now.getUTCFullYear(), now.getUTCFullYear() + 1];
+      const candidates = [];
+
+      for (const year of years) {
+        const listUrl = `https://www.ianseo.net/TourList.php?Year=${year}&countryid=${encodeURIComponent(country)}`;
+        const listText = await fetchText(toProxyUrl(listUrl));
+        for (const toId of extractUniqueToIds(listText)) candidates.push({ toId, year });
+      }
+
+      let checked = 0;
+      for (const c of candidates) {
+        const detailsUrl = `https://www.ianseo.net/Details.php?toId=${c.toId}`;
+        let detailsText = '';
+        try {
+          detailsText = await fetchText(toProxyUrl(detailsUrl));
+        } catch (_) {
+          continue;
+        }
+        const meta = parseDetailsMarkdown(c.toId, detailsText);
+        if (meta.endDate && meta.endDate <= todayUtc) continue;
+        if (!meta.enaUrl) continue;
+        checked += 1;
+
+        let enaText = '';
+        try {
+          enaText = await fetchText(toProxyUrl(meta.enaUrl));
+        } catch (_) {
+          continue;
+        }
+        const entries = extractClubEntriesFromEnaMarkdown(enaText, keywords);
+        if (!entries.length) continue;
+
+        return {
+          generated_at_utc: new Date().toISOString(),
+          today: todayUtc.toISOString().slice(0, 10),
+          country,
+          keywords: keywords || [],
+          found: true,
+          checked_candidates: checked,
+          next_competition: {
+            to_id: c.toId,
+            year: String(c.year),
+            name: meta.name || `Compétition ${c.toId}`,
+            organizer: meta.organizer || '',
+            date_text: meta.dateText || '',
+            end_date: meta.endDate ? meta.endDate.toISOString().slice(0, 10) : '',
+            details_url: meta.detailsUrl,
+            ena_url: meta.enaUrl,
+            ic_url: meta.icUrl || null,
+            club_entries: entries,
+            seynod_entries: entries
+          }
+        };
+      }
+
+      return {
+        generated_at_utc: new Date().toISOString(),
+        today: todayUtc.toISOString().slice(0, 10),
+        country,
+        keywords: keywords || [],
+        found: false,
+        checked_candidates: checked,
+        message: 'Aucune compétition future avec inscrits du club trouvée pour le moment.'
+      };
     }
 
     async function loadAdminConfig() {
@@ -363,7 +525,7 @@
     function renderNextCompetitionResult(data) {
       if (!data.found || !data.next_competition) {
         const msg = data.message || 'Aucune compétition future trouvée.';
-        setAdminResult(escapeHtml(msg) + '<br>Tu peux relancer la recherche via le workflow.');
+        setAdminResult(escapeHtml(msg));
         renderNextParticipantsPanel(data);
         return;
       }
@@ -393,6 +555,7 @@
 
       if (!data || !data.found || !data.next_competition) {
         card.classList.add('hidden');
+        updateCompetitionPhase(lastGoodData || { competitions: [] });
         return;
       }
 
@@ -416,6 +579,7 @@
 
       if (!entries.length) {
         tbody.innerHTML = '<tr><td colspan="4">Aucun inscrit trouvé pour ce club.</td></tr>';
+        updateCompetitionPhase(lastGoodData || { competitions: [] });
         return;
       }
 
@@ -427,13 +591,19 @@
           <td>${escapeHtml(e.target || '')}</td>
         </tr>
       `).join('');
+      updateCompetitionPhase(lastGoodData || { competitions: [] });
     }
 
     async function refreshNextParticipants() {
+      if (lastNextCompetitionData && Date.now() < nextDataLockUntilMs) {
+        renderNextParticipantsPanel(lastNextCompetitionData);
+        return;
+      }
       try {
         const res = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
         const data = await res.json();
         lastNextCompetitionData = data;
+        nextDataLockUntilMs = 0;
         renderNextParticipantsPanel(data);
       } catch (_) {
         if (lastNextCompetitionData) renderNextParticipantsPanel(lastNextCompetitionData);
@@ -892,6 +1062,39 @@
       el('sourceLink').style.opacity = selected ? '1' : '.6';
     }
 
+    function updateCompetitionPhase(data) {
+      const badge = el('phaseBadge');
+      const help = el('phaseHelp');
+      if (!badge || !help) return;
+
+      const archers = data?.competitions ? getCurrentArchers(data) : [];
+      const hasLive = archers.some(a => !a.finished);
+      const hasAny = archers.length > 0;
+      const hasNext = !!(lastNextCompetitionData && lastNextCompetitionData.found && lastNextCompetitionData.next_competition);
+
+      if (hasLive) {
+        badge.className = 'badge ok';
+        badge.textContent = 'Pendant compétition';
+        help.textContent = 'Le live score est en cours. Les tableaux se mettent à jour.';
+        return;
+      }
+      if (hasAny) {
+        badge.className = 'badge warn';
+        badge.textContent = 'Après compétition';
+        help.textContent = 'Compétition terminée. Résultats conservés.';
+        return;
+      }
+      if (hasNext) {
+        badge.className = 'badge ok';
+        badge.textContent = 'Avant compétition';
+        help.textContent = 'Participants détectés. En attente de l’ouverture du live IC.';
+        return;
+      }
+      badge.className = 'badge warn';
+      badge.textContent = 'Avant compétition';
+      help.textContent = 'Renseigne le club puis clique sur "Chercher prochaine compétition".';
+    }
+
     function updateChangeBadge(data) {
       const signature = JSON.stringify(data.competitions.map(c => [c.id, c.archers.map(a => [a.name, a.position, a.score, a.detail, a.finished, a.progress, a.category])]))
       const badge = el('changeBadge');
@@ -966,6 +1169,7 @@
       renderRows('tbodyLive', archers.filter(a => !a.finished), true);
       renderVolleyPanel();
       updateChangeBadge(data);
+      updateCompetitionPhase(data);
 
       if (!keepStatus) setStatus('ok', 'Mise à jour réussie');
       if (!hasLiveArchers(data)) stopAutoRefresh();
@@ -1011,6 +1215,13 @@
 
     async function startCompetitionAllInOne() {
       setCompetitionMode(true, 'Mode compétition actif (30s)');
+      try {
+        const direct = await findNextCompetitionDirect(trackedClubKeywords, 'FRA');
+        lastNextCompetitionData = direct;
+        nextDataLockUntilMs = Date.now() + 20 * 60 * 1000;
+        renderNextCompetitionResult(direct);
+      } catch (_) {}
+
       const lastNextRes = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
       const lastNextData = await lastNextRes.json();
       const previousNextGeneratedAt = String(lastNextData.generated_at_utc || '');
@@ -1035,7 +1246,7 @@
       const copied = await copyClubKeywords();
       openWorkflowPage(WORKFLOW_START_COMPETITION);
       setAdminResult(
-        `Mode manuel. Ouvre "Start Club Competition (All-in-One)", clique "Run workflow", puis renseigne <strong>club_keywords</strong> avec <code>${escapeHtml(trackedClubRaw)}</code>.` +
+        `Participants détectés. Pour basculer la source live automatiquement, ouvre "Start Club Competition (All-in-One)", clique "Run workflow", puis renseigne <strong>club_keywords</strong> avec <code>${escapeHtml(trackedClubRaw)}</code>.` +
         (copied ? '<br>Valeur copiée dans le presse-papiers.' : '')
       );
     }
@@ -1045,34 +1256,31 @@
       lastGoodData = emptyData;
       render(emptyData, true);
       setStatus('', 'Compétition vidée localement.');
-      openWorkflowPage(WORKFLOW_RESET);
-      setAdminResult(`Compétition effacée localement. Ouvre l'onglet workflow "Reset Live Competition Data", puis "Run workflow".`);
+      setAdminResult('Compétition effacée localement.');
     }
 
     async function findNextCompetition() {
       try {
-        const lastRes = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
-        const lastData = await lastRes.json();
-        const previousGeneratedAt = String(lastData.generated_at_utc || '');
-
-        if (adminBridgeUrl) {
-          setAdminResult(`Recherche automatique lancée pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
-          await callAdminBridge('find_next', { club_keywords: trackedClubRaw });
-          const updated = await waitForNextCompetitionUpdate(previousGeneratedAt, 130000);
-          renderNextCompetitionResult(updated);
-          return;
-        }
-
-        const copied = await copyClubKeywords();
-        openWorkflowPage(WORKFLOW_FIND_NEXT);
-        setAdminResult(
-          `Mode manuel. Ouvre "Find Next Seynod Competition", clique "Run workflow", puis renseigne <strong>club_keywords</strong> avec <code>${escapeHtml(trackedClubRaw)}</code>.` +
-          (copied ? '<br>Valeur copiée dans le presse-papiers.' : '') +
-          '<br>Lecture du dernier résultat disponible...'
-        );
-        renderNextCompetitionResult(lastData);
+        setAdminResult(`Recherche automatique des prochaines compétitions pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
+        const direct = await findNextCompetitionDirect(trackedClubKeywords, 'FRA');
+        lastNextCompetitionData = direct;
+        nextDataLockUntilMs = Date.now() + 20 * 60 * 1000;
+        renderNextCompetitionResult(direct);
       } catch (err) {
-        setAdminResult('Erreur de lecture du fichier next_competition.json: ' + escapeHtml(err.message));
+        if (adminBridgeUrl) {
+          try {
+            const lastRes = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+            const lastData = await lastRes.json();
+            const previousGeneratedAt = String(lastData.generated_at_utc || '');
+            await callAdminBridge('find_next', { club_keywords: trackedClubRaw });
+            const updated = await waitForNextCompetitionUpdate(previousGeneratedAt, 130000);
+            lastNextCompetitionData = updated;
+            nextDataLockUntilMs = 0;
+            renderNextCompetitionResult(updated);
+            return;
+          } catch (_) {}
+        }
+        setAdminResult('Recherche auto indisponible pour le moment: ' + escapeHtml(err.message));
       }
     }
 
@@ -1088,17 +1296,16 @@
         el('toggleCompetitionBtn').classList.remove('hidden');
         el('moodPresentationExample').classList.remove('hidden');
         renderMoodPresentationExample();
-        setAdminResult(
-          adminBridgeUrl
-            ? 'Mode admin actif. Détection automatique activée.'
-            : 'Mode admin actif. Détection en mode manuel (workflow).'
-        );
+        setAdminResult('Mode admin actif. Renseigne le club puis clique "Chercher prochaine compétition".');
         const clubInput = el('clubFilterInput');
         if (clubInput) clubInput.value = trackedClubRaw;
         el('applyClubFilterBtn').addEventListener('click', () => {
           const input = el('clubFilterInput');
           const raw = input ? input.value : '';
           saveClubFilter(raw);
+          lastNextCompetitionData = null;
+          nextDataLockUntilMs = 0;
+          renderNextParticipantsPanel({ found: false });
           setAdminResult(`Club suivi mis à jour : <strong>${escapeHtml(getClubDisplayName())}</strong>.`);
           if (lastRawData) {
             render(lastRawData, true);
