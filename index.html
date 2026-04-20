@@ -239,12 +239,21 @@
       }
 
       const params = new URLSearchParams(window.location.search);
-      if (params.get('admin') !== '1') return false;
+      const adminParam = (params.get('admin') || '').trim();
+      const keyParam = (params.get('k') || '').trim();
 
-      const provided = (params.get('k') || '').trim();
-      if (!provided) return false;
+      // Backward compatibility: old link format ?admin=seynod-admin
+      if (adminParam === 'seynod-admin') {
+        sessionStorage.setItem('seynod_admin_ok', '1');
+        adminMode = true;
+        return true;
+      }
 
-      const hashed = await sha256Hex(provided);
+      // New hardened format: ?admin=1&k=<secret>
+      if (adminParam !== '1') return false;
+      if (!keyParam) return false;
+
+      const hashed = await sha256Hex(keyParam);
       if (hashed && hashed === ADMIN_HASH) {
         sessionStorage.setItem('seynod_admin_ok', '1');
         adminMode = true;
