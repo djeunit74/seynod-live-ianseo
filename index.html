@@ -222,6 +222,7 @@
   <script>
     const API_URL = 'data/live.json';
     const NEXT_API_URL = 'data/next_competition.json';
+    const CATALOG_URL = 'data/competition_catalog.json';
     const ADMIN_CONFIG_URL = 'data/admin_config.json';
     const REFRESH_MS = 30000;
     const SOURCE_FRESH_SEC = 95;
@@ -402,32 +403,54 @@
     async function findNextCompetitionDirect(keywords, country = 'FRA') {
       const now = new Date();
       const todayUtc = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 12, 0, 0));
-      const years = [now.getUTCFullYear(), now.getUTCFullYear() + 1];
-      const candidates = [];
+      let candidates = [];
 
-      for (const year of years) {
-        const listUrl = `https://www.ianseo.net/TourList.php?Year=${year}&countryid=${encodeURIComponent(country)}`;
-        const listText = await fetchText(toProxyUrl(listUrl));
-        for (const toId of extractUniqueToIds(listText)) candidates.push({ toId, year });
+      try {
+        const res = await fetch(CATALOG_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        if (res.ok) {
+          const catalog = await res.json();
+          candidates = Array.isArray(catalog?.tournaments) ? catalog.tournaments : [];
+        }
+      } catch (_) {}
+
+      if (!candidates.length) {
+        const years = [now.getUTCFullYear(), now.getUTCFullYear() + 1];
+        for (const year of years) {
+          const listUrl = `https://www.ianseo.net/TourList.php?Year=${year}&countryid=${encodeURIComponent(country)}`;
+          const listText = await fetchText(toProxyUrl(listUrl));
+          for (const toId of extractUniqueToIds(listText)) {
+            candidates.push({
+              to_id: toId,
+              year: String(year),
+              details_url: `https://www.ianseo.net/Details.php?toId=${toId}`,
+              ena_url: '',
+              ic_url: ''
+            });
+          }
+        }
       }
 
       let checked = 0;
       for (const c of candidates) {
-        const detailsUrl = `https://www.ianseo.net/Details.php?toId=${c.toId}`;
+        const toId = String(c.to_id || c.toId || '');
+        const year = Number(c.year || now.getUTCFullYear());
+        const detailsUrl = c.details_url || `https://www.ianseo.net/Details.php?toId=${toId}`;
         let detailsText = '';
         try {
           detailsText = await fetchText(toProxyUrl(detailsUrl));
         } catch (_) {
           continue;
         }
-        const meta = parseDetailsMarkdown(c.toId, detailsText);
+        const meta = parseDetailsMarkdown(toId, detailsText);
         if (meta.endDate && meta.endDate <= todayUtc) continue;
-        if (!meta.enaUrl) continue;
+        const enaUrl = c.ena_url || meta.enaUrl || `https://www.ianseo.net/TourData/${year}/${toId}/ENA.php`;
+        const icUrl = c.ic_url || meta.icUrl || `https://www.ianseo.net/TourData/${year}/${toId}/IC.php`;
+        if (!enaUrl) continue;
         checked += 1;
 
         let enaText = '';
         try {
-          enaText = await fetchText(toProxyUrl(meta.enaUrl));
+          enaText = await fetchText(toProxyUrl(enaUrl));
         } catch (_) {
           continue;
         }
@@ -442,15 +465,15 @@
           found: true,
           checked_candidates: checked,
           next_competition: {
-            to_id: c.toId,
-            year: String(c.year),
-            name: meta.name || `Compétition ${c.toId}`,
-            organizer: meta.organizer || '',
-            date_text: meta.dateText || '',
-            end_date: meta.endDate ? meta.endDate.toISOString().slice(0, 10) : '',
-            details_url: meta.detailsUrl,
-            ena_url: meta.enaUrl,
-            ic_url: meta.icUrl || null,
+            to_id: toId,
+            year: String(year),
+            name: c.name || meta.name || `Compétition ${toId}`,
+            organizer: c.organizer || meta.organizer || '',
+            date_text: c.date_text || meta.dateText || '',
+            end_date: c.end_date || (meta.endDate ? meta.endDate.toISOString().slice(0, 10) : ''),
+            details_url: detailsUrl,
+            ena_url: enaUrl,
+            ic_url: icUrl || null,
             club_entries: entries,
             seynod_entries: entries
           }

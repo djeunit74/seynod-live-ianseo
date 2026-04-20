@@ -1,0 +1,330 @@
+{
+  "generated_at_utc": "2026-04-20T19:49:47.129483+00:00",
+  "country": "FRA",
+  "years": [
+    2026,
+    2027
+  ],
+  "count": 29,
+  "tournaments": [
+    {
+      "to_id": "27289",
+      "year": "2026",
+      "name": "TAE du mercredi 22 avril 2026",
+      "organizer": "CASAS - Club des Archers de Saint-Avertin Sports",
+      "date_text": "22 Apr",
+      "end_date": "2026-04-22",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27289",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27289/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27289/IC.php"
+    },
+    {
+      "to_id": "27366",
+      "year": "2026",
+      "name": "Rennes - TAE i + TAE n",
+      "organizer": "Rennes Cie",
+      "date_text": "24 Apr",
+      "end_date": "2026-04-24",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27366",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27366/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27366/IC.php"
+    },
+    {
+      "to_id": "27367",
+      "year": "2026",
+      "name": "Rennes - TAE i + TAE n",
+      "organizer": "Rennes Cie",
+      "date_text": "25 Apr",
+      "end_date": "2026-04-25",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27367",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27367/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27367/IC.php"
+    },
+    {
+      "to_id": "27020",
+      "year": "2026",
+      "name": "Division Régional Adulte IDF - Etape 1",
+      "organizer": "Les Archers du Vert Galant",
+      "date_text": "25-26 Apr",
+      "end_date": "2026-04-26",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27020",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27020/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27020/IC.php"
+    },
+    {
+      "to_id": "27473",
+      "year": "2026",
+      "name": "TAEI/N et Para Tir à l'Arc - 25-26 Avril 2026",
+      "organizer": "1ERE COMPAGNIE D'ARC DE DIJON",
+      "date_text": "25-26 Apr",
+      "end_date": "2026-04-26",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27473",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27473/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27473/IC.php"
+    },
+    {
+      "to_id": "27747",
+      "year": "2026",
+      "name": "TIR EN EXTERIEUR",
+      "organizer": "SAINT BARTHELEMY",
+      "date_text": "25-26 Apr",
+      "end_date": "2026-04-26",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27747",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27747/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27747/IC.php"
+    },
+    {
+      "to_id": "26028",
+      "year": "2026",
+      "name": "Tournoi National Jeune - Sarcelles",
+      "organizer": "A.A.S. Arc Club Sarcelles - FFTA",
+      "date_text": "24-26 Apr",
+      "end_date": "2026-04-26",
+      "details_url": "https://www.ianseo.net/Details.php?toId=26028",
+      "ena_url": "https://www.ianseo.net/TourData/2026/26028/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/26028/IC.php"
+    },
+    {
+      "to_id": "27413",
+      "year": "2026",
+      "name": "Spécial Jeunes et Adultes Débutants",
+      "organizer": "Guadeloupe",
+      "date_text": "25 Apr - 2 May",
+      "end_date": "2026-05-02",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27413",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27413/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27413/IC.php"
+    },
+    {
+      "to_id": "27652",
+      "year": "2026",
+      "name": "3D BATTAGLIA DI A MACCHIA",
+      "organizer": "ASPTT BASTIA",
+      "date_text": "9 May",
+      "end_date": "2026-05-09",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27652",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27652/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27652/IC.php"
+    },
+    {
+      "to_id": "27598",
+      "year": "2026",
+      "name": "TAE International et TAE National Sélectif - Moreuil",
+      "organizer": "Compagnie des Archers de Moreuil",
+      "date_text": "8-9 May",
+      "end_date": "2026-05-09",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27598",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27598/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27598/IC.php"
+    },
+    {
+      "to_id": "27653",
+      "year": "2026",
+      "name": "CAMPAGNE BATTAGLI DI A MACCHIA",
+      "organizer": "ASPTT BASTIA",
+      "date_text": "10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27653",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27653/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27653/IC.php"
+    },
+    {
+      "to_id": "27200",
+      "year": "2026",
+      "name": "TAE 09 & 10 2026 Jablines",
+      "organizer": "1ére compagnie d'arc USM Gagny",
+      "date_text": "9-10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27200",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27200/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27200/IC.php"
+    },
+    {
+      "to_id": "27622",
+      "year": "2026",
+      "name": "Championnat de France de D2 - Groupe 2 - Manche 1",
+      "organizer": "Compagnie des Archers de Moreuil",
+      "date_text": "9-10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27622",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27622/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27622/IC.php"
+    },
+    {
+      "to_id": "27759",
+      "year": "2026",
+      "name": "Compétition sélective Tir à l'arc extérieur de Villepreux",
+      "organizer": "Compagnie d'Arc de Villepreux",
+      "date_text": "8-10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27759",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27759/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27759/IC.php"
+    },
+    {
+      "to_id": "27728",
+      "year": "2026",
+      "name": "Division Régionale Promotion - Manche 2",
+      "organizer": "Compagnie Arc du Senlis Montauban",
+      "date_text": "16-17 May",
+      "end_date": "2026-05-17",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27728",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27728/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27728/IC.php"
+    },
+    {
+      "to_id": "27185",
+      "year": "2026",
+      "name": "TAE Toulouse TAC à Pech-David 24 mai 2026",
+      "organizer": "Toulouse TAC",
+      "date_text": "24 May",
+      "end_date": "2026-05-24",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27185",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php"
+    },
+    {
+      "to_id": "27355",
+      "year": "2026",
+      "name": "Tournoi National Jeune - Compiègne",
+      "organizer": "Les Archers de Compiègne - FFTA",
+      "date_text": "22-24 May",
+      "end_date": "2026-05-24",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27355",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27355/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27355/IC.php"
+    },
+    {
+      "to_id": "27216",
+      "year": "2026",
+      "name": "WIAWIS French Tour 2026 - Etape 2",
+      "organizer": "Cie Archers de Rennes / FFTA",
+      "date_text": "30 May",
+      "end_date": "2026-05-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27216",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27216/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27216/IC.php"
+    },
+    {
+      "to_id": "27376",
+      "year": "2026",
+      "name": "Toulouse TAC rencontre jeunes 30 mai 2026",
+      "organizer": "1131081 - Toulouse TAC",
+      "date_text": "30 May",
+      "end_date": "2026-05-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27376",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27376/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27376/IC.php"
+    },
+    {
+      "to_id": "27222",
+      "year": "2026",
+      "name": "Concours TAE Estival 2026 - Crépy en Valois",
+      "organizer": "Compagnie Arc Crépy en Valois",
+      "date_text": "30-31 May",
+      "end_date": "2026-05-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27222",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27222/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27222/IC.php"
+    },
+    {
+      "to_id": "27541",
+      "year": "2026",
+      "name": "Championnat Départemental 21 TAE National - 31 MAI 2026",
+      "organizer": "ASC TIR A L'ARC - CIE DES ARCHERS EPLEUMIENS",
+      "date_text": "30-31 May",
+      "end_date": "2026-05-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27541",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php"
+    },
+    {
+      "to_id": "27419",
+      "year": "2026",
+      "name": "Compétition groupe départemental CD74",
+      "organizer": "Comité départemental de tir à l'arc 74",
+      "date_text": "6 Jun",
+      "end_date": "2026-06-06",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27419",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27419/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27419/IC.php"
+    },
+    {
+      "to_id": "27217",
+      "year": "2026",
+      "name": "WIAWIS French Tour 2026 - Etape 3",
+      "organizer": "Les Archers de Boé / FFTA",
+      "date_text": "20 Jun",
+      "end_date": "2026-06-20",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27217",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27217/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27217/IC.php"
+    },
+    {
+      "to_id": "27533",
+      "year": "2026",
+      "name": "Championnat de France de D1 2026",
+      "organizer": "FFTA / Smarves / Rennes / Boé",
+      "date_text": "17 Apr - 21 Jun",
+      "end_date": "2026-06-21",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27533",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27533/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27533/IC.php"
+    },
+    {
+      "to_id": "27258",
+      "year": "2026",
+      "name": "Finale Nationale des DR",
+      "organizer": "La Sentinelle / FFTA",
+      "date_text": "10-12 Jul",
+      "end_date": "2026-07-12",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27258",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27258/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27258/IC.php"
+    },
+    {
+      "to_id": "27637",
+      "year": "2026",
+      "name": "Finale du Championnat de France de D2 2026",
+      "organizer": "La Flèche Pictave / FFTA",
+      "date_text": "17-19 Jul",
+      "end_date": "2026-07-19",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27637",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27637/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27637/IC.php"
+    },
+    {
+      "to_id": "27294",
+      "year": "2026",
+      "name": "Championnat de France Tir à l'Arc Extérieur Adulte 2026",
+      "organizer": "Les Archers Riomois / FFTA",
+      "date_text": "24-26 Jul",
+      "end_date": "2026-07-26",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27294",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27294/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27294/IC.php"
+    },
+    {
+      "to_id": "27345",
+      "year": "2026",
+      "name": "Championnat de France Jeune TAE 2026",
+      "organizer": "St Avertin CASAS / FFTA",
+      "date_text": "28-31 Jul",
+      "end_date": "2026-07-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27345",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27345/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27345/IC.php"
+    },
+    {
+      "to_id": "26734",
+      "year": "2027",
+      "name": "25. Traunseepokalturnier + LM OÖ 2027 + ASKÖ LM OÖ 2027",
+      "organizer": "ASKÖ Steyrermühl - Bogensport",
+      "date_text": "16 Jan",
+      "end_date": "2027-01-16",
+      "details_url": "https://www.ianseo.net/Details.php?toId=26734",
+      "ena_url": "https://www.ianseo.net/TourData/2027/26734/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/26734/IC.php"
+    }
+  ]
+}

@@ -38,6 +38,13 @@ jobs:
           COUNTRY="${NEXT_COUNTRY:-FRA}"
           python scripts/find_next_competition.py --keywords "$KEYWORDS" --country "$COUNTRY" --output data/next_competition.json
 
+      - name: Refresh competition catalog
+        env:
+          NEXT_COUNTRY: ${{ vars.IANSEO_COUNTRY }}
+        run: |
+          COUNTRY="${NEXT_COUNTRY:-FRA}"
+          python scripts/build_competition_catalog.py --country "$COUNTRY" --output data/competition_catalog.json
+
       - name: Print result JSON
         run: cat data/next_competition.json
 
@@ -87,7 +94,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/next_competition.json
+          git add data/next_competition.json data/competition_catalog.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
