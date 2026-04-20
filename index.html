@@ -53,8 +53,6 @@
     .admin-card{border:1px solid rgba(56,189,248,.35);background:rgba(2,132,199,.08)}
     .admin-result{margin-top:10px;font-size:14px;line-height:1.45;color:#dbeafe}
     .admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .admin-input{background:#0f172a;color:#e5e7eb;border:1px solid var(--border);border-radius:10px;padding:10px 12px;min-width:300px}
-    .admin-note{font-size:12px;color:#93c5fd;margin-top:6px}
     .volley-card{border:1px solid rgba(148,163,184,.35)}
     .volley-grid{display:grid;grid-template-columns:280px 1fr;gap:14px}@media (max-width:900px){.volley-grid{grid-template-columns:1fr}}
     .volley-panel{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px;padding:12px}
@@ -178,11 +176,6 @@
 
       <section class="card span12 admin-card hidden" id="adminPanel">
         <h2 class="sectionTitle">Admin</h2>
-        <div class="admin-actions" style="margin-top:0;">
-          <input type="password" id="githubTokenInput" class="admin-input" placeholder="GitHub PAT (repo + workflow)" />
-          <button class="btn secondary" id="saveGithubTokenBtn">Enregistrer token</button>
-        </div>
-        <div class="admin-note">Le token reste dans la session du navigateur (non affiché publiquement).</div>
         <div class="admin-actions">
           <button class="btn" id="allInOneBtn">Tout en 1 : Démarrer compétition</button>
           <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
@@ -205,9 +198,6 @@
     const REFRESH_MS = 30000;
     const SOURCE_FRESH_SEC = 95;
     const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
-    const GITHUB_OWNER = 'djeunit74';
-    const GITHUB_REPO = 'seynod-live-ianseo';
-    const GITHUB_REF = 'main';
     const WORKFLOW_UPDATE_LIVE = 'update-live.yml';
     const WORKFLOW_RESET = 'reset-live.yml';
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
@@ -275,42 +265,9 @@
       return false;
     }
 
-    function getStoredGithubToken() {
-      return (sessionStorage.getItem('seynod_github_pat') || '').trim();
-    }
-
-    function setStoredGithubToken(token) {
-      const clean = String(token || '').trim();
-      if (!clean) {
-        sessionStorage.removeItem('seynod_github_pat');
-        return;
-      }
-      sessionStorage.setItem('seynod_github_pat', clean);
-    }
-
-    async function triggerWorkflowDispatch(workflowFile, inputs = {}) {
-      const token = getStoredGithubToken();
-      if (!token) {
-        throw new Error('Token GitHub manquant. Renseigne le champ PAT puis clique "Enregistrer token".');
-      }
-      const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/${workflowFile}/dispatches`;
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/vnd.github+json',
-          'Authorization': `Bearer ${token}`,
-          'X-GitHub-Api-Version': '2022-11-28',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          ref: GITHUB_REF,
-          inputs
-        })
-      });
-
-      if (res.status === 204) return true;
-      const detail = await res.text();
-      throw new Error(`Workflow ${workflowFile} non lancé (HTTP ${res.status}) ${detail}`);
+    function openWorkflowPage(workflowFile) {
+      const url = `https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/${workflowFile}`;
+      window.open(url, '_blank', 'noopener');
     }
 
     function setStatus(kind, text) {
@@ -818,6 +775,7 @@
     }
 
     async function startCompetitionAllInOne() {
+      openWorkflowPage(WORKFLOW_UPDATE_LIVE);
       setCompetitionMode(true, 'Mode compétition actif (30s)');
       await refresh();
       const age = getSourceAgeSec();
@@ -832,43 +790,22 @@
         );
       }
 
-      try {
-        await triggerWorkflowDispatch(WORKFLOW_UPDATE_LIVE, {});
-        setAdminResult(`Tout en 1 OK: mode compétition activé + workflow live lancé.`);
-        return;
-      } catch (err) {
-        setAdminResult(`Mode compétition activé, mais workflow live non lancé: ${escapeHtml(err.message)}`);
-      }
+      setAdminResult(`Mode compétition activé. Ouvre l'onglet workflow "Update IANSEO Live Data" et clique "Run workflow".`);
     }
 
     async function clearCompetitionView() {
-      const dataBeforeReset = lastGoodData;
-      const selected = dataBeforeReset && Array.isArray(dataBeforeReset.competitions) && dataBeforeReset.competitions.length
-        ? (selectedCompetitionId === 'all'
-          ? null
-          : dataBeforeReset.competitions.find(c => c.id === selectedCompetitionId) || null)
-        : null;
-      const sourceUrl = selected?.sourceUrl || '';
-      const place = selected?.place || '';
-
       const emptyData = { competitions: [] };
       lastGoodData = emptyData;
       render(emptyData, true);
-      setStatus('', 'Compétition vidée localement. Envoi du reset distant...');
-
-      try {
-        await triggerWorkflowDispatch(WORKFLOW_RESET, { source_url: sourceUrl, place: place });
-        setAdminResult('Reset lancé: workflow reset-live démarré.');
-      } catch (err) {
-        setAdminResult(`Reset non lancé: ${escapeHtml(err.message)}`);
-      }
+      setStatus('', 'Compétition vidée localement.');
+      openWorkflowPage(WORKFLOW_RESET);
+      setAdminResult(`Compétition effacée localement. Ouvre l'onglet workflow "Reset Live Competition Data", puis "Run workflow".`);
     }
 
     async function findNextCompetition() {
       try {
-        setAdminResult('Lancement du workflow de recherche...');
-        await triggerWorkflowDispatch(WORKFLOW_FIND_NEXT, {});
-        setAdminResult('Workflow recherche lancé. Lecture du dernier résultat disponible...');
+        openWorkflowPage(WORKFLOW_FIND_NEXT);
+        setAdminResult('Ouvre l\'onglet workflow "Find Next Seynod Competition" et clique "Run workflow". Lecture du dernier résultat disponible...');
         const res = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
         const data = await res.json();
 
@@ -905,15 +842,6 @@
         el('toggleCompetitionBtn').classList.remove('hidden');
         el('moodPresentationExample').classList.remove('hidden');
         renderMoodPresentationExample();
-        const tokenInput = el('githubTokenInput');
-        const saveTokenBtn = el('saveGithubTokenBtn');
-        if (tokenInput && saveTokenBtn) {
-          tokenInput.value = getStoredGithubToken();
-          saveTokenBtn.addEventListener('click', () => {
-            setStoredGithubToken(tokenInput.value || '');
-            setAdminResult(getStoredGithubToken() ? 'Token GitHub enregistré pour cette session.' : 'Token GitHub supprimé de la session.');
-          });
-        }
         el('allInOneBtn').addEventListener('click', startCompetitionAllInOne);
         el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
         el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
