@@ -2,6 +2,11 @@ name: Update IANSEO Live Data
 
 on:
   workflow_dispatch:
+    inputs:
+      club_keywords:
+        description: "Club keywords/ids (comma separated), ex: 0174246,seynod"
+        required: false
+        default: ""
   schedule:
     - cron: "*/5 * * * *"
 
@@ -25,12 +30,13 @@ jobs:
 
       - name: Fetch latest IANSEO data
         env:
+          WF_CLUB_KEYWORDS: ${{ github.event.inputs.club_keywords }}
           IANSEO_URL: ${{ vars.IANSEO_URL }}
           IANSEO_URLS: ${{ vars.IANSEO_URLS }}
           IANSEO_CLUB_KEYWORDS: ${{ vars.IANSEO_CLUB_KEYWORDS }}
         run: |
           URLS="${IANSEO_URLS:-${IANSEO_URL:-https://www.ianseo.net/TourData/2026/27251/IC.php}}"
-          CLUBS="${IANSEO_CLUB_KEYWORDS:-Seynod,0174246}"
+          CLUBS="${WF_CLUB_KEYWORDS:-${IANSEO_CLUB_KEYWORDS:-Seynod,0174246}}"
           python scripts/build_live_data.py --urls "$URLS" --sources-file data/competition_sources.json --club-keywords "$CLUBS" --output data/live.json
 
       - name: Commit and push if changed

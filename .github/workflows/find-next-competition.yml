@@ -2,6 +2,11 @@ name: Find Next Seynod Competition
 
 on:
   workflow_dispatch:
+    inputs:
+      club_keywords:
+        description: "Club keywords/ids (comma separated), ex: 0174246,seynod"
+        required: false
+        default: ""
   schedule:
     - cron: "*/30 * * * *"
 
@@ -25,10 +30,11 @@ jobs:
 
       - name: Build next competition file
         env:
+          WF_CLUB_KEYWORDS: ${{ github.event.inputs.club_keywords }}
           NEXT_KEYWORDS: ${{ vars.IANSEO_CLUB_KEYWORDS }}
           NEXT_COUNTRY: ${{ vars.IANSEO_COUNTRY }}
         run: |
-          KEYWORDS="${NEXT_KEYWORDS:-Seynod,0174246}"
+          KEYWORDS="${WF_CLUB_KEYWORDS:-${NEXT_KEYWORDS:-Seynod,0174246}}"
           COUNTRY="${NEXT_COUNTRY:-FRA}"
           python scripts/find_next_competition.py --keywords "$KEYWORDS" --country "$COUNTRY" --output data/next_competition.json
 
