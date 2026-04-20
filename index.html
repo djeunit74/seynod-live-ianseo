@@ -56,6 +56,7 @@
     .admin-input{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:8px}
     .admin-input input{min-width:280px;max-width:460px;width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(15,23,42,.7);color:#e2e8f0;outline:none}
     .admin-input input:focus{border-color:rgba(56,189,248,.65);box-shadow:0 0 0 2px rgba(56,189,248,.15)}
+    .admin-list{margin-top:10px;padding:10px;border:1px dashed rgba(148,163,184,.35);border-radius:12px}
     .volley-card{border:1px solid rgba(148,163,184,.35)}
     .volley-grid{display:grid;grid-template-columns:280px 1fr;gap:14px}@media (max-width:900px){.volley-grid{grid-template-columns:1fr}}
     .volley-panel{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px;padding:12px}
@@ -210,8 +211,15 @@
           <button class="btn" id="allInOneBtn">Tout en 1 : Démarrer compétition</button>
           <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
           <button class="btn" id="findNextCompetitionBtn">Chercher prochaine compétition Seynod</button>
+          <button class="btn secondary" id="addCurrentTournamentBtn">Ajouter ce tournoi au suivi</button>
+          <button class="btn secondary" id="clearTrackedTournamentsBtn">Vider tournois suivis</button>
           <button class="btn secondary hidden" id="copyClubKeywordsBtn">Copier club pour workflow</button>
         </div>
+        <div class="admin-input">
+          <input id="manualIcUrlInput" type="text" placeholder="Ajouter URL IC manuelle (https://.../IC.php)" />
+          <button class="btn secondary" id="addManualIcBtn">Ajouter URL IC</button>
+        </div>
+        <div class="admin-list" id="trackedTournamentsList"></div>
         <div class="admin-result" id="adminResult">Mode admin actif.</div>
       </section>
     </div>
@@ -232,6 +240,7 @@
     const WORKFLOW_RESET = 'reset-live.yml';
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
     const CLUB_FILTER_STORAGE_KEY = 'seynod_tracked_club_keywords';
+    const TRACKED_IC_URLS_STORAGE_KEY = 'seynod_tracked_ic_urls';
     const DEFAULT_TRACKED_CLUB = '0174246,seynod';
     const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
 
@@ -248,6 +257,7 @@
     let selectedCompetitionId = 'all';
     let trackedClubRaw = DEFAULT_TRACKED_CLUB;
     let trackedClubKeywords = [];
+    let trackedIcUrls = [];
     let adminBridgeUrl = '';
     let lastNextCompetitionData = null;
     let nextDataLockUntilMs = 0;
@@ -668,6 +678,143 @@
       trackedClubRaw = (stored && stored.trim()) ? stored.trim() : DEFAULT_TRACKED_CLUB;
       trackedClubKeywords = normalizeClubKeywords(trackedClubRaw);
       updateClubUiTexts();
+    }
+
+    function parseCompetitionHeader(markdown) {
+      const lines = String(markdown || '').split('\n').map(s => s.trim());
+      const name = lines.find(l => /^Concours /i.test(l)) || lines.find(l => l && !l.startsWith('|') && !l.startsWith('#')) || 'Concours';
+      const placeLine = lines.find(l => /\(.+\)/.test(l)) || '';
+      const placeMatch = placeLine.match(/\(([^)]+)\)/);
+      const place = placeMatch ? placeMatch[1] : '';
+      return { name, place };
+    }
+
+    function parseIcMarkdownToCompetition(markdown, sourceUrl, clubKeywords) {
+      const { name, place } = parseCompetitionHeader(markdown);
+      const lines = String(markdown || '').split('\n');
+      let currentCategory = '';
+      const archers = [];
+      const toIdMatch = String(sourceUrl).match(/\/TourData\/(\d+)\/(\d+)\/IC\.php/i);
+      const compId = toIdMatch ? toIdMatch[2] : sourceUrl;
+
+      for (const raw of lines) {
+        const line = raw.trim();
+        if (!line.startsWith('|')) continue;
+        const cells = line.split('|').map(v => v.trim()).filter(Boolean);
+        if (!cells.length) continue;
+        if (/^---/.test(cells[0])) continue;
+
+        if (cells.length === 1 && /Après .*flèches/i.test(cells[0])) {
+          currentCategory = cells[0].replace(/\s*\[.*$/, '').trim();
+          continue;
+        }
+
+        if (cells.length >= 6 && /^\d+$/.test(cells[0])) {
+          const pos = cells[0];
+          const athlete = cells[1] || '';
+          const club = cells[2] || '';
+          const total = cells.length >= 3 ? cells[cells.length - 3] : '';
+          const tenx = cells.length >= 2 ? cells[cells.length - 2] : '';
+          const x = cells.length >= 1 ? cells[cells.length - 1] : '';
+
+          const hay = normalizeForMatch(`${club} ${athlete}`);
+          const matches = !clubKeywords.length || clubKeywords.some(k => hay.includes(normalizeForMatch(k)));
+          if (!matches) continue;
+
+          const progressText = /\[([^\]]+)\]/.exec(raw)?.[1] || 'En cours';
+          const finished = /après\s*72\s*fl[eè]ches/i.test(raw) || /après\s*60\s*fl[eè]ches/i.test(raw);
+
+          archers.push({
+            place: place || '—',
+            name: athlete,
+            club,
+            position: pos,
+            score: Number(String(total).replace(/[^\d]/g, '')) || 0,
+            scoreLabel: String(total || ''),
+            category: currentCategory || '',
+            progress: progressText,
+            detail: `10+X: ${tenx || '-'} · X: ${x || '-'}`,
+            finished
+          });
+        }
+      }
+
+      return {
+        id: String(compId),
+        name,
+        place: place || '—',
+        sourceUrl,
+        archers
+      };
+    }
+
+    async function loadMultiTrackedLiveData() {
+      const competitions = [];
+      for (const url of trackedIcUrls) {
+        try {
+          const md = await fetchText(toProxyUrl(url));
+          const comp = parseIcMarkdownToCompetition(md, url, trackedClubKeywords);
+          competitions.push(comp);
+        } catch (_) {}
+      }
+      return { competitions: competitions.filter(c => (c.archers || []).length > 0) };
+    }
+
+    function normalizeIcUrl(url) {
+      const v = String(url || '').trim();
+      if (!/^https?:\/\//i.test(v)) return '';
+      if (!/\/IC\.php/i.test(v)) return '';
+      return v;
+    }
+
+    function loadTrackedIcUrls() {
+      trackedIcUrls = [];
+      try {
+        const raw = localStorage.getItem(TRACKED_IC_URLS_STORAGE_KEY);
+        if (!raw) return;
+        const arr = JSON.parse(raw);
+        if (!Array.isArray(arr)) return;
+        trackedIcUrls = arr.map(normalizeIcUrl).filter(Boolean);
+      } catch (_) {}
+    }
+
+    function saveTrackedIcUrls() {
+      localStorage.setItem(TRACKED_IC_URLS_STORAGE_KEY, JSON.stringify(trackedIcUrls));
+      renderTrackedTournamentsList();
+    }
+
+    function addTrackedIcUrl(url) {
+      const clean = normalizeIcUrl(url);
+      if (!clean) return false;
+      if (trackedIcUrls.includes(clean)) return true;
+      trackedIcUrls.push(clean);
+      saveTrackedIcUrls();
+      return true;
+    }
+
+    function removeTrackedIcUrl(url) {
+      trackedIcUrls = trackedIcUrls.filter(u => u !== url);
+      saveTrackedIcUrls();
+    }
+
+    function clearTrackedIcUrls() {
+      trackedIcUrls = [];
+      saveTrackedIcUrls();
+    }
+
+    function renderTrackedTournamentsList() {
+      const box = el('trackedTournamentsList');
+      if (!box) return;
+      if (!trackedIcUrls.length) {
+        box.innerHTML = '<div class="mini">Aucun tournoi suivi. Ajoute un tournoi détecté ou une URL IC.</div>';
+        return;
+      }
+      box.innerHTML = trackedIcUrls.map((u, i) =>
+        `<div class="row" style="margin-top:6px;"><span class="chip">${i + 1}. ${escapeHtml(u)}</span><button class="btn small secondary" data-remove-ic="${escapeHtml(u)}">Retirer</button></div>`
+      ).join('');
+      box.querySelectorAll('[data-remove-ic]').forEach(btn => {
+        btn.addEventListener('click', () => removeTrackedIcUrl(btn.getAttribute('data-remove-ic') || ''));
+      });
     }
 
     function saveClubFilter(raw) {
@@ -1223,10 +1370,16 @@
     async function refresh() {
       try {
         setStatus('', 'Actualisation en cours...');
-        const res = await fetch(API_URL + '?t=' + Date.now(), { cache: 'no-store' });
-        const data = await res.json();
-        lastRawData = data;
-        render(data);
+        if (trackedIcUrls.length > 0) {
+          const multiData = await loadMultiTrackedLiveData();
+          lastRawData = multiData;
+          render(multiData);
+        } else {
+          const res = await fetch(API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+          const data = await res.json();
+          lastRawData = data;
+          render(data);
+        }
         await refreshNextParticipants();
       } catch (err) {
         if (lastGoodData) {
@@ -1331,6 +1484,7 @@
 
     async function initPage() {
       loadClubFilter();
+      loadTrackedIcUrls();
       await loadAdminConfig();
       await resolveAdminMode();
 
@@ -1344,6 +1498,7 @@
         setAdminResult('Mode admin actif. Renseigne le club puis clique "Chercher prochaine compétition".');
         const clubInput = el('clubFilterInput');
         if (clubInput) clubInput.value = trackedClubRaw;
+        renderTrackedTournamentsList();
         el('applyClubFilterBtn').addEventListener('click', () => {
           const input = el('clubFilterInput');
           const raw = input ? input.value : '';
@@ -1357,6 +1512,32 @@
           } else if (lastGoodData) {
             render(lastGoodData, true);
           }
+        });
+        el('addCurrentTournamentBtn').addEventListener('click', async () => {
+          const ic = String(lastNextCompetitionData?.next_competition?.ic_url || '').trim();
+          if (!ic) {
+            setAdminResult('Ce tournoi n’a pas encore de lien IC publié. Réessaie plus tard.');
+            return;
+          }
+          addTrackedIcUrl(ic);
+          setAdminResult('Tournoi ajouté au suivi multi-tournois.');
+          await refresh();
+        });
+        el('clearTrackedTournamentsBtn').addEventListener('click', async () => {
+          clearTrackedIcUrls();
+          setAdminResult('Liste des tournois suivis vidée.');
+          await refresh();
+        });
+        el('addManualIcBtn').addEventListener('click', async () => {
+          const input = el('manualIcUrlInput');
+          const url = input ? input.value : '';
+          if (!addTrackedIcUrl(url)) {
+            setAdminResult('URL IC invalide. Format attendu: https://.../IC.php');
+            return;
+          }
+          if (input) input.value = '';
+          setAdminResult('URL IC ajoutée au suivi.');
+          await refresh();
         });
         el('copyClubKeywordsBtn').addEventListener('click', async () => {
           const ok = await copyClubKeywords();
