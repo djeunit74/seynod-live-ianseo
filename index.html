@@ -60,6 +60,9 @@
     .volley-last{display:flex;align-items:center;gap:10px;font-size:15px}
     .volley-last-score{font-size:28px;font-weight:800;line-height:1}
     .volley-last-type{color:#cbd5e1;font-size:13px}
+    .mood-icon{display:inline-flex;vertical-align:middle;line-height:0;--mood-size:32px}
+    .mood-icon svg{width:var(--mood-size);height:var(--mood-size);display:block}
+    .mood-inline{display:inline-flex;align-items:center;gap:8px}
     .volley-list{margin:10px 0 0;padding:0;list-style:none;max-height:220px;overflow:auto}
     .volley-list li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}
     .volley-list li:last-child{border-bottom:0}
@@ -202,6 +205,11 @@
       maxVolleyScore: 60,
       maxHistory: 40
     };
+    const MOOD_COLORS = {
+      good: '#22c55e',
+      neutral: '#f59e0b',
+      bad: '#ef4444'
+    };
 
     function setStatus(kind, text) {
       el('statusDot').className = 'dot ' + (kind || '');
@@ -231,11 +239,34 @@
       return delta <= Number(config.maxVolleyScore || 60);
     }
 
-    function getSmiley(currentVolley, previousVolley) {
-      if (!Number.isFinite(currentVolley) || !Number.isFinite(previousVolley)) return '—';
-      if (currentVolley > previousVolley) return '🙂';
-      if (currentVolley === previousVolley) return '😐';
-      return '🙁';
+    function getMoodType(currentVolley, previousVolley) {
+      if (!Number.isFinite(currentVolley) || !Number.isFinite(previousVolley)) return null;
+      if (currentVolley > previousVolley) return 'good';
+      if (currentVolley === previousVolley) return 'neutral';
+      return 'bad';
+    }
+
+    function renderMoodIcon(type, size = 32) {
+      const mood = (type === 'good' || type === 'neutral' || type === 'bad') ? type : null;
+      if (!mood) return '<span class="volley-muted">—</span>';
+
+      const color = MOOD_COLORS[mood];
+      const mouthPath = mood === 'good'
+        ? '<path d="M11 20c2.2 2.4 7.8 2.4 10 0" stroke="#081018" stroke-width="2.2" stroke-linecap="round" fill="none"/>'
+        : mood === 'neutral'
+        ? '<line x1="11" y1="20" x2="21" y2="20" stroke="#081018" stroke-width="2.2" stroke-linecap="round"/>'
+        : '<path d="M11 22c2.2-2.4 7.8-2.4 10 0" stroke="#081018" stroke-width="2.2" stroke-linecap="round" fill="none"/>';
+
+      return `
+        <span class="mood-icon" style="--mood-size:${Number(size) || 32}px" title="${mood}">
+          <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <circle cx="16" cy="16" r="14" fill="${color}" />
+            <circle cx="12.2" cy="13" r="1.4" fill="#081018" />
+            <circle cx="19.8" cy="13" r="1.4" fill="#081018" />
+            ${mouthPath}
+          </svg>
+        </span>
+      `;
     }
 
     function buildVolleyChartData(volleyHistory) {
@@ -243,7 +274,7 @@
       return valid.map((v, index) => ({
         x: index + 1,
         y: Number(v.score),
-        smiley: v.smiley || '—',
+        moodType: v.moodType || null,
         timestamp: v.timestamp || ''
       }));
     }
@@ -276,7 +307,7 @@
       if (!isLikelySingleVolley(delta, config)) {
         const groupedEntry = {
           score: delta,
-          smiley: '—',
+          moodType: null,
           timestamp,
           type: 'grouped_update'
         };
@@ -288,7 +319,7 @@
       const previousVolley = [...archerState.volleyHistory].reverse().find(v => v.type === 'volley' && Number.isFinite(Number(v.score)));
       const currentEntry = {
         score: delta,
-        smiley: previousVolley ? getSmiley(delta, Number(previousVolley.score)) : '—',
+        moodType: previousVolley ? getMoodType(delta, Number(previousVolley.score)) : null,
         timestamp,
         type: 'volley'
       };
@@ -456,7 +487,7 @@
 
       if (!lastEvent) {
         lastScore.textContent = '—';
-        lastSmiley.textContent = '—';
+        lastSmiley.innerHTML = '<span class="volley-muted">—</span>';
         lastType.textContent = 'Pas encore de volée déduite.';
         list.innerHTML = '<li class="volley-muted">Aucun événement pour cet archer.</li>';
         renderVolleyChart([]);
@@ -464,7 +495,7 @@
       }
 
       lastScore.textContent = String(lastEvent.score);
-      lastSmiley.textContent = lastEvent.smiley || '—';
+      lastSmiley.innerHTML = renderMoodIcon(lastEvent.moodType, 34);
       lastType.textContent = lastEvent.type === 'grouped_update'
         ? 'Mise à jour groupée (delta trop grand pour une volée unique).'
         : 'Volée déduite fiable.';
@@ -472,8 +503,10 @@
       const ordered = [...history].reverse();
       list.innerHTML = ordered.map((entry, idx) => {
         const typeText = entry.type === 'grouped_update' ? 'mise à jour groupée' : `volée ${history.length - idx}`;
-        const smiley = entry.type === 'grouped_update' ? '—' : (entry.smiley || '—');
-        return `<li><strong>${escapeHtml(typeText)}</strong> : ${escapeHtml(entry.score)} ${smiley}<br><span class="volley-muted">${escapeHtml(new Date(entry.timestamp).toLocaleTimeString('fr-FR'))}</span></li>`;
+        const icon = entry.type === 'grouped_update'
+          ? '<span class="volley-muted">—</span>'
+          : renderMoodIcon(entry.moodType, 28);
+        return `<li><span class="mood-inline"><strong>${escapeHtml(typeText)}</strong> : ${escapeHtml(entry.score)} ${icon}</span><br><span class="volley-muted">${escapeHtml(new Date(entry.timestamp).toLocaleTimeString('fr-FR'))}</span></li>`;
       }).join('');
 
       renderVolleyChart(history);
