@@ -171,7 +171,7 @@
             <div class="volley-legend">Courbe bleue: volées plausibles. Les mises à jour groupées sont listées à gauche.</div>
           </div>
         </div>
-        <div class="presentation-example" id="moodPresentationExample"></div>
+        <div class="presentation-example hidden" id="moodPresentationExample"></div>
       </section>
 
       <section class="card span12 admin-card hidden" id="adminPanel">
@@ -786,6 +786,8 @@
     if (adminMode) {
       el('adminPanel').classList.remove('hidden');
       el('toggleCompetitionBtn').classList.remove('hidden');
+      el('moodPresentationExample').classList.remove('hidden');
+      renderMoodPresentationExample();
       el('allInOneBtn').addEventListener('click', startCompetitionAllInOne);
       el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
       el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
@@ -795,7 +797,6 @@
     }
 
     updateCompetitionButton();
-    renderMoodPresentationExample();
     refresh();
     refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
     setInterval(updateCountdown, 500);
