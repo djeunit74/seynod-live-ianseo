@@ -403,59 +403,51 @@
     async function findNextCompetitionDirect(keywords, country = 'FRA') {
       const now = new Date();
       const todayUtc = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 12, 0, 0));
-      let candidates = [];
+      const keys = (keywords || []).map(k => normalizeForMatch(k)).filter(Boolean);
+      const emptyResult = {
+        generated_at_utc: new Date().toISOString(),
+        today: todayUtc.toISOString().slice(0, 10),
+        country,
+        keywords: keywords || [],
+        found: false,
+        checked_candidates: 0,
+        message: 'Aucune compétition future avec inscrits du club trouvée pour le moment.'
+      };
 
+      let tournaments = [];
       try {
         const res = await fetch(CATALOG_URL + '?t=' + Date.now(), { cache: 'no-store' });
-        if (res.ok) {
-          const catalog = await res.json();
-          candidates = Array.isArray(catalog?.tournaments) ? catalog.tournaments : [];
-        }
-      } catch (_) {}
-
-      if (!candidates.length) {
-        const years = [now.getUTCFullYear(), now.getUTCFullYear() + 1];
-        for (const year of years) {
-          const listUrl = `https://www.ianseo.net/TourList.php?Year=${year}&countryid=${encodeURIComponent(country)}`;
-          const listText = await fetchText(toProxyUrl(listUrl));
-          for (const toId of extractUniqueToIds(listText)) {
-            candidates.push({
-              to_id: toId,
-              year: String(year),
-              details_url: `https://www.ianseo.net/Details.php?toId=${toId}`,
-              ena_url: '',
-              ic_url: ''
-            });
-          }
-        }
+        if (!res.ok) return { ...emptyResult, message: 'Catalogue compétitions indisponible. Lance une mise à jour.' };
+        const catalog = await res.json();
+        tournaments = Array.isArray(catalog?.tournaments) ? catalog.tournaments : [];
+      } catch (_) {
+        return { ...emptyResult, message: 'Impossible de lire le catalogue compétitions.' };
       }
 
-      let checked = 0;
-      for (const c of candidates) {
-        const toId = String(c.to_id || c.toId || '');
-        const year = Number(c.year || now.getUTCFullYear());
-        const detailsUrl = c.details_url || `https://www.ianseo.net/Details.php?toId=${toId}`;
-        let detailsText = '';
-        try {
-          detailsText = await fetchText(toProxyUrl(detailsUrl));
-        } catch (_) {
-          continue;
-        }
-        const meta = parseDetailsMarkdown(toId, detailsText);
-        if (meta.endDate && meta.endDate <= todayUtc) continue;
-        const enaUrl = c.ena_url || meta.enaUrl || `https://www.ianseo.net/TourData/${year}/${toId}/ENA.php`;
-        const icUrl = c.ic_url || meta.icUrl || `https://www.ianseo.net/TourData/${year}/${toId}/IC.php`;
-        if (!enaUrl) continue;
-        checked += 1;
+      const isFuture = (t) => {
+        const d = String(t?.end_date || '').trim();
+        if (!d) return true;
+        const parsed = Date.parse(d + 'T12:00:00Z');
+        if (Number.isNaN(parsed)) return true;
+        return parsed > todayUtc.getTime();
+      };
 
-        let enaText = '';
-        try {
-          enaText = await fetchText(toProxyUrl(enaUrl));
-        } catch (_) {
-          continue;
-        }
-        const entries = extractClubEntriesFromEnaMarkdown(enaText, keywords);
+      const filtered = tournaments
+        .filter(t => String(t?.country || country) === country || !t?.country)
+        .filter(isFuture)
+        .sort((a, b) => String(a.end_date || '').localeCompare(String(b.end_date || '')));
+
+      let checked = 0;
+      for (const t of filtered) {
+        const entries = Array.isArray(t.entries) ? t.entries : [];
+        checked += 1;
         if (!entries.length) continue;
+        const matching = entries.filter(e => {
+          if (!keys.length) return true;
+          const hay = normalizeForMatch(`${e?.club || ''} ${e?.name || ''} ${e?.category || ''}`);
+          return keys.some(k => k && hay.includes(k));
+        });
+        if (!matching.length) continue;
 
         return {
           generated_at_utc: new Date().toISOString(),
@@ -465,30 +457,22 @@
           found: true,
           checked_candidates: checked,
           next_competition: {
-            to_id: toId,
-            year: String(year),
-            name: c.name || meta.name || `Compétition ${toId}`,
-            organizer: c.organizer || meta.organizer || '',
-            date_text: c.date_text || meta.dateText || '',
-            end_date: c.end_date || (meta.endDate ? meta.endDate.toISOString().slice(0, 10) : ''),
-            details_url: detailsUrl,
-            ena_url: enaUrl,
-            ic_url: icUrl || null,
-            club_entries: entries,
-            seynod_entries: entries
+            to_id: String(t.to_id || ''),
+            year: String(t.year || ''),
+            name: t.name || `Compétition ${t.to_id || ''}`,
+            organizer: t.organizer || '',
+            date_text: t.date_text || '',
+            end_date: t.end_date || '',
+            details_url: t.details_url || '',
+            ena_url: t.ena_url || '',
+            ic_url: t.ic_url || null,
+            club_entries: matching,
+            seynod_entries: matching
           }
         };
       }
 
-      return {
-        generated_at_utc: new Date().toISOString(),
-        today: todayUtc.toISOString().slice(0, 10),
-        country,
-        keywords: keywords || [],
-        found: false,
-        checked_candidates: checked,
-        message: 'Aucune compétition future avec inscrits du club trouvée pour le moment.'
-      };
+      return { ...emptyResult, checked_candidates: checked };
     }
 
     async function loadAdminConfig() {
