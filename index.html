@@ -374,7 +374,7 @@
 
     function extractClubEntriesFromEnaMarkdown(text, keywords) {
       const out = [];
-      const keys = (keywords || []).map(k => String(k || '').toLowerCase()).filter(Boolean);
+      const keys = (keywords || []).map(k => normalizeForMatch(k)).filter(Boolean);
       const lines = String(text || '').split('\n');
       for (const raw of lines) {
         const line = raw.trim();
@@ -392,7 +392,7 @@
           category: cells[3] || '',
           session: cells[4] || ''
         };
-        const hay = `${row.club} ${row.name} ${row.category}`.toLowerCase();
+        const hay = normalizeForMatch(`${row.club} ${row.name} ${row.category}`);
         if (keys.length && !keys.some(k => hay.includes(k))) continue;
         out.push(row);
       }
@@ -628,6 +628,14 @@
         .filter(Boolean);
     }
 
+    function normalizeForMatch(value) {
+      return String(value || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '');
+    }
+
     function getClubDisplayName() {
       if (!trackedClubKeywords.length) return 'Tous clubs';
       return trackedClubRaw || trackedClubKeywords.join(', ');
@@ -658,8 +666,11 @@
 
     function matchesTrackedClub(archer) {
       if (!trackedClubKeywords.length) return true;
-      const haystack = `${archer?.club || ''} ${archer?.detail || ''}`.toLowerCase();
-      return trackedClubKeywords.some(k => haystack.includes(k));
+      const haystack = normalizeForMatch(`${archer?.club || ''} ${archer?.detail || ''}`);
+      return trackedClubKeywords.some(k => {
+        const key = normalizeForMatch(k);
+        return key && haystack.includes(key);
+      });
     }
 
     function applyClubFilter(data) {
