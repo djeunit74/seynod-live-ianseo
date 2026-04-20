@@ -1,94 +1,12 @@
 {
-  "generated_at_utc": "2026-04-20T19:30:39.198768+00:00",
+  "generated_at_utc": "2026-04-20T19:38:18.605178+00:00",
   "today": "2026-04-20",
   "country": "FRA",
   "keywords": [
-    "0169188 - lyon 8eme"
+    "0174246",
+    "seynod"
   ],
-  "found": true,
-  "next_competition": {
-    "to_id": "27216",
-    "year": "2026",
-    "name": "WIAWIS French Tour 2026 - Etape 2",
-    "organizer": "Cie Archers de Rennes / FFTA",
-    "date_text": "30 May",
-    "end_date": "2026-05-30",
-    "details_url": "https://www.ianseo.net/Details.php?toId=27216",
-    "ena_url": "https://www.ianseo.net/TourData/2026/27216/ENA.php",
-    "ic_url": null,
-    "club_entries": [
-      {
-        "name": "BEAUDROIT Laurent",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      },
-      {
-        "name": "CLAUDIN Anthony",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      },
-      {
-        "name": "PAYET Stephane",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      },
-      {
-        "name": "ROBERT Mathieu",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      },
-      {
-        "name": "VALLEMONT Antoine",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      }
-    ],
-    "seynod_entries": [
-      {
-        "name": "BEAUDROIT Laurent",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      },
-      {
-        "name": "CLAUDIN Anthony",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      },
-      {
-        "name": "PAYET Stephane",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      },
-      {
-        "name": "ROBERT Mathieu",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      },
-      {
-        "name": "VALLEMONT Antoine",
-        "target": "",
-        "club": "0169188 - LYON 8EME",
-        "category": "0169188 - LYON 8EME",
-        "session": "Scratch Homme Arc à Poulies"
-      }
-    ]
-  }
+  "found": false,
+  "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
+  "checked_candidates": 29
 }
