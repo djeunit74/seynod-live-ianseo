@@ -20,7 +20,7 @@ $args = @(
     $updater,
     "--interval", "30",
     "--repo-root", $repoRoot,
-    "--url", "https://www.ianseo.net/TourData/2026/27251/IC.php",
+    "--sources-file", "data/competition_sources.json",
     "--club-keywords", "Seynod,0174246"
 )
 

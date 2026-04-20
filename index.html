@@ -197,10 +197,10 @@
     const NEXT_API_URL = 'data/next_competition.json';
     const REFRESH_MS = 30000;
     const SOURCE_FRESH_SEC = 95;
-    const ADMIN_QUERY_KEY = 'seynod-admin';
+    const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
 
     const el = id => document.getElementById(id);
-    const adminMode = (new URLSearchParams(window.location.search).get('admin') === ADMIN_QUERY_KEY) || window.location.hostname === 'localhost';
+    let adminMode = window.location.hostname === 'localhost';
 
     let previousSignature = null;
     let nextRefresh = Date.now() + REFRESH_MS;
@@ -221,6 +221,37 @@
       neutral: '#f59e0b',
       bad: '#ef4444'
     };
+
+    async function sha256Hex(text) {
+      if (!window.crypto || !window.crypto.subtle) return '';
+      const encoder = new TextEncoder();
+      const bytes = encoder.encode(String(text || ''));
+      const hashBuffer = await window.crypto.subtle.digest('SHA-256', bytes);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    async function resolveAdminMode() {
+      if (adminMode) return true;
+      if (sessionStorage.getItem('seynod_admin_ok') === '1') {
+        adminMode = true;
+        return true;
+      }
+
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('admin') !== '1') return false;
+
+      const provided = (params.get('k') || '').trim();
+      if (!provided) return false;
+
+      const hashed = await sha256Hex(provided);
+      if (hashed && hashed === ADMIN_HASH) {
+        sessionStorage.setItem('seynod_admin_ok', '1');
+        adminMode = true;
+        return true;
+      }
+      return false;
+    }
 
     function setStatus(kind, text) {
       el('statusDot').className = 'dot ' + (kind || '');
@@ -781,25 +812,31 @@
       }
     }
 
-    el('refreshBtn').addEventListener('click', refresh);
+    async function initPage() {
+      await resolveAdminMode();
 
-    if (adminMode) {
-      el('adminPanel').classList.remove('hidden');
-      el('toggleCompetitionBtn').classList.remove('hidden');
-      el('moodPresentationExample').classList.remove('hidden');
-      renderMoodPresentationExample();
-      el('allInOneBtn').addEventListener('click', startCompetitionAllInOne);
-      el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
-      el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
-      el('toggleCompetitionBtn').addEventListener('click', () => {
-        setCompetitionMode(!autoRefreshEnabled, !autoRefreshEnabled ? 'Mode compétition actif (30s)' : 'Mode compétition désactivé');
-      });
+      el('refreshBtn').addEventListener('click', refresh);
+
+      if (adminMode) {
+        el('adminPanel').classList.remove('hidden');
+        el('toggleCompetitionBtn').classList.remove('hidden');
+        el('moodPresentationExample').classList.remove('hidden');
+        renderMoodPresentationExample();
+        el('allInOneBtn').addEventListener('click', startCompetitionAllInOne);
+        el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
+        el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
+        el('toggleCompetitionBtn').addEventListener('click', () => {
+          setCompetitionMode(!autoRefreshEnabled, !autoRefreshEnabled ? 'Mode compétition actif (30s)' : 'Mode compétition désactivé');
+        });
+      }
+
+      updateCompetitionButton();
+      refresh();
+      refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
+      setInterval(updateCountdown, 500);
     }
 
-    updateCompetitionButton();
-    refresh();
-    refreshTimer = setInterval(() => { if (autoRefreshEnabled) refresh(); }, REFRESH_MS);
-    setInterval(updateCountdown, 500);
+    initPage();
   </script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import datetime as dt
 import json
 
 
@@ -11,9 +12,11 @@ def main() -> int:
     args = parser.parse_args()
 
     data = {
+        "generatedAtUtc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "sourceUrl": args.source_url,
         "places": [args.place] if args.place else [],
         "archers": [],
+        "competitions": [],
     }
 
     with open(args.output, "w", encoding="utf-8") as f:

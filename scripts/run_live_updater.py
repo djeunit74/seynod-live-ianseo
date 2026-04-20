@@ -37,9 +37,9 @@ def main() -> int:
         help="Refresh interval in seconds (default: 30).",
     )
     parser.add_argument(
-        "--url",
-        default="https://www.ianseo.net/TourData/2026/27251/IC.php",
-        help="IANSEO IC.php URL.",
+        "--urls",
+        default="",
+        help="IANSEO IC.php URLs (comma/newline/semicolon separated).",
     )
     parser.add_argument(
         "--club-keywords",
@@ -57,6 +57,11 @@ def main() -> int:
         help="Output JSON file path (relative to repo root).",
     )
     parser.add_argument(
+        "--sources-file",
+        default="data/competition_sources.json",
+        help="Fallback JSON file with {\"urls\": [...]}",
+    )
+    parser.add_argument(
         "--no-push",
         action="store_true",
         help="Only refresh local file, do not git commit/push.",
@@ -64,7 +69,7 @@ def main() -> int:
     args = parser.parse_args()
 
     repo_root = Path(args.repo_root).resolve()
-    fetch_script = repo_root / "scripts" / "fetch_ianseo.py"
+    fetch_script = repo_root / "scripts" / "build_live_data.py"
     output_path = args.output.replace("\\", "/")
 
     if not fetch_script.exists():
@@ -76,7 +81,8 @@ def main() -> int:
             {
                 "mode": "local_updater",
                 "interval_sec": args.interval,
-                "url": args.url,
+                "urls": args.urls,
+                "sources_file": args.sources_file,
                 "club_keywords": args.club_keywords,
                 "output": output_path,
                 "push_enabled": not args.no_push,
@@ -91,8 +97,10 @@ def main() -> int:
             [
                 sys.executable,
                 str(fetch_script),
-                "--url",
-                args.url,
+                "--urls",
+                args.urls,
+                "--sources-file",
+                args.sources_file,
                 "--club-keywords",
                 args.club_keywords,
                 "--output",
