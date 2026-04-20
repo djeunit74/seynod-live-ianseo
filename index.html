@@ -53,6 +53,9 @@
     .admin-card{border:1px solid rgba(56,189,248,.35);background:rgba(2,132,199,.08)}
     .admin-result{margin-top:10px;font-size:14px;line-height:1.45;color:#dbeafe}
     .admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .admin-input{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:8px}
+    .admin-input input{min-width:280px;max-width:460px;width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(15,23,42,.7);color:#e2e8f0;outline:none}
+    .admin-input input:focus{border-color:rgba(56,189,248,.65);box-shadow:0 0 0 2px rgba(56,189,248,.15)}
     .volley-card{border:1px solid rgba(148,163,184,.35)}
     .volley-grid{display:grid;grid-template-columns:280px 1fr;gap:14px}@media (max-width:900px){.volley-grid{grid-template-columns:1fr}}
     .volley-panel{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px;padding:12px}
@@ -96,7 +99,7 @@
       <section class="card span8">
         <div class="summary">
           <div class="stat"><div class="label">Concours suivis</div><div class="value" id="countCompetitions">—</div></div>
-          <div class="stat"><div class="label">Archers Seynod</div><div class="value" id="countTotal">—</div></div>
+          <div class="stat"><div class="label" id="countTotalLabel">Archers club</div><div class="value" id="countTotal">—</div></div>
           <div class="stat"><div class="label">Terminés</div><div class="value" id="countFinished">—</div></div>
           <div class="stat"><div class="label">En cours</div><div class="value" id="countLive">—</div></div>
           <div class="stat"><div class="label">Lieu</div><div class="value small" id="competitionPlace">—</div></div>
@@ -176,6 +179,10 @@
 
       <section class="card span12 admin-card hidden" id="adminPanel">
         <h2 class="sectionTitle">Admin</h2>
+        <div class="admin-input">
+          <input id="clubFilterInput" type="text" placeholder="Club à suivre (numéro ou mots-clés, ex: 0174246,seynod)" />
+          <button class="btn secondary" id="applyClubFilterBtn">Appliquer club</button>
+        </div>
         <div class="admin-actions">
           <button class="btn" id="allInOneBtn">Tout en 1 : Démarrer compétition</button>
           <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
@@ -201,6 +208,8 @@
     const WORKFLOW_UPDATE_LIVE = 'update-live.yml';
     const WORKFLOW_RESET = 'reset-live.yml';
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
+    const CLUB_FILTER_STORAGE_KEY = 'seynod_tracked_club_keywords';
+    const DEFAULT_TRACKED_CLUB = '0174246,seynod';
 
     const el = id => document.getElementById(id);
     let adminMode = window.location.hostname === 'localhost';
@@ -208,10 +217,13 @@
     let previousSignature = null;
     let nextRefresh = Date.now() + REFRESH_MS;
     let lastGoodData = null;
+    let lastRawData = null;
     let lastDataGeneratedAtMs = null;
     let refreshTimer = null;
     let autoRefreshEnabled = true;
     let selectedCompetitionId = 'all';
+    let trackedClubRaw = DEFAULT_TRACKED_CLUB;
+    let trackedClubKeywords = [];
     let selectedVolleyArcherKey = '';
     const archerVolleyState = {};
     const volleyArcherIndex = {};
@@ -268,6 +280,57 @@
     function openWorkflowPage(workflowFile) {
       const url = `https://github.com/djeunit74/seynod-live-ianseo/actions/workflows/${workflowFile}`;
       window.open(url, '_blank', 'noopener');
+    }
+
+    function normalizeClubKeywords(raw) {
+      return String(raw || '')
+        .split(/[,;\n]+/)
+        .map(v => v.trim().toLowerCase())
+        .filter(Boolean);
+    }
+
+    function getClubDisplayName() {
+      if (!trackedClubKeywords.length) return 'Tous clubs';
+      return trackedClubRaw || trackedClubKeywords.join(', ');
+    }
+
+    function updateClubUiTexts() {
+      const label = el('countTotalLabel');
+      if (label) label.textContent = `Archers ${getClubDisplayName()}`;
+
+      const btn = el('findNextCompetitionBtn');
+      if (btn) btn.textContent = `Chercher prochaine compétition ${getClubDisplayName()}`;
+    }
+
+    function loadClubFilter() {
+      const stored = localStorage.getItem(CLUB_FILTER_STORAGE_KEY);
+      trackedClubRaw = (stored && stored.trim()) ? stored.trim() : DEFAULT_TRACKED_CLUB;
+      trackedClubKeywords = normalizeClubKeywords(trackedClubRaw);
+      updateClubUiTexts();
+    }
+
+    function saveClubFilter(raw) {
+      const cleaned = String(raw || '').trim();
+      trackedClubRaw = cleaned || DEFAULT_TRACKED_CLUB;
+      trackedClubKeywords = normalizeClubKeywords(trackedClubRaw);
+      localStorage.setItem(CLUB_FILTER_STORAGE_KEY, trackedClubRaw);
+      updateClubUiTexts();
+    }
+
+    function matchesTrackedClub(archer) {
+      if (!trackedClubKeywords.length) return true;
+      const haystack = `${archer?.club || ''} ${archer?.detail || ''}`.toLowerCase();
+      return trackedClubKeywords.some(k => haystack.includes(k));
+    }
+
+    function applyClubFilter(data) {
+      const competitions = (data.competitions || [])
+        .map(c => ({
+          ...c,
+          archers: (c.archers || []).filter(matchesTrackedClub)
+        }))
+        .filter(c => c.archers.length > 0);
+      return { competitions };
     }
 
     function setStatus(kind, text) {
@@ -713,7 +776,8 @@
     }
 
     function render(rawData, keepStatus = false) {
-      const data = normalizeData(rawData);
+      const normalizedData = normalizeData(rawData);
+      const data = applyClubFilter(normalizedData);
       lastGoodData = data;
       lastDataGeneratedAtMs = null;
       if (rawData && rawData.generatedAtUtc) {
@@ -743,6 +807,7 @@
         setStatus('', 'Actualisation en cours...');
         const res = await fetch(API_URL + '?t=' + Date.now(), { cache: 'no-store' });
         const data = await res.json();
+        lastRawData = data;
         render(data);
       } catch (err) {
         if (lastGoodData) {
@@ -825,7 +890,7 @@
           `<strong>Prochaine compétition détectée :</strong> ${escapeHtml(next.name)} (${escapeHtml(next.date_text)})<br>` +
           `Organisateur: ${escapeHtml(next.organizer)}<br>` +
           `Tournoi: <a href="${next.details_url}" target="_blank" rel="noopener">Details IANSEO</a> ${ic} ${ena}<br><br>` +
-          `<strong>Archers Seynod inscrits:</strong><br>${names}`
+          `<strong>Archers ${escapeHtml(getClubDisplayName())} inscrits:</strong><br>${names}`
         );
       } catch (err) {
         setAdminResult('Erreur de lecture du fichier next_competition.json: ' + escapeHtml(err.message));
@@ -833,6 +898,7 @@
     }
 
     async function initPage() {
+      loadClubFilter();
       await resolveAdminMode();
 
       el('refreshBtn').addEventListener('click', refresh);
@@ -842,6 +908,26 @@
         el('toggleCompetitionBtn').classList.remove('hidden');
         el('moodPresentationExample').classList.remove('hidden');
         renderMoodPresentationExample();
+        const clubInput = el('clubFilterInput');
+        if (clubInput) clubInput.value = trackedClubRaw;
+        el('applyClubFilterBtn').addEventListener('click', () => {
+          const input = el('clubFilterInput');
+          const raw = input ? input.value : '';
+          saveClubFilter(raw);
+          setAdminResult(`Club suivi mis à jour : <strong>${escapeHtml(getClubDisplayName())}</strong>.`);
+          if (lastRawData) {
+            render(lastRawData, true);
+          } else if (lastGoodData) {
+            render(lastGoodData, true);
+          }
+        });
+        if (clubInput) {
+          clubInput.addEventListener('keydown', (evt) => {
+            if (evt.key !== 'Enter') return;
+            evt.preventDefault();
+            el('applyClubFilterBtn').click();
+          });
+        }
         el('allInOneBtn').addEventListener('click', startCompetitionAllInOne);
         el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
         el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
