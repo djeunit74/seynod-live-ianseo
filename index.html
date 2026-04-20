@@ -163,6 +163,10 @@
         <h2 class="sectionTitle">Participants prochaine compétition</h2>
         <div class="mini" id="nextCompetitionMeta">Chargement...</div>
         <div class="row" style="margin-top:8px;">
+          <label class="mini" for="nextCompetitionSelect" id="nextCompetitionSelectLabel">Compétition :</label>
+          <select id="nextCompetitionSelect" class="btn secondary" style="padding:8px 10px;"></select>
+        </div>
+        <div class="row" style="margin-top:8px;">
           <a class="btn secondary small" id="nextCompetitionDetailsLink" href="#" target="_blank" rel="noopener">Ouvrir la fiche IANSEO</a>
           <a class="btn secondary small hidden" id="nextCompetitionENALink" href="#" target="_blank" rel="noopener">Ouvrir ENA</a>
         </div>
@@ -264,6 +268,8 @@
     let trackedIcUrls = [];
     let adminBridgeUrl = '';
     let lastNextCompetitionData = null;
+    let nextCompetitionMatches = [];
+    let selectedNextCompetitionId = '';
     let nextDataLockUntilMs = 0;
     let selectedVolleyArcherKey = '';
     const archerVolleyState = {};
@@ -452,6 +458,7 @@
         .sort((a, b) => String(a.end_date || '').localeCompare(String(b.end_date || '')));
 
       let checked = 0;
+      const matches = [];
       for (const t of filtered) {
         const entries = Array.isArray(t.entries) ? t.entries : [];
         checked += 1;
@@ -462,31 +469,31 @@
           return keys.some(k => k && hay.includes(k));
         });
         if (!matching.length) continue;
-
-        return {
-          generated_at_utc: new Date().toISOString(),
-          today: todayUtc.toISOString().slice(0, 10),
-          country,
-          keywords: keywords || [],
-          found: true,
-          checked_candidates: checked,
-          next_competition: {
-            to_id: String(t.to_id || ''),
-            year: String(t.year || ''),
-            name: t.name || `Compétition ${t.to_id || ''}`,
-            organizer: t.organizer || '',
-            date_text: t.date_text || '',
-            end_date: t.end_date || '',
-            details_url: t.details_url || '',
-            ena_url: t.ena_url || '',
-            ic_url: t.ic_url || null,
-            club_entries: matching,
-            seynod_entries: matching
-          }
-        };
+        matches.push({
+          to_id: String(t.to_id || ''),
+          year: String(t.year || ''),
+          name: t.name || `Compétition ${t.to_id || ''}`,
+          organizer: t.organizer || '',
+          date_text: t.date_text || '',
+          end_date: t.end_date || '',
+          details_url: t.details_url || '',
+          ena_url: t.ena_url || '',
+          ic_url: t.ic_url || null,
+          club_entries: matching,
+          seynod_entries: matching
+        });
       }
-
-      return { ...emptyResult, checked_candidates: checked };
+      if (!matches.length) return { ...emptyResult, checked_candidates: checked };
+      return {
+        generated_at_utc: new Date().toISOString(),
+        today: todayUtc.toISOString().slice(0, 10),
+        country,
+        keywords: keywords || [],
+        found: true,
+        checked_candidates: checked,
+        next_competition: matches[0],
+        matches
+      };
     }
 
     async function loadAdminConfig() {
@@ -572,7 +579,9 @@
       const tbody = el('nextParticipantsBody');
       const details = el('nextCompetitionDetailsLink');
       const ena = el('nextCompetitionENALink');
-      if (!card || !meta || !tbody || !details || !ena) return;
+      const select = el('nextCompetitionSelect');
+      const selectLabel = el('nextCompetitionSelectLabel');
+      if (!card || !meta || !tbody || !details || !ena || !select || !selectLabel) return;
 
       if (!data || !data.found || !data.next_competition) {
         card.classList.remove('hidden');
@@ -580,6 +589,8 @@
         const checked = Number.isFinite(Number(data?.checked_candidates)) ? Number(data.checked_candidates) : 0;
         meta.innerHTML = `<strong>Aucune prochaine compétition trouvée</strong> · mots-clés: ${escapeHtml(usedKeywords)} · candidats vérifiés: ${checked}`;
         tbody.innerHTML = '<tr><td colspan="4">Aucun participant détecté pour le moment. Clique sur "Chercher prochaine compétition".</td></tr>';
+        select.classList.add('hidden');
+        selectLabel.classList.add('hidden');
         details.href = '#';
         details.style.pointerEvents = 'none';
         details.style.opacity = '.6';
@@ -588,8 +599,35 @@
         return;
       }
 
-      const next = data.next_competition;
-      const entries = (next.club_entries || next.seynod_entries || []);
+      const matches = Array.isArray(data.matches) && data.matches.length ? data.matches : [data.next_competition];
+      nextCompetitionMatches = matches;
+      if (!selectedNextCompetitionId || !nextCompetitionMatches.some(m => String(m.to_id) === selectedNextCompetitionId)) {
+        selectedNextCompetitionId = String(nextCompetitionMatches[0]?.to_id || '');
+      }
+      const next = nextCompetitionMatches.find(m => String(m.to_id) === selectedNextCompetitionId) || nextCompetitionMatches[0];
+      const entries = (next?.club_entries || next?.seynod_entries || []);
+
+      if (!select.dataset.bound) {
+        select.addEventListener('change', () => {
+          selectedNextCompetitionId = select.value || '';
+          renderNextParticipantsPanel({ found: true, next_competition: nextCompetitionMatches[0], matches: nextCompetitionMatches });
+        });
+        select.dataset.bound = '1';
+      }
+
+      if (matches.length > 1) {
+        selectLabel.classList.remove('hidden');
+        select.classList.remove('hidden');
+        select.innerHTML = matches.map(m => {
+          const c = (m.club_entries || m.seynod_entries || []).length;
+          return `<option value="${escapeHtml(String(m.to_id || ''))}">${escapeHtml(m.name || 'Compétition')} (${escapeHtml(m.date_text || '')} · ${c} inscrit${c > 1 ? 's' : ''})</option>`;
+        }).join('');
+        select.value = selectedNextCompetitionId;
+      } else {
+        select.classList.add('hidden');
+        selectLabel.classList.add('hidden');
+      }
+
       card.classList.remove('hidden');
       meta.innerHTML =
         `<strong>${escapeHtml(next.name || 'Compétition')}</strong> · ${escapeHtml(next.date_text || '')}` +
@@ -1533,6 +1571,8 @@
           saveClubFilter(raw);
           saveCountryCode(countryRaw);
           lastNextCompetitionData = null;
+          nextCompetitionMatches = [];
+          selectedNextCompetitionId = '';
           nextDataLockUntilMs = 0;
           renderNextParticipantsPanel({ found: false });
           setAdminResult(`Club suivi mis à jour : <strong>${escapeHtml(getClubDisplayName())}</strong> · Pays : <strong>${escapeHtml(trackedCountryCode)}</strong>.`);
