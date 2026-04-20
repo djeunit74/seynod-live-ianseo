@@ -119,24 +119,46 @@ def extract_ic_url(details_html: str, to_id: str) -> Optional[str]:
     return "https://www.ianseo.net" + m.group(1)
 
 
-def extract_seynod_entries(ena_html: str, keywords: List[str]) -> List[Dict[str, str]]:
+def _is_club_header(text: str) -> bool:
+    t = (text or "").strip()
+    if not t:
+        return False
+    return bool(re.match(r"^\d{6,8}\s*-\s*.+$", t))
+
+
+def extract_club_entries(ena_html: str, keywords: List[str]) -> List[Dict[str, str]]:
     entries: List[Dict[str, str]] = []
     rows = re.findall(r"<tr[^>]*>(.*?)</tr>", ena_html, flags=re.IGNORECASE | re.DOTALL)
+    current_club = ""
+    lower_keywords = [k.lower() for k in keywords if k]
+
     for row in rows:
-        low = row.lower()
-        if not any(k in low for k in keywords):
+        cells = [clean_text(c) for c in re.findall(r"<td[^>]*>(.*?)</td>", row, flags=re.IGNORECASE | re.DOTALL)]
+        if not cells:
             continue
 
-        cells = [clean_text(c) for c in re.findall(r"<td[^>]*>(.*?)</td>", row, flags=re.IGNORECASE | re.DOTALL)]
-        if len(cells) < 3:
+        # ENA often groups athletes under a dedicated club header row:
+        # "0163157 - RIOM". Keep this club for following athlete rows.
+        if len(cells) == 1 and _is_club_header(cells[0]):
+            current_club = cells[0]
             continue
+
+        row_text = " | ".join(cells).lower()
+        club_text = current_club.lower()
+        if lower_keywords and not any(k in row_text or k in club_text for k in lower_keywords):
+            continue
+
+        name = cells[0] if len(cells) > 0 else ""
+        if not name or _is_club_header(name):
+            continue
+
         entries.append(
             {
-                "name": cells[0],
+                "name": name,
                 "target": cells[1] if len(cells) > 1 else "",
-                "club": cells[2] if len(cells) > 2 else "",
-                "category": cells[3] if len(cells) > 3 else "",
-                "session": cells[4] if len(cells) > 4 else "",
+                "club": current_club or (cells[2] if len(cells) > 2 else ""),
+                "category": cells[2] if len(cells) > 2 else (cells[3] if len(cells) > 3 else ""),
+                "session": cells[3] if len(cells) > 3 else (cells[4] if len(cells) > 4 else ""),
             }
         )
     return entries
@@ -161,7 +183,7 @@ def find_next_competition(today: dt.date, keywords: List[str], country: str) -> 
             continue
 
         ena_html = fetch_text(ena_url)
-        entries = extract_seynod_entries(ena_html, keywords)
+        entries = extract_club_entries(ena_html, keywords)
         if not entries:
             continue
 
@@ -172,19 +194,20 @@ def find_next_competition(today: dt.date, keywords: List[str], country: str) -> 
                 **tournament,
                 "ena_url": ena_url,
                 "ic_url": ic_url,
+                "club_entries": entries,
                 "seynod_entries": entries,
             },
         }
 
     return {
         "found": False,
-        "message": "Aucune competition future avec inscrits Seynod trouvee pour le moment.",
+        "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
         "checked_candidates": len(candidates),
     }
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Find next IANSEO competition with Seynod entries")
+    parser = argparse.ArgumentParser(description="Find next IANSEO competition with club entries")
     parser.add_argument("--output", default="data/next_competition.json")
     parser.add_argument("--keywords", default="seynod,0174246")
     parser.add_argument("--country", default="FRA")

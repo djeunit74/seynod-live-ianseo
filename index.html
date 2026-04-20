@@ -332,7 +332,7 @@
       }
 
       const next = data.next_competition;
-      const entries = (next.seynod_entries || []).map(e => `${escapeHtml(e.name)} (${escapeHtml(e.category)})`).slice(0, 12);
+      const entries = ((next.club_entries || next.seynod_entries || [])).map(e => `${escapeHtml(e.name)} (${escapeHtml(e.category)})`).slice(0, 12);
       const names = entries.length ? entries.join('<br>') : 'Inscrits détectés (détails indisponibles).';
       const ic = next.ic_url ? `<a href="${next.ic_url}" target="_blank" rel="noopener">Ouvrir IC</a>` : '';
       const ena = next.ena_url ? `<a href="${next.ena_url}" target="_blank" rel="noopener">Ouvrir ENA</a>` : '';
