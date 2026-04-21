@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-21T20:04:32.720755+00:00",
+  "generated_at_utc": "2026-04-21T21:12:27.704254+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -6069,7 +6069,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27349",
       "ena_url": "https://www.ianseo.net/TourData/2026/27349/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27349/IC.php",
-      "entries_count": 288,
+      "entries_count": 298,
       "entries": [
         {
           "name": "ACQUAVIVA Pascal",
@@ -6145,15 +6145,15 @@
           "name": "BACHELET Hugues",
           "club": "0892186 - CHATILLON CIE 92",
           "category": "0892186 - CHATILLON CIE 92",
-          "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "23C"
+          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "11A"
         },
         {
           "name": "BACHELET Hugues",
           "club": "0892186 - CHATILLON CIE 92",
           "category": "0892186 - CHATILLON CIE 92",
-          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "9A"
+          "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "23C"
         },
         {
           "name": "BADOUAL Jean-Marc",
@@ -6259,6 +6259,20 @@
           "category": "0878142 - HOUILLES",
           "session": "S1 Homme Arc Classique National, Scratch Homme Arc Classique National",
           "target": "17C"
+        },
+        {
+          "name": "BONNEAU David",
+          "club": "0875004 - PARIS ARC 18 LA CHAPELLE",
+          "category": "0875004 - PARIS ARC 18 LA CHAPELLE",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "24C"
+        },
+        {
+          "name": "BONNEAU David",
+          "club": "0875004 - PARIS ARC 18 LA CHAPELLE",
+          "category": "0875004 - PARIS ARC 18 LA CHAPELLE",
+          "session": "S2 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "9C"
         },
         {
           "name": "BONTEMPS Herve",
@@ -6807,6 +6821,13 @@
           "target": "16C"
         },
         {
+          "name": "ESCOTTE Guillaume",
+          "club": "0895299 - MONTIGNY LES CORMEILLES",
+          "category": "0895299 - MONTIGNY LES CORMEILLES",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "20D"
+        },
+        {
           "name": "ESPIED Odile",
           "club": "0891145 - DOURDAN",
           "category": "0891145 - DOURDAN",
@@ -6845,15 +6866,15 @@
           "name": "FLEURANCE Jean-Yves",
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
-          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "30A"
+          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "11C"
         },
         {
           "name": "FLEURANCE Jean-Yves",
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
-          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "9C"
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "30A"
         },
         {
           "name": "FOUCHER Philippe",
@@ -6875,6 +6896,13 @@
           "category": "0878114 - BUC",
           "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
           "target": "23D"
+        },
+        {
+          "name": "FROMENT Thierry",
+          "club": "0877048 - NEMOURS SAINT PIERRE",
+          "category": "0877048 - NEMOURS SAINT PIERRE",
+          "session": "S2 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "8A"
         },
         {
           "name": "GACON Gilles",
@@ -7143,6 +7171,20 @@
           "target": "16D"
         },
         {
+          "name": "JOIN-LAMBERT Anne-Lee",
+          "club": "0878134 - VILLEPREUX",
+          "category": "0878134 - VILLEPREUX",
+          "session": "S2 Femme Arc Classique, Scratch Femme Arc Classique",
+          "target": "2D"
+        },
+        {
+          "name": "JOLY-VENDROT Leo",
+          "club": "0895299 - MONTIGNY LES CORMEILLES",
+          "category": "0895299 - MONTIGNY LES CORMEILLES",
+          "session": "U21 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "19D"
+        },
+        {
           "name": "JONIOT Christophe",
           "club": "0875307 - PARIS SPINE PARADOX",
           "category": "0875307 - PARIS SPINE PARADOX",
@@ -7162,6 +7204,13 @@
           "category": "0878123 - MAUREPAS",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
           "target": "9D"
+        },
+        {
+          "name": "JOURDIN Hubert",
+          "club": "0895299 - MONTIGNY LES CORMEILLES",
+          "category": "0895299 - MONTIGNY LES CORMEILLES",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "21B"
         },
         {
           "name": "JUCHNIEWSKI Jonathan",
@@ -7204,6 +7253,13 @@
           "category": "0878118 - RAMBOUILLET",
           "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
           "target": "28B"
+        },
+        {
+          "name": "LAGOGUEY Nicolas",
+          "club": "0877048 - NEMOURS SAINT PIERRE",
+          "category": "0877048 - NEMOURS SAINT PIERRE",
+          "session": "S2 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "9B"
         },
         {
           "name": "LAGOUGE Jean Luc",
@@ -7325,6 +7381,13 @@
           "target": "12B"
         },
         {
+          "name": "LEGRAND Michel",
+          "club": "0878143 - ELANCOURT",
+          "category": "0878143 - ELANCOURT",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "22A"
+        },
+        {
           "name": "LEGRAND Olivier",
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
@@ -7350,7 +7413,14 @@
           "club": "0878103 - SAINT ARNOULT EN YVELINES",
           "category": "0878103 - SAINT ARNOULT EN YVELINES",
           "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "19D"
+          "target": "22D"
+        },
+        {
+          "name": "LOMBARDO Catherine",
+          "club": "0895299 - MONTIGNY LES CORMEILLES",
+          "category": "0895299 - MONTIGNY LES CORMEILLES",
+          "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
+          "target": "22C"
         },
         {
           "name": "LUBERT Jeremie",
@@ -7447,14 +7517,14 @@
           "name": "MARINI Matteo",
           "club": "0878110 - MAREIL MARLY",
           "category": "0878110 - MAREIL MARLY",
-          "session": "Arc Classique U18 Hommes",
-          "target": "9D"
+          "session": "U18 Homme Arc Classique",
+          "target": "11D"
         },
         {
           "name": "MARINI Matteo",
           "club": "0878110 - MAREIL MARLY",
           "category": "0878110 - MAREIL MARLY",
-          "session": "U18 Homme Arc Classique",
+          "session": "Arc Classique U18 Hommes",
           "target": "9D"
         },
         {
@@ -7945,7 +8015,7 @@
           "club": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
           "category": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
           "session": "S1 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "8A"
+          "target": "9A"
         },
         {
           "name": "TORRECILLOS Mailys",
