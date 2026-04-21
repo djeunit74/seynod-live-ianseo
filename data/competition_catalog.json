@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-21T21:12:27.704254+00:00",
+  "generated_at_utc": "2026-04-21T22:09:09.287464+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -982,7 +982,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27020",
       "ena_url": "https://www.ianseo.net/TourData/2026/27020/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27020/IC.php",
-      "entries_count": 335,
+      "entries_count": 334,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -2172,7 +2172,7 @@
           "club": "0891152 - MORSANG SUR ORGE",
           "category": "0891152 - MORSANG SUR ORGE",
           "session": "Arc Classique U21 Femmes",
-          "target": "16D"
+          "target": "10B"
         },
         {
           "name": "JOURNEL Mathieu",
@@ -2459,7 +2459,7 @@
           "club": "0891152 - MORSANG SUR ORGE",
           "category": "0891152 - MORSANG SUR ORGE",
           "session": "Arc Classique Senior 2 Femmes",
-          "target": "10B"
+          "target": "16D"
         },
         {
           "name": "LOPEZ Javier",
@@ -2649,13 +2649,6 @@
           "category": "0893242 - AULNAY SOUS BOIS",
           "session": "Arc Classique Senior 1 Hommes",
           "target": "27D"
-        },
-        {
-          "name": "MOTORNYI Oleksandr",
-          "club": "0891152 - MORSANG SUR ORGE",
-          "category": "0891152 - MORSANG SUR ORGE",
-          "session": "Arc Classique Senior 1 Hommes",
-          "target": "19C"
         },
         {
           "name": "MOUHYI Adnane",
