@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-21T14:05:10.568922+00:00",
+  "generated_at_utc": "2026-04-21T15:57:02.913228+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -4733,7 +4733,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=26028",
       "ena_url": "https://www.ianseo.net/TourData/2026/26028/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/26028/IC.php",
-      "entries_count": 175,
+      "entries_count": 176,
       "entries": [
         {
           "name": "ABID Remi",
@@ -5322,6 +5322,13 @@
           "category": "0163157 - RIOM",
           "session": "U18 Homme Arc Classique",
           "target": "1C"
+        },
+        {
+          "name": "HEQUET Marine",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "U21 Femme Arc Classique",
+          "target": "22B"
         },
         {
           "name": "HERMANOVITS Timeo",
