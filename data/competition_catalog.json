@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-21T09:12:09.395884+00:00",
+  "generated_at_utc": "2026-04-21T10:51:36.276278+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -10860,7 +10860,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27216",
       "ena_url": "https://www.ianseo.net/TourData/2026/27216/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27216/IC.php",
-      "entries_count": 124,
+      "entries_count": 141,
       "entries": [
         {
           "name": "ACHA GONZALEZ Pablo",
@@ -10873,6 +10873,13 @@
           "name": "ALBANESE Remy",
           "club": "1313078 - MIRAMAS",
           "category": "1313078 - MIRAMAS",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "ALOUANI Neil",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
           "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
@@ -10944,6 +10951,13 @@
           "club": "1033110 - AUROS",
           "category": "1033110 - AUROS",
           "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "BASSIMON Lou",
+          "club": "0762288 - MONCHY AU BOIS",
+          "category": "0762288 - MONCHY AU BOIS",
+          "session": "Arc Classique Senior 1 Femme",
           "target": ""
         },
         {
@@ -11031,10 +11045,24 @@
           "target": ""
         },
         {
+          "name": "BOULCH Jean Philippe",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "BOURGEOIS Aymeric",
           "club": "0759129 - VALENCIENNES",
           "category": "0759129 - VALENCIENNES",
           "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "BRAULE Camille",
+          "club": "0762288 - MONCHY AU BOIS",
+          "category": "0762288 - MONCHY AU BOIS",
+          "session": "Arc Classique U21 Femme",
           "target": ""
         },
         {
@@ -11087,13 +11115,6 @@
           "target": ""
         },
         {
-          "name": "CLAUDIN Anthony",
-          "club": "0169188 - LYON 8EME",
-          "category": "0169188 - LYON 8EME",
-          "session": "Scratch Homme Arc à Poulies",
-          "target": ""
-        },
-        {
           "name": "COLLAUD-BRETHENET Evann",
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
@@ -11143,9 +11164,23 @@
           "target": ""
         },
         {
+          "name": "CRUSSON Mathieu",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "DELAMARE Guillaume",
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "DELOBELLE Fabien",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
           "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
@@ -11213,6 +11248,13 @@
           "target": ""
         },
         {
+          "name": "FAUTRAT Quentin",
+          "club": "0950054 - BREHAL",
+          "category": "0950054 - BREHAL",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "FOUACE-PEOUX Alexandra",
           "club": "0950072 - CHERBOURG EN COTENTIN",
           "category": "0950072 - CHERBOURG EN COTENTIN",
@@ -11220,10 +11262,24 @@
           "target": ""
         },
         {
+          "name": "FRIN Alexis",
+          "club": "0329053 - PLOURIN LES MORLAIX",
+          "category": "0329053 - PLOURIN LES MORLAIX",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "GAUBIL Melanie",
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "GERMAIN Evan",
+          "club": "0329053 - PLOURIN LES MORLAIX",
+          "category": "0329053 - PLOURIN LES MORLAIX",
+          "session": "Scratch Homme Arc Classique",
           "target": ""
         },
         {
@@ -11300,6 +11356,13 @@
           "name": "JOUFFROY Tom",
           "club": "0895293 - SARCELLES",
           "category": "0895293 - SARCELLES",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "JOUSSAUME Thierry",
+          "club": "1249050 - CHOLET TAC",
+          "category": "1249050 - CHOLET TAC",
           "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
@@ -11444,6 +11507,13 @@
           "target": ""
         },
         {
+          "name": "MERCHER Justine",
+          "club": "0762288 - MONCHY AU BOIS",
+          "category": "0762288 - MONCHY AU BOIS",
+          "session": "Arc Classique Senior 1 Femme",
+          "target": ""
+        },
+        {
           "name": "MICHEL Julie",
           "club": "1033110 - AUROS",
           "category": "1033110 - AUROS",
@@ -11458,6 +11528,20 @@
           "target": ""
         },
         {
+          "name": "MOINE Maxence",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "MORINEAU Lois",
+          "club": "0169188 - LYON 8EME",
+          "category": "0169188 - LYON 8EME",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "NICOLAI Dorian",
           "club": "1306038 - NICE AC",
           "category": "1306038 - NICE AC",
@@ -11468,6 +11552,13 @@
           "name": "O'SULLIVAN Lucy",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "ORCIERE Delphine",
+          "club": "0892199 - SURESNES",
+          "category": "0892199 - SURESNES",
           "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
@@ -11528,6 +11619,13 @@
           "target": ""
         },
         {
+          "name": "PENVEN Patrice",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "PLANCHET Erwan",
           "club": "1079182 - ARDIN",
           "category": "1079182 - ARDIN",
@@ -11581,6 +11679,20 @@
           "club": "0895293 - SARCELLES",
           "category": "0895293 - SARCELLES",
           "session": "Arc Classique Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "RENARD Garance",
+          "club": "0329040 - BREST",
+          "category": "0329040 - BREST",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "RICCI Thais",
+          "club": "0762288 - MONCHY AU BOIS",
+          "category": "0762288 - MONCHY AU BOIS",
+          "session": "Arc Classique U18 Femme",
           "target": ""
         },
         {
@@ -11661,6 +11773,13 @@
           "target": ""
         },
         {
+          "name": "TOURAINE-HELIAS Kyla",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "UNRUH Florian",
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
@@ -11672,13 +11791,6 @@
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
           "session": "Scratch Homme Arc Classique",
-          "target": ""
-        },
-        {
-          "name": "VALLEMONT Antoine",
-          "club": "0169188 - LYON 8EME",
-          "category": "0169188 - LYON 8EME",
-          "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
         {
@@ -11727,6 +11839,13 @@
           "name": "WONNEBERGER Natacha",
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "YAHYAOUI Lilia",
+          "club": "0329053 - PLOURIN LES MORLAIX",
+          "category": "0329053 - PLOURIN LES MORLAIX",
           "session": "Scratch Femme Arc Classique",
           "target": ""
         }
