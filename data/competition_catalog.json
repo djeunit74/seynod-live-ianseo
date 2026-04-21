@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-21T18:40:30.723653+00:00",
+  "generated_at_utc": "2026-04-21T20:04:32.720755+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3341,7 +3341,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27473",
       "ena_url": "https://www.ianseo.net/TourData/2026/27473/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27473/IC.php",
-      "entries_count": 195,
+      "entries_count": 206,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -3460,7 +3460,7 @@
           "club": "0668183 - MULHOUSE STAM",
           "category": "0668183 - MULHOUSE STAM",
           "session": "S1 Homme Arc à Poulies",
-          "target": "9A"
+          "target": "8B"
         },
         {
           "name": "BOISSON Lalie",
@@ -3566,6 +3566,13 @@
           "category": "0221017 - SAINT APOLLINAIRE",
           "session": "Arc Classique Senior 1 Hommes",
           "target": "6A"
+        },
+        {
+          "name": "CALDERERO MICHAUD Clemence",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U15 Femme Arc Classique",
+          "target": "26A"
         },
         {
           "name": "CAMENEN Arthur",
@@ -3729,6 +3736,13 @@
           "target": "22B"
         },
         {
+          "name": "DE FREITAS Mickael",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "8C"
+        },
+        {
           "name": "DE MATOS Jose",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
@@ -3817,7 +3831,7 @@
           "club": "0239050 - DOLE",
           "category": "0239050 - DOLE",
           "session": "U13 Homme Arc Classique",
-          "target": ""
+          "target": "23C"
         },
         {
           "name": "DUFUT Lilian",
@@ -3939,6 +3953,13 @@
           "target": "22A"
         },
         {
+          "name": "FROSSARD Elouan",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "U18 Homme Arc Classique",
+          "target": "7B"
+        },
+        {
           "name": "GADEA Christophe",
           "club": "0258053 - LA CHARITE SUR LOIRE",
           "category": "0258053 - LA CHARITE SUR LOIRE",
@@ -4048,7 +4069,7 @@
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "U15 Femme Arc Classique",
-          "target": "25B"
+          "target": "26B"
         },
         {
           "name": "GRIBELIN Gabriella",
@@ -4063,6 +4084,20 @@
           "category": "0221123 - LES ARCHERS SELONGEENS",
           "session": "Arc Classique Senior 2 Femmes National",
           "target": "23C"
+        },
+        {
+          "name": "GUENIOT Joseph",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "S1 Homme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "GUENIOT Joseph",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "5C"
         },
         {
           "name": "HAUSSE Didier",
@@ -4097,7 +4132,7 @@
           "club": "0289098 - MONETEAU",
           "category": "0289098 - MONETEAU",
           "session": "S2 Homme Arc à Poulies National",
-          "target": "12A"
+          "target": "21A"
         },
         {
           "name": "IIDA Kei",
@@ -4119,6 +4154,20 @@
           "category": "0138088 - GRENOBLE",
           "session": "S2 Femme Arc Classique National",
           "target": "8C"
+        },
+        {
+          "name": "JEAMBRUN Andeol",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "11B"
+        },
+        {
+          "name": "JEAMBRUN Andeol",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": "12A"
         },
         {
           "name": "JEAN DE DIEU Laura",
@@ -4146,14 +4195,14 @@
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
           "session": "S2 Homme Arc à Poulies National",
-          "target": "12B"
+          "target": "21B"
         },
         {
           "name": "LALLEMENT Lena",
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
           "session": "U15 Femme Arc à Poulies National",
-          "target": ""
+          "target": "23B"
         },
         {
           "name": "LAMOTTE Marie Eve",
@@ -4191,6 +4240,20 @@
           "target": "7A"
         },
         {
+          "name": "LEFEVRE Francine",
+          "club": "0610022 - VILLE SOUS LA FERTE",
+          "category": "0610022 - VILLE SOUS LA FERTE",
+          "session": "Arc à Poulies Senior 3 Femmes National",
+          "target": "19B"
+        },
+        {
+          "name": "LEFEVRE Francine",
+          "club": "0610022 - VILLE SOUS LA FERTE",
+          "category": "0610022 - VILLE SOUS LA FERTE",
+          "session": "Arc à Poulies Senior 3 Femmes",
+          "target": "8A"
+        },
+        {
           "name": "LEONARD Bastien",
           "club": "0221018 - SEMUR EN AUXOIS",
           "category": "0221018 - SEMUR EN AUXOIS",
@@ -4223,14 +4286,14 @@
           "club": "0271083 - AUTUN",
           "category": "0271083 - AUTUN",
           "session": "S2 Homme Arc Classique National",
-          "target": "18C"
+          "target": "20A"
         },
         {
           "name": "LYANNAS Nathan",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "U13 Homme Arc Classique",
-          "target": "26B"
+          "target": "27B"
         },
         {
           "name": "MAIROT Elise",
@@ -4258,7 +4321,7 @@
           "club": "0221018 - SEMUR EN AUXOIS",
           "category": "0221018 - SEMUR EN AUXOIS",
           "session": "U15 Femme Arc Classique National",
-          "target": "26A"
+          "target": "27A"
         },
         {
           "name": "MARECHAL Florian",
@@ -4317,20 +4380,6 @@
           "target": "10C"
         },
         {
-          "name": "MENETRIER David",
-          "club": "0289107 - BRIENON/ARMANCON",
-          "category": "0289107 - BRIENON/ARMANCON",
-          "session": "Arc Nu Senior 1 Hommes National",
-          "target": "19B"
-        },
-        {
-          "name": "MENETRIER David",
-          "club": "0289107 - BRIENON/ARMANCON",
-          "category": "0289107 - BRIENON/ARMANCON",
-          "session": "Scratch Homme Arc Nu National",
-          "target": "20B"
-        },
-        {
           "name": "MIGNE Emilie",
           "club": "0239050 - DOLE",
           "category": "0239050 - DOLE",
@@ -4342,7 +4391,7 @@
           "club": "0239050 - DOLE",
           "category": "0239050 - DOLE",
           "session": "U13 Femme Arc Classique",
-          "target": ""
+          "target": "23A"
         },
         {
           "name": "MIGNE Ludovic",
@@ -4422,6 +4471,13 @@
           "target": "20C"
         },
         {
+          "name": "OUGHLIS Sebastien",
+          "club": "0271090 - CHALON SUR SAONE",
+          "category": "0271090 - CHALON SUR SAONE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "12C"
+        },
+        {
           "name": "PALACH Agnes",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
@@ -4461,7 +4517,7 @@
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "S3 Homme Arc à Poulies National",
-          "target": "12C"
+          "target": "21C"
         },
         {
           "name": "PITOISET Anne-Sophie",
@@ -4506,6 +4562,20 @@
           "target": "16A"
         },
         {
+          "name": "PRUNIER Patrick",
+          "club": "0610022 - VILLE SOUS LA FERTE",
+          "category": "0610022 - VILLE SOUS LA FERTE",
+          "session": "Arc à Poulies Senior 3 Hommes National",
+          "target": "20B"
+        },
+        {
+          "name": "PRUNIER Patrick",
+          "club": "0610022 - VILLE SOUS LA FERTE",
+          "category": "0610022 - VILLE SOUS LA FERTE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "9A"
+        },
+        {
           "name": "PUGEAUX Sandrine",
           "club": "0239049 - ASNANS",
           "category": "0239049 - ASNANS",
@@ -4546,6 +4616,13 @@
           "category": "0221014 - DIJON",
           "session": "Arc Classique Débutant U11, U13 et U15 1ère année",
           "target": "25C"
+        },
+        {
+          "name": "ROUBIER David",
+          "club": "0271090 - CHALON SUR SAONE",
+          "category": "0271090 - CHALON SUR SAONE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "10B"
         },
         {
           "name": "ROUSSEL Claire",
@@ -4650,7 +4727,7 @@
           "club": "0221018 - SEMUR EN AUXOIS",
           "category": "0221018 - SEMUR EN AUXOIS",
           "session": "U15 Femme Arc Classique",
-          "target": ""
+          "target": "22A"
         },
         {
           "name": "VIDAL Bernard",
