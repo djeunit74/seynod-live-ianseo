@@ -55,8 +55,11 @@
     .admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
     .admin-input{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:8px}
     .admin-input input{min-width:280px;max-width:460px;width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(15,23,42,.7);color:#e2e8f0;outline:none}
+    .admin-input select{min-width:280px;max-width:520px;width:100%;padding:11px 12px;border-radius:12px;border:1px solid var(--border);background:rgba(15,23,42,.7);color:#e2e8f0;outline:none}
     .admin-input input:focus{border-color:rgba(56,189,248,.65);box-shadow:0 0 0 2px rgba(56,189,248,.15)}
+    .admin-input select:focus{border-color:rgba(56,189,248,.65);box-shadow:0 0 0 2px rgba(56,189,248,.15)}
     .admin-list{margin-top:10px;padding:10px;border:1px dashed rgba(148,163,184,.35);border-radius:12px}
+    .admin-quick{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
     .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
     .tab-btn{padding:8px 12px;border-radius:10px;border:1px solid var(--border);background:#1f2937;color:#e5e7eb;cursor:pointer;font-weight:700}
     .tab-btn.active{background:#2563eb}
@@ -205,10 +208,18 @@
         </div>
         <div class="tab-pane" id="adminTabClubPane">
           <div class="admin-input">
-            <input id="clubFilterInput" type="text" placeholder="Club à suivre (numéro ou mots-clés, ex: 0174246,seynod)" />
+            <input id="clubFilterInput" list="clubQuickList" type="text" placeholder="Club à suivre (numéro ou mots-clés, ex: 0174246,seynod)" />
+            <datalist id="clubQuickList"></datalist>
             <input id="countryCodeInput" type="text" placeholder="Pays IANSEO (ex: FRA)" style="max-width:220px;min-width:180px" />
             <button class="btn secondary" id="applyClubFilterBtn">Appliquer club</button>
           </div>
+          <div class="admin-input">
+            <select id="clubQuickSelect">
+              <option value="">Clubs proposés (chargement...)</option>
+            </select>
+            <button class="btn secondary" id="applyQuickClubBtn">Choisir ce club</button>
+          </div>
+          <div class="admin-quick" id="clubQuickButtons"></div>
         </div>
         <div class="tab-pane hidden" id="adminTabTournamentsPane">
           <div class="admin-actions">
@@ -256,6 +267,12 @@
     const DEFAULT_TRACKED_CLUB = '0174246,seynod';
     const DEFAULT_COUNTRY_CODE = 'FRA';
     const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
+    const CLUB_QUICK_PRESETS = [
+      '0174246 - SEYNOD',
+      '0163157 - RIOM',
+      '0163151 - CLERMONT FERRAND CIE',
+      '0221012 - AUXONNE'
+    ];
 
     const el = id => document.getElementById(id);
     let adminMode = window.location.hostname === 'localhost';
@@ -279,6 +296,7 @@
     let selectedNextCompetitionId = '';
     let nextDataLockUntilMs = 0;
     let selectedVolleyArcherKey = '';
+    let clubQuickChoices = [];
     const archerVolleyState = {};
     const volleyArcherIndex = {};
     const VOLLEY_CONFIG = {
@@ -874,6 +892,92 @@
       return trackedClubRaw || trackedClubKeywords.join(', ');
     }
 
+    function normalizeClubSuggestion(value) {
+      return String(value || '').trim().replace(/\s+/g, ' ');
+    }
+
+    function dedupeClubSuggestions(values) {
+      const map = new Map();
+      for (const v of values || []) {
+        const clean = normalizeClubSuggestion(v);
+        if (!clean) continue;
+        const key = normalizeForMatch(clean);
+        if (!key || map.has(key)) continue;
+        map.set(key, clean);
+      }
+      return Array.from(map.values());
+    }
+
+    function extractClubSuggestionsFromCatalog(catalog, limit = 80) {
+      const counts = new Map();
+      const tournaments = Array.isArray(catalog?.tournaments) ? catalog.tournaments : [];
+      for (const t of tournaments) {
+        const entries = Array.isArray(t?.entries) ? t.entries : [];
+        for (const e of entries) {
+          const club = normalizeClubSuggestion(e?.club || '');
+          if (!club) continue;
+          const key = normalizeForMatch(club);
+          if (!key) continue;
+          const prev = counts.get(key) || { label: club, count: 0 };
+          prev.count += 1;
+          if (club.length > prev.label.length) prev.label = club;
+          counts.set(key, prev);
+        }
+      }
+      return Array.from(counts.values())
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
+        .slice(0, limit)
+        .map(x => x.label);
+    }
+
+    function renderClubQuickChoices() {
+      const select = el('clubQuickSelect');
+      const list = el('clubQuickList');
+      const buttons = el('clubQuickButtons');
+      if (!select || !list || !buttons) return;
+
+      const options = dedupeClubSuggestions([trackedClubRaw, ...CLUB_QUICK_PRESETS, ...clubQuickChoices]);
+      if (!options.length) {
+        select.innerHTML = '<option value="">Aucun club proposé</option>';
+        buttons.innerHTML = '';
+        list.innerHTML = '';
+        return;
+      }
+
+      select.innerHTML = ['<option value="">Choix rapide club…</option>']
+        .concat(options.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`))
+        .join('');
+      list.innerHTML = options.map(v => `<option value="${escapeHtml(v)}"></option>`).join('');
+
+      const topButtons = options.slice(0, 8);
+      buttons.innerHTML = topButtons.map(v =>
+        `<button class="btn small secondary" data-clubquick="${escapeHtml(v)}">${escapeHtml(v)}</button>`
+      ).join('');
+      buttons.querySelectorAll('[data-clubquick]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const club = btn.getAttribute('data-clubquick') || '';
+          const input = el('clubFilterInput');
+          if (input) input.value = club;
+          el('applyClubFilterBtn')?.click();
+        });
+      });
+    }
+
+    async function loadClubQuickChoicesFromCatalog() {
+      try {
+        const res = await fetch(CATALOG_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) {
+          renderClubQuickChoices();
+          return;
+        }
+        const catalog = await res.json();
+        clubQuickChoices = extractClubSuggestionsFromCatalog(catalog, 120);
+      } catch (_) {
+        clubQuickChoices = [];
+      }
+      renderClubQuickChoices();
+    }
+
     function updateClubUiTexts() {
       const label = el('countTotalLabel');
       if (label) label.textContent = `Archers ${getClubDisplayName()}`;
@@ -900,6 +1004,7 @@
       trackedClubRaw = (stored && stored.trim()) ? stored.trim() : DEFAULT_TRACKED_CLUB;
       trackedClubKeywords = normalizeClubKeywords(trackedClubRaw);
       updateClubUiTexts();
+      renderClubQuickChoices();
     }
 
     function normalizeCountryCode(raw) {
@@ -1035,6 +1140,7 @@
       trackedClubKeywords = normalizeClubKeywords(trackedClubRaw);
       localStorage.setItem(CLUB_FILTER_STORAGE_KEY, trackedClubRaw);
       updateClubUiTexts();
+      renderClubQuickChoices();
     }
 
     function matchesTrackedClub(archer) {
@@ -1714,6 +1820,7 @@
         const countryInput = el('countryCodeInput');
         if (clubInput) clubInput.value = trackedClubRaw;
         if (countryInput) countryInput.value = trackedCountryCode;
+        await loadClubQuickChoicesFromCatalog();
         setAdminTab('club');
         renderTrackedTournamentsList();
         el('adminTabClubBtn').addEventListener('click', () => setAdminTab('club'));
@@ -1735,6 +1842,16 @@
           } else if (lastGoodData) {
             render(lastGoodData, true);
           }
+        });
+        el('applyQuickClubBtn').addEventListener('click', () => {
+          const quickSelect = el('clubQuickSelect');
+          const value = quickSelect ? String(quickSelect.value || '').trim() : '';
+          if (!value) {
+            setAdminResult('Choisis un club proposé avant de valider.');
+            return;
+          }
+          if (clubInput) clubInput.value = value;
+          el('applyClubFilterBtn').click();
         });
         el('clearTrackedTournamentsBtn').addEventListener('click', async () => {
           clearTrackedTournaments();
@@ -1783,6 +1900,14 @@
             if (evt.key !== 'Enter') return;
             evt.preventDefault();
             el('applyClubFilterBtn').click();
+          });
+        }
+        const quickSelect = el('clubQuickSelect');
+        if (quickSelect) {
+          quickSelect.addEventListener('keydown', (evt) => {
+            if (evt.key !== 'Enter') return;
+            evt.preventDefault();
+            el('applyQuickClubBtn').click();
           });
         }
         if (countryInput) {
