@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-22T20:06:40.468621+00:00",
+  "generated_at_utc": "2026-04-22T21:27:22.242595+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -9470,8 +9470,149 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27622",
       "ena_url": "https://www.ianseo.net/TourData/2026/27622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27622/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 20,
+      "entries": [
+        {
+          "name": "ANDRIANARISON Camille",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "S1 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "BONNELLES Alexis",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "S1 Homme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "BONNEVIE Pascal",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "S2 Homme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "CHARPENTIER Eulalie",
+          "club": "0654084 - VANDOEUVRE",
+          "category": "0654084 - VANDOEUVRE",
+          "session": "U21 Femme Arc Classique",
+          "target": "15A"
+        },
+        {
+          "name": "CHIRAULT Benjamin",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "S1 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "DAMERVALLE Maxandre",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "S1 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "DELCROIX Frederic",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "S2 Homme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "DUPONTREUE Cyril",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "S1 Homme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "ESPINOSA Solene",
+          "club": "0654084 - VANDOEUVRE",
+          "category": "0654084 - VANDOEUVRE",
+          "session": "S1 Femme Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "GIRARDEAU Valentin",
+          "club": "0221007 - CHATILLON S/SEINE",
+          "category": "0221007 - CHATILLON S/SEINE",
+          "session": "S1 Homme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "GORET Maxime",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "S1 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "GOSSET Valentin",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "S1 Homme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "IUNG Alicia",
+          "club": "0654084 - VANDOEUVRE",
+          "category": "0654084 - VANDOEUVRE",
+          "session": "S1 Femme Arc Classique",
+          "target": "13A"
+        },
+        {
+          "name": "LAVIER Maxime",
+          "club": "0221007 - CHATILLON S/SEINE",
+          "category": "0221007 - CHATILLON S/SEINE",
+          "session": "S1 Homme Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "MOLE Clement",
+          "club": "0221007 - CHATILLON S/SEINE",
+          "category": "0221007 - CHATILLON S/SEINE",
+          "session": "S1 Homme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "RENAUD Arnaud",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "S1 Homme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "RIEGER Marie",
+          "club": "0654084 - VANDOEUVRE",
+          "category": "0654084 - VANDOEUVRE",
+          "session": "S1 Femme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "SCHWALLER JOUBERT Leo",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "U21 Homme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "VANEY Lucas",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "S1 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "WALZ Michael",
+          "club": "0221007 - CHATILLON S/SEINE",
+          "category": "0221007 - CHATILLON S/SEINE",
+          "session": "S1 Homme Arc Classique",
+          "target": "5A"
+        }
+      ]
     },
     {
       "to_id": "27759",
