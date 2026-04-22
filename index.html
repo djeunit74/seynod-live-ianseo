@@ -2142,6 +2142,19 @@
       if (target) target.innerHTML = text;
     }
 
+    function bindClick(id, handler) {
+      const node = el(id);
+      if (!node) return false;
+      node.addEventListener('click', async (evt) => {
+        try {
+          await handler(evt);
+        } catch (err) {
+          setAdminResult(`Erreur action "${escapeHtml(id)}": ${escapeHtml(err?.message || err)}`);
+        }
+      });
+      return true;
+    }
+
     function getSourceAgeSec() {
       if (!lastDataGeneratedAtMs) return null;
       return Math.max(0, Math.round((Date.now() - lastDataGeneratedAtMs) / 1000));
@@ -2222,6 +2235,12 @@
     }
 
     async function initPage() {
+      window.addEventListener('error', (evt) => {
+        if (!adminMode) return;
+        const msg = evt?.message || 'Erreur JavaScript inconnue';
+        setAdminResult(`Erreur JS détectée: ${escapeHtml(msg)}`);
+      });
+
       loadClubFilter();
       loadCountryCode();
       loadControlFlags();
@@ -2278,7 +2297,7 @@
           if (clubInput) clubInput.value = value;
           el('applyClubFilterBtn').click();
         });
-        el('clearTrackedTournamentsBtn').addEventListener('click', async () => {
+        bindClick('clearTrackedTournamentsBtn', async () => {
           const count = trackedTournaments.length;
           clearTrackedTournaments();
           setAdminResult(count > 0
@@ -2286,7 +2305,7 @@
             : 'Aucun tournoi actif à archiver.');
           await refresh();
         });
-        el('togglePublicControlBtn').addEventListener('click', async () => {
+        bindClick('togglePublicControlBtn', async () => {
           publicControlledByAdmin = !publicControlledByAdmin;
           saveControlFlags();
           setAdminResult(publicControlledByAdmin
@@ -2294,7 +2313,7 @@
             : 'Contrôle public désactivé: lecture live.json autorisée sans sélection admin.');
           await refresh();
         });
-        el('toggleArchiveResumeBtn').addEventListener('click', async () => {
+        bindClick('toggleArchiveResumeBtn', async () => {
           autoResumeArchivedLive = !autoResumeArchivedLive;
           saveControlFlags();
           setAdminResult(autoResumeArchivedLive
@@ -2302,7 +2321,7 @@
             : 'Reprise auto des archives désactivée.');
           await refresh();
         });
-        el('applyPhaseOverrideBtn').addEventListener('click', async () => {
+        bindClick('applyPhaseOverrideBtn', async () => {
           const select = el('phaseOverrideSelect');
           const nextMode = String(select?.value || 'auto');
           phaseOverrideMode = ['auto', 'before', 'during', 'after'].includes(nextMode) ? nextMode : 'auto';
@@ -2312,7 +2331,7 @@
             : `Phase publique forcée: ${escapeHtml(phaseOverrideMode)}.`);
           await refresh();
         });
-        el('clearPublicViewBtn').addEventListener(() => {
+        bindClick('clearPublicViewBtn', () => {
           lastRawData = { competitions: [] };
           lastGoodData = { competitions: [] };
           previousSignature = null;
@@ -2320,7 +2339,7 @@
           render(lastRawData, true);
           setAdminResult('Vue publique nettoyée immédiatement.');
         });
-        el('addManualIcBtn').addEventListener('click', async () => {
+        bindClick('addManualIcBtn', async () => {
           const input = el('manualIcUrlInput');
           const url = input ? input.value : '';
           const clean = normalizeIcUrl(url);
@@ -2339,7 +2358,7 @@
           setAdminResult('URL IC ajoutée au suivi.');
           await refresh();
         });
-        el('followSelectedNextCompetitionBtn').addEventListener('click', async () => {
+        bindClick('followSelectedNextCompetitionBtn', async () => {
           await followSelectedNextCompetition();
         });
         const adminSelect = el('adminSearchCompetitionSelect');
@@ -2379,17 +2398,20 @@
             el('applyClubFilterBtn').click();
           });
         }
-        el('allInOneBtn').addEventListener('click', startCompetitionAllInOne);
-        el('demoTournamentBtn').addEventListener('click', async () => {
+        bindClick('allInOneBtn', startCompetitionAllInOne);
+        bindClick('demoTournamentBtn', async () => {
           if (demoModeActive) {
             await stopDemoMode(true);
             return;
           }
           startDemoMode();
         });
-        el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
-        el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
-        el('toggleCompetitionBtn').addEventListener('click', () => {
+        bindClick('clearCompetitionBtn', clearCompetitionView);
+        bindClick('findNextCompetitionBtn', async () => {
+          if (demoModeActive) await stopDemoMode(true);
+          await findNextCompetition();
+        });
+        bindClick('toggleCompetitionBtn', () => {
           setCompetitionMode(!autoRefreshEnabled, !autoRefreshEnabled ? 'Mode compétition actif (30s)' : 'Mode compétition désactivé');
         });
       }
