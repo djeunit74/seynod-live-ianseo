@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-22T18:39:00.692874+00:00",
+  "generated_at_utc": "2026-04-22T20:06:40.468621+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -8210,7 +8210,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27200",
       "ena_url": "https://www.ianseo.net/TourData/2026/27200/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27200/IC.php",
-      "entries_count": 177,
+      "entries_count": 178,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -8280,7 +8280,7 @@
           "club": "0894264 - VINCENNES",
           "category": "0894264 - VINCENNES",
           "session": "S1 Femme Arc Classique",
-          "target": "2B"
+          "target": "3C"
         },
         {
           "name": "ALLAM Michel",
@@ -8337,6 +8337,13 @@
           "category": "0891175 - DRAVEIL SENART",
           "session": "S2 Homme Arc Classique National",
           "target": "7A"
+        },
+        {
+          "name": "BOBARD Valerie",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "S2 Femme Arc Classique",
+          "target": "2B"
         },
         {
           "name": "BOUQUET Jacques",
