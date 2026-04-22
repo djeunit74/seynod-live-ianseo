@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-04-22T14:17:21.482240+00:00",
+  "generated_at_utc": "2026-04-22T15:55:37.297968+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 29,
+  "count": 31,
   "tournaments": [
     {
       "to_id": "27366",
@@ -13367,6 +13367,32 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=26734",
       "ena_url": "https://www.ianseo.net/TourData/2027/26734/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2027/26734/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "27836",
+      "year": "2027",
+      "name": "Bollnäs 25:an",
+      "organizer": "Bollnäs BSK",
+      "date_text": "6 Feb",
+      "end_date": "2027-02-06",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27836",
+      "ena_url": "https://www.ianseo.net/TourData/2027/27836/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/27836/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "27837",
+      "year": "2027",
+      "name": "Balderträffen",
+      "organizer": "Bollnäs BSK",
+      "date_text": "7 Feb",
+      "end_date": "2027-02-07",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27837",
+      "ena_url": "https://www.ianseo.net/TourData/2027/27837/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/27837/IC.php",
       "entries_count": 0,
       "entries": []
     }
