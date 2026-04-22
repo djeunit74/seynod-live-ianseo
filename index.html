@@ -1213,6 +1213,27 @@
       btn.classList.toggle('active', demoModeActive);
     }
 
+    function isDemoTournament(t) {
+      const id = String(t?.id || '').toLowerCase();
+      const toId = String(t?.to_id || '').toLowerCase();
+      const name = String(t?.name || '').toLowerCase();
+      const details = String(t?.details_url || '').toLowerCase();
+      return id.startsWith('demo-') || toId.startsWith('demo-') || name.includes('demo tournoi') || details.includes('toid=demo');
+    }
+
+    function cleanupDemoArtifacts(persist = true) {
+      const activeBefore = trackedTournaments.length;
+      const archivedBefore = archivedTournaments.length;
+      trackedTournaments = trackedTournaments.filter(t => !isDemoTournament(t));
+      archivedTournaments = archivedTournaments.filter(t => !isDemoTournament(t));
+      const removed = (activeBefore - trackedTournaments.length) + (archivedBefore - archivedTournaments.length);
+      if (removed > 0 && persist) {
+        saveTrackedTournaments();
+        saveArchivedTournaments();
+      }
+      return removed;
+    }
+
     function buildDemoTournamentInfo() {
       const entries = [
         { name: 'KOZUCHOWICZ Johanna', club: '0174246 - SEYNOD', category: 'Arc Classique - U18 Femmes', session: 'Ses. 1', target: '7A' },
@@ -1303,7 +1324,7 @@
       };
     }
 
-    function applyDemoStep() {
+    async function applyDemoStep() {
       const tournament = buildDemoTournamentInfo();
       if (demoTick === 0) {
         trackedTournaments = [normalizeTrackedTournament(tournament)];
@@ -1336,9 +1357,8 @@
 
       demoTick += 1;
       if (demoTick > 8 && demoTimer) {
-        clearInterval(demoTimer);
-        demoTimer = null;
-        setAdminResult('Démo terminée. Clique "Arrêter démo tournoi" pour revenir aux données réelles.');
+        await stopDemoMode(true);
+        setAdminResult('Démo terminée et nettoyée. Retour aux données réelles.');
       }
     }
 
@@ -1360,8 +1380,8 @@
       phaseOverrideMode = 'auto';
       publicControlledByAdmin = true;
       saveControlFlags();
-      applyDemoStep();
-      demoTimer = setInterval(applyDemoStep, DEMO_STEP_MS);
+      void applyDemoStep();
+      demoTimer = setInterval(() => { void applyDemoStep(); }, DEMO_STEP_MS);
       setAdminResult('Démo lancée: avant -> pendant -> apres, une etape toutes les 3 secondes.');
     }
 
@@ -2246,6 +2266,7 @@
       loadControlFlags();
       loadTrackedTournaments();
       loadArchivedTournaments();
+      const removedDemoArtifacts = cleanupDemoArtifacts(true);
       await loadAdminConfig();
       await resolveAdminMode();
 
@@ -2256,7 +2277,11 @@
         el('toggleCompetitionBtn').classList.remove('hidden');
         el('moodPresentationExample').classList.remove('hidden');
         renderMoodPresentationExample();
-        setAdminResult('Mode admin actif. Renseigne le club puis clique "Chercher prochaine compétition".');
+        setAdminResult(
+          removedDemoArtifacts > 0
+            ? `Mode admin actif. Nettoyage automatique: ${removedDemoArtifacts} élément(s) démo supprimé(s).`
+            : 'Mode admin actif. Renseigne le club puis clique "Chercher prochaine compétition".'
+        );
         const clubInput = el('clubFilterInput');
         const countryInput = el('countryCodeInput');
         if (clubInput) clubInput.value = trackedClubRaw;
