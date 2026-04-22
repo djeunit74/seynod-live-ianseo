@@ -1213,6 +1213,16 @@
       btn.classList.toggle('active', demoModeActive);
     }
 
+    function getDemoClubLabel() {
+      const raw = String(trackedClubRaw || '').trim();
+      if (!raw) return '0174246 - SEYNOD';
+      if (raw.includes(',')) {
+        const first = raw.split(',').map(v => v.trim()).find(Boolean);
+        return first || raw;
+      }
+      return raw;
+    }
+
     function isDemoTournament(t) {
       const id = String(t?.id || '').toLowerCase();
       const toId = String(t?.to_id || '').toLowerCase();
@@ -1247,10 +1257,11 @@
     }
 
     function buildDemoTournamentInfo() {
+      const clubLabel = getDemoClubLabel().toUpperCase();
       const entries = [
-        { name: 'KOZUCHOWICZ Johanna', club: '0174246 - SEYNOD', category: 'Arc Classique - U18 Femmes', session: 'Ses. 1', target: '7A' },
-        { name: 'BOURGEAIS Stephane', club: '0174246 - SEYNOD', category: 'Arc a Poulies - Senior 2 Hommes', session: 'Ses. 1', target: '11C' },
-        { name: 'CATIN Daniel', club: '0174246 - SEYNOD', category: 'Arc a Poulies - Senior 2 Hommes', session: 'Ses. 1', target: '12B' }
+        { name: 'ARCHER Demo A', club: clubLabel, category: 'Arc Classique - U18 Femmes', session: 'Ses. 1', target: '7A' },
+        { name: 'ARCHER Demo B', club: clubLabel, category: 'Arc a Poulies - Senior 2 Hommes', session: 'Ses. 1', target: '11C' },
+        { name: 'ARCHER Demo C', club: clubLabel, category: 'Arc a Poulies - Senior 2 Hommes', session: 'Ses. 1', target: '12B' }
       ];
       return {
         id: 'demo-2026',
@@ -1273,26 +1284,27 @@
 
       const stage = tick < 7 ? (tick - 1) : 6;
       const livePhase = tick < 7;
+      const clubLabel = getDemoClubLabel();
       const rows = [
         {
-          name: 'KOZUCHOWICZ Johanna',
-          club: '0174246 - Seynod',
+          name: 'ARCHER Demo A',
+          club: clubLabel,
           category: 'Arc Classique - U18 Femmes',
           place: 'Bonneville',
           scores: [54, 108, 162, 216, 270, 324, 585],
           pos: [5, 4, 4, 3, 3, 2, 2]
         },
         {
-          name: 'BOURGEAIS Stephane',
-          club: '0174246 - Seynod',
+          name: 'ARCHER Demo B',
+          club: clubLabel,
           category: 'Arc a Poulies - Senior 2 Hommes',
           place: 'Bonneville',
           scores: [56, 112, 168, 224, 280, 336, 680],
           pos: [2, 2, 1, 1, 1, 1, 1]
         },
         {
-          name: 'CATIN Daniel',
-          club: '0174246 - Seynod',
+          name: 'ARCHER Demo C',
+          club: clubLabel,
           category: 'Arc a Poulies - Senior 2 Hommes',
           place: 'Bonneville',
           scores: [48, 96, 144, 192, 240, 288, 573],
