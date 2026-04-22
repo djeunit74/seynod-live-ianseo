@@ -263,10 +263,12 @@
     const CLUB_FILTER_STORAGE_KEY = 'seynod_tracked_club_keywords';
     const COUNTRY_STORAGE_KEY = 'seynod_country_code';
     const TRACKED_TOURNAMENTS_STORAGE_KEY = 'seynod_tracked_tournaments';
+    const ARCHIVED_TOURNAMENTS_STORAGE_KEY = 'seynod_archived_tournaments';
     const TRACKED_IC_URLS_STORAGE_KEY = 'seynod_tracked_ic_urls';
     const DEFAULT_TRACKED_CLUB = '0174246,seynod';
     const DEFAULT_COUNTRY_CODE = 'FRA';
     const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
+    const ARCHIVE_RESUME_CHECK_MS = 120000;
     const CLUB_QUICK_PRESETS = [
       '0174246 - SEYNOD',
       '0163157 - RIOM',
@@ -288,6 +290,7 @@
     let trackedClubRaw = DEFAULT_TRACKED_CLUB;
     let trackedClubKeywords = [];
     let trackedTournaments = [];
+    let archivedTournaments = [];
     let trackedCountryCode = DEFAULT_COUNTRY_CODE;
     let trackedIcUrls = [];
     let adminBridgeUrl = '';
@@ -295,6 +298,7 @@
     let nextCompetitionMatches = [];
     let selectedNextCompetitionId = '';
     let nextDataLockUntilMs = 0;
+    let nextArchiveResumeCheckAtMs = 0;
     let selectedVolleyArcherKey = '';
     let clubQuickChoices = [];
     const archerVolleyState = {};
@@ -628,7 +632,9 @@
         ena_url: enaUrl,
         ic_url: icUrl || '',
         club_entries: entries,
-        selected_at_utc: String(raw?.selected_at_utc || new Date().toISOString())
+        selected_at_utc: String(raw?.selected_at_utc || new Date().toISOString()),
+        archived_at_utc: String(raw?.archived_at_utc || ''),
+        archive_reason: String(raw?.archive_reason || '')
       };
     }
 
@@ -671,15 +677,90 @@
       syncTrackedIcUrlsFromTrackedTournaments();
     }
 
+    function loadArchivedTournaments() {
+      archivedTournaments = [];
+      try {
+        const raw = localStorage.getItem(ARCHIVED_TOURNAMENTS_STORAGE_KEY);
+        const arr = raw ? JSON.parse(raw) : [];
+        if (!Array.isArray(arr)) return;
+        archivedTournaments = arr.map(normalizeTrackedTournament).filter(t => t.id);
+      } catch (_) {}
+    }
+
     function saveTrackedTournaments() {
       localStorage.setItem(TRACKED_TOURNAMENTS_STORAGE_KEY, JSON.stringify(trackedTournaments));
       syncTrackedIcUrlsFromTrackedTournaments();
       renderTrackedTournamentsList();
     }
 
+    function saveArchivedTournaments() {
+      localStorage.setItem(ARCHIVED_TOURNAMENTS_STORAGE_KEY, JSON.stringify(archivedTournaments));
+      renderTrackedTournamentsList();
+    }
+
+    function archiveTournament(rawTournament, reason = 'manual') {
+      const t = normalizeTrackedTournament({
+        ...rawTournament,
+        archived_at_utc: new Date().toISOString(),
+        archive_reason: reason || 'manual'
+      });
+      if (!t.id) return false;
+      const index = archivedTournaments.findIndex(x =>
+        (t.to_id && x.to_id && x.to_id === t.to_id) ||
+        (t.ic_url && x.ic_url && x.ic_url === t.ic_url) ||
+        x.id === t.id
+      );
+      if (index >= 0) {
+        archivedTournaments[index] = { ...archivedTournaments[index], ...t };
+      } else {
+        archivedTournaments.unshift(t);
+      }
+      saveArchivedTournaments();
+      return true;
+    }
+
+    function archiveAllTrackedTournaments(reason = 'manual') {
+      if (!trackedTournaments.length) return 0;
+      let count = 0;
+      for (const t of trackedTournaments) {
+        if (archiveTournament(t, reason)) count += 1;
+      }
+      trackedTournaments = [];
+      saveTrackedTournaments();
+      return count;
+    }
+
+    function restoreArchivedTournament(id) {
+      const index = archivedTournaments.findIndex(t => t.id === id);
+      if (index < 0) return false;
+      const [found] = archivedTournaments.splice(index, 1);
+      saveArchivedTournaments();
+      return addTrackedTournament(found);
+    }
+
+    function removeArchivedTournament(id) {
+      const next = archivedTournaments.filter(t => t.id !== id);
+      if (next.length === archivedTournaments.length) return false;
+      archivedTournaments = next;
+      saveArchivedTournaments();
+      return true;
+    }
+
     function addTrackedTournament(rawTournament) {
       const t = normalizeTrackedTournament(rawTournament);
       if (!t.id) return false;
+
+      const archivedIndex = archivedTournaments.findIndex(x =>
+        (t.to_id && x.to_id && x.to_id === t.to_id) ||
+        (t.ic_url && x.ic_url && x.ic_url === t.ic_url) ||
+        x.id === t.id
+      );
+      if (archivedIndex >= 0) {
+        const archived = archivedTournaments[archivedIndex];
+        t.club_entries = t.club_entries.length ? t.club_entries : (archived.club_entries || []);
+        archivedTournaments.splice(archivedIndex, 1);
+        saveArchivedTournaments();
+      }
 
       const index = trackedTournaments.findIndex(x =>
         (t.to_id && x.to_id && x.to_id === t.to_id) ||
@@ -701,14 +782,15 @@
     }
 
     function removeTrackedTournament(id) {
+      const found = trackedTournaments.find(t => t.id === id);
+      if (found) archiveTournament(found, 'manual_remove');
       trackedTournaments = trackedTournaments.filter(t => t.id !== id);
       saveTrackedTournaments();
       renderNextParticipantsPanel(lastNextCompetitionData || { found: false });
     }
 
     function clearTrackedTournaments() {
-      trackedTournaments = [];
-      saveTrackedTournaments();
+      archiveAllTrackedTournaments('manual_clear');
       renderNextParticipantsPanel(lastNextCompetitionData || { found: false });
     }
 
@@ -736,10 +818,13 @@
       const box = el('trackedTournamentsList');
       if (!box) return;
       if (!trackedTournaments.length) {
-        box.innerHTML = '<div class="mini">Aucun tournoi suivi. Cherche une compétition puis clique "Suivre cette compétition".</div>';
+        const archivedInfo = archivedTournaments.length
+          ? `<div class="mini" style="margin-top:8px;">Archive: ${archivedTournaments.length} tournoi(x).</div>`
+          : '';
+        box.innerHTML = '<div class="mini">Aucun tournoi suivi. Cherche une compétition puis clique "Suivre cette compétition".</div>' + archivedInfo;
         return;
       }
-      box.innerHTML = trackedTournaments.map((t, i) => {
+      const activeHtml = trackedTournaments.map((t, i) => {
         const entriesCount = (t.club_entries || []).length;
         const links = [
           t.details_url ? `<a class="btn small secondary" href="${t.details_url}" target="_blank" rel="noopener">Fiche IANSEO</a>` : '',
@@ -757,10 +842,41 @@
           </div>
         `;
       }).join('');
+      const archivedHtml = archivedTournaments.length ? `
+        <hr style="border-color:rgba(148,163,184,.25);margin:10px 0;">
+        <div class="mini" style="margin-bottom:6px;">Archives (${archivedTournaments.length})</div>
+        ${archivedTournaments.slice(0, 8).map(t => `
+          <div class="row" style="margin-top:6px;align-items:center;justify-content:space-between;">
+            <span class="chip">${escapeHtml(t.name)} (${escapeHtml(t.date_text || 'date inconnue')})</span>
+            <span>
+              <button class="btn small secondary" data-restore-archived="${escapeHtml(t.id)}">Restaurer</button>
+              <button class="btn small secondary" data-delete-archived="${escapeHtml(t.id)}">Supprimer</button>
+            </span>
+          </div>
+        `).join('')}
+      ` : '';
+      box.innerHTML = activeHtml + archivedHtml;
       box.querySelectorAll('[data-remove-tracked]').forEach(btn => {
         btn.addEventListener('click', () => {
           const id = btn.getAttribute('data-remove-tracked') || '';
           removeTrackedTournament(id);
+        });
+      });
+      box.querySelectorAll('[data-restore-archived]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const id = btn.getAttribute('data-restore-archived') || '';
+          if (!restoreArchivedTournament(id)) return;
+          setAdminResult('Tournoi restauré depuis les archives.');
+          renderNextParticipantsPanel(lastNextCompetitionData || { found: false });
+          await refresh();
+        });
+      });
+      box.querySelectorAll('[data-delete-archived]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-delete-archived') || '';
+          if (!removeArchivedTournament(id)) return;
+          renderNextParticipantsPanel(lastNextCompetitionData || { found: false });
+          setAdminResult('Tournoi supprimé des archives.');
         });
       });
     }
@@ -836,7 +952,7 @@
 
       const checked = Number.isFinite(Number(data?.checked_candidates)) ? Number(data.checked_candidates) : 0;
       if (trackedTournaments.length > 0) {
-        meta.innerHTML = `<strong>${trackedTournaments.length} tournoi(x) suivi(s)</strong> · Club: ${escapeHtml(getClubDisplayName())}`;
+        meta.innerHTML = `<strong>${trackedTournaments.length} tournoi(x) suivi(s)</strong> · Archive: ${archivedTournaments.length} · Club: ${escapeHtml(getClubDisplayName())}`;
       } else if (nextCompetitionMatches.length > 0) {
         meta.innerHTML = `Aucun tournoi encore sélectionné · ${nextCompetitionMatches.length} tournoi(x) trouvé(s) · candidats vérifiés: ${checked}`;
       } else {
@@ -1105,6 +1221,26 @@
         } catch (_) {}
       }
       return { competitions: competitions.filter(c => (c.archers || []).length > 0) };
+    }
+
+    async function tryResumeArchivedLiveTournaments() {
+      if (!archivedTournaments.length) return 0;
+      if (Date.now() < nextArchiveResumeCheckAtMs) return 0;
+      nextArchiveResumeCheckAtMs = Date.now() + ARCHIVE_RESUME_CHECK_MS;
+
+      let resumed = 0;
+      for (const t of archivedTournaments.slice()) {
+        const ic = normalizeIcUrl(t.ic_url);
+        if (!ic) continue;
+        try {
+          const md = await fetchText(toProxyUrl(ic));
+          const comp = parseIcMarkdownToCompetition(md, ic, trackedClubKeywords);
+          const hasLive = (comp.archers || []).some(a => !a.finished);
+          if (!hasLive) continue;
+          if (addTrackedTournament(t)) resumed += 1;
+        } catch (_) {}
+      }
+      return resumed;
     }
 
     function normalizeIcUrl(url) {
@@ -1689,6 +1825,10 @@
     async function refresh() {
       try {
         setStatus('', 'Actualisation en cours...');
+        const resumedCount = await tryResumeArchivedLiveTournaments();
+        if (resumedCount > 0) {
+          setAdminResult(`${resumedCount} tournoi(x) archivé(s) ont repris en live: reprise automatique activée.`);
+        }
         if (trackedIcUrls.length > 0) {
           const multiData = await loadMultiTrackedLiveData();
           lastRawData = multiData;
@@ -1769,11 +1909,14 @@
     }
 
     async function clearCompetitionView() {
+      const archived = archiveAllTrackedTournaments('after_competition_manual');
       const emptyData = { competitions: [] };
       lastGoodData = emptyData;
       render(emptyData, true);
-      setStatus('', 'Compétition vidée localement.');
-      setAdminResult('Compétition effacée localement.');
+      setStatus('', archived > 0 ? `Compétition archivée (${archived}) puis vue vidée.` : 'Compétition vidée localement.');
+      setAdminResult(archived > 0
+        ? `Compétition archivée automatiquement (${archived} tournoi(x)).`
+        : 'Compétition effacée localement (rien à archiver).');
     }
 
     async function findNextCompetition() {
@@ -1805,6 +1948,7 @@
       loadClubFilter();
       loadCountryCode();
       loadTrackedTournaments();
+      loadArchivedTournaments();
       await loadAdminConfig();
       await resolveAdminMode();
 
@@ -1854,8 +1998,11 @@
           el('applyClubFilterBtn').click();
         });
         el('clearTrackedTournamentsBtn').addEventListener('click', async () => {
+          const count = trackedTournaments.length;
           clearTrackedTournaments();
-          setAdminResult('Liste des tournois suivis vidée.');
+          setAdminResult(count > 0
+            ? `Tournois suivis archivés automatiquement (${count}).`
+            : 'Aucun tournoi actif à archiver.');
           await refresh();
         });
         el('addManualIcBtn').addEventListener('click', async () => {
