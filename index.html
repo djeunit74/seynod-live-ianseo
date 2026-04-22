@@ -1234,6 +1234,18 @@
       return removed;
     }
 
+    function stripDemoFromNextData(data) {
+      if (!data) return null;
+      const matches = Array.isArray(data.matches) ? data.matches.filter(m => !isDemoTournament(m)) : [];
+      const next = data.next_competition && !isDemoTournament(data.next_competition) ? data.next_competition : (matches[0] || null);
+      return {
+        ...data,
+        found: !!next,
+        next_competition: next,
+        matches
+      };
+    }
+
     function buildDemoTournamentInfo() {
       const entries = [
         { name: 'KOZUCHOWICZ Johanna', club: '0174246 - SEYNOD', category: 'Arc Classique - U18 Femmes', session: 'Ses. 1', target: '7A' },
@@ -1364,14 +1376,20 @@
 
     function startDemoMode() {
       if (demoModeActive) return;
+      cleanupDemoArtifacts(false);
+      lastNextCompetitionData = stripDemoFromNextData(lastNextCompetitionData);
+      nextCompetitionMatches = (nextCompetitionMatches || []).filter(m => !isDemoTournament(m));
+      if (selectedNextCompetitionId && !nextCompetitionMatches.some(m => String(m.to_id) === selectedNextCompetitionId)) {
+        selectedNextCompetitionId = String(nextCompetitionMatches[0]?.to_id || '');
+      }
       demoModeActive = true;
       updateDemoButton();
       demoTick = 0;
       demoSnapshot = {
-        trackedTournaments: JSON.parse(JSON.stringify(trackedTournaments)),
-        archivedTournaments: JSON.parse(JSON.stringify(archivedTournaments)),
-        lastNextCompetitionData: lastNextCompetitionData ? JSON.parse(JSON.stringify(lastNextCompetitionData)) : null,
-        nextCompetitionMatches: JSON.parse(JSON.stringify(nextCompetitionMatches)),
+        trackedTournaments: JSON.parse(JSON.stringify((trackedTournaments || []).filter(t => !isDemoTournament(t)))),
+        archivedTournaments: JSON.parse(JSON.stringify((archivedTournaments || []).filter(t => !isDemoTournament(t)))),
+        lastNextCompetitionData: lastNextCompetitionData ? JSON.parse(JSON.stringify(stripDemoFromNextData(lastNextCompetitionData))) : null,
+        nextCompetitionMatches: JSON.parse(JSON.stringify((nextCompetitionMatches || []).filter(m => !isDemoTournament(m)))),
         selectedNextCompetitionId,
         phaseOverrideMode,
         autoRefreshEnabled,
@@ -1397,11 +1415,15 @@
       if (restore && demoSnapshot) {
         trackedTournaments = demoSnapshot.trackedTournaments || [];
         archivedTournaments = demoSnapshot.archivedTournaments || [];
+        cleanupDemoArtifacts(false);
         saveTrackedTournaments();
         saveArchivedTournaments();
-        lastNextCompetitionData = demoSnapshot.lastNextCompetitionData || null;
-        nextCompetitionMatches = demoSnapshot.nextCompetitionMatches || [];
+        lastNextCompetitionData = stripDemoFromNextData(demoSnapshot.lastNextCompetitionData) || null;
+        nextCompetitionMatches = (demoSnapshot.nextCompetitionMatches || []).filter(m => !isDemoTournament(m));
         selectedNextCompetitionId = demoSnapshot.selectedNextCompetitionId || '';
+        if (selectedNextCompetitionId && !nextCompetitionMatches.some(m => String(m.to_id) === selectedNextCompetitionId)) {
+          selectedNextCompetitionId = String(nextCompetitionMatches[0]?.to_id || '');
+        }
         phaseOverrideMode = demoSnapshot.phaseOverrideMode || 'auto';
         publicControlledByAdmin = (demoSnapshot.publicControlledByAdmin !== false);
         saveControlFlags();
@@ -2231,6 +2253,8 @@
 
     async function findNextCompetition() {
       try {
+        lastNextCompetitionData = stripDemoFromNextData(lastNextCompetitionData);
+        nextCompetitionMatches = (nextCompetitionMatches || []).filter(m => !isDemoTournament(m));
         setAdminResult(`Recherche automatique des prochaines compétitions pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
         const direct = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCode);
         lastNextCompetitionData = direct;
