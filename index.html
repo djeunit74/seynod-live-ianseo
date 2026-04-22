@@ -290,7 +290,7 @@
     const DEFAULT_COUNTRY_CODE = 'FRA';
     const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
     const ARCHIVE_RESUME_CHECK_MS = 120000;
-    const DEMO_STEP_MS = 5000;
+    const DEMO_STEP_MS = 3000;
     const CLUB_QUICK_PRESETS = [
       '0174246 - SEYNOD',
       '0163157 - RIOM',
@@ -1236,10 +1236,10 @@
 
     function buildDemoRawDataByTick(tick) {
       const stamp = new Date().toISOString();
-      if (tick < 2) return { generatedAtUtc: stamp, competitions: [] };
+      if (tick < 1) return { generatedAtUtc: stamp, competitions: [] };
 
-      const stage = tick < 8 ? (tick - 2) : 6;
-      const livePhase = tick < 8;
+      const stage = tick < 7 ? (tick - 1) : 6;
+      const livePhase = tick < 7;
       const rows = [
         {
           name: 'KOZUCHOWICZ Johanna',
@@ -1319,17 +1319,23 @@
         const empty = { generatedAtUtc: new Date().toISOString(), competitions: [] };
         lastRawData = empty;
         render(empty, true);
-        setStatus('ok', 'Démo: phase Avant compétition');
+        setStatus('ok', 'Démo: phase Avant compétition (participants)');
+        setAdminResult('Démo étape 1/8: Avant compétition.');
       } else {
         const data = buildDemoRawDataByTick(demoTick);
         lastRawData = data;
         render(data, true);
-        if (demoTick < 8) setStatus('ok', 'Démo: phase Pendant compétition');
-        else setStatus('ok', 'Démo: phase Après compétition');
+        if (demoTick < 7) {
+          setStatus('ok', 'Démo: phase Pendant compétition');
+          setAdminResult(`Démo étape ${Math.min(demoTick + 1, 8)}/8: Pendant compétition.`);
+        } else {
+          setStatus('ok', 'Démo: phase Après compétition');
+          setAdminResult('Démo étape 8/8: Après compétition.');
+        }
       }
 
       demoTick += 1;
-      if (demoTick > 9 && demoTimer) {
+      if (demoTick > 8 && demoTimer) {
         clearInterval(demoTimer);
         demoTimer = null;
         setAdminResult('Démo terminée. Clique "Arrêter démo tournoi" pour revenir aux données réelles.');
@@ -1356,7 +1362,7 @@
       saveControlFlags();
       applyDemoStep();
       demoTimer = setInterval(applyDemoStep, DEMO_STEP_MS);
-      setAdminResult('Démo lancée: avant -> pendant -> apres, une etape toutes les 5 secondes.');
+      setAdminResult('Démo lancée: avant -> pendant -> apres, une etape toutes les 3 secondes.');
     }
 
     async function stopDemoMode(restore = true) {
