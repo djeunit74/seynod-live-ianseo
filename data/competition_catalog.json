@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-22T15:55:37.297968+00:00",
+  "generated_at_utc": "2026-04-22T17:03:22.104031+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -11069,48 +11069,6 @@
       "entries": []
     },
     {
-      "to_id": "27376",
-      "year": "2026",
-      "name": "Toulouse TAC rencontre jeunes 30 mai 2026",
-      "organizer": "1131081 - Toulouse TAC",
-      "date_text": "30 May",
-      "end_date": "2026-05-30",
-      "details_url": "https://www.ianseo.net/Details.php?toId=27376",
-      "ena_url": "https://www.ianseo.net/TourData/2026/27376/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/27376/IC.php",
-      "entries_count": 4,
-      "entries": [
-        {
-          "name": "BATTEUX Mila",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "Arc Classique Niveau2 80cm 15m",
-          "target": "4A"
-        },
-        {
-          "name": "DIEMER Loreline",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "Arc Classique As 40cm 15m",
-          "target": "10A"
-        },
-        {
-          "name": "FOULLU MARTINEZ Edzio",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "Arc Classique Niveau1 60cm 15m",
-          "target": "8A"
-        },
-        {
-          "name": "LE GOFF Melodie",
-          "club": "1131081 - TOULOUSE TAC",
-          "category": "1131081 - TOULOUSE TAC",
-          "session": "Arc Classique Niveau1 60cm 15m",
-          "target": "5A"
-        }
-      ]
-    },
-    {
       "to_id": "27216",
       "year": "2026",
       "name": "WIAWIS French Tour 2026 - Etape 2",
@@ -12108,6 +12066,48 @@
           "category": "0329053 - PLOURIN LES MORLAIX",
           "session": "Scratch Femme Arc Classique",
           "target": ""
+        }
+      ]
+    },
+    {
+      "to_id": "27376",
+      "year": "2026",
+      "name": "Toulouse TAC rencontre jeunes 30 mai 2026",
+      "organizer": "1131081 - Toulouse TAC",
+      "date_text": "30 May",
+      "end_date": "2026-05-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27376",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27376/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27376/IC.php",
+      "entries_count": 4,
+      "entries": [
+        {
+          "name": "BATTEUX Mila",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "Arc Classique Niveau2 80cm 15m",
+          "target": "4A"
+        },
+        {
+          "name": "DIEMER Loreline",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "Arc Classique As 40cm 15m",
+          "target": "10A"
+        },
+        {
+          "name": "FOULLU MARTINEZ Edzio",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "Arc Classique Niveau1 60cm 15m",
+          "target": "8A"
+        },
+        {
+          "name": "LE GOFF Melodie",
+          "club": "1131081 - TOULOUSE TAC",
+          "category": "1131081 - TOULOUSE TAC",
+          "session": "Arc Classique Niveau1 60cm 15m",
+          "target": "5A"
         }
       ]
     },
