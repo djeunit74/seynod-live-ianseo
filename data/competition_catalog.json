@@ -1,25 +1,12 @@
 {
-  "generated_at_utc": "2026-04-21T23:08:44.973936+00:00",
+  "generated_at_utc": "2026-04-22T00:02:53.215623+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 30,
+  "count": 29,
   "tournaments": [
-    {
-      "to_id": "27289",
-      "year": "2026",
-      "name": "TAE du mercredi 22 avril 2026",
-      "organizer": "CASAS - Club des Archers de Saint-Avertin Sports",
-      "date_text": "22 Apr",
-      "end_date": "2026-04-22",
-      "details_url": "https://www.ianseo.net/Details.php?toId=27289",
-      "ena_url": "https://www.ianseo.net/TourData/2026/27289/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/27289/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
     {
       "to_id": "27366",
       "year": "2026",
