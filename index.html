@@ -237,6 +237,21 @@
             <button class="btn secondary" id="togglePublicControlBtn">Contrôle public: ON</button>
             <button class="btn secondary" id="toggleArchiveResumeBtn">Reprise auto archive: OFF</button>
           </div>
+          <div class="admin-list">
+            <div class="mini"><strong>Console de pilotage public</strong></div>
+            <div class="admin-input">
+              <label class="mini" for="phaseOverrideSelect">Phase affichée au public :</label>
+              <select id="phaseOverrideSelect" class="btn secondary" style="padding:8px 10px;min-width:220px;max-width:280px;">
+                <option value="auto">Auto</option>
+                <option value="before">Avant compétition</option>
+                <option value="during">Pendant compétition</option>
+                <option value="after">Après compétition</option>
+              </select>
+              <button class="btn secondary" id="applyPhaseOverrideBtn">Appliquer phase</button>
+              <button class="btn secondary" id="clearPublicViewBtn">Nettoyer vue publique</button>
+            </div>
+            <div class="mini" id="publicControlStatus">État public: chargement...</div>
+          </div>
           <div class="admin-input">
             <input id="manualIcUrlInput" type="text" placeholder="Ajouter URL IC manuelle (https://.../IC.php)" />
             <button class="btn secondary" id="addManualIcBtn">Ajouter URL IC</button>
@@ -269,6 +284,7 @@
     const TRACKED_IC_URLS_STORAGE_KEY = 'seynod_tracked_ic_urls';
     const PUBLIC_CONTROL_STORAGE_KEY = 'seynod_public_control_mode';
     const AUTO_RESUME_ARCHIVE_STORAGE_KEY = 'seynod_auto_resume_archive';
+    const PHASE_OVERRIDE_STORAGE_KEY = 'seynod_phase_override_mode';
     const DEFAULT_TRACKED_CLUB = '0174246,seynod';
     const DEFAULT_COUNTRY_CODE = 'FRA';
     const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
@@ -299,6 +315,7 @@
     let trackedIcUrls = [];
     let publicControlledByAdmin = true;
     let autoResumeArchivedLive = false;
+    let phaseOverrideMode = 'auto';
     let adminBridgeUrl = '';
     let lastNextCompetitionData = null;
     let nextCompetitionMatches = [];
@@ -822,6 +839,7 @@
 
     function renderTrackedTournamentsList() {
       const box = el('trackedTournamentsList');
+      updatePublicControlStatus();
       if (!box) return;
       if (!trackedTournaments.length) {
         const archivedInfo = archivedTournaments.length
@@ -965,6 +983,7 @@
         const usedKeywords = Array.isArray(data?.keywords) && data.keywords.length ? data.keywords.join(', ') : getClubDisplayName();
         meta.innerHTML = `Aucun prochain tournoi suivi · mots-clés: ${escapeHtml(usedKeywords)} · candidats vérifiés: ${checked}`;
       }
+      updatePublicControlStatus();
       updateCompetitionPhase(lastGoodData || { competitions: [] });
     }
 
@@ -1152,19 +1171,24 @@
     function loadControlFlags() {
       const publicRaw = localStorage.getItem(PUBLIC_CONTROL_STORAGE_KEY);
       const resumeRaw = localStorage.getItem(AUTO_RESUME_ARCHIVE_STORAGE_KEY);
+      const phaseRaw = localStorage.getItem(PHASE_OVERRIDE_STORAGE_KEY);
       publicControlledByAdmin = publicRaw === null ? true : publicRaw === '1';
       autoResumeArchivedLive = resumeRaw === '1';
+      phaseOverrideMode = ['auto', 'before', 'during', 'after'].includes(phaseRaw) ? phaseRaw : 'auto';
     }
 
     function saveControlFlags() {
       localStorage.setItem(PUBLIC_CONTROL_STORAGE_KEY, publicControlledByAdmin ? '1' : '0');
       localStorage.setItem(AUTO_RESUME_ARCHIVE_STORAGE_KEY, autoResumeArchivedLive ? '1' : '0');
+      localStorage.setItem(PHASE_OVERRIDE_STORAGE_KEY, phaseOverrideMode);
       updateControlButtons();
+      updatePublicControlStatus();
     }
 
     function updateControlButtons() {
       const publicBtn = el('togglePublicControlBtn');
       const resumeBtn = el('toggleArchiveResumeBtn');
+      const phaseSelect = el('phaseOverrideSelect');
       if (publicBtn) {
         publicBtn.textContent = `Contrôle public: ${publicControlledByAdmin ? 'ON' : 'OFF'}`;
         publicBtn.classList.toggle('active', publicControlledByAdmin);
@@ -1173,6 +1197,17 @@
         resumeBtn.textContent = `Reprise auto archive: ${autoResumeArchivedLive ? 'ON' : 'OFF'}`;
         resumeBtn.classList.toggle('active', autoResumeArchivedLive);
       }
+      if (phaseSelect) phaseSelect.value = phaseOverrideMode;
+    }
+
+    function updatePublicControlStatus() {
+      const target = el('publicControlStatus');
+      if (!target) return;
+      target.innerHTML =
+        `État public · Contrôle: <strong>${publicControlledByAdmin ? 'ADMIN' : 'Fallback live.json autorisé'}</strong>` +
+        ` · Phase: <strong>${escapeHtml(phaseOverrideMode === 'auto' ? 'Auto' : phaseOverrideMode)}</strong>` +
+        ` · Actifs: <strong>${trackedTournaments.length}</strong>` +
+        ` · Archives: <strong>${archivedTournaments.length}</strong>`;
     }
 
     function parseCompetitionHeader(markdown) {
@@ -1722,6 +1757,17 @@
       el('sourceLink').style.opacity = selected ? '1' : '.6';
     }
 
+    function computeAutoPhase(data) {
+      const archers = data?.competitions ? getCurrentArchers(data) : [];
+      const hasLive = archers.some(a => !a.finished);
+      const hasAny = archers.length > 0;
+      const hasNext = trackedTournaments.length > 0 || !!(lastNextCompetitionData && lastNextCompetitionData.found && lastNextCompetitionData.next_competition);
+      if (hasLive) return 'during';
+      if (hasAny) return 'after';
+      if (hasNext) return 'before';
+      return 'before';
+    }
+
     function updateCompetitionPhase(data) {
       const badge = el('phaseBadge');
       const help = el('phaseHelp');
@@ -1731,48 +1777,42 @@
       const volleySection = el('volleySection');
       const nextCard = el('nextParticipantsCard');
 
-      const archers = data?.competitions ? getCurrentArchers(data) : [];
-      const hasLive = archers.some(a => !a.finished);
-      const hasAny = archers.length > 0;
-      const hasNext = trackedTournaments.length > 0 || !!(lastNextCompetitionData && lastNextCompetitionData.found && lastNextCompetitionData.next_competition);
-
-      if (hasLive) {
+      const effectivePhase = phaseOverrideMode === 'auto' ? computeAutoPhase(data) : phaseOverrideMode;
+      if (effectivePhase === 'during') {
         if (liveSection) liveSection.classList.remove('hidden');
         if (finishedSection) finishedSection.classList.remove('hidden');
         if (volleySection) volleySection.classList.add('hidden');
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge ok';
         badge.textContent = 'Pendant compétition';
-        help.textContent = 'Le live score est en cours. Les tableaux se mettent à jour.';
+        help.textContent = phaseOverrideMode === 'auto'
+          ? 'Le live score est en cours. Les tableaux se mettent à jour.'
+          : 'Pilotage manuel admin: phase forcée sur Pendant compétition.';
         return;
       }
-      if (hasAny) {
+      if (effectivePhase === 'after') {
         if (liveSection) liveSection.classList.add('hidden');
         if (finishedSection) finishedSection.classList.remove('hidden');
         if (volleySection) volleySection.classList.add('hidden');
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge warn';
         badge.textContent = 'Après compétition';
-        help.textContent = 'Compétition terminée. Résultats conservés.';
+        help.textContent = phaseOverrideMode === 'auto'
+          ? 'Compétition terminée. Résultats conservés.'
+          : 'Pilotage manuel admin: phase forcée sur Après compétition.';
         return;
       }
-      if (hasNext) {
+      if (effectivePhase === 'before') {
         if (liveSection) liveSection.classList.add('hidden');
         if (finishedSection) finishedSection.classList.add('hidden');
         if (volleySection) volleySection.classList.add('hidden');
         if (nextCard) nextCard.classList.remove('hidden');
         badge.className = 'badge ok';
         badge.textContent = 'Avant compétition';
-        help.textContent = 'Participants détectés. En attente de l’ouverture du live IC.';
-        return;
+        help.textContent = phaseOverrideMode === 'auto'
+          ? 'Participants détectés. En attente de l’ouverture du live IC.'
+          : 'Pilotage manuel admin: phase forcée sur Avant compétition.';
       }
-      if (liveSection) liveSection.classList.add('hidden');
-      if (finishedSection) finishedSection.classList.add('hidden');
-      if (volleySection) volleySection.classList.add('hidden');
-      if (nextCard) nextCard.classList.remove('hidden');
-      badge.className = 'badge warn';
-      badge.textContent = 'Avant compétition';
-      help.textContent = 'Renseigne le club puis clique sur "Chercher prochaine compétition".';
     }
 
     function updateChangeBadge(data) {
@@ -1850,6 +1890,7 @@
       renderVolleyPanel();
       updateChangeBadge(data);
       updateCompetitionPhase(data);
+      updatePublicControlStatus();
 
       if (!keepStatus) setStatus('ok', 'Mise à jour réussie');
       if (!hasLiveArchers(data)) stopAutoRefresh();
@@ -2007,6 +2048,7 @@
         await loadClubQuickChoicesFromCatalog();
         setAdminTab('club');
         updateControlButtons();
+        updatePublicControlStatus();
         renderTrackedTournamentsList();
         el('adminTabClubBtn').addEventListener('click', () => setAdminTab('club'));
         el('adminTabTournamentsBtn').addEventListener('click', () => setAdminTab('tournois'));
@@ -2061,6 +2103,24 @@
             ? 'Reprise auto des archives activée.'
             : 'Reprise auto des archives désactivée.');
           await refresh();
+        });
+        el('applyPhaseOverrideBtn').addEventListener('click', async () => {
+          const select = el('phaseOverrideSelect');
+          const nextMode = String(select?.value || 'auto');
+          phaseOverrideMode = ['auto', 'before', 'during', 'after'].includes(nextMode) ? nextMode : 'auto';
+          saveControlFlags();
+          setAdminResult(phaseOverrideMode === 'auto'
+            ? 'Phase publique repassée en mode automatique.'
+            : `Phase publique forcée: ${escapeHtml(phaseOverrideMode)}.`);
+          await refresh();
+        });
+        el('clearPublicViewBtn').addEventListener(() => {
+          lastRawData = { competitions: [] };
+          lastGoodData = { competitions: [] };
+          previousSignature = null;
+          selectedCompetitionId = 'all';
+          render(lastRawData, true);
+          setAdminResult('Vue publique nettoyée immédiatement.');
         });
         el('addManualIcBtn').addEventListener('click', async () => {
           const input = el('manualIcUrlInput');
