@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-22T10:00:59.220942+00:00",
+  "generated_at_utc": "2026-04-22T11:18:23.168115+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -8210,7 +8210,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27200",
       "ena_url": "https://www.ianseo.net/TourData/2026/27200/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27200/IC.php",
-      "entries_count": 174,
+      "entries_count": 177,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -8379,6 +8379,20 @@
           "category": "0893231 - NOISY LE SEC",
           "session": "S2 Femme Arc Classique National",
           "target": "9C"
+        },
+        {
+          "name": "CHAFFAUX Thibaud",
+          "club": "0610019 - ARCIS SUR AUBE",
+          "category": "0610019 - ARCIS SUR AUBE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "4B"
+        },
+        {
+          "name": "CHAFFAUX Thibaud",
+          "club": "0610019 - ARCIS SUR AUBE",
+          "category": "0610019 - ARCIS SUR AUBE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "5C"
         },
         {
           "name": "CHARTON Valerie",
@@ -8792,6 +8806,13 @@
           "category": "0877059 - BUSSY ST GEORGES",
           "session": "S2 Femme Arc Classique National",
           "target": "6B"
+        },
+        {
+          "name": "LACOURCELLE Ingrid",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "S2 Femme Arc Classique",
+          "target": "3A"
         },
         {
           "name": "LALLIER Marie-Claude",
@@ -10785,7 +10806,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 32,
+      "entries_count": 35,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -10921,6 +10942,13 @@
           "target": "2B"
         },
         {
+          "name": "GUESDON Etienne",
+          "club": "1131093 - BALMA",
+          "category": "1131093 - BALMA",
+          "session": "S2 Homme Arc Classique National",
+          "target": "5C"
+        },
+        {
           "name": "HUFSCHMIDT Jordan",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
@@ -10989,6 +11017,20 @@
           "category": "1131079 - TOURNEFEUILLE",
           "session": "S2 Homme Arc Classique National",
           "target": "10B"
+        },
+        {
+          "name": "STACEY Michele",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S3 Femme Arc à Poulies National",
+          "target": "11C"
+        },
+        {
+          "name": "STACEY Michele",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S3 Femme Arc à Poulies",
+          "target": "9A"
         },
         {
           "name": "TURBE HAN Antoine",
