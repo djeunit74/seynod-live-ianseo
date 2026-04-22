@@ -224,6 +224,7 @@
         <div class="tab-pane hidden" id="adminTabTournamentsPane">
           <div class="admin-actions">
             <button class="btn" id="allInOneBtn">Tout en 1 : Démarrer compétition</button>
+            <button class="btn secondary" id="demoTournamentBtn">Lancer démo tournoi</button>
             <button class="btn secondary" id="clearCompetitionBtn">Effacer ancienne compétition</button>
             <button class="btn" id="findNextCompetitionBtn">Chercher prochaine compétition Seynod</button>
           </div>
@@ -289,6 +290,7 @@
     const DEFAULT_COUNTRY_CODE = 'FRA';
     const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
     const ARCHIVE_RESUME_CHECK_MS = 120000;
+    const DEMO_STEP_MS = 5000;
     const CLUB_QUICK_PRESETS = [
       '0174246 - SEYNOD',
       '0163157 - RIOM',
@@ -322,6 +324,10 @@
     let selectedNextCompetitionId = '';
     let nextDataLockUntilMs = 0;
     let nextArchiveResumeCheckAtMs = 0;
+    let demoModeActive = false;
+    let demoTimer = null;
+    let demoTick = 0;
+    let demoSnapshot = null;
     let selectedVolleyArcherKey = '';
     let clubQuickChoices = [];
     const archerVolleyState = {};
@@ -1200,6 +1206,185 @@
       if (phaseSelect) phaseSelect.value = phaseOverrideMode;
     }
 
+    function updateDemoButton() {
+      const btn = el('demoTournamentBtn');
+      if (!btn) return;
+      btn.textContent = demoModeActive ? 'Arrêter démo tournoi' : 'Lancer démo tournoi';
+      btn.classList.toggle('active', demoModeActive);
+    }
+
+    function buildDemoTournamentInfo() {
+      const entries = [
+        { name: 'KOZUCHOWICZ Johanna', club: '0174246 - SEYNOD', category: 'Arc Classique - U18 Femmes', session: 'Ses. 1', target: '7A' },
+        { name: 'BOURGEAIS Stephane', club: '0174246 - SEYNOD', category: 'Arc a Poulies - Senior 2 Hommes', session: 'Ses. 1', target: '11C' },
+        { name: 'CATIN Daniel', club: '0174246 - SEYNOD', category: 'Arc a Poulies - Senior 2 Hommes', session: 'Ses. 1', target: '12B' }
+      ];
+      return {
+        id: 'demo-2026',
+        to_id: 'demo-2026',
+        year: '2026',
+        name: 'Demo Tournoi de Seynod',
+        organizer: 'Compagnie d arc Seynod',
+        date_text: '22-23 Apr 2026',
+        end_date: '2026-04-23',
+        details_url: 'https://www.ianseo.net/Details.php?toId=demo2026',
+        ena_url: 'https://www.ianseo.net/TourData/2026/demo2026/ENA.php',
+        ic_url: 'https://www.ianseo.net/TourData/2026/demo2026/IC.php',
+        club_entries: entries
+      };
+    }
+
+    function buildDemoRawDataByTick(tick) {
+      const stamp = new Date().toISOString();
+      if (tick < 2) return { generatedAtUtc: stamp, competitions: [] };
+
+      const stage = tick < 8 ? (tick - 2) : 6;
+      const livePhase = tick < 8;
+      const rows = [
+        {
+          name: 'KOZUCHOWICZ Johanna',
+          club: '0174246 - Seynod',
+          category: 'Arc Classique - U18 Femmes',
+          place: 'Bonneville',
+          scores: [54, 108, 162, 216, 270, 324, 585],
+          pos: [5, 4, 4, 3, 3, 2, 2]
+        },
+        {
+          name: 'BOURGEAIS Stephane',
+          club: '0174246 - Seynod',
+          category: 'Arc a Poulies - Senior 2 Hommes',
+          place: 'Bonneville',
+          scores: [56, 112, 168, 224, 280, 336, 680],
+          pos: [2, 2, 1, 1, 1, 1, 1]
+        },
+        {
+          name: 'CATIN Daniel',
+          club: '0174246 - Seynod',
+          category: 'Arc a Poulies - Senior 2 Hommes',
+          place: 'Bonneville',
+          scores: [48, 96, 144, 192, 240, 288, 573],
+          pos: [15, 14, 13, 12, 12, 11, 11]
+        }
+      ];
+
+      const archers = rows.map((r, idx) => {
+        const currentScore = Number(r.scores[Math.min(stage, r.scores.length - 1)] || 0);
+        const isFinished = !livePhase;
+        const arrows = isFinished ? 72 : Math.min((stage + 1) * 12, 66);
+        const scoreLabel = isFinished ? `${currentScore}` : `${currentScore}`;
+        const detail = isFinished
+          ? (idx === 0 ? '60m-1: 287, 60m-2: 298' : idx === 1 ? '50m-1: 336, 50m-2: 344' : '50m-1: 279, 50m-2: 294')
+          : `Serie: ${Math.max(1, stage + 1)} en simulation`;
+        return {
+          place: r.place,
+          name: r.name,
+          club: r.club,
+          category: r.category,
+          progress: isFinished ? 'Terminé (72 flèches)' : `En cours (${arrows} flèches)`,
+          position: String(r.pos[Math.min(stage, r.pos.length - 1)] || ''),
+          score: currentScore,
+          scoreLabel,
+          detail,
+          finished: isFinished
+        };
+      });
+
+      return {
+        generatedAtUtc: stamp,
+        competitions: [
+          {
+            id: 'demo-live',
+            name: 'Demo Tournoi de Seynod',
+            place: 'Bonneville',
+            sourceUrl: 'https://www.ianseo.net/TourData/2026/demo2026/IC.php',
+            archers
+          }
+        ]
+      };
+    }
+
+    function applyDemoStep() {
+      const tournament = buildDemoTournamentInfo();
+      if (demoTick === 0) {
+        trackedTournaments = [normalizeTrackedTournament(tournament)];
+        saveTrackedTournaments();
+        lastNextCompetitionData = {
+          found: true,
+          checked_candidates: 1,
+          keywords: [trackedClubRaw],
+          next_competition: tournament,
+          matches: [tournament]
+        };
+        renderNextParticipantsPanel(lastNextCompetitionData);
+        const empty = { generatedAtUtc: new Date().toISOString(), competitions: [] };
+        lastRawData = empty;
+        render(empty, true);
+        setStatus('ok', 'Démo: phase Avant compétition');
+      } else {
+        const data = buildDemoRawDataByTick(demoTick);
+        lastRawData = data;
+        render(data, true);
+        if (demoTick < 8) setStatus('ok', 'Démo: phase Pendant compétition');
+        else setStatus('ok', 'Démo: phase Après compétition');
+      }
+
+      demoTick += 1;
+      if (demoTick > 9 && demoTimer) {
+        clearInterval(demoTimer);
+        demoTimer = null;
+        setAdminResult('Démo terminée. Clique "Arrêter démo tournoi" pour revenir aux données réelles.');
+      }
+    }
+
+    function startDemoMode() {
+      if (demoModeActive) return;
+      demoModeActive = true;
+      updateDemoButton();
+      demoTick = 0;
+      demoSnapshot = {
+        trackedTournaments: JSON.parse(JSON.stringify(trackedTournaments)),
+        archivedTournaments: JSON.parse(JSON.stringify(archivedTournaments)),
+        lastNextCompetitionData: lastNextCompetitionData ? JSON.parse(JSON.stringify(lastNextCompetitionData)) : null,
+        nextCompetitionMatches: JSON.parse(JSON.stringify(nextCompetitionMatches)),
+        selectedNextCompetitionId,
+        phaseOverrideMode,
+        autoRefreshEnabled,
+        publicControlledByAdmin
+      };
+      phaseOverrideMode = 'auto';
+      publicControlledByAdmin = true;
+      saveControlFlags();
+      applyDemoStep();
+      demoTimer = setInterval(applyDemoStep, DEMO_STEP_MS);
+      setAdminResult('Démo lancée: avant -> pendant -> apres, une etape toutes les 5 secondes.');
+    }
+
+    async function stopDemoMode(restore = true) {
+      if (demoTimer) {
+        clearInterval(demoTimer);
+        demoTimer = null;
+      }
+      const hadDemo = demoModeActive;
+      demoModeActive = false;
+      updateDemoButton();
+      if (!hadDemo) return;
+      if (restore && demoSnapshot) {
+        trackedTournaments = demoSnapshot.trackedTournaments || [];
+        archivedTournaments = demoSnapshot.archivedTournaments || [];
+        saveTrackedTournaments();
+        saveArchivedTournaments();
+        lastNextCompetitionData = demoSnapshot.lastNextCompetitionData || null;
+        nextCompetitionMatches = demoSnapshot.nextCompetitionMatches || [];
+        selectedNextCompetitionId = demoSnapshot.selectedNextCompetitionId || '';
+        phaseOverrideMode = demoSnapshot.phaseOverrideMode || 'auto';
+        publicControlledByAdmin = (demoSnapshot.publicControlledByAdmin !== false);
+        saveControlFlags();
+        if (demoSnapshot.autoRefreshEnabled) setCompetitionMode(true, 'Mode compétition actif (30s)');
+        await refresh();
+      }
+      setAdminResult('Démo arrêtée. Retour au pilotage réel.');
+    }
+
     function updatePublicControlStatus() {
       const target = el('publicControlStatus');
       if (!target) return;
@@ -1898,6 +2083,12 @@
 
     async function refresh() {
       try {
+        if (demoModeActive) {
+          if (lastRawData) render(lastRawData, true);
+          if (lastNextCompetitionData) renderNextParticipantsPanel(lastNextCompetitionData);
+          nextRefresh = Date.now() + REFRESH_MS;
+          return;
+        }
         setStatus('', 'Actualisation en cours...');
         const resumedCount = await tryResumeArchivedLiveTournaments();
         if (resumedCount > 0) {
@@ -2048,6 +2239,7 @@
         await loadClubQuickChoicesFromCatalog();
         setAdminTab('club');
         updateControlButtons();
+        updateDemoButton();
         updatePublicControlStatus();
         renderTrackedTournamentsList();
         el('adminTabClubBtn').addEventListener('click', () => setAdminTab('club'));
@@ -2182,6 +2374,13 @@
           });
         }
         el('allInOneBtn').addEventListener('click', startCompetitionAllInOne);
+        el('demoTournamentBtn').addEventListener('click', async () => {
+          if (demoModeActive) {
+            await stopDemoMode(true);
+            return;
+          }
+          startDemoMode();
+        });
         el('clearCompetitionBtn').addEventListener('click', clearCompetitionView);
         el('findNextCompetitionBtn').addEventListener('click', findNextCompetition);
         el('toggleCompetitionBtn').addEventListener('click', () => {
