@@ -234,6 +234,8 @@
           </div>
           <div class="admin-actions">
             <button class="btn secondary" id="clearTrackedTournamentsBtn">Vider tournois suivis</button>
+            <button class="btn secondary" id="togglePublicControlBtn">Contrôle public: ON</button>
+            <button class="btn secondary" id="toggleArchiveResumeBtn">Reprise auto archive: OFF</button>
           </div>
           <div class="admin-input">
             <input id="manualIcUrlInput" type="text" placeholder="Ajouter URL IC manuelle (https://.../IC.php)" />
@@ -265,6 +267,8 @@
     const TRACKED_TOURNAMENTS_STORAGE_KEY = 'seynod_tracked_tournaments';
     const ARCHIVED_TOURNAMENTS_STORAGE_KEY = 'seynod_archived_tournaments';
     const TRACKED_IC_URLS_STORAGE_KEY = 'seynod_tracked_ic_urls';
+    const PUBLIC_CONTROL_STORAGE_KEY = 'seynod_public_control_mode';
+    const AUTO_RESUME_ARCHIVE_STORAGE_KEY = 'seynod_auto_resume_archive';
     const DEFAULT_TRACKED_CLUB = '0174246,seynod';
     const DEFAULT_COUNTRY_CODE = 'FRA';
     const IANSEO_PROXY_PREFIX = 'https://r.jina.ai/http://';
@@ -293,6 +297,8 @@
     let archivedTournaments = [];
     let trackedCountryCode = DEFAULT_COUNTRY_CODE;
     let trackedIcUrls = [];
+    let publicControlledByAdmin = true;
+    let autoResumeArchivedLive = false;
     let adminBridgeUrl = '';
     let lastNextCompetitionData = null;
     let nextCompetitionMatches = [];
@@ -1143,6 +1149,32 @@
       if (input) input.value = trackedCountryCode;
     }
 
+    function loadControlFlags() {
+      const publicRaw = localStorage.getItem(PUBLIC_CONTROL_STORAGE_KEY);
+      const resumeRaw = localStorage.getItem(AUTO_RESUME_ARCHIVE_STORAGE_KEY);
+      publicControlledByAdmin = publicRaw === null ? true : publicRaw === '1';
+      autoResumeArchivedLive = resumeRaw === '1';
+    }
+
+    function saveControlFlags() {
+      localStorage.setItem(PUBLIC_CONTROL_STORAGE_KEY, publicControlledByAdmin ? '1' : '0');
+      localStorage.setItem(AUTO_RESUME_ARCHIVE_STORAGE_KEY, autoResumeArchivedLive ? '1' : '0');
+      updateControlButtons();
+    }
+
+    function updateControlButtons() {
+      const publicBtn = el('togglePublicControlBtn');
+      const resumeBtn = el('toggleArchiveResumeBtn');
+      if (publicBtn) {
+        publicBtn.textContent = `Contrôle public: ${publicControlledByAdmin ? 'ON' : 'OFF'}`;
+        publicBtn.classList.toggle('active', publicControlledByAdmin);
+      }
+      if (resumeBtn) {
+        resumeBtn.textContent = `Reprise auto archive: ${autoResumeArchivedLive ? 'ON' : 'OFF'}`;
+        resumeBtn.classList.toggle('active', autoResumeArchivedLive);
+      }
+    }
+
     function parseCompetitionHeader(markdown) {
       const lines = String(markdown || '').split('\n').map(s => s.trim());
       const name = lines.find(l => /^Concours /i.test(l)) || lines.find(l => l && !l.startsWith('|') && !l.startsWith('#')) || 'Concours';
@@ -1224,6 +1256,7 @@
     }
 
     async function tryResumeArchivedLiveTournaments() {
+      if (!autoResumeArchivedLive) return 0;
       if (!archivedTournaments.length) return 0;
       if (Date.now() < nextArchiveResumeCheckAtMs) return 0;
       nextArchiveResumeCheckAtMs = Date.now() + ARCHIVE_RESUME_CHECK_MS;
@@ -1834,10 +1867,16 @@
           lastRawData = multiData;
           render(multiData);
         } else {
-          const res = await fetch(API_URL + '?t=' + Date.now(), { cache: 'no-store' });
-          const data = await res.json();
-          lastRawData = data;
-          render(data);
+          if (publicControlledByAdmin) {
+            const empty = { competitions: [] };
+            lastRawData = empty;
+            render(empty);
+          } else {
+            const res = await fetch(API_URL + '?t=' + Date.now(), { cache: 'no-store' });
+            const data = await res.json();
+            lastRawData = data;
+            render(data);
+          }
         }
         await refreshNextParticipants();
       } catch (err) {
@@ -1947,6 +1986,7 @@
     async function initPage() {
       loadClubFilter();
       loadCountryCode();
+      loadControlFlags();
       loadTrackedTournaments();
       loadArchivedTournaments();
       await loadAdminConfig();
@@ -1966,6 +2006,7 @@
         if (countryInput) countryInput.value = trackedCountryCode;
         await loadClubQuickChoicesFromCatalog();
         setAdminTab('club');
+        updateControlButtons();
         renderTrackedTournamentsList();
         el('adminTabClubBtn').addEventListener('click', () => setAdminTab('club'));
         el('adminTabTournamentsBtn').addEventListener('click', () => setAdminTab('tournois'));
@@ -2003,6 +2044,22 @@
           setAdminResult(count > 0
             ? `Tournois suivis archivés automatiquement (${count}).`
             : 'Aucun tournoi actif à archiver.');
+          await refresh();
+        });
+        el('togglePublicControlBtn').addEventListener('click', async () => {
+          publicControlledByAdmin = !publicControlledByAdmin;
+          saveControlFlags();
+          setAdminResult(publicControlledByAdmin
+            ? 'Contrôle public activé: sans tournoi suivi, l’app publique reste vide.'
+            : 'Contrôle public désactivé: lecture live.json autorisée sans sélection admin.');
+          await refresh();
+        });
+        el('toggleArchiveResumeBtn').addEventListener('click', async () => {
+          autoResumeArchivedLive = !autoResumeArchivedLive;
+          saveControlFlags();
+          setAdminResult(autoResumeArchivedLive
+            ? 'Reprise auto des archives activée.'
+            : 'Reprise auto des archives désactivée.');
           await refresh();
         });
         el('addManualIcBtn').addEventListener('click', async () => {
