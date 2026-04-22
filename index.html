@@ -46,6 +46,8 @@
     th{color:var(--muted);font-size:13px}
     tr.finished td{font-weight:800}
     tr.live td{color:var(--live)}
+    tr.watch-row{background:rgba(34,197,94,.10)}
+    tr.watch-row td{box-shadow:inset 0 1px 0 rgba(34,197,94,.25)}
     .mini{font-size:12px;color:var(--muted);line-height:1.5}
     .detailBox{font-size:13px;line-height:1.5}
     .sectionTitle{margin:0 0 10px}
@@ -210,7 +212,7 @@
           <div class="admin-input">
             <input id="clubFilterInput" list="clubQuickList" type="text" placeholder="Club à suivre (numéro ou mots-clés, ex: 0174246,seynod)" />
             <datalist id="clubQuickList"></datalist>
-            <input id="countryCodeInput" type="text" placeholder="Pays IANSEO (ex: FRA)" style="max-width:220px;min-width:180px" />
+            <input id="countryCodeInput" type="text" placeholder="Pays IANSEO (ex: FRA,BEL,SUI)" style="max-width:260px;min-width:200px" />
             <button class="btn secondary" id="applyClubFilterBtn">Appliquer club</button>
           </div>
           <div class="admin-input">
@@ -220,6 +222,12 @@
             <button class="btn secondary" id="applyQuickClubBtn">Choisir ce club</button>
           </div>
           <div class="admin-quick" id="clubQuickButtons"></div>
+          <div class="admin-input">
+            <input id="watchArcherInput" type="text" placeholder="Archers à surveiller (ex: Johanna, Maxence)" />
+            <button class="btn secondary" id="addWatchArcherBtn">Ajouter surveillés</button>
+            <button class="btn secondary" id="clearWatchArcherBtn">Vider surveillés</button>
+          </div>
+          <div class="admin-quick" id="watchArcherList"></div>
         </div>
         <div class="tab-pane hidden" id="adminTabTournamentsPane">
           <div class="admin-actions">
@@ -279,6 +287,7 @@
     const WORKFLOW_RESET = 'reset-live.yml';
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
     const CLUB_FILTER_STORAGE_KEY = 'seynod_tracked_club_keywords';
+    const WATCHED_ARCHERS_STORAGE_KEY = 'seynod_watched_archers';
     const COUNTRY_STORAGE_KEY = 'seynod_country_code';
     const TRACKED_TOURNAMENTS_STORAGE_KEY = 'seynod_tracked_tournaments';
     const ARCHIVED_TOURNAMENTS_STORAGE_KEY = 'seynod_archived_tournaments';
@@ -311,8 +320,11 @@
     let selectedCompetitionId = 'all';
     let trackedClubRaw = DEFAULT_TRACKED_CLUB;
     let trackedClubKeywords = [];
+    let watchedArchers = [];
     let trackedTournaments = [];
     let archivedTournaments = [];
+    let trackedCountryRaw = DEFAULT_COUNTRY_CODE;
+    let trackedCountryCodes = [DEFAULT_COUNTRY_CODE];
     let trackedCountryCode = DEFAULT_COUNTRY_CODE;
     let trackedIcUrls = [];
     let publicControlledByAdmin = true;
@@ -478,14 +490,19 @@
       return out;
     }
 
-    async function findNextCompetitionDirect(keywords, country = DEFAULT_COUNTRY_CODE) {
+    async function findNextCompetitionDirect(keywords, countries = [DEFAULT_COUNTRY_CODE]) {
       const now = new Date();
       const todayUtc = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 12, 0, 0));
       const keys = (keywords || []).map(k => normalizeForMatch(k)).filter(Boolean);
+      const countryCodes = Array.isArray(countries)
+        ? countries.map(c => normalizeCountryCode(c)).filter(Boolean)
+        : parseCountryCodes(countries);
+      const effectiveCountries = countryCodes.length ? countryCodes : [DEFAULT_COUNTRY_CODE];
       const emptyResult = {
         generated_at_utc: new Date().toISOString(),
         today: todayUtc.toISOString().slice(0, 10),
-        country,
+        country: effectiveCountries[0],
+        countries: effectiveCountries,
         keywords: keywords || [],
         found: false,
         checked_candidates: 0,
@@ -511,7 +528,7 @@
       };
 
       const filtered = tournaments
-        .filter(t => String(t?.country || country) === country || !t?.country)
+        .filter(t => !t?.country || effectiveCountries.includes(String(t.country)))
         .filter(isFuture)
         .sort((a, b) => String(a.end_date || '').localeCompare(String(b.end_date || '')));
 
@@ -545,7 +562,8 @@
       return {
         generated_at_utc: new Date().toISOString(),
         today: todayUtc.toISOString().slice(0, 10),
-        country,
+        country: effectiveCountries[0],
+        countries: effectiveCountries,
         keywords: keywords || [],
         found: true,
         checked_candidates: checked,
@@ -999,7 +1017,7 @@
         return;
       }
       try {
-        const data = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCode);
+        const data = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCodes);
         lastNextCompetitionData = data;
         nextDataLockUntilMs = 0;
         renderNextParticipantsPanel(data);
@@ -1024,6 +1042,91 @@
         .split(/[,;\n]+/)
         .map(v => v.trim().toLowerCase())
         .filter(Boolean);
+    }
+
+    function normalizeWatchArcherNames(raw) {
+      return String(raw || '')
+        .split(/[,;\n]+/)
+        .map(v => v.trim())
+        .filter(Boolean);
+    }
+
+    function dedupeWatchedArchers(values) {
+      const map = new Map();
+      for (const v of values || []) {
+        const clean = String(v || '').trim();
+        if (!clean) continue;
+        const key = normalizeForMatch(clean);
+        if (!key || map.has(key)) continue;
+        map.set(key, clean);
+      }
+      return Array.from(map.values());
+    }
+
+    function loadWatchedArchers() {
+      watchedArchers = [];
+      try {
+        const raw = localStorage.getItem(WATCHED_ARCHERS_STORAGE_KEY);
+        const arr = raw ? JSON.parse(raw) : [];
+        if (!Array.isArray(arr)) return;
+        watchedArchers = dedupeWatchedArchers(arr);
+      } catch (_) {}
+    }
+
+    function saveWatchedArchers() {
+      watchedArchers = dedupeWatchedArchers(watchedArchers);
+      localStorage.setItem(WATCHED_ARCHERS_STORAGE_KEY, JSON.stringify(watchedArchers));
+      renderWatchedArchersAdmin();
+      updatePublicControlStatus();
+    }
+
+    function addWatchedArchers(raw) {
+      const incoming = normalizeWatchArcherNames(raw);
+      if (!incoming.length) return 0;
+      const before = watchedArchers.length;
+      watchedArchers = dedupeWatchedArchers([...watchedArchers, ...incoming]);
+      saveWatchedArchers();
+      return Math.max(0, watchedArchers.length - before);
+    }
+
+    function removeWatchedArcher(value) {
+      const key = normalizeForMatch(value);
+      if (!key) return;
+      watchedArchers = watchedArchers.filter(v => normalizeForMatch(v) !== key);
+      saveWatchedArchers();
+    }
+
+    function clearWatchedArchers() {
+      watchedArchers = [];
+      saveWatchedArchers();
+    }
+
+    function isWatchedArcher(archer) {
+      if (!watchedArchers.length) return false;
+      const name = normalizeForMatch(archer?.name || '');
+      if (!name) return false;
+      return watchedArchers.some(w => {
+        const key = normalizeForMatch(w);
+        return key && (name.includes(key) || key.includes(name));
+      });
+    }
+
+    function renderWatchedArchersAdmin() {
+      const box = el('watchArcherList');
+      if (!box) return;
+      if (!watchedArchers.length) {
+        box.innerHTML = '<span class="mini">Aucun archer surveillé.</span>';
+        return;
+      }
+      box.innerHTML = watchedArchers.map(n =>
+        `<span class="chip">${escapeHtml(n)} <button class="btn small secondary" data-remove-watch="${escapeHtml(n)}">x</button></span>`
+      ).join('');
+      box.querySelectorAll('[data-remove-watch]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const name = btn.getAttribute('data-remove-watch') || '';
+          removeWatchedArcher(name);
+        });
+      });
     }
 
     function normalizeForMatch(value) {
@@ -1162,16 +1265,36 @@
         .slice(0, 3) || DEFAULT_COUNTRY_CODE;
     }
 
+    function parseCountryCodes(raw) {
+      const parts = String(raw || '')
+        .split(/[,;\n\s]+/)
+        .map(v => normalizeCountryCode(v))
+        .filter(Boolean);
+      const uniq = [];
+      const seen = new Set();
+      for (const c of parts) {
+        if (seen.has(c)) continue;
+        seen.add(c);
+        uniq.push(c);
+      }
+      return uniq.length ? uniq : [DEFAULT_COUNTRY_CODE];
+    }
+
     function loadCountryCode() {
       const stored = localStorage.getItem(COUNTRY_STORAGE_KEY);
-      trackedCountryCode = normalizeCountryCode(stored || DEFAULT_COUNTRY_CODE);
+      trackedCountryRaw = String(stored || DEFAULT_COUNTRY_CODE);
+      trackedCountryCodes = parseCountryCodes(trackedCountryRaw);
+      trackedCountryCode = trackedCountryCodes[0] || DEFAULT_COUNTRY_CODE;
     }
 
     function saveCountryCode(raw) {
-      trackedCountryCode = normalizeCountryCode(raw);
-      localStorage.setItem(COUNTRY_STORAGE_KEY, trackedCountryCode);
+      trackedCountryRaw = String(raw || DEFAULT_COUNTRY_CODE).trim();
+      trackedCountryCodes = parseCountryCodes(trackedCountryRaw);
+      trackedCountryCode = trackedCountryCodes[0] || DEFAULT_COUNTRY_CODE;
+      const saved = trackedCountryCodes.join(',');
+      localStorage.setItem(COUNTRY_STORAGE_KEY, saved);
       const input = el('countryCodeInput');
-      if (input) input.value = trackedCountryCode;
+      if (input) input.value = saved;
     }
 
     function loadControlFlags() {
@@ -1452,7 +1575,8 @@
         `État public · Contrôle: <strong>${publicControlledByAdmin ? 'ADMIN' : 'Fallback live.json autorisé'}</strong>` +
         ` · Phase: <strong>${escapeHtml(phaseOverrideMode === 'auto' ? 'Auto' : phaseOverrideMode)}</strong>` +
         ` · Actifs: <strong>${trackedTournaments.length}</strong>` +
-        ` · Archives: <strong>${archivedTournaments.length}</strong>`;
+        ` · Archives: <strong>${archivedTournaments.length}</strong>` +
+        ` · Surveillés: <strong>${watchedArchers.length}</strong>`;
     }
 
     function parseCompetitionHeader(markdown) {
@@ -1978,9 +2102,12 @@
 
       const showCompetitionName = selectedCompetitionId === 'all';
       tbody.innerHTML = archers.map(a => {
+        const watched = isWatchedArcher(a);
         const infoLine = showCompetitionName ? `<div class="mini">${escapeHtml(a.club || '')} · ${escapeHtml(a.competitionName || '')}</div>` : `<div class="mini">${escapeHtml(a.club || '')}</div>`;
+        const watchBadge = watched ? ' <span class="badge ok">Surveillé</span>' : '';
         const scoreValue = (a.score !== undefined && a.score !== null && String(a.score).trim() !== '') ? String(a.score) : String(a.scoreLabel || '').replace(/\s*\(.*?\)\s*/g, '').trim();
-        return `<tr class="${a.finished ? 'finished' : 'live'}"><td>${escapeHtml(a.place || '—')}</td><td>${escapeHtml(a.name || '')}${infoLine}</td><td>${escapeHtml(a.category || '')}</td><td>${escapeHtml(a.progress || '')}</td><td>${escapeHtml(a.position || '')}</td><td>${escapeHtml(scoreValue)}</td><td><div class="detailBox">${escapeHtml(a.detail || '')}</div></td></tr>`;
+        const klass = `${a.finished ? 'finished' : 'live'}${watched ? ' watch-row' : ''}`;
+        return `<tr class="${klass}"><td>${escapeHtml(a.place || '—')}</td><td>${escapeHtml(a.name || '')}${watchBadge}${infoLine}</td><td>${escapeHtml(a.category || '')}</td><td>${escapeHtml(a.progress || '')}</td><td>${escapeHtml(a.position || '')}</td><td>${escapeHtml(scoreValue)}</td><td><div class="detailBox">${escapeHtml(a.detail || '')}</div></td></tr>`;
       }).join('');
     }
 
@@ -2021,12 +2148,12 @@
       const finishedSection = el('finishedSection');
       const volleySection = el('volleySection');
       const nextCard = el('nextParticipantsCard');
-
       const effectivePhase = phaseOverrideMode === 'auto' ? computeAutoPhase(data) : phaseOverrideMode;
+      const showDemoVolley = demoModeActive && (effectivePhase === 'during' || effectivePhase === 'after');
       if (effectivePhase === 'during') {
         if (liveSection) liveSection.classList.remove('hidden');
         if (finishedSection) finishedSection.classList.remove('hidden');
-        if (volleySection) volleySection.classList.add('hidden');
+        if (volleySection) volleySection.classList.toggle('hidden', !showDemoVolley);
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge ok';
         badge.textContent = 'Pendant compétition';
@@ -2038,7 +2165,7 @@
       if (effectivePhase === 'after') {
         if (liveSection) liveSection.classList.add('hidden');
         if (finishedSection) finishedSection.classList.remove('hidden');
-        if (volleySection) volleySection.classList.add('hidden');
+        if (volleySection) volleySection.classList.toggle('hidden', !showDemoVolley);
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge warn';
         badge.textContent = 'Après compétition';
@@ -2217,7 +2344,7 @@
     async function startCompetitionAllInOne() {
       setCompetitionMode(true, 'Mode compétition actif (30s)');
       try {
-        const direct = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCode);
+        const direct = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCodes);
         lastNextCompetitionData = direct;
         nextDataLockUntilMs = Date.now() + 20 * 60 * 1000;
         renderNextCompetitionResult(direct);
@@ -2233,7 +2360,11 @@
 
       if (adminBridgeUrl) {
         setAdminResult(`Démarrage automatique compétition pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
-        await callAdminBridge('start_competition', { club_keywords: trackedClubRaw, country: trackedCountryCode });
+        await callAdminBridge('start_competition', {
+          club_keywords: trackedClubRaw,
+          country: trackedCountryCode,
+          countries: trackedCountryCodes.join(',')
+        });
         const [nextData, liveData] = await Promise.all([
           waitForNextCompetitionUpdate(previousNextGeneratedAt, 140000),
           waitForLiveUpdate(previousLiveGeneratedAt, 140000)
@@ -2268,7 +2399,7 @@
         lastNextCompetitionData = stripDemoFromNextData(lastNextCompetitionData);
         nextCompetitionMatches = (nextCompetitionMatches || []).filter(m => !isDemoTournament(m));
         setAdminResult(`Recherche automatique des prochaines compétitions pour <strong>${escapeHtml(getClubDisplayName())}</strong>...`);
-        const direct = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCode);
+        const direct = await findNextCompetitionDirect(trackedClubKeywords, trackedCountryCodes);
         lastNextCompetitionData = direct;
         nextDataLockUntilMs = Date.now() + 20 * 60 * 1000;
         renderNextCompetitionResult(direct);
@@ -2278,7 +2409,11 @@
             const lastRes = await fetch(NEXT_API_URL + '?t=' + Date.now(), { cache: 'no-store' });
             const lastData = await lastRes.json();
             const previousGeneratedAt = String(lastData.generated_at_utc || '');
-            await callAdminBridge('find_next', { club_keywords: trackedClubRaw, country: trackedCountryCode });
+            await callAdminBridge('find_next', {
+              club_keywords: trackedClubRaw,
+              country: trackedCountryCode,
+              countries: trackedCountryCodes.join(',')
+            });
             const updated = await waitForNextCompetitionUpdate(previousGeneratedAt, 130000);
             lastNextCompetitionData = updated;
             nextDataLockUntilMs = 0;
@@ -2299,6 +2434,7 @@
 
       loadClubFilter();
       loadCountryCode();
+      loadWatchedArchers();
       loadControlFlags();
       loadTrackedTournaments();
       loadArchivedTournaments();
@@ -2320,13 +2456,15 @@
         );
         const clubInput = el('clubFilterInput');
         const countryInput = el('countryCodeInput');
+        const watchInput = el('watchArcherInput');
         if (clubInput) clubInput.value = trackedClubRaw;
-        if (countryInput) countryInput.value = trackedCountryCode;
+        if (countryInput) countryInput.value = trackedCountryCodes.join(',');
         await loadClubQuickChoicesFromCatalog();
         setAdminTab('club');
         updateControlButtons();
         updateDemoButton();
         updatePublicControlStatus();
+        renderWatchedArchersAdmin();
         renderTrackedTournamentsList();
         el('adminTabClubBtn').addEventListener('click', () => setAdminTab('club'));
         el('adminTabTournamentsBtn').addEventListener('click', () => setAdminTab('tournois'));
@@ -2341,7 +2479,7 @@
           selectedNextCompetitionId = '';
           nextDataLockUntilMs = 0;
           renderNextParticipantsPanel({ found: false });
-          setAdminResult(`Club suivi mis à jour : <strong>${escapeHtml(getClubDisplayName())}</strong> · Pays : <strong>${escapeHtml(trackedCountryCode)}</strong>.`);
+          setAdminResult(`Club suivi mis à jour : <strong>${escapeHtml(getClubDisplayName())}</strong> · Pays : <strong>${escapeHtml(trackedCountryCodes.join(', '))}</strong>.`);
           if (lastRawData) {
             render(lastRawData, true);
           } else if (lastGoodData) {
@@ -2357,6 +2495,20 @@
           }
           if (clubInput) clubInput.value = value;
           el('applyClubFilterBtn').click();
+        });
+        bindClick('addWatchArcherBtn', () => {
+          const raw = watchInput ? watchInput.value : '';
+          const added = addWatchedArchers(raw);
+          if (watchInput) watchInput.value = '';
+          setAdminResult(added > 0
+            ? `${added} archer(s) ajouté(s) à la surveillance.`
+            : 'Aucun nouvel archer ajouté.');
+          if (lastRawData) render(lastRawData, true);
+        });
+        bindClick('clearWatchArcherBtn', () => {
+          clearWatchedArchers();
+          setAdminResult('Liste des archers surveillés vidée.');
+          if (lastRawData) render(lastRawData, true);
         });
         bindClick('clearTrackedTournamentsBtn', async () => {
           const count = trackedTournaments.length;
@@ -2459,6 +2611,13 @@
             el('applyClubFilterBtn').click();
           });
         }
+        if (watchInput) {
+          watchInput.addEventListener('keydown', (evt) => {
+            if (evt.key !== 'Enter') return;
+            evt.preventDefault();
+            el('addWatchArcherBtn').click();
+          });
+        }
         bindClick('allInOneBtn', startCompetitionAllInOne);
         bindClick('demoTournamentBtn', async () => {
           if (demoModeActive) {
@@ -2488,3 +2647,5 @@
   </script>
 </body>
 </html>
+
+
