@@ -2244,6 +2244,7 @@
       const volleySection = el('volleySection');
       const nextCard = el('nextParticipantsCard');
       const effectivePhase = phaseOverrideMode === 'auto' ? computeAutoPhase(data) : phaseOverrideMode;
+      if (demoModeActive && finishedSection) finishedSection.classList.add('hidden');
       if (effectivePhase === 'during') {
         if (liveSection) liveSection.classList.remove('hidden');
         if (finishedSection) finishedSection.classList.add('hidden');
@@ -2258,7 +2259,7 @@
       }
       if (effectivePhase === 'after') {
         if (liveSection) liveSection.classList.add('hidden');
-        if (finishedSection) finishedSection.classList.remove('hidden');
+        if (finishedSection) finishedSection.classList.toggle('hidden', demoModeActive);
         if (volleySection) volleySection.classList.remove('hidden');
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge warn';
