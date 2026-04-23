@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-23T15:55:27.604452+00:00",
+  "generated_at_utc": "2026-04-23T17:22:18.319665+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -4797,7 +4797,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=26028",
       "ena_url": "https://www.ianseo.net/TourData/2026/26028/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/26028/IC.php",
-      "entries_count": 176,
+      "entries_count": 177,
       "entries": [
         {
           "name": "ABID Remi",
@@ -5085,6 +5085,13 @@
           "category": "0437083 - ST AVERTIN",
           "session": "U18 Femme Arc Classique",
           "target": "11B"
+        },
+        {
+          "name": "DE ABREU Tony",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "U18 Homme Arc Classique",
+          "target": "14B"
         },
         {
           "name": "DEFEVRE Leo",
