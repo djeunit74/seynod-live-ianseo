@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-23T00:11:24.743722+00:00",
+  "generated_at_utc": "2026-04-23T03:55:31.146912+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -10954,7 +10954,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 35,
+      "entries_count": 39,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -11069,6 +11069,20 @@
           "target": "5B"
         },
         {
+          "name": "DRAPEAU Romain",
+          "club": "1111008 - CARCASSONNE",
+          "category": "1111008 - CARCASSONNE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "4A"
+        },
+        {
+          "name": "DRAPEAU Romain",
+          "club": "1111008 - CARCASSONNE",
+          "category": "1111008 - CARCASSONNE",
+          "session": "Arc Classique Senior 1 Hommes National",
+          "target": "4A"
+        },
+        {
           "name": "DUCH Pascal",
           "club": "1131088 - CUGNAUX",
           "category": "1131088 - CUGNAUX",
@@ -11123,6 +11137,20 @@
           "category": "1131093 - BALMA",
           "session": "U13 Homme Arc Classique",
           "target": "1A"
+        },
+        {
+          "name": "LE RALLIER Fantine",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "S1 Femme Arc Classique National",
+          "target": "5D"
+        },
+        {
+          "name": "LE RALLIER Fantine",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "Arc Classique Senior 1 Femmes National",
+          "target": "8D"
         },
         {
           "name": "M'BENGI Chelsea",
