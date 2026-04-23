@@ -2246,7 +2246,7 @@
       const effectivePhase = phaseOverrideMode === 'auto' ? computeAutoPhase(data) : phaseOverrideMode;
       if (effectivePhase === 'during') {
         if (liveSection) liveSection.classList.remove('hidden');
-        if (finishedSection) finishedSection.classList.remove('hidden');
+        if (finishedSection) finishedSection.classList.add('hidden');
         if (volleySection) volleySection.classList.remove('hidden');
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge ok';
