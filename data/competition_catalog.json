@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-04-23T03:55:31.146912+00:00",
+  "generated_at_utc": "2026-04-23T06:07:20.397684+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 31,
+  "count": 32,
   "tournaments": [
     {
       "to_id": "27366",
@@ -13569,6 +13569,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27837",
       "ena_url": "https://www.ianseo.net/TourData/2027/27837/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2027/27837/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "27835",
+      "year": "2027",
+      "name": "Inne-SM 2027",
+      "organizer": "Bollnäs BSK",
+      "date_text": "3-4 Apr",
+      "end_date": "2027-04-04",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27835",
+      "ena_url": "https://www.ianseo.net/TourData/2027/27835/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/27835/IC.php",
       "entries_count": 0,
       "entries": []
     }
