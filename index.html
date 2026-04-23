@@ -73,6 +73,7 @@
     .volley-grid{display:grid;grid-template-columns:280px 1fr;gap:14px}@media (max-width:900px){.volley-grid{grid-template-columns:1fr}}
     .volley-panel{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px;padding:12px}
     .volley-title{margin:0 0 8px;font-size:18px}
+    .volley-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
     .volley-last{display:flex;align-items:center;gap:10px;font-size:15px}
     .volley-last-score{font-size:28px;font-weight:800;line-height:1}
     .volley-last-type{color:#cbd5e1;font-size:13px}
@@ -85,6 +86,7 @@
     .volley-muted{color:var(--muted);font-size:13px}
     .volley-chart{width:100%;height:220px;border:1px solid var(--border);border-radius:12px;background:rgba(15,23,42,.55)}
     .volley-legend{margin-top:8px;color:var(--muted);font-size:12px}
+    .volley-drill{margin-top:8px;overflow:auto}
     .presentation-example{margin-top:14px;padding:12px;border:1px dashed rgba(148,163,184,.35);border-radius:14px;background:rgba(255,255,255,.02)}
     .presentation-example h4{margin:0 0 8px;font-size:15px;color:#cbd5e1}
     .presentation-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)}
@@ -183,23 +185,38 @@
           <label for="volleyArcherSelect" class="volley-muted">Archer suivi :</label>
           <select id="volleyArcherSelect" class="btn secondary" style="padding:10px 12px;"></select>
         </div>
-        <div class="volley-grid">
-          <div class="volley-panel">
-            <h3 class="volley-title">Dernière volée</h3>
-            <div class="volley-last">
-              <span class="volley-last-score" id="lastVolleyScore">—</span>
-              <span id="lastVolleySmiley">—</span>
+        <div class="volley-tabs">
+          <button class="btn small active" id="volleyTabSummaryBtn">Résumé</button>
+          <button class="btn small secondary" id="volleyTabDrillBtn">Déroulé du tir</button>
+        </div>
+        <div id="volleySummaryPane">
+          <div class="volley-grid">
+            <div class="volley-panel">
+              <h3 class="volley-title">Dernière volée</h3>
+              <div class="volley-last">
+                <span class="volley-last-score" id="lastVolleyScore">—</span>
+                <span id="lastVolleySmiley">—</span>
+              </div>
+              <div class="volley-last-type" id="lastVolleyType">Pas encore de volée déduite.</div>
+              <div class="volley-muted" id="lastVolleyCompareText"></div>
             </div>
-            <div class="volley-last-type" id="lastVolleyType">Pas encore de volée déduite.</div>
-            <ul class="volley-list" id="volleyHistoryList"></ul>
-          </div>
-          <div class="volley-panel">
-            <h3 class="volley-title">Évolution des volées</h3>
-            <svg id="volleyChart" class="volley-chart" viewBox="0 0 800 220" preserveAspectRatio="none"></svg>
-            <div class="volley-legend">Courbe bleue: volées plausibles. Les mises à jour groupées sont listées à gauche.</div>
+            <div class="volley-panel">
+              <h3 class="volley-title">Évolution des volées</h3>
+              <svg id="volleyChart" class="volley-chart" viewBox="0 0 800 220" preserveAspectRatio="none"></svg>
+              <div class="volley-legend">Courbe: indication du déroulement des volées plausibles.</div>
+            </div>
           </div>
         </div>
-        <div class="presentation-example hidden" id="moodPresentationExample"></div>
+        <div class="volley-panel hidden" id="volleyDrillPane" style="margin-top:10px;">
+          <h3 class="volley-title">Déroulé du tir</h3>
+          <div class="volley-muted" id="volleyDisciplineInfo">Format non détecté.</div>
+          <div class="volley-drill">
+            <table>
+              <thead><tr><th>#</th><th>Série/Volée</th><th>Score</th><th>Type</th><th>Heure</th></tr></thead>
+              <tbody id="volleyDrillRows"><tr><td colspan="5">Aucune volée déduite.</td></tr></tbody>
+            </table>
+          </div>
+        </div>
       </section>
 
       <section class="card span12 admin-card hidden" id="adminPanel">
@@ -341,12 +358,13 @@
     let demoTick = 0;
     let demoSnapshot = null;
     let selectedVolleyArcherKey = '';
+    let selectedVolleyTab = 'summary';
     let clubQuickChoices = [];
     const archerVolleyState = {};
     const volleyArcherIndex = {};
     const VOLLEY_CONFIG = {
       maxVolleyScore: 60,
-      maxHistory: 40
+      maxHistory: 60
     };
     const MOOD_COLORS = {
       good: '#22c55e',
@@ -1818,6 +1836,32 @@
       return fromLabel ? Number(fromLabel[0]) : null;
     }
 
+    function getDisciplineConfigForArcher(archer) {
+      const raw = `${archer?.category || ''} ${archer?.competitionName || ''} ${archer?.detail || ''}`;
+      const norm = normalizeForMatch(raw);
+      const indoor = norm.includes('salle') || norm.includes('interieur') || norm.includes('indoor') || norm.includes('18m');
+      if (indoor) {
+        return {
+          ...VOLLEY_CONFIG,
+          mode: 'indoor',
+          arrowsPerVolley: 3,
+          volleysPerSeries: 10,
+          seriesCount: 2,
+          maxVolleyScore: 30,
+          maxTotalScore: 600
+        };
+      }
+      return {
+        ...VOLLEY_CONFIG,
+        mode: 'tae',
+        arrowsPerVolley: 6,
+        volleysPerSeries: 6,
+        seriesCount: 2,
+        maxVolleyScore: 60,
+        maxTotalScore: 720
+      };
+    }
+
     function updateVolleyHistory(archerState, newTotal, config) {
       if (!archerState.volleyHistory) archerState.volleyHistory = [];
 
@@ -1924,10 +1968,11 @@
         const key = getArcherKey(archer);
         volleyArcherIndex[key] = archer;
         if (!archerVolleyState[key]) {
-          archerVolleyState[key] = { lastTotal: null, volleyHistory: [] };
+          archerVolleyState[key] = { lastTotal: null, volleyHistory: [], config: getDisciplineConfigForArcher(archer) };
         }
+        archerVolleyState[key].config = getDisciplineConfigForArcher(archer);
         const total = getArcherTotalScore(archer);
-        updateVolleyHistory(archerVolleyState[key], total, VOLLEY_CONFIG);
+        updateVolleyHistory(archerVolleyState[key], total, archerVolleyState[key].config || VOLLEY_CONFIG);
       }
     }
 
@@ -1968,15 +2013,39 @@
       `;
     }
 
+    function setVolleyTab(tab) {
+      selectedVolleyTab = (tab === 'drill') ? 'drill' : 'summary';
+      const summaryBtn = el('volleyTabSummaryBtn');
+      const drillBtn = el('volleyTabDrillBtn');
+      const summaryPane = el('volleySummaryPane');
+      const drillPane = el('volleyDrillPane');
+      if (summaryBtn) summaryBtn.classList.toggle('active', selectedVolleyTab === 'summary');
+      if (drillBtn) drillBtn.classList.toggle('active', selectedVolleyTab === 'drill');
+      if (summaryBtn) summaryBtn.classList.toggle('secondary', selectedVolleyTab !== 'summary');
+      if (drillBtn) drillBtn.classList.toggle('secondary', selectedVolleyTab !== 'drill');
+      if (summaryPane) summaryPane.classList.toggle('hidden', selectedVolleyTab !== 'summary');
+      if (drillPane) drillPane.classList.toggle('hidden', selectedVolleyTab !== 'drill');
+    }
+
+    function formatDisciplineInfo(config) {
+      if (!config) return 'Format non détecté.';
+      if (config.mode === 'indoor') {
+        return 'Intérieur détecté: 2 séries de 10 volées de 3 flèches (max 600).';
+      }
+      return 'TAE détecté: 2 séries de 6 volées de 6 flèches (max 720).';
+    }
+
     function renderVolleyPanel() {
       const select = el('volleyArcherSelect');
-      const list = el('volleyHistoryList');
       const lastScore = el('lastVolleyScore');
       const lastSmiley = el('lastVolleySmiley');
       const lastType = el('lastVolleyType');
-      if (!select || !list || !lastScore || !lastSmiley || !lastType) return;
-      const visibleArchers = lastGoodData ? getCurrentArchers(lastGoodData) : [];
+      const compare = el('lastVolleyCompareText');
+      const drillInfo = el('volleyDisciplineInfo');
+      const drillRows = el('volleyDrillRows');
+      if (!select || !lastScore || !lastSmiley || !lastType || !compare || !drillInfo || !drillRows) return;
 
+      const visibleArchers = lastGoodData ? getCurrentArchers(lastGoodData) : [];
       const uniqueArchers = [];
       const seen = new Set();
       for (const a of visibleArchers) {
@@ -1987,8 +2056,8 @@
       }
 
       if (!selectedVolleyArcherKey || !uniqueArchers.some(u => u.key === selectedVolleyArcherKey)) {
-        const johanna = uniqueArchers.find(u => (u.archer.name || '').toLowerCase().includes('johanna'));
-        selectedVolleyArcherKey = johanna ? johanna.key : (uniqueArchers[0]?.key || '');
+        const preferred = uniqueArchers.find(u => normalizeForMatch(u.archer.name || '').includes('johanna'));
+        selectedVolleyArcherKey = preferred ? preferred.key : (uniqueArchers[0]?.key || '');
       }
 
       if (!select.dataset.bound) {
@@ -1999,21 +2068,36 @@
         select.dataset.bound = '1';
       }
 
+      const tabSummaryBtn = el('volleyTabSummaryBtn');
+      const tabDrillBtn = el('volleyTabDrillBtn');
+      if (tabSummaryBtn && !tabSummaryBtn.dataset.bound) {
+        tabSummaryBtn.addEventListener('click', () => setVolleyTab('summary'));
+        tabSummaryBtn.dataset.bound = '1';
+      }
+      if (tabDrillBtn && !tabDrillBtn.dataset.bound) {
+        tabDrillBtn.addEventListener('click', () => setVolleyTab('drill'));
+        tabDrillBtn.dataset.bound = '1';
+      }
+
       select.innerHTML = uniqueArchers.map(u => {
         const label = `${u.archer.name} · ${u.archer.competitionName || ''}`;
         return `<option value="${escapeHtml(u.key)}">${escapeHtml(label)}</option>`;
       }).join('');
       select.value = selectedVolleyArcherKey;
+      setVolleyTab(selectedVolleyTab);
 
       const state = archerVolleyState[selectedVolleyArcherKey];
       const history = state?.volleyHistory || [];
-      const lastEvent = history[history.length - 1] || null;
+      const config = state?.config || getDisciplineConfigForArcher(volleyArcherIndex[selectedVolleyArcherKey]);
+      drillInfo.textContent = formatDisciplineInfo(config);
 
+      const lastEvent = history[history.length - 1] || null;
       if (!lastEvent) {
         lastScore.textContent = '—';
         lastSmiley.innerHTML = '<span class="volley-muted">—</span>';
         lastType.textContent = 'Pas encore de volée déduite.';
-        list.innerHTML = '<li class="volley-muted">Aucun événement pour cet archer.</li>';
+        compare.textContent = '';
+        drillRows.innerHTML = '<tr><td colspan="5">Aucune volée déduite.</td></tr>';
         renderVolleyChart([]);
         return;
       }
@@ -2021,19 +2105,30 @@
       lastScore.textContent = String(lastEvent.score);
       lastSmiley.innerHTML = renderMoodIcon(lastEvent.moodType, 34);
       lastType.textContent = lastEvent.type === 'grouped_update'
-        ? 'Mise à jour groupée (delta trop grand pour une volée unique).'
+        ? 'Mise à jour groupée (pas interprétée comme volée unique).'
         : 'Volée déduite fiable.';
+      compare.textContent = lastEvent.type === 'volley'
+        ? 'Smiley basé uniquement sur la comparaison avec la volée précédente.'
+        : '';
 
-      const ordered = [...history].reverse();
-      list.innerHTML = ordered.map((entry, idx) => {
-        const typeText = entry.type === 'grouped_update' ? 'mise à jour groupée' : `volée ${history.length - idx}`;
-        const icon = entry.type === 'grouped_update'
-          ? '<span class="volley-muted">—</span>'
-          : renderMoodIcon(entry.moodType, 28);
-        return `<li><span class="mood-inline"><strong>${escapeHtml(typeText)}</strong> : ${escapeHtml(entry.score)} ${icon}</span><br><span class="volley-muted">${escapeHtml(new Date(entry.timestamp).toLocaleTimeString('fr-FR'))}</span></li>`;
-      }).join('');
-
+      const volleyOnly = history.filter(h => h.type === 'volley');
       renderVolleyChart(history);
+
+      if (!history.length) {
+        drillRows.innerHTML = '<tr><td colspan="5">Aucune volée déduite.</td></tr>';
+      } else {
+        let volleyIndex = 0;
+        drillRows.innerHTML = history.map((entry) => {
+          if (entry.type === 'volley') volleyIndex += 1;
+          const inSeries = entry.type === 'volley'
+            ? `S${Math.ceil(volleyIndex / config.volleysPerSeries)} · V${((volleyIndex - 1) % config.volleysPerSeries) + 1}`
+            : '—';
+          const idxLabel = entry.type === 'volley' ? String(volleyIndex) : 'Δ';
+          const typeLabel = entry.type === 'volley' ? 'volée' : 'mise à jour groupée';
+          const time = new Date(entry.timestamp).toLocaleTimeString('fr-FR');
+          return `<tr><td>${escapeHtml(idxLabel)}</td><td>${escapeHtml(inSeries)}</td><td>${escapeHtml(entry.score)}</td><td>${escapeHtml(typeLabel)}</td><td>${escapeHtml(time)}</td></tr>`;
+        }).join('');
+      }
     }
 
     function renderMoodPresentationExample() {
@@ -2149,11 +2244,10 @@
       const volleySection = el('volleySection');
       const nextCard = el('nextParticipantsCard');
       const effectivePhase = phaseOverrideMode === 'auto' ? computeAutoPhase(data) : phaseOverrideMode;
-      const showDemoVolley = demoModeActive && (effectivePhase === 'during' || effectivePhase === 'after');
       if (effectivePhase === 'during') {
         if (liveSection) liveSection.classList.remove('hidden');
         if (finishedSection) finishedSection.classList.remove('hidden');
-        if (volleySection) volleySection.classList.toggle('hidden', !showDemoVolley);
+        if (volleySection) volleySection.classList.remove('hidden');
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge ok';
         badge.textContent = 'Pendant compétition';
@@ -2165,7 +2259,7 @@
       if (effectivePhase === 'after') {
         if (liveSection) liveSection.classList.add('hidden');
         if (finishedSection) finishedSection.classList.remove('hidden');
-        if (volleySection) volleySection.classList.toggle('hidden', !showDemoVolley);
+        if (volleySection) volleySection.classList.remove('hidden');
         if (nextCard) nextCard.classList.add('hidden');
         badge.className = 'badge warn';
         badge.textContent = 'Après compétition';
@@ -2447,8 +2541,6 @@
       if (adminMode) {
         el('adminPanel').classList.remove('hidden');
         el('toggleCompetitionBtn').classList.remove('hidden');
-        el('moodPresentationExample').classList.remove('hidden');
-        renderMoodPresentationExample();
         setAdminResult(
           removedDemoArtifacts > 0
             ? `Mode admin actif. Nettoyage automatique: ${removedDemoArtifacts} élément(s) démo supprimé(s).`
