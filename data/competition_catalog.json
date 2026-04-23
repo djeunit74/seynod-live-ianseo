@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-23T13:44:47.972272+00:00",
+  "generated_at_utc": "2026-04-23T15:55:27.604452+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -412,6 +412,13 @@
           "target": "9C"
         },
         {
+          "name": "PIGEAUD Damien",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S2 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
           "name": "PILLON Thibaut",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
@@ -478,13 +485,6 @@
           "name": "VERZIER-ROUSSON Iewan",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
-          "session": "S1 Homme Arc Classique",
-          "target": "9A"
-        },
-        {
-          "name": "VERZIER-ROUSSON Iewan",
-          "club": "0335067 - RENNES CIE",
-          "category": "0335067 - RENNES CIE",
           "session": "Arc Classique Senior 1 Hommes",
           "target": "9A"
         },
@@ -521,7 +521,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27367",
       "ena_url": "https://www.ianseo.net/TourData/2026/27367/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27367/IC.php",
-      "entries_count": 66,
+      "entries_count": 67,
       "entries": [
         {
           "name": "AMOS Nicolas",
@@ -655,6 +655,13 @@
           "category": "0335091 - VEZIN LE COQUET",
           "session": "S1 Homme Arc Classique",
           "target": "11C"
+        },
+        {
+          "name": "CONGA Killian",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "7B"
         },
         {
           "name": "DAGUERRE Florian",
@@ -814,7 +821,7 @@
           "name": "LE LEVIER Thomas",
           "club": "0329040 - BREST",
           "category": "0329040 - BREST",
-          "session": "S1 Homme Arc Classique National",
+          "session": "Arc Classique Senior 1 Hommes National",
           "target": "6C"
         },
         {
@@ -997,7 +1004,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27020",
       "ena_url": "https://www.ianseo.net/TourData/2026/27020/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27020/IC.php",
-      "entries_count": 334,
+      "entries_count": 330,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -1053,21 +1060,21 @@
           "club": "0894266 - IVRY SUR SEINE",
           "category": "0894266 - IVRY SUR SEINE",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": ""
+          "target": "7D"
         },
         {
           "name": "AMICHI Abdelmalek",
           "club": "0894266 - IVRY SUR SEINE",
           "category": "0894266 - IVRY SUR SEINE",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "5D"
+          "target": "8B"
         },
         {
           "name": "ANANDANE Ishwar",
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "9A"
+          "target": "7B"
         },
         {
           "name": "ANGOT Jean",
@@ -1168,13 +1175,6 @@
           "target": "19D"
         },
         {
-          "name": "BELMONT Yannick",
-          "club": "0891175 - DRAVEIL SENART",
-          "category": "0891175 - DRAVEIL SENART",
-          "session": "Arc Classique Senior 2 Hommes",
-          "target": "28D"
-        },
-        {
           "name": "BERARDINO Raphael",
           "club": "0878121 - BAZAINVILLE",
           "category": "0878121 - BAZAINVILLE",
@@ -1256,14 +1256,14 @@
           "club": "0891152 - MORSANG SUR ORGE",
           "category": "0891152 - MORSANG SUR ORGE",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "7D"
+          "target": "8D"
         },
         {
           "name": "BOUQUET Jacques",
           "club": "0893223 - NOISY LE GRAND",
           "category": "0893223 - NOISY LE GRAND",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "4D"
+          "target": "4B"
         },
         {
           "name": "BOURDONNEAU Leo",
@@ -1312,7 +1312,7 @@
           "club": "0894256 - CRETEIL",
           "category": "0894256 - CRETEIL",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "6D"
+          "target": "4C"
         },
         {
           "name": "BROUSSE Aurelie",
@@ -1466,7 +1466,7 @@
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "12D"
+          "target": "4A"
         },
         {
           "name": "CINTRAT Regis",
@@ -1480,7 +1480,7 @@
           "club": "0892196 - COLOMBES",
           "category": "0892196 - COLOMBES",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "12A"
+          "target": "6B"
         },
         {
           "name": "COCHET Jean-François",
@@ -1571,7 +1571,7 @@
           "club": "0891152 - MORSANG SUR ORGE",
           "category": "0891152 - MORSANG SUR ORGE",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "6B"
+          "target": "19C"
         },
         {
           "name": "DA ROCHA Romane",
@@ -1592,7 +1592,7 @@
           "club": "0894266 - IVRY SUR SEINE",
           "category": "0894266 - IVRY SUR SEINE",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": ""
+          "target": "28D"
         },
         {
           "name": "DARIN Audrey",
@@ -1676,7 +1676,7 @@
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "5A"
+          "target": "9A"
         },
         {
           "name": "DEVIN Michel",
@@ -1921,14 +1921,7 @@
           "club": "0894266 - IVRY SUR SEINE",
           "category": "0894266 - IVRY SUR SEINE",
           "session": "Arc Classique Senior 2 Femmes",
-          "target": "4C"
-        },
-        {
-          "name": "GABIANE Gaëlle",
-          "club": "0894266 - IVRY SUR SEINE",
-          "category": "0894266 - IVRY SUR SEINE",
-          "session": "Arc Classique Senior 2 Femmes",
-          "target": "8B"
+          "target": "5B"
         },
         {
           "name": "GALONZKA Jeremy",
@@ -2040,14 +2033,14 @@
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
           "session": "Arc à Poulies Senior 2 Femmes",
-          "target": ""
+          "target": "37B"
         },
         {
           "name": "GUIGNET Delphine",
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
           "session": "Arc à Poulies Senior 2 Femmes",
-          "target": "37B"
+          "target": "42C"
         },
         {
           "name": "GUIGNET Patrick",
@@ -2271,7 +2264,7 @@
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "4B"
+          "target": "10B"
         },
         {
           "name": "LAMBERT David",
@@ -2405,13 +2398,6 @@
           "category": "0894250 - SAINT MAUR",
           "session": "Arc à Poulies Senior 3 Hommes",
           "target": "50B"
-        },
-        {
-          "name": "LEGEARD Nolan",
-          "club": "0893227 - GAGNY",
-          "category": "0893227 - GAGNY",
-          "session": "Arc à Poulies U18 Hommes",
-          "target": "42C"
         },
         {
           "name": "LEGEARD Renaud",
@@ -2607,7 +2593,7 @@
           "club": "0892196 - COLOMBES",
           "category": "0892196 - COLOMBES",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "5B"
+          "target": "12A"
         },
         {
           "name": "MASSON Martial",
@@ -2915,7 +2901,7 @@
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "7B"
+          "target": "12D"
         },
         {
           "name": "POISSY Dorian",
@@ -3028,13 +3014,6 @@
           "category": "0893240 - PANTIN",
           "session": "Arc Classique Senior 1 Femmes",
           "target": "33D"
-        },
-        {
-          "name": "RICARD Jérôme",
-          "club": "0892206 - ANTONY",
-          "category": "0892206 - ANTONY",
-          "session": "Arc Classique Senior 2 Hommes",
-          "target": "8D"
         },
         {
           "name": "RICHARD Jean-Michel",
@@ -3258,7 +3237,7 @@
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "10B"
+          "target": "5A"
         },
         {
           "name": "VASLIER Gregory",
