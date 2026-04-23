@@ -6,7 +6,7 @@ import json
 import re
 import sys
 import urllib.request
-from typing import List, Dict, Any
+from typing import Any, Dict, List
 
 
 DEFAULT_URL = "https://www.ianseo.net/TourData/2026/27251/IC.php"
@@ -31,7 +31,20 @@ def fetch_html(url: str, timeout: int = 30) -> str:
         },
     )
     with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return resp.read().decode("utf-8", errors="replace")
+        raw = resp.read()
+        charset = ""
+        try:
+            charset = (resp.headers.get_content_charset() or "").strip()
+        except Exception:
+            charset = ""
+        for candidate in [charset, "utf-8", "cp1252", "latin-1"]:
+            if not candidate:
+                continue
+            try:
+                return raw.decode(candidate)
+            except Exception:
+                continue
+        return raw.decode("utf-8", errors="replace")
 
 
 def parse_place(page_html: str) -> str:
@@ -64,7 +77,7 @@ def parse_category_meta(category_title: str) -> Dict[str, Any]:
     title = strip_tags(category_title)
     category = title.split("[", 1)[0].strip()
     arrows = None
-    arr_match = re.search(r"Après\s+(\d+)\s+flèches", title, flags=re.IGNORECASE)
+    arr_match = re.search(r"Apr(?:è|Ã¨|e)s\s+(\d+)\s+fl(?:è|Ã¨|e)ches", title, flags=re.IGNORECASE)
     if arr_match:
         arrows = int(arr_match.group(1))
     finished = bool(arrows is not None and arrows >= 72)
@@ -140,7 +153,7 @@ def parse_ianseo(page_html: str, club_keywords: List[str], source_url: str) -> D
     )
 
     for category_title, tbody in blocks:
-        if "Après" not in category_title:
+        if not re.search(r"Apr(?:è|Ã¨|e)s", category_title, flags=re.IGNORECASE):
             continue
         meta = parse_category_meta(category_title)
         rows = parse_table_rows(tbody, meta, place)

@@ -7,6 +7,10 @@ on:
         description: "Club keywords/ids (comma separated), ex: 0174246,seynod"
         required: false
         default: ""
+      country:
+        description: "IANSEO country code, ex: FRA"
+        required: false
+        default: "FRA"
   schedule:
     - cron: "*/30 * * * *"
 
@@ -31,18 +35,20 @@ jobs:
       - name: Build next competition file
         env:
           WF_CLUB_KEYWORDS: ${{ github.event.inputs.club_keywords }}
+          WF_COUNTRY: ${{ github.event.inputs.country }}
           NEXT_KEYWORDS: ${{ vars.IANSEO_CLUB_KEYWORDS }}
           NEXT_COUNTRY: ${{ vars.IANSEO_COUNTRY }}
         run: |
           KEYWORDS="${WF_CLUB_KEYWORDS:-${NEXT_KEYWORDS:-Seynod,0174246}}"
-          COUNTRY="${NEXT_COUNTRY:-FRA}"
+          COUNTRY="${WF_COUNTRY:-${NEXT_COUNTRY:-FRA}}"
           python scripts/find_next_competition.py --keywords "$KEYWORDS" --country "$COUNTRY" --output data/next_competition.json
 
       - name: Refresh competition catalog
         env:
+          WF_COUNTRY: ${{ github.event.inputs.country }}
           NEXT_COUNTRY: ${{ vars.IANSEO_COUNTRY }}
         run: |
-          COUNTRY="${NEXT_COUNTRY:-FRA}"
+          COUNTRY="${WF_COUNTRY:-${NEXT_COUNTRY:-FRA}}"
           python scripts/build_competition_catalog.py --country "$COUNTRY" --output data/competition_catalog.json
 
       - name: Print result JSON

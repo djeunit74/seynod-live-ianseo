@@ -25,3 +25,8 @@ Objectif: permettre au bouton Admin de lancer automatiquement les workflows GitH
   - cliquer `Tout en 1 : Démarrer compétition` pour trouver la prochaine compétition et basculer la source live automatiquement
   - ou cliquer `Chercher prochaine compétition ...` pour une recherche seule
 - Si la passerelle est configurée, l'app déclenche automatiquement les workflows et attend les nouveaux fichiers.
+
+## 4) Pilotage public partagé
+- L'admin pousse aussi un état partagé dans `data/admin_state.json` via le workflow `save-admin-state.yml`.
+- Cet état est relu par l'app publique (club, pays, tournois suivis, phase, contrôle public, archers surveillés).
+- Résultat: la vue publique suit le pilotage admin même sur un autre appareil/navigateur.

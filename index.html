@@ -10,11 +10,11 @@
   <style>
     :root{--bg:#0f172a;--card:#111827;--muted:#94a3b8;--text:#e5e7eb;--ok:#22c55e;--info:#38bdf8;--warn:#f59e0b;--err:#ef4444;--border:rgba(255,255,255,.08);--live:#bfdbfe}
     *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#0b1220 0%,#111827 100%);color:var(--text)}
+    body{margin:0;font-family:"Barlow","Segoe UI",Tahoma,sans-serif;background:radial-gradient(1200px 500px at 20% -10%,rgba(56,189,248,.12),transparent 60%),linear-gradient(180deg,#0b1220 0%,#111827 100%);color:var(--text)}
     .wrap{max-width:1280px;margin:0 auto;padding:24px 16px 48px}
     .banner{background:#7c2d12;color:#ffedd5;padding:10px 14px;border-radius:14px;margin-bottom:14px;font-weight:700}
     .hero{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
-    h1{margin:0;font-size:clamp(28px,5vw,42px);line-height:1.05}
+    h1{margin:0;font-family:"Sora","Barlow","Segoe UI",sans-serif;font-size:clamp(28px,5vw,42px);line-height:1.05;letter-spacing:.01em}
     .sub{color:var(--muted);margin-top:8px;line-height:1.5;max-width:920px}
     .pill{display:inline-flex;align-items:center;padding:8px 12px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.2);border-radius:999px;color:#d1fae5;font-size:14px;white-space:nowrap}
     .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:18px}
@@ -99,6 +99,17 @@
     @media (max-width:700px){.presentation-summary{grid-template-columns:1fr}}
     .next-card{border:1px solid rgba(34,197,94,.35);background:rgba(16,185,129,.05)}
     .phase-box{margin-top:10px;padding:10px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.02)}
+    body[data-phase="before"] #liveSection,
+    body[data-phase="before"] #finishedSection,
+    body[data-phase="before"] #volleySection{display:none !important}
+    body[data-phase="during"] #finishedSection{display:none !important}
+    body[data-phase="after"] #liveSection{display:none !important}
+    @media (max-width:700px){
+      .card{padding:14px;border-radius:18px}
+      .sectionTitle{font-size:36px}
+      th,td{padding:10px 8px;font-size:13px}
+      .value{font-size:30px}
+    }
   </style>
 </head>
 <body>
@@ -212,8 +223,8 @@
           <div class="volley-muted" id="volleyDisciplineInfo">Format non détecté.</div>
           <div class="volley-drill">
             <table>
-              <thead><tr><th>#</th><th>Série/Volée</th><th>Score</th><th>Type</th><th>Heure</th></tr></thead>
-              <tbody id="volleyDrillRows"><tr><td colspan="5">Aucune volée déduite.</td></tr></tbody>
+              <thead><tr><th>#</th><th>Repère tir</th><th>Score</th></tr></thead>
+              <tbody id="volleyDrillRows"><tr><td colspan="3">Aucune volée déduite.</td></tr></tbody>
             </table>
           </div>
         </div>
@@ -296,6 +307,7 @@
     const NEXT_API_URL = 'data/next_competition.json';
     const CATALOG_URL = 'data/competition_catalog.json';
     const ADMIN_CONFIG_URL = 'data/admin_config.json';
+    const ADMIN_STATE_URL = 'data/admin_state.json';
     const REFRESH_MS = 30000;
     const SOURCE_FRESH_SEC = 95;
     const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
@@ -303,6 +315,7 @@
     const WORKFLOW_UPDATE_LIVE = 'update-live.yml';
     const WORKFLOW_RESET = 'reset-live.yml';
     const WORKFLOW_FIND_NEXT = 'find-next-competition.yml';
+    const WORKFLOW_SAVE_ADMIN_STATE = 'save-admin-state.yml';
     const CLUB_FILTER_STORAGE_KEY = 'seynod_tracked_club_keywords';
     const WATCHED_ARCHERS_STORAGE_KEY = 'seynod_watched_archers';
     const COUNTRY_STORAGE_KEY = 'seynod_country_code';
@@ -344,7 +357,7 @@
     let trackedCountryCodes = [DEFAULT_COUNTRY_CODE];
     let trackedCountryCode = DEFAULT_COUNTRY_CODE;
     let trackedIcUrls = [];
-    let publicControlledByAdmin = true;
+    let publicControlledByAdmin = false;
     let autoResumeArchivedLive = false;
     let phaseOverrideMode = 'auto';
     let adminBridgeUrl = '';
@@ -360,6 +373,10 @@
     let selectedVolleyArcherKey = '';
     let selectedVolleyTab = 'summary';
     let clubQuickChoices = [];
+    let sharedStatePushTimer = null;
+    let lastSharedAdminUpdatedAt = '';
+    let applyingSharedAdminState = false;
+    let sharedStateDirty = false;
     const archerVolleyState = {};
     const volleyArcherIndex = {};
     const VOLLEY_CONFIG = {
@@ -546,7 +563,7 @@
       };
 
       const filtered = tournaments
-        .filter(t => !t?.country || effectiveCountries.includes(String(t.country)))
+        .filter(t => !t?.country || effectiveCountries.includes(normalizeCountryCode(String(t.country))))
         .filter(isFuture)
         .sort((a, b) => String(a.end_date || '').localeCompare(String(b.end_date || '')));
 
@@ -613,6 +630,67 @@
         throw new Error(`Bridge HTTP ${res.status}${txt ? ': ' + txt.slice(0, 180) : ''}`);
       }
       return res.json().catch(() => ({}));
+    }
+
+    function toBase64UrlUtf8(text) {
+      const utf8 = unescape(encodeURIComponent(String(text || '')));
+      const b64 = btoa(utf8);
+      return b64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+    }
+
+    function slimTournamentForSharedState(t) {
+      return {
+        id: String(t?.id || ''),
+        to_id: String(t?.to_id || ''),
+        year: String(t?.year || ''),
+        name: String(t?.name || ''),
+        organizer: String(t?.organizer || ''),
+        date_text: String(t?.date_text || ''),
+        end_date: String(t?.end_date || ''),
+        details_url: String(t?.details_url || ''),
+        ena_url: String(t?.ena_url || ''),
+        ic_url: String(t?.ic_url || '')
+      };
+    }
+
+    function buildSharedAdminStatePayload() {
+      return {
+        trackedClubRaw: String(trackedClubRaw || ''),
+        trackedCountryRaw: trackedCountryCodes.join(','),
+        phaseOverrideMode: String(phaseOverrideMode || 'auto'),
+        publicControlledByAdmin: !!publicControlledByAdmin,
+        autoResumeArchivedLive: !!autoResumeArchivedLive,
+        watchedArchers: Array.isArray(watchedArchers) ? watchedArchers.slice(0, 80) : [],
+        trackedTournaments: trackedTournaments.map(slimTournamentForSharedState),
+        trackedIcUrls: trackedIcUrls.slice(0, 40),
+        updatedAtUtc: new Date().toISOString()
+      };
+    }
+
+    async function pushSharedAdminState(reason = '') {
+      if (!adminMode || applyingSharedAdminState) return false;
+      if (!adminBridgeUrl) return false;
+      const payload = buildSharedAdminStatePayload();
+      const state_b64 = toBase64UrlUtf8(JSON.stringify(payload));
+      await callAdminBridge('save_admin_state', { state_b64 });
+      sharedStateDirty = false;
+      if (reason) {
+        setAdminResult(`État partagé publié (${escapeHtml(reason)}).`);
+      }
+      return true;
+    }
+
+    function scheduleSharedAdminStatePush(reason = '') {
+      if (!adminMode || applyingSharedAdminState) return;
+      if (!adminBridgeUrl) return;
+      sharedStateDirty = true;
+      if (sharedStatePushTimer) {
+        clearTimeout(sharedStatePushTimer);
+        sharedStatePushTimer = null;
+      }
+      sharedStatePushTimer = setTimeout(() => {
+        void pushSharedAdminState(reason).catch(() => {});
+      }, 700);
     }
 
     async function waitForNextCompetitionUpdate(previousGeneratedAt, timeoutMs = 130000) {
@@ -752,10 +830,96 @@
       } catch (_) {}
     }
 
+    function persistAdminStateLocally() {
+      localStorage.setItem(CLUB_FILTER_STORAGE_KEY, trackedClubRaw);
+      localStorage.setItem(COUNTRY_STORAGE_KEY, trackedCountryCodes.join(','));
+      localStorage.setItem(PUBLIC_CONTROL_STORAGE_KEY, publicControlledByAdmin ? '1' : '0');
+      localStorage.setItem(AUTO_RESUME_ARCHIVE_STORAGE_KEY, autoResumeArchivedLive ? '1' : '0');
+      localStorage.setItem(PHASE_OVERRIDE_STORAGE_KEY, phaseOverrideMode);
+      localStorage.setItem(WATCHED_ARCHERS_STORAGE_KEY, JSON.stringify(watchedArchers));
+      localStorage.setItem(TRACKED_TOURNAMENTS_STORAGE_KEY, JSON.stringify(trackedTournaments));
+      localStorage.setItem(TRACKED_IC_URLS_STORAGE_KEY, JSON.stringify(trackedIcUrls));
+    }
+
+    function applySharedAdminState(state) {
+      if (!state || typeof state !== 'object') return;
+      applyingSharedAdminState = true;
+      try {
+        const sharedClub = String(state.trackedClubRaw || '').trim();
+        if (sharedClub) {
+          trackedClubRaw = sharedClub;
+          trackedClubKeywords = normalizeClubKeywords(trackedClubRaw);
+        }
+
+        const sharedCountry = String(state.trackedCountryRaw || '').trim();
+        if (sharedCountry) {
+          trackedCountryRaw = sharedCountry;
+          trackedCountryCodes = parseCountryCodes(sharedCountry);
+          trackedCountryCode = trackedCountryCodes[0] || DEFAULT_COUNTRY_CODE;
+        }
+
+        const nextPhase = String(state.phaseOverrideMode || 'auto');
+        phaseOverrideMode = ['auto', 'before', 'during', 'after'].includes(nextPhase) ? nextPhase : 'auto';
+        publicControlledByAdmin = !!state.publicControlledByAdmin;
+        autoResumeArchivedLive = !!state.autoResumeArchivedLive;
+
+        watchedArchers = dedupeWatchedArchers(Array.isArray(state.watchedArchers) ? state.watchedArchers : []);
+
+        if (Array.isArray(state.trackedTournaments)) {
+          trackedTournaments = state.trackedTournaments
+            .map(normalizeTrackedTournament)
+            .filter(t => t.id);
+        }
+
+        if (Array.isArray(state.trackedIcUrls)) {
+          const sharedUrls = state.trackedIcUrls
+            .map(normalizeIcUrl)
+            .filter(Boolean);
+          if (trackedTournaments.length === 0 && sharedUrls.length) {
+            trackedTournaments = sharedUrls.map((url, idx) => normalizeTrackedTournament({
+              id: `shared-${idx + 1}-${url}`,
+              name: `Tournoi suivi ${idx + 1}`,
+              ic_url: url,
+              details_url: url.replace(/\/IC\.php.*$/i, '/Details.php')
+            }));
+          }
+        }
+
+        syncTrackedIcUrlsFromTrackedTournaments();
+        persistAdminStateLocally();
+
+        updateClubUiTexts();
+        updateControlButtons();
+        const clubInput = el('clubFilterInput');
+        const countryInput = el('countryCodeInput');
+        if (clubInput) clubInput.value = trackedClubRaw;
+        if (countryInput) countryInput.value = trackedCountryCodes.join(',');
+        renderWatchedArchersAdmin();
+        renderTrackedTournamentsList();
+        renderTrackedUpcomingGrid();
+      } finally {
+        applyingSharedAdminState = false;
+      }
+    }
+
+    async function refreshSharedAdminState() {
+      try {
+        if (adminMode && sharedStateDirty) return;
+        const res = await fetch(ADMIN_STATE_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) return;
+        const state = await res.json();
+        const stamp = String(state?.updatedAtUtc || '');
+        if (stamp && stamp === lastSharedAdminUpdatedAt) return;
+        lastSharedAdminUpdatedAt = stamp;
+        applySharedAdminState(state);
+      } catch (_) {}
+    }
+
     function saveTrackedTournaments() {
       localStorage.setItem(TRACKED_TOURNAMENTS_STORAGE_KEY, JSON.stringify(trackedTournaments));
       syncTrackedIcUrlsFromTrackedTournaments();
       renderTrackedTournamentsList();
+      if (!applyingSharedAdminState) scheduleSharedAdminStatePush('tournois');
     }
 
     function saveArchivedTournaments() {
@@ -1096,6 +1260,7 @@
       localStorage.setItem(WATCHED_ARCHERS_STORAGE_KEY, JSON.stringify(watchedArchers));
       renderWatchedArchersAdmin();
       updatePublicControlStatus();
+      if (!applyingSharedAdminState) scheduleSharedAdminStatePush('archers surveillés');
     }
 
     function addWatchedArchers(raw) {
@@ -1313,13 +1478,14 @@
       localStorage.setItem(COUNTRY_STORAGE_KEY, saved);
       const input = el('countryCodeInput');
       if (input) input.value = saved;
+      if (!applyingSharedAdminState) scheduleSharedAdminStatePush('pays');
     }
 
     function loadControlFlags() {
       const publicRaw = localStorage.getItem(PUBLIC_CONTROL_STORAGE_KEY);
       const resumeRaw = localStorage.getItem(AUTO_RESUME_ARCHIVE_STORAGE_KEY);
       const phaseRaw = localStorage.getItem(PHASE_OVERRIDE_STORAGE_KEY);
-      publicControlledByAdmin = publicRaw === null ? true : publicRaw === '1';
+      publicControlledByAdmin = publicRaw === null ? false : publicRaw === '1';
       autoResumeArchivedLive = resumeRaw === '1';
       phaseOverrideMode = ['auto', 'before', 'during', 'after'].includes(phaseRaw) ? phaseRaw : 'auto';
     }
@@ -1330,6 +1496,7 @@
       localStorage.setItem(PHASE_OVERRIDE_STORAGE_KEY, phaseOverrideMode);
       updateControlButtons();
       updatePublicControlStatus();
+      if (!applyingSharedAdminState) scheduleSharedAdminStatePush('pilotage public');
     }
 
     function updateControlButtons() {
@@ -1458,9 +1625,14 @@
         const isFinished = !livePhase;
         const arrows = isFinished ? 72 : Math.min((stage + 1) * 12, 66);
         const scoreLabel = isFinished ? `${currentScore}` : `${currentScore}`;
+        const arrowsPerVolley = 6;
+        const volleysPerSeries = 6;
+        const volleyCount = Math.max(1, Math.ceil(arrows / arrowsPerVolley));
+        const seriesIndex = Math.max(1, Math.ceil(volleyCount / volleysPerSeries));
+        const volleyInSeries = ((volleyCount - 1) % volleysPerSeries) + 1;
         const detail = isFinished
           ? (idx === 0 ? '60m-1: 287, 60m-2: 298' : idx === 1 ? '50m-1: 336, 50m-2: 344' : '50m-1: 279, 50m-2: 294')
-          : `Serie: ${Math.max(1, stage + 1)} en simulation`;
+          : `Simulation: Série ${seriesIndex} · Volée ${volleyInSeries}`;
         return {
           place: r.place,
           name: r.name,
@@ -1735,6 +1907,7 @@
       localStorage.setItem(CLUB_FILTER_STORAGE_KEY, trackedClubRaw);
       updateClubUiTexts();
       renderClubQuickChoices();
+      if (!applyingSharedAdminState) scheduleSharedAdminStatePush('club');
     }
 
     function matchesTrackedClub(archer) {
@@ -2100,7 +2273,7 @@
         lastSmiley.innerHTML = '<span class="volley-muted">—</span>';
         lastType.textContent = 'Pas encore de volée déduite.';
         compare.textContent = '';
-        drillRows.innerHTML = '<tr><td colspan="5">Aucune volée déduite.</td></tr>';
+          drillRows.innerHTML = '<tr><td colspan="3">Aucune volée déduite.</td></tr>';
         renderVolleyChart([]);
         return;
       }
@@ -2118,7 +2291,7 @@
       renderVolleyChart(history);
 
       if (!history.length) {
-        drillRows.innerHTML = '<tr><td colspan="5">Aucune volée déduite.</td></tr>';
+        drillRows.innerHTML = '<tr><td colspan="3">Aucune volée déduite.</td></tr>';
       } else {
         let volleyIndex = 0;
         drillRows.innerHTML = history.map((entry) => {
@@ -2127,9 +2300,7 @@
             ? `S${Math.ceil(volleyIndex / config.volleysPerSeries)} · V${((volleyIndex - 1) % config.volleysPerSeries) + 1}`
             : '—';
           const idxLabel = entry.type === 'volley' ? String(volleyIndex) : 'Δ';
-          const typeLabel = entry.type === 'volley' ? 'volée' : 'mise à jour groupée';
-          const time = new Date(entry.timestamp).toLocaleTimeString('fr-FR');
-          return `<tr><td>${escapeHtml(idxLabel)}</td><td>${escapeHtml(inSeries)}</td><td>${escapeHtml(entry.score)}</td><td>${escapeHtml(typeLabel)}</td><td>${escapeHtml(time)}</td></tr>`;
+          return `<tr><td>${escapeHtml(idxLabel)}</td><td>${escapeHtml(inSeries)}</td><td>${escapeHtml(entry.score)}</td></tr>`;
         }).join('');
       }
     }
@@ -2238,15 +2409,20 @@
       return 'before';
     }
 
+    function getEffectivePhase(data) {
+      return phaseOverrideMode === 'auto' ? computeAutoPhase(data) : phaseOverrideMode;
+    }
+
     function updateCompetitionPhase(data) {
       const badge = el('phaseBadge');
       const help = el('phaseHelp');
-      if (!badge || !help) return;
+      if (!badge || !help) return 'before';
       const liveSection = el('liveSection');
       const finishedSection = el('finishedSection');
       const volleySection = el('volleySection');
       const nextCard = el('nextParticipantsCard');
-      const effectivePhase = phaseOverrideMode === 'auto' ? computeAutoPhase(data) : phaseOverrideMode;
+      const effectivePhase = getEffectivePhase(data);
+      document.body.setAttribute('data-phase', effectivePhase);
       if (demoModeActive && finishedSection) finishedSection.classList.add('hidden');
       if (effectivePhase === 'during') {
         if (liveSection) liveSection.classList.remove('hidden');
@@ -2258,7 +2434,7 @@
         help.textContent = phaseOverrideMode === 'auto'
           ? 'Le live score est en cours. Les tableaux se mettent à jour.'
           : 'Pilotage manuel admin: phase forcée sur Pendant compétition.';
-        return;
+        return effectivePhase;
       }
       if (effectivePhase === 'after') {
         if (liveSection) liveSection.classList.add('hidden');
@@ -2270,7 +2446,7 @@
         help.textContent = phaseOverrideMode === 'auto'
           ? 'Compétition terminée. Résultats conservés.'
           : 'Pilotage manuel admin: phase forcée sur Après compétition.';
-        return;
+        return effectivePhase;
       }
       if (effectivePhase === 'before') {
         if (liveSection) liveSection.classList.add('hidden');
@@ -2283,6 +2459,7 @@
           ? 'Participants détectés. En attente de l’ouverture du live IC.'
           : 'Pilotage manuel admin: phase forcée sur Avant compétition.';
       }
+      return effectivePhase;
     }
 
     function updateChangeBadge(data) {
@@ -2365,12 +2542,14 @@
       renderRows('tbodyLive', archers.filter(a => !a.finished), true);
       renderVolleyPanel();
       updateChangeBadge(data);
-      updateCompetitionPhase(data);
+      const effectivePhase = updateCompetitionPhase(data);
       enforceDemoVisibilityRules();
       updatePublicControlStatus();
 
       if (!keepStatus) setStatus('ok', 'Mise à jour réussie');
-      if (!hasLiveArchers(data)) stopAutoRefresh();
+      if (autoRefreshEnabled && !demoModeActive && effectivePhase === 'after' && !hasLiveArchers(data)) {
+        stopAutoRefresh();
+      }
     }
 
     async function refresh() {
@@ -2381,6 +2560,7 @@
           nextRefresh = Date.now() + REFRESH_MS;
           return;
         }
+        await refreshSharedAdminState();
         setStatus('', 'Actualisation en cours...');
         const resumedCount = await tryResumeArchivedLiveTournaments();
         if (resumedCount > 0) {
@@ -2546,6 +2726,7 @@
       const removedDemoArtifacts = cleanupDemoArtifacts(true);
       await loadAdminConfig();
       await resolveAdminMode();
+      await refreshSharedAdminState();
 
       el('refreshBtn').addEventListener('click', refresh);
 
@@ -2557,6 +2738,9 @@
             ? `Mode admin actif. Nettoyage automatique: ${removedDemoArtifacts} élément(s) démo supprimé(s).`
             : 'Mode admin actif. Renseigne le club puis clique "Chercher prochaine compétition".'
         );
+        if (!adminBridgeUrl) {
+          setAdminResult(el('adminResult').innerHTML + '<br><span class="mini">Sync partagé OFF: configure la passerelle admin pour piloter l’app publique à distance.</span>');
+        }
         const clubInput = el('clubFilterInput');
         const countryInput = el('countryCodeInput');
         const watchInput = el('watchArcherInput');
