@@ -71,6 +71,10 @@
     .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
     .card{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px}
     .card h3{font-size:15px}
+    .club-picker{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:8px;margin-top:10px}
+    .mini-list{margin-top:10px;border-top:1px solid rgba(148,163,184,.18);padding-top:8px}
+    .mini-row{display:grid;grid-template-columns:1.3fr 1fr 1fr auto;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid rgba(148,163,184,.12);font-size:13px}
+    .scope-note{margin-top:8px;color:#bfdbfe;font-size:12px}
     .volley-grid{display:grid;grid-template-columns:280px 1fr;gap:12px}
     .last-volley{display:flex;align-items:center;gap:10px;margin-top:10px}
     .last-score{font-size:38px;font-weight:950}
@@ -83,7 +87,7 @@
     .mood.bad i{bottom:7px;border-top:2px solid #0f172a;border-bottom:0;border-radius:16px 16px 0 0}
     .chart{height:180px;border:1px solid var(--line);background:#111827;border-radius:8px;width:100%}
     .toolbar{position:sticky;bottom:0;background:rgba(13,19,32,.92);backdrop-filter:blur(8px);padding:10px 0;margin-top:14px}
-    @media(max-width:850px){.grid,.admin-grid,.cards,.volley-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}header{display:block}.source-pill{margin-top:10px}.wrap{padding:12px 10px 40px}h1{font-size:29px}th,td{font-size:13px}.btn{width:100%;justify-content:center}input,select{width:100%;min-width:0}}
+    @media(max-width:850px){.grid,.admin-grid,.cards,.volley-grid,.club-picker{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}header{display:block}.source-pill{margin-top:10px}.wrap{padding:12px 10px 40px}h1{font-size:29px}th,td{font-size:13px}.btn{width:100%;justify-content:center}input,select{width:100%;min-width:0}.mini-row{grid-template-columns:1fr}.mini-row span{color:var(--muted)}}
   </style>
 </head>
 <body data-phase="before">
@@ -186,13 +190,19 @@
         <div id="adminSetup">
           <div class="admin-grid">
             <div class="box">
-              <h3>Club suivi</h3>
+              <h3>Clubs suivis par défaut</h3>
               <div class="row">
-                <input id="clubInput" placeholder="0174246,seynod" />
+                <input id="clubInput" placeholder="Ex: 0174246 - SEYNOD, 0335067 - RENNES CIE" />
                 <input id="countryInput" placeholder="Pays: FRA" />
                 <button class="btn" id="applyClubBtn">Appliquer</button>
               </div>
+              <div class="club-picker">
+                <input id="clubSearchInput" list="clubDatalist" placeholder="Rechercher un club par nom ou numéro" />
+                <button class="btn green" id="addClubSearchBtn">Ajouter club</button>
+              </div>
+              <datalist id="clubDatalist"></datalist>
               <div class="chips" id="quickClubs"></div>
+              <div class="scope-note">Tu peux suivre plusieurs clubs en même temps. Ces clubs servent à chercher les compétitions et comme filtre par défaut.</div>
             </div>
             <div class="box">
               <h3>Archers à suivre</h3>
@@ -269,13 +279,13 @@
     const PROXY = 'https://r.jina.ai/http://';
     const REFRESH_MS = 30000;
     const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
-    const QUICK_CLUBS = ['0174246 - SEYNOD','0163157 - RIOM','0163151 - CLERMONT FERRAND CIE','0221012 - AUXONNE','0895293 - SARCELLES'];
+    const QUICK_CLUBS = ['0174246 - SEYNOD','0335067 - RENNES CIE','0163157 - RIOM','0163151 - CLERMONT FERRAND CIE','0221012 - AUXONNE','0895293 - SARCELLES'];
 
     const $ = id => document.getElementById(id);
     const state = {
-      clubRaw:'0174246,seynod',
+      clubRaw:'',
       countryRaw:'FRA',
-      clubKeys:['0174246','seynod'],
+      clubKeys:[],
       watched:[],
       tracked:[],
       archived:[],
@@ -285,6 +295,7 @@
       data:{competitions:[]},
       raw:{competitions:[]},
       foundMatches:[],
+      clubCatalog:[],
       selectedFound:'',
       admin:false,
       adminBridge:'',
@@ -306,6 +317,9 @@
     function norm(v){return fixText(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'');}
     function splitList(v){return String(v||'').split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean);}
     function uniqueByNorm(arr){const map=new Map(); for(const v of arr||[]){const k=norm(v); if(k&&!map.has(k)) map.set(k,String(v).trim());} return [...map.values()];}
+    function clubKeysFromRaw(raw){return splitList(raw).flatMap(v=>{const code=(String(v).match(/\b\d{6,7}\b/)||[])[0]; return uniqueByNorm([v,code].filter(Boolean));});}
+    function addClubToRaw(raw, club){return uniqueByNorm([...splitList(raw), club]).join(', ');}
+    function removeClubFromRaw(raw, club){const key=norm(club); return splitList(raw).filter(c=>norm(c)!==key).join(', ');}
     function setLog(msg){$('adminLog').innerHTML = msg;}
     function setStatus(kind,msg){$('statusDot').className='dot '+(kind||''); $('statusText').textContent=msg;}
     function toProxy(url){return PROXY + String(url||'').replace(/^https?:\/\//i,'');}
@@ -334,7 +348,7 @@
     function loadLocal(){
       state.clubRaw = localStorage.getItem('slc_club') || state.clubRaw;
       state.countryRaw = localStorage.getItem('slc_country') || state.countryRaw;
-      state.clubKeys = splitList(state.clubRaw).map(x=>x.toLowerCase());
+      state.clubKeys = clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
       state.watched = uniqueByNorm(JSON.parse(localStorage.getItem('slc_watched') || '[]'));
       state.tracked = JSON.parse(localStorage.getItem('slc_tracked') || '[]').map(cleanTournament);
       state.archived = JSON.parse(localStorage.getItem('slc_archived') || '[]');
@@ -355,6 +369,23 @@
     async function loadAdminConfig(){
       try{const cfg=await fetchJson(ADMIN_CONFIG_URL); state.adminBridge=String(cfg.adminBridgeUrl||'').trim();}catch(_){}
     }
+    async function loadClubCatalog(){
+      try{
+        const cat=await fetchJson(CATALOG_URL);
+        const clubs=new Map();
+        for(const t of cat.tournaments||[]){
+          for(const e of t.entries||[]){
+            const label=String(e.club||e.category||'').trim();
+            if(!label) continue;
+            const key=norm(label);
+            const old=clubs.get(key)||{label,count:0};
+            old.count++;
+            clubs.set(key,old);
+          }
+        }
+        state.clubCatalog=[...clubs.values()].sort((a,b)=>a.label.localeCompare(b.label,'fr',{sensitivity:'base'}));
+      }catch(_){state.clubCatalog=[];}
+    }
     async function loadSharedState(){
       try{
         const s=await fetchJson(ADMIN_STATE_URL);
@@ -362,7 +393,7 @@
         state.lastAdminStamp=s.updatedAtUtc||'';
         if(s.trackedClubRaw) state.clubRaw=s.trackedClubRaw;
         if(s.trackedCountryRaw) state.countryRaw=s.trackedCountryRaw;
-        state.clubKeys=splitList(state.clubRaw).map(x=>x.toLowerCase());
+        state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
         state.watched=uniqueByNorm(s.watchedArchers||[]);
         state.tracked=(s.trackedTournaments||[]).map(cleanTournament).filter(t=>t.url || t.details);
         state.phaseOverride=['auto','before','during','after'].includes(s.phaseOverrideMode)?s.phaseOverrideMode:'auto';
@@ -399,7 +430,7 @@
         ena:String(raw.ena_url||raw.ena||''),
         url,
         scopeRaw:String(raw.scopeRaw||raw.scope_raw||raw.clubRaw||raw.club_raw||state.clubRaw||''),
-        entries:Array.isArray(raw.club_entries)?raw.club_entries:[]
+        entries:Array.isArray(raw.club_entries)?raw.club_entries:(Array.isArray(raw.entries)?raw.entries:[])
       };
     }
     function normalizeUrl(raw){
@@ -482,6 +513,17 @@
       const competitions=(data.competitions||[]).map(c=>({...c,archers:(c.archers||[]).filter(matchesScope)})).filter(c=>c.archers.length);
       return {competitions};
     }
+    function entriesForScope(t){
+      const keys=clubKeysFromRaw(t.scopeRaw||state.clubRaw).map(norm);
+      const entries=t.entries||[];
+      if(!keys.length) return entries;
+      return entries.filter(e=>keys.some(k=>norm(`${e.club||''} ${e.category||''} ${e.name||''}`).includes(k)));
+    }
+    function clubsForEntries(entries){
+      const map=new Map();
+      for(const e of entries||[]){const club=e.club||e.category||'Club'; const k=norm(club); if(!map.has(k)) map.set(k,{club,count:0}); map.get(k).count++;}
+      return [...map.values()].sort((a,b)=>a.club.localeCompare(b.club,'fr',{sensitivity:'base'}));
+    }
     function archers(data){
       const comps=(data?.competitions||[]);
       if(state.selectedCompetition!=='all'){
@@ -499,7 +541,7 @@
       const id=(String(url).match(/\/TourData\/(\d+)\/(\d+)\/([A-Z0-9]+)\.php/i)||[])[2]||url;
       const code=(String(url).match(/\/TourData\/(\d+)\/(\d+)\/([A-Z0-9]+)\.php/i)||[])[3]||'';
       const title=lines.find(l=>/^Title:/i.test(l))?.replace(/^Title:\s*/i,'') || `Tournoi ${id}`;
-      const scopeKeys=splitList(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
+      const scopeKeys=clubKeysFromRaw(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
       const rows=[]; let category=code?`Page ${code}`:'';
       for(const raw of lines){
         const line=raw.trim();
@@ -641,26 +683,40 @@
     }
     function renderBefore(){
       $('beforeMeta').textContent=state.tracked.length?`${state.tracked.length} tournoi(s) suivi(s) · Club principal: ${state.clubRaw} · Archers ajoutés: ${state.watched.length}`:'Aucun tournoi suivi. Ajoute une source IANSEO dans Admin > Tournois.';
-      $('upcomingCards').innerHTML=state.tracked.length?state.tracked.map(t=>`<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · Club suivi ici: <strong>${escapeHtml(t.scopeRaw||state.clubRaw||'Tous')}</strong> · ${t.url?'Live prêt':'En attente du live IANSEO'}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:'<span class="badge amber">Live non publié</span>'}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`).join(''):'';
+      $('upcomingCards').innerHTML=state.tracked.length?state.tracked.map(t=>{
+        const entries=entriesForScope(t), clubs=clubsForEntries(entries);
+        return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${t.url?'Live prêt':'En attente du live IANSEO'}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="mini-list">${entries.slice(0,8).map(e=>`<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span>${escapeHtml(e.club||'')}</span><span>${escapeHtml(e.session||e.category||'')}</span><span>${escapeHtml(e.target||'')}</span></div>`).join('')}${entries.length>8?`<div class="muted">+ ${entries.length-8} autre(s) participant(s)</div>`:''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:'<span class="badge amber">Live non publié</span>'}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
+      }).join(''):'';
       document.querySelectorAll('[data-remove-track]').forEach(b=>b.onclick=()=>{state.archived.unshift(...state.tracked.filter(t=>t.id===b.dataset.removeTrack)); state.tracked=state.tracked.filter(t=>t.id!==b.dataset.removeTrack); saveLocal(); refresh();});
     }
     function renderAdmin(){
       if(!state.admin) return;
       $('clubInput').value=state.clubRaw; $('countryInput').value=state.countryRaw; $('phaseSelect').value=state.phaseOverride;
-      $('quickClubs').innerHTML=QUICK_CLUBS.map(c=>`<button class="btn small secondary" data-quick-club="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('');
-      document.querySelectorAll('[data-quick-club]').forEach(b=>b.onclick=()=>{$('clubInput').value=b.dataset.quickClub; applyClub();});
+      $('clubDatalist').innerHTML=state.clubCatalog.map(c=>`<option value="${escapeHtml(c.label)}">${escapeHtml(c.count+' inscrit(s) dans le catalogue')}</option>`).join('');
+      $('quickClubs').innerHTML=splitList(state.clubRaw).map(c=>`<span class="chip">${escapeHtml(c)} <button class="btn small secondary" data-remove-global-club="${escapeHtml(c)}">x</button></span>`).join('') + QUICK_CLUBS.map(c=>`<button class="btn small secondary" data-quick-club="${escapeHtml(c)}">+ ${escapeHtml(c)}</button>`).join('');
+      document.querySelectorAll('[data-quick-club]').forEach(b=>b.onclick=()=>{$('clubInput').value=addClubToRaw($('clubInput').value,b.dataset.quickClub); applyClub();});
+      document.querySelectorAll('[data-remove-global-club]').forEach(b=>b.onclick=()=>{$('clubInput').value=removeClubFromRaw(state.clubRaw,b.dataset.removeGlobalClub); applyClub();});
       $('watchList').innerHTML=state.watched.length?state.watched.map(w=>`<span class="chip">${escapeHtml(w)} <button class="btn small secondary" data-remove-watch="${escapeHtml(w)}">x</button></span>`).join(''):'<span class="muted">Aucun archer ajouté.</span>';
       document.querySelectorAll('[data-remove-watch]').forEach(b=>b.onclick=()=>{state.watched=state.watched.filter(w=>norm(w)!==norm(b.dataset.removeWatch)); saveLocal(); refresh();});
-      $('trackedList').innerHTML=state.tracked.length?state.tracked.map(t=>`<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.url||t.details||'Source en attente')}</div><div class="muted">Club filtré pour ce tournoi</div><div class="row" style="margin-top:8px"><input value="${escapeHtml(t.scopeRaw||state.clubRaw)}" data-track-scope="${escapeHtml(t.id)}" placeholder="Ex: 0174246, seynod ou 0335067, rennes"><button class="btn small green" data-save-track-scope="${escapeHtml(t.id)}">Appliquer à ce tournoi</button><button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button></div></article>`).join(''):'<div class="muted">Aucun tournoi suivi.</div>';
-      document.querySelectorAll('[data-save-track-scope]').forEach(b=>b.onclick=()=>{const id=b.dataset.saveTrackScope; const t=state.tracked.find(x=>x.id===id); const input=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&input){t.scopeRaw=input.value.trim()||state.clubRaw; saveLocal(); refresh(); setLog('Club appliqué à ce tournoi.');}});      $('adminStateInfo').textContent=`Bridge: ${state.adminBridge?'configuré':'non configuré'} · Club principal: ${state.clubRaw} · Archers: ${state.watched.length} · Sources: ${state.tracked.length}`;
+      $('trackedList').innerHTML=state.tracked.length?state.tracked.map(t=>{const entries=entriesForScope(t), clubs=clubsForEntries(entries); return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.url||t.details||'Source en attente')}</div><div class="muted">Clubs suivis sur ce tournoi (${entries.length} participant(s))</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')}</div><div class="row" style="margin-top:8px"><input value="${escapeHtml(t.scopeRaw||state.clubRaw)}" data-track-scope="${escapeHtml(t.id)}" placeholder="Plusieurs clubs séparés par virgule"><button class="btn small green" data-save-track-scope="${escapeHtml(t.id)}">Appliquer</button></div><div class="row" style="margin-top:8px"><input list="clubDatalist" data-track-club-search="${escapeHtml(t.id)}" placeholder="Ajouter un club à ce tournoi"><button class="btn small secondary" data-add-track-club="${escapeHtml(t.id)}">Ajouter club</button><button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button></div></article>`;}).join(''):'<div class="muted">Aucun tournoi suivi.</div>';
+      document.querySelectorAll('[data-save-track-scope]').forEach(b=>b.onclick=()=>{const id=b.dataset.saveTrackScope; const t=state.tracked.find(x=>x.id===id); const input=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&input){t.scopeRaw=input.value.trim()||state.clubRaw; saveLocal(); refresh(); setLog('Club appliqué à ce tournoi.');}});
+      document.querySelectorAll('[data-add-track-club]').forEach(b=>b.onclick=()=>{const id=b.dataset.addTrackClub; const t=state.tracked.find(x=>x.id===id); const search=[...document.querySelectorAll('[data-track-club-search]')].find(x=>x.dataset.trackClubSearch===id); const scope=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&search&&scope&&search.value.trim()){scope.value=addClubToRaw(scope.value,search.value.trim()); t.scopeRaw=scope.value; search.value=''; saveLocal(); refresh(); setLog('Club ajouté à ce tournoi.');}});
+      $('adminStateInfo').textContent=`Bridge: ${state.adminBridge?'configuré':'non configuré'} · Clubs par défaut: ${state.clubRaw||'aucun'} · Archers: ${state.watched.length} · Sources: ${state.tracked.length}`;
     }
     function applyClub(){
-      state.clubRaw=$('clubInput').value.trim()||'0174246,seynod';
+      state.clubRaw=$('clubInput').value.trim();
       state.countryRaw=$('countryInput').value.trim()||'FRA';
-      state.clubKeys=splitList(state.clubRaw).map(x=>x.toLowerCase());
+      state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
       saveLocal(); refresh(); setLog('Club appliqué.');
     }
 
+    function addSearchedClub(){
+      const v=$('clubSearchInput').value.trim();
+      if(!v) return;
+      $('clubInput').value=addClubToRaw($('clubInput').value||state.clubRaw,v);
+      $('clubSearchInput').value='';
+      applyClub();
+    }
     async function refresh(){
       try{
         setStatus('', 'Actualisation en cours...');
@@ -680,6 +736,7 @@
         setLog('Recherche dans le catalogue local...');
         const cat=await fetchJson(CATALOG_URL);
         const keys=state.clubKeys.map(norm), countries=splitList(state.countryRaw).map(x=>x.toUpperCase());
+        if(!keys.length){setLog('Ajoute au moins un club dans Configuration avant de chercher les compétitions.'); return;}
         const today=new Date(); today.setHours(0,0,0,0);
         const matches=(cat.tournaments||[]).filter(t=>!t.country||!countries.length||countries.includes(String(t.country).toUpperCase())).filter(t=>!t.end_date||new Date(t.end_date+'T23:59:59')>=today).map(t=>{
           const entries=(t.entries||[]).filter(e=>{const hay=norm(`${e.club||''} ${e.name||''} ${e.category||''}`); return !keys.length||keys.some(k=>hay.includes(k));});
@@ -694,7 +751,7 @@
       const m=state.foundMatches.find(x=>String(x.to_id)===String($('foundSelect').value))||state.foundMatches[0];
       if(!m){setLog('Aucune compétition sélectionnée.'); return;}
       const url=normalizeLiveUrl(m.ic_url||'');
-      state.tracked.push(cleanTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ena_url:m.ena_url,ic_url:url,club_entries:m.club_entries,scopeRaw:state.clubRaw}));
+      state.tracked.push(cleanTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ena_url:m.ena_url,ic_url:url,club_entries:m.entries||m.club_entries,scopeRaw:state.clubRaw}));
       saveLocal(); setLog(url?'Compétition ajoutée au suivi live.':'Compétition ajoutée en attente du live IANSEO.'); refresh();
     }
     async function addManual(){
@@ -720,6 +777,7 @@
       $('refreshBtn').onclick=refresh;
       $('volleySelect').onchange=e=>{state.selectedVolley=e.target.value; renderVolley();};
       $('applyClubBtn').onclick=applyClub;
+      $('addClubSearchBtn').onclick=addSearchedClub;
       $('addWatchBtn').onclick=()=>{state.watched=uniqueByNorm([...state.watched,...splitList($('watchInput').value)]); $('watchInput').value=''; saveLocal(); refresh(); setLog('Archer(s) ajouté(s) au suivi.');};
       $('clearWatchBtn').onclick=()=>{state.watched=[]; saveLocal(); refresh();};
       $('findNextBtn').onclick=findNext;
@@ -731,14 +789,14 @@
       $('publishStateBtn').onclick=()=>publishState().catch(err=>setLog('Publication impossible: '+escapeHtml(err.message)));
       $('competitionModeBtn').onclick=()=>{state.autoRefresh=!state.autoRefresh; $('competitionModeBtn').textContent='Mode compétition: '+(state.autoRefresh?'ON':'OFF');};
       document.querySelectorAll('[data-admin-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-admin-tab]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); ['setup','sources','pilot'].forEach(t=>$('admin'+t[0].toUpperCase()+t.slice(1)).classList.toggle('hidden', t!==b.dataset.adminTab));});
-      ['clubInput','countryInput','watchInput','manualUrlInput'].forEach(id=>$(id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); if(id==='manualUrlInput') addManual(); else if(id==='watchInput') $('addWatchBtn').click(); else applyClub();}}));
+      ['clubInput','countryInput','watchInput','manualUrlInput','clubSearchInput'].forEach(id=>$(id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); if(id==='manualUrlInput') addManual(); else if(id==='watchInput') $('addWatchBtn').click(); else if(id==='clubSearchInput') addSearchedClub(); else applyClub();}}));
       setInterval(()=>{$('countdown').textContent=state.autoRefresh?Math.max(0,Math.ceil((state.nextRefresh-Date.now())/1000))+' s':'arrêté';},500);
       setInterval(()=>{if(state.autoRefresh) refresh();},REFRESH_MS);
     }
 
     async function init(){
-      loadLocal(); await loadAdminConfig(); await resolveAdmin(); await loadSharedState();
-      state.clubKeys=splitList(state.clubRaw).map(x=>x.toLowerCase());
+      loadLocal(); await loadAdminConfig(); await resolveAdmin(); if(state.admin) await loadClubCatalog(); await loadSharedState();
+      state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
       if(state.admin){$('adminPanel').classList.remove('hidden'); $('adminToolbar').classList.remove('hidden');}
       bind(); renderAdmin(); await refresh();
     }
