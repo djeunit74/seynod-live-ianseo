@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -6,133 +6,1335 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <title>Suivi live club Seynod</title>
+  <title>SUIVI LIVE COMPETTE</title>
   <style>
-    :root{--bg:#0f172a;--card:#111827;--muted:#94a3b8;--text:#e5e7eb;--ok:#22c55e;--info:#38bdf8;--warn:#f59e0b;--err:#ef4444;--border:rgba(255,255,255,.08);--live:#bfdbfe}
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#0b1220 0%,#111827 100%);color:var(--text)}
-    .wrap{max-width:1280px;margin:0 auto;padding:24px 16px 48px}.banner{background:#7c2d12;color:#ffedd5;padding:10px 14px;border-radius:14px;margin-bottom:14px;font-weight:700}
-    .hero{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px} h1{margin:0;font-size:clamp(28px,5vw,42px);line-height:1.05}
-    .sub{color:var(--muted);margin-top:8px;line-height:1.5;max-width:920px}.pill{display:inline-flex;align-items:center;padding:8px 12px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.2);border-radius:999px;color:#d1fae5;font-size:14px;white-space:nowrap}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:18px}.card{grid-column:span 12;background:rgba(17,24,39,.88);border:1px solid var(--border);border-radius:22px;padding:18px;box-shadow:0 12px 40px rgba(0,0,0,.25)}
-    .span8{grid-column:span 8}.span4{grid-column:span 4}@media (max-width:900px){.span8,.span4{grid-column:span 12}}
-    .summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}@media (max-width:700px){.summary{grid-template-columns:repeat(2,minmax(0,1fr));}}
-    .stat{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:18px;padding:14px}.label{color:var(--muted);font-size:13px;margin-bottom:6px}.value{font-size:32px;font-weight:800;line-height:1.15}.value.small{font-size:18px}
-    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.btn{appearance:none;border:0;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 15px;border-radius:14px;font-weight:700;font-size:14px;color:white;background:#2563eb}.btn.secondary{background:#374151}
-    .status{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:14px}.dot{width:10px;height:10px;border-radius:50%;background:var(--info);box-shadow:0 0 0 6px rgba(56,189,248,.12)}.dot.ok{background:var(--ok);box-shadow:0 0 0 6px rgba(34,197,94,.12)}.dot.err{background:var(--err);box-shadow:0 0 0 6px rgba(239,68,68,.12)}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700}.badge.ok{background:rgba(34,197,94,.12);color:#bbf7d0;border:1px solid rgba(34,197,94,.18)}.badge.warn{background:rgba(245,158,11,.12);color:#fde68a;border:1px solid rgba(245,158,11,.18)}
-    table{width:100%;border-collapse:collapse} th,td{padding:12px 10px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;vertical-align:top} th{color:var(--muted);font-size:13px}
-    tr.finished td{font-weight:800} tr.live td{color:var(--live)} .mini{font-size:12px;color:var(--muted);line-height:1.5} .detailBox{font-size:13px;line-height:1.5} .sectionTitle{margin:0 0 10px}
-    .footer{margin-top:18px;color:var(--muted);font-size:13px;line-height:1.55}
+    :root{
+      --bg:#10151f;--panel:#171d28;--panel2:#1d2532;--line:#344154;--text:#f1f5f9;
+      --muted:#94a3b8;--blue:#3b82f6;--green:#16a34a;--amber:#f59e0b;--red:#ef4444;
+      --cyan:#22d3ee;--soft:#dbeafe;--shadow:0 18px 45px rgba(0,0,0,.28);
+    }
+    *{box-sizing:border-box}
+    html,body{max-width:100%;overflow-x:hidden}
+    body{margin:0;background:linear-gradient(180deg,#0d1320,#111827 48%,#0d1320);color:var(--text);font-family:"Segoe UI",Tahoma,sans-serif}
+    button,input,select{font:inherit}
+    .wrap{max-width:1220px;margin:0 auto;padding:18px 14px 50px}
+    header{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:16px}
+    h1{font-size:34px;line-height:1;margin:0;letter-spacing:0}
+    h2{margin:0 0 12px;font-size:20px}
+    h3{margin:0 0 8px;font-size:16px}
+    .subtitle{color:#bfdbfe;margin-top:8px}
+    .version{background:#78350f;color:#ffedd5;border-radius:8px;padding:7px 11px;font-size:12px;font-weight:800;margin-bottom:12px}
+    .source-pill{border:1px solid rgba(34,211,238,.35);background:rgba(34,211,238,.1);border-radius:999px;padding:8px 11px;font-size:12px;color:#cffafe;font-weight:800;white-space:nowrap}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:14px}
+    .full{grid-column:1/-1}
+    .panel{background:rgba(23,29,40,.92);border:1px solid var(--line);border-radius:10px;padding:16px;box-shadow:var(--shadow);min-width:0}
+    .panel.soft{background:rgba(18,40,50,.72);border-color:rgba(34,211,238,.35)}
+    .panel.green{background:rgba(16,55,45,.58);border-color:rgba(34,197,94,.35)}
+    .stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+    .stat{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px;min-height:74px}
+    .label{color:var(--muted);font-size:12px;margin-bottom:5px}
+    .value{font-size:28px;font-weight:900;line-height:1.1}
+    .value.small{font-size:16px}
+    .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .stack{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .btn{border:0;border-radius:8px;padding:10px 12px;background:var(--blue);color:white;font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+    .btn.secondary{background:#475569}
+    .btn.green{background:var(--green)}
+    .btn.red{background:#b91c1c}
+    .btn.small{padding:6px 8px;font-size:12px}
+    .btn:disabled{opacity:.55;cursor:not-allowed}
+    .badge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 8px;font-size:12px;font-weight:800;border:1px solid var(--line);background:#273244;color:#dbeafe}
+    .badge.green{background:rgba(22,163,74,.18);border-color:rgba(34,197,94,.35);color:#bbf7d0}
+    .badge.amber{background:rgba(245,158,11,.18);border-color:rgba(245,158,11,.35);color:#fde68a}
+    .badge.red{background:rgba(239,68,68,.18);border-color:rgba(239,68,68,.35);color:#fecaca}
+    .muted{color:var(--muted);font-size:13px;line-height:1.45}
+    .status{margin-top:12px;color:#cbd5e1;display:flex;gap:8px;align-items:center}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px rgba(34,211,238,.14)}
+    .dot.ok{background:var(--green);box-shadow:0 0 0 5px rgba(34,197,94,.14)}
+    .dot.err{background:var(--red);box-shadow:0 0 0 5px rgba(239,68,68,.14)}
+    table{width:100%;border-collapse:collapse}
+    th,td{border-bottom:1px solid rgba(148,163,184,.18);padding:10px 8px;text-align:left;vertical-align:top}
+    th{font-size:12px;color:var(--muted);font-weight:800}
+    td{font-size:14px}
+    tr.live-row td{color:var(--soft)}
+    tr.watch-row{background:rgba(22,163,74,.12)}
+    .table-wrap{overflow:auto;-webkit-overflow-scrolling:touch}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+    .tab{background:#283243}
+    .tab.active{background:var(--blue)}
+    .hidden{display:none!important}
+    input,select{background:#111827;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:10px 11px;min-width:220px;outline:none}
+    input:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 2px rgba(34,211,238,.12)}
+    .admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .box{border:1px dashed rgba(148,163,184,.35);border-radius:8px;padding:12px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
+    .chip{display:inline-flex;align-items:center;gap:7px;background:#293447;border:1px solid var(--line);border-radius:999px;padding:6px 8px;font-size:12px}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .card{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px;min-width:0;overflow:hidden}
+    .card h3{font-size:15px}
+    .club-picker{display:grid;grid-template-columns:minmax(220px,1fr) auto;gap:8px;margin-top:10px}
+    .mini-list{margin-top:10px;border-top:1px solid rgba(148,163,184,.18);padding-top:8px}
+    .mini-row{display:grid;grid-template-columns:1.3fr 1fr 1fr auto;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid rgba(148,163,184,.12);font-size:13px}
+    .mini-row>*{min-width:0;overflow-wrap:anywhere}
+    .scope-note{margin-top:8px;color:#bfdbfe;font-size:12px}
+    .volley-grid{display:grid;grid-template-columns:280px 1fr;gap:12px}
+    .last-volley{display:flex;align-items:center;gap:10px;margin-top:10px}
+    .last-score{font-size:38px;font-weight:950}
+    .mood{width:34px;height:34px;border-radius:50%;display:inline-block;position:relative;vertical-align:middle}
+    .mood:before,.mood:after{content:"";position:absolute;top:10px;width:4px;height:4px;background:#0f172a;border-radius:50%}
+    .mood:before{left:10px}.mood:after{right:10px}
+    .mood.good{background:#22c55e}.mood.neutral{background:#f59e0b}.mood.bad{background:#ef4444}
+    .mood i{position:absolute;left:9px;right:9px;bottom:9px;height:7px;border:2px solid #0f172a;border-top:0;border-radius:0 0 16px 16px}
+    .mood.neutral i{height:0;border:0;border-top:3px solid #0f172a;bottom:11px;border-radius:0}
+    .mood.bad i{bottom:7px;border-top:2px solid #0f172a;border-bottom:0;border-radius:16px 16px 0 0}
+    .chart{height:180px;border:1px solid var(--line);background:#111827;border-radius:8px;width:100%}
+    .toolbar{position:sticky;bottom:0;background:rgba(13,19,32,.92);backdrop-filter:blur(8px);padding:10px 0;margin-top:14px}
+    @media(max-width:850px){
+      .grid,.admin-grid,.cards,.volley-grid,.club-picker{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+      header{display:block}.source-pill{display:inline-flex;margin-top:10px;white-space:normal}.wrap{padding:12px 10px 96px}
+      h1{font-size:28px}.panel{padding:12px;border-radius:14px}.stat{padding:10px;min-height:66px}.value{font-size:24px}
+      table{min-width:720px}th,td{font-size:13px}
+      .btn{width:100%;justify-content:center}.btn.small,.chip .btn{width:auto}.tabs .btn{width:auto;flex:1 1 auto}
+      input,select{width:100%;min-width:0}.row{align-items:stretch}.row>*{min-width:0}
+      .mini-list{border-top:0;padding-top:0}.mini-row.muted{display:none}
+      .mini-row{grid-template-columns:1fr;gap:4px;background:rgba(15,23,42,.42);border:1px solid rgba(148,163,184,.14);border-radius:10px;padding:10px;margin:8px 0}
+      .mini-row span{color:var(--text)}.mini-row small{color:var(--muted)}
+      .mini-row span[data-label]::before{content:attr(data-label) " : ";display:inline;color:var(--muted);font-weight:800}
+      .toolbar{position:fixed;left:0;right:0;bottom:0;padding:10px;background:rgba(13,19,32,.96);z-index:20}
+    }
   </style>
 </head>
-<body>
+<body data-phase="before">
   <div class="wrap">
-    <div class="banner">VERSION CLUB SEYNOD V12</div>
-    <div class="hero">
+    <div class="version">VERSION V12 STABLE (GITHUB PAGES)</div>
+    <header>
       <div>
-        <h1>Suivi live club Seynod</h1>
-        <div class="sub">Suivi live des archers de Seynod.</div>
+        <h1>SUIVI LIVE COMPETTE</h1>
+        <div class="subtitle">Pilotage fiable des archers suivis sur IANSEO.</div>
       </div>
-      <div class="pill">Source : IANSEO</div>
-    </div>
+      <div class="source-pill">Source: IANSEO + GitHub Pages</div>
+    </header>
 
-    <div class="grid">
-      <section class="card span8">
-        <div class="summary">
-          <div class="stat"><div class="label">Archers Seynod</div><div class="value" id="countTotal">—</div></div>
-          <div class="stat"><div class="label">Terminés</div><div class="value" id="countFinished">—</div></div>
-          <div class="stat"><div class="label">En cours</div><div class="value" id="countLive">—</div></div>
-          
+    <main class="grid">
+      <section class="panel">
+        <div class="stats">
+          <div class="stat"><div class="label">Concours suivis</div><div class="value" id="statCompetitions">0</div></div>
+          <div class="stat"><div class="label">Archers affichés</div><div class="value" id="statArchers">0</div></div>
+          <div class="stat"><div class="label">Terminés</div><div class="value" id="statFinished">0</div></div>
+          <div class="stat"><div class="label">En cours</div><div class="value" id="statLive">0</div></div>
+          <div class="stat"><div class="label">Phase</div><div class="value small" id="statPhase">Avant</div></div>
         </div>
-        <div class="row">
-          <button class="btn" id="refreshBtn">Actualiser maintenant</button>
-          <a class="btn secondary" href="https://www.ianseo.net/TourData/2026/27251/IC.php" target="_blank" rel="noopener">Ouvrir IANSEO</a>
-        </div>
-        <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">En attente du premier chargement…</span></div>
-        <div class="row"><span class="badge warn" id="changeBadge">Pas encore de comparaison</span></div>
+        <div class="stack" id="competitionTabs"></div>
+        <div class="status"><span class="dot" id="statusDot"></span><span id="statusText">Chargement...</span></div>
       </section>
 
-      <aside class="card span4">
-        <h2 style="margin-top:0">Suivi</h2>
-        <div style="line-height:1.7;color:#d1d5db">
-          <div><strong>Dernière vérification :</strong> <span id="lastCheck">—</span></div>
-          <div><strong>Dernier changement :</strong> <span id="lastChange">—</span></div>
-          <div><strong>Prochaine vérification :</strong> <span id="countdown">10 s</span></div>
+      <aside class="panel">
+        <h2>Suivi</h2>
+        <button class="btn" id="refreshBtn">Actualiser maintenant</button>
+        <div class="muted" style="margin-top:12px">
+          Dernière vérification: <strong id="lastCheck">-</strong><br>
+          Dernier changement: <strong id="lastChange">-</strong><br>
+          Prochaine vérification: <strong id="countdown">30 s</strong>
         </div>
-        <div class="footer"></div>
+        <div style="margin-top:12px">
+          <span class="badge amber" id="phaseBadge">Avant compétition</span>
+          <div class="muted" id="phaseHelp" style="margin-top:8px">Choisis un club, des archers ou une source live.</div>
+        </div>
       </aside>
 
-      <section class="card span12" style="border:2px solid rgba(191,219,254,.45); box-shadow:0 0 0 2px rgba(191,219,254,.08), 0 18px 48px rgba(0,0,0,.3);">
-        <h2 class="sectionTitle" style="font-size:36px; color:#bfdbfe;">Archers encore en cours</h2>
-        <div style="overflow:auto">
+      <section class="panel green full" id="beforeSection">
+        <h2>Participants et tournois à suivre</h2>
+        <div class="muted" id="beforeMeta">Aucun tournoi suivi.</div>
+        <div class="cards" id="upcomingCards"></div>
+      </section>
+
+      <section class="panel full hidden" id="liveSection">
+        <h2>Archers en concours</h2>
+        <div class="table-wrap">
           <table>
-            <thead>
-              <tr><th>Archer</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr>
-            </thead>
-            <tbody id="tbodyLive"><tr><td colspan="6">Chargement…</td></tr></tbody>
+            <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
+            <tbody id="liveRows"><tr><td colspan="8">Aucun archer en cours.</td></tr></tbody>
           </table>
         </div>
       </section>
 
-      <section class="card span12" style="opacity:.88;">
-        <h2 class="sectionTitle" style="font-size:24px; opacity:.75;">Résultats terminés du week-end</h2>
-        <div style="overflow:auto">
+      <section class="panel full hidden" id="afterSection">
+        <h2 id="afterTitle">Résultats de compétition</h2>
+        <div class="table-wrap">
           <table>
-            <thead>
-              <tr><th>Archer</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr>
-            </thead>
-            <tbody id="tbodyFinished"><tr><td colspan="6">Chargement…</td></tr></tbody>
+            <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>Catégorie</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
+            <tbody id="finishedRows"><tr><td colspan="7">Aucun résultat.</td></tr></tbody>
           </table>
         </div>
       </section>
+
+      <section class="panel full hidden" id="volleySection">
+        <h2>Analyse des volées</h2>
+        <div class="row">
+          <label class="muted" for="volleySelect">Archer</label>
+          <select id="volleySelect"></select>
+        </div>
+        <div class="volley-grid" style="margin-top:12px">
+          <div class="card">
+            <h3>Dernière volée détectée</h3>
+            <div class="last-volley"><span class="last-score" id="lastVolleyScore">-</span><span id="lastVolleyMood"></span></div>
+            <div class="muted" id="lastVolleyText">Pas assez de données.</div>
+          </div>
+          <div class="card">
+            <h3>Déroulé du tir</h3>
+            <svg class="chart" id="volleyChart" viewBox="0 0 700 180" preserveAspectRatio="none"></svg>
+            <div class="table-wrap" style="margin-top:10px">
+              <table>
+                <thead><tr><th>#</th><th>Repère tir</th><th>Score</th></tr></thead>
+                <tbody id="volleyRows"><tr><td colspan="3">Aucune volée détectée.</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel soft full hidden" id="adminPanel">
+        <h2>Admin</h2>
+        <div class="tabs">
+          <button class="btn tab active" data-admin-tab="setup">Configuration</button>
+          <button class="btn tab" data-admin-tab="sources">Tournois</button>
+          <button class="btn tab" data-admin-tab="pilot">Pilotage public</button>
+        </div>
+
+        <div id="adminSetup">
+          <div class="admin-grid">
+            <div class="box">
+              <h3>Clubs suivis par défaut</h3>
+              <div class="row">
+                <input id="clubInput" placeholder="Ex: 0174246 - SEYNOD, 0335067 - RENNES CIE" />
+                <input id="countryInput" placeholder="Pays: FRA" />
+                <button class="btn" id="applyClubBtn">Appliquer</button>
+              </div>
+              <div class="club-picker">
+                <input id="clubSearchInput" list="clubDatalist" placeholder="Rechercher un club par nom ou numéro" />
+                <button class="btn green" id="addClubSearchBtn">Ajouter club</button>
+              </div>
+              <datalist id="clubDatalist"></datalist>
+              <div class="chips" id="quickClubs"></div>
+              <div class="scope-note">Tu peux suivre plusieurs clubs en même temps. Ces clubs servent à chercher les compétitions et comme filtre par défaut.</div>
+            </div>
+            <div class="box">
+              <h3>Archers à suivre</h3>
+              <div class="row">
+                <input id="watchInput" placeholder="Nom ou prénom, séparés par virgules" />
+                <button class="btn green" id="addWatchBtn">Ajouter</button>
+                <button class="btn secondary" id="clearWatchBtn">Vider</button>
+              </div>
+              <div class="chips" id="watchList"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="adminSources" class="hidden">
+          <div class="admin-grid">
+            <div class="box">
+              <h3>Recherche automatique</h3>
+              <div class="row">
+                <button class="btn" id="findNextBtn">Chercher prochaines compétitions</button>
+                <select id="foundSelect"></select>
+                <button class="btn green" id="followFoundBtn">Suivre sélection</button>
+              </div>
+            </div>
+            <div class="box">
+              <h3>Ajout manuel</h3>
+              <div class="row">
+                <input id="manualUrlInput" placeholder="Details.php?toId=... ou page live IANSEO" />
+                <button class="btn green" id="addManualBtn">Ajouter source</button>
+              </div>
+            </div>
+          </div>
+          <div class="box" style="margin-top:12px">
+            <h3>Tournois suivis</h3>
+            <div id="trackedList" class="cards"></div>
+            <div class="row" style="margin-top:10px">
+              <button class="btn secondary" id="clearTrackedBtn">Archiver / vider tournois suivis</button>
+              <button class="btn red" id="clearAllBtn">Nettoyer vue publique locale</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="adminPilot" class="hidden">
+          <div class="box">
+            <h3>Etat public</h3>
+            <div class="row">
+              <select id="phaseSelect">
+                <option value="auto">Phase automatique</option>
+                <option value="before">Forcer avant compétition</option>
+                <option value="during">Forcer pendant compétition</option>
+                <option value="after">Forcer après compétition</option>
+              </select>
+              <button class="btn" id="applyPhaseBtn">Appliquer phase</button>
+              <button class="btn secondary" id="togglePublicControlBtn">Contrôle public: OFF</button>
+              <button class="btn green" id="publishStateBtn">Publier état partagé</button>
+            </div>
+            <div class="muted" id="adminStateInfo" style="margin-top:10px"></div>
+          </div>
+        </div>
+
+        <div class="muted" id="adminLog" style="margin-top:12px">Console prête.</div>
+      </section>
+    </main>
+
+    <div class="toolbar hidden" id="adminToolbar">
+      <button class="btn" id="competitionModeBtn">Mode compétition: ON</button>
     </div>
   </div>
 
   <script>
-    const API_URL='/.netlify/functions/seynod', REFRESH_MS=10000, el=id=>document.getElementById(id);
-    let previousSignature=null, nextRefresh=Date.now()+REFRESH_MS, lastGoodData=null;
+    const API_URL = 'data/live.json';
+    const NEXT_URL = 'data/next_competition.json';
+    const CATALOG_URL = 'data/competition_catalog.json';
+    const ADMIN_CONFIG_URL = 'data/admin_config.json';
+    const ADMIN_STATE_URL = 'data/admin_state.json';
+    const PROXY = 'https://r.jina.ai/http://';
+    const REFRESH_MS = 30000;
+    const DEPART_ACTIVE_WINDOW_MIN = 170;
+    const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
+    const QUICK_CLUBS = ['0174246 - SEYNOD','0335067 - RENNES CIE','0163157 - RIOM','0163151 - CLERMONT FERRAND CIE','0221012 - AUXONNE','0895293 - SARCELLES'];
 
-    function setStatus(kind,text){el('statusDot').className='dot '+(kind||''); el('statusText').textContent=text; el('lastCheck').textContent=new Date().toLocaleString('fr-FR');}
-    function renderRows(targetId, archers, live=false){
-      const tbody=el(targetId);
-      if(!archers.length){tbody.innerHTML=`<tr><td colspan="6">${live?'Aucun archer en cours.':'Aucun résultat terminé.'}</td></tr>`; return;}
-      tbody.innerHTML=archers.map(a=>`<tr class="${a.finished?'finished':'live'}"><td>${a.name}<div class="mini">${a.club}</div></td><td>${a.category}</td><td>${a.progress}</td><td>${a.position}</td><td>${a.scoreLabel}</td><td><div class="detailBox">${a.detail}</div></td></tr>`).join('');
+    const $ = id => document.getElementById(id);
+    const state = {
+      clubRaw:'',
+      countryRaw:'FRA',
+      clubKeys:[],
+      watched:[],
+      tracked:[],
+      archived:[],
+      phaseOverride:'auto',
+      publicControlled:false,
+      selectedCompetition:'all',
+      data:{competitions:[]},
+      raw:{competitions:[]},
+      foundMatches:[],
+      clubCatalog:[],
+      catalogTournaments:[],
+      expandedBefore:new Set(),
+      selectedFound:'',
+      admin:false,
+      adminBridge:'',
+      autoRefresh:true,
+      nextRefresh:Date.now()+REFRESH_MS,
+      lastSignature:'',
+      lastAdminStamp:'',
+      volley:{},
+      selectedVolley:''
+    };
+
+    function fixText(v){
+      return String(v ?? '')
+        .replace(/ÃƒÂ¨/g,'è').replace(/ÃƒÂ©/g,'é').replace(/ÃƒÂª/g,'ê').replace(/ÃƒÂ«/g,'ë')
+        .replace(/ÃƒÂ /g,'à').replace(/ÃƒÂ¢/g,'â').replace(/ÃƒÂ¹/g,'ù').replace(/ÃƒÂ§/g,'ç')
+        .replace(/ÃƒÂ´/g,'ô').replace(/ÃƒÂ®/g,'î').replace(/ÃƒÂ¯/g,'ï').replace(/Ã‚°/g,'°');
     }
-    function renderSummary(data){
-      el('countTotal').textContent=data.archers.length;
-      el('countFinished').textContent=data.archers.filter(a=>a.finished).length;
-      el('countLive').textContent=data.archers.filter(a=>!a.finished).length;
+    function escapeHtml(v){return fixText(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+    function norm(v){return fixText(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'');}
+    function splitList(v){return String(v||'').split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean);}
+    function uniqueByNorm(arr){const map=new Map(); for(const v of arr||[]){const k=norm(v); if(k&&!map.has(k)) map.set(k,String(v).trim());} return [...map.values()];}
+    function clubKeysFromRaw(raw){
+      const text=String(raw||'');
+      const parts=splitList(text);
+      const codes=[...text.matchAll(/\b\d{6,7}\b/g)].map(m=>m[0]);
+      return uniqueByNorm([...parts,...codes].filter(Boolean));
     }
-    function updateChangeBadge(data){
-      const signature=JSON.stringify(data.archers.map(a=>[a.name,a.position,a.score,a.detail,a.finished,a.progress,a.category]));
-      const badge=el('changeBadge');
-      if(previousSignature===null){badge.className='badge warn'; badge.textContent='Premier chargement effectué';}
-      else if(signature!==previousSignature){badge.className='badge ok'; badge.textContent='Changement détecté sur le tableau du club'; el('lastChange').textContent=new Date().toLocaleString('fr-FR');}
-      else {badge.className='badge warn'; badge.textContent='Aucun nouveau changement détecté';}
-      previousSignature=signature;
+    function addClubToRaw(raw, club){return uniqueByNorm([...splitList(raw), club]).join(', ');}
+    function removeClubFromRaw(raw, club){const key=norm(club); return splitList(raw).filter(c=>norm(c)!==key).join(', ');}
+    function setLog(msg){$('adminLog').innerHTML = msg;}
+    function setStatus(kind,msg){$('statusDot').className='dot '+(kind||''); $('statusText').textContent=msg;}
+    function toProxy(url){return PROXY + String(url||'').replace(/^https?:\/\//i,'');}
+    async function fetchJson(url){const r=await fetch(url+'?t='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status); return r.json();}
+    async function fetchText(url){const r=await fetch(url,{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status); return r.text();}
+
+    async function sha256Hex(text){
+      if(!crypto?.subtle) return '';
+      const bytes=new TextEncoder().encode(String(text||''));
+      const hash=await crypto.subtle.digest('SHA-256',bytes);
+      return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('');
     }
-    function render(data){
-      lastGoodData=data;
-      renderSummary(data);
-      renderRows('tbodyFinished', data.archers.filter(a=>a.finished), false);
-      renderRows('tbodyLive', data.archers.filter(a=>!a.finished), true);
-      updateChangeBadge(data);
-      setStatus('ok','Mise à jour réussie');
+
+    async function resolveAdmin(){
+      if(location.hostname==='localhost') return state.admin=true;
+      if(sessionStorage.getItem('slc_admin_ok')==='1') return state.admin=true;
+      const p=new URLSearchParams(location.search);
+      if(p.get('admin')==='seynod-admin'){sessionStorage.setItem('slc_admin_ok','1'); return state.admin=true;}
+      if(p.get('admin')==='1' && p.get('k')){
+        const hash=await sha256Hex(p.get('k'));
+        if(hash===ADMIN_HASH){sessionStorage.setItem('slc_admin_ok','1'); return state.admin=true;}
+      }
+      return false;
+    }
+
+    function loadLocal(){
+      state.clubRaw = localStorage.getItem('slc_club') || state.clubRaw;
+      state.countryRaw = localStorage.getItem('slc_country') || state.countryRaw;
+      state.clubKeys = clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
+      state.watched = uniqueByNorm(JSON.parse(localStorage.getItem('slc_watched') || '[]'));
+      state.tracked = JSON.parse(localStorage.getItem('slc_tracked') || '[]').map(cleanTournament);
+      state.archived = JSON.parse(localStorage.getItem('slc_archived') || '[]');
+      state.phaseOverride = localStorage.getItem('slc_phase') || 'auto';
+      state.publicControlled = localStorage.getItem('slc_public_control') === '1';
+    }
+    function saveLocal(){
+      localStorage.setItem('slc_club',state.clubRaw);
+      localStorage.setItem('slc_country',state.countryRaw);
+      localStorage.setItem('slc_watched',JSON.stringify(state.watched));
+      localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
+      localStorage.setItem('slc_archived',JSON.stringify(state.archived));
+      localStorage.setItem('slc_phase',state.phaseOverride);
+      localStorage.setItem('slc_public_control',state.publicControlled?'1':'0');
+      renderAdmin();
+    }
+
+    async function loadAdminConfig(){
+      try{const cfg=await fetchJson(ADMIN_CONFIG_URL); state.adminBridge=String(cfg.adminBridgeUrl||'').trim();}catch(_){}
+    }
+    async function loadClubCatalog(){
+      try{
+        const cat=await fetchJson(CATALOG_URL);
+        const clubs=new Map();
+        for(const t of cat.tournaments||[]){
+          for(const e of t.entries||[]){
+            const label=String(e.club||e.category||'').trim();
+            if(!label) continue;
+            const key=norm(label);
+            const old=clubs.get(key)||{label,count:0};
+            old.count++;
+            clubs.set(key,old);
+          }
+        }
+        state.catalogTournaments=cat.tournaments||[];
+        state.clubCatalog=[...clubs.values()].sort((a,b)=>a.label.localeCompare(b.label,'fr',{sensitivity:'base'}));
+        hydrateTrackedEntries();
+      }catch(_){state.clubCatalog=[]; state.catalogTournaments=[];}
+    }
+    async function loadSharedState(){
+      try{
+        const s=await fetchJson(ADMIN_STATE_URL);
+        if(!s || s.updatedAtUtc===state.lastAdminStamp) return;
+        state.lastAdminStamp=s.updatedAtUtc||'';
+        if(s.trackedClubRaw) state.clubRaw=s.trackedClubRaw;
+        if(s.trackedCountryRaw) state.countryRaw=s.trackedCountryRaw;
+        state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
+        state.watched=uniqueByNorm(s.watchedArchers||[]);
+        state.tracked=(s.trackedTournaments||[]).map(cleanTournament).filter(t=>t.url || t.details);
+        state.phaseOverride=['auto','before','during','after'].includes(s.phaseOverrideMode)?s.phaseOverrideMode:'auto';
+      }catch(_){}
+    }
+    function statePayload(){
+      return {
+        updatedAtUtc:new Date().toISOString(),
+        trackedClubRaw:state.clubRaw,
+        trackedCountryRaw:state.countryRaw,
+        phaseOverrideMode:state.phaseOverride,
+        publicControlledByAdmin:state.publicControlled,
+        watchedArchers:state.watched,
+        trackedTournaments:state.tracked.map(t=>({id:t.id,name:t.name,date_text:t.date,details_url:t.details,url:t.url,urls:t.urls||[],ic_url:t.url,ena_url:t.ena,club_entries:t.entries||[],scopeRaw:t.scopeRaw||state.clubRaw,enaLoaded:!!t.enaLoaded,liveStatus:t.liveStatus||'',place:t.place||''})),
+        trackedIcUrls:state.tracked.map(t=>t.url)
+      };
+    }
+    function b64Url(text){return btoa(unescape(encodeURIComponent(text))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
+    async function publishState(){
+      if(!state.adminBridge){setLog('Passerelle admin non configurée: état gardé dans ce navigateur.'); return false;}
+      const r=await fetch(state.adminBridge,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'save_admin_state',state_b64:b64Url(JSON.stringify(statePayload()))})});
+      if(!r.ok) throw new Error('Bridge HTTP '+r.status);
+      setLog('État partagé publié. La vue publique va se synchroniser.');
+      return true;
+    }
+    async function syncPublicStateIfEnabled(){
+      if(!state.admin || !state.publicControlled) return;
+      try{await publishState();}catch(err){setLog('Publication automatique impossible: '+escapeHtml(err.message));}
+    }
+
+    function cleanTournament(raw){
+      const url=normalizeLiveUrl(raw.url||raw.ic_url||raw.icUrl||'');
+      const urls=Array.isArray(raw.urls) ? raw.urls.map(normalizeLiveUrl).filter(Boolean) : [];
+      if(url && !urls.includes(url)) urls.unshift(url);
+      return {
+        id:String(raw.id||raw.to_id||url||Date.now()),
+        name:String(raw.name||'Tournoi suivi'),
+        date:String(raw.date_text||raw.date||''),
+        details:String(raw.details_url||raw.details||''),
+        ena:String(raw.ena_url||raw.ena||''),
+        urls,
+        url,
+        scopeRaw:String(raw.scopeRaw||raw.scope_raw||raw.clubRaw||raw.club_raw||state.clubRaw||''),
+        enaLoaded:!!raw.enaLoaded,
+        liveStatus:String(raw.liveStatus||raw.live_status||''),
+        place:String(raw.place||raw.location||''),
+        entries:Array.isArray(raw.club_entries)?raw.club_entries:(Array.isArray(raw.entries)?raw.entries:[])
+      };
+    }
+    function normalizeUrl(raw){
+      const v=String(raw||'').trim();
+      if(!v) return '';
+      if(/^https?:\/\//i.test(v)) return v;
+      if(v.startsWith('/')) return 'https://www.ianseo.net'+v;
+      return '';
+    }
+    function isIanseoLivePage(url){
+      const v=normalizeUrl(url);
+      if(!v) return false;
+      const m=String(v).match(/\/([A-Z0-9]+)\.php(?:\?|$)/i);
+      if(!m) return false;
+      const code=String(m[1]||'').toUpperCase();
+      if(code==='ENA') return false;
+      if(code==='IC' || code==='ICCM') return true;
+      return /^I[A-Z0-9]+$/.test(code);
+    }
+    function normalizeLiveUrl(raw){
+      const v=normalizeUrl(raw);
+      if(!v) return '';
+      return isIanseoLivePage(v) ? v : '';
+    }
+    function detailsId(url){const m=String(url||'').match(/Details\.php\?toId=([0-9A-Za-z-]+)/i); return m?m[1]:'';}
+    function tourDataId(url){
+      const m=String(url||'').match(/\/TourData\/\d+\/([0-9A-Za-z-]+)\//i);
+      return m ? m[1] : '';
+    }
+    function isEnaUrl(url){return /\/ENA\.php(?:\?|$)/i.test(String(url||''));}
+    function detailsFromLive(url){
+      const m=String(url||'').match(/\/TourData\/\d+\/([0-9A-Za-z-]+)\//i);
+      return m ? `https://www.ianseo.net/Details.php?toId=${m[1]}` : String(url||'').replace(/\/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\.php.*$/i,'/Details.php');
+    }
+    function extractLiveUrls(detailsText,toId){
+      const out=[], seen=new Set(), esc=String(toId).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+      const pats=[new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${esc}/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\\.php`,'gi'),new RegExp(`/TourData/\\d+/${esc}/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\\.php`,'gi')];
+      for(const p of pats){let m; while((m=p.exec(detailsText))){const u=normalizeLiveUrl(normalizeUrl(m[0])); if(u&&!seen.has(u)){seen.add(u); out.push(u);}}}
+      const rank=u=>/\/IC(?:CM)?\.php/i.test(u)?0:/\/IQ/i.test(u)?1:/\/IF/i.test(u)?2:3;
+      return out.sort((a,b)=>rank(a)-rank(b)||a.localeCompare(b)).slice(0,40);
+    }
+    function extractEnaUrl(detailsText,toId){
+      const esc=String(toId).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+      const m=String(detailsText||'').match(new RegExp(`(?:https://www\\.ianseo\\.net)?/TourData/\\d+/${esc}/ENA\\.php`,'i'));
+      return m ? normalizeUrl(m[0]) : '';
+    }
+    function extractDetailsName(detailsText,toId){
+      const lines=String(detailsText||'').split('\n').map(l=>l.trim()).filter(Boolean);
+      const content=lines.find(l=>!/^Title:|^URL Source:|^Markdown Content:|^https?:/i.test(l) && !l.startsWith('!['));
+      return content || `Tournoi ${toId}`;
+    }
+    async function resolveSource(raw){
+      const url=normalizeUrl(raw);
+      const live=normalizeLiveUrl(url);
+      if(live) return {urls:[live], details:detailsFromLive(live)};
+      const fromTourData=tourDataId(url);
+      const id=detailsId(url) || fromTourData;
+      if(!id) throw new Error('URL invalide. Attendu: Details.php?toId=..., ENA.php ou IC.php IANSEO.');
+      const detailsUrl=`https://www.ianseo.net/Details.php?toId=${id}`;
+      const enaUrl=isEnaUrl(url) ? url : '';
+      const txt=await fetchText(toProxy(detailsUrl));
+      const urls=extractLiveUrls(txt,id);
+      return {
+        urls,
+        details:detailsUrl,
+        ena:enaUrl || extractEnaUrl(txt,id),
+        name:extractDetailsName(txt,id),
+        pending:!urls.length
+      };
+    }
+    async function discoverLiveForTournament(t){
+      if(!t.details) return [];
+      const id=detailsId(t.details);
+      if(!id) return [];
+      try{
+        const txt=await fetchText(toProxy(t.details));
+        return extractLiveUrls(txt,id);
+      }catch(_){return [];}
+    }
+    function liveLabel(t){
+      if(t.liveStatus) return t.liveStatus;
+      return t.url ? 'Live prêt, en attente de scores' : 'Départs publiés, résultats pas encore ouverts';
+    }
+    function isLiveOpenedStatus(t){
+      const s=String(t?.liveStatus||'').toLowerCase();
+      return s.includes('scores live détectés') || s.includes('live ouvert') || s.includes('live détecté');
+    }
+    function canUseLiveFallback(t){
+      if(!t?.url) return false;
+      const s=String(t.liveStatus||'').toLowerCase();
+      if(s.includes('pas encore ouverts') || s.includes('inaccessible')) return false;
+      return true;
+    }
+    function buildFallbackLiveData(){
+      const competitions=[];
+      for(const t of state.tracked){
+        if(!canUseLiveFallback(t)) continue;
+        const archers=buildFallbackArchersFromEntries(t);
+        if(!archers.length) continue;
+        competitions.push({
+          id:String(t.id),
+          name:t.name||'Tournoi suivi',
+          place:t.place||'-',
+          sourceUrl:t.url||'',
+          archers
+        });
+      }
+      return {competitions};
+    }
+
+    function isWatched(a){
+      const n=norm(a?.name||'');
+      return !!n && state.watched.some(w=>{const k=norm(w); return k && (n.includes(k)||k.includes(n));});
+    }
+    function matchesScope(a, scopeKeys=state.clubKeys){
+      const hay=norm(`${a?.club||''} ${a?.name||''} ${a?.detail||''}`);
+      const sourceKeys=Array.isArray(scopeKeys) ? scopeKeys : splitList(scopeKeys);
+      const keys=(sourceKeys||[]).map(norm).filter(Boolean);
+      const clubMatch=!keys.length || keys.some(k=>hay.includes(k));
+      return clubMatch || isWatched(a);
+    }
+    function normalizeData(raw){
+      if(raw?.competitions?.length){
+        return {competitions:raw.competitions.map((c,i)=>({id:String(c.id||i+1),name:c.name||`Concours ${i+1}`,place:c.place||'-',sourceUrl:c.sourceUrl||'',archers:(c.archers||[]).map(a=>({...a,competitionId:String(c.id||i+1),competitionName:c.name||`Concours ${i+1}`}))}))};
+      }
+      return {competitions:[{id:'live',name:raw?.competitionName||'Live IANSEO',place:(raw?.places||[])[0]||'-',sourceUrl:raw?.sourceUrl||'',archers:(raw?.archers||[]).map(a=>({...a,competitionId:'live',competitionName:raw?.competitionName||'Live IANSEO'}))}]};
+    }
+    function filterData(data){
+      const competitions=(data.competitions||[]).map(c=>({...c,archers:(c.archers||[]).filter(matchesScope)})).filter(c=>c.archers.length);
+      return {competitions};
+    }
+    function tournamentToId(t){
+      return String(t?.id||t?.to_id||detailsId(t?.details||t?.details_url||'')||'');
+    }
+    function hydrateTrackedEntries(){
+      if(!state.catalogTournaments.length || !state.tracked.length) return false;
+      let changed=false;
+      for(const t of state.tracked){
+        if((t.entries||[]).length) continue;
+        const id=tournamentToId(t);
+        const found=state.catalogTournaments.find(c=>String(c.to_id)===id || detailsId(c.details_url||'')===id);
+        if(found){
+          t.entries=Array.isArray(found.entries)?found.entries:[];
+          if(!t.date) t.date=found.date_text||found.end_date||'';
+          if(!t.ena) t.ena=found.ena_url||'';
+          if(!t.details) t.details=found.details_url||'';
+          changed=true;
+        }
+      }
+      if(changed) localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
+      return changed;
+    }
+    function stripMarkdownImages(v){
+      return fixText(v).replace(/!\[[^\]]*]\([^)]*\)/g,'').replace(/\s+/g,' ').trim();
+    }
+    function parseEnaEntries(md){
+      const out=[];
+      for(const raw of String(md||'').split('\n')){
+        const line=raw.trim();
+        if(!line.startsWith('|')) continue;
+        const cells=line.split('|').map(v=>v.trim()).filter(Boolean);
+        if(cells.length<5) continue;
+        if(/athl[eè]te/i.test(cells[0]) || /^-+$/.test(cells[0]) || /^[A-Z]$/.test(cells[0])) continue;
+        const depart=stripMarkdownImages(cells[4]||'');
+        const time=(depart.match(/\b\d{1,2}h\d{2}\b|\b\d{1,2}:\d{2}\b/)||[])[0]||'';
+        out.push({
+          name:stripMarkdownImages(cells[0]||''),
+          target:stripMarkdownImages(cells[1]||''),
+          club:stripMarkdownImages(cells[2]||''),
+          category:stripMarkdownImages(cells[3]||''),
+          session:stripMarkdownImages(cells[3]||''),
+          depart,
+          time
+        });
+      }
+      return out;
+    }
+    async function enrichTrackedFromEna(){
+      if(!state.admin || !state.tracked.length) return false;
+      let changed=false;
+      for(const t of state.tracked){
+        if(!t.ena || t.enaLoaded) continue;
+        try{
+          const md=await fetchText(toProxy(t.ena));
+          const entries=parseEnaEntries(md);
+          if(entries.length){t.entries=entries; changed=true;}
+          t.enaLoaded=true;
+        }catch(_){}
+      }
+      if(changed) localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
+      return changed;
+    }
+    function entriesForScope(t){
+      const keys=clubKeysFromRaw(t.scopeRaw||state.clubRaw).map(norm);
+      const entries=t.entries||[];
+      if(!keys.length) return entries;
+      return entries.filter(e=>keys.some(k=>norm(`${e.club||''} ${e.category||''} ${e.name||''}`).includes(k)));
+    }
+    function entryDepart(e){
+      const raw=fixText(e?.depart||e?.departure||e?.start||'').trim();
+      if(!raw) return '-';
+      const m=raw.match(/D[ée]part\s*([0-9A-Za-z]+)/i);
+      if(m){
+        const code=String(m[1]||'').toUpperCase();
+        if(code==='NA') return '-';
+        return `Départ ${code}`;
+      }
+      return raw.replace(/\s*[-–]\s*\d{1,2}[h:]\d{2}.*/,'');
+    }
+    function entryHoraire(e){
+      const direct=fixText(e?.horaire||e?.time||e?.start_time||e?.schedule||e?.hour||'').trim();
+      if(direct) return direct;
+      const raw=fixText(e?.depart||e?.departure||e?.start||'');
+      return (raw.match(/\b\d{1,2}h\d{2}\b|\b\d{1,2}:\d{2}\b/)||[])[0] || 'Horaire non publié';
+    }
+    function entryCategorie(e){
+      const raw=fixText(e?.session||e?.category||'').replace(/^S(?:es\.)?\s*\.?\s*\d+\s*/i,'').trim();
+      return raw && !/^\d{6,7}\s*-/.test(raw) ? raw : '-';
+    }
+    function entryDepartCode(e){
+      const raw=fixText(e?.depart||e?.departure||e?.start||'').trim();
+      const m=raw.match(/D[ée]part\s*([0-9A-Za-z]+)/i);
+      if(!m) return '';
+      const code=String(m[1]||'').toUpperCase();
+      return code==='NA' ? '' : code;
+    }
+    function entryHoraireMinutes(e){
+      const raw=entryHoraire(e);
+      const m=String(raw).match(/\b(\d{1,2})[h:](\d{2})\b/);
+      if(!m) return null;
+      const hh=Number(m[1]), mm=Number(m[2]);
+      if(!Number.isFinite(hh) || !Number.isFinite(mm)) return null;
+      return hh*60+mm;
+    }
+    function parseMonthIndex(rawMonth){
+      const monthMap={jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11,janv:0,fev:1,fevr:1,mars:2,avr:3,mai:4,juin:5,juil:6,aout:7,sept:8,octo:9,nove:10,dece:11};
+      const k=norm(rawMonth||'').slice(0,4);
+      const key=Object.keys(monthMap).find(x=>k.startsWith(norm(x).slice(0,4)));
+      return key===undefined ? null : monthMap[key];
+    }
+    function parseTournamentDate(raw){
+      const text=fixText(raw||'').trim();
+      const iso=text.match(/\b(20\d{2})-(\d{2})-(\d{2})\b/);
+      if(iso) return new Date(Number(iso[1]),Number(iso[2])-1,Number(iso[3]),12,0,0,0);
+      const m=text.match(/\b(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})\b(?:\s+(20\d{2}))?/);
+      if(!m) return null;
+      const monthIndex=parseMonthIndex(m[2]);
+      if(monthIndex===null) return null;
+      return new Date(Number(m[3]||new Date().getFullYear()),monthIndex,Number(m[1]),12,0,0,0);
+    }
+    function parseTournamentDateRange(raw){
+      const text=fixText(raw||'').trim();
+      const yearMatch=text.match(/\b(20\d{2})\b/);
+      const year=yearMatch ? Number(yearMatch[1]) : new Date().getFullYear();
+      const rangeMonth=text.match(/\b(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})\b/);
+      if(rangeMonth){
+        const monthIndex=parseMonthIndex(rangeMonth[3]);
+        if(monthIndex!==null){
+          return {
+            start:new Date(year,monthIndex,Number(rangeMonth[1]),0,0,0,0),
+            end:new Date(year,monthIndex,Number(rangeMonth[2]),23,59,59,999)
+          };
+        }
+      }
+      const rangeDouble=text.match(/\b(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})\s*[-–]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})\b/);
+      if(rangeDouble){
+        const m1=parseMonthIndex(rangeDouble[2]), m2=parseMonthIndex(rangeDouble[4]);
+        if(m1!==null && m2!==null){
+          return {
+            start:new Date(year,m1,Number(rangeDouble[1]),0,0,0,0),
+            end:new Date(year,m2,Number(rangeDouble[3]),23,59,59,999)
+          };
+        }
+      }
+      const single=parseTournamentDate(text);
+      if(single){
+        return {
+          start:new Date(single.getFullYear(),single.getMonth(),single.getDate(),0,0,0,0),
+          end:new Date(single.getFullYear(),single.getMonth(),single.getDate(),23,59,59,999)
+        };
+      }
+      return null;
+    }
+    function evaluateTournamentSchedule(t){
+      const entries=entriesForScope(t);
+      const range=parseTournamentDateRange(t?.date||'');
+      const now=new Date();
+      if(range && now<range.start) return {state:'future',entries:[],label:''};
+      if(range && now>range.end) return {state:'past',entries:[],label:''};
+      const byDepart=new Map();
+      for(const e of entries){
+        const dep=entryDepartCode(e);
+        if(!dep) continue;
+        if(!byDepart.has(dep)) byDepart.set(dep,{dep,entries:[],mins:[]});
+        const g=byDepart.get(dep);
+        g.entries.push(e);
+        const mins=entryHoraireMinutes(e);
+        if(mins!==null) g.mins.push(mins);
+      }
+      const groups=[...byDepart.values()].map(g=>({...g,start:g.mins.length?Math.min(...g.mins):null}));
+      if(!groups.length) return {state:'no_entries',entries:[],label:''};
+      const current=now.getHours()*60+now.getMinutes();
+      const ordered=groups.filter(g=>g.start!==null).sort((a,b)=>a.start-b.start);
+      const active=ordered.filter((g,idx)=>{
+        const next=ordered[idx+1];
+        const inMainWindow=current>=g.start-20 && current<=g.start+DEPART_ACTIVE_WINDOW_MIN;
+        const beforeNextGate=!next || current < next.start-30;
+        return inMainWindow && beforeNextGate;
+      });
+      if(active.length) return {state:'active',entries:active.flatMap(a=>a.entries),label:active.map(a=>a.dep).join(', ')};
+      const next=groups.filter(g=>g.start!==null && g.start>current).sort((a,b)=>a.start-b.start)[0];
+      if(next) return {state:'upcoming',entries:[],label:next.dep};
+      if(groups.some(g=>g.start!==null)) return {state:'paused',entries:[],label:''};
+      return {state:'no_time',entries:[],label:''};
+    }
+    function buildDepartureGroups(entries){
+      const byDepart=new Map();
+      for(const e of entries||[]){
+        const dep=entryDepartCode(e);
+        if(!dep) continue;
+        if(!byDepart.has(dep)) byDepart.set(dep,{dep,entries:[],starts:[]});
+        const g=byDepart.get(dep);
+        g.entries.push(e);
+        const mins=entryHoraireMinutes(e);
+        if(mins!==null) g.starts.push(mins);
+      }
+      return [...byDepart.values()]
+        .map(g=>({...g,start:g.starts.length?Math.min(...g.starts):null}))
+        .sort((a,b)=>(a.start??9999)-(b.start??9999) || a.dep.localeCompare(b.dep));
+    }
+    function formatMinuteLabel(mins){
+      if(mins===null || mins===undefined) return 'Horaire non publié';
+      const h=Math.floor(mins/60), m=mins%60;
+      return `${h}h${String(m).padStart(2,'0')}`;
+    }
+    function buildResultIndexForTournament(tournamentId){
+      const idx=new Map();
+      const comp=(state.data?.competitions||[]).find(c=>String(c.id)===String(tournamentId));
+      if(!comp) return idx;
+      for(const a of comp.archers||[]){
+        if(!isFinished(a) && getScore(a)<=0) continue;
+        const key=norm(`${a.name||''}|${a.club||''}`);
+        if(!key) continue;
+        const old=idx.get(key);
+        const score=getScore(a);
+        if(!old || score>=old.score) idx.set(key,{score,detail:a.detail||'',progress:a.progress||''});
+      }
+      return idx;
+    }
+    function entryStatus(entry, groups, resultIdx){
+      const dep=entryDepartCode(entry);
+      const key=norm(`${entry.name||''}|${entry.club||''}`);
+      const result=resultIdx.get(key);
+      if(result?.score) return {kind:'done',label:'Terminé',score:result.score};
+      const g=groups.find(x=>x.dep===dep);
+      if(!g || g.start===null) return {kind:'unknown',label:'Horaire non publié',score:0};
+      const now=new Date();
+      const current=now.getHours()*60+now.getMinutes();
+      const next=groups.find(x=>(x.start??9999)>(g.start??-1));
+      const active=current>=g.start-20 && current<=g.start+DEPART_ACTIVE_WINDOW_MIN && (!next || current<next.start-30);
+      if(active) return {kind:'live',label:'En cours',score:0};
+      if(current<g.start-20) return {kind:'upcoming',label:'À venir',score:0};
+      return {kind:'done',label:'Terminé',score:0};
+    }
+    function buildFallbackArchersFromEntries(t){
+      const selected=evaluateTournamentSchedule(t);
+      if(selected.state!=='active') return [];
+      const rows=(selected.entries||[])
+      .filter(e=>entryDepartCode(e) && entryHoraireMinutes(e)!==null)
+      .map(e=>({
+        name:e.name||'',
+        club:e.club||'',
+        category:entryCategorie(e),
+        progress:`En cours (Départ ${entryDepartCode(e)})`,
+        position:'-',
+        score:0,
+        scoreLabel:'',
+        detail:entryHoraire(e),
+        finished:false,
+        place:t.place||'-'
+      }));
+      return dedupeArchers(rows);
+    }
+    function clubsForEntries(entries){
+      const map=new Map();
+      for(const e of entries||[]){const club=e.club||e.category||'Club'; const k=norm(club); if(!map.has(k)) map.set(k,{club,count:0}); map.get(k).count++;}
+      return [...map.values()].sort((a,b)=>a.club.localeCompare(b.club,'fr',{sensitivity:'base'}));
+    }
+    function beforeSummary(){
+      if(!state.tracked.length) return 'Aucun tournoi suivi. Ajoute une source IANSEO dans Admin > Tournois.';
+      const entries=state.tracked.flatMap(entriesForScope);
+      const clubs=clubsForEntries(entries);
+      const clubText=clubs.length ? clubs.map(c=>`${c.club} (${c.count})`).join(' · ') : 'aucun participant détecté pour les clubs sélectionnés';
+      return `${state.tracked.length} tournoi(s) suivi(s) · ${entries.length} participant(s) sélectionné(s) · ${clubText}`;
+    }
+    function archers(data){
+      const comps=(data?.competitions||[]);
+      if(state.selectedCompetition!=='all'){
+        const c=comps.find(x=>x.id===state.selectedCompetition);
+        return c ? c.archers.map(a=>({...a,competitionId:c.id,competitionName:c.name,sourceUrl:c.sourceUrl,place:a.place||c.place})) : [];
+      }
+      return comps.flatMap(c=>c.archers.map(a=>({...a,competitionId:c.id,competitionName:c.name,sourceUrl:c.sourceUrl,place:a.place||c.place})));
+    }
+    function signature(data){return JSON.stringify((data.competitions||[]).map(c=>[c.id,c.archers.map(a=>[a.name,a.score,a.position,a.progress,a.detail,a.finished])]));}
+    function getScore(a){const n=Number(a?.score); if(Number.isFinite(n)&&n>0) return n; const m=String(a?.scoreLabel||'').match(/\d+/); return m?Number(m[0]):0;}
+    function isFinished(a){return !!a?.finished || /termin|résultat publié|après\s*(60|72)/i.test(`${a?.progress||''} ${a?.detail||''}`);}
+    function extractCompetitionInfoFromMarkdown(lines){
+      const clean=lines.map(l=>String(l||'').trim()).filter(Boolean).filter(l=>!/^Title:|^URL Source:|^Markdown Content:/i.test(l)).filter(l=>!l.startsWith('![')).filter(l=>!l.startsWith('|'));
+      const name=clean[0]||'';
+      const placeLine=clean.find(l=>/\d{1,2}\s+[A-Za-z]{3}\s+\d{4}/.test(l) || /\bavenue\b|\bstade\b|\bgymnase\b|\baren[èe]e\b|\bparc\b|\bjardin\b/i.test(l))||'';
+      return {name,place:placeLine};
+    }
+
+    function parseMarkdownLive(md, url, tournament=null){
+      const lines=String(md||'').split('\n');
+      const id=(String(url).match(/\/TourData\/(\d+)\/(\d+)\/([A-Z0-9]+)\.php/i)||[])[2]||url;
+      const code=(String(url).match(/\/TourData\/(\d+)\/(\d+)\/([A-Z0-9]+)\.php/i)||[])[3]||'';
+      const info=extractCompetitionInfoFromMarkdown(lines);
+      const title=info.name || lines.find(l=>/^Title:/i.test(l))?.replace(/^Title:\s*/i,'') || `Tournoi ${id}`;
+      const scopeKeys=clubKeysFromRaw(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
+      const rows=[]; let category=code?`Page ${code}`:''; let categoryProgress='';
+      for(const raw of lines){
+        const line=raw.trim();
+        const plain=fixText(raw||'')
+          .replace(/【\d+†[^】]+】/g,' ')
+          .replace(/\u00a0/g,' ')
+          .replace(/\s+/g,' ')
+          .trim();
+        const catPlain=plain.match(/^(.+?)\s*\[(Après\s*\d+\s*fl[èe]ches)\]\s*$/i);
+        if(catPlain && /^arc\b/i.test(catPlain[1])){
+          category=catPlain[1].trim();
+          categoryProgress=catPlain[2].trim();
+          continue;
+        }
+        if(line.startsWith('|')){
+          const cells=line.split('|').map(v=>v.trim()).filter(Boolean);
+          if(cells.length===1){
+            const single=fixText(cells[0]||'');
+            const progressMatch=single.match(/\[([^\]]+)\]/);
+            categoryProgress=progressMatch ? progressMatch[1].trim() : '';
+            category=single.replace(/\s*\[[^\]]*]\s*$/,'').trim() || category;
+            continue;
+          }
+          if(cells.length>=6 && /^\d+$/.test(cells[0])){
+            const progress=categoryProgress || 'En cours';
+            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress,detail:`10+X: ${cells[cells.length-2]||'-'} · X: ${cells[cells.length-1]||'-'}`,finished:/après\s*\d+|termin/i.test(progress)};
+            if(matchesScope(a, scopeKeys)) rows.push(a);
+          }
+          continue;
+        }
+        const clean=plain.replace(/!\[[^\]]*]\([^)]*\)/g,' ').replace(/\s+/g,' ').trim();
+        const mClassic=clean.match(/^(\d+)\s+(.+?)\s+([A-Z0-9]{2,12}\s*-\s*.+?)\s+(.+)$/);
+        if(mClassic){
+          const nums=(mClassic[4].match(/\b\d{1,3}\b/g)||[]).map(Number);
+          const a={position:mClassic[1],name:mClassic[2].trim(),club:mClassic[3].trim(),score:nums.length?Math.max(...nums):0,scoreLabel:nums.length?String(Math.max(...nums)):'',category,progress:categoryProgress||'Résultat publié',detail:mClassic[4].trim(),finished:true};
+          if(matchesScope(a, scopeKeys)) rows.push(a);
+          continue;
+        }
+        const mIanseo=clean.match(/^(\d+)\s+(.+?)\s+(\d{6,7})\s*-\s*(.+)$/);
+        if(mIanseo){
+          const rest=mIanseo[4].trim();
+          const scoreTail=rest.match(/(?:\d{1,3}\s*\/\s*\d+\s+)+(\d{1,3})\s+(\d+)\s+(\d+)\s*$/);
+          if(scoreTail){
+            const clubName=rest.replace(/(?:\d{1,3}\s*\/\s*\d+\s+)+\d{1,3}\s+\d+\s+\d+\s*$/,'').trim();
+            const a={
+              position:mIanseo[1],
+              name:mIanseo[2].trim(),
+              club:`${mIanseo[3]} - ${clubName}`,
+              score:Number(scoreTail[1])||0,
+              scoreLabel:scoreTail[1],
+              category,
+              progress:categoryProgress||'Résultat publié',
+              detail:rest,
+              finished:/après\s*\d+|termin/i.test(categoryProgress||'Résultat publié')
+            };
+            if(matchesScope(a, scopeKeys)) rows.push(a);
+          }
+        }
+      }
+      return {id:String(id),name:title,place:info.place||tournament?.place||'-',sourceUrl:url,archers:dedupeArchers(rows)};
+    }
+    function parsePdfResultsMarkdown(md, tournament=null){
+      const lines=String(md||'').split('\n').map(l=>fixText(l).trim()).filter(Boolean);
+      const scopeKeys=clubKeysFromRaw(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
+      const rows=[];
+      let category='Résultats';
+      let progress='Résultat publié';
+      for(const line of lines){
+        const cat=line.match(/^Après\s+(\d+)\s+fl[èe]ches\s+(.+)$/i);
+        if(cat){
+          progress=`Après ${cat[1]} flèches`;
+          category=cat[2].replace(/\s+suite$/i,'').trim();
+          continue;
+        }
+        const m=line.match(/^(\d+)\s+\d+\-\s+\S+\s+(.+?)\s+(\d{6,7})\s+(.+?)\s+(\d{1,3})\/\s*\d+\s+(\d{1,3})\/\s*\d+\s+(\d{1,3})\s+(\d+)\s+(\d+)\s*$/);
+        if(!m) continue;
+        const a={
+          position:m[1],
+          name:m[2].trim(),
+          club:`${m[3]} - ${m[4].trim()}`,
+          score:Number(m[7])||0,
+          scoreLabel:m[7],
+          category,
+          progress,
+          detail:`Série 1: ${m[5]} · Série 2: ${m[6]} · 10+X: ${m[8]} · X: ${m[9]}`,
+          finished:true
+        };
+        if(matchesScope(a, scopeKeys)) rows.push(a);
+      }
+      return dedupeArchers(rows);
+    }
+    async function resolveResultPdfUrl(t){
+      if(t?.resultPdfUrl) return t.resultPdfUrl;
+      if(t?.url){
+        const byLive=String(t.url).replace(/\/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\.php(?:\?.*)?$/i,'/IC.pdf');
+        if(/\/IC\.pdf$/i.test(byLive)) return byLive;
+      }
+      if(t?.details){
+        try{
+          const detailsText=await fetchText(toProxy(t.details));
+          const abs=detailsText.match(/https:\/\/www\.ianseo\.net\/TourData\/\d+\/[0-9A-Za-z-]+\/IC\.pdf(?:\?[^)\s]*)?/i);
+          if(abs){t.resultPdfUrl=normalizeUrl(abs[0]); return t.resultPdfUrl;}
+          const rel=detailsText.match(/\/TourData\/\d+\/[0-9A-Za-z-]+\/IC\.pdf(?:\?[^)\s]*)?/i);
+          if(rel){t.resultPdfUrl=normalizeUrl(rel[0]); return t.resultPdfUrl;}
+        }catch(_){}
+      }
+      return '';
+    }
+    async function loadPdfResultsForTournament(t){
+      try{
+        const pdfUrl=await resolveResultPdfUrl(t);
+        if(!pdfUrl) return [];
+        const pdfText=await fetchText(toProxy(pdfUrl));
+        const rows=parsePdfResultsMarkdown(pdfText,t);
+        if(rows.length) t.resultPdfUrl=pdfUrl;
+        return rows;
+      }catch(_){
+        return [];
+      }
+    }
+    function dedupeArchers(list){
+      const map=new Map();
+      for(const a of list){const k=norm(`${a.name}|${a.club}|${a.category}`); const old=map.get(k); if(!old || getScore(a)>=getScore(old)) map.set(k,a);}
+      return [...map.values()];
+    }
+    function isScheduleLikeRow(a){
+      if(!a) return false;
+      const noScore=getScore(a)<=0;
+      const enCoursDepart=/^en\s*cours\s*\(d[ée]part/i.test(String(a.progress||'').toLowerCase());
+      const timeOnly=/^\d{1,2}[h:]\d{2}$/.test(String(a.detail||'').trim());
+      const noRank=!String(a.position||'').trim() || String(a.position||'').trim()==='-';
+      return noScore && enCoursDepart && timeOnly && noRank;
+    }
+    function cleanLiveRows(rows){
+      return (rows||[]).filter(a=>!isScheduleLikeRow(a));
+    }
+    async function loadTrackedLive(){
+      const comps=[];
+      for(const t of state.tracked){
+        if(!Array.isArray(t.urls)) t.urls=[];
+        if(t.url && !t.urls.includes(t.url)) t.urls.unshift(t.url);
+        if(t.details){
+          const foundUrls=await discoverLiveForTournament(t);
+          if(foundUrls.length){
+            for(const u of foundUrls){
+              if(!t.urls.includes(u)) t.urls.push(u);
+            }
+            if(!t.url) t.url=t.urls[0];
+          }
+        }
+        if(!t.urls.length){
+          t.liveStatus='Départs publiés, résultats pas encore ouverts';
+          continue;
+        }
+        try{
+          const sourceUrls=t.urls.filter(Boolean);
+          let mergedArchers=[];
+          let parsedName='';
+          let parsedPlace='';
+          for(const src of sourceUrls){
+            try{
+              const md=await fetchText(toProxy(src));
+              const part=parseMarkdownLive(md,src,t);
+              mergedArchers=dedupeArchers([...mergedArchers,...cleanLiveRows(part.archers)]);
+              if(!parsedName && part.name) parsedName=part.name;
+              if(!parsedPlace && part.place && part.place!=='-') parsedPlace=part.place;
+            }catch(_){}
+          }
+          const c={id:t.id,name:parsedName||t.name||'Tournoi suivi',place:parsedPlace||t.place||'-',sourceUrl:t.url||sourceUrls[0]||'',archers:mergedArchers};
+          const needsPdfBackfill=!c.archers.length || !c.archers.some(a=>a.finished || getScore(a)>0);
+          if(needsPdfBackfill){
+            const pdfRows=await loadPdfResultsForTournament(t);
+            if(pdfRows.length) c.archers=dedupeArchers([...c.archers,...pdfRows]);
+          }
+          const sched=evaluateTournamentSchedule(t);
+          if(c.archers.length){
+            t.liveStatus=c.archers.some(a=>isFinished(a)) ? 'Résultats publiés' : 'Scores live détectés';
+          }else if(sched.state==='active'){
+            t.liveStatus='Live ouvert, départ en cours';
+          }else if(sched.state==='upcoming' || sched.state==='future'){
+            t.liveStatus=sched.label ? `Départ ${sched.label} à venir` : 'Live ouvert, départs à venir';
+          }else if(sched.state==='paused'){
+            t.liveStatus='Pause entre départs';
+          }else if(sched.state==='past'){
+            t.liveStatus='Compétition terminée';
+          }else{
+            t.liveStatus='Live ouvert, aucun score détecté';
+          }
+          c.name=t.name||c.name; c.sourceUrl=t.url||sourceUrls[0]||''; c.place=c.place||t.place||'-';
+          if(c.place && c.place!=='-' && !t.place) t.place=c.place;
+          c.archers=cleanLiveRows(c.archers);
+          comps.push(c);
+        }catch(err){
+          if(/HTTP 404/.test(err.message)) t.liveStatus='Départs publiés, résultats pas encore ouverts';
+          else t.liveStatus='Live inaccessible pour le moment';
+          const fallback=[];
+          const pdfRows=await loadPdfResultsForTournament(t);
+          const merged=dedupeArchers([...fallback,...pdfRows]);
+          if(pdfRows.length) t.liveStatus='Résultats publiés';
+          comps.push({id:t.id,name:t.name||'Source erreur',place:t.place||'-',sourceUrl:t.url,archers:merged,error:err.message});
+        }
+      }
+      if(state.admin) localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
+      return {competitions:comps.filter(c=>c.archers.length || c.error)};
+    }
+
+    function computePhase(data){
+      if(state.phaseOverride!=='auto') return state.phaseOverride;
+      const a=archers(data);
+      const hasRealLive=a.some(x=>!isFinished(x) && !isScheduleLikeRow(x));
+      if(hasRealLive) return 'during';
+      const schedules=state.tracked.map(evaluateTournamentSchedule);
+      if(schedules.some(s=>s.state==='active')) return 'during';
+      if(schedules.some(s=>s.state==='future' || s.state==='upcoming' || s.state==='no_time' || s.state==='no_entries')) return 'before';
+      if(a.length) return 'after';
+      if(schedules.some(s=>s.state==='paused' || s.state==='past')) return 'after';
+      if(state.tracked.length) return 'before';
+      return 'before';
+    }
+    function setPhase(phase){
+      document.body.dataset.phase=phase;
+      $('beforeSection').classList.toggle('hidden', phase!=='before');
+      $('liveSection').classList.toggle('hidden', phase!=='during');
+      $('volleySection').classList.toggle('hidden', phase!=='during');
+      $('afterSection').classList.toggle('hidden', phase!=='after');
+      const names={before:'Avant compétition',during:'Pendant compétition',after:'Après compétition'};
+      $('statPhase').textContent=names[phase].replace(' compétition','');
+      $('phaseBadge').textContent=names[phase];
+      $('phaseBadge').className='badge '+(phase==='during'?'green':phase==='after'?'amber':'green');
+      $('phaseHelp').textContent=phase==='before'?'Participants et sources suivies.':phase==='during'?'Live en cours, analyse des volées active.':'Compétition terminée, résultats conservés.';
+    }
+
+    function syncVolley(data){
+      for(const a of archers(data)){
+        const key=norm(`${a.name}|${a.competitionId}|${a.category}`);
+        const score=getScore(a);
+        if(!score) continue;
+        if(!state.volley[key]) state.volley[key]={name:`${a.name} · ${a.competitionName}`,last:null,history:[],config:getVolleyConfig(a)};
+        const s=state.volley[key];
+        s.name=`${a.name} · ${a.competitionName}`; s.config=getVolleyConfig(a);
+        if(s.last===null){s.last=score; continue;}
+        const delta=score-s.last; s.last=score;
+        if(delta<=0) continue;
+        const type=delta<=s.config.maxVolleyScore?'volley':'grouped';
+        const previous=[...s.history].reverse().find(x=>x.type==='volley');
+        const mood=type==='volley'&&previous ? (delta>previous.score?'good':delta<previous.score?'bad':'neutral') : '';
+        s.history.push({score:delta,type,mood,ts:new Date().toISOString()});
+        if(s.history.length>40) s.history=s.history.slice(-40);
+      }
+    }
+    function getVolleyConfig(a){
+      const txt=norm(`${a.category||''} ${a.progress||''}`);
+      if(txt.includes('indoor')||txt.includes('salle')||txt.includes('18m')) return {maxVolleyScore:30,volleysPerSeries:10,label:'Salle: 2 séries de 10 volées de 3 flèches'};
+      return {maxVolleyScore:60,volleysPerSeries:6,label:'TAE: 2 séries de 6 volées de 6 flèches'};
+    }
+    function moodHtml(type){return type?`<span class="mood ${type}"><i></i></span>`:'<span class="muted">-</span>';}
+    function renderVolley(){
+      const keys=Object.keys(state.volley);
+      $('volleySelect').innerHTML=keys.map(k=>`<option value="${escapeHtml(k)}">${escapeHtml(state.volley[k].name)}</option>`).join('');
+      if(!keys.length){$('lastVolleyScore').textContent='-'; $('lastVolleyMood').innerHTML=''; $('volleyRows').innerHTML='<tr><td colspan="3">Aucune volée détectée.</td></tr>'; drawChart([]); return;}
+      if(!state.selectedVolley || !state.volley[state.selectedVolley]) state.selectedVolley=keys[0];
+      $('volleySelect').value=state.selectedVolley;
+      const s=state.volley[state.selectedVolley], h=s.history||[], last=[...h].reverse().find(x=>x.type==='volley') || h[h.length-1];
+      $('lastVolleyScore').textContent=last?last.score:'-';
+      $('lastVolleyMood').innerHTML=last?moodHtml(last.mood):'';
+      $('lastVolleyText').textContent=last ? (last.type==='grouped'?'Mise à jour groupée, pas une volée fiable.':s.config.label) : 'Pas encore de volée détectée.';
+      let n=0;
+      $('volleyRows').innerHTML=h.length?h.map(e=>{if(e.type==='volley') n++; const rep=e.type==='volley'?`S${Math.ceil(n/s.config.volleysPerSeries)} · V${((n-1)%s.config.volleysPerSeries)+1}`:'Mise à jour groupée'; return `<tr><td>${e.type==='volley'?n:'Δ'}</td><td>${escapeHtml(rep)}</td><td>${e.score}</td></tr>`;}).join(''):'<tr><td colspan="3">Aucune volée détectée.</td></tr>';
+      drawChart(h.filter(x=>x.type==='volley').map((x,i)=>({x:i+1,y:x.score})));
+    }
+    function drawChart(points){
+      const svg=$('volleyChart');
+      if(!points.length){svg.innerHTML='<text x="18" y="36" fill="#94a3b8" font-size="14">Pas assez de volées pour tracer la courbe.</text>'; return;}
+      const w=700,h=180,p=24,maxX=Math.max(1,...points.map(a=>a.x)),maxY=Math.max(1,...points.map(a=>a.y)),minY=Math.min(0,...points.map(a=>a.y));
+      const xp=x=>p+(x-1)/Math.max(1,maxX-1)*(w-p*2), yp=y=>p+(1-(y-minY)/Math.max(1,maxY-minY))*(h-p*2);
+      svg.innerHTML=`<line x1="${p}" y1="${h-p}" x2="${w-p}" y2="${h-p}" stroke="#475569"/><line x1="${p}" y1="${p}" x2="${p}" y2="${h-p}" stroke="#475569"/><polyline fill="none" stroke="#22d3ee" stroke-width="3" points="${points.map(a=>`${xp(a.x)},${yp(a.y)}`).join(' ')}"/>${points.map(a=>`<circle cx="${xp(a.x)}" cy="${yp(a.y)}" r="4" fill="#22d3ee"/>`).join('')}`;
+    }
+
+    function render(){
+      const data=state.data;
+      const all=archers(data), live=all.filter(a=>!isFinished(a)), done=all.filter(isFinished);
+      $('statCompetitions').textContent=(data.competitions||[]).length || state.tracked.length;
+      $('statArchers').textContent=all.length; $('statFinished').textContent=done.length; $('statLive').textContent=live.length;
+      renderTabs(data); renderBefore(); renderRows('liveRows',live,true); renderRows('finishedRows',done,false); renderVolley();
+      const phase=computePhase(data); setPhase(phase);
+      if(phase==='before' && done.length){
+        $('afterSection').classList.remove('hidden');
+        $('afterTitle').textContent='Résultats disponibles (départ précédent)';
+      }else{
+        $('afterTitle').textContent='Résultats de compétition';
+      }
+      const sig=signature(data); if(state.lastSignature && sig!==state.lastSignature) $('lastChange').textContent=new Date().toLocaleString('fr-FR'); state.lastSignature=sig;
+    }
+    function renderTabs(data){
+      const comps=data.competitions||[];
+      $('competitionTabs').innerHTML=[`<button class="btn small ${state.selectedCompetition==='all'?'green':'secondary'}" data-comp="all">Tous (${archers({...data,competitions:comps}).length})</button>`].concat(comps.map(c=>`<button class="btn small ${state.selectedCompetition===c.id?'green':'secondary'}" data-comp="${escapeHtml(c.id)}">${escapeHtml(c.name)} (${(c.archers||[]).length})</button>`)).join('');
+      document.querySelectorAll('[data-comp]').forEach(b=>b.onclick=()=>{state.selectedCompetition=b.dataset.comp; render();});
+    }
+    function renderRows(id, rows, live){
+      const col=live?8:7;
+      if(!rows.length){$(id).innerHTML=`<tr><td colspan="${col}">${live?'Aucun archer en cours.':'Aucun résultat.'}</td></tr>`; return;}
+      $(id).innerHTML=rows.map(a=>{const w=isWatched(a); const badge=w?' <span class="badge green">Suivi</span>':''; return live
+        ? `<tr class="${w?'watch-row':'live-row'}"><td>${escapeHtml(a.place||'-')}</td><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.progress||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`
+        : `<tr class="${w?'watch-row':''}"><td>${escapeHtml(a.place||'-')}</td><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`;}).join('');
+    }
+    function renderBefore(){
+      $('beforeMeta').textContent=beforeSummary();
+      $('upcomingCards').innerHTML=state.tracked.length?state.tracked.map(t=>{
+        const entries=entriesForScope(t), clubs=clubsForEntries(entries);
+        const groups=buildDepartureGroups(entries);
+        const resultIdx=buildResultIndexForTournament(t.id);
+        const expanded=state.expandedBefore.has(t.id);
+        const visible=expanded?entries:entries.slice(0,14);
+        const departChips=groups.map(g=>{
+          const now=new Date();
+          const current=now.getHours()*60+now.getMinutes();
+          const next=groups.find(x=>(x.start??9999)>(g.start??-1));
+          const active=g.start!==null && current>=g.start-20 && current<=g.start+DEPART_ACTIVE_WINDOW_MIN && (!next || current<next.start-30);
+          const done=g.start!==null && !active && current>g.start+DEPART_ACTIVE_WINDOW_MIN;
+          const cls=active?'green':done?'amber':'';
+          const status=active?'en cours':done?'terminé':'à venir';
+          return `<span class="chip ${cls?`badge ${cls}`:''}">Départ ${escapeHtml(g.dep)} · ${escapeHtml(formatMinuteLabel(g.start))} · ${status}</span>`;
+        }).join('');
+        return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${escapeHtml(liveLabel(t))}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="chips" style="margin-top:6px">${departChips||'<span class="chip">Départs non publiés</span>'}</div><div class="mini-list"><div class="mini-row muted"><strong>Archer</strong><span>Départ</span><span>Horaire</span><span>Cible / catégorie</span></div>${visible.map(e=>{const st=entryStatus(e,groups,resultIdx); const scoreTxt=st.score?` · ${st.score}`:''; return `<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span data-label="Départ">${escapeHtml(entryDepart(e))}<br><small>${escapeHtml(e.club||'')}</small></span><span data-label="Horaire">${escapeHtml(entryHoraire(e))}<br><small>${escapeHtml(st.label+scoreTxt)}</small></span><span data-label="Cible">${escapeHtml(e.target||'-')}<br><small>${escapeHtml(entryCategorie(e))}</small></span></div>`;}).join('')}${entries.length>14?`<button class="btn small secondary" data-toggle-before="${escapeHtml(t.id)}">${expanded?'Réduire la liste':`Voir tous les participants (${entries.length})`}</button>`:''}${!entries.length?'<div class="muted">Aucun participant à afficher pour les clubs sélectionnés. Vérifie le club suivi sur ce tournoi.</div>':''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:`<span class="badge amber">${escapeHtml(liveLabel(t))}</span>`}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
+      }).join(''):'';
+      document.querySelectorAll('[data-toggle-before]').forEach(b=>b.onclick=()=>{const id=b.dataset.toggleBefore; state.expandedBefore.has(id)?state.expandedBefore.delete(id):state.expandedBefore.add(id); renderBefore();});
+      document.querySelectorAll('[data-remove-track]').forEach(b=>b.onclick=()=>{state.archived.unshift(...state.tracked.filter(t=>t.id===b.dataset.removeTrack)); state.tracked=state.tracked.filter(t=>t.id!==b.dataset.removeTrack); saveLocal(); refresh();});
+    }
+    function renderAdmin(){
+      if(!state.admin) return;
+      $('clubInput').value=state.clubRaw; $('countryInput').value=state.countryRaw; $('phaseSelect').value=state.phaseOverride;
+      $('togglePublicControlBtn').textContent='Contrôle public: '+(state.publicControlled?'ON':'OFF');
+      $('togglePublicControlBtn').className='btn '+(state.publicControlled?'green':'secondary');
+      $('clubDatalist').innerHTML=state.clubCatalog.map(c=>`<option value="${escapeHtml(c.label)}">${escapeHtml(c.count+' inscrit(s) dans le catalogue')}</option>`).join('');
+      $('quickClubs').innerHTML=splitList(state.clubRaw).map(c=>`<span class="chip">${escapeHtml(c)} <button class="btn small secondary" data-remove-global-club="${escapeHtml(c)}">x</button></span>`).join('') + QUICK_CLUBS.map(c=>`<button class="btn small secondary" data-quick-club="${escapeHtml(c)}">+ ${escapeHtml(c)}</button>`).join('');
+      document.querySelectorAll('[data-quick-club]').forEach(b=>b.onclick=()=>{$('clubInput').value=addClubToRaw($('clubInput').value,b.dataset.quickClub); applyClub();});
+      document.querySelectorAll('[data-remove-global-club]').forEach(b=>b.onclick=()=>{$('clubInput').value=removeClubFromRaw(state.clubRaw,b.dataset.removeGlobalClub); applyClub();});
+      $('watchList').innerHTML=state.watched.length?state.watched.map(w=>`<span class="chip">${escapeHtml(w)} <button class="btn small secondary" data-remove-watch="${escapeHtml(w)}">x</button></span>`).join(''):'<span class="muted">Aucun archer ajouté.</span>';
+      document.querySelectorAll('[data-remove-watch]').forEach(b=>b.onclick=()=>{state.watched=state.watched.filter(w=>norm(w)!==norm(b.dataset.removeWatch)); saveLocal(); refresh();});
+      $('trackedList').innerHTML=state.tracked.length?state.tracked.map(t=>{const entries=entriesForScope(t), clubs=clubsForEntries(entries); return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.url||t.details||'Source en attente')}</div><div class="muted">Clubs suivis sur ce tournoi (${entries.length} participant(s))</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')}</div><div class="row" style="margin-top:8px"><input value="${escapeHtml(t.scopeRaw||state.clubRaw)}" data-track-scope="${escapeHtml(t.id)}" placeholder="Plusieurs clubs séparés par virgule"><button class="btn small green" data-save-track-scope="${escapeHtml(t.id)}">Appliquer</button></div><div class="row" style="margin-top:8px"><input list="clubDatalist" data-track-club-search="${escapeHtml(t.id)}" placeholder="Ajouter un club à ce tournoi"><button class="btn small secondary" data-add-track-club="${escapeHtml(t.id)}">Ajouter club</button><button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button></div></article>`;}).join(''):'<div class="muted">Aucun tournoi suivi.</div>';
+      document.querySelectorAll('[data-save-track-scope]').forEach(b=>b.onclick=()=>{const id=b.dataset.saveTrackScope; const t=state.tracked.find(x=>x.id===id); const input=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&input){t.scopeRaw=input.value.trim()||state.clubRaw; saveLocal(); refresh(); setLog('Club appliqué à ce tournoi.');}});
+      document.querySelectorAll('[data-add-track-club]').forEach(b=>b.onclick=()=>{const id=b.dataset.addTrackClub; const t=state.tracked.find(x=>x.id===id); const search=[...document.querySelectorAll('[data-track-club-search]')].find(x=>x.dataset.trackClubSearch===id); const scope=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&search&&scope&&search.value.trim()){scope.value=addClubToRaw(scope.value,search.value.trim()); t.scopeRaw=scope.value; search.value=''; saveLocal(); refresh(); setLog('Club ajouté à ce tournoi.');}});
+      $('adminStateInfo').textContent=`Bridge: ${state.adminBridge?'configuré':'non configuré'} · Contrôle public: ${state.publicControlled?'ON':'OFF'} · Clubs par défaut: ${state.clubRaw||'aucun'} · Archers: ${state.watched.length} · Sources: ${state.tracked.length}`;
+    }
+    function applyClub(){
+      state.clubRaw=$('clubInput').value.trim();
+      state.countryRaw=$('countryInput').value.trim()||'FRA';
+      state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
+      saveLocal(); refresh(); syncPublicStateIfEnabled(); setLog('Club appliqué.');
+    }
+
+    function addSearchedClub(){
+      const v=$('clubSearchInput').value.trim();
+      if(!v) return;
+      $('clubInput').value=addClubToRaw($('clubInput').value||state.clubRaw,v);
+      $('clubSearchInput').value='';
+      applyClub();
+      syncPublicStateIfEnabled();
     }
     async function refresh(){
       try{
-        setStatus('','Actualisation en cours…');
-        const res=await fetch(API_URL,{cache:'no-store'});
-        const data=await res.json();
-        if(!res.ok) throw new Error(data.error || ('HTTP '+res.status));
-        render(data);
+        setStatus('', 'Actualisation en cours...');
+        if(!state.admin) await loadSharedState();
+        if(state.admin) await enrichTrackedFromEna();
+        let raw;
+        if(state.tracked.length){
+          raw=await loadTrackedLive();
+        }
+        else raw=normalizeData(await fetchJson(API_URL));
+        state.raw=raw; state.data=state.tracked.length?raw:filterData(raw); syncVolley(state.data); render();
+        $('lastCheck').textContent=new Date().toLocaleString('fr-FR');
+        setStatus('ok','Mise à jour réussie');
       }catch(err){
-        if(lastGoodData){ setStatus('err','Lecture instable, dernier état conservé'); renderSummary(lastGoodData); renderRows('tbodyFinished', lastGoodData.archers.filter(a=>a.finished), false); renderRows('tbodyLive', lastGoodData.archers.filter(a=>!a.finished), true);}
-        else { setStatus('err','Échec : '+err.message); }
-      }finally{ nextRefresh=Date.now()+REFRESH_MS; }
+        setStatus('err','Erreur: '+err.message);
+      }finally{state.nextRefresh=Date.now()+REFRESH_MS;}
     }
-    function updateCountdown(){el('countdown').textContent=Math.max(0,Math.ceil((nextRefresh-Date.now())/1000))+' s';}
-    el('refreshBtn').addEventListener('click',refresh); refresh(); setInterval(refresh,REFRESH_MS); setInterval(updateCountdown,500);
+    async function findNext(){
+      try{
+        setLog('Recherche dans le catalogue local...');
+        const cat=await fetchJson(CATALOG_URL);
+        const keys=state.clubKeys.map(norm), countries=splitList(state.countryRaw).map(x=>x.toUpperCase());
+        if(!keys.length){setLog('Ajoute au moins un club dans Configuration avant de chercher les compétitions.'); return;}
+        const today=new Date(); today.setHours(0,0,0,0);
+        const matches=(cat.tournaments||[]).filter(t=>!t.country||!countries.length||countries.includes(String(t.country).toUpperCase())).filter(t=>!t.end_date||new Date(t.end_date+'T23:59:59')>=today).map(t=>{
+          const entries=(t.entries||[]).filter(e=>{const hay=norm(`${e.club||''} ${e.name||''} ${e.category||''}`); return !keys.length||keys.some(k=>hay.includes(k));});
+          return entries.length?{...t,club_entries:entries}:null;
+        }).filter(Boolean);
+        state.foundMatches=matches; state.selectedFound=matches[0]?.to_id||'';
+        $('foundSelect').innerHTML=matches.length?matches.map(m=>`<option value="${escapeHtml(m.to_id)}">${escapeHtml(m.name)} · ${m.date_text||''} · ${m.club_entries.length} inscrit(s)</option>`).join(''):'<option>Aucune compétition trouvée</option>';
+        setLog(matches.length?`${matches.length} compétition(s) trouvée(s).`:'Aucune compétition trouvée pour ce club dans le catalogue.');
+      }catch(err){setLog('Recherche impossible: '+escapeHtml(err.message));}
+    }
+    function followFound(){
+      const m=state.foundMatches.find(x=>String(x.to_id)===String($('foundSelect').value))||state.foundMatches[0];
+      if(!m){setLog('Aucune compétition sélectionnée.'); return;}
+      const url=normalizeLiveUrl(m.ic_url||'');
+      state.tracked.push(cleanTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ena_url:m.ena_url,ic_url:url,club_entries:m.entries||m.club_entries,scopeRaw:state.clubRaw}));
+      hydrateTrackedEntries(); saveLocal(); setLog(url?'Compétition ajoutée au suivi live.':'Compétition ajoutée en attente du live IANSEO.'); refresh(); syncPublicStateIfEnabled();
+    }
+    async function addManual(){
+      try{
+        setLog('Analyse de la source IANSEO...');
+        const res=await resolveSource($('manualUrlInput').value);
+        const stamp=Date.now();
+        if(res.urls.length){
+          res.urls.forEach((url,i)=>state.tracked.push(cleanTournament({id:`manual-${stamp}-${i}`,name:res.name||`Source manuelle ${i+1}`,details_url:res.details,ena_url:res.ena,ic_url:url,scopeRaw:state.clubRaw})));
+        }else{
+          state.tracked.push(cleanTournament({id:`pending-${stamp}`,name:res.name||'Tournoi en attente live',details_url:res.details,ena_url:res.ena,ic_url:'',scopeRaw:state.clubRaw}));
+        }
+        hydrateTrackedEntries(); $('manualUrlInput').value=''; saveLocal();
+        await refresh();
+        await syncPublicStateIfEnabled();
+        const count=archers(state.data).length;
+        setLog(res.urls.length
+          ? `${res.urls.length} source(s) ajoutée(s). ${count} archer(s) affiché(s). ${count?'':'Si rien ne sort, ajoute le nom exact de l archer ou corrige le club suivi.'}`
+          : "Tournoi ajouté en attente: la fiche est suivie, et l'app cherchera le live à chaque actualisation.");
+      }catch(err){setLog('Ajout impossible: '+escapeHtml(err.message));}
+    }
+
+    function bind(){
+      $('refreshBtn').onclick=refresh;
+      $('volleySelect').onchange=e=>{state.selectedVolley=e.target.value; renderVolley();};
+      $('applyClubBtn').onclick=applyClub;
+      $('addClubSearchBtn').onclick=addSearchedClub;
+      $('addWatchBtn').onclick=()=>{state.watched=uniqueByNorm([...state.watched,...splitList($('watchInput').value)]); $('watchInput').value=''; saveLocal(); refresh(); syncPublicStateIfEnabled(); setLog('Archer(s) ajouté(s) au suivi.');};
+      $('clearWatchBtn').onclick=()=>{state.watched=[]; saveLocal(); refresh(); syncPublicStateIfEnabled();};
+      $('findNextBtn').onclick=findNext;
+      $('followFoundBtn').onclick=followFound;
+      $('addManualBtn').onclick=addManual;
+      $('clearTrackedBtn').onclick=()=>{state.archived.unshift(...state.tracked); state.tracked=[]; saveLocal(); refresh(); syncPublicStateIfEnabled();};
+      $('clearAllBtn').onclick=()=>{state.data={competitions:[]}; state.raw={competitions:[]}; state.tracked=[]; saveLocal(); render(); syncPublicStateIfEnabled(); setLog('Vue locale nettoyée.');};
+      $('applyPhaseBtn').onclick=()=>{state.phaseOverride=$('phaseSelect').value; saveLocal(); render(); syncPublicStateIfEnabled();};
+      $('togglePublicControlBtn').onclick=()=>{state.publicControlled=!state.publicControlled; saveLocal(); renderAdmin(); syncPublicStateIfEnabled(); setLog('Contrôle public: '+(state.publicControlled?'ON':'OFF'));};
+      $('publishStateBtn').onclick=()=>publishState().catch(err=>setLog('Publication impossible: '+escapeHtml(err.message)));
+      $('competitionModeBtn').onclick=()=>{state.autoRefresh=!state.autoRefresh; $('competitionModeBtn').textContent='Mode compétition: '+(state.autoRefresh?'ON':'OFF');};
+      document.querySelectorAll('[data-admin-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-admin-tab]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); ['setup','sources','pilot'].forEach(t=>$('admin'+t[0].toUpperCase()+t.slice(1)).classList.toggle('hidden', t!==b.dataset.adminTab));});
+      ['clubInput','countryInput','watchInput','manualUrlInput','clubSearchInput'].forEach(id=>$(id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); if(id==='manualUrlInput') addManual(); else if(id==='watchInput') $('addWatchBtn').click(); else if(id==='clubSearchInput') addSearchedClub(); else applyClub();}}));
+      setInterval(()=>{$('countdown').textContent=state.autoRefresh?Math.max(0,Math.ceil((state.nextRefresh-Date.now())/1000))+' s':'arrêté';},500);
+      setInterval(()=>{if(state.autoRefresh) refresh();},REFRESH_MS);
+    }
+
+    async function init(){
+      loadLocal(); await loadAdminConfig(); await resolveAdmin(); if(state.admin) await loadClubCatalog(); await loadSharedState(); hydrateTrackedEntries();
+      state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
+      if(state.admin){$('adminPanel').classList.remove('hidden'); $('adminToolbar').classList.remove('hidden');}
+      bind(); renderAdmin(); await refresh();
+    }
+    init();
   </script>
 </body>
 </html>
