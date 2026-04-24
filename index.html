@@ -1092,16 +1092,20 @@
           let mergedArchers=[];
           let parsedName='';
           let parsedPlace='';
+          let firstValidSource='';
           for(const src of sourceUrls){
             try{
               const md=await fetchText(toProxy(src));
+              if(/file not found\./i.test(String(md||''))) continue;
+              if(!firstValidSource) firstValidSource=src;
               const part=parseMarkdownLive(md,src,t);
               mergedArchers=dedupeArchers([...mergedArchers,...cleanLiveRows(part.archers)]);
               if(!parsedName && part.name) parsedName=part.name;
               if(!parsedPlace && part.place && part.place!=='-') parsedPlace=part.place;
             }catch(_){}
           }
-          const c={id:t.id,name:parsedName||t.name||'Tournoi suivi',place:parsedPlace||t.place||'-',sourceUrl:t.url||sourceUrls[0]||'',archers:mergedArchers};
+          if(firstValidSource && t.url!==firstValidSource) t.url=firstValidSource;
+          const c={id:t.id,name:parsedName||t.name||'Tournoi suivi',place:parsedPlace||t.place||'-',sourceUrl:firstValidSource||t.url||sourceUrls[0]||'',archers:mergedArchers};
           const needsPdfBackfill=!c.archers.length || !c.archers.some(a=>a.finished || getScore(a)>0);
           if(needsPdfBackfill){
             const pdfRows=await loadPdfResultsForTournament(t);
