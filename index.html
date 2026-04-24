@@ -153,8 +153,8 @@
         <h2>Archers en concours</h2>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
-            <tbody id="liveRows"><tr><td colspan="8">Aucun archer en cours.</td></tr></tbody>
+            <thead><tr><th>Archer</th><th>Club</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
+            <tbody id="liveRows"><tr><td colspan="7">Aucun archer en cours.</td></tr></tbody>
           </table>
         </div>
       </section>
@@ -163,8 +163,8 @@
         <h2 id="afterTitle">Résultats de compétition</h2>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>Catégorie</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
-            <tbody id="finishedRows"><tr><td colspan="7">Aucun résultat.</td></tr></tbody>
+            <thead><tr><th>Archer</th><th>Club</th><th>Catégorie</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
+            <tbody id="finishedRows"><tr><td colspan="6">Aucun résultat.</td></tr></tbody>
           </table>
         </div>
       </section>
@@ -915,6 +915,33 @@
     function rawArchersCount(data){
       return (data?.competitions||[]).reduce((n,c)=>n+((c?.archers||[]).length),0);
     }
+    function archerKey(a){
+      return norm(`${a?.name||''}|${a?.club||''}|${a?.category||''}`);
+    }
+    function stabilizeWithLastGood(current, previous){
+      if(!current?.competitions?.length || !previous?.competitions?.length) return current;
+      const previousByComp=new Map((previous.competitions||[]).map(c=>[String(c.id),c]));
+      const competitions=(current.competitions||[]).map(c=>{
+        const prev=previousByComp.get(String(c.id));
+        if(!prev) return c;
+        const map=new Map();
+        for(const a of c.archers||[]){ map.set(archerKey(a), {...a}); }
+        for(const old of prev.archers||[]){
+          const key=archerKey(old);
+          if(!key) continue;
+          const cur=map.get(key);
+          if(!cur){
+            if(getScore(old)>0) map.set(key,{...old,detail:old.detail||'Dernier état conservé'});
+            continue;
+          }
+          if(getScore(cur)<=0 && getScore(old)>0){
+            map.set(key,{...cur,score:getScore(old),scoreLabel:String(getScore(old)),detail:cur.detail||old.detail||''});
+          }
+        }
+        return {...c,archers:[...map.values()]};
+      });
+      return {competitions};
+    }
     function archers(data){
       const comps=(data?.competitions||[]);
       if(state.selectedCompetition!=='all'){
@@ -1344,11 +1371,11 @@
       document.querySelectorAll('[data-comp]').forEach(b=>b.onclick=()=>{state.selectedCompetition=b.dataset.comp; render();});
     }
     function renderRows(id, rows, live){
-      const col=live?8:7;
+      const col=live?7:6;
       if(!rows.length){$(id).innerHTML=`<tr><td colspan="${col}">${live?'Aucun archer en cours.':'Aucun résultat.'}</td></tr>`; return;}
       $(id).innerHTML=rows.map(a=>{const w=isWatched(a); const badge=w?' <span class="badge green">Suivi</span>':''; return live
-        ? `<tr class="${w?'watch-row':'live-row'}"><td>${escapeHtml(a.place||'-')}</td><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.progress||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`
-        : `<tr class="${w?'watch-row':''}"><td>${escapeHtml(a.place||'-')}</td><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`;}).join('');
+        ? `<tr class="${w?'watch-row':'live-row'}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.progress||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`
+        : `<tr class="${w?'watch-row':''}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`;}).join('');
     }
     function renderBefore(){
       $('beforeMeta').textContent=beforeSummary();
@@ -1421,7 +1448,10 @@
           }
         }
         else raw=normalizeData(await fetchJson(API_URL));
-        state.raw=raw; state.data=state.tracked.length?raw:filterData(raw); syncVolley(state.data);
+        state.raw=raw;
+        state.data=state.tracked.length?raw:filterData(raw);
+        state.data=stabilizeWithLastGood(state.data,state.lastGoodData);
+        syncVolley(state.data);
         const changeInfo=updateChangeBadge(state.data);
         state.lastGoodData=JSON.parse(JSON.stringify(state.data));
         render();
