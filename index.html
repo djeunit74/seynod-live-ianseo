@@ -160,7 +160,7 @@
       </section>
 
       <section class="panel full hidden" id="afterSection">
-        <h2>Résultats de compétition</h2>
+        <h2 id="afterTitle">Résultats de compétition</h2>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>Catégorie</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
@@ -270,6 +270,7 @@
                 <option value="after">Forcer après compétition</option>
               </select>
               <button class="btn" id="applyPhaseBtn">Appliquer phase</button>
+              <button class="btn secondary" id="togglePublicControlBtn">Contrôle public: OFF</button>
               <button class="btn green" id="publishStateBtn">Publier état partagé</button>
             </div>
             <div class="muted" id="adminStateInfo" style="margin-top:10px"></div>
@@ -431,7 +432,7 @@
         phaseOverrideMode:state.phaseOverride,
         publicControlledByAdmin:state.publicControlled,
         watchedArchers:state.watched,
-        trackedTournaments:state.tracked.map(t=>({id:t.id,name:t.name,date_text:t.date,details_url:t.details,url:t.url,ic_url:t.url,ena_url:t.ena,club_entries:t.entries||[],scopeRaw:t.scopeRaw||state.clubRaw,enaLoaded:!!t.enaLoaded,liveStatus:t.liveStatus||'',place:t.place||''})),
+        trackedTournaments:state.tracked.map(t=>({id:t.id,name:t.name,date_text:t.date,details_url:t.details,url:t.url,urls:t.urls||[],ic_url:t.url,ena_url:t.ena,club_entries:t.entries||[],scopeRaw:t.scopeRaw||state.clubRaw,enaLoaded:!!t.enaLoaded,liveStatus:t.liveStatus||'',place:t.place||''})),
         trackedIcUrls:state.tracked.map(t=>t.url)
       };
     }
@@ -443,15 +444,22 @@
       setLog('État partagé publié. La vue publique va se synchroniser.');
       return true;
     }
+    async function syncPublicStateIfEnabled(){
+      if(!state.admin || !state.publicControlled) return;
+      try{await publishState();}catch(err){setLog('Publication automatique impossible: '+escapeHtml(err.message));}
+    }
 
     function cleanTournament(raw){
       const url=normalizeLiveUrl(raw.url||raw.ic_url||raw.icUrl||'');
+      const urls=Array.isArray(raw.urls) ? raw.urls.map(normalizeLiveUrl).filter(Boolean) : [];
+      if(url && !urls.includes(url)) urls.unshift(url);
       return {
         id:String(raw.id||raw.to_id||url||Date.now()),
         name:String(raw.name||'Tournoi suivi'),
         date:String(raw.date_text||raw.date||''),
         details:String(raw.details_url||raw.details||''),
         ena:String(raw.ena_url||raw.ena||''),
+        urls,
         url,
         scopeRaw:String(raw.scopeRaw||raw.scope_raw||raw.clubRaw||raw.club_raw||state.clubRaw||''),
         enaLoaded:!!raw.enaLoaded,
@@ -483,6 +491,11 @@
       return isIanseoLivePage(v) ? v : '';
     }
     function detailsId(url){const m=String(url||'').match(/Details\.php\?toId=([0-9A-Za-z-]+)/i); return m?m[1]:'';}
+    function tourDataId(url){
+      const m=String(url||'').match(/\/TourData\/\d+\/([0-9A-Za-z-]+)\//i);
+      return m ? m[1] : '';
+    }
+    function isEnaUrl(url){return /\/ENA\.php(?:\?|$)/i.test(String(url||''));}
     function detailsFromLive(url){
       const m=String(url||'').match(/\/TourData\/\d+\/([0-9A-Za-z-]+)\//i);
       return m ? `https://www.ianseo.net/Details.php?toId=${m[1]}` : String(url||'').replace(/\/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\.php.*$/i,'/Details.php');
@@ -508,14 +521,17 @@
       const url=normalizeUrl(raw);
       const live=normalizeLiveUrl(url);
       if(live) return {urls:[live], details:detailsFromLive(live)};
-      const id=detailsId(url);
-      if(!id) throw new Error('Colle une fiche Details.php?toId=... ou une page live IANSEO .php.');
-      const txt=await fetchText(toProxy(url));
+      const fromTourData=tourDataId(url);
+      const id=detailsId(url) || fromTourData;
+      if(!id) throw new Error('URL invalide. Attendu: Details.php?toId=..., ENA.php ou IC.php IANSEO.');
+      const detailsUrl=`https://www.ianseo.net/Details.php?toId=${id}`;
+      const enaUrl=isEnaUrl(url) ? url : '';
+      const txt=await fetchText(toProxy(detailsUrl));
       const urls=extractLiveUrls(txt,id);
       return {
         urls,
-        details:`https://www.ianseo.net/Details.php?toId=${id}`,
-        ena:extractEnaUrl(txt,id),
+        details:detailsUrl,
+        ena:enaUrl || extractEnaUrl(txt,id),
         name:extractDetailsName(txt,id),
         pending:!urls.length
       };
@@ -547,24 +563,12 @@
       const competitions=[];
       for(const t of state.tracked){
         if(!canUseLiveFallback(t)) continue;
-        const entries=entriesForScope(t);
-        if(!entries.length) continue;
-        const archers=entries.map(e=>({
-          name:e.name||'',
-          club:e.club||'',
-          category:entryCategorie(e),
-          progress:`En cours (${entryDepart(e)})`,
-          position:'-',
-          score:0,
-          scoreLabel:'',
-          detail:entryHoraire(e),
-          finished:false,
-          place:'-'
-        }));
+        const archers=buildFallbackArchersFromEntries(t);
+        if(!archers.length) continue;
         competitions.push({
           id:String(t.id),
           name:t.name||'Tournoi suivi',
-          place:'-',
+          place:t.place||'-',
           sourceUrl:t.url||'',
           archers
         });
@@ -578,7 +582,8 @@
     }
     function matchesScope(a, scopeKeys=state.clubKeys){
       const hay=norm(`${a?.club||''} ${a?.name||''} ${a?.detail||''}`);
-      const keys=(scopeKeys||[]).map(norm).filter(Boolean);
+      const sourceKeys=Array.isArray(scopeKeys) ? scopeKeys : splitList(scopeKeys);
+      const keys=(sourceKeys||[]).map(norm).filter(Boolean);
       const clubMatch=!keys.length || keys.some(k=>hay.includes(k));
       return clubMatch || isWatched(a);
     }
@@ -663,7 +668,12 @@
       const raw=fixText(e?.depart||e?.departure||e?.start||'').trim();
       if(!raw) return '-';
       const m=raw.match(/D[ée]part\s*([0-9A-Za-z]+)/i);
-      return m ? `Départ ${m[1]}` : raw.replace(/\s*[-–]\s*\d{1,2}[h:]\d{2}.*/,'');
+      if(m){
+        const code=String(m[1]||'').toUpperCase();
+        if(code==='NA') return '-';
+        return `Départ ${code}`;
+      }
+      return raw.replace(/\s*[-–]\s*\d{1,2}[h:]\d{2}.*/,'');
     }
     function entryHoraire(e){
       const direct=fixText(e?.horaire||e?.time||e?.start_time||e?.schedule||e?.hour||'').trim();
@@ -678,7 +688,9 @@
     function entryDepartCode(e){
       const raw=fixText(e?.depart||e?.departure||e?.start||'').trim();
       const m=raw.match(/D[ée]part\s*([0-9A-Za-z]+)/i);
-      return m ? String(m[1]).toUpperCase() : '';
+      if(!m) return '';
+      const code=String(m[1]||'').toUpperCase();
+      return code==='NA' ? '' : code;
     }
     function entryHoraireMinutes(e){
       const raw=entryHoraire(e);
@@ -688,39 +700,98 @@
       if(!Number.isFinite(hh) || !Number.isFinite(mm)) return null;
       return hh*60+mm;
     }
-    function selectRelevantDeparture(entries){
+    function parseMonthIndex(rawMonth){
+      const monthMap={jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11,janv:0,fev:1,fevr:1,mars:2,avr:3,mai:4,juin:5,juil:6,aout:7,sept:8,octo:9,nove:10,dece:11};
+      const k=norm(rawMonth||'').slice(0,4);
+      const key=Object.keys(monthMap).find(x=>k.startsWith(norm(x).slice(0,4)));
+      return key===undefined ? null : monthMap[key];
+    }
+    function parseTournamentDate(raw){
+      const text=fixText(raw||'').trim();
+      const iso=text.match(/\b(20\d{2})-(\d{2})-(\d{2})\b/);
+      if(iso) return new Date(Number(iso[1]),Number(iso[2])-1,Number(iso[3]),12,0,0,0);
+      const m=text.match(/\b(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})\b(?:\s+(20\d{2}))?/);
+      if(!m) return null;
+      const monthIndex=parseMonthIndex(m[2]);
+      if(monthIndex===null) return null;
+      return new Date(Number(m[3]||new Date().getFullYear()),monthIndex,Number(m[1]),12,0,0,0);
+    }
+    function parseTournamentDateRange(raw){
+      const text=fixText(raw||'').trim();
+      const yearMatch=text.match(/\b(20\d{2})\b/);
+      const year=yearMatch ? Number(yearMatch[1]) : new Date().getFullYear();
+      const rangeMonth=text.match(/\b(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})\b/);
+      if(rangeMonth){
+        const monthIndex=parseMonthIndex(rangeMonth[3]);
+        if(monthIndex!==null){
+          return {
+            start:new Date(year,monthIndex,Number(rangeMonth[1]),0,0,0,0),
+            end:new Date(year,monthIndex,Number(rangeMonth[2]),23,59,59,999)
+          };
+        }
+      }
+      const rangeDouble=text.match(/\b(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})\s*[-–]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})\b/);
+      if(rangeDouble){
+        const m1=parseMonthIndex(rangeDouble[2]), m2=parseMonthIndex(rangeDouble[4]);
+        if(m1!==null && m2!==null){
+          return {
+            start:new Date(year,m1,Number(rangeDouble[1]),0,0,0,0),
+            end:new Date(year,m2,Number(rangeDouble[3]),23,59,59,999)
+          };
+        }
+      }
+      const single=parseTournamentDate(text);
+      if(single){
+        return {
+          start:new Date(single.getFullYear(),single.getMonth(),single.getDate(),0,0,0,0),
+          end:new Date(single.getFullYear(),single.getMonth(),single.getDate(),23,59,59,999)
+        };
+      }
+      return null;
+    }
+    function evaluateTournamentSchedule(t){
+      const entries=entriesForScope(t);
+      const range=parseTournamentDateRange(t?.date||'');
+      const now=new Date();
+      if(range && now<range.start) return {state:'future',entries:[],label:''};
+      if(range && now>range.end) return {state:'past',entries:[],label:''};
       const byDepart=new Map();
-      for(const e of entries||[]){
-        const dep=entryDepartCode(e)||'NA';
+      for(const e of entries){
+        const dep=entryDepartCode(e);
+        if(!dep) continue;
         if(!byDepart.has(dep)) byDepart.set(dep,{dep,entries:[],mins:[]});
         const g=byDepart.get(dep);
         g.entries.push(e);
         const mins=entryHoraireMinutes(e);
         if(mins!==null) g.mins.push(mins);
       }
-      const groups=[...byDepart.values()].map(g=>({...g,time:g.mins.length?Math.min(...g.mins):null}));
-      if(!groups.length) return {entries:[],label:'-'};
-      const now=new Date();
+      const groups=[...byDepart.values()].map(g=>({...g,start:g.mins.length?Math.min(...g.mins):null}));
+      if(!groups.length) return {state:'no_entries',entries:[],label:''};
       const current=now.getHours()*60+now.getMinutes();
-      let best=groups.find(g=>g.time!==null && g.time<=current && current-g.time<=5*60);
-      if(!best){
-        const upcoming=groups.filter(g=>g.time!==null && g.time>current).sort((a,b)=>a.time-b.time);
-        if(upcoming.length) best=upcoming[0];
-      }
-      if(!best){
-        const withTime=groups.filter(g=>g.time!==null).sort((a,b)=>a.time-b.time);
-        best=withTime.length?withTime[withTime.length-1]:groups[0];
-      }
-      return {entries:best.entries,label:best.dep};
+      const ordered=groups.filter(g=>g.start!==null).sort((a,b)=>a.start-b.start);
+      const ACTIVE_WINDOW_MIN=170;
+      const active=ordered.filter((g,idx)=>{
+        const next=ordered[idx+1];
+        const inMainWindow=current>=g.start-20 && current<=g.start+ACTIVE_WINDOW_MIN;
+        const beforeNextGate=!next || current < next.start-30;
+        return inMainWindow && beforeNextGate;
+      });
+      if(active.length) return {state:'active',entries:active.flatMap(a=>a.entries),label:active.map(a=>a.dep).join(', ')};
+      const next=groups.filter(g=>g.start!==null && g.start>current).sort((a,b)=>a.start-b.start)[0];
+      if(next) return {state:'upcoming',entries:[],label:next.dep};
+      if(groups.some(g=>g.start!==null)) return {state:'paused',entries:[],label:''};
+      return {state:'no_time',entries:[],label:''};
     }
     function buildFallbackArchersFromEntries(t){
-      const scoped=entriesForScope(t);
-      const selected=selectRelevantDeparture(scoped);
-      const rows=(selected.entries||[]).map(e=>({
+      const selected=evaluateTournamentSchedule(t);
+      if(selected.state!=='active') return [];
+      const rows=(selected.entries||[])
+      .filter(e=>entryDepartCode(e) && entryHoraireMinutes(e)!==null)
+      .map(e=>({
         name:e.name||'',
         club:e.club||'',
         category:entryCategorie(e),
-        progress:`En cours (Départ ${selected.label||entryDepartCode(e)||'-'})`,
+        progress:`En cours (Départ ${entryDepartCode(e)})`,
         position:'-',
         score:0,
         scoreLabel:'',
@@ -767,14 +838,21 @@
       const info=extractCompetitionInfoFromMarkdown(lines);
       const title=info.name || lines.find(l=>/^Title:/i.test(l))?.replace(/^Title:\s*/i,'') || `Tournoi ${id}`;
       const scopeKeys=clubKeysFromRaw(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
-      const rows=[]; let category=code?`Page ${code}`:'';
+      const rows=[]; let category=code?`Page ${code}`:''; let categoryProgress='';
       for(const raw of lines){
         const line=raw.trim();
         if(line.startsWith('|')){
           const cells=line.split('|').map(v=>v.trim()).filter(Boolean);
-          if(cells.length===1 && /après/i.test(cells[0])){category=cells[0].replace(/\s*\[.*$/,''); continue;}
+          if(cells.length===1){
+            const single=fixText(cells[0]||'');
+            const progressMatch=single.match(/\[([^\]]+)\]/);
+            categoryProgress=progressMatch ? progressMatch[1].trim() : '';
+            category=single.replace(/\s*\[[^\]]*]\s*$/,'').trim() || category;
+            continue;
+          }
           if(cells.length>=6 && /^\d+$/.test(cells[0])){
-            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress:(/\[([^\]]+)\]/.exec(raw)||[])[1]||'En cours',detail:`10+X: ${cells[cells.length-2]||'-'} · X: ${cells[cells.length-1]||'-'}`,finished:/après\s*(60|72)|termin/i.test(raw)};
+            const progress=categoryProgress || 'En cours';
+            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress,detail:`10+X: ${cells[cells.length-2]||'-'} · X: ${cells[cells.length-1]||'-'}`,finished:/après\s*\d+|termin/i.test(progress)};
             if(matchesScope(a, scopeKeys)) rows.push(a);
           }
           continue;
@@ -789,40 +867,145 @@
       }
       return {id:String(id),name:title,place:info.place||tournament?.place||'-',sourceUrl:url,archers:dedupeArchers(rows)};
     }
+    function parsePdfResultsMarkdown(md, tournament=null){
+      const lines=String(md||'').split('\n').map(l=>fixText(l).trim()).filter(Boolean);
+      const scopeKeys=clubKeysFromRaw(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
+      const rows=[];
+      let category='Résultats';
+      let progress='Résultat publié';
+      for(const line of lines){
+        const cat=line.match(/^Après\s+(\d+)\s+fl[èe]ches\s+(.+)$/i);
+        if(cat){
+          progress=`Après ${cat[1]} flèches`;
+          category=cat[2].replace(/\s+suite$/i,'').trim();
+          continue;
+        }
+        const m=line.match(/^(\d+)\s+\d+\-\s+\S+\s+(.+?)\s+(\d{6,7})\s+(.+?)\s+(\d{1,3})\/\s*\d+\s+(\d{1,3})\/\s*\d+\s+(\d{1,3})\s+(\d+)\s+(\d+)\s*$/);
+        if(!m) continue;
+        const a={
+          position:m[1],
+          name:m[2].trim(),
+          club:`${m[3]} - ${m[4].trim()}`,
+          score:Number(m[7])||0,
+          scoreLabel:m[7],
+          category,
+          progress,
+          detail:`Série 1: ${m[5]} · Série 2: ${m[6]} · 10+X: ${m[8]} · X: ${m[9]}`,
+          finished:true
+        };
+        if(matchesScope(a, scopeKeys)) rows.push(a);
+      }
+      return dedupeArchers(rows);
+    }
+    async function resolveResultPdfUrl(t){
+      if(t?.resultPdfUrl) return t.resultPdfUrl;
+      if(t?.url){
+        const byLive=String(t.url).replace(/\/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\.php(?:\?.*)?$/i,'/IC.pdf');
+        if(/\/IC\.pdf$/i.test(byLive)) return byLive;
+      }
+      if(t?.details){
+        try{
+          const detailsText=await fetchText(toProxy(t.details));
+          const abs=detailsText.match(/https:\/\/www\.ianseo\.net\/TourData\/\d+\/[0-9A-Za-z-]+\/IC\.pdf(?:\?[^)\s]*)?/i);
+          if(abs){t.resultPdfUrl=normalizeUrl(abs[0]); return t.resultPdfUrl;}
+          const rel=detailsText.match(/\/TourData\/\d+\/[0-9A-Za-z-]+\/IC\.pdf(?:\?[^)\s]*)?/i);
+          if(rel){t.resultPdfUrl=normalizeUrl(rel[0]); return t.resultPdfUrl;}
+        }catch(_){}
+      }
+      return '';
+    }
+    async function loadPdfResultsForTournament(t){
+      try{
+        const pdfUrl=await resolveResultPdfUrl(t);
+        if(!pdfUrl) return [];
+        const pdfText=await fetchText(toProxy(pdfUrl));
+        const rows=parsePdfResultsMarkdown(pdfText,t);
+        if(rows.length) t.resultPdfUrl=pdfUrl;
+        return rows;
+      }catch(_){
+        return [];
+      }
+    }
     function dedupeArchers(list){
       const map=new Map();
       for(const a of list){const k=norm(`${a.name}|${a.club}|${a.category}`); const old=map.get(k); if(!old || getScore(a)>=getScore(old)) map.set(k,a);}
       return [...map.values()];
     }
+    function isScheduleLikeRow(a){
+      if(!a) return false;
+      const noScore=getScore(a)<=0;
+      const enCoursDepart=/^en\s*cours\s*\(d[ée]part/i.test(String(a.progress||'').toLowerCase());
+      const timeOnly=/^\d{1,2}[h:]\d{2}$/.test(String(a.detail||'').trim());
+      const noRank=!String(a.position||'').trim() || String(a.position||'').trim()==='-';
+      return noScore && enCoursDepart && timeOnly && noRank;
+    }
+    function cleanLiveRows(rows){
+      return (rows||[]).filter(a=>!isScheduleLikeRow(a));
+    }
     async function loadTrackedLive(){
       const comps=[];
       for(const t of state.tracked){
-        if(!t.url){
-          const urls=await discoverLiveForTournament(t);
-          if(urls.length){
-            t.url=urls[0];
-            t.liveStatus='Live détecté, en attente de scores';
-            if(state.admin) saveLocal();
-          }else{
-            t.liveStatus='Départs publiés, résultats pas encore ouverts';
-            continue;
+        if(!Array.isArray(t.urls)) t.urls=[];
+        if(t.url && !t.urls.includes(t.url)) t.urls.unshift(t.url);
+        if(t.details){
+          const foundUrls=await discoverLiveForTournament(t);
+          if(foundUrls.length){
+            for(const u of foundUrls){
+              if(!t.urls.includes(u)) t.urls.push(u);
+            }
+            if(!t.url) t.url=t.urls[0];
           }
         }
+        if(!t.urls.length){
+          t.liveStatus='Départs publiés, résultats pas encore ouverts';
+          continue;
+        }
         try{
-          const md=await fetchText(toProxy(t.url));
-          const c=parseMarkdownLive(md,t.url,t);
-          t.liveStatus=c.archers.length?'Scores live détectés':'Live ouvert, aucun score détecté';
-          c.name=t.name||c.name; c.sourceUrl=t.url; c.place=c.place||t.place||'-';
-          if(c.place && c.place!=='-' && !t.place) t.place=c.place;
-          if(!c.archers.length){
-            c.archers=buildFallbackArchersFromEntries(t);
+          const sourceUrls=t.urls.filter(Boolean);
+          let mergedArchers=[];
+          let parsedName='';
+          let parsedPlace='';
+          for(const src of sourceUrls){
+            try{
+              const md=await fetchText(toProxy(src));
+              const part=parseMarkdownLive(md,src,t);
+              mergedArchers=dedupeArchers([...mergedArchers,...cleanLiveRows(part.archers)]);
+              if(!parsedName && part.name) parsedName=part.name;
+              if(!parsedPlace && part.place && part.place!=='-') parsedPlace=part.place;
+            }catch(_){}
           }
+          const c={id:t.id,name:parsedName||t.name||'Tournoi suivi',place:parsedPlace||t.place||'-',sourceUrl:t.url||sourceUrls[0]||'',archers:mergedArchers};
+          const needsPdfBackfill=!c.archers.length || !c.archers.some(a=>a.finished || getScore(a)>0);
+          if(needsPdfBackfill){
+            const pdfRows=await loadPdfResultsForTournament(t);
+            if(pdfRows.length) c.archers=dedupeArchers([...c.archers,...pdfRows]);
+          }
+          const sched=evaluateTournamentSchedule(t);
+          if(c.archers.length){
+            t.liveStatus=c.archers.some(a=>isFinished(a)) ? 'Résultats publiés' : 'Scores live détectés';
+          }else if(sched.state==='active'){
+            t.liveStatus='Live ouvert, départ en cours';
+          }else if(sched.state==='upcoming' || sched.state==='future'){
+            t.liveStatus=sched.label ? `Départ ${sched.label} à venir` : 'Live ouvert, départs à venir';
+          }else if(sched.state==='paused'){
+            t.liveStatus='Pause entre départs';
+          }else if(sched.state==='past'){
+            t.liveStatus='Compétition terminée';
+          }else{
+            t.liveStatus='Live ouvert, aucun score détecté';
+          }
+          c.name=t.name||c.name; c.sourceUrl=t.url||sourceUrls[0]||''; c.place=c.place||t.place||'-';
+          if(c.place && c.place!=='-' && !t.place) t.place=c.place;
+          c.archers=cleanLiveRows(c.archers);
           comps.push(c);
         }catch(err){
           if(/HTTP 404/.test(err.message)) t.liveStatus='Départs publiés, résultats pas encore ouverts';
           else t.liveStatus='Live inaccessible pour le moment';
-          const fallback=buildFallbackArchersFromEntries(t);
-          comps.push({id:t.id,name:t.name||'Source erreur',place:t.place||'-',sourceUrl:t.url,archers:fallback,error:err.message});
+          const fallback=[];
+          const pdfRows=await loadPdfResultsForTournament(t);
+          const merged=dedupeArchers([...fallback,...pdfRows]);
+          if(pdfRows.length) t.liveStatus='Résultats publiés';
+          comps.push({id:t.id,name:t.name||'Source erreur',place:t.place||'-',sourceUrl:t.url,archers:merged,error:err.message});
         }
       }
       if(state.admin) localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
@@ -832,9 +1015,12 @@
     function computePhase(data){
       if(state.phaseOverride!=='auto') return state.phaseOverride;
       const a=archers(data);
-      if(a.some(x=>!isFinished(x))) return 'during';
+      const hasRealLive=a.some(x=>!isFinished(x) && !isScheduleLikeRow(x));
+      if(hasRealLive) return 'during';
+      const schedules=state.tracked.map(evaluateTournamentSchedule);
+      if(schedules.some(s=>s.state==='future' || s.state==='upcoming' || s.state==='no_time' || s.state==='no_entries')) return 'before';
       if(a.length) return 'after';
-      if(state.tracked.some(isLiveOpenedStatus)) return 'during';
+      if(schedules.some(s=>s.state==='paused' || s.state==='past')) return 'after';
       if(state.tracked.length) return 'before';
       return 'before';
     }
@@ -904,6 +1090,12 @@
       $('statArchers').textContent=all.length; $('statFinished').textContent=done.length; $('statLive').textContent=live.length;
       renderTabs(data); renderBefore(); renderRows('liveRows',live,true); renderRows('finishedRows',done,false); renderVolley();
       const phase=computePhase(data); setPhase(phase);
+      if(phase==='before' && done.length){
+        $('afterSection').classList.remove('hidden');
+        $('afterTitle').textContent='Résultats disponibles (départ précédent)';
+      }else{
+        $('afterTitle').textContent='Résultats de compétition';
+      }
       const sig=signature(data); if(state.lastSignature && sig!==state.lastSignature) $('lastChange').textContent=new Date().toLocaleString('fr-FR'); state.lastSignature=sig;
     }
     function renderTabs(data){
@@ -932,6 +1124,8 @@
     function renderAdmin(){
       if(!state.admin) return;
       $('clubInput').value=state.clubRaw; $('countryInput').value=state.countryRaw; $('phaseSelect').value=state.phaseOverride;
+      $('togglePublicControlBtn').textContent='Contrôle public: '+(state.publicControlled?'ON':'OFF');
+      $('togglePublicControlBtn').className='btn '+(state.publicControlled?'green':'secondary');
       $('clubDatalist').innerHTML=state.clubCatalog.map(c=>`<option value="${escapeHtml(c.label)}">${escapeHtml(c.count+' inscrit(s) dans le catalogue')}</option>`).join('');
       $('quickClubs').innerHTML=splitList(state.clubRaw).map(c=>`<span class="chip">${escapeHtml(c)} <button class="btn small secondary" data-remove-global-club="${escapeHtml(c)}">x</button></span>`).join('') + QUICK_CLUBS.map(c=>`<button class="btn small secondary" data-quick-club="${escapeHtml(c)}">+ ${escapeHtml(c)}</button>`).join('');
       document.querySelectorAll('[data-quick-club]').forEach(b=>b.onclick=()=>{$('clubInput').value=addClubToRaw($('clubInput').value,b.dataset.quickClub); applyClub();});
@@ -941,13 +1135,13 @@
       $('trackedList').innerHTML=state.tracked.length?state.tracked.map(t=>{const entries=entriesForScope(t), clubs=clubsForEntries(entries); return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.url||t.details||'Source en attente')}</div><div class="muted">Clubs suivis sur ce tournoi (${entries.length} participant(s))</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')}</div><div class="row" style="margin-top:8px"><input value="${escapeHtml(t.scopeRaw||state.clubRaw)}" data-track-scope="${escapeHtml(t.id)}" placeholder="Plusieurs clubs séparés par virgule"><button class="btn small green" data-save-track-scope="${escapeHtml(t.id)}">Appliquer</button></div><div class="row" style="margin-top:8px"><input list="clubDatalist" data-track-club-search="${escapeHtml(t.id)}" placeholder="Ajouter un club à ce tournoi"><button class="btn small secondary" data-add-track-club="${escapeHtml(t.id)}">Ajouter club</button><button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button></div></article>`;}).join(''):'<div class="muted">Aucun tournoi suivi.</div>';
       document.querySelectorAll('[data-save-track-scope]').forEach(b=>b.onclick=()=>{const id=b.dataset.saveTrackScope; const t=state.tracked.find(x=>x.id===id); const input=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&input){t.scopeRaw=input.value.trim()||state.clubRaw; saveLocal(); refresh(); setLog('Club appliqué à ce tournoi.');}});
       document.querySelectorAll('[data-add-track-club]').forEach(b=>b.onclick=()=>{const id=b.dataset.addTrackClub; const t=state.tracked.find(x=>x.id===id); const search=[...document.querySelectorAll('[data-track-club-search]')].find(x=>x.dataset.trackClubSearch===id); const scope=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&search&&scope&&search.value.trim()){scope.value=addClubToRaw(scope.value,search.value.trim()); t.scopeRaw=scope.value; search.value=''; saveLocal(); refresh(); setLog('Club ajouté à ce tournoi.');}});
-      $('adminStateInfo').textContent=`Bridge: ${state.adminBridge?'configuré':'non configuré'} · Clubs par défaut: ${state.clubRaw||'aucun'} · Archers: ${state.watched.length} · Sources: ${state.tracked.length}`;
+      $('adminStateInfo').textContent=`Bridge: ${state.adminBridge?'configuré':'non configuré'} · Contrôle public: ${state.publicControlled?'ON':'OFF'} · Clubs par défaut: ${state.clubRaw||'aucun'} · Archers: ${state.watched.length} · Sources: ${state.tracked.length}`;
     }
     function applyClub(){
       state.clubRaw=$('clubInput').value.trim();
       state.countryRaw=$('countryInput').value.trim()||'FRA';
       state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
-      saveLocal(); refresh(); setLog('Club appliqué.');
+      saveLocal(); refresh(); syncPublicStateIfEnabled(); setLog('Club appliqué.');
     }
 
     function addSearchedClub(){
@@ -956,6 +1150,7 @@
       $('clubInput').value=addClubToRaw($('clubInput').value||state.clubRaw,v);
       $('clubSearchInput').value='';
       applyClub();
+      syncPublicStateIfEnabled();
     }
     async function refresh(){
       try{
@@ -965,11 +1160,6 @@
         let raw;
         if(state.tracked.length){
           raw=await loadTrackedLive();
-          const hasScoreRows=(raw.competitions||[]).some(c=>(c.archers||[]).length>0);
-          if(!hasScoreRows){
-            const fallback=buildFallbackLiveData();
-            if((fallback.competitions||[]).length) raw=fallback;
-          }
         }
         else raw=normalizeData(await fetchJson(API_URL));
         state.raw=raw; state.data=state.tracked.length?raw:filterData(raw); syncVolley(state.data); render();
@@ -1000,7 +1190,7 @@
       if(!m){setLog('Aucune compétition sélectionnée.'); return;}
       const url=normalizeLiveUrl(m.ic_url||'');
       state.tracked.push(cleanTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ena_url:m.ena_url,ic_url:url,club_entries:m.entries||m.club_entries,scopeRaw:state.clubRaw}));
-      hydrateTrackedEntries(); saveLocal(); setLog(url?'Compétition ajoutée au suivi live.':'Compétition ajoutée en attente du live IANSEO.'); refresh();
+      hydrateTrackedEntries(); saveLocal(); setLog(url?'Compétition ajoutée au suivi live.':'Compétition ajoutée en attente du live IANSEO.'); refresh(); syncPublicStateIfEnabled();
     }
     async function addManual(){
       try{
@@ -1014,6 +1204,7 @@
         }
         hydrateTrackedEntries(); $('manualUrlInput').value=''; saveLocal();
         await refresh();
+        await syncPublicStateIfEnabled();
         const count=archers(state.data).length;
         setLog(res.urls.length
           ? `${res.urls.length} source(s) ajoutée(s). ${count} archer(s) affiché(s). ${count?'':'Si rien ne sort, ajoute le nom exact de l archer ou corrige le club suivi.'}`
@@ -1026,14 +1217,15 @@
       $('volleySelect').onchange=e=>{state.selectedVolley=e.target.value; renderVolley();};
       $('applyClubBtn').onclick=applyClub;
       $('addClubSearchBtn').onclick=addSearchedClub;
-      $('addWatchBtn').onclick=()=>{state.watched=uniqueByNorm([...state.watched,...splitList($('watchInput').value)]); $('watchInput').value=''; saveLocal(); refresh(); setLog('Archer(s) ajouté(s) au suivi.');};
-      $('clearWatchBtn').onclick=()=>{state.watched=[]; saveLocal(); refresh();};
+      $('addWatchBtn').onclick=()=>{state.watched=uniqueByNorm([...state.watched,...splitList($('watchInput').value)]); $('watchInput').value=''; saveLocal(); refresh(); syncPublicStateIfEnabled(); setLog('Archer(s) ajouté(s) au suivi.');};
+      $('clearWatchBtn').onclick=()=>{state.watched=[]; saveLocal(); refresh(); syncPublicStateIfEnabled();};
       $('findNextBtn').onclick=findNext;
       $('followFoundBtn').onclick=followFound;
       $('addManualBtn').onclick=addManual;
-      $('clearTrackedBtn').onclick=()=>{state.archived.unshift(...state.tracked); state.tracked=[]; saveLocal(); refresh();};
-      $('clearAllBtn').onclick=()=>{state.data={competitions:[]}; state.raw={competitions:[]}; state.tracked=[]; saveLocal(); render(); setLog('Vue locale nettoyée.');};
-      $('applyPhaseBtn').onclick=()=>{state.phaseOverride=$('phaseSelect').value; saveLocal(); render();};
+      $('clearTrackedBtn').onclick=()=>{state.archived.unshift(...state.tracked); state.tracked=[]; saveLocal(); refresh(); syncPublicStateIfEnabled();};
+      $('clearAllBtn').onclick=()=>{state.data={competitions:[]}; state.raw={competitions:[]}; state.tracked=[]; saveLocal(); render(); syncPublicStateIfEnabled(); setLog('Vue locale nettoyée.');};
+      $('applyPhaseBtn').onclick=()=>{state.phaseOverride=$('phaseSelect').value; saveLocal(); render(); syncPublicStateIfEnabled();};
+      $('togglePublicControlBtn').onclick=()=>{state.publicControlled=!state.publicControlled; saveLocal(); renderAdmin(); syncPublicStateIfEnabled(); setLog('Contrôle public: '+(state.publicControlled?'ON':'OFF'));};
       $('publishStateBtn').onclick=()=>publishState().catch(err=>setLog('Publication impossible: '+escapeHtml(err.message)));
       $('competitionModeBtn').onclick=()=>{state.autoRefresh=!state.autoRefresh; $('competitionModeBtn').textContent='Mode compétition: '+(state.autoRefresh?'ON':'OFF');};
       document.querySelectorAll('[data-admin-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-admin-tab]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); ['setup','sources','pilot'].forEach(t=>$('admin'+t[0].toUpperCase()+t.slice(1)).classList.toggle('hidden', t!==b.dataset.adminTab));});
