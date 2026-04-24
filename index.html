@@ -958,13 +958,25 @@
       if(/termin|r[ée]sultat publi[ée]/i.test(raw)) return true;
       const values=[...raw.matchAll(/apr[eè]s\s*(\d+)\s*fl[èe]ches/gi)].map(m=>Number(m[1]));
       if(!values.length) return false;
-      if(values.length>1) return false;
-      const v=values[0];
-      return v>=72 || v===60;
+      return values.every(v=>v>=72 || v===60);
     }
     function isFinished(a){
       if(!!a?.finished) return true;
       return isFinalProgressText(`${a?.progress||''} ${a?.detail||''}`);
+    }
+    function compactProgressLabel(a){
+      const raw=String(a?.progress||'').trim();
+      if(!raw) return '-';
+      if(isFinished(a)) return 'Terminé';
+      if(/en\s*cours/i.test(raw)) return 'En cours';
+      const items=[...raw.matchAll(/apr[eè]s\s*(\d+)\s*fl[èe]ches(?:\s*\(d[ée]part:\s*([^)]+)\))?/gi)].map(m=>({score:Number(m[1]),dep:(m[2]||'').trim()}));
+      if(items.length){
+        const best=items.sort((x,y)=>y.score-x.score)[0];
+        if(Number.isFinite(best.score) && best.score>0){
+          return best.dep ? `En cours (Départ ${best.dep} · ${best.score} flèches)` : `En cours (${best.score} flèches)`;
+        }
+      }
+      return raw;
     }
     function hasLiveArchers(data){
       return archers(data).some(a=>!isFinished(a) && !isScheduleLikeRow(a));
@@ -1390,7 +1402,7 @@
       const col=live?7:6;
       if(!rows.length){$(id).innerHTML=`<tr><td colspan="${col}">${live?'Aucun archer en cours.':'Aucun résultat.'}</td></tr>`; return;}
       $(id).innerHTML=rows.map(a=>{const w=isWatched(a); const badge=w?' <span class="badge green">Suivi</span>':''; return live
-        ? `<tr class="${w?'watch-row':'live-row'}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.progress||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`
+        ? `<tr class="${w?'watch-row':'live-row'}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(compactProgressLabel(a))}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`
         : `<tr class="${w?'watch-row':''}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`;}).join('');
     }
     function renderBefore(){
