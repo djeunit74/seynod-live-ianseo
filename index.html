@@ -461,19 +461,29 @@
       if(v.startsWith('/')) return 'https://www.ianseo.net'+v;
       return '';
     }
+    function isIanseoLivePage(url){
+      const v=normalizeUrl(url);
+      if(!v) return false;
+      const m=String(v).match(/\/([A-Z0-9]+)\.php(?:\?|$)/i);
+      if(!m) return false;
+      const code=String(m[1]||'').toUpperCase();
+      if(code==='ENA') return false;
+      if(code==='IC' || code==='ICCM') return true;
+      return /^I[A-Z0-9]+$/.test(code);
+    }
     function normalizeLiveUrl(raw){
       const v=normalizeUrl(raw);
       if(!v) return '';
-      return /\/(?:IC(?:CM)?|I[A-Z0-9]+)\.php/i.test(v) ? v : '';
+      return isIanseoLivePage(v) ? v : '';
     }
     function detailsId(url){const m=String(url||'').match(/Details\.php\?toId=([0-9A-Za-z-]+)/i); return m?m[1]:'';}
     function detailsFromLive(url){
       const m=String(url||'').match(/\/TourData\/\d+\/([0-9A-Za-z-]+)\//i);
-      return m ? `https://www.ianseo.net/Details.php?toId=${m[1]}` : String(url||'').replace(/\/(?:IC(?:CM)?|I[A-Z0-9]+)\.php.*$/i,'/Details.php');
+      return m ? `https://www.ianseo.net/Details.php?toId=${m[1]}` : String(url||'').replace(/\/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\.php.*$/i,'/Details.php');
     }
     function extractLiveUrls(detailsText,toId){
       const out=[], seen=new Set(), esc=String(toId).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-      const pats=[new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${esc}/(?:IC(?:CM)?|I[A-Z0-9]+)\\.php`,'gi'),new RegExp(`/TourData/\\d+/${esc}/(?:IC(?:CM)?|I[A-Z0-9]+)\\.php`,'gi')];
+      const pats=[new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${esc}/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\\.php`,'gi'),new RegExp(`/TourData/\\d+/${esc}/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\\.php`,'gi')];
       for(const p of pats){let m; while((m=p.exec(detailsText))){const u=normalizeLiveUrl(normalizeUrl(m[0])); if(u&&!seen.has(u)){seen.add(u); out.push(u);}}}
       const rank=u=>/\/IC(?:CM)?\.php/i.test(u)?0:/\/IQ/i.test(u)?1:/\/IF/i.test(u)?2:3;
       return out.sort((a,b)=>rank(a)-rank(b)||a.localeCompare(b)).slice(0,40);
