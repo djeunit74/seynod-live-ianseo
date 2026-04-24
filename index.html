@@ -1098,9 +1098,14 @@
           const cells=line.split('|').map(v=>stripMarkdownImages(v).trim()).filter(Boolean);
           if(cells.length===1){
             const single=fixText(cells[0]||'');
-            const progressMatch=single.match(/\[([^\]]+)\]/);
-            categoryProgress=progressMatch ? progressMatch[1].trim() : '';
-            category=single.replace(/\s*\[[^\]]*]\s*$/,'').trim() || category;
+            const isClassHeader=/\[[^\]]+\]/.test(single) || /\barc\b/i.test(single);
+            const isBreakdown=/^\d+\s*m-\d+\s*:/i.test(single) || /\b\d+\s*m-\d+\s*:/i.test(single);
+            if(isClassHeader && !isBreakdown){
+              const progressMatch=single.match(/\[([^\]]+)\]/);
+              if(progressMatch) categoryProgress=progressMatch[1].trim();
+              const cleanCategory=single.replace(/\s*\[[^\]]*]\s*$/,'').trim();
+              if(cleanCategory) category=cleanCategory;
+            }
             continue;
           }
           if(cells.length>=6 && /^\d+$/.test(cells[0])){
