@@ -1305,13 +1305,19 @@
 
     function syncVolley(data){
       for(const a of archers(data)){
-        const key=norm(`${a.name}|${a.competitionId}|${a.category}`);
+        const key=norm(`${a.name}|${a.competitionId}|${a.club||''}`);
         const score=getScore(a);
         if(!score) continue;
         if(!state.volley[key]) state.volley[key]={name:`${a.name} · ${a.competitionName}`,last:null,history:[],config:getVolleyConfig(a)};
         const s=state.volley[key];
         s.name=`${a.name} · ${a.competitionName}`; s.config=getVolleyConfig(a);
-        if(s.last===null){s.last=score; continue;}
+        if(s.last===null){
+          s.last=score;
+          if(score>0 && !s.history.length){
+            s.history.push({score,type:'grouped',mood:'',ts:new Date().toISOString(),initial:true});
+          }
+          continue;
+        }
         const delta=score-s.last; s.last=score;
         if(delta<=0) continue;
         const type=delta<=s.config.maxVolleyScore?'volley':'grouped';
@@ -1328,7 +1334,7 @@
     }
     function moodHtml(type){return type?`<span class="mood ${type}"><i></i></span>`:'<span class="muted">-</span>';}
     function renderVolley(){
-      const visibleKeys=archers(state.data).map(a=>norm(`${a.name}|${a.competitionId}|${a.category}`));
+      const visibleKeys=archers(state.data).map(a=>norm(`${a.name}|${a.competitionId}|${a.club||''}`));
       const keySet=new Set(visibleKeys);
       const keys=Object.keys(state.volley).filter(k=>keySet.has(k));
       $('volleySelect').innerHTML=keys.map(k=>`<option value="${escapeHtml(k)}">${escapeHtml(state.volley[k].name)}</option>`).join('');
@@ -1338,9 +1344,19 @@
       const s=state.volley[state.selectedVolley], h=s.history||[], last=[...h].reverse().find(x=>x.type==='volley') || h[h.length-1];
       $('lastVolleyScore').textContent=last?last.score:'-';
       $('lastVolleyMood').innerHTML=last?moodHtml(last.mood):'';
-      $('lastVolleyText').textContent=last ? (last.type==='grouped'?'Mise à jour groupée, pas une volée fiable.':s.config.label) : 'Pas encore de volée détectée.';
+      $('lastVolleyText').textContent=last
+        ? (last.type==='grouped'
+          ? (last.initial ? 'État initial détecté (score déjà publié). En attente des prochains deltas.' : 'Mise à jour groupée, pas une volée fiable.')
+          : s.config.label)
+        : 'Pas encore de volée détectée.';
       let n=0;
-      $('volleyRows').innerHTML=h.length?h.map(e=>{if(e.type==='volley') n++; const rep=e.type==='volley'?`S${Math.ceil(n/s.config.volleysPerSeries)} · V${((n-1)%s.config.volleysPerSeries)+1}`:'Mise à jour groupée'; return `<tr><td>${e.type==='volley'?n:'Δ'}</td><td>${escapeHtml(rep)}</td><td>${e.score}</td></tr>`;}).join(''):'<tr><td colspan="3">Aucune volée détectée.</td></tr>';
+      $('volleyRows').innerHTML=h.length?h.map(e=>{
+        if(e.type==='volley') n++;
+        const rep=e.type==='volley'
+          ? `S${Math.ceil(n/s.config.volleysPerSeries)} · V${((n-1)%s.config.volleysPerSeries)+1}`
+          : (e.initial ? 'État initial' : 'Mise à jour groupée');
+        return `<tr><td>${e.type==='volley'?n:'Δ'}</td><td>${escapeHtml(rep)}</td><td>${e.score}</td></tr>`;
+      }).join(''):'<tr><td colspan="3">Aucune volée détectée.</td></tr>';
       drawChart(h.filter(x=>x.type==='volley').map((x,i)=>({x:i+1,y:x.score})));
     }
     function drawChart(points){
