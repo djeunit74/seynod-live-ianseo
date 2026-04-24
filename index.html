@@ -141,6 +141,8 @@
           <span class="badge amber" id="phaseBadge">Avant compétition</span>
           <div class="muted" id="phaseHelp" style="margin-top:8px">Choisis un club, des archers ou une source live.</div>
           <div class="muted" id="departInfo" style="margin-top:6px"></div>
+          <div class="muted" id="filterScopeInfo" style="margin-top:6px"></div>
+          <div class="muted" id="rejectCountInfo" style="margin-top:4px"></div>
         </div>
       </aside>
 
@@ -328,7 +330,8 @@
       isRefreshing:false,
       lastAdminStamp:'',
       volley:{},
-      selectedVolley:''
+      selectedVolley:'',
+      filterStats:{byCompetition:{},totalRejected:0}
     };
 
     function fixText(v){
@@ -341,11 +344,11 @@
     function norm(v){return fixText(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'');}
     function splitList(v){return String(v||'').split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean);}
     function uniqueByNorm(arr){const map=new Map(); for(const v of arr||[]){const k=norm(v); if(k&&!map.has(k)) map.set(k,String(v).trim());} return [...map.values()];}
+    function extractClubCodes(text){
+      return [...String(text||'').matchAll(/\b\d{6,7}\b/g)].map(m=>m[0]);
+    }
     function clubKeysFromRaw(raw){
-      const text=String(raw||'');
-      const parts=splitList(text);
-      const codes=[...text.matchAll(/\b\d{6,7}\b/g)].map(m=>m[0]);
-      return uniqueByNorm([...parts,...codes].filter(Boolean));
+      return uniqueByNorm(extractClubCodes(raw));
     }
     function addClubToRaw(raw, club){return uniqueByNorm([...splitList(raw), club]).join(', ');}
     function removeClubFromRaw(raw, club){const key=norm(club); return splitList(raw).filter(c=>norm(c)!==key).join(', ');}
@@ -648,11 +651,18 @@
       return !!n && state.watched.some(w=>{const k=norm(w); return k && (n.includes(k)||k.includes(n));});
     }
     function matchesScope(a, scopeKeys=state.clubKeys){
-      const hay=norm(`${a?.club||''} ${a?.name||''} ${a?.detail||''}`);
-      const sourceKeys=Array.isArray(scopeKeys) ? scopeKeys : splitList(scopeKeys);
-      const keys=(sourceKeys||[]).map(norm).filter(Boolean);
-      const clubMatch=!keys.length || keys.some(k=>hay.includes(k));
-      return clubMatch || isWatched(a);
+      const archerScopeRaw=String(a?._scopeRaw||a?.scopeRaw||'').trim();
+      const sourceKeys=archerScopeRaw
+        ? clubKeysFromRaw(archerScopeRaw).map(x=>x.toLowerCase())
+        : (Array.isArray(scopeKeys) ? scopeKeys : splitList(scopeKeys));
+      const keys=(sourceKeys||[])
+        .flatMap(v=>extractClubCodes(v))
+        .map(norm)
+        .filter(Boolean);
+      const rowClubCodes=extractClubCodes(a?.club||'').map(norm).filter(Boolean);
+      if(!keys.length) return false;
+      const clubMatch=rowClubCodes.some(code=>keys.includes(code));
+      return clubMatch;
     }
     function normalizeData(raw){
       if(raw?.competitions?.length){
@@ -661,7 +671,26 @@
       return {competitions:[{id:'live',name:raw?.competitionName||'Live IANSEO',place:(raw?.places||[])[0]||'-',sourceUrl:raw?.sourceUrl||'',archers:(raw?.archers||[]).map(a=>({...a,competitionId:'live',competitionName:raw?.competitionName||'Live IANSEO'}))}]};
     }
     function filterData(data){
-      const competitions=(data.competitions||[]).map(c=>({...c,archers:(c.archers||[]).filter(matchesScope)})).filter(c=>c.archers.length);
+      const scopeByCompetition=new Map(
+        (state.tracked||[]).map(t=>[String(t.id), clubKeysFromRaw(t.scopeRaw||state.clubRaw).map(x=>x.toLowerCase())])
+      );
+      const byCompetition={};
+      let totalRejected=0;
+      const competitions=(data.competitions||[]).map(c=>{
+        const scopedKeys=scopeByCompetition.get(String(c.id)) || state.clubKeys;
+        const sourceRows=(c.archers||[]);
+        const archers=sourceRows.filter(a=>matchesScope(a,scopedKeys));
+        const rejected=Math.max(0,sourceRows.length-archers.length);
+        totalRejected+=rejected;
+        byCompetition[String(c.id)]={
+          scopeCodes:(scopedKeys||[]).map(norm).filter(Boolean),
+          total:sourceRows.length,
+          kept:archers.length,
+          rejected
+        };
+        return {...c,archers};
+      }).filter(c=>c.archers.length);
+      state.filterStats={byCompetition,totalRejected};
       return {competitions};
     }
     function tournamentToId(t){
@@ -728,8 +757,28 @@
     function entriesForScope(t){
       const keys=clubKeysFromRaw(t.scopeRaw||state.clubRaw).map(norm);
       const entries=t.entries||[];
-      if(!keys.length) return entries;
+      if(!keys.length) return [];
       return entries.filter(e=>keys.some(k=>norm(`${e.club||''} ${e.category||''} ${e.name||''}`).includes(k)));
+    }
+    function isInTrackedScope(a){
+      const compId=String(a?.competitionId||'');
+      const tracked=(state.tracked||[]).find(t=>String(t.id)===compId);
+      const scopeRaw=tracked ? (tracked.scopeRaw||state.clubRaw) : state.clubRaw;
+      const scopedCodes=clubKeysFromRaw(scopeRaw).map(norm).filter(Boolean);
+      if(!scopedCodes.length) return false;
+      const rowCodes=extractClubCodes(a?.club||'').map(norm).filter(Boolean);
+      return rowCodes.some(code=>scopedCodes.includes(code));
+    }
+    function applyHardScopeFilter(rows){
+      return (rows||[]).filter(row=>{
+        const compId=String(row?.competitionId||'');
+        const tracked=(state.tracked||[]).find(t=>String(t.id)===compId);
+        const scopeRaw=tracked ? (tracked.scopeRaw||state.clubRaw) : state.clubRaw;
+        const allowed=clubKeysFromRaw(scopeRaw).map(norm).filter(Boolean);
+        if(!allowed.length) return false;
+        const rowCodes=extractClubCodes(row?.club||'').map(norm).filter(Boolean);
+        return rowCodes.some(c=>allowed.includes(c));
+      });
     }
     function entryDepart(e){
       const raw=fixText(e?.depart||e?.departure||e?.start||'').trim();
@@ -1078,6 +1127,100 @@
       }
       return raw;
     }
+    function inferDepartCodesFromEntries(row){
+      const compId=String(row?.competitionId||'');
+      const tracked=(state.tracked||[]).find(t=>String(t.id)===compId);
+      const entries=tracked?.entries||[];
+      if(!entries.length) return [];
+      const rn=norm(row?.name||'');
+      const rc=norm(row?.club||'');
+      const codes=new Set();
+      for(const e of entries){
+        if(norm(e?.name||'')!==rn) continue;
+        const ec=norm(e?.club||'');
+        if(rc && ec && rc!==ec) continue;
+        const d=entryDepartCode(e);
+        if(d) codes.add(String(d).toUpperCase());
+      }
+      return [...codes];
+    }
+    function extractDepartLabels(row){
+      const out=new Set();
+      const direct=String(row?._departCode||'').trim();
+      if(direct) out.add(direct.toUpperCase());
+      const text=`${row?.progress||''} ${row?.detail||''} ${row?.category||''}`;
+      const block=[...text.matchAll(/d[ée]part\s*[:\-]?\s*([0-9a-z,\s;/]+)/ig)];
+      for(const b of block){
+        const tail=String(b[1]||'');
+        for(const code of tail.split(/[^0-9a-z]+/i).map(x=>x.trim()).filter(Boolean)){
+          if(code.length<=3) out.add(code.toUpperCase());
+        }
+      }
+      const single=[...text.matchAll(/d[ée]part\s*([0-9a-z]+)/ig)];
+      for(const s of single){
+        const code=String(s[1]||'').trim();
+        if(code) out.add(code.toUpperCase());
+      }
+      for(const code of inferDepartCodesFromEntries(row)) out.add(code);
+      if(!out.size) out.add('NA');
+      return [...out];
+    }
+    function formatDepartCellMap(depMap, formatter){
+      const keys=[...depMap.keys()].sort((a,b)=>{
+        if(a==='NA') return 1;
+        if(b==='NA') return -1;
+        const na=Number(a), nb=Number(b);
+        if(Number.isFinite(na) && Number.isFinite(nb)) return na-nb;
+        return a.localeCompare(b,'fr');
+      });
+      if(!keys.length) return '-';
+      return keys.map(k=>`D${escapeHtml(k)}: ${escapeHtml(formatter(depMap.get(k)))}`).join('<br>');
+    }
+    function mergeRowsByArcher(rows){
+      const groups=new Map();
+      for(const row of rows||[]){
+        const key=norm(`${row?.competitionId||''}|${row?.name||''}`);
+        if(!key) continue;
+        if(!groups.has(key)) groups.set(key,[]);
+        groups.get(key).push(row);
+      }
+      const merged=[];
+      for(const grp of groups.values()){
+        const base=grp.reduce((best,current)=>pickBestDisplayRow(best,current));
+        const depMap=new Map();
+        for(const row of grp){
+          const deps=extractDepartLabels(row);
+          for(const dep of deps){
+            const old=depMap.get(dep);
+            const next={
+              score:getScore(row),
+              progress:compactProgressLabel(row),
+              detail:String(row?.detail||'').trim()||'-',
+              position:String(row?.position||'').trim()||'-',
+              finished:isFinished(row)
+            };
+            if(!old){
+              depMap.set(dep,next);
+              continue;
+            }
+            const oldScore=Number(old.score)||0;
+            const newScore=Number(next.score)||0;
+            if(newScore>oldScore || (newScore===oldScore && next.finished && !old.finished)){
+              depMap.set(dep,next);
+            }
+          }
+        }
+        const out={...base};
+        out.progress=formatDepartCellMap(depMap, v=>v.progress||'-');
+        out.scoreHtml=formatDepartCellMap(depMap, v=>String(v.score||'-'));
+        out.detailHtml=formatDepartCellMap(depMap, v=>v.detail||'-');
+        out.position=formatDepartCellMap(depMap, v=>v.position||'-');
+        out.score=Math.max(...[...depMap.values()].map(v=>Number(v.score)||0),0);
+        out.finished=[...depMap.values()].every(v=>v.finished);
+        merged.push(out);
+      }
+      return merged;
+    }
     function hasLiveArchers(data){
       return archers(data).some(a=>!isFinished(a) && !isScheduleLikeRow(a));
     }
@@ -1405,7 +1548,7 @@
             }catch(_){}
           }
           if(firstValidSource && t.url!==firstValidSource) t.url=firstValidSource;
-          const c={id:t.id,name:parsedName||t.name||'Tournoi suivi',place:parsedPlace||t.place||'-',sourceUrl:firstValidSource||t.url||sourceUrls[0]||'',archers:mergedArchers};
+          const c={id:t.id,name:parsedName||t.name||'Tournoi suivi',place:parsedPlace||t.place||'-',sourceUrl:firstValidSource||t.url||sourceUrls[0]||'',archers:mergedArchers.map(a=>({...a,_scopeRaw:t.scopeRaw||state.clubRaw||''}))};
           const needsPdfBackfill=!c.archers.length || !c.archers.some(a=>a.finished || getScore(a)>0);
           if(needsPdfBackfill){
             const pdfRows=await loadPdfResultsForTournament(t);
@@ -1542,8 +1685,8 @@
     function render(){
       const data=state.data;
       const all=archers(data);
-      let live=all.filter(a=>!isFinished(a));
-      let done=all.filter(isFinished);
+      let live=all.filter(a=>!isFinished(a) && isInTrackedScope(a));
+      let done=all.filter(a=>isFinished(a) && isInTrackedScope(a));
       $('statCompetitions').textContent=(data.competitions||[]).length || state.tracked.length;
       const phase=computePhase(data);
       if(phase==='after'){
@@ -1555,8 +1698,15 @@
       }
       live=dedupeDisplayRows(live);
       done=dedupeDisplayRows(done);
-      $('statArchers').textContent=all.length; $('statFinished').textContent=done.length; $('statLive').textContent=live.length;
+      live=mergeRowsByArcher(live);
+      done=mergeRowsByArcher(done);
+      if(state.watched.length){
+        done=done.filter(isWatched);
+      }
+      const allMerged=mergeRowsByArcher(dedupeDisplayRows(all));
+      $('statArchers').textContent=allMerged.length; $('statFinished').textContent=done.length; $('statLive').textContent=live.length;
       $('departInfo').textContent=buildDepartInfoText(data);
+      updateFilterInfo();
       renderTabs(data); renderBefore(); renderRows('liveRows',live,true); renderRows('finishedRows',done,false); renderVolley();
       setPhase(phase);
       if(phase==='before' && done.length){
@@ -1571,12 +1721,45 @@
       $('competitionTabs').innerHTML=[`<button class="btn small ${state.selectedCompetition==='all'?'green':'secondary'}" data-comp="all">Tous (${archers({...data,competitions:comps}).length})</button>`].concat(comps.map(c=>`<button class="btn small ${state.selectedCompetition===c.id?'green':'secondary'}" data-comp="${escapeHtml(c.id)}">${escapeHtml(c.name)} (${(c.archers||[]).length})</button>`)).join('');
       document.querySelectorAll('[data-comp]').forEach(b=>b.onclick=()=>{state.selectedCompetition=b.dataset.comp; render();});
     }
+    function updateFilterInfo(){
+      const stats=state.filterStats?.byCompetition||{};
+      const tracked=state.tracked||[];
+      if(!tracked.length){
+        $('filterScopeInfo').textContent='Filtre club actif: aucun tournoi suivi';
+        $('rejectCountInfo').textContent='';
+        return;
+      }
+      if(state.selectedCompetition!=='all'){
+        const id=String(state.selectedCompetition);
+        const t=tracked.find(x=>String(x.id)===id);
+        const s=stats[id];
+        const scope=(s?.scopeCodes||clubKeysFromRaw(t?.scopeRaw||state.clubRaw)).join(', ')||'aucun code';
+        $('filterScopeInfo').textContent=`Filtre club actif (${t?.name||id}): ${scope}`;
+        $('rejectCountInfo').textContent=`Lignes rejetées hors scope: ${Number(s?.rejected||0)} / ${Number(s?.total||0)}`;
+        return;
+      }
+      const allScopes=tracked.map(t=>{
+        const s=stats[String(t.id)];
+        const scope=(s?.scopeCodes||clubKeysFromRaw(t.scopeRaw||state.clubRaw)).join(', ')||'aucun code';
+        return `${t.name||t.id}: ${scope}`;
+      }).join(' · ');
+      $('filterScopeInfo').textContent=`Filtre club actif: ${allScopes}`;
+      $('rejectCountInfo').textContent=`Lignes rejetées hors scope: ${Number(state.filterStats?.totalRejected||0)}`;
+    }
     function renderRows(id, rows, live){
+      rows=applyHardScopeFilter(rows);
       const col=live?7:6;
-      if(!rows.length){$(id).innerHTML=`<tr><td colspan="${col}">${live?'Aucun archer en cours.':'Aucun résultat.'}</td></tr>`; return;}
+      if(!rows.length){
+        let emptyText=live?'Aucun archer en cours.':'Aucun résultat.';
+        if(!live && state.watched.length){
+          emptyText='Aucun résultat pour les archers suivis. Ajoute/ajuste les noms dans "Admin > Configuration > Archers à suivre".';
+        }
+        $(id).innerHTML=`<tr><td colspan="${col}">${emptyText}</td></tr>`;
+        return;
+      }
       $(id).innerHTML=rows.map(a=>{const w=isWatched(a); const badge=w?' <span class="badge green">Suivi</span>':''; return live
-        ? `<tr class="${w?'watch-row':'live-row'}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(compactProgressLabel(a))}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`
-        : `<tr class="${w?'watch-row':''}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`;}).join('');
+        ? `<tr class="${w?'watch-row':'live-row'}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${a.progress||escapeHtml(compactProgressLabel(a))}</td><td>${a.position||escapeHtml(a.position||'')}</td><td><strong>${a.scoreHtml||escapeHtml(String(getScore(a)||''))}</strong></td><td>${a.detailHtml||escapeHtml(a.detail||'')}</td></tr>`
+        : `<tr class="${w?'watch-row':''}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${a.position||escapeHtml(a.position||'')}</td><td><strong>${a.scoreHtml||escapeHtml(String(getScore(a)||''))}</strong></td><td>${a.detailHtml||escapeHtml(a.detail||'')}</td></tr>`;}).join('');
     }
     function renderBefore(){
       $('beforeMeta').textContent=beforeSummary();
@@ -1650,7 +1833,7 @@
         }
         else raw=normalizeData(await fetchJson(API_URL));
         state.raw=raw;
-        state.data=state.tracked.length?raw:filterData(raw);
+        state.data=filterData(raw);
         state.data=stabilizeWithLastGood(state.data,state.lastGoodData);
         syncVolley(state.data);
         const changeInfo=updateChangeBadge(state.data);
