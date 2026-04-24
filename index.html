@@ -891,6 +891,9 @@
       const clubText=clubs.length ? clubs.map(c=>`${c.club} (${c.count})`).join(' · ') : 'aucun participant détecté pour les clubs sélectionnés';
       return `${state.tracked.length} tournoi(s) suivi(s) · ${entries.length} participant(s) sélectionné(s) · ${clubText}`;
     }
+    function rawArchersCount(data){
+      return (data?.competitions||[]).reduce((n,c)=>n+((c?.archers||[]).length),0);
+    }
     function archers(data){
       const comps=(data?.competitions||[]);
       if(state.selectedCompetition!=='all'){
@@ -1217,9 +1220,14 @@
     }
 
     function computePhase(data){
-      if(state.phaseOverride!=='auto') return state.phaseOverride;
       const a=archers(data);
       const hasRealLive=a.some(x=>!isFinished(x) && !isScheduleLikeRow(x));
+      const hasFinalResults=a.length && a.some(isFinished);
+      if(state.phaseOverride!=='auto'){
+        if(state.phaseOverride==='during') return hasRealLive ? 'during' : (hasFinalResults ? 'after' : 'before');
+        if(state.phaseOverride==='after') return hasFinalResults ? 'after' : (hasRealLive ? 'during' : 'before');
+        if(state.phaseOverride==='before') return hasRealLive ? 'during' : (hasFinalResults ? 'after' : 'before');
+      }
       if(hasRealLive) return 'during';
       const schedules=state.tracked.map(evaluateTournamentSchedule);
       if(schedules.some(s=>s.state==='future' || s.state==='upcoming' || s.state==='no_time' || s.state==='no_entries')) return 'before';
@@ -1266,7 +1274,9 @@
     }
     function moodHtml(type){return type?`<span class="mood ${type}"><i></i></span>`:'<span class="muted">-</span>';}
     function renderVolley(){
-      const keys=Object.keys(state.volley);
+      const visibleKeys=archers(state.data).map(a=>norm(`${a.name}|${a.competitionId}|${a.category}`));
+      const keySet=new Set(visibleKeys);
+      const keys=Object.keys(state.volley).filter(k=>keySet.has(k));
       $('volleySelect').innerHTML=keys.map(k=>`<option value="${escapeHtml(k)}">${escapeHtml(state.volley[k].name)}</option>`).join('');
       if(!keys.length){$('lastVolleyScore').textContent='-'; $('lastVolleyMood').innerHTML=''; $('volleyRows').innerHTML='<tr><td colspan="3">Aucune volée détectée.</td></tr>'; drawChart([]); return;}
       if(!state.selectedVolley || !state.volley[state.selectedVolley]) state.selectedVolley=keys[0];
@@ -1378,6 +1388,10 @@
         let raw;
         if(state.tracked.length){
           raw=await loadTrackedLive();
+          if(rawArchersCount(raw)===0){
+            const fallbackLive=buildFallbackLiveData();
+            if(rawArchersCount(fallbackLive)>0) raw=fallbackLive;
+          }
         }
         else raw=normalizeData(await fetchJson(API_URL));
         state.raw=raw; state.data=state.tracked.length?raw:filterData(raw); syncVolley(state.data);
