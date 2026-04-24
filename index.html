@@ -318,9 +318,13 @@
       selectedFound:'',
       admin:false,
       adminBridge:'',
-      autoRefresh:true,
+      lastGoodData:null,
+      previousSignature:'',
+      autoRefreshEnabled:true,
+      refreshTimer:null,
       nextRefresh:Date.now()+REFRESH_MS,
-      lastSignature:'',
+      countdownTimer:null,
+      isRefreshing:false,
       lastAdminStamp:'',
       volley:{},
       selectedVolley:''
@@ -898,6 +902,52 @@
     function signature(data){return JSON.stringify((data.competitions||[]).map(c=>[c.id,c.archers.map(a=>[a.name,a.score,a.position,a.progress,a.detail,a.finished])]));}
     function getScore(a){const n=Number(a?.score); if(Number.isFinite(n)&&n>0) return n; const m=String(a?.scoreLabel||'').match(/\d+/); return m?Number(m[0]):0;}
     function isFinished(a){return !!a?.finished || /termin|résultat publié|après\s*(60|72)/i.test(`${a?.progress||''} ${a?.detail||''}`);}
+    function hasLiveArchers(data){
+      return archers(data).some(a=>!isFinished(a) && !isScheduleLikeRow(a));
+    }
+    function allArchersFinished(data){
+      const all=archers(data);
+      return all.length>0 && all.every(a=>isFinished(a));
+    }
+    function updateChangeBadge(data){
+      const sig=signature(data);
+      if(!state.previousSignature){
+        state.previousSignature=sig;
+        return {changed:true,first:true};
+      }
+      if(sig!==state.previousSignature){
+        state.previousSignature=sig;
+        $('lastChange').textContent=new Date().toLocaleString('fr-FR');
+        return {changed:true,first:false};
+      }
+      return {changed:false,first:false};
+    }
+    function clearRefreshTimer(){
+      if(state.refreshTimer){ clearTimeout(state.refreshTimer); state.refreshTimer=null; }
+    }
+    function scheduleNextRefresh(){
+      if(!state.autoRefreshEnabled) return;
+      clearRefreshTimer();
+      state.nextRefresh=Date.now()+REFRESH_MS;
+      state.refreshTimer=setTimeout(()=>refresh({manual:false}),REFRESH_MS);
+    }
+    function stopAutoRefresh(statusText='Tous les archers sont terminés : actualisation automatique arrêtée'){
+      state.autoRefreshEnabled=false;
+      clearRefreshTimer();
+      state.nextRefresh=null;
+      $('competitionModeBtn').textContent='Mode compétition: OFF';
+      setStatus('ok',statusText);
+    }
+    function startAutoRefresh(){
+      state.autoRefreshEnabled=true;
+      $('competitionModeBtn').textContent='Mode compétition: ON';
+      scheduleNextRefresh();
+    }
+    function updateCountdown(){
+      $('countdown').textContent=(state.autoRefreshEnabled && state.nextRefresh)
+        ? Math.max(0,Math.ceil((state.nextRefresh-Date.now())/1000))+' s'
+        : 'arrêté';
+    }
     function extractCompetitionInfoFromMarkdown(lines){
       const clean=lines.map(l=>String(l||'').trim()).filter(Boolean).filter(l=>!/^Title:|^URL Source:|^Markdown Content:/i.test(l)).filter(l=>!l.startsWith('![')).filter(l=>!l.startsWith('|'));
       const name=clean[0]||'';
@@ -1227,7 +1277,6 @@
       }else{
         $('afterTitle').textContent='Résultats de compétition';
       }
-      const sig=signature(data); if(state.lastSignature && sig!==state.lastSignature) $('lastChange').textContent=new Date().toLocaleString('fr-FR'); state.lastSignature=sig;
     }
     function renderTabs(data){
       const comps=data.competitions||[];
@@ -1295,7 +1344,10 @@
       applyClub();
       syncPublicStateIfEnabled();
     }
-    async function refresh(){
+    async function refresh(options={}){
+      const manual=!!options.manual;
+      if(state.isRefreshing) return;
+      state.isRefreshing=true;
       try{
         setStatus('', 'Actualisation en cours...');
         if(!state.admin) await loadSharedState();
@@ -1305,12 +1357,36 @@
           raw=await loadTrackedLive();
         }
         else raw=normalizeData(await fetchJson(API_URL));
-        state.raw=raw; state.data=state.tracked.length?raw:filterData(raw); syncVolley(state.data); render();
+        state.raw=raw; state.data=state.tracked.length?raw:filterData(raw); syncVolley(state.data);
+        const changeInfo=updateChangeBadge(state.data);
+        state.lastGoodData=JSON.parse(JSON.stringify(state.data));
+        render();
         $('lastCheck').textContent=new Date().toLocaleString('fr-FR');
-        setStatus('ok','Mise à jour réussie');
+        if(changeInfo.changed){
+          setStatus('ok','Mise à jour réussie');
+        }else{
+          setStatus('ok','Aucun nouveau changement détecté');
+        }
+        if(allArchersFinished(state.data)){
+          stopAutoRefresh();
+        }else if(state.autoRefreshEnabled){
+          scheduleNextRefresh();
+        }else if(manual && hasLiveArchers(state.data)){
+          startAutoRefresh();
+          setStatus('ok','Mise à jour réussie');
+        }
       }catch(err){
-        setStatus('err','Erreur: '+err.message);
-      }finally{state.nextRefresh=Date.now()+REFRESH_MS;}
+        if(state.lastGoodData){
+          state.data=JSON.parse(JSON.stringify(state.lastGoodData));
+          render();
+          setStatus('err','Lecture instable, dernier état conservé');
+        }else{
+          setStatus('err','Erreur: '+err.message);
+        }
+        if(state.autoRefreshEnabled) scheduleNextRefresh();
+      }finally{
+        state.isRefreshing=false;
+      }
     }
     async function findNext(){
       try{
@@ -1356,7 +1432,7 @@
     }
 
     function bind(){
-      $('refreshBtn').onclick=refresh;
+      $('refreshBtn').onclick=()=>refresh({manual:true});
       $('volleySelect').onchange=e=>{state.selectedVolley=e.target.value; renderVolley();};
       $('applyClubBtn').onclick=applyClub;
       $('addClubSearchBtn').onclick=addSearchedClub;
@@ -1370,18 +1446,24 @@
       $('applyPhaseBtn').onclick=()=>{state.phaseOverride=$('phaseSelect').value; saveLocal(); render(); syncPublicStateIfEnabled();};
       $('togglePublicControlBtn').onclick=()=>{state.publicControlled=!state.publicControlled; saveLocal(); renderAdmin(); syncPublicStateIfEnabled(); setLog('Contrôle public: '+(state.publicControlled?'ON':'OFF'));};
       $('publishStateBtn').onclick=()=>publishState().catch(err=>setLog('Publication impossible: '+escapeHtml(err.message)));
-      $('competitionModeBtn').onclick=()=>{state.autoRefresh=!state.autoRefresh; $('competitionModeBtn').textContent='Mode compétition: '+(state.autoRefresh?'ON':'OFF');};
+      $('competitionModeBtn').onclick=()=>{
+        if(state.autoRefreshEnabled){
+          stopAutoRefresh('Actualisation automatique arrêtée manuellement');
+        }else{
+          startAutoRefresh();
+          setStatus('ok','Actualisation automatique relancée');
+        }
+      };
       document.querySelectorAll('[data-admin-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-admin-tab]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); ['setup','sources','pilot'].forEach(t=>$('admin'+t[0].toUpperCase()+t.slice(1)).classList.toggle('hidden', t!==b.dataset.adminTab));});
       ['clubInput','countryInput','watchInput','manualUrlInput','clubSearchInput'].forEach(id=>$(id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); if(id==='manualUrlInput') addManual(); else if(id==='watchInput') $('addWatchBtn').click(); else if(id==='clubSearchInput') addSearchedClub(); else applyClub();}}));
-      setInterval(()=>{$('countdown').textContent=state.autoRefresh?Math.max(0,Math.ceil((state.nextRefresh-Date.now())/1000))+' s':'arrêté';},500);
-      setInterval(()=>{if(state.autoRefresh) refresh();},REFRESH_MS);
+      state.countdownTimer=setInterval(updateCountdown,500);
     }
 
     async function init(){
       loadLocal(); await loadAdminConfig(); await resolveAdmin(); if(state.admin) await loadClubCatalog(); await loadSharedState(); hydrateTrackedEntries();
       state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
       if(state.admin){$('adminPanel').classList.remove('hidden'); $('adminToolbar').classList.remove('hidden');}
-      bind(); renderAdmin(); await refresh();
+      bind(); renderAdmin(); await refresh({manual:false});
     }
     init();
   </script>
