@@ -989,6 +989,21 @@
       if(upcoming.length) parts.push(`à venir: ${upcoming.sort().join(', ')}`);
       return parts.join(' · ');
     }
+    function areAllTrackedDeparturesDone(){
+      if(!state.tracked.length) return false;
+      const now=new Date();
+      const current=now.getHours()*60+now.getMinutes();
+      let hasAtLeastOneTimedDepart=false;
+      for(const t of state.tracked){
+        const groups=buildDepartureGroups(entriesForScope(t));
+        const timed=groups.filter(g=>g.start!==null);
+        if(!timed.length) continue;
+        hasAtLeastOneTimedDepart=true;
+        const allDone=timed.every(g=>current>g.start+DEPART_ACTIVE_WINDOW_MIN);
+        if(!allDone) return false;
+      }
+      return hasAtLeastOneTimedDepart;
+    }
     function rawArchersCount(data){
       return (data?.competitions||[]).reduce((n,c)=>n+((c?.archers||[]).length),0);
     }
@@ -1411,12 +1426,14 @@
       const a=archers(data);
       const hasRealLive=a.some(x=>!isFinished(x) && !isScheduleLikeRow(x));
       const hasFinalResults=a.length && a.some(isFinished);
+      const allDepDone=areAllTrackedDeparturesDone();
       if(state.phaseOverride!=='auto'){
-        if(state.phaseOverride==='during') return hasRealLive ? 'during' : (hasFinalResults ? 'after' : 'before');
-        if(state.phaseOverride==='after') return hasFinalResults ? 'after' : (hasRealLive ? 'during' : 'before');
-        if(state.phaseOverride==='before') return hasRealLive ? 'during' : (hasFinalResults ? 'after' : 'before');
+        if(state.phaseOverride==='during') return hasRealLive ? 'during' : ((hasFinalResults||allDepDone) ? 'after' : 'before');
+        if(state.phaseOverride==='after') return (hasFinalResults||allDepDone) ? 'after' : (hasRealLive ? 'during' : 'before');
+        if(state.phaseOverride==='before') return hasRealLive ? 'during' : ((hasFinalResults||allDepDone) ? 'after' : 'before');
       }
       if(hasRealLive) return 'during';
+      if(allDepDone) return 'after';
       const schedules=state.tracked.map(evaluateTournamentSchedule);
       if(schedules.some(s=>s.state==='future' || s.state==='upcoming' || s.state==='no_time' || s.state==='no_entries')) return 'before';
       if(a.length) return 'after';
@@ -1503,12 +1520,22 @@
 
     function render(){
       const data=state.data;
-      const all=archers(data), live=all.filter(a=>!isFinished(a)), done=all.filter(isFinished);
+      const all=archers(data);
+      let live=all.filter(a=>!isFinished(a));
+      let done=all.filter(isFinished);
       $('statCompetitions').textContent=(data.competitions||[]).length || state.tracked.length;
+      const phase=computePhase(data);
+      if(phase==='after'){
+        const scoredLive=live.filter(a=>getScore(a)>0);
+        if(scoredLive.length){
+          done=dedupeArchers([...done,...scoredLive]);
+          live=live.filter(a=>!(getScore(a)>0));
+        }
+      }
       $('statArchers').textContent=all.length; $('statFinished').textContent=done.length; $('statLive').textContent=live.length;
       $('departInfo').textContent=buildDepartInfoText(data);
       renderTabs(data); renderBefore(); renderRows('liveRows',live,true); renderRows('finishedRows',done,false); renderVolley();
-      const phase=computePhase(data); setPhase(phase);
+      setPhase(phase);
       if(phase==='before' && done.length){
         $('afterSection').classList.remove('hidden');
         $('afterTitle').textContent='Résultats disponibles (départ précédent)';
