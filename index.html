@@ -878,6 +878,22 @@
       }
       return uniqueByNorm(out);
     }
+    function parseDepArrowState(text){
+      const raw=String(text||'');
+      const map=new Map();
+      const matches=[...raw.matchAll(/apr[eè]s\s*(\d+)\s*fl[èe]ches(?:\s*\(d[ée]part:\s*([^)]+)\))?/gi)];
+      for(const m of matches){
+        const arrows=Number(m[1]);
+        const depRaw=String(m[2]||'').trim();
+        const deps=(depRaw.match(/\d+/g)||[]).map(String);
+        if(!deps.length) continue;
+        for(const dep of deps){
+          const old=map.get(dep)||0;
+          if(Number.isFinite(arrows) && arrows>old) map.set(dep,arrows);
+        }
+      }
+      return map;
+    }
     function buildResultIndexForTournament(tournamentId){
       const idx=new Map();
       const comp=(state.data?.competitions||[]).find(c=>String(c.id)===String(tournamentId));
@@ -950,6 +966,14 @@
       const finished=new Set();
       const live=new Set();
       for(const a of arch){
+        const depArrows=parseDepArrowState(`${a.progress||''} ${a.detail||''}`);
+        if(depArrows.size){
+          for(const [d,arrows] of depArrows.entries()){
+            if(arrows>=72 || arrows===60) finished.add(d);
+            else if(arrows>0) live.add(d);
+          }
+          continue;
+        }
         const deps=extractDepartCodesFromText(`${a.progress||''} ${a.detail||''}`);
         if(!deps.length) continue;
         for(const d of deps){
@@ -1013,9 +1037,17 @@
       if(!values.length) return false;
       return values.every(v=>v>=72 || v===60);
     }
+    function hasCompletedDistanceBreakdown(text){
+      const raw=String(text||'');
+      const hasFirst=/-1\s*:\s*\d+/i.test(raw);
+      const hasSecond=/-2\s*:\s*\d+/i.test(raw);
+      return hasFirst && hasSecond;
+    }
     function isFinished(a){
       if(!!a?.finished) return true;
-      return isFinalProgressText(`${a?.progress||''} ${a?.detail||''}`);
+      if(isFinalProgressText(`${a?.progress||''} ${a?.detail||''}`)) return true;
+      if(hasCompletedDistanceBreakdown(`${a?.category||''} ${a?.detail||''}`)) return true;
+      return false;
     }
     function compactProgressLabel(a){
       const raw=String(a?.progress||'').trim();
