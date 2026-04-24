@@ -251,8 +251,8 @@
           </div>
           <div class="admin-quick" id="clubQuickButtons"></div>
           <div class="admin-input">
-            <input id="watchArcherInput" type="text" placeholder="Archers à surveiller (ex: Johanna, Maxence)" />
-            <button class="btn secondary" id="addWatchArcherBtn">Ajouter surveillés</button>
+            <input id="watchArcherInput" type="text" placeholder="Archers à suivre (nom/prénom, séparés par virgules)" />
+            <button class="btn secondary" id="addWatchArcherBtn">Ajouter archers</button>
             <button class="btn secondary" id="clearWatchArcherBtn">Vider surveillés</button>
           </div>
           <div class="admin-quick" id="watchArcherList"></div>
@@ -1298,7 +1298,7 @@
       const box = el('watchArcherList');
       if (!box) return;
       if (!watchedArchers.length) {
-        box.innerHTML = '<span class="mini">Aucun archer surveillé.</span>';
+        box.innerHTML = '<span class="mini">Aucun archer ajouté.</span>';
         return;
       }
       box.innerHTML = watchedArchers.map(n =>
@@ -1811,7 +1811,8 @@
           const x = cells.length >= 1 ? cells[cells.length - 1] : '';
 
           const hay = normalizeForMatch(`${club} ${athlete}`);
-          const matches = !clubKeywords.length || clubKeywords.some(k => hay.includes(normalizeForMatch(k)));
+          const watched = isWatchedArcher({ name: athlete });
+          const matches = watched || !clubKeywords.length || clubKeywords.some(k => hay.includes(normalizeForMatch(k)));
           if (!matches) continue;
 
           const progressText = /\[([^\]]+)\]/.exec(raw)?.[1] || 'En cours';
@@ -1847,7 +1848,8 @@
           const club = row[3].trim();
           const tail = row[4] || '';
           const hay = normalizeForMatch(`${club} ${athlete}`);
-          const matches = !clubKeywords.length || clubKeywords.some(k => hay.includes(normalizeForMatch(k)));
+          const watched = isWatchedArcher({ name: athlete });
+          const matches = watched || !clubKeywords.length || clubKeywords.some(k => hay.includes(normalizeForMatch(k)));
           if (!matches) continue;
 
           const numbers = (tail.match(/\b\d{1,3}\b/g) || []).map(Number);
@@ -1956,11 +1958,15 @@
       });
     }
 
+    function matchesTrackedScope(archer) {
+      return matchesTrackedClub(archer) || isWatchedArcher(archer);
+    }
+
     function applyClubFilter(data) {
       const competitions = (data.competitions || [])
         .map(c => ({
           ...c,
-          archers: (c.archers || []).filter(matchesTrackedClub)
+          archers: (c.archers || []).filter(matchesTrackedScope)
         }))
         .filter(c => c.archers.length > 0);
       return { competitions };
@@ -2825,7 +2831,7 @@
           const added = addWatchedArchers(raw);
           if (watchInput) watchInput.value = '';
           setAdminResult(added > 0
-            ? `${added} archer(s) ajouté(s) à la surveillance.`
+            ? `${added} archer(s) ajouté(s) au suivi. Ils seront affichés même hors club suivi.`
             : 'Aucun nouvel archer ajouté.');
           if (lastRawData) render(lastRawData, true);
         });
