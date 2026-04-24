@@ -901,7 +901,20 @@
     }
     function signature(data){return JSON.stringify((data.competitions||[]).map(c=>[c.id,c.archers.map(a=>[a.name,a.score,a.position,a.progress,a.detail,a.finished])]));}
     function getScore(a){const n=Number(a?.score); if(Number.isFinite(n)&&n>0) return n; const m=String(a?.scoreLabel||'').match(/\d+/); return m?Number(m[0]):0;}
-    function isFinished(a){return !!a?.finished || /termin|résultat publié|après\s*(60|72)/i.test(`${a?.progress||''} ${a?.detail||''}`);}
+    function isFinalProgressText(text){
+      const raw=String(text||'');
+      if(!raw.trim()) return false;
+      if(/termin|r[ée]sultat publi[ée]/i.test(raw)) return true;
+      const values=[...raw.matchAll(/apr[eè]s\s*(\d+)\s*fl[èe]ches/gi)].map(m=>Number(m[1]));
+      if(!values.length) return false;
+      if(values.length>1) return false;
+      const v=values[0];
+      return v>=72 || v===60;
+    }
+    function isFinished(a){
+      if(!!a?.finished) return true;
+      return isFinalProgressText(`${a?.progress||''} ${a?.detail||''}`);
+    }
     function hasLiveArchers(data){
       return archers(data).some(a=>!isFinished(a) && !isScheduleLikeRow(a));
     }
@@ -962,7 +975,11 @@
       const info=extractCompetitionInfoFromMarkdown(lines);
       const title=info.name || lines.find(l=>/^Title:/i.test(l))?.replace(/^Title:\s*/i,'') || `Tournoi ${id}`;
       const scopeKeys=clubKeysFromRaw(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
-      const rows=[]; let category=code?`Page ${code}`:''; let categoryProgress='';
+      const rows=[]; const allRows=[]; let category=code?`Page ${code}`:''; let categoryProgress='';
+      const pushRow=(a)=>{
+        allRows.push(a);
+        if(matchesScope(a, scopeKeys)) rows.push(a);
+      };
       for(const raw of lines){
         const line=raw.trim();
         const plain=fixText(raw||'')
@@ -977,7 +994,7 @@
           continue;
         }
         if(line.startsWith('|')){
-          const cells=line.split('|').map(v=>v.trim()).filter(Boolean);
+          const cells=line.split('|').map(v=>stripMarkdownImages(v).trim()).filter(Boolean);
           if(cells.length===1){
             const single=fixText(cells[0]||'');
             const progressMatch=single.match(/\[([^\]]+)\]/);
@@ -987,8 +1004,8 @@
           }
           if(cells.length>=6 && /^\d+$/.test(cells[0])){
             const progress=categoryProgress || 'En cours';
-            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress,detail:`10+X: ${cells[cells.length-2]||'-'} · X: ${cells[cells.length-1]||'-'}`,finished:/après\s*\d+|termin/i.test(progress)};
-            if(matchesScope(a, scopeKeys)) rows.push(a);
+            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress,detail:`10+X: ${cells[cells.length-2]||'-'} · X: ${cells[cells.length-1]||'-'}`,finished:isFinalProgressText(progress)};
+            pushRow(a);
           }
           continue;
         }
@@ -997,7 +1014,7 @@
         if(mClassic){
           const nums=(mClassic[4].match(/\b\d{1,3}\b/g)||[]).map(Number);
           const a={position:mClassic[1],name:mClassic[2].trim(),club:mClassic[3].trim(),score:nums.length?Math.max(...nums):0,scoreLabel:nums.length?String(Math.max(...nums)):'',category,progress:categoryProgress||'Résultat publié',detail:mClassic[4].trim(),finished:true};
-          if(matchesScope(a, scopeKeys)) rows.push(a);
+          pushRow(a);
           continue;
         }
         const mIanseo=clean.match(/^(\d+)\s+(.+?)\s+(\d{6,7})\s*-\s*(.+)$/);
@@ -1006,6 +1023,7 @@
           const scoreTail=rest.match(/(?:\d{1,3}\s*\/\s*\d+\s+)+(\d{1,3})\s+(\d+)\s+(\d+)\s*$/);
           if(scoreTail){
             const clubName=rest.replace(/(?:\d{1,3}\s*\/\s*\d+\s+)+\d{1,3}\s+\d+\s+\d+\s*$/,'').trim();
+            const progress=categoryProgress||'Résultat publié';
             const a={
               position:mIanseo[1],
               name:mIanseo[2].trim(),
@@ -1013,20 +1031,25 @@
               score:Number(scoreTail[1])||0,
               scoreLabel:scoreTail[1],
               category,
-              progress:categoryProgress||'Résultat publié',
+              progress,
               detail:rest,
-              finished:/après\s*\d+|termin/i.test(categoryProgress||'Résultat publié')
+              finished:isFinalProgressText(progress)
             };
-            if(matchesScope(a, scopeKeys)) rows.push(a);
+            pushRow(a);
           }
         }
       }
-      return {id:String(id),name:title,place:info.place||tournament?.place||'-',sourceUrl:url,archers:dedupeArchers(rows)};
+      const output=(rows.length || !scopeKeys.length) ? rows : allRows;
+      return {id:String(id),name:title,place:info.place||tournament?.place||'-',sourceUrl:url,archers:dedupeArchers(output)};
     }
     function parsePdfResultsMarkdown(md, tournament=null){
       const lines=String(md||'').split('\n').map(l=>fixText(l).trim()).filter(Boolean);
       const scopeKeys=clubKeysFromRaw(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
-      const rows=[];
+      const rows=[]; const allRows=[];
+      const pushRow=(a)=>{
+        allRows.push(a);
+        if(matchesScope(a, scopeKeys)) rows.push(a);
+      };
       let category='Résultats';
       let progress='Résultat publié';
       for(const line of lines){
@@ -1057,11 +1080,11 @@
           category,
           progress,
           detail:detailParts.join(' · ') || tail,
-          finished:/après\s*(72|60|50|36)|termin/i.test(progress)
+          finished:isFinalProgressText(progress)
         };
-        if(matchesScope(a, scopeKeys)) rows.push(a);
+        pushRow(a);
       }
-      return dedupeArchers(rows);
+      return dedupeArchers((rows.length || !scopeKeys.length) ? rows : allRows);
     }
     async function resolveResultPdfUrls(t){
       if(Array.isArray(t?.resultPdfUrls) && t.resultPdfUrls.length) return t.resultPdfUrls;
