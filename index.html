@@ -411,7 +411,7 @@
         phaseOverrideMode:state.phaseOverride,
         publicControlledByAdmin:state.publicControlled,
         watchedArchers:state.watched,
-        trackedTournaments:state.tracked.map(t=>({id:t.id,name:t.name,date_text:t.date,details_url:t.details,url:t.url,ic_url:t.url,ena_url:t.ena,club_entries:t.entries||[],scopeRaw:t.scopeRaw||state.clubRaw,enaLoaded:!!t.enaLoaded})),
+        trackedTournaments:state.tracked.map(t=>({id:t.id,name:t.name,date_text:t.date,details_url:t.details,url:t.url,ic_url:t.url,ena_url:t.ena,club_entries:t.entries||[],scopeRaw:t.scopeRaw||state.clubRaw,enaLoaded:!!t.enaLoaded,liveStatus:t.liveStatus||''})),
         trackedIcUrls:state.tracked.map(t=>t.url)
       };
     }
@@ -435,6 +435,7 @@
         url,
         scopeRaw:String(raw.scopeRaw||raw.scope_raw||raw.clubRaw||raw.club_raw||state.clubRaw||''),
         enaLoaded:!!raw.enaLoaded,
+        liveStatus:String(raw.liveStatus||raw.live_status||''),
         entries:Array.isArray(raw.club_entries)?raw.club_entries:(Array.isArray(raw.entries)?raw.entries:[])
       };
     }
@@ -496,6 +497,10 @@
         const txt=await fetchText(toProxy(t.details));
         return extractLiveUrls(txt,id);
       }catch(_){return [];}
+    }
+    function liveLabel(t){
+      if(t.liveStatus) return t.liveStatus;
+      return t.url ? 'Live prêt, en attente de scores' : 'Départs publiés, résultats pas encore ouverts';
     }
 
     function isWatched(a){
@@ -658,20 +663,26 @@
           const urls=await discoverLiveForTournament(t);
           if(urls.length){
             t.url=urls[0];
-            saveLocal();
+            t.liveStatus='Live détecté, en attente de scores';
+            if(state.admin) saveLocal();
           }else{
+            t.liveStatus='Départs publiés, résultats pas encore ouverts';
             continue;
           }
         }
         try{
           const md=await fetchText(toProxy(t.url));
           const c=parseMarkdownLive(md,t.url,t);
+          t.liveStatus=c.archers.length?'Scores live détectés':'Live ouvert, aucun score détecté';
           c.name=t.name||c.name; c.sourceUrl=t.url;
           comps.push(c);
         }catch(err){
+          if(/HTTP 404/.test(err.message)) t.liveStatus='Départs publiés, résultats pas encore ouverts';
+          else t.liveStatus='Live inaccessible pour le moment';
           comps.push({id:t.id,name:t.name||'Source erreur',place:'-',sourceUrl:t.url,archers:[],error:err.message});
         }
       }
+      if(state.admin) localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
       return {competitions:comps.filter(c=>c.archers.length)};
     }
 
@@ -769,7 +780,7 @@
         const entries=entriesForScope(t), clubs=clubsForEntries(entries);
         const expanded=state.expandedBefore.has(t.id);
         const visible=expanded?entries:entries.slice(0,14);
-        return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${t.url?'Live prêt':'En attente du live IANSEO'}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="mini-list"><div class="mini-row muted"><strong>Archer</strong><span>Départ</span><span>Horaire</span><span>Cible / catégorie</span></div>${visible.map(e=>`<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span>${escapeHtml(entryDepart(e))}<br><small>${escapeHtml(e.club||'')}</small></span><span>${escapeHtml(entryHoraire(e))}</span><span>${escapeHtml(e.target||'-')}<br><small>${escapeHtml(entryCategorie(e))}</small></span></div>`).join('')}${entries.length>14?`<button class="btn small secondary" data-toggle-before="${escapeHtml(t.id)}">${expanded?'Réduire la liste':`Voir tous les participants (${entries.length})`}</button>`:''}${!entries.length?'<div class="muted">Aucun participant à afficher pour les clubs sélectionnés. Vérifie le club suivi sur ce tournoi.</div>':''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:'<span class="badge amber">Live non publié</span>'}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
+        return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${escapeHtml(liveLabel(t))}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="mini-list"><div class="mini-row muted"><strong>Archer</strong><span>Départ</span><span>Horaire</span><span>Cible / catégorie</span></div>${visible.map(e=>`<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span>${escapeHtml(entryDepart(e))}<br><small>${escapeHtml(e.club||'')}</small></span><span>${escapeHtml(entryHoraire(e))}</span><span>${escapeHtml(e.target||'-')}<br><small>${escapeHtml(entryCategorie(e))}</small></span></div>`).join('')}${entries.length>14?`<button class="btn small secondary" data-toggle-before="${escapeHtml(t.id)}">${expanded?'Réduire la liste':`Voir tous les participants (${entries.length})`}</button>`:''}${!entries.length?'<div class="muted">Aucun participant à afficher pour les clubs sélectionnés. Vérifie le club suivi sur ce tournoi.</div>':''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:`<span class="badge amber">${escapeHtml(liveLabel(t))}</span>`}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
       }).join(''):'';
       document.querySelectorAll('[data-toggle-before]').forEach(b=>b.onclick=()=>{const id=b.dataset.toggleBefore; state.expandedBefore.has(id)?state.expandedBefore.delete(id):state.expandedBefore.add(id); renderBefore();});
       document.querySelectorAll('[data-remove-track]').forEach(b=>b.onclick=()=>{state.archived.unshift(...state.tracked.filter(t=>t.id===b.dataset.removeTrack)); state.tracked=state.tracked.filter(t=>t.id!==b.dataset.removeTrack); saveLocal(); refresh();});
