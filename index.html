@@ -290,7 +290,7 @@
             <div class="mini" id="publicControlStatus">État public: chargement...</div>
           </div>
           <div class="admin-input">
-            <input id="manualIcUrlInput" type="text" placeholder="Ajouter URL live IANSEO (IC.php, ICCM.php ou page IQ/IF)" />
+            <input id="manualIcUrlInput" type="text" placeholder="Coller fiche IANSEO ou URL live (Details, IC, IQ, IF...)" />
             <button class="btn secondary" id="addManualIcBtn">Ajouter URL live</button>
           </div>
           <div class="admin-list" id="trackedTournamentsList"></div>
@@ -485,7 +485,7 @@
       const endDate = parseEndDateFromLabel(dateText);
 
       const enaMatch = String(text || '').match(new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${toId}/ENA\\.php`, 'i'));
-      const icMatch = String(text || '').match(new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${toId}/IC\\.php`, 'i'));
+      const icMatch = String(text || '').match(new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${toId}/IC(?:CM)?\\.php`, 'i'));
 
       return {
         name,
@@ -496,6 +496,49 @@
         enaUrl: enaMatch ? enaMatch[0] : '',
         icUrl: icMatch ? icMatch[0] : ''
       };
+    }
+
+    function normalizeIanseoUrl(raw) {
+      const v = String(raw || '').trim();
+      if (!v) return '';
+      if (/^https?:\/\//i.test(v)) return v;
+      if (v.startsWith('/')) return 'https://www.ianseo.net' + v;
+      return '';
+    }
+
+    function extractDetailsToId(url) {
+      const match = String(url || '').match(/Details\.php\?toId=([a-z0-9-]+)/i);
+      return match ? match[1] : '';
+    }
+
+    function extractLiveUrlsFromDetailsText(text, toId) {
+      const found = [];
+      const seen = new Set();
+      const raw = String(text || '');
+      const escaped = String(toId || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const patterns = [
+        new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${escaped}/(?:IC(?:CM)?|I[A-Z0-9]+)\\.php`, 'gi'),
+        new RegExp(`/TourData/\\d+/${escaped}/(?:IC(?:CM)?|I[A-Z0-9]+)\\.php`, 'gi')
+      ];
+
+      for (const pattern of patterns) {
+        let match;
+        while ((match = pattern.exec(raw))) {
+          const url = normalizeIcUrl(normalizeIanseoUrl(match[0]));
+          if (!url || seen.has(url)) continue;
+          seen.add(url);
+          found.push(url);
+        }
+      }
+
+      const priority = url => {
+        if (/\/IC(?:CM)?\.php/i.test(url)) return 0;
+        if (/\/IQ/i.test(url)) return 1;
+        if (/\/IF/i.test(url)) return 2;
+        if (/\/IB/i.test(url)) return 3;
+        return 4;
+      };
+      return found.sort((a, b) => priority(a) - priority(b) || a.localeCompare(b)).slice(0, 30);
     }
 
     function extractClubEntriesFromEnaMarkdown(text, keywords) {
@@ -1919,6 +1962,43 @@
       return v;
     }
 
+    async function resolveManualLiveSources(rawUrl) {
+      const source = normalizeIanseoUrl(rawUrl);
+      if (!source) return { urls: [], detailsUrl: '', message: 'URL invalide.' };
+
+      const direct = normalizeIcUrl(source);
+      if (direct) {
+        return { urls: [direct], detailsUrl: direct.replace(/\/(?:IC(?:CM)?|I[A-Z0-9]+)\.php.*$/i, '/Details.php'), message: '' };
+      }
+
+      const toId = extractDetailsToId(source);
+      if (!toId) {
+        return { urls: [], detailsUrl: '', message: 'Colle une fiche Details.php?toId=... ou une page live .php.' };
+      }
+
+      const detailsText = await fetchText(toProxyUrl(source));
+      const urls = extractLiveUrlsFromDetailsText(detailsText, toId);
+      return {
+        urls,
+        detailsUrl: `https://www.ianseo.net/Details.php?toId=${toId}`,
+        message: urls.length ? '' : 'Aucune page live trouvée sur cette fiche IANSEO.'
+      };
+    }
+
+    async function previewManualLiveSources(urls) {
+      let competitions = 0;
+      let archers = 0;
+      for (const url of urls.slice(0, 8)) {
+        try {
+          const md = await fetchText(toProxyUrl(url));
+          const comp = parseIcMarkdownToCompetition(md, url, trackedClubKeywords);
+          competitions += 1;
+          archers += (comp.archers || []).length;
+        } catch (_) {}
+      }
+      return { competitions, archers };
+    }
+
     async function followSelectedNextCompetition() {
       const selected = nextCompetitionMatches.find(m => String(m.to_id) === selectedNextCompetitionId) || nextCompetitionMatches[0];
       if (!selected) {
@@ -2885,20 +2965,30 @@
         bindClick('addManualIcBtn', async () => {
           const input = el('manualIcUrlInput');
           const url = input ? input.value : '';
-          const clean = normalizeIcUrl(url);
-          if (!clean) {
-            setAdminResult('URL live invalide. Format attendu: page IANSEO .php (IC, ICCM, IQ..., IF...).');
+          setAdminResult('Analyse de la source IANSEO...');
+          const resolved = await resolveManualLiveSources(url);
+          if (!resolved.urls.length) {
+            setAdminResult(resolved.message || 'Aucune URL live exploitable trouvée.');
             return;
           }
-          addTrackedTournament({
-            id: `manual-${Date.now()}`,
-            name: `Tournoi manuel ${new Date().toLocaleDateString('fr-FR')}`,
-            date_text: 'manuel',
-            ic_url: clean,
-            details_url: clean.replace(/\/(?:IC(?:CM)?|I[A-Z0-9]+)\.php.*$/i, '/Details.php')
+
+          const baseId = `manual-${Date.now()}`;
+          resolved.urls.forEach((liveUrl, idx) => {
+            addTrackedTournament({
+              id: `${baseId}-${idx + 1}`,
+              name: `Tournoi manuel ${new Date().toLocaleDateString('fr-FR')}${resolved.urls.length > 1 ? ` · page ${idx + 1}` : ''}`,
+              date_text: 'manuel',
+              ic_url: liveUrl,
+              details_url: resolved.detailsUrl || liveUrl.replace(/\/(?:IC(?:CM)?|I[A-Z0-9]+)\.php.*$/i, '/Details.php')
+            });
           });
           if (input) input.value = '';
-          setAdminResult('URL IC ajoutée au suivi.');
+          const preview = await previewManualLiveSources(resolved.urls);
+          setAdminResult(
+            `${resolved.urls.length} page(s) live ajoutée(s). ` +
+            `${preview.archers} archer(s) correspondent au club ou aux archers ajoutés sur les ${preview.competitions} première(s) page(s) testée(s).` +
+            (preview.archers ? '' : '<br><strong>Aucun archer affiché pour l’instant: vérifie le filtre club ou ajoute le nom exact de l’archer à suivre.</strong>')
+          );
           await refresh();
         });
         bindClick('followSelectedNextCompetitionBtn', async () => {
