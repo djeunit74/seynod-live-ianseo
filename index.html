@@ -140,6 +140,7 @@
         <div style="margin-top:12px">
           <span class="badge amber" id="phaseBadge">Avant compétition</span>
           <div class="muted" id="phaseHelp" style="margin-top:8px">Choisis un club, des archers ou une source live.</div>
+          <div class="muted" id="departInfo" style="margin-top:6px"></div>
         </div>
       </aside>
 
@@ -852,6 +853,16 @@
       const h=Math.floor(mins/60), m=mins%60;
       return `${h}h${String(m).padStart(2,'0')}`;
     }
+    function extractDepartCodesFromText(text){
+      const out=[];
+      const raw=String(text||'');
+      const m=raw.match(/d[ée]part\s*:?\s*([0-9,\s]+)/ig) || [];
+      for(const chunk of m){
+        const nums=(chunk.match(/\d+/g)||[]).map(Number).filter(n=>Number.isFinite(n)&&n>0);
+        for(const n of nums) out.push(String(n));
+      }
+      return uniqueByNorm(out);
+    }
     function buildResultIndexForTournament(tournamentId){
       const idx=new Map();
       const comp=(state.data?.competitions||[]).find(c=>String(c.id)===String(tournamentId));
@@ -911,6 +922,33 @@
       const clubs=clubsForEntries(entries);
       const clubText=clubs.length ? clubs.map(c=>`${c.club} (${c.count})`).join(' · ') : 'aucun participant détecté pour les clubs sélectionnés';
       return `${state.tracked.length} tournoi(s) suivi(s) · ${entries.length} participant(s) sélectionné(s) · ${clubText}`;
+    }
+    function buildDepartInfoText(data){
+      if(!state.tracked.length) return '';
+      const selectedId=state.selectedCompetition==='all' ? (state.tracked[0]?.id||'') : state.selectedCompetition;
+      const tracked=state.tracked.find(t=>String(t.id)===String(selectedId)) || state.tracked[0];
+      if(!tracked) return '';
+      const groups=buildDepartureGroups(entriesForScope(tracked));
+      const allDeps=groups.map(g=>String(g.dep)).filter(Boolean);
+      const comp=(data?.competitions||[]).find(c=>String(c.id)===String(tracked.id));
+      const arch=(comp?.archers||[]);
+      const finished=new Set();
+      const live=new Set();
+      for(const a of arch){
+        const deps=extractDepartCodesFromText(`${a.progress||''} ${a.detail||''}`);
+        if(!deps.length) continue;
+        for(const d of deps){
+          if(isFinished(a)) finished.add(d);
+          else live.add(d);
+        }
+      }
+      for(const d of finished) live.delete(d);
+      const upcoming=allDeps.filter(d=>!finished.has(d)&&!live.has(d));
+      const parts=[`Départs détectés: ${allDeps.length||0}`];
+      if(finished.size) parts.push(`terminés: ${[...finished].sort().join(', ')}`);
+      if(live.size) parts.push(`en cours: ${[...live].sort().join(', ')}`);
+      if(upcoming.length) parts.push(`à venir: ${upcoming.sort().join(', ')}`);
+      return parts.join(' · ');
     }
     function rawArchersCount(data){
       return (data?.competitions||[]).reduce((n,c)=>n+((c?.archers||[]).length),0);
@@ -1384,6 +1422,7 @@
       const all=archers(data), live=all.filter(a=>!isFinished(a)), done=all.filter(isFinished);
       $('statCompetitions').textContent=(data.competitions||[]).length || state.tracked.length;
       $('statArchers').textContent=all.length; $('statFinished').textContent=done.length; $('statLive').textContent=live.length;
+      $('departInfo').textContent=buildDepartInfoText(data);
       renderTabs(data); renderBefore(); renderRows('liveRows',live,true); renderRows('finishedRows',done,false); renderVolley();
       const phase=computePhase(data); setPhase(phase);
       if(phase==='before' && done.length){
