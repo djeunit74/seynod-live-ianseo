@@ -364,7 +364,7 @@
         if(s.trackedCountryRaw) state.countryRaw=s.trackedCountryRaw;
         state.clubKeys=splitList(state.clubRaw).map(x=>x.toLowerCase());
         state.watched=uniqueByNorm(s.watchedArchers||[]);
-        state.tracked=(s.trackedTournaments||[]).map(cleanTournament).filter(t=>t.url);
+        state.tracked=(s.trackedTournaments||[]).map(cleanTournament).filter(t=>t.url || t.details);
         state.phaseOverride=['auto','before','during','after'].includes(s.phaseOverrideMode)?s.phaseOverrideMode:'auto';
       }catch(_){}
     }
@@ -376,7 +376,7 @@
         phaseOverrideMode:state.phaseOverride,
         publicControlledByAdmin:state.publicControlled,
         watchedArchers:state.watched,
-        trackedTournaments:state.tracked.map(t=>({id:t.id,name:t.name,date_text:t.date,details_url:t.details,url:t.url,ic_url:t.url,club_entries:t.entries||[]})),
+        trackedTournaments:state.tracked.map(t=>({id:t.id,name:t.name,date_text:t.date,details_url:t.details,url:t.url,ic_url:t.url,ena_url:t.ena,club_entries:t.entries||[]})),
         trackedIcUrls:state.tracked.map(t=>t.url)
       };
     }
@@ -396,6 +396,7 @@
         name:String(raw.name||'Tournoi suivi'),
         date:String(raw.date_text||raw.date||''),
         details:String(raw.details_url||raw.details||''),
+        ena:String(raw.ena_url||raw.ena||''),
         url,
         entries:Array.isArray(raw.club_entries)?raw.club_entries:[]
       };
@@ -424,6 +425,16 @@
       const rank=u=>/\/IC(?:CM)?\.php/i.test(u)?0:/\/IQ/i.test(u)?1:/\/IF/i.test(u)?2:3;
       return out.sort((a,b)=>rank(a)-rank(b)||a.localeCompare(b)).slice(0,40);
     }
+    function extractEnaUrl(detailsText,toId){
+      const esc=String(toId).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+      const m=String(detailsText||'').match(new RegExp(`(?:https://www\\.ianseo\\.net)?/TourData/\\d+/${esc}/ENA\\.php`,'i'));
+      return m ? normalizeUrl(m[0]) : '';
+    }
+    function extractDetailsName(detailsText,toId){
+      const lines=String(detailsText||'').split('\n').map(l=>l.trim()).filter(Boolean);
+      const content=lines.find(l=>!/^Title:|^URL Source:|^Markdown Content:|^https?:/i.test(l) && !l.startsWith('!['));
+      return content || `Tournoi ${toId}`;
+    }
     async function resolveSource(raw){
       const url=normalizeUrl(raw);
       const live=normalizeLiveUrl(url);
@@ -432,8 +443,22 @@
       if(!id) throw new Error('Colle une fiche Details.php?toId=... ou une page live IANSEO .php.');
       const txt=await fetchText(toProxy(url));
       const urls=extractLiveUrls(txt,id);
-      if(!urls.length) throw new Error('Aucune page live détectée sur cette fiche IANSEO.');
-      return {urls, details:`https://www.ianseo.net/Details.php?toId=${id}`};
+      return {
+        urls,
+        details:`https://www.ianseo.net/Details.php?toId=${id}`,
+        ena:extractEnaUrl(txt,id),
+        name:extractDetailsName(txt,id),
+        pending:!urls.length
+      };
+    }
+    async function discoverLiveForTournament(t){
+      if(!t.details) return [];
+      const id=detailsId(t.details);
+      if(!id) return [];
+      try{
+        const txt=await fetchText(toProxy(t.details));
+        return extractLiveUrls(txt,id);
+      }catch(_){return [];}
     }
 
     function isWatched(a){
@@ -502,6 +527,15 @@
     async function loadTrackedLive(){
       const comps=[];
       for(const t of state.tracked){
+        if(!t.url){
+          const urls=await discoverLiveForTournament(t);
+          if(urls.length){
+            t.url=urls[0];
+            saveLocal();
+          }else{
+            continue;
+          }
+        }
         try{
           const md=await fetchText(toProxy(t.url));
           const c=parseMarkdownLive(md,t.url);
@@ -604,7 +638,7 @@
     }
     function renderBefore(){
       $('beforeMeta').textContent=state.tracked.length?`${state.tracked.length} tournoi(s) suivi(s) · Club: ${state.clubRaw} · Archers ajoutés: ${state.watched.length}`:'Aucun tournoi suivi. Ajoute une source IANSEO dans Admin > Tournois.';
-      $('upcomingCards').innerHTML=state.tracked.length?state.tracked.map(t=>`<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`).join(''):'';
+      $('upcomingCards').innerHTML=state.tracked.length?state.tracked.map(t=>`<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${t.url?'Live prêt':'En attente du live IANSEO'}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:'<span class="badge amber">Live non publié</span>'}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`).join(''):'';
       document.querySelectorAll('[data-remove-track]').forEach(b=>b.onclick=()=>{state.archived.unshift(...state.tracked.filter(t=>t.id===b.dataset.removeTrack)); state.tracked=state.tracked.filter(t=>t.id!==b.dataset.removeTrack); saveLocal(); refresh();});
     }
     function renderAdmin(){
@@ -657,20 +691,25 @@
       const m=state.foundMatches.find(x=>String(x.to_id)===String($('foundSelect').value))||state.foundMatches[0];
       if(!m){setLog('Aucune compétition sélectionnée.'); return;}
       const url=normalizeLiveUrl(m.ic_url||'');
-      if(!url){setLog('Cette compétition n’a pas encore de lien live IC publié. Colle une page live manuellement si IANSEO en propose une.'); return;}
-      state.tracked.push(cleanTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ic_url:url,club_entries:m.club_entries}));
-      saveLocal(); setLog('Compétition ajoutée au suivi.'); refresh();
+      state.tracked.push(cleanTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ena_url:m.ena_url,ic_url:url,club_entries:m.club_entries}));
+      saveLocal(); setLog(url?'Compétition ajoutée au suivi live.':'Compétition ajoutée en attente du live IANSEO.'); refresh();
     }
     async function addManual(){
       try{
         setLog('Analyse de la source IANSEO...');
         const res=await resolveSource($('manualUrlInput').value);
         const stamp=Date.now();
-        res.urls.forEach((url,i)=>state.tracked.push(cleanTournament({id:`manual-${stamp}-${i}`,name:`Source manuelle ${i+1}`,details_url:res.details,ic_url:url})));
+        if(res.urls.length){
+          res.urls.forEach((url,i)=>state.tracked.push(cleanTournament({id:`manual-${stamp}-${i}`,name:res.name||`Source manuelle ${i+1}`,details_url:res.details,ena_url:res.ena,ic_url:url})));
+        }else{
+          state.tracked.push(cleanTournament({id:`pending-${stamp}`,name:res.name||'Tournoi en attente live',details_url:res.details,ena_url:res.ena,ic_url:''}));
+        }
         $('manualUrlInput').value=''; saveLocal();
         await refresh();
         const count=archers(state.data).length;
-        setLog(`${res.urls.length} source(s) ajoutée(s). ${count} archer(s) affiché(s). ${count?'':'Si rien ne sort, ajoute le nom exact de l’archer ou corrige le club suivi.'}`);
+        setLog(res.urls.length
+          ? `${res.urls.length} source(s) ajoutée(s). ${count} archer(s) affiché(s). ${count?'':'Si rien ne sort, ajoute le nom exact de l’archer ou corrige le club suivi.'}`
+          : 'Tournoi ajouté en attente: la fiche est suivie, et l’app cherchera le live à chaque actualisation.');
       }catch(err){setLog('Ajout impossible: '+escapeHtml(err.message));}
     }
 
