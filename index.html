@@ -294,6 +294,7 @@
     const ADMIN_STATE_URL = 'data/admin_state.json';
     const PROXY = 'https://r.jina.ai/http://';
     const REFRESH_MS = 30000;
+    const DEPART_ACTIVE_WINDOW_MIN = 170;
     const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
     const QUICK_CLUBS = ['0174246 - SEYNOD','0335067 - RENNES CIE','0163157 - RIOM','0163151 - CLERMONT FERRAND CIE','0221012 - AUXONNE','0895293 - SARCELLES'];
 
@@ -769,10 +770,9 @@
       if(!groups.length) return {state:'no_entries',entries:[],label:''};
       const current=now.getHours()*60+now.getMinutes();
       const ordered=groups.filter(g=>g.start!==null).sort((a,b)=>a.start-b.start);
-      const ACTIVE_WINDOW_MIN=170;
       const active=ordered.filter((g,idx)=>{
         const next=ordered[idx+1];
-        const inMainWindow=current>=g.start-20 && current<=g.start+ACTIVE_WINDOW_MIN;
+        const inMainWindow=current>=g.start-20 && current<=g.start+DEPART_ACTIVE_WINDOW_MIN;
         const beforeNextGate=!next || current < next.start-30;
         return inMainWindow && beforeNextGate;
       });
@@ -781,6 +781,55 @@
       if(next) return {state:'upcoming',entries:[],label:next.dep};
       if(groups.some(g=>g.start!==null)) return {state:'paused',entries:[],label:''};
       return {state:'no_time',entries:[],label:''};
+    }
+    function buildDepartureGroups(entries){
+      const byDepart=new Map();
+      for(const e of entries||[]){
+        const dep=entryDepartCode(e);
+        if(!dep) continue;
+        if(!byDepart.has(dep)) byDepart.set(dep,{dep,entries:[],starts:[]});
+        const g=byDepart.get(dep);
+        g.entries.push(e);
+        const mins=entryHoraireMinutes(e);
+        if(mins!==null) g.starts.push(mins);
+      }
+      return [...byDepart.values()]
+        .map(g=>({...g,start:g.starts.length?Math.min(...g.starts):null}))
+        .sort((a,b)=>(a.start??9999)-(b.start??9999) || a.dep.localeCompare(b.dep));
+    }
+    function formatMinuteLabel(mins){
+      if(mins===null || mins===undefined) return 'Horaire non publié';
+      const h=Math.floor(mins/60), m=mins%60;
+      return `${h}h${String(m).padStart(2,'0')}`;
+    }
+    function buildResultIndexForTournament(tournamentId){
+      const idx=new Map();
+      const comp=(state.data?.competitions||[]).find(c=>String(c.id)===String(tournamentId));
+      if(!comp) return idx;
+      for(const a of comp.archers||[]){
+        if(!isFinished(a) && getScore(a)<=0) continue;
+        const key=norm(`${a.name||''}|${a.club||''}`);
+        if(!key) continue;
+        const old=idx.get(key);
+        const score=getScore(a);
+        if(!old || score>=old.score) idx.set(key,{score,detail:a.detail||'',progress:a.progress||''});
+      }
+      return idx;
+    }
+    function entryStatus(entry, groups, resultIdx){
+      const dep=entryDepartCode(entry);
+      const key=norm(`${entry.name||''}|${entry.club||''}`);
+      const result=resultIdx.get(key);
+      if(result?.score) return {kind:'done',label:'Terminé',score:result.score};
+      const g=groups.find(x=>x.dep===dep);
+      if(!g || g.start===null) return {kind:'unknown',label:'Horaire non publié',score:0};
+      const now=new Date();
+      const current=now.getHours()*60+now.getMinutes();
+      const next=groups.find(x=>(x.start??9999)>(g.start??-1));
+      const active=current>=g.start-20 && current<=g.start+DEPART_ACTIVE_WINDOW_MIN && (!next || current<next.start-30);
+      if(active) return {kind:'live',label:'En cours',score:0};
+      if(current<g.start-20) return {kind:'upcoming',label:'À venir',score:0};
+      return {kind:'done',label:'Terminé',score:0};
     }
     function buildFallbackArchersFromEntries(t){
       const selected=evaluateTournamentSchedule(t);
@@ -1018,6 +1067,7 @@
       const hasRealLive=a.some(x=>!isFinished(x) && !isScheduleLikeRow(x));
       if(hasRealLive) return 'during';
       const schedules=state.tracked.map(evaluateTournamentSchedule);
+      if(schedules.some(s=>s.state==='active')) return 'during';
       if(schedules.some(s=>s.state==='future' || s.state==='upcoming' || s.state==='no_time' || s.state==='no_entries')) return 'before';
       if(a.length) return 'after';
       if(schedules.some(s=>s.state==='paused' || s.state==='past')) return 'after';
@@ -1114,9 +1164,21 @@
       $('beforeMeta').textContent=beforeSummary();
       $('upcomingCards').innerHTML=state.tracked.length?state.tracked.map(t=>{
         const entries=entriesForScope(t), clubs=clubsForEntries(entries);
+        const groups=buildDepartureGroups(entries);
+        const resultIdx=buildResultIndexForTournament(t.id);
         const expanded=state.expandedBefore.has(t.id);
         const visible=expanded?entries:entries.slice(0,14);
-        return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${escapeHtml(liveLabel(t))}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="mini-list"><div class="mini-row muted"><strong>Archer</strong><span>Départ</span><span>Horaire</span><span>Cible / catégorie</span></div>${visible.map(e=>`<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span data-label="Départ">${escapeHtml(entryDepart(e))}<br><small>${escapeHtml(e.club||'')}</small></span><span data-label="Horaire">${escapeHtml(entryHoraire(e))}</span><span data-label="Cible">${escapeHtml(e.target||'-')}<br><small>${escapeHtml(entryCategorie(e))}</small></span></div>`).join('')}${entries.length>14?`<button class="btn small secondary" data-toggle-before="${escapeHtml(t.id)}">${expanded?'Réduire la liste':`Voir tous les participants (${entries.length})`}</button>`:''}${!entries.length?'<div class="muted">Aucun participant à afficher pour les clubs sélectionnés. Vérifie le club suivi sur ce tournoi.</div>':''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:`<span class="badge amber">${escapeHtml(liveLabel(t))}</span>`}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
+        const departChips=groups.map(g=>{
+          const now=new Date();
+          const current=now.getHours()*60+now.getMinutes();
+          const next=groups.find(x=>(x.start??9999)>(g.start??-1));
+          const active=g.start!==null && current>=g.start-20 && current<=g.start+DEPART_ACTIVE_WINDOW_MIN && (!next || current<next.start-30);
+          const done=g.start!==null && !active && current>g.start+DEPART_ACTIVE_WINDOW_MIN;
+          const cls=active?'green':done?'amber':'';
+          const status=active?'en cours':done?'terminé':'à venir';
+          return `<span class="chip ${cls?`badge ${cls}`:''}">Départ ${escapeHtml(g.dep)} · ${escapeHtml(formatMinuteLabel(g.start))} · ${status}</span>`;
+        }).join('');
+        return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${escapeHtml(liveLabel(t))}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="chips" style="margin-top:6px">${departChips||'<span class="chip">Départs non publiés</span>'}</div><div class="mini-list"><div class="mini-row muted"><strong>Archer</strong><span>Départ</span><span>Horaire</span><span>Cible / catégorie</span></div>${visible.map(e=>{const st=entryStatus(e,groups,resultIdx); const scoreTxt=st.score?` · ${st.score}`:''; return `<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span data-label="Départ">${escapeHtml(entryDepart(e))}<br><small>${escapeHtml(e.club||'')}</small></span><span data-label="Horaire">${escapeHtml(entryHoraire(e))}<br><small>${escapeHtml(st.label+scoreTxt)}</small></span><span data-label="Cible">${escapeHtml(e.target||'-')}<br><small>${escapeHtml(entryCategorie(e))}</small></span></div>`;}).join('')}${entries.length>14?`<button class="btn small secondary" data-toggle-before="${escapeHtml(t.id)}">${expanded?'Réduire la liste':`Voir tous les participants (${entries.length})`}</button>`:''}${!entries.length?'<div class="muted">Aucun participant à afficher pour les clubs sélectionnés. Vérifie le club suivi sur ce tournoi.</div>':''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:`<span class="badge amber">${escapeHtml(liveLabel(t))}</span>`}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
       }).join(''):'';
       document.querySelectorAll('[data-toggle-before]').forEach(b=>b.onclick=()=>{const id=b.dataset.toggleBefore; state.expandedBefore.has(id)?state.expandedBefore.delete(id):state.expandedBefore.add(id); renderBefore();});
       document.querySelectorAll('[data-remove-track]').forEach(b=>b.onclick=()=>{state.archived.unshift(...state.tracked.filter(t=>t.id===b.dataset.removeTrack)); state.tracked=state.tracked.filter(t=>t.id!==b.dataset.removeTrack); saveLocal(); refresh();});
