@@ -334,7 +334,12 @@
     function norm(v){return fixText(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'');}
     function splitList(v){return String(v||'').split(/[,;\n]+/).map(x=>x.trim()).filter(Boolean);}
     function uniqueByNorm(arr){const map=new Map(); for(const v of arr||[]){const k=norm(v); if(k&&!map.has(k)) map.set(k,String(v).trim());} return [...map.values()];}
-    function clubKeysFromRaw(raw){return splitList(raw).flatMap(v=>{const code=(String(v).match(/\b\d{6,7}\b/)||[])[0]; return uniqueByNorm([v,code].filter(Boolean));});}
+    function clubKeysFromRaw(raw){
+      const text=String(raw||'');
+      const parts=splitList(text);
+      const codes=[...text.matchAll(/\b\d{6,7}\b/g)].map(m=>m[0]);
+      return uniqueByNorm([...parts,...codes].filter(Boolean));
+    }
     function addClubToRaw(raw, club){return uniqueByNorm([...splitList(raw), club]).join(', ');}
     function removeClubFromRaw(raw, club){const key=norm(club); return splitList(raw).filter(c=>norm(c)!==key).join(', ');}
     function setLog(msg){$('adminLog').innerHTML = msg;}
