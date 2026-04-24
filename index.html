@@ -530,6 +530,14 @@
       const rank=u=>/\/IC\.pdf/i.test(u)?0:1;
       return out.sort((a,b)=>rank(a)-rank(b)||a.localeCompare(b));
     }
+    function deriveLiveUrlsFromPdfUrls(pdfUrls){
+      const out=[], seen=new Set();
+      for(const pdfUrl of pdfUrls||[]){
+        const liveUrl=normalizeLiveUrl(String(pdfUrl||'').replace(/\.pdf(?:\?.*)?$/i,'.php'));
+        if(liveUrl && !seen.has(liveUrl)){seen.add(liveUrl); out.push(liveUrl);}
+      }
+      return out;
+    }
     function extractDetailsName(detailsText,toId){
       const lines=String(detailsText||'').split('\n').map(l=>l.trim()).filter(Boolean);
       const content=lines.find(l=>!/^Title:|^URL Source:|^Markdown Content:|^https?:/i.test(l) && !l.startsWith('!['));
@@ -1061,6 +1069,11 @@
       for(const t of state.tracked){
         if(!Array.isArray(t.urls)) t.urls=[];
         if(t.url && !t.urls.includes(t.url)) t.urls.unshift(t.url);
+        const pdfUrlsForLive=await resolveResultPdfUrls(t);
+        const derivedLiveUrls=deriveLiveUrlsFromPdfUrls(pdfUrlsForLive);
+        for(const u of derivedLiveUrls){
+          if(!t.urls.includes(u)) t.urls.push(u);
+        }
         if(t.details){
           const foundUrls=await discoverLiveForTournament(t);
           if(foundUrls.length){
