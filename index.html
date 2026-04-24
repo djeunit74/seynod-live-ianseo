@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -105,8 +105,8 @@
       <section class="panel">
         <div class="stats">
           <div class="stat"><div class="label">Concours suivis</div><div class="value" id="statCompetitions">0</div></div>
-          <div class="stat"><div class="label">Archers affichés</div><div class="value" id="statArchers">0</div></div>
-          <div class="stat"><div class="label">Terminés</div><div class="value" id="statFinished">0</div></div>
+          <div class="stat"><div class="label">Archers affichÃ©s</div><div class="value" id="statArchers">0</div></div>
+          <div class="stat"><div class="label">TerminÃ©s</div><div class="value" id="statFinished">0</div></div>
           <div class="stat"><div class="label">En cours</div><div class="value" id="statLive">0</div></div>
           <div class="stat"><div class="label">Phase</div><div class="value small" id="statPhase">Avant</div></div>
         </div>
@@ -118,18 +118,18 @@
         <h2>Suivi</h2>
         <button class="btn" id="refreshBtn">Actualiser maintenant</button>
         <div class="muted" style="margin-top:12px">
-          Dernière vérification: <strong id="lastCheck">-</strong><br>
+          DerniÃ¨re vÃ©rification: <strong id="lastCheck">-</strong><br>
           Dernier changement: <strong id="lastChange">-</strong><br>
-          Prochaine vérification: <strong id="countdown">30 s</strong>
+          Prochaine vÃ©rification: <strong id="countdown">30 s</strong>
         </div>
         <div style="margin-top:12px">
-          <span class="badge amber" id="phaseBadge">Avant compétition</span>
+          <span class="badge amber" id="phaseBadge">Avant compÃ©tition</span>
           <div class="muted" id="phaseHelp" style="margin-top:8px">Choisis un club, des archers ou une source live.</div>
         </div>
       </aside>
 
       <section class="panel green full" id="beforeSection">
-        <h2>Participants et tournois à suivre</h2>
+        <h2>Participants et tournois Ã  suivre</h2>
         <div class="muted" id="beforeMeta">Aucun tournoi suivi.</div>
         <div class="cards" id="upcomingCards"></div>
       </section>
@@ -138,41 +138,41 @@
         <h2>Archers en concours</h2>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>Catégorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
+            <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>CatÃ©gorie</th><th>Progression</th><th>Pos.</th><th>Score</th><th>DÃ©tail</th></tr></thead>
             <tbody id="liveRows"><tr><td colspan="8">Aucun archer en cours.</td></tr></tbody>
           </table>
         </div>
       </section>
 
       <section class="panel full hidden" id="afterSection">
-        <h2>Résultats de compétition</h2>
+        <h2>RÃ©sultats de compÃ©tition</h2>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>Catégorie</th><th>Pos.</th><th>Score</th><th>Détail</th></tr></thead>
-            <tbody id="finishedRows"><tr><td colspan="7">Aucun résultat.</td></tr></tbody>
+            <thead><tr><th>Lieu</th><th>Archer</th><th>Club</th><th>CatÃ©gorie</th><th>Pos.</th><th>Score</th><th>DÃ©tail</th></tr></thead>
+            <tbody id="finishedRows"><tr><td colspan="7">Aucun rÃ©sultat.</td></tr></tbody>
           </table>
         </div>
       </section>
 
       <section class="panel full hidden" id="volleySection">
-        <h2>Analyse des volées</h2>
+        <h2>Analyse des volÃ©es</h2>
         <div class="row">
           <label class="muted" for="volleySelect">Archer</label>
           <select id="volleySelect"></select>
         </div>
         <div class="volley-grid" style="margin-top:12px">
           <div class="card">
-            <h3>Dernière volée détectée</h3>
+            <h3>DerniÃ¨re volÃ©e dÃ©tectÃ©e</h3>
             <div class="last-volley"><span class="last-score" id="lastVolleyScore">-</span><span id="lastVolleyMood"></span></div>
-            <div class="muted" id="lastVolleyText">Pas assez de données.</div>
+            <div class="muted" id="lastVolleyText">Pas assez de donnÃ©es.</div>
           </div>
           <div class="card">
-            <h3>Déroulé du tir</h3>
+            <h3>DÃ©roulÃ© du tir</h3>
             <svg class="chart" id="volleyChart" viewBox="0 0 700 180" preserveAspectRatio="none"></svg>
             <div class="table-wrap" style="margin-top:10px">
               <table>
-                <thead><tr><th>#</th><th>Repère tir</th><th>Score</th></tr></thead>
-                <tbody id="volleyRows"><tr><td colspan="3">Aucune volée détectée.</td></tr></tbody>
+                <thead><tr><th>#</th><th>RepÃ¨re tir</th><th>Score</th></tr></thead>
+                <tbody id="volleyRows"><tr><td colspan="3">Aucune volÃ©e dÃ©tectÃ©e.</td></tr></tbody>
               </table>
             </div>
           </div>
@@ -190,24 +190,24 @@
         <div id="adminSetup">
           <div class="admin-grid">
             <div class="box">
-              <h3>Clubs suivis par défaut</h3>
+              <h3>Clubs suivis par dÃ©faut</h3>
               <div class="row">
                 <input id="clubInput" placeholder="Ex: 0174246 - SEYNOD, 0335067 - RENNES CIE" />
                 <input id="countryInput" placeholder="Pays: FRA" />
                 <button class="btn" id="applyClubBtn">Appliquer</button>
               </div>
               <div class="club-picker">
-                <input id="clubSearchInput" list="clubDatalist" placeholder="Rechercher un club par nom ou numéro" />
+                <input id="clubSearchInput" list="clubDatalist" placeholder="Rechercher un club par nom ou numÃ©ro" />
                 <button class="btn green" id="addClubSearchBtn">Ajouter club</button>
               </div>
               <datalist id="clubDatalist"></datalist>
               <div class="chips" id="quickClubs"></div>
-              <div class="scope-note">Tu peux suivre plusieurs clubs en même temps. Ces clubs servent à chercher les compétitions et comme filtre par défaut.</div>
+              <div class="scope-note">Tu peux suivre plusieurs clubs en mÃªme temps. Ces clubs servent Ã  chercher les compÃ©titions et comme filtre par dÃ©faut.</div>
             </div>
             <div class="box">
-              <h3>Archers à suivre</h3>
+              <h3>Archers Ã  suivre</h3>
               <div class="row">
-                <input id="watchInput" placeholder="Nom ou prénom, séparés par virgules" />
+                <input id="watchInput" placeholder="Nom ou prÃ©nom, sÃ©parÃ©s par virgules" />
                 <button class="btn green" id="addWatchBtn">Ajouter</button>
                 <button class="btn secondary" id="clearWatchBtn">Vider</button>
               </div>
@@ -221,9 +221,9 @@
             <div class="box">
               <h3>Recherche automatique</h3>
               <div class="row">
-                <button class="btn" id="findNextBtn">Chercher prochaines compétitions</button>
+                <button class="btn" id="findNextBtn">Chercher prochaines compÃ©titions</button>
                 <select id="foundSelect"></select>
-                <button class="btn green" id="followFoundBtn">Suivre sélection</button>
+                <button class="btn green" id="followFoundBtn">Suivre sÃ©lection</button>
               </div>
             </div>
             <div class="box">
@@ -250,23 +250,23 @@
             <div class="row">
               <select id="phaseSelect">
                 <option value="auto">Phase automatique</option>
-                <option value="before">Forcer avant compétition</option>
-                <option value="during">Forcer pendant compétition</option>
-                <option value="after">Forcer après compétition</option>
+                <option value="before">Forcer avant compÃ©tition</option>
+                <option value="during">Forcer pendant compÃ©tition</option>
+                <option value="after">Forcer aprÃ¨s compÃ©tition</option>
               </select>
               <button class="btn" id="applyPhaseBtn">Appliquer phase</button>
-              <button class="btn green" id="publishStateBtn">Publier état partagé</button>
+              <button class="btn green" id="publishStateBtn">Publier Ã©tat partagÃ©</button>
             </div>
             <div class="muted" id="adminStateInfo" style="margin-top:10px"></div>
           </div>
         </div>
 
-        <div class="muted" id="adminLog" style="margin-top:12px">Console prête.</div>
+        <div class="muted" id="adminLog" style="margin-top:12px">Console prÃªte.</div>
       </section>
     </main>
 
     <div class="toolbar hidden" id="adminToolbar">
-      <button class="btn" id="competitionModeBtn">Mode compétition: ON</button>
+      <button class="btn" id="competitionModeBtn">Mode compÃ©tition: ON</button>
     </div>
   </div>
 
@@ -296,6 +296,7 @@
       raw:{competitions:[]},
       foundMatches:[],
       clubCatalog:[],
+      catalogTournaments:[],
       selectedFound:'',
       admin:false,
       adminBridge:'',
@@ -309,9 +310,9 @@
 
     function fixText(v){
       return String(v ?? '')
-        .replace(/Ã¨/g,'è').replace(/Ã©/g,'é').replace(/Ãª/g,'ê').replace(/Ã«/g,'ë')
-        .replace(/Ã /g,'à').replace(/Ã¢/g,'â').replace(/Ã¹/g,'ù').replace(/Ã§/g,'ç')
-        .replace(/Ã´/g,'ô').replace(/Ã®/g,'î').replace(/Ã¯/g,'ï').replace(/Â°/g,'°');
+        .replace(/ÃƒÂ¨/g,'Ã¨').replace(/ÃƒÂ©/g,'Ã©').replace(/ÃƒÂª/g,'Ãª').replace(/ÃƒÂ«/g,'Ã«')
+        .replace(/ÃƒÂ /g,'Ã ').replace(/ÃƒÂ¢/g,'Ã¢').replace(/ÃƒÂ¹/g,'Ã¹').replace(/ÃƒÂ§/g,'Ã§')
+        .replace(/ÃƒÂ´/g,'Ã´').replace(/ÃƒÂ®/g,'Ã®').replace(/ÃƒÂ¯/g,'Ã¯').replace(/Ã‚Â°/g,'Â°');
     }
     function escapeHtml(v){return fixText(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
     function norm(v){return fixText(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'');}
@@ -383,8 +384,10 @@
             clubs.set(key,old);
           }
         }
+        state.catalogTournaments=cat.tournaments||[];
         state.clubCatalog=[...clubs.values()].sort((a,b)=>a.label.localeCompare(b.label,'fr',{sensitivity:'base'}));
-      }catch(_){state.clubCatalog=[];}
+        hydrateTrackedEntries();
+      }catch(_){state.clubCatalog=[]; state.catalogTournaments=[];}
     }
     async function loadSharedState(){
       try{
@@ -413,10 +416,10 @@
     }
     function b64Url(text){return btoa(unescape(encodeURIComponent(text))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
     async function publishState(){
-      if(!state.adminBridge){setLog('Passerelle admin non configurée: état gardé dans ce navigateur.'); return false;}
+      if(!state.adminBridge){setLog('Passerelle admin non configurÃ©e: Ã©tat gardÃ© dans ce navigateur.'); return false;}
       const r=await fetch(state.adminBridge,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'save_admin_state',state_b64:b64Url(JSON.stringify(statePayload()))})});
       if(!r.ok) throw new Error('Bridge HTTP '+r.status);
-      setLog('État partagé publié. La vue publique va se synchroniser.');
+      setLog('Ã‰tat partagÃ© publiÃ©. La vue publique va se synchroniser.');
       return true;
     }
 
@@ -513,11 +516,45 @@
       const competitions=(data.competitions||[]).map(c=>({...c,archers:(c.archers||[]).filter(matchesScope)})).filter(c=>c.archers.length);
       return {competitions};
     }
+    function tournamentToId(t){
+      return String(t?.id||t?.to_id||detailsId(t?.details||t?.details_url||'')||'');
+    }
+    function hydrateTrackedEntries(){
+      if(!state.catalogTournaments.length || !state.tracked.length) return false;
+      let changed=false;
+      for(const t of state.tracked){
+        if((t.entries||[]).length) continue;
+        const id=tournamentToId(t);
+        const found=state.catalogTournaments.find(c=>String(c.to_id)===id || detailsId(c.details_url||'')===id);
+        if(found){
+          t.entries=Array.isArray(found.entries)?found.entries:[];
+          if(!t.date) t.date=found.date_text||found.end_date||'';
+          if(!t.ena) t.ena=found.ena_url||'';
+          if(!t.details) t.details=found.details_url||'';
+          changed=true;
+        }
+      }
+      if(changed) localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
+      return changed;
+    }
     function entriesForScope(t){
       const keys=clubKeysFromRaw(t.scopeRaw||state.clubRaw).map(norm);
       const entries=t.entries||[];
       if(!keys.length) return entries;
       return entries.filter(e=>keys.some(k=>norm(`${e.club||''} ${e.category||''} ${e.name||''}`).includes(k)));
+    }
+    function entryDepart(e){
+      const raw=fixText(e?.depart||e?.departure||e?.session||e?.start||'').trim();
+      if(!raw) return '-';
+      const m=raw.match(/^S(?:es\.)?\s*\.?\s*(\d+)/i);
+      return m ? `DÃ©part ${m[1]}` : raw;
+    }
+    function entryHoraire(e){
+      return fixText(e?.horaire||e?.time||e?.start_time||e?.schedule||e?.hour||'').trim() || 'Horaire non publiÃ©';
+    }
+    function entryCategorie(e){
+      const raw=fixText(e?.session||e?.category||'').replace(/^S(?:es\.)?\s*\.?\s*\d+\s*/i,'').trim();
+      return raw && !/^\d{6,7}\s*-/.test(raw) ? raw : '-';
     }
     function clubsForEntries(entries){
       const map=new Map();
@@ -534,7 +571,7 @@
     }
     function signature(data){return JSON.stringify((data.competitions||[]).map(c=>[c.id,c.archers.map(a=>[a.name,a.score,a.position,a.progress,a.detail,a.finished])]));}
     function getScore(a){const n=Number(a?.score); if(Number.isFinite(n)&&n>0) return n; const m=String(a?.scoreLabel||'').match(/\d+/); return m?Number(m[0]):0;}
-    function isFinished(a){return !!a?.finished || /termin|résultat publié|après\s*(60|72)/i.test(`${a?.progress||''} ${a?.detail||''}`);}
+    function isFinished(a){return !!a?.finished || /termin|rÃ©sultat publiÃ©|aprÃ¨s\s*(60|72)/i.test(`${a?.progress||''} ${a?.detail||''}`);}
 
     function parseMarkdownLive(md, url, tournament=null){
       const lines=String(md||'').split('\n');
@@ -547,18 +584,18 @@
         const line=raw.trim();
         if(line.startsWith('|')){
           const cells=line.split('|').map(v=>v.trim()).filter(Boolean);
-          if(cells.length===1 && /après/i.test(cells[0])){category=cells[0].replace(/\s*\[.*$/,''); continue;}
+          if(cells.length===1 && /aprÃ¨s/i.test(cells[0])){category=cells[0].replace(/\s*\[.*$/,''); continue;}
           if(cells.length>=6 && /^\d+$/.test(cells[0])){
-            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress:(/\[([^\]]+)\]/.exec(raw)||[])[1]||'En cours',detail:`10+X: ${cells[cells.length-2]||'-'} · X: ${cells[cells.length-1]||'-'}`,finished:/après\s*(60|72)|termin/i.test(raw)};
+            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress:(/\[([^\]]+)\]/.exec(raw)||[])[1]||'En cours',detail:`10+X: ${cells[cells.length-2]||'-'} Â· X: ${cells[cells.length-1]||'-'}`,finished:/aprÃ¨s\s*(60|72)|termin/i.test(raw)};
             if(matchesScope(a, scopeKeys)) rows.push(a);
           }
           continue;
         }
         const clean=line.replace(/!\[[^\]]*]\([^)]*\)/g,' ').replace(/\s+/g,' ').trim();
-        const m=clean.match(/^(\d+)\s+(.+?)\s+([A-Z0-9]{2,12}-[A-Za-zÀ-ÿ0-9 .'\-]+?)\s+(.+)$/);
+        const m=clean.match(/^(\d+)\s+(.+?)\s+([A-Z0-9]{2,12}-.+?)\s+(.+)$/);
         if(m){
           const nums=(m[4].match(/\b\d{1,3}\b/g)||[]).map(Number);
-          const a={position:m[1],name:m[2].trim(),club:m[3].trim(),score:nums.length?Math.max(...nums):0,scoreLabel:nums.length?String(Math.max(...nums)):'',category,progress:'Résultat publié',detail:m[4].trim(),finished:true};
+          const a={position:m[1],name:m[2].trim(),club:m[3].trim(),score:nums.length?Math.max(...nums):0,scoreLabel:nums.length?String(Math.max(...nums)):'',category,progress:'RÃ©sultat publiÃ©',detail:m[4].trim(),finished:true};
           if(matchesScope(a, scopeKeys)) rows.push(a);
         }
       }
@@ -607,11 +644,11 @@
       $('liveSection').classList.toggle('hidden', phase!=='during');
       $('volleySection').classList.toggle('hidden', phase!=='during');
       $('afterSection').classList.toggle('hidden', phase!=='after');
-      const names={before:'Avant compétition',during:'Pendant compétition',after:'Après compétition'};
-      $('statPhase').textContent=names[phase].replace(' compétition','');
+      const names={before:'Avant compÃ©tition',during:'Pendant compÃ©tition',after:'AprÃ¨s compÃ©tition'};
+      $('statPhase').textContent=names[phase].replace(' compÃ©tition','');
       $('phaseBadge').textContent=names[phase];
       $('phaseBadge').className='badge '+(phase==='during'?'green':phase==='after'?'amber':'green');
-      $('phaseHelp').textContent=phase==='before'?'Participants et sources suivies.':phase==='during'?'Live en cours, analyse des volées active.':'Compétition terminée, résultats conservés.';
+      $('phaseHelp').textContent=phase==='before'?'Participants et sources suivies.':phase==='during'?'Live en cours, analyse des volÃ©es active.':'CompÃ©tition terminÃ©e, rÃ©sultats conservÃ©s.';
     }
 
     function syncVolley(data){
@@ -619,9 +656,9 @@
         const key=norm(`${a.name}|${a.competitionId}|${a.category}`);
         const score=getScore(a);
         if(!score) continue;
-        if(!state.volley[key]) state.volley[key]={name:`${a.name} · ${a.competitionName}`,last:null,history:[],config:getVolleyConfig(a)};
+        if(!state.volley[key]) state.volley[key]={name:`${a.name} Â· ${a.competitionName}`,last:null,history:[],config:getVolleyConfig(a)};
         const s=state.volley[key];
-        s.name=`${a.name} · ${a.competitionName}`; s.config=getVolleyConfig(a);
+        s.name=`${a.name} Â· ${a.competitionName}`; s.config=getVolleyConfig(a);
         if(s.last===null){s.last=score; continue;}
         const delta=score-s.last; s.last=score;
         if(delta<=0) continue;
@@ -634,27 +671,27 @@
     }
     function getVolleyConfig(a){
       const txt=norm(`${a.category||''} ${a.progress||''}`);
-      if(txt.includes('indoor')||txt.includes('salle')||txt.includes('18m')) return {maxVolleyScore:30,volleysPerSeries:10,label:'Salle: 2 séries de 10 volées de 3 flèches'};
-      return {maxVolleyScore:60,volleysPerSeries:6,label:'TAE: 2 séries de 6 volées de 6 flèches'};
+      if(txt.includes('indoor')||txt.includes('salle')||txt.includes('18m')) return {maxVolleyScore:30,volleysPerSeries:10,label:'Salle: 2 sÃ©ries de 10 volÃ©es de 3 flÃ¨ches'};
+      return {maxVolleyScore:60,volleysPerSeries:6,label:'TAE: 2 sÃ©ries de 6 volÃ©es de 6 flÃ¨ches'};
     }
     function moodHtml(type){return type?`<span class="mood ${type}"><i></i></span>`:'<span class="muted">-</span>';}
     function renderVolley(){
       const keys=Object.keys(state.volley);
       $('volleySelect').innerHTML=keys.map(k=>`<option value="${escapeHtml(k)}">${escapeHtml(state.volley[k].name)}</option>`).join('');
-      if(!keys.length){$('lastVolleyScore').textContent='-'; $('lastVolleyMood').innerHTML=''; $('volleyRows').innerHTML='<tr><td colspan="3">Aucune volée détectée.</td></tr>'; drawChart([]); return;}
+      if(!keys.length){$('lastVolleyScore').textContent='-'; $('lastVolleyMood').innerHTML=''; $('volleyRows').innerHTML='<tr><td colspan="3">Aucune volÃ©e dÃ©tectÃ©e.</td></tr>'; drawChart([]); return;}
       if(!state.selectedVolley || !state.volley[state.selectedVolley]) state.selectedVolley=keys[0];
       $('volleySelect').value=state.selectedVolley;
       const s=state.volley[state.selectedVolley], h=s.history||[], last=[...h].reverse().find(x=>x.type==='volley') || h[h.length-1];
       $('lastVolleyScore').textContent=last?last.score:'-';
       $('lastVolleyMood').innerHTML=last?moodHtml(last.mood):'';
-      $('lastVolleyText').textContent=last ? (last.type==='grouped'?'Mise à jour groupée, pas une volée fiable.':s.config.label) : 'Pas encore de volée détectée.';
+      $('lastVolleyText').textContent=last ? (last.type==='grouped'?'Mise Ã  jour groupÃ©e, pas une volÃ©e fiable.':s.config.label) : 'Pas encore de volÃ©e dÃ©tectÃ©e.';
       let n=0;
-      $('volleyRows').innerHTML=h.length?h.map(e=>{if(e.type==='volley') n++; const rep=e.type==='volley'?`S${Math.ceil(n/s.config.volleysPerSeries)} · V${((n-1)%s.config.volleysPerSeries)+1}`:'Mise à jour groupée'; return `<tr><td>${e.type==='volley'?n:'Δ'}</td><td>${escapeHtml(rep)}</td><td>${e.score}</td></tr>`;}).join(''):'<tr><td colspan="3">Aucune volée détectée.</td></tr>';
+      $('volleyRows').innerHTML=h.length?h.map(e=>{if(e.type==='volley') n++; const rep=e.type==='volley'?`S${Math.ceil(n/s.config.volleysPerSeries)} Â· V${((n-1)%s.config.volleysPerSeries)+1}`:'Mise Ã  jour groupÃ©e'; return `<tr><td>${e.type==='volley'?n:'Î”'}</td><td>${escapeHtml(rep)}</td><td>${e.score}</td></tr>`;}).join(''):'<tr><td colspan="3">Aucune volÃ©e dÃ©tectÃ©e.</td></tr>';
       drawChart(h.filter(x=>x.type==='volley').map((x,i)=>({x:i+1,y:x.score})));
     }
     function drawChart(points){
       const svg=$('volleyChart');
-      if(!points.length){svg.innerHTML='<text x="18" y="36" fill="#94a3b8" font-size="14">Pas assez de volées pour tracer la courbe.</text>'; return;}
+      if(!points.length){svg.innerHTML='<text x="18" y="36" fill="#94a3b8" font-size="14">Pas assez de volÃ©es pour tracer la courbe.</text>'; return;}
       const w=700,h=180,p=24,maxX=Math.max(1,...points.map(a=>a.x)),maxY=Math.max(1,...points.map(a=>a.y)),minY=Math.min(0,...points.map(a=>a.y));
       const xp=x=>p+(x-1)/Math.max(1,maxX-1)*(w-p*2), yp=y=>p+(1-(y-minY)/Math.max(1,maxY-minY))*(h-p*2);
       svg.innerHTML=`<line x1="${p}" y1="${h-p}" x2="${w-p}" y2="${h-p}" stroke="#475569"/><line x1="${p}" y1="${p}" x2="${p}" y2="${h-p}" stroke="#475569"/><polyline fill="none" stroke="#22d3ee" stroke-width="3" points="${points.map(a=>`${xp(a.x)},${yp(a.y)}`).join(' ')}"/>${points.map(a=>`<circle cx="${xp(a.x)}" cy="${yp(a.y)}" r="4" fill="#22d3ee"/>`).join('')}`;
@@ -676,16 +713,16 @@
     }
     function renderRows(id, rows, live){
       const col=live?8:7;
-      if(!rows.length){$(id).innerHTML=`<tr><td colspan="${col}">${live?'Aucun archer en cours.':'Aucun résultat.'}</td></tr>`; return;}
+      if(!rows.length){$(id).innerHTML=`<tr><td colspan="${col}">${live?'Aucun archer en cours.':'Aucun rÃ©sultat.'}</td></tr>`; return;}
       $(id).innerHTML=rows.map(a=>{const w=isWatched(a); const badge=w?' <span class="badge green">Suivi</span>':''; return live
         ? `<tr class="${w?'watch-row':'live-row'}"><td>${escapeHtml(a.place||'-')}</td><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.progress||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`
         : `<tr class="${w?'watch-row':''}"><td>${escapeHtml(a.place||'-')}</td><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`;}).join('');
     }
     function renderBefore(){
-      $('beforeMeta').textContent=state.tracked.length?`${state.tracked.length} tournoi(s) suivi(s) · Club principal: ${state.clubRaw} · Archers ajoutés: ${state.watched.length}`:'Aucun tournoi suivi. Ajoute une source IANSEO dans Admin > Tournois.';
+      $('beforeMeta').textContent=state.tracked.length?`${state.tracked.length} tournoi(s) suivi(s) Â· Club principal: ${state.clubRaw} Â· Archers ajoutÃ©s: ${state.watched.length}`:'Aucun tournoi suivi. Ajoute une source IANSEO dans Admin > Tournois.';
       $('upcomingCards').innerHTML=state.tracked.length?state.tracked.map(t=>{
         const entries=entriesForScope(t), clubs=clubsForEntries(entries);
-        return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${t.url?'Live prêt':'En attente du live IANSEO'}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="mini-list">${entries.slice(0,8).map(e=>`<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span>${escapeHtml(e.club||'')}</span><span>${escapeHtml(e.session||e.category||'')}</span><span>${escapeHtml(e.target||'')}</span></div>`).join('')}${entries.length>8?`<div class="muted">+ ${entries.length-8} autre(s) participant(s)</div>`:''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:'<span class="badge amber">Live non publié</span>'}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
+        return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${t.url?'Live prêt':'En attente du live IANSEO'}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="mini-list"><div class="mini-row muted"><strong>Archer</strong><span>Départ</span><span>Horaire</span><span>Cible / catégorie</span></div>${entries.slice(0,14).map(e=>`<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span>${escapeHtml(entryDepart(e))}<br><small>${escapeHtml(e.club||'')}</small></span><span>${escapeHtml(entryHoraire(e))}</span><span>${escapeHtml(e.target||'-')}<br><small>${escapeHtml(entryCategorie(e))}</small></span></div>`).join('')}${entries.length>14?`<div class="muted">+ ${entries.length-14} autre(s) participant(s)</div>`:''}${!entries.length?'<div class="muted">Aucun participant à afficher pour les clubs sélectionnés. Vérifie le club suivi sur ce tournoi.</div>':''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:'<span class="badge amber">Live non publié</span>'}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
       }).join(''):'';
       document.querySelectorAll('[data-remove-track]').forEach(b=>b.onclick=()=>{state.archived.unshift(...state.tracked.filter(t=>t.id===b.dataset.removeTrack)); state.tracked=state.tracked.filter(t=>t.id!==b.dataset.removeTrack); saveLocal(); refresh();});
     }
@@ -696,18 +733,18 @@
       $('quickClubs').innerHTML=splitList(state.clubRaw).map(c=>`<span class="chip">${escapeHtml(c)} <button class="btn small secondary" data-remove-global-club="${escapeHtml(c)}">x</button></span>`).join('') + QUICK_CLUBS.map(c=>`<button class="btn small secondary" data-quick-club="${escapeHtml(c)}">+ ${escapeHtml(c)}</button>`).join('');
       document.querySelectorAll('[data-quick-club]').forEach(b=>b.onclick=()=>{$('clubInput').value=addClubToRaw($('clubInput').value,b.dataset.quickClub); applyClub();});
       document.querySelectorAll('[data-remove-global-club]').forEach(b=>b.onclick=()=>{$('clubInput').value=removeClubFromRaw(state.clubRaw,b.dataset.removeGlobalClub); applyClub();});
-      $('watchList').innerHTML=state.watched.length?state.watched.map(w=>`<span class="chip">${escapeHtml(w)} <button class="btn small secondary" data-remove-watch="${escapeHtml(w)}">x</button></span>`).join(''):'<span class="muted">Aucun archer ajouté.</span>';
+      $('watchList').innerHTML=state.watched.length?state.watched.map(w=>`<span class="chip">${escapeHtml(w)} <button class="btn small secondary" data-remove-watch="${escapeHtml(w)}">x</button></span>`).join(''):'<span class="muted">Aucun archer ajoutÃ©.</span>';
       document.querySelectorAll('[data-remove-watch]').forEach(b=>b.onclick=()=>{state.watched=state.watched.filter(w=>norm(w)!==norm(b.dataset.removeWatch)); saveLocal(); refresh();});
-      $('trackedList').innerHTML=state.tracked.length?state.tracked.map(t=>{const entries=entriesForScope(t), clubs=clubsForEntries(entries); return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.url||t.details||'Source en attente')}</div><div class="muted">Clubs suivis sur ce tournoi (${entries.length} participant(s))</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')}</div><div class="row" style="margin-top:8px"><input value="${escapeHtml(t.scopeRaw||state.clubRaw)}" data-track-scope="${escapeHtml(t.id)}" placeholder="Plusieurs clubs séparés par virgule"><button class="btn small green" data-save-track-scope="${escapeHtml(t.id)}">Appliquer</button></div><div class="row" style="margin-top:8px"><input list="clubDatalist" data-track-club-search="${escapeHtml(t.id)}" placeholder="Ajouter un club à ce tournoi"><button class="btn small secondary" data-add-track-club="${escapeHtml(t.id)}">Ajouter club</button><button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button></div></article>`;}).join(''):'<div class="muted">Aucun tournoi suivi.</div>';
-      document.querySelectorAll('[data-save-track-scope]').forEach(b=>b.onclick=()=>{const id=b.dataset.saveTrackScope; const t=state.tracked.find(x=>x.id===id); const input=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&input){t.scopeRaw=input.value.trim()||state.clubRaw; saveLocal(); refresh(); setLog('Club appliqué à ce tournoi.');}});
-      document.querySelectorAll('[data-add-track-club]').forEach(b=>b.onclick=()=>{const id=b.dataset.addTrackClub; const t=state.tracked.find(x=>x.id===id); const search=[...document.querySelectorAll('[data-track-club-search]')].find(x=>x.dataset.trackClubSearch===id); const scope=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&search&&scope&&search.value.trim()){scope.value=addClubToRaw(scope.value,search.value.trim()); t.scopeRaw=scope.value; search.value=''; saveLocal(); refresh(); setLog('Club ajouté à ce tournoi.');}});
-      $('adminStateInfo').textContent=`Bridge: ${state.adminBridge?'configuré':'non configuré'} · Clubs par défaut: ${state.clubRaw||'aucun'} · Archers: ${state.watched.length} · Sources: ${state.tracked.length}`;
+      $('trackedList').innerHTML=state.tracked.length?state.tracked.map(t=>{const entries=entriesForScope(t), clubs=clubsForEntries(entries); return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.url||t.details||'Source en attente')}</div><div class="muted">Clubs suivis sur ce tournoi (${entries.length} participant(s))</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} Â· ${c.count}</span>`).join('')}</div><div class="row" style="margin-top:8px"><input value="${escapeHtml(t.scopeRaw||state.clubRaw)}" data-track-scope="${escapeHtml(t.id)}" placeholder="Plusieurs clubs sÃ©parÃ©s par virgule"><button class="btn small green" data-save-track-scope="${escapeHtml(t.id)}">Appliquer</button></div><div class="row" style="margin-top:8px"><input list="clubDatalist" data-track-club-search="${escapeHtml(t.id)}" placeholder="Ajouter un club Ã  ce tournoi"><button class="btn small secondary" data-add-track-club="${escapeHtml(t.id)}">Ajouter club</button><button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button></div></article>`;}).join(''):'<div class="muted">Aucun tournoi suivi.</div>';
+      document.querySelectorAll('[data-save-track-scope]').forEach(b=>b.onclick=()=>{const id=b.dataset.saveTrackScope; const t=state.tracked.find(x=>x.id===id); const input=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&input){t.scopeRaw=input.value.trim()||state.clubRaw; saveLocal(); refresh(); setLog('Club appliquÃ© Ã  ce tournoi.');}});
+      document.querySelectorAll('[data-add-track-club]').forEach(b=>b.onclick=()=>{const id=b.dataset.addTrackClub; const t=state.tracked.find(x=>x.id===id); const search=[...document.querySelectorAll('[data-track-club-search]')].find(x=>x.dataset.trackClubSearch===id); const scope=[...document.querySelectorAll('[data-track-scope]')].find(x=>x.dataset.trackScope===id); if(t&&search&&scope&&search.value.trim()){scope.value=addClubToRaw(scope.value,search.value.trim()); t.scopeRaw=scope.value; search.value=''; saveLocal(); refresh(); setLog('Club ajoutÃ© Ã  ce tournoi.');}});
+      $('adminStateInfo').textContent=`Bridge: ${state.adminBridge?'configurÃ©':'non configurÃ©'} Â· Clubs par dÃ©faut: ${state.clubRaw||'aucun'} Â· Archers: ${state.watched.length} Â· Sources: ${state.tracked.length}`;
     }
     function applyClub(){
       state.clubRaw=$('clubInput').value.trim();
       state.countryRaw=$('countryInput').value.trim()||'FRA';
       state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
-      saveLocal(); refresh(); setLog('Club appliqué.');
+      saveLocal(); refresh(); setLog('Club appliquÃ©.');
     }
 
     function addSearchedClub(){
@@ -726,7 +763,7 @@
         else raw=normalizeData(await fetchJson(API_URL));
         state.raw=raw; state.data=state.tracked.length?raw:filterData(raw); syncVolley(state.data); render();
         $('lastCheck').textContent=new Date().toLocaleString('fr-FR');
-        setStatus('ok','Mise à jour réussie');
+        setStatus('ok','Mise Ã  jour rÃ©ussie');
       }catch(err){
         setStatus('err','Erreur: '+err.message);
       }finally{state.nextRefresh=Date.now()+REFRESH_MS;}
@@ -736,23 +773,23 @@
         setLog('Recherche dans le catalogue local...');
         const cat=await fetchJson(CATALOG_URL);
         const keys=state.clubKeys.map(norm), countries=splitList(state.countryRaw).map(x=>x.toUpperCase());
-        if(!keys.length){setLog('Ajoute au moins un club dans Configuration avant de chercher les compétitions.'); return;}
+        if(!keys.length){setLog('Ajoute au moins un club dans Configuration avant de chercher les compÃ©titions.'); return;}
         const today=new Date(); today.setHours(0,0,0,0);
         const matches=(cat.tournaments||[]).filter(t=>!t.country||!countries.length||countries.includes(String(t.country).toUpperCase())).filter(t=>!t.end_date||new Date(t.end_date+'T23:59:59')>=today).map(t=>{
           const entries=(t.entries||[]).filter(e=>{const hay=norm(`${e.club||''} ${e.name||''} ${e.category||''}`); return !keys.length||keys.some(k=>hay.includes(k));});
           return entries.length?{...t,club_entries:entries}:null;
         }).filter(Boolean);
         state.foundMatches=matches; state.selectedFound=matches[0]?.to_id||'';
-        $('foundSelect').innerHTML=matches.length?matches.map(m=>`<option value="${escapeHtml(m.to_id)}">${escapeHtml(m.name)} · ${m.date_text||''} · ${m.club_entries.length} inscrit(s)</option>`).join(''):'<option>Aucune compétition trouvée</option>';
-        setLog(matches.length?`${matches.length} compétition(s) trouvée(s).`:'Aucune compétition trouvée pour ce club dans le catalogue.');
+        $('foundSelect').innerHTML=matches.length?matches.map(m=>`<option value="${escapeHtml(m.to_id)}">${escapeHtml(m.name)} Â· ${m.date_text||''} Â· ${m.club_entries.length} inscrit(s)</option>`).join(''):'<option>Aucune compÃ©tition trouvÃ©e</option>';
+        setLog(matches.length?`${matches.length} compÃ©tition(s) trouvÃ©e(s).`:'Aucune compÃ©tition trouvÃ©e pour ce club dans le catalogue.');
       }catch(err){setLog('Recherche impossible: '+escapeHtml(err.message));}
     }
     function followFound(){
       const m=state.foundMatches.find(x=>String(x.to_id)===String($('foundSelect').value))||state.foundMatches[0];
-      if(!m){setLog('Aucune compétition sélectionnée.'); return;}
+      if(!m){setLog('Aucune compÃ©tition sÃ©lectionnÃ©e.'); return;}
       const url=normalizeLiveUrl(m.ic_url||'');
       state.tracked.push(cleanTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ena_url:m.ena_url,ic_url:url,club_entries:m.entries||m.club_entries,scopeRaw:state.clubRaw}));
-      saveLocal(); setLog(url?'Compétition ajoutée au suivi live.':'Compétition ajoutée en attente du live IANSEO.'); refresh();
+      hydrateTrackedEntries(); saveLocal(); setLog(url?'CompÃ©tition ajoutÃ©e au suivi live.':'CompÃ©tition ajoutÃ©e en attente du live IANSEO.'); refresh();
     }
     async function addManual(){
       try{
@@ -764,12 +801,12 @@
         }else{
           state.tracked.push(cleanTournament({id:`pending-${stamp}`,name:res.name||'Tournoi en attente live',details_url:res.details,ena_url:res.ena,ic_url:'',scopeRaw:state.clubRaw}));
         }
-        $('manualUrlInput').value=''; saveLocal();
+        hydrateTrackedEntries(); $('manualUrlInput').value=''; saveLocal();
         await refresh();
         const count=archers(state.data).length;
         setLog(res.urls.length
-          ? `${res.urls.length} source(s) ajoutée(s). ${count} archer(s) affiché(s). ${count?'':'Si rien ne sort, ajoute le nom exact de l’archer ou corrige le club suivi.'}`
-          : 'Tournoi ajouté en attente: la fiche est suivie, et l’app cherchera le live à chaque actualisation.');
+          ? `${res.urls.length} source(s) ajoutÃ©e(s). ${count} archer(s) affichÃ©(s). ${count?'':'Si rien ne sort, ajoute le nom exact de lâ€™archer ou corrige le club suivi.'}`
+          : 'Tournoi ajoutÃ© en attente: la fiche est suivie, et lâ€™app cherchera le live Ã  chaque actualisation.');
       }catch(err){setLog('Ajout impossible: '+escapeHtml(err.message));}
     }
 
@@ -778,24 +815,24 @@
       $('volleySelect').onchange=e=>{state.selectedVolley=e.target.value; renderVolley();};
       $('applyClubBtn').onclick=applyClub;
       $('addClubSearchBtn').onclick=addSearchedClub;
-      $('addWatchBtn').onclick=()=>{state.watched=uniqueByNorm([...state.watched,...splitList($('watchInput').value)]); $('watchInput').value=''; saveLocal(); refresh(); setLog('Archer(s) ajouté(s) au suivi.');};
+      $('addWatchBtn').onclick=()=>{state.watched=uniqueByNorm([...state.watched,...splitList($('watchInput').value)]); $('watchInput').value=''; saveLocal(); refresh(); setLog('Archer(s) ajoutÃ©(s) au suivi.');};
       $('clearWatchBtn').onclick=()=>{state.watched=[]; saveLocal(); refresh();};
       $('findNextBtn').onclick=findNext;
       $('followFoundBtn').onclick=followFound;
       $('addManualBtn').onclick=addManual;
       $('clearTrackedBtn').onclick=()=>{state.archived.unshift(...state.tracked); state.tracked=[]; saveLocal(); refresh();};
-      $('clearAllBtn').onclick=()=>{state.data={competitions:[]}; state.raw={competitions:[]}; state.tracked=[]; saveLocal(); render(); setLog('Vue locale nettoyée.');};
+      $('clearAllBtn').onclick=()=>{state.data={competitions:[]}; state.raw={competitions:[]}; state.tracked=[]; saveLocal(); render(); setLog('Vue locale nettoyÃ©e.');};
       $('applyPhaseBtn').onclick=()=>{state.phaseOverride=$('phaseSelect').value; saveLocal(); render();};
       $('publishStateBtn').onclick=()=>publishState().catch(err=>setLog('Publication impossible: '+escapeHtml(err.message)));
-      $('competitionModeBtn').onclick=()=>{state.autoRefresh=!state.autoRefresh; $('competitionModeBtn').textContent='Mode compétition: '+(state.autoRefresh?'ON':'OFF');};
+      $('competitionModeBtn').onclick=()=>{state.autoRefresh=!state.autoRefresh; $('competitionModeBtn').textContent='Mode compÃ©tition: '+(state.autoRefresh?'ON':'OFF');};
       document.querySelectorAll('[data-admin-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-admin-tab]').forEach(x=>x.classList.remove('active')); b.classList.add('active'); ['setup','sources','pilot'].forEach(t=>$('admin'+t[0].toUpperCase()+t.slice(1)).classList.toggle('hidden', t!==b.dataset.adminTab));});
       ['clubInput','countryInput','watchInput','manualUrlInput','clubSearchInput'].forEach(id=>$(id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault(); if(id==='manualUrlInput') addManual(); else if(id==='watchInput') $('addWatchBtn').click(); else if(id==='clubSearchInput') addSearchedClub(); else applyClub();}}));
-      setInterval(()=>{$('countdown').textContent=state.autoRefresh?Math.max(0,Math.ceil((state.nextRefresh-Date.now())/1000))+' s':'arrêté';},500);
+      setInterval(()=>{$('countdown').textContent=state.autoRefresh?Math.max(0,Math.ceil((state.nextRefresh-Date.now())/1000))+' s':'arrÃªtÃ©';},500);
       setInterval(()=>{if(state.autoRefresh) refresh();},REFRESH_MS);
     }
 
     async function init(){
-      loadLocal(); await loadAdminConfig(); await resolveAdmin(); if(state.admin) await loadClubCatalog(); await loadSharedState();
+      loadLocal(); await loadAdminConfig(); await resolveAdmin(); if(state.admin) await loadClubCatalog(); await loadSharedState(); hydrateTrackedEntries();
       state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
       if(state.admin){$('adminPanel').classList.remove('hidden'); $('adminToolbar').classList.remove('hidden');}
       bind(); renderAdmin(); await refresh();
