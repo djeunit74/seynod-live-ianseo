@@ -527,6 +527,44 @@
       if(t.liveStatus) return t.liveStatus;
       return t.url ? 'Live prêt, en attente de scores' : 'Départs publiés, résultats pas encore ouverts';
     }
+    function isLiveOpenedStatus(t){
+      const s=String(t?.liveStatus||'').toLowerCase();
+      return s.includes('scores live détectés') || s.includes('live ouvert') || s.includes('live détecté');
+    }
+    function canUseLiveFallback(t){
+      if(!t?.url) return false;
+      const s=String(t.liveStatus||'').toLowerCase();
+      if(s.includes('pas encore ouverts') || s.includes('inaccessible')) return false;
+      return true;
+    }
+    function buildFallbackLiveData(){
+      const competitions=[];
+      for(const t of state.tracked){
+        if(!canUseLiveFallback(t)) continue;
+        const entries=entriesForScope(t);
+        if(!entries.length) continue;
+        const archers=entries.map(e=>({
+          name:e.name||'',
+          club:e.club||'',
+          category:entryCategorie(e),
+          progress:`En cours (${entryDepart(e)})`,
+          position:'-',
+          score:0,
+          scoreLabel:'',
+          detail:entryHoraire(e),
+          finished:false,
+          place:'-'
+        }));
+        competitions.push({
+          id:String(t.id),
+          name:t.name||'Tournoi suivi',
+          place:'-',
+          sourceUrl:t.url||'',
+          archers
+        });
+      }
+      return {competitions};
+    }
 
     function isWatched(a){
       const n=norm(a?.name||'');
@@ -723,6 +761,7 @@
       const a=archers(data);
       if(a.some(x=>!isFinished(x))) return 'during';
       if(a.length) return 'after';
+      if(state.tracked.some(isLiveOpenedStatus)) return 'during';
       if(state.tracked.length) return 'before';
       return 'before';
     }
@@ -851,7 +890,14 @@
         if(!state.admin) await loadSharedState();
         if(state.admin) await enrichTrackedFromEna();
         let raw;
-        if(state.tracked.length) raw=await loadTrackedLive();
+        if(state.tracked.length){
+          raw=await loadTrackedLive();
+          const hasScoreRows=(raw.competitions||[]).some(c=>(c.archers||[]).length>0);
+          if(!hasScoreRows){
+            const fallback=buildFallbackLiveData();
+            if((fallback.competitions||[]).length) raw=fallback;
+          }
+        }
         else raw=normalizeData(await fetchJson(API_URL));
         state.raw=raw; state.data=state.tracked.length?raw:filterData(raw); syncVolley(state.data); render();
         $('lastCheck').textContent=new Date().toLocaleString('fr-FR');
