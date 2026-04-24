@@ -192,7 +192,7 @@ def parse_ianseo(page_html: str, club_keywords: List[str], source_url: str) -> D
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Fetch IANSEO live data and build data/live.json")
-    parser.add_argument("--url", default=DEFAULT_URL, help="IANSEO IC.php URL")
+    parser.add_argument("--url", default=DEFAULT_URL, help="IANSEO live URL (IC.php or ICCM.php)")
     parser.add_argument("--output", default="data/live.json", help="Output JSON path")
     parser.add_argument(
         "--club-keywords",

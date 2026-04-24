@@ -16,7 +16,7 @@ def parse_urls(raw: str) -> List[str]:
 
 
 def extract_competition_id(url: str) -> str:
-    m = re.search(r"/TourData/\d+/(\d+)/IC\.php", url, flags=re.IGNORECASE)
+    m = re.search(r"/TourData/\d+/(\d+)/IC(?:CM)?\.php", url, flags=re.IGNORECASE)
     return m.group(1) if m else re.sub(r"[^a-zA-Z0-9]+", "-", url).strip("-")[:32]
 
 
@@ -82,7 +82,7 @@ def build_payload(urls: List[str], club_keywords: List[str]) -> Dict[str, Any]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build data/live.json from one or multiple IANSEO competitions")
-    parser.add_argument("--urls", default="", help="IANSEO IC.php URLs separated by comma/newline/semicolon")
+    parser.add_argument("--urls", default="", help="IANSEO live URLs (IC.php or ICCM.php) separated by comma/newline/semicolon")
     parser.add_argument("--sources-file", default="data/competition_sources.json", help="Optional JSON file with {\"urls\": [...]}")
     parser.add_argument("--output", default="data/live.json")
     parser.add_argument("--club-keywords", default="Seynod,0174246")

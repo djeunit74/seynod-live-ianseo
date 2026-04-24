@@ -113,7 +113,7 @@ def extract_ena_url(details_html: str, to_id: str) -> Optional[str]:
 
 
 def extract_ic_url(details_html: str, to_id: str) -> Optional[str]:
-    m = re.search(r'href="(/TourData/\d+/' + re.escape(to_id) + r'/IC\.php)"', details_html, flags=re.IGNORECASE)
+    m = re.search(r'href="(/TourData/\d+/' + re.escape(to_id) + r'/IC(?:CM)?\.php)"', details_html, flags=re.IGNORECASE)
     if not m:
         return None
     return "https://www.ianseo.net" + m.group(1)

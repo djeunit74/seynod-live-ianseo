@@ -39,7 +39,7 @@ def main() -> int:
     parser.add_argument(
         "--urls",
         default="",
-        help="IANSEO IC.php URLs (comma/newline/semicolon separated).",
+        help="IANSEO live URLs (IC.php or ICCM.php, comma/newline/semicolon separated).",
     )
     parser.add_argument(
         "--club-keywords",
