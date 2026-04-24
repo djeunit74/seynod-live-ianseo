@@ -1091,6 +1091,22 @@
       }
       return comps.flatMap(c=>c.archers.map(a=>({...a,competitionId:c.id,competitionName:c.name,sourceUrl:c.sourceUrl,place:a.place||c.place})));
     }
+    function sanitizeDisplayRows(rows){
+      return (rows||[]).filter(r=>{
+        const hasName=String(r?.name||'').trim().length>0;
+        const hasClub=String(r?.club||'').trim().length>0;
+        return hasName && hasClub;
+      });
+    }
+    function sortDisplayRows(rows){
+      return [...(rows||[])].sort((a,b)=>{
+        const compCmp=String(a?.competitionName||'').localeCompare(String(b?.competitionName||''),'fr',{sensitivity:'base'});
+        if(compCmp!==0) return compCmp;
+        const scoreCmp=(Number(b?.score||0)-Number(a?.score||0));
+        if(scoreCmp!==0) return scoreCmp;
+        return String(a?.name||'').localeCompare(String(b?.name||''),'fr',{sensitivity:'base'});
+      });
+    }
     function signature(data){return JSON.stringify((data.competitions||[]).map(c=>[c.id,c.archers.map(a=>[a.name,a.score,a.position,a.progress,a.detail,a.finished])]));}
     function getScore(a){const n=Number(a?.score); if(Number.isFinite(n)&&n>0) return n; const m=String(a?.scoreLabel||'').match(/\d+/); return m?Number(m[0]):0;}
     function isFinalProgressText(text){
@@ -1684,6 +1700,9 @@
 
     function render(){
       const data=state.data;
+      if(state.selectedCompetition!=='all' && !(data.competitions||[]).some(c=>String(c.id)===String(state.selectedCompetition))){
+        state.selectedCompetition='all';
+      }
       const all=archers(data);
       let live=all.filter(a=>!isFinished(a) && isInTrackedScope(a));
       let done=all.filter(a=>isFinished(a) && isInTrackedScope(a));
@@ -1700,6 +1719,8 @@
       done=dedupeDisplayRows(done);
       live=mergeRowsByArcher(live);
       done=mergeRowsByArcher(done);
+      live=sortDisplayRows(sanitizeDisplayRows(live));
+      done=sortDisplayRows(sanitizeDisplayRows(done));
       if(state.watched.length){
         done=done.filter(isWatched);
       }
