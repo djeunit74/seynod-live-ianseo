@@ -626,6 +626,13 @@
       for(const e of entries||[]){const club=e.club||e.category||'Club'; const k=norm(club); if(!map.has(k)) map.set(k,{club,count:0}); map.get(k).count++;}
       return [...map.values()].sort((a,b)=>a.club.localeCompare(b.club,'fr',{sensitivity:'base'}));
     }
+    function beforeSummary(){
+      if(!state.tracked.length) return 'Aucun tournoi suivi. Ajoute une source IANSEO dans Admin > Tournois.';
+      const entries=state.tracked.flatMap(entriesForScope);
+      const clubs=clubsForEntries(entries);
+      const clubText=clubs.length ? clubs.map(c=>`${c.club} (${c.count})`).join(' · ') : 'aucun participant détecté pour les clubs sélectionnés';
+      return `${state.tracked.length} tournoi(s) suivi(s) · ${entries.length} participant(s) sélectionné(s) · ${clubText}`;
+    }
     function archers(data){
       const comps=(data?.competitions||[]);
       if(state.selectedCompetition!=='all'){
@@ -790,7 +797,7 @@
         : `<tr class="${w?'watch-row':''}"><td>${escapeHtml(a.place||'-')}</td><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${escapeHtml(a.position||'')}</td><td><strong>${getScore(a)||''}</strong></td><td>${escapeHtml(a.detail||'')}</td></tr>`;}).join('');
     }
     function renderBefore(){
-      $('beforeMeta').textContent=state.tracked.length?`${state.tracked.length} tournoi(s) suivi(s) · Club principal: ${state.clubRaw} · Archers ajoutés: ${state.watched.length}`:'Aucun tournoi suivi. Ajoute une source IANSEO dans Admin > Tournois.';
+      $('beforeMeta').textContent=beforeSummary();
       $('upcomingCards').innerHTML=state.tracked.length?state.tracked.map(t=>{
         const entries=entriesForScope(t), clubs=clubsForEntries(entries);
         const expanded=state.expandedBefore.has(t.id);
