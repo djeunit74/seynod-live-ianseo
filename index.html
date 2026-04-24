@@ -1322,6 +1322,27 @@
       }
       return out;
     }
+    function pickBestDisplayRow(a,b){
+      const sa=getScore(a), sb=getScore(b);
+      if(sa!==sb) return sa>sb ? a : b;
+      const fa=isFinished(a)?1:0, fb=isFinished(b)?1:0;
+      if(fa!==fb) return fa>fb ? a : b;
+      const ca=isBreakdownCategoryText(a?.category)?0:1;
+      const cb=isBreakdownCategoryText(b?.category)?0:1;
+      if(ca!==cb) return ca>cb ? a : b;
+      const da=String(a?.detail||'').length, db=String(b?.detail||'').length;
+      return da>=db ? a : b;
+    }
+    function dedupeDisplayRows(rows){
+      const map=new Map();
+      for(const row of rows||[]){
+        const key=norm(`${row?.competitionId||''}|${row?.name||''}|${row?.club||''}`);
+        if(!key) continue;
+        const old=map.get(key);
+        map.set(key, old ? pickBestDisplayRow(old,row) : row);
+      }
+      return [...map.values()];
+    }
     function isScheduleLikeRow(a){
       if(!a) return false;
       const noScore=getScore(a)<=0;
@@ -1532,6 +1553,8 @@
           live=live.filter(a=>!(getScore(a)>0));
         }
       }
+      live=dedupeDisplayRows(live);
+      done=dedupeDisplayRows(done);
       $('statArchers').textContent=all.length; $('statFinished').textContent=done.length; $('statLive').textContent=live.length;
       $('departInfo').textContent=buildDepartInfoText(data);
       renderTabs(data); renderBefore(); renderRows('liveRows',live,true); renderRows('finishedRows',done,false); renderVolley();
