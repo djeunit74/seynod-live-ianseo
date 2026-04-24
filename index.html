@@ -506,6 +506,21 @@
       const m=String(url||'').match(/\/TourData\/\d+\/([0-9A-Za-z-]+)\//i);
       return m ? `https://www.ianseo.net/Details.php?toId=${m[1]}` : String(url||'').replace(/\/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\.php.*$/i,'/Details.php');
     }
+    function extractTourYearFromUrl(url){
+      const m=String(url||'').match(/\/TourData\/(\d+)\/[0-9A-Za-z-]+\//i);
+      return m ? m[1] : '';
+    }
+    function candidateIcUrlsForTournament(t){
+      const id=tournamentToId(t);
+      if(!id) return [];
+      const years=new Set();
+      for(const u of [t?.url||'',...(t?.urls||[]),t?.ena||'',t?.details||'']){
+        const y=extractTourYearFromUrl(u);
+        if(y) years.add(y);
+      }
+      if(!years.size) years.add(String(new Date().getFullYear()));
+      return [...years].map(y=>`https://www.ianseo.net/TourData/${y}/${id}/IC.php`);
+    }
     function extractLiveUrls(detailsText,toId){
       const out=[], seen=new Set(), esc=String(toId).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
       const pats=[new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${esc}/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\\.php`,'gi'),new RegExp(`/TourData/\\d+/${esc}/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\\.php`,'gi')];
@@ -1276,6 +1291,10 @@
       for(const t of state.tracked){
         if(!Array.isArray(t.urls)) t.urls=[];
         if(t.url && !t.urls.includes(t.url)) t.urls.unshift(t.url);
+        const icCandidates=candidateIcUrlsForTournament(t);
+        for(const u of icCandidates){
+          if(!t.urls.includes(u)) t.urls.unshift(u);
+        }
         const pdfUrlsForLive=await resolveResultPdfUrls(t);
         const derivedLiveUrls=deriveLiveUrlsFromPdfUrls(pdfUrlsForLive);
         for(const u of derivedLiveUrls){
