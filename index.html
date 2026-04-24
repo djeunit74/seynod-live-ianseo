@@ -575,6 +575,27 @@
         return extractLiveUrls(txt,id);
       }catch(_){return [];}
     }
+    async function tryAutoRepairDeadLiveSource(src, tournament){
+      const m=String(src||'').match(/(https?:\/\/www\.ianseo\.net\/TourData\/(\d+)\/)(\d+)(\/([A-Z0-9]+)\.php(?:\?.*)?)$/i);
+      if(!m) return {url:'',text:''};
+      const base=m[1], year=m[2], idNum=Number(m[3]), tail=m[4], code=(m[5]||'').toUpperCase();
+      if(!Number.isFinite(idNum)) return {url:'',text:''};
+      const candidates=[idNum-1,idNum+1].filter(n=>n>0).map(n=>`${base}${n}${tail}`);
+      for(const candidate of candidates){
+        try{
+          const txt=await fetchText(toProxy(candidate));
+          if(/file not found\./i.test(String(txt||''))) continue;
+          if(code==='IC' || code==='ICCM' || /^IQ/.test(code)){
+            tournament.url=candidate;
+            tournament.details=`https://www.ianseo.net/Details.php?toId=${candidate.match(/\/TourData\/\d+\/(\d+)\//i)?.[1]||''}`;
+            if(!Array.isArray(tournament.urls)) tournament.urls=[];
+            if(!tournament.urls.includes(candidate)) tournament.urls.unshift(candidate);
+          }
+          return {url:candidate,text:txt};
+        }catch(_){}
+      }
+      return {url:'',text:''};
+    }
     function liveLabel(t){
       if(t.liveStatus) return t.liveStatus;
       return t.url ? 'Live prêt, en attente de scores' : 'Départs publiés, résultats pas encore ouverts';
@@ -1171,10 +1192,16 @@
           let firstValidSource='';
           for(const src of sourceUrls){
             try{
-              const md=await fetchText(toProxy(src));
-              if(/file not found\./i.test(String(md||''))) continue;
-              if(!firstValidSource) firstValidSource=src;
-              const part=parseMarkdownLive(md,src,t);
+              let effectiveSrc=src;
+              let md=await fetchText(toProxy(src));
+              if(/file not found\./i.test(String(md||''))){
+                const repaired=await tryAutoRepairDeadLiveSource(src,t);
+                if(!repaired.url || !repaired.text) continue;
+                effectiveSrc=repaired.url;
+                md=repaired.text;
+              }
+              if(!firstValidSource) firstValidSource=effectiveSrc;
+              const part=parseMarkdownLive(md,effectiveSrc,t);
               mergedArchers=dedupeArchers([...mergedArchers,...cleanLiveRows(part.archers)]);
               if(!parsedName && part.name) parsedName=part.name;
               if(!parsedPlace && part.place && part.place!=='-') parsedPlace=part.place;
