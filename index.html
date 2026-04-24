@@ -827,7 +827,7 @@
       const current=now.getHours()*60+now.getMinutes();
       const next=groups.find(x=>(x.start??9999)>(g.start??-1));
       const active=current>=g.start-20 && current<=g.start+DEPART_ACTIVE_WINDOW_MIN && (!next || current<next.start-30);
-      if(active) return {kind:'live',label:'En cours',score:0};
+      if(active) return {kind:'live',label:'Créneau en cours',score:0};
       if(current<g.start-20) return {kind:'upcoming',label:'À venir',score:0};
       return {kind:'done',label:'Terminé',score:0};
     }
@@ -1099,7 +1099,6 @@
       const hasRealLive=a.some(x=>!isFinished(x) && !isScheduleLikeRow(x));
       if(hasRealLive) return 'during';
       const schedules=state.tracked.map(evaluateTournamentSchedule);
-      if(schedules.some(s=>s.state==='active')) return 'during';
       if(schedules.some(s=>s.state==='future' || s.state==='upcoming' || s.state==='no_time' || s.state==='no_entries')) return 'before';
       if(a.length) return 'after';
       if(schedules.some(s=>s.state==='paused' || s.state==='past')) return 'after';
@@ -1207,7 +1206,7 @@
           const active=g.start!==null && current>=g.start-20 && current<=g.start+DEPART_ACTIVE_WINDOW_MIN && (!next || current<next.start-30);
           const done=g.start!==null && !active && current>g.start+DEPART_ACTIVE_WINDOW_MIN;
           const cls=active?'green':done?'amber':'';
-          const status=active?'en cours':done?'terminé':'à venir';
+          const status=active?'créneau en cours':done?'terminé':'à venir';
           return `<span class="chip ${cls?`badge ${cls}`:''}">Départ ${escapeHtml(g.dep)} · ${escapeHtml(formatMinuteLabel(g.start))} · ${status}</span>`;
         }).join('');
         return `<article class="card"><h3>${escapeHtml(t.name)}</h3><div class="muted">${escapeHtml(t.date||'Date non renseignée')} · ${entries.length} participant(s) détecté(s) · ${escapeHtml(liveLabel(t))}</div><div class="chips">${clubs.map(c=>`<span class="chip">${escapeHtml(c.club)} · ${c.count}</span>`).join('')||`<span class="chip">${escapeHtml(t.scopeRaw||state.clubRaw||'Aucun club filtré')}</span>`}</div><div class="chips" style="margin-top:6px">${departChips||'<span class="chip">Départs non publiés</span>'}</div><div class="mini-list"><div class="mini-row muted"><strong>Archer</strong><span>Départ</span><span>Horaire</span><span>Cible / catégorie</span></div>${visible.map(e=>{const st=entryStatus(e,groups,resultIdx); const scoreTxt=st.score?` · ${st.score}`:''; return `<div class="mini-row"><strong>${escapeHtml(e.name||'')}</strong><span data-label="Départ">${escapeHtml(entryDepart(e))}<br><small>${escapeHtml(e.club||'')}</small></span><span data-label="Horaire">${escapeHtml(entryHoraire(e))}<br><small>${escapeHtml(st.label+scoreTxt)}</small></span><span data-label="Cible">${escapeHtml(e.target||'-')}<br><small>${escapeHtml(entryCategorie(e))}</small></span></div>`;}).join('')}${entries.length>14?`<button class="btn small secondary" data-toggle-before="${escapeHtml(t.id)}">${expanded?'Réduire la liste':`Voir tous les participants (${entries.length})`}</button>`:''}${!entries.length?'<div class="muted">Aucun participant à afficher pour les clubs sélectionnés. Vérifie le club suivi sur ce tournoi.</div>':''}</div><div class="row" style="margin-top:8px">${t.details?`<a class="btn small secondary" href="${escapeHtml(t.details)}" target="_blank">Fiche</a>`:''}${t.ena?`<a class="btn small secondary" href="${escapeHtml(t.ena)}" target="_blank">Inscrits</a>`:''}${t.url?`<a class="btn small secondary" href="${escapeHtml(t.url)}" target="_blank">Live</a>`:`<span class="badge amber">${escapeHtml(liveLabel(t))}</span>`}${state.admin?`<button class="btn small red" data-remove-track="${escapeHtml(t.id)}">Retirer</button>`:''}</div></article>`;
