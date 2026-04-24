@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-24T16:06:14.748680+00:00",
+  "generated_at_utc": "2026-04-24T17:31:05.990505+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -783,6 +783,13 @@
           "target": "8C"
         },
         {
+          "name": "DAUMAS Julie",
+          "club": "0927040 - BEAUMONT LE ROGER RISLE",
+          "category": "0927040 - BEAUMONT LE ROGER RISLE",
+          "session": "U15 Femme Arc Classique",
+          "target": "34C"
+        },
+        {
           "name": "DAVAUX Claire",
           "club": "0437083 - ST AVERTIN",
           "category": "0437083 - ST AVERTIN",
@@ -1292,13 +1299,6 @@
           "category": "0961081 - BANVOU",
           "session": "U18 Femme Arc Classique",
           "target": "13C"
-        },
-        {
-          "name": "MAJERI SORET Kelya",
-          "club": "0927039 - VERNON CSADN",
-          "category": "0927039 - VERNON CSADN",
-          "session": "U15 Femme Arc Classique",
-          "target": "34C"
         },
         {
           "name": "MARINI Matteo",
