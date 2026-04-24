@@ -1177,8 +1177,15 @@
         const code=String(s[1]||'').trim();
         if(code) out.add(code.toUpperCase());
       }
-      for(const code of inferDepartCodesFromEntries(row)) out.add(code);
-      if(!out.size) out.add('NA');
+      if(!out.size){
+        const inferred=inferDepartCodesFromEntries(row);
+        // Avoid copying one row score to D1/D2/D3 when ENA gives multiple departures.
+        if(inferred.length===1){
+          out.add(inferred[0]);
+        }else{
+          out.add('NA');
+        }
+      }
       return [...out];
     }
     function formatDepartCellMap(depMap, formatter){
@@ -1190,7 +1197,10 @@
         return a.localeCompare(b,'fr');
       });
       if(!keys.length) return '-';
-      return keys.map(k=>`D${escapeHtml(k)}: ${escapeHtml(formatter(depMap.get(k)))}`).join('<br>');
+      return keys.map(k=>{
+        const label=(k==='NA') ? '—' : `D${escapeHtml(k)}`;
+        return `${label}: ${escapeHtml(formatter(depMap.get(k)))}`;
+      }).join('<br>');
     }
     function mergeRowsByArcher(rows){
       const groups=new Map();
