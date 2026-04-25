@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-25T07:19:00.957184+00:00",
+  "generated_at_utc": "2026-04-25T08:32:30.015556+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2341,7 +2341,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27473",
       "ena_url": "https://www.ianseo.net/TourData/2026/27473/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27473/IC.php",
-      "entries_count": 207,
+      "entries_count": 205,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -2512,13 +2512,6 @@
           "target": "12C"
         },
         {
-          "name": "BOUSSITA Eden-Kelyah",
-          "club": "0221016 - CHENOVE",
-          "category": "0221016 - CHENOVE",
-          "session": "Arc Classique U15 Femmes",
-          "target": "25C"
-        },
-        {
           "name": "BOUZEREAU Gaspard",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
@@ -2621,7 +2614,7 @@
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc à Poulies Débutant U18 à S3",
-          "target": "14C"
+          "target": "14A"
         },
         {
           "name": "CHRETIEN Geoffrey",
@@ -3090,14 +3083,7 @@
           "club": "0221123 - LES ARCHERS SELONGEENS",
           "category": "0221123 - LES ARCHERS SELONGEENS",
           "session": "Arc à Poulies Débutant U18 à S3",
-          "target": "14A"
-        },
-        {
-          "name": "GRIBELIN Gabriella",
-          "club": "0221123 - LES ARCHERS SELONGEENS",
-          "category": "0221123 - LES ARCHERS SELONGEENS",
-          "session": "Arc Classique Senior 2 Femmes National",
-          "target": "23C"
+          "target": "14C"
         },
         {
           "name": "GUENIOT Joseph",
@@ -3264,7 +3250,7 @@
           "name": "LEFEVRE Francine",
           "club": "0610022 - VILLE SOUS LA FERTE",
           "category": "0610022 - VILLE SOUS LA FERTE",
-          "session": "Arc à Poulies Senior 3 Femmes",
+          "session": "S3 Femme Arc à Poulies",
           "target": "8A"
         },
         {
