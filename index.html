@@ -416,13 +416,14 @@
       state.countryRaw = localStorage.getItem('slc_country') || state.countryRaw;
       state.clubKeys = clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
       state.watched = uniqueByNorm(JSON.parse(localStorage.getItem('slc_watched') || '[]'));
-      state.tracked = JSON.parse(localStorage.getItem('slc_tracked') || '[]').map(cleanTournament);
+      state.tracked = dedupeTrackedTournaments(JSON.parse(localStorage.getItem('slc_tracked') || '[]').map(cleanTournament));
       state.archived = JSON.parse(localStorage.getItem('slc_archived') || '[]');
       state.ignoreDefaultFeed = localStorage.getItem('slc_ignore_default_feed') === '1';
       state.phaseOverride = localStorage.getItem('slc_phase') || 'auto';
       state.publicControlled = localStorage.getItem('slc_public_control') === '1';
     }
     function saveLocal(){
+      state.tracked = dedupeTrackedTournaments(state.tracked);
       localStorage.setItem('slc_club',state.clubRaw);
       localStorage.setItem('slc_country',state.countryRaw);
       localStorage.setItem('slc_watched',JSON.stringify(state.watched));
@@ -514,6 +515,66 @@
         place:String(raw.place||raw.location||''),
         entries:Array.isArray(raw.club_entries)?raw.club_entries:(Array.isArray(raw.entries)?raw.entries:[])
       };
+    }
+    function tournamentIdentity(t){
+      const toId=tournamentToId(t);
+      if(toId) return `id:${toId}`;
+      const details=normalizeUrl(t?.details||t?.details_url||'');
+      if(details) return `details:${details}`;
+      const url=normalizeLiveUrl(t?.url||'');
+      if(url) return `live:${url}`;
+      return `local:${norm(`${t?.name||''}|${t?.date||''}`)}`;
+    }
+    function mergeTournament(base, incoming){
+      const b=cleanTournament(base||{});
+      const i=cleanTournament(incoming||{});
+      const merged=cleanTournament({
+        ...b,
+        ...i,
+        id:b.id||i.id,
+        name:(b.name&&b.name!=='Tournoi suivi') ? b.name : i.name,
+        date_text:b.date||i.date,
+        details_url:b.details||i.details,
+        ena_url:b.ena||i.ena,
+        ic_url:b.url||i.url,
+        scopeRaw:i.scopeRaw||b.scopeRaw||state.clubRaw,
+        place:b.place||i.place
+      });
+      const urls=new Set([...(b.urls||[]),...(i.urls||[]),b.url,i.url].filter(Boolean));
+      merged.urls=[...urls];
+      if(!merged.url && merged.urls.length) merged.url=merged.urls[0];
+      const entries=[...(b.entries||[]),...(i.entries||[])];
+      if(entries.length){
+        const map=new Map();
+        for(const e of entries){
+          const key=norm(`${e?.name||''}|${e?.club||''}|${e?.depart||e?.departure||''}|${e?.target||''}`);
+          if(!key) continue;
+          if(!map.has(key)) map.set(key,e);
+        }
+        merged.entries=[...map.values()];
+      }
+      return merged;
+    }
+    function dedupeTrackedTournaments(list){
+      const map=new Map();
+      for(const raw of list||[]){
+        const t=cleanTournament(raw);
+        const key=tournamentIdentity(t);
+        const old=map.get(key);
+        map.set(key, old ? mergeTournament(old,t) : t);
+      }
+      return [...map.values()];
+    }
+    function upsertTrackedTournament(raw){
+      const incoming=cleanTournament(raw);
+      const key=tournamentIdentity(incoming);
+      const idx=(state.tracked||[]).findIndex(t=>tournamentIdentity(t)===key);
+      if(idx<0){
+        state.tracked.push(incoming);
+        return {created:true,tournament:incoming};
+      }
+      state.tracked[idx]=mergeTournament(state.tracked[idx], incoming);
+      return {created:false,tournament:state.tracked[idx]};
     }
     function normalizeUrl(raw){
       const v=String(raw||'').trim();
@@ -2047,8 +2108,8 @@
       if(!m){setLog('Aucune compétition sélectionnée.'); return;}
       const url=normalizeLiveUrl(m.ic_url||'');
       state.ignoreDefaultFeed=false;
-      state.tracked.push(cleanTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ena_url:m.ena_url,ic_url:url,club_entries:m.entries||m.club_entries,scopeRaw:state.clubRaw}));
-      hydrateTrackedEntries(); saveLocal(); setLog(url?'Compétition ajoutée au suivi live.':'Compétition ajoutée en attente du live IANSEO.'); refresh(); syncPublicStateIfEnabled();
+      const result=upsertTrackedTournament({id:m.to_id,name:m.name,date_text:m.date_text,details_url:m.details_url,ena_url:m.ena_url,ic_url:url,club_entries:m.entries||m.club_entries,scopeRaw:state.clubRaw});
+      hydrateTrackedEntries(); saveLocal(); setLog(result.created?(url?'Compétition ajoutée au suivi live.':'Compétition ajoutée en attente du live IANSEO.'):'Compétition déjà suivie: fusion mise à jour.'); refresh(); syncPublicStateIfEnabled();
     }
     async function addManual(){
       try{
@@ -2056,17 +2117,22 @@
         const res=await resolveSource($('manualUrlInput').value);
         const stamp=Date.now();
         state.ignoreDefaultFeed=false;
+        let createdCount=0, mergedCount=0;
         if(res.urls.length){
-          res.urls.forEach((url,i)=>state.tracked.push(cleanTournament({id:`manual-${stamp}-${i}`,name:res.name||`Source manuelle ${i+1}`,details_url:res.details,ena_url:res.ena,ic_url:url,scopeRaw:state.clubRaw})));
+          res.urls.forEach((url,i)=>{
+            const r=upsertTrackedTournament({id:`manual-${stamp}-${i}`,name:res.name||`Source manuelle ${i+1}`,details_url:res.details,ena_url:res.ena,ic_url:url,scopeRaw:state.clubRaw});
+            if(r.created) createdCount++; else mergedCount++;
+          });
         }else{
-          state.tracked.push(cleanTournament({id:`pending-${stamp}`,name:res.name||'Tournoi en attente live',details_url:res.details,ena_url:res.ena,ic_url:'',scopeRaw:state.clubRaw}));
+          const r=upsertTrackedTournament({id:`pending-${stamp}`,name:res.name||'Tournoi en attente live',details_url:res.details,ena_url:res.ena,ic_url:'',scopeRaw:state.clubRaw});
+          if(r.created) createdCount++; else mergedCount++;
         }
         hydrateTrackedEntries(); $('manualUrlInput').value=''; saveLocal();
         await refresh();
         await syncPublicStateIfEnabled();
         const count=archers(state.data).length;
         setLog(res.urls.length
-          ? `${res.urls.length} source(s) ajoutée(s). ${count} archer(s) affiché(s). ${count?'':'Si rien ne sort, ajoute le nom exact de l archer ou corrige le club suivi.'}`
+          ? `${createdCount} source(s) ajoutée(s), ${mergedCount} fusionnée(s). ${count} archer(s) affiché(s). ${count?'':'Si rien ne sort, ajoute le nom exact de l archer ou corrige le club suivi.'}`
           : "Tournoi ajouté en attente: la fiche est suivie, et l'app cherchera le live à chaque actualisation.");
       }catch(err){setLog('Ajout impossible: '+escapeHtml(err.message));}
     }
