@@ -1564,11 +1564,9 @@
           if(hasValidCategory && isBreakdownCategoryText(a?.category)) continue;
           const row={...a};
           if(isBreakdownCategoryText(row.category)) row.category='Catégorie en cours de synchronisation';
-          const hasResultMarks=/10\+X|X:/i.test(String(row.detail||'')) && getScore(row)>0;
-          if(!isFinished(row) && hasResultMarks){
-            row.progress='Terminé';
-            row.finished=true;
-          }
+          // Do not force "Terminé" only from detail marks (10+X / X):
+          // on some IANSEO pages these marks are present while the round is still live.
+          // We keep finished status driven by explicit progress/final indicators only.
           out.push(row);
         }
       }
