@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-04-26T11:40:44.384789+00:00",
+  "generated_at_utc": "2026-04-26T13:08:21.311012+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 26,
+  "count": 27,
   "tournaments": [
     {
       "to_id": "27413",
@@ -2180,6 +2180,258 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/27653/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "27828",
+      "year": "2026",
+      "name": "DRE POULIES, TAE LES ARCHERS DE PEROLS",
+      "organizer": "LES ARCHERS DE PEROLS",
+      "date_text": "10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27828",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27828/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27828/IC.php",
+      "entries_count": 34,
+      "entries": [
+        {
+          "name": "BES Thomas",
+          "club": "1131072 - L UNION",
+          "category": "1131072 - L UNION",
+          "session": "Arc à Poulies U18 Hommes",
+          "target": "20C"
+        },
+        {
+          "name": "BORDERIE-KIM Emrys",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U13 Homme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "CALATAYUD Maxime",
+          "club": "1130048 - ALES",
+          "category": "1130048 - ALES",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": "15B"
+        },
+        {
+          "name": "CARO Marla",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "U15 Femme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "COULON DE PRADA Teo",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U13 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "DARDENNE Stephane",
+          "club": "1131072 - L UNION",
+          "category": "1131072 - L UNION",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "18C"
+        },
+        {
+          "name": "DEBAIG Isabelle",
+          "club": "1131072 - L UNION",
+          "category": "1131072 - L UNION",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": "12A"
+        },
+        {
+          "name": "DEMEULENAERE Vincent",
+          "club": "1131072 - L UNION",
+          "category": "1131072 - L UNION",
+          "session": "Arc à Poulies U21 Hommes",
+          "target": "19C"
+        },
+        {
+          "name": "ESPEU Julien",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "17C"
+        },
+        {
+          "name": "GERMAIN Lucien",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U15 Homme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "GERMAIN Nicolas",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "S2 Homme Arc Classique National",
+          "target": "10A"
+        },
+        {
+          "name": "HENRY Stephane",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "11A"
+        },
+        {
+          "name": "IMBERTON Guilhem",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "16C"
+        },
+        {
+          "name": "KAPLAN Thierry",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S3 Homme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "LACOMBE Bernard",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "Arc à Poulies Senior 3 Hommes",
+          "target": "20B"
+        },
+        {
+          "name": "LEPINAY Pascal",
+          "club": "1134122 - LE CRES",
+          "category": "1134122 - LE CRES",
+          "session": "S3 Homme Arc Classique National",
+          "target": "10C"
+        },
+        {
+          "name": "LESAGE Pierre",
+          "club": "1131072 - L UNION",
+          "category": "1131072 - L UNION",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": "21C"
+        },
+        {
+          "name": "LEVY Jean-Luc",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S3 Homme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "MAGNARD Jonathan",
+          "club": "1130048 - ALES",
+          "category": "1130048 - ALES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "16B"
+        },
+        {
+          "name": "MARTIN Angel",
+          "club": "1130048 - ALES",
+          "category": "1130048 - ALES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "17B"
+        },
+        {
+          "name": "MARTIN Julien",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": "18A"
+        },
+        {
+          "name": "MARTINEZ Guy",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": "21B"
+        },
+        {
+          "name": "MAURICE Olivier",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "15C"
+        },
+        {
+          "name": "MOATY BAHLER Lea",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "U15 Femme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "OGER David",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "S2 Homme Arc Classique National",
+          "target": "10B"
+        },
+        {
+          "name": "PAES Aymeric",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": "18B"
+        },
+        {
+          "name": "PETITJEAN Frederic",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "Arc à Poulies Senior 3 Hommes",
+          "target": "21A"
+        },
+        {
+          "name": "QUEZIN Victor",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U15 Homme Arc Classique",
+          "target": "3C"
+        },
+        {
+          "name": "RAVIDAT Rachel",
+          "club": "1131072 - L UNION",
+          "category": "1131072 - L UNION",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": "14A"
+        },
+        {
+          "name": "SALAS Mathieu",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": "19B"
+        },
+        {
+          "name": "SAVAJOLS Marine",
+          "club": "1131072 - L UNION",
+          "category": "1131072 - L UNION",
+          "session": "Arc à Poulies Senior 1 Femmes",
+          "target": "13A"
+        },
+        {
+          "name": "SENEJOUX Stephane",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "19A"
+        },
+        {
+          "name": "VIDAL Denis",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "20A"
+        },
+        {
+          "name": "VIGANO Oscar",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U15 Homme Arc Classique",
+          "target": "4A"
+        }
+      ]
     },
     {
       "to_id": "27200",
