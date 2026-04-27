@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-04-27T09:38:54.230170+00:00",
+  "generated_at_utc": "2026-04-27T11:44:53.792528+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 27,
+  "count": 28,
   "tournaments": [
     {
       "to_id": "27413",
@@ -3872,6 +3872,370 @@
           "category": "0221007 - CHATILLON S/SEINE",
           "session": "S1 Homme Arc Classique",
           "target": "5A"
+        }
+      ]
+    },
+    {
+      "to_id": "27949",
+      "year": "2026",
+      "name": "DIVISION NATIONALE 2 - MANCHE 1 - GROUPE 1",
+      "organizer": "LES ARCHERS DE LA BRETAGNE ROMANTIQUE",
+      "date_text": "9-10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27949",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27949/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27949/IC.php",
+      "entries_count": 50,
+      "entries": [
+        {
+          "name": "APPELTANTS Alexis",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "APPELTANTS Tom",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U21 Homme Arc Classique",
+          "target": "13A"
+        },
+        {
+          "name": "ATCHAOUI Ilias",
+          "club": "0895286 - PLESSIS BOUCHARD",
+          "category": "0895286 - PLESSIS BOUCHARD",
+          "session": "U21 Homme Arc Classique",
+          "target": "19C"
+        },
+        {
+          "name": "BALDEN Aurelie",
+          "club": "0759112 - DUNKERQUE",
+          "category": "0759112 - DUNKERQUE",
+          "session": "S1 Femme Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "BALDI Etienne",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "U21 Homme Arc Classique",
+          "target": "16A"
+        },
+        {
+          "name": "BARAER Antoine",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S1 Homme Arc Classique",
+          "target": "19B"
+        },
+        {
+          "name": "BEAUCHARD-SOLON Isabelle",
+          "club": "0441103 - VINEUIL",
+          "category": "0441103 - VINEUIL",
+          "session": "S2 Femme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "BRIARD Sylvie",
+          "club": "0322005 - FREHEL",
+          "category": "0322005 - FREHEL",
+          "session": "S2 Femme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "BRIFFAUT Remi",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S2 Homme Arc Classique",
+          "target": "20A"
+        },
+        {
+          "name": "CASTEX Helene",
+          "club": "0759112 - DUNKERQUE",
+          "category": "0759112 - DUNKERQUE",
+          "session": "S2 Femme Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "CHABROL Gabrielle",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "S1 Femme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "CHAINIER Alexis",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "S1 Homme Arc Classique",
+          "target": "12C"
+        },
+        {
+          "name": "CHARTRIN Pauline",
+          "club": "0441103 - VINEUIL",
+          "category": "0441103 - VINEUIL",
+          "session": "S1 Femme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "COQUET Gaetan",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U21 Homme Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "DENIS Quentin",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "12B"
+        },
+        {
+          "name": "DERRIEN Charline",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "S1 Femme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "DEZOOMER Angelique",
+          "club": "0759112 - DUNKERQUE",
+          "category": "0759112 - DUNKERQUE",
+          "session": "S1 Femme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "EALET Joffrey",
+          "club": "0895286 - PLESSIS BOUCHARD",
+          "category": "0895286 - PLESSIS BOUCHARD",
+          "session": "S1 Homme Arc Classique",
+          "target": "20B"
+        },
+        {
+          "name": "FIRION Audrey",
+          "club": "0441103 - VINEUIL",
+          "category": "0441103 - VINEUIL",
+          "session": "S1 Femme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "GABRIEL Caroline",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "S1 Femme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "GANTZER Delphine",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "S2 Femme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "GICQUEL Matthieu",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "GIRARD Constance",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "S1 Femme Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "HUBERLANT Noah",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "U21 Homme Arc Classique",
+          "target": "21A"
+        },
+        {
+          "name": "L'ANTHOEN Matheo",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U21 Homme Arc Classique",
+          "target": "15A"
+        },
+        {
+          "name": "LABLANCHE-NEVEU Rozenn",
+          "club": "0322005 - FREHEL",
+          "category": "0322005 - FREHEL",
+          "session": "S2 Femme Arc Classique",
+          "target": "6C"
+        },
+        {
+          "name": "LANCELOT Marie - Elise",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "S2 Femme Arc Classique",
+          "target": "5A"
+        },
+        {
+          "name": "LE VIAVANT Gwen",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "14B"
+        },
+        {
+          "name": "LEFRANCOIS Ianis",
+          "club": "0878114 - BUC",
+          "category": "0878114 - BUC",
+          "session": "S1 Homme Arc Classique",
+          "target": "18C"
+        },
+        {
+          "name": "MEISSONNIER Charles",
+          "club": "0895286 - PLESSIS BOUCHARD",
+          "category": "0895286 - PLESSIS BOUCHARD",
+          "session": "S2 Homme Arc Classique",
+          "target": "21B"
+        },
+        {
+          "name": "MERAND Louise",
+          "club": "0914024 - CARPIQUET",
+          "category": "0914024 - CARPIQUET",
+          "session": "U21 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "METOT Nicolas",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "S1 Homme Arc Classique",
+          "target": "13C"
+        },
+        {
+          "name": "MOREAU Adeline",
+          "club": "0322005 - FREHEL",
+          "category": "0322005 - FREHEL",
+          "session": "S2 Femme Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "PAUTREL Annie",
+          "club": "0914024 - CARPIQUET",
+          "category": "0914024 - CARPIQUET",
+          "session": "S2 Femme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "PERNET Franck",
+          "club": "0895286 - PLESSIS BOUCHARD",
+          "category": "0895286 - PLESSIS BOUCHARD",
+          "session": "S2 Homme Arc Classique",
+          "target": "22B"
+        },
+        {
+          "name": "PICHONNIER Valentin",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S1 Homme Arc Classique",
+          "target": "22A"
+        },
+        {
+          "name": "PIKE William",
+          "club": "0878114 - BUC",
+          "category": "0878114 - BUC",
+          "session": "S1 Homme Arc Classique",
+          "target": "17C"
+        },
+        {
+          "name": "POIRIER Fanny",
+          "club": "0322005 - FREHEL",
+          "category": "0322005 - FREHEL",
+          "session": "S1 Femme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "REGNAULT Lydie",
+          "club": "0914024 - CARPIQUET",
+          "category": "0914024 - CARPIQUET",
+          "session": "S2 Femme Arc Classique",
+          "target": "3C"
+        },
+        {
+          "name": "RIOULT Anthony",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "S1 Homme Arc Classique",
+          "target": "14C"
+        },
+        {
+          "name": "SCHNEIDER Florent",
+          "club": "0878114 - BUC",
+          "category": "0878114 - BUC",
+          "session": "S2 Homme Arc Classique",
+          "target": "21C"
+        },
+        {
+          "name": "SELLIN Ewan",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "S1 Homme Arc Classique",
+          "target": "17A"
+        },
+        {
+          "name": "SENAY Alexandre",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "S1 Homme Arc Classique",
+          "target": "15C"
+        },
+        {
+          "name": "SENTKAR Aurelio",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "S1 Homme Arc Classique",
+          "target": "18A"
+        },
+        {
+          "name": "SIMERAY Tao",
+          "club": "0878114 - BUC",
+          "category": "0878114 - BUC",
+          "session": "S1 Homme Arc Classique",
+          "target": "16C"
+        },
+        {
+          "name": "THEMELIS Panagiotis",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "S1 Homme Arc Classique",
+          "target": "19A"
+        },
+        {
+          "name": "VALY Donalie",
+          "club": "0441103 - VINEUIL",
+          "category": "0441103 - VINEUIL",
+          "session": "S1 Femme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "VANDENBUSSCHE Marie",
+          "club": "0759112 - DUNKERQUE",
+          "category": "0759112 - DUNKERQUE",
+          "session": "S2 Femme Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "WIRTH Kelly",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "S2 Femme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "WOZNIOK Antoine",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "15B"
         }
       ]
     },
