@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-27T17:23:53.557635+00:00",
+  "generated_at_utc": "2026-04-27T18:50:28.323779+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2604,7 +2604,7 @@
           "club": "0894257 - VILLIERS SUR MARNE",
           "category": "0894257 - VILLIERS SUR MARNE",
           "session": "S2 Femme Arc Classique",
-          "target": "2B"
+          "target": "2D"
         },
         {
           "name": "BOUQUET Jacques",
@@ -2668,6 +2668,13 @@
           "category": "0895292 - SAINT OUEN L'AUMONE",
           "session": "S3 Femme Arc Classique National",
           "target": "8D"
+        },
+        {
+          "name": "CHESSE Jean",
+          "club": "0893225 - NEUILLY SUR MARNE",
+          "category": "0893225 - NEUILLY SUR MARNE",
+          "session": "S3 Homme Arc Classique",
+          "target": "4D"
         },
         {
           "name": "CORCY Jonathan",
@@ -3129,7 +3136,7 @@
           "club": "0894263 - VILLEJUIF",
           "category": "0894263 - VILLEJUIF",
           "session": "S2 Homme Arc Classique",
-          "target": "2D"
+          "target": "2B"
         },
         {
           "name": "LEGEARD Nolan",
@@ -3452,13 +3459,6 @@
           "category": "0877059 - BUSSY ST GEORGES",
           "session": "S2 Homme Arc Classique National",
           "target": "9D"
-        },
-        {
-          "name": "PINNA Jean-Louis",
-          "club": "0893227 - GAGNY",
-          "category": "0893227 - GAGNY",
-          "session": "S3 Homme Arc Classique National",
-          "target": "9A"
         },
         {
           "name": "PINNA Jean-Louis",
