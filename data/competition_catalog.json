@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-27T07:15:45.270974+00:00",
+  "generated_at_utc": "2026-04-27T09:38:54.230170+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -5635,7 +5635,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 39,
+      "entries_count": 40,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -5704,14 +5704,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
@@ -5783,6 +5783,13 @@
           "category": "1131093 - BALMA",
           "session": "U13 Femme Arc Classique",
           "target": "2B"
+        },
+        {
+          "name": "GOUNIN Nicolas",
+          "club": "1181202 - CASTRES",
+          "category": "1181202 - CASTRES",
+          "session": "S3 Homme Arc Classique National",
+          "target": "12A"
         },
         {
           "name": "GUESDON Etienne",
