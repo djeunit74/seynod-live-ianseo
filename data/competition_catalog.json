@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-27T15:50:50.973644+00:00",
+  "generated_at_utc": "2026-04-27T17:23:53.557635+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -5999,7 +5999,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 40,
+      "entries_count": 41,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -6068,14 +6068,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
@@ -6105,6 +6105,13 @@
           "category": "1131093 - BALMA",
           "session": "U15 Homme Arc Classique",
           "target": "6B"
+        },
+        {
+          "name": "DE SAINT JORES Olivier",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "S2 Homme Arc Classique National",
+          "target": "11C"
         },
         {
           "name": "DERUMEAUX--BUREL Charlotte",
