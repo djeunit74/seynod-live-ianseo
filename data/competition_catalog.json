@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-04-28T08:44:15.495699+00:00",
+  "generated_at_utc": "2026-04-28T11:07:05.266034+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 28,
+  "count": 29,
   "tournaments": [
     {
       "to_id": "27413",
@@ -2147,6 +2147,19 @@
           "target": "3C"
         }
       ]
+    },
+    {
+      "to_id": "27967",
+      "year": "2026",
+      "name": "Tournoi Régional Jeune Lyon Archerie 2026",
+      "organizer": "Les archers Riomois",
+      "date_text": "8 May",
+      "end_date": "2026-05-08",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27967",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27967/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27967/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27652",
