@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-28T15:45:29.539783+00:00",
+  "generated_at_utc": "2026-04-28T17:48:27.957008+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3898,8 +3898,15 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27949",
       "ena_url": "https://www.ianseo.net/TourData/2026/27949/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27949/IC.php",
-      "entries_count": 50,
+      "entries_count": 62,
       "entries": [
+        {
+          "name": "AIT OUARABI Selma",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "U21 Femme Arc Classique",
+          "target": "8C"
+        },
         {
           "name": "APPELTANTS Alexis",
           "club": "0892191 - CHAVILLE",
@@ -3964,6 +3971,13 @@
           "target": "20A"
         },
         {
+          "name": "BROUSSE Aurelie",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S1 Femme Arc Classique",
+          "target": "9A"
+        },
+        {
           "name": "CASTEX Helene",
           "club": "0759112 - DUNKERQUE",
           "category": "0759112 - DUNKERQUE",
@@ -3992,11 +4006,25 @@
           "target": "2A"
         },
         {
+          "name": "COGNET Marie",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S1 Femme Arc Classique",
+          "target": "10A"
+        },
+        {
           "name": "COQUET Gaetan",
           "club": "0892191 - CHAVILLE",
           "category": "0892191 - CHAVILLE",
           "session": "U21 Homme Arc Classique",
           "target": "14A"
+        },
+        {
+          "name": "DEHU Florian",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S1 Homme Arc Classique",
+          "target": "16B"
         },
         {
           "name": "DENIS Quentin",
@@ -4041,11 +4069,25 @@
           "target": "10B"
         },
         {
+          "name": "GANDON Vincent",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S2 Homme Arc Classique",
+          "target": "17B"
+        },
+        {
           "name": "GANTZER Delphine",
           "club": "0892191 - CHAVILLE",
           "category": "0892191 - CHAVILLE",
           "session": "S2 Femme Arc Classique",
-          "target": "7A"
+          "target": "5A"
+        },
+        {
+          "name": "GERON Nathalie",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S2 Femme Arc Classique",
+          "target": "1B"
         },
         {
           "name": "GICQUEL Matthieu",
@@ -4060,6 +4102,20 @@
           "category": "0892191 - CHAVILLE",
           "session": "S1 Femme Arc Classique",
           "target": "6A"
+        },
+        {
+          "name": "GOAZIOU Ghislain",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S1 Homme Arc Classique",
+          "target": "18B"
+        },
+        {
+          "name": "GUITTON Alois",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "14B"
         },
         {
           "name": "HUBERLANT Noah",
@@ -4083,25 +4139,39 @@
           "target": "6C"
         },
         {
+          "name": "LACROIX Carlyne",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S1 Femme Arc Classique",
+          "target": "11A"
+        },
+        {
           "name": "LANCELOT Marie - Elise",
           "club": "0892191 - CHAVILLE",
           "category": "0892191 - CHAVILLE",
           "session": "S2 Femme Arc Classique",
-          "target": "5A"
+          "target": "7A"
         },
         {
           "name": "LE VIAVANT Gwen",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "S1 Homme Arc Classique",
-          "target": "14B"
+          "target": "15B"
+        },
+        {
+          "name": "LEBRETON Myriam",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S2 Femme Arc Classique",
+          "target": "2B"
         },
         {
           "name": "LEFRANCOIS Ianis",
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
           "session": "S1 Homme Arc Classique",
-          "target": "18C"
+          "target": "16C"
         },
         {
           "name": "MEISSONNIER Charles",
@@ -4132,6 +4202,13 @@
           "target": "7C"
         },
         {
+          "name": "NOVICK Camille",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S1 Homme Arc Classique",
+          "target": "20C"
+        },
+        {
           "name": "PAUTREL Annie",
           "club": "0914024 - CARPIQUET",
           "category": "0914024 - CARPIQUET",
@@ -4144,6 +4221,13 @@
           "category": "0895286 - PLESSIS BOUCHARD",
           "session": "S2 Homme Arc Classique",
           "target": "22B"
+        },
+        {
+          "name": "PETIT Tiphaine",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S2 Femme Arc Classique",
+          "target": "3B"
         },
         {
           "name": "PICHONNIER Valentin",
@@ -4185,7 +4269,7 @@
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
           "session": "S2 Homme Arc Classique",
-          "target": "21C"
+          "target": "18C"
         },
         {
           "name": "SELLIN Ewan",
@@ -4213,7 +4297,7 @@
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
           "session": "S1 Homme Arc Classique",
-          "target": "16C"
+          "target": "21C"
         },
         {
           "name": "THEMELIS Panagiotis",
@@ -4221,6 +4305,13 @@
           "category": "0892193 - RUEIL MALMAISON STAR",
           "session": "S1 Homme Arc Classique",
           "target": "19A"
+        },
+        {
+          "name": "TREVILLY Margot",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Femme Arc Classique",
+          "target": "4B"
         },
         {
           "name": "VALY Donalie",
@@ -4242,13 +4333,6 @@
           "category": "0892193 - RUEIL MALMAISON STAR",
           "session": "S2 Femme Arc Classique",
           "target": "11B"
-        },
-        {
-          "name": "WOZNIOK Antoine",
-          "club": "0335056 - TINTENIAC",
-          "category": "0335056 - TINTENIAC",
-          "session": "S1 Homme Arc Classique",
-          "target": "15B"
         }
       ]
     },
