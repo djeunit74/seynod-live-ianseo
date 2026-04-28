@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-28T02:57:10.868504+00:00",
+  "generated_at_utc": "2026-04-28T06:10:45.018798+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -5999,7 +5999,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 41,
+      "entries_count": 50,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -6056,6 +6056,20 @@
           "category": "1131093 - BALMA",
           "session": "U21 Homme Arc Classique National",
           "target": "8A"
+        },
+        {
+          "name": "CACCIA Christopher",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "S1 Homme Arc Classique National",
+          "target": "13A"
+        },
+        {
+          "name": "CACCIA Christopher",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "S1 Homme Arc Classique National",
+          "target": "13C"
         },
         {
           "name": "CANREDON Nicolas",
@@ -6170,6 +6184,27 @@
           "target": "5C"
         },
         {
+          "name": "GUILLAUME Fabrice",
+          "club": "1131069 - AUZEVILLE",
+          "category": "1131069 - AUZEVILLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "4D"
+        },
+        {
+          "name": "HOCHAIN Elodie",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "Arc Classique Senior 1 Femmes National",
+          "target": "12B"
+        },
+        {
+          "name": "HOCHAIN Elodie",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "S1 Femme Arc Classique National",
+          "target": "12C"
+        },
+        {
           "name": "HUFSCHMIDT Jordan",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
@@ -6219,11 +6254,32 @@
           "target": "6A"
         },
         {
+          "name": "MENDOUSSE SIRVEN Eva",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "U18 Femme Arc Classique",
+          "target": "10A"
+        },
+        {
           "name": "NEE Frederic",
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "S3 Homme Arc Classique National",
           "target": "11D"
+        },
+        {
+          "name": "POGAM Jean-Philippe",
+          "club": "1181201 - ALBI HANDIMUT",
+          "category": "1181201 - ALBI HANDIMUT",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "4B"
+        },
+        {
+          "name": "POGAM Jean-Philippe",
+          "club": "1181201 - ALBI HANDIMUT",
+          "category": "1181201 - ALBI HANDIMUT",
+          "session": "Arc Nu Senior 2 Hommes National",
+          "target": "4B"
         },
         {
           "name": "RAY Maeline",
@@ -6280,6 +6336,13 @@
           "category": "1131088 - CUGNAUX",
           "session": "S3 Homme Arc Classique National",
           "target": "10C"
+        },
+        {
+          "name": "VOLCKAERT Alexandre",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "S1 Homme Arc Classique National",
+          "target": "4C"
         },
         {
           "name": "VOLKA Ophelie",
