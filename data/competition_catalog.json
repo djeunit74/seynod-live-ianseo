@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-29T18:00:30.125864+00:00",
+  "generated_at_utc": "2026-04-29T19:48:50.293542+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -43,7 +43,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27349",
       "ena_url": "https://www.ianseo.net/TourData/2026/27349/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27349/IC.php",
-      "entries_count": 302,
+      "entries_count": 311,
       "entries": [
         {
           "name": "ACQUAVIVA Pascal",
@@ -120,7 +120,7 @@
           "club": "0892186 - CHATILLON CIE 92",
           "category": "0892186 - CHATILLON CIE 92",
           "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "23C"
+          "target": "25C"
         },
         {
           "name": "BADOUAL Jean-Marc",
@@ -204,7 +204,7 @@
           "club": "0878108 - MAGNY LES HAMEAUX",
           "category": "0878108 - MAGNY LES HAMEAUX",
           "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "21D"
+          "target": "21C"
         },
         {
           "name": "BERGER Lola",
@@ -284,6 +284,13 @@
           "target": "25A"
         },
         {
+          "name": "BOURGEOIS-QUIGNON Agathe",
+          "club": "0892199 - SURESNES",
+          "category": "0892199 - SURESNES",
+          "session": "U15 Femme Arc à Poulies National",
+          "target": "31A"
+        },
+        {
           "name": "BOUZAT Olivier",
           "club": "0878116 - POISSY",
           "category": "0878116 - POISSY",
@@ -303,13 +310,6 @@
           "category": "0878143 - ELANCOURT",
           "session": "S2 Femme Arc Classique, Scratch Femme Arc Classique",
           "target": "3B"
-        },
-        {
-          "name": "BRENNE Anne",
-          "club": "0878108 - MAGNY LES HAMEAUX",
-          "category": "0878108 - MAGNY LES HAMEAUX",
-          "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "21C"
         },
         {
           "name": "BRENNE Clement",
@@ -337,7 +337,7 @@
           "club": "0878119 - AUBERGENVILLE",
           "category": "0878119 - AUBERGENVILLE",
           "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "19D"
+          "target": "10C"
         },
         {
           "name": "BRUNET Alexis",
@@ -345,13 +345,6 @@
           "category": "0892205 - LE PLESSIS ROBINSON",
           "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
           "target": "4C"
-        },
-        {
-          "name": "BUSI Julien",
-          "club": "0878136 - VIROFLAY",
-          "category": "0878136 - VIROFLAY",
-          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "21C"
         },
         {
           "name": "CAMPANACCI Valerie",
@@ -385,15 +378,15 @@
           "name": "CASNER Christian",
           "club": "0878108 - MAGNY LES HAMEAUX",
           "category": "0878108 - MAGNY LES HAMEAUX",
-          "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "22C"
-        },
-        {
-          "name": "CASNER Christian",
-          "club": "0878108 - MAGNY LES HAMEAUX",
-          "category": "0878108 - MAGNY LES HAMEAUX",
           "session": "Arc Classique Senior 3 Hommes National",
           "target": "29B"
+        },
+        {
+          "name": "CASSAGNE Richard",
+          "club": "0878119 - AUBERGENVILLE",
+          "category": "0878119 - AUBERGENVILLE",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "19D"
         },
         {
           "name": "CASTEL Guillaume",
@@ -407,7 +400,7 @@
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
           "session": "S1 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "11C"
+          "target": "13C"
         },
         {
           "name": "CESSOU Jean-Francois",
@@ -462,8 +455,8 @@
           "name": "CHAVANT Christophe",
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
-          "session": "S2 Homme Arc à Poulies National, Scratch Homme Arc à Poulies National",
-          "target": "9A"
+          "session": "S2 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
+          "target": "8A"
         },
         {
           "name": "CHEBLI Ethan",
@@ -492,6 +485,20 @@
           "category": "1166191 - PERPIGNAN",
           "session": "S1 Femme Arc Classique, Scratch Femme Arc Classique",
           "target": "2C"
+        },
+        {
+          "name": "CHEYMOL Pierre",
+          "club": "0878142 - HOUILLES",
+          "category": "0878142 - HOUILLES",
+          "session": "S3 Homme Arc à Poulies National, Scratch Homme Arc à Poulies National",
+          "target": "25B"
+        },
+        {
+          "name": "CHEYMOL Pierre",
+          "club": "0878142 - HOUILLES",
+          "category": "0878142 - HOUILLES",
+          "session": "S3 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
+          "target": "26C"
         },
         {
           "name": "CHIROSSEL Pablo",
@@ -557,6 +564,13 @@
           "target": "31C"
         },
         {
+          "name": "DANIT Sophie",
+          "club": "0895299 - MONTIGNY LES CORMEILLES",
+          "category": "0895299 - MONTIGNY LES CORMEILLES",
+          "session": "S3 Femme Arc Classique National, Scratch Femme Arc Classique National",
+          "target": "23A"
+        },
+        {
           "name": "DAUMEN Jean-Christophe",
           "club": "0878108 - MAGNY LES HAMEAUX",
           "category": "0878108 - MAGNY LES HAMEAUX",
@@ -613,6 +627,13 @@
           "target": "7B"
         },
         {
+          "name": "DELOISON Daniel",
+          "club": "0877033 - SAINT MARD",
+          "category": "0877033 - SAINT MARD",
+          "session": "S1 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "7D"
+        },
+        {
           "name": "DELPIERRE Isabelle",
           "club": "0878121 - BAZAINVILLE",
           "category": "0878121 - BAZAINVILLE",
@@ -637,7 +658,7 @@
           "name": "DELPIERRE Quentin",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "U21 Homme Arc à Poulies National, Scratch Homme Arc à Poulies National",
+          "session": "Arc à Poulies U21 Hommes",
           "target": "7B"
         },
         {
@@ -645,14 +666,7 @@
           "club": "0878123 - MAUREPAS",
           "category": "0878123 - MAUREPAS",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "9C"
-        },
-        {
-          "name": "DENYS Fabrice",
-          "club": "0878143 - ELANCOURT",
-          "category": "0878143 - ELANCOURT",
-          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "25C"
+          "target": "11C"
         },
         {
           "name": "DEPOUX Eloise",
@@ -667,6 +681,13 @@
           "category": "0892205 - LE PLESSIS ROBINSON",
           "session": "U21 Femme Arc Classique National, Scratch Femme Arc Classique National",
           "target": "18B"
+        },
+        {
+          "name": "DEVOITIN Yoan",
+          "club": "0878134 - VILLEPREUX",
+          "category": "0878134 - VILLEPREUX",
+          "session": "U21 Homme Arc à Poulies National, Scratch Homme Arc à Poulies National",
+          "target": "9A"
         },
         {
           "name": "DEZANNEAU Patrick",
@@ -721,14 +742,14 @@
           "name": "DUBOS Alain",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "S3 Homme Arc à Poulies National, Scratch Homme Arc à Poulies National",
+          "session": "S3 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
           "target": "8C"
         },
         {
           "name": "DUCOS Pascale",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "S3 Femme Arc à Poulies National, Scratch Femme Arc à Poulies National",
+          "session": "S3 Femme Arc à Poulies, Scratch Femme Arc à Poulies",
           "target": "7A"
         },
         {
@@ -847,15 +868,15 @@
           "name": "FLEURANCE Jean-Yves",
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
-          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "10B"
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "30A"
         },
         {
           "name": "FLEURANCE Jean-Yves",
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
-          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "30A"
+          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "8B"
         },
         {
           "name": "FOUCHER Philippe",
@@ -886,13 +907,6 @@
           "target": "23B"
         },
         {
-          "name": "GANTZER Delphine",
-          "club": "0892191 - CHAVILLE",
-          "category": "0892191 - CHAVILLE",
-          "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "20D"
-        },
-        {
           "name": "GARFAGNI Herve",
           "club": "0892191 - CHAVILLE",
           "category": "0892191 - CHAVILLE",
@@ -918,21 +932,21 @@
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "11D"
+          "target": "13D"
         },
         {
           "name": "GENOT-LAUMONT Tessa",
           "club": "0878110 - MAREIL MARLY",
           "category": "0878110 - MAREIL MARLY",
           "session": "U18 Femme Arc Classique National",
-          "target": "13C"
+          "target": "15C"
         },
         {
           "name": "GEORGESCU Irina",
           "club": "0878116 - POISSY",
           "category": "0878116 - POISSY",
           "session": "S1 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "7C"
+          "target": "9C"
         },
         {
           "name": "GIRARD Brigitte",
@@ -940,6 +954,13 @@
           "category": "0895290 - BEAUCHAMP",
           "session": "S3 Femme Arc Classique National, Scratch Femme Arc Classique National",
           "target": "23D"
+        },
+        {
+          "name": "GOIRE Frederic",
+          "club": "0760157 - SENLIS",
+          "category": "0760157 - SENLIS",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "22D"
         },
         {
           "name": "GONNARD Sophie",
@@ -1044,7 +1065,7 @@
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
           "session": "S2 Femme Arc à Poulies, Scratch Femme Arc à Poulies",
-          "target": "25B"
+          "target": "27B"
         },
         {
           "name": "HAUX Gwenaelle",
@@ -1163,7 +1184,7 @@
           "club": "0878123 - MAUREPAS",
           "category": "0878123 - MAUREPAS",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "9D"
+          "target": "11D"
         },
         {
           "name": "JOURDIN Hubert",
@@ -1236,6 +1257,13 @@
           "target": "22D"
         },
         {
+          "name": "LAMBERT David",
+          "club": "0878132 - MONTIGNY LE BRETONNEUX",
+          "category": "0878132 - MONTIGNY LE BRETONNEUX",
+          "session": "S2 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
+          "target": "26B"
+        },
+        {
           "name": "LANCELOT Marie - Elise",
           "club": "0892191 - CHAVILLE",
           "category": "0892191 - CHAVILLE",
@@ -1247,14 +1275,14 @@
           "club": "0878116 - POISSY",
           "category": "0878116 - POISSY",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "7D"
+          "target": "9D"
         },
         {
           "name": "LAUMONT Elsie",
           "club": "0878110 - MAREIL MARLY",
           "category": "0878110 - MAREIL MARLY",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "13D"
+          "target": "15D"
         },
         {
           "name": "LAURENT Yves",
@@ -1352,7 +1380,7 @@
           "club": "0878115 - MAISONS LAFFITTE CIE",
           "category": "0878115 - MAISONS LAFFITTE CIE",
           "session": "S3 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "12B"
+          "target": "14B"
         },
         {
           "name": "LEGRAND Michel",
@@ -1376,11 +1404,18 @@
           "target": "3B"
         },
         {
+          "name": "LEROY Vincent",
+          "club": "0878143 - ELANCOURT",
+          "category": "0878143 - ELANCOURT",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "25C"
+        },
+        {
           "name": "LIGOT Jean-Michel",
           "club": "0878103 - SAINT ARNOULT EN YVELINES",
           "category": "0878103 - SAINT ARNOULT EN YVELINES",
           "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "22D"
+          "target": "23D"
         },
         {
           "name": "LOMBARDO Catherine",
@@ -1408,7 +1443,7 @@
           "club": "0878127 - ST GERMAIN EN LAYE",
           "category": "0878127 - ST GERMAIN EN LAYE",
           "session": "U11 Homme Arc Classique",
-          "target": "32A"
+          "target": "32C"
         },
         {
           "name": "LY Jean Baptiste",
@@ -1464,7 +1499,7 @@
           "club": "0878110 - MAREIL MARLY",
           "category": "0878110 - MAREIL MARLY",
           "session": "S3 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "14A"
+          "target": "16A"
         },
         {
           "name": "MARIEZ Elliot",
@@ -1572,17 +1607,24 @@
           "target": "32D"
         },
         {
+          "name": "MICHON Antoine",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "S1 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "9B"
+        },
+        {
           "name": "MORZADEC Mireille",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "S3 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "25B"
+          "session": "S3 Femme Arc Classique, Scratch Femme Arc Classique",
+          "target": "8A"
         },
         {
           "name": "MOSNIER Leo",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "S1 Homme Arc à Poulies National, Scratch Homme Arc à Poulies National",
+          "session": "S1 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
           "target": "8D"
         },
         {
@@ -1625,7 +1667,7 @@
           "club": "0878123 - MAUREPAS",
           "category": "0878123 - MAUREPAS",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "10A"
+          "target": "12A"
         },
         {
           "name": "MUSCARELLO Matteo",
@@ -1663,6 +1705,13 @@
           "target": "25D"
         },
         {
+          "name": "NOEL Herve",
+          "club": "0878136 - VIROFLAY",
+          "category": "0878136 - VIROFLAY",
+          "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "21C"
+        },
+        {
           "name": "NONNON Pascale",
           "club": "0878118 - RAMBOUILLET",
           "category": "0878118 - RAMBOUILLET",
@@ -1688,14 +1737,14 @@
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
           "session": "Arc Classique U18 Hommes",
-          "target": "9C"
+          "target": "8C"
         },
         {
           "name": "OSTROWSKI Nicolas",
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
           "session": "S2 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
-          "target": "25A"
+          "target": "27A"
         },
         {
           "name": "OSTROWSKI Nicolas",
@@ -1709,7 +1758,7 @@
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
           "session": "S1 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "21C"
+          "target": "23C"
         },
         {
           "name": "PERNETTE Jerome",
@@ -1814,7 +1863,7 @@
           "club": "0878110 - MAREIL MARLY",
           "category": "0878110 - MAREIL MARLY",
           "session": "U18 Femme Arc Classique National",
-          "target": "14B"
+          "target": "16B"
         },
         {
           "name": "PROYART Thierry",
@@ -1834,7 +1883,7 @@
           "name": "RAFFIN Emmanuel",
           "club": "0878136 - VIROFLAY",
           "category": "0878136 - VIROFLAY",
-          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "session": "Arc Classique Senior 2 Hommes National",
           "target": "22B"
         },
         {
@@ -1859,6 +1908,13 @@
           "target": "6D"
         },
         {
+          "name": "RAT Jean-Francois",
+          "club": "0878132 - MONTIGNY LE BRETONNEUX",
+          "category": "0878132 - MONTIGNY LE BRETONNEUX",
+          "session": "S2 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
+          "target": "27C"
+        },
+        {
           "name": "RATSIMBAZAFY Harivonjy",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
@@ -1870,7 +1926,7 @@
           "club": "0878123 - MAUREPAS",
           "category": "0878123 - MAUREPAS",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "10B"
+          "target": "12B"
         },
         {
           "name": "REGAZZONI Virginie",
@@ -1940,7 +1996,7 @@
           "club": "0878116 - POISSY",
           "category": "0878116 - POISSY",
           "session": "S1 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "8A"
+          "target": "10A"
         },
         {
           "name": "ROUEL Julien",
@@ -1968,7 +2024,7 @@
           "club": "0878116 - POISSY",
           "category": "0878116 - POISSY",
           "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "8B"
+          "target": "10B"
         },
         {
           "name": "SCHNEIDER Florent",
@@ -2034,13 +2090,6 @@
           "target": "12B"
         },
         {
-          "name": "TOURNAY Jerome",
-          "club": "0878111 - ACHERES",
-          "category": "0878111 - ACHERES",
-          "session": "S2 Homme Arc à Poulies National, Scratch Homme Arc à Poulies National",
-          "target": "10C"
-        },
-        {
           "name": "VACHETTE Nicolas",
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
@@ -2066,7 +2115,7 @@
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
           "session": "S3 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "12A"
+          "target": "14A"
         },
         {
           "name": "VERNEUIL Marc",
@@ -2129,7 +2178,7 @@
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
           "session": "S1 Femme Arc Classique, Scratch Femme Arc Classique",
-          "target": "2A"
+          "target": "10D"
         },
         {
           "name": "YAZINSKI Jessica",
@@ -2144,6 +2193,20 @@
           "category": "0878093 - VERSAILLES",
           "session": "S2 Homme Arc Classique, Scratch Homme Arc Classique",
           "target": "7D"
+        },
+        {
+          "name": "ZAROTIADES Elena",
+          "club": "0878105 - HARDRICOURT",
+          "category": "0878105 - HARDRICOURT",
+          "session": "U18 Femme Arc à Poulies",
+          "target": "8B"
+        },
+        {
+          "name": "ZAROTIADES Jean-Eric",
+          "club": "0878105 - HARDRICOURT",
+          "category": "0878105 - HARDRICOURT",
+          "session": "S2 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
+          "target": "7C"
         },
         {
           "name": "ZARROU Adam",
