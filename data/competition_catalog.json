@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-29T03:22:16.712035+00:00",
+  "generated_at_utc": "2026-04-29T06:12:20.763261+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -6096,7 +6096,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 50,
+      "entries_count": 54,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -6134,6 +6134,13 @@
           "target": "8C"
         },
         {
+          "name": "BIGOT Patrice",
+          "club": "1181197 - LAVAUR",
+          "category": "1181197 - LAVAUR",
+          "session": "S2 Homme Arc Classique National",
+          "target": "12C"
+        },
+        {
           "name": "BONNET Martine",
           "club": "1131072 - L'UNION",
           "category": "1131072 - L'UNION",
@@ -6165,7 +6172,7 @@
           "name": "CACCIA Christopher",
           "club": "1109002 - PAMIERS",
           "category": "1109002 - PAMIERS",
-          "session": "S1 Homme Arc Classique National",
+          "session": "Arc Classique Senior 1 Hommes National",
           "target": "13C"
         },
         {
@@ -6235,14 +6242,14 @@
           "name": "DRAPEAU Romain",
           "club": "1111008 - CARCASSONNE",
           "category": "1111008 - CARCASSONNE",
-          "session": "S1 Homme Arc Classique National",
+          "session": "Arc Classique Senior 1 Hommes National",
           "target": "4A"
         },
         {
           "name": "DRAPEAU Romain",
           "club": "1111008 - CARCASSONNE",
           "category": "1111008 - CARCASSONNE",
-          "session": "Arc Classique Senior 1 Hommes National",
+          "session": "S1 Homme Arc Classique National",
           "target": "4A"
         },
         {
@@ -6251,6 +6258,13 @@
           "category": "1131088 - CUGNAUX",
           "session": "S3 Homme Arc Classique National",
           "target": "10A"
+        },
+        {
+          "name": "DUPONT Mathieu",
+          "club": "1181197 - LAVAUR",
+          "category": "1181197 - LAVAUR",
+          "session": "S1 Homme Arc Classique National",
+          "target": "13A"
         },
         {
           "name": "DURAND David",
@@ -6328,6 +6342,20 @@
           "category": "1131093 - BALMA",
           "session": "U13 Homme Arc Classique",
           "target": "1A"
+        },
+        {
+          "name": "LAYDIER Christian",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "S2 Homme Arc Classique National",
+          "target": "12D"
+        },
+        {
+          "name": "LAYDIER Christian",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "S2 Homme Arc Classique National",
+          "target": "13B"
         },
         {
           "name": "LE RALLIER Fantine",
@@ -6410,7 +6438,7 @@
           "name": "STACEY Michele",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Femme Arc à Poulies National",
+          "session": "Arc à Poulies Senior 3 Femmes National",
           "target": "11C"
         },
         {
