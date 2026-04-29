@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-04-29T14:38:40.676724+00:00",
+  "generated_at_utc": "2026-04-29T16:29:23.357040+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 30,
+  "count": 31,
   "tournaments": [
     {
       "to_id": "27413",
@@ -9096,6 +9096,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27533",
       "ena_url": "https://www.ianseo.net/TourData/2026/27533/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27533/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "27906",
+      "year": "2026",
+      "name": "Tournoi National Jeune - Rochefort",
+      "organizer": "SAR Tir à l'Arc - FFTA",
+      "date_text": "26-28 Jun",
+      "end_date": "2026-06-28",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27906",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27906/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27906/IC.php",
       "entries_count": 0,
       "entries": []
     },
