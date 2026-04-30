@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-04-30T08:40:00.164443+00:00",
+  "generated_at_utc": "2026-04-30T10:57:35.414848+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 34,
+  "count": 35,
   "tournaments": [
     {
       "to_id": "27413",
@@ -6648,7 +6648,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 54,
+      "entries_count": 55,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -6906,7 +6906,7 @@
           "name": "LAYDIER Christian",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
-          "session": "S2 Homme Arc Classique National",
+          "session": "Arc Classique Senior 2 Hommes National",
           "target": "13B"
         },
         {
@@ -6936,6 +6936,13 @@
           "category": "1131079 - TOURNEFEUILLE",
           "session": "U18 Femme Arc Classique",
           "target": "10A"
+        },
+        {
+          "name": "MOUYNET Valerie",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "S2 Femme Arc Classique National",
+          "target": "12D"
         },
         {
           "name": "NEE Frederic",
@@ -9187,6 +9194,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27526",
       "ena_url": "https://www.ianseo.net/TourData/2026/27526/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27526/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28018",
+      "year": "2026",
+      "name": "TAE Nat - TAE INT 13/14 juin 2026",
+      "organizer": "Les Archers de Castelsarrasin",
+      "date_text": "13-14 Jun",
+      "end_date": "2026-06-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28018",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28018/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28018/IC.php",
       "entries_count": 0,
       "entries": []
     },
