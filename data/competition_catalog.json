@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-04-30T06:08:45.551442+00:00",
+  "generated_at_utc": "2026-04-30T08:40:00.164443+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 32,
+  "count": 34,
   "tournaments": [
     {
       "to_id": "27413",
@@ -3050,7 +3050,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27200",
       "ena_url": "https://www.ianseo.net/TourData/2026/27200/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27200/IC.php",
-      "entries_count": 178,
+      "entries_count": 176,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -3151,6 +3151,13 @@
           "target": "5A"
         },
         {
+          "name": "BARRES Yann",
+          "club": "0893221 - TREMBLAY EN FRANCE",
+          "category": "0893221 - TREMBLAY EN FRANCE",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "8C"
+        },
+        {
           "name": "BARTOLINI Florence",
           "club": "0893233 - MONTFERMEIL",
           "category": "0893233 - MONTFERMEIL",
@@ -3219,13 +3226,6 @@
           "category": "0893226 - ROSNY S/ BOIS CIE",
           "session": "U21 Femme Arc Classique National",
           "target": "12B"
-        },
-        {
-          "name": "CAUSSE Sandrine",
-          "club": "0893231 - NOISY LE SEC",
-          "category": "0893231 - NOISY LE SEC",
-          "session": "S2 Femme Arc Classique National",
-          "target": "9C"
         },
         {
           "name": "CHAFFAUX Thibaud",
@@ -3816,13 +3816,6 @@
           "target": "1C"
         },
         {
-          "name": "LOISEAU Sandrine",
-          "club": "0893219 - CLICHY SOUS BOIS",
-          "category": "0893219 - CLICHY SOUS BOIS",
-          "session": "S2 Femme Arc Classique National",
-          "target": "8C"
-        },
-        {
           "name": "LOPEZ NUNEZ Manuel",
           "club": "0893233 - MONTFERMEIL",
           "category": "0893233 - MONTFERMEIL",
@@ -3919,13 +3912,6 @@
           "category": "0894264 - VINCENNES",
           "session": "S3 Femme Arc Classique",
           "target": "4A"
-        },
-        {
-          "name": "MIRC Romain",
-          "club": "0893231 - NOISY LE SEC",
-          "category": "0893231 - NOISY LE SEC",
-          "session": "S1 Homme Arc à Poulies National",
-          "target": "7D"
         },
         {
           "name": "MORLIERE-VISSE Lohan",
@@ -9177,6 +9163,32 @@
           "target": "4A"
         }
       ]
+    },
+    {
+      "to_id": "27514",
+      "year": "2026",
+      "name": "TAEI/N et Para Tir à l'Arc - 13 Juin 2026",
+      "organizer": "1ERE COMPAGNIE D'ARC DE DIJON",
+      "date_text": "13 Jun",
+      "end_date": "2026-06-13",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27514",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27514/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27514/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "27526",
+      "year": "2026",
+      "name": "TAEN- Championnat Régional Bourgogne Franche-Comté 14 Juin 2026",
+      "organizer": "1ERE COMPAGNIE D'ARC DE DIJON",
+      "date_text": "14 Jun",
+      "end_date": "2026-06-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27526",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27526/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27526/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27217",
