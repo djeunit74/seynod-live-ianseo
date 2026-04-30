@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-30T20:40:22.058286+00:00",
+  "generated_at_utc": "2026-04-30T21:57:09.756781+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -43,7 +43,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27349",
       "ena_url": "https://www.ianseo.net/TourData/2026/27349/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27349/IC.php",
-      "entries_count": 311,
+      "entries_count": 312,
       "entries": [
         {
           "name": "ACQUAVIVA Pascal",
@@ -86,13 +86,6 @@
           "category": "0892203 - ISSY LES MOULINEAUX",
           "session": "U15 Homme Arc Classique",
           "target": "30A"
-        },
-        {
-          "name": "AUDENINO Guillaume",
-          "club": "0878126 - GUYANCOURT ARCHERS",
-          "category": "0878126 - GUYANCOURT ARCHERS",
-          "session": "S1 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "17A"
         },
         {
           "name": "AVRIL Didier",
@@ -310,6 +303,13 @@
           "category": "0878143 - ELANCOURT",
           "session": "S2 Femme Arc Classique, Scratch Femme Arc Classique",
           "target": "3B"
+        },
+        {
+          "name": "BREELLE Elodie",
+          "club": "0878143 - ELANCOURT",
+          "category": "0878143 - ELANCOURT",
+          "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
+          "target": "9B"
         },
         {
           "name": "BRENNE Clement",
@@ -1029,6 +1029,13 @@
           "name": "GUERIN Julien",
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
+          "session": "S1 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "18B"
+        },
+        {
+          "name": "GUERIN Julien",
+          "club": "0892205 - LE PLESSIS ROBINSON",
+          "category": "0892205 - LE PLESSIS ROBINSON",
           "session": "S1 Homme Arc Classique, Scratch Homme Arc Classique",
           "target": "2B"
         },
@@ -1285,13 +1292,6 @@
           "target": "15D"
         },
         {
-          "name": "LAURENT Yves",
-          "club": "0878141 - VESINET-CHATOU",
-          "category": "0878141 - VESINET-CHATOU",
-          "session": "S2 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "1C"
-        },
-        {
           "name": "LAVENANT Frederic",
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
@@ -1383,6 +1383,13 @@
           "target": "14B"
         },
         {
+          "name": "LEFAUCHEUX Jerome",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "S2 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
+          "target": "26A"
+        },
+        {
           "name": "LEGRAND Michel",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
@@ -1409,13 +1416,6 @@
           "category": "0878143 - ELANCOURT",
           "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
           "target": "25C"
-        },
-        {
-          "name": "LIGOT Jean-Michel",
-          "club": "0878103 - SAINT ARNOULT EN YVELINES",
-          "category": "0878103 - SAINT ARNOULT EN YVELINES",
-          "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "23D"
         },
         {
           "name": "LOMBARDO Catherine",
@@ -2144,6 +2144,13 @@
           "category": "0878116 - POISSY",
           "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
           "target": "28D"
+        },
+        {
+          "name": "VICO Claude",
+          "club": "0878126 - GUYANCOURT ARCHERS",
+          "category": "0878126 - GUYANCOURT ARCHERS",
+          "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "17A"
         },
         {
           "name": "VIEGAS Bruno",
