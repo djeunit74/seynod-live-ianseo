@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-01T13:20:51.831378+00:00",
+  "generated_at_utc": "2026-05-01T14:38:16.175077+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 35,
+  "count": 37,
   "tournaments": [
     {
       "to_id": "27413",
@@ -7052,6 +7052,19 @@
       ]
     },
     {
+      "to_id": "27750",
+      "year": "2026",
+      "name": "CHAMPIONNAT DE LIGUE TAE",
+      "organizer": "SAINT MARTIN",
+      "date_text": "24 May",
+      "end_date": "2026-05-24",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27750",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27750/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27750/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27355",
       "year": "2026",
       "name": "Tournoi National Jeune - Compiègne",
@@ -7061,6 +7074,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27355",
       "ena_url": "https://www.ianseo.net/TourData/2026/27355/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27355/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "27749",
+      "year": "2026",
+      "name": "FEDERAL DE PRINTEMPS ET ROSE DES VENTS",
+      "organizer": "SAINT MARTIN",
+      "date_text": "23-25 May",
+      "end_date": "2026-05-25",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27749",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27749/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27749/IC.php",
       "entries_count": 0,
       "entries": []
     },
