@@ -1,38 +1,12 @@
 {
-  "generated_at_utc": "2026-05-01T23:28:38.700388+00:00",
+  "generated_at_utc": "2026-05-02T01:13:39.685920+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 37,
+  "count": 36,
   "tournaments": [
-    {
-      "to_id": "27413",
-      "year": "2026",
-      "name": "Spécial Jeunes et Adultes Débutants",
-      "organizer": "Guadeloupe",
-      "date_text": "25 Apr - 2 May",
-      "end_date": "2026-05-02",
-      "details_url": "https://www.ianseo.net/Details.php?toId=27413",
-      "ena_url": "https://www.ianseo.net/TourData/2026/27413/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/27413/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
-    {
-      "to_id": "27549",
-      "year": "2026",
-      "name": "Tir en Campagne",
-      "organizer": "Rennes Cie",
-      "date_text": "3 May",
-      "end_date": "2026-05-03",
-      "details_url": "https://www.ianseo.net/Details.php?toId=27549",
-      "ena_url": "https://www.ianseo.net/TourData/2026/27549/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/27549/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
     {
       "to_id": "27349",
       "year": "2026",
@@ -2230,6 +2204,19 @@
           "target": "3C"
         }
       ]
+    },
+    {
+      "to_id": "27549",
+      "year": "2026",
+      "name": "Tir en Campagne",
+      "organizer": "Rennes Cie",
+      "date_text": "3 May",
+      "end_date": "2026-05-03",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27549",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27549/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27549/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27550",
