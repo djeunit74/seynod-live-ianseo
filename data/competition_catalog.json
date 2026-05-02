@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-02T11:55:02.636367+00:00",
+  "generated_at_utc": "2026-05-02T13:14:12.744755+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27349",
       "ena_url": "https://www.ianseo.net/TourData/2026/27349/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27349/IC.php",
-      "entries_count": 312,
+      "entries_count": 314,
       "entries": [
         {
           "name": "ACQUAVIVA Pascal",
@@ -275,8 +275,8 @@
           "name": "BREELLE Elodie",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "S2 Femme Arc Classique, Scratch Femme Arc Classique",
-          "target": "3B"
+          "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
+          "target": "23B"
         },
         {
           "name": "BREELLE Elodie",
@@ -290,7 +290,7 @@
           "club": "0878108 - MAGNY LES HAMEAUX",
           "category": "0878108 - MAGNY LES HAMEAUX",
           "session": "Arc Classique U18 Hommes",
-          "target": "10A"
+          "target": "10D"
         },
         {
           "name": "BRENNE Clement",
@@ -573,13 +573,6 @@
           "target": "17B"
         },
         {
-          "name": "DEBARE Jean-Claude",
-          "club": "0878110 - MAREIL MARLY",
-          "category": "0878110 - MAREIL MARLY",
-          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "10C"
-        },
-        {
           "name": "DELAETRE Morgan",
           "club": "0878126 - GUYANCOURT ARCHERS",
           "category": "0878126 - GUYANCOURT ARCHERS",
@@ -653,8 +646,8 @@
           "name": "DEPOUX Eloise",
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
-          "session": "U21 Femme Arc Classique National, Scratch Femme Arc Classique National",
-          "target": "18B"
+          "session": "U21 Femme Arc Classique, Scratch Femme Arc Classique",
+          "target": "2A"
         },
         {
           "name": "DEVOITIN Yoan",
@@ -842,15 +835,15 @@
           "name": "FLEURANCE Jean-Yves",
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
-          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "30A"
+          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "10B"
         },
         {
           "name": "FLEURANCE Jean-Yves",
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
-          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "8B"
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "30A"
         },
         {
           "name": "FOUCHER Philippe",
@@ -865,6 +858,13 @@
           "category": "0878142 - HOUILLES",
           "session": "S1 Femme Arc Classique National, Scratch Femme Arc Classique National",
           "target": "12C"
+        },
+        {
+          "name": "FROMENT Thierry",
+          "club": "0877048 - NEMOURS SAINT PIERRE",
+          "category": "0877048 - NEMOURS SAINT PIERRE",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "20D"
         },
         {
           "name": "FROMENT Thierry",
@@ -1224,6 +1224,13 @@
           "target": "10B"
         },
         {
+          "name": "LAGOGUEY Nicolas",
+          "club": "0877048 - NEMOURS SAINT PIERRE",
+          "category": "0877048 - NEMOURS SAINT PIERRE",
+          "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "21C"
+        },
+        {
           "name": "LAGOUGE Jean Luc",
           "club": "0878121 - BAZAINVILLE",
           "category": "0878121 - BAZAINVILLE",
@@ -1298,7 +1305,7 @@
           "club": "0878123 - MAUREPAS",
           "category": "0878123 - MAUREPAS",
           "session": "S1 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "4A"
+          "target": "3B"
         },
         {
           "name": "LE MOUELLIC Eric",
@@ -1416,14 +1423,14 @@
           "name": "LY Jean Baptiste",
           "club": "0878127 - ST GERMAIN EN LAYE",
           "category": "0878127 - ST GERMAIN EN LAYE",
-          "session": "U11 Homme Arc Classique",
+          "session": "Arc Classique U11 Hommes",
           "target": "32C"
         },
         {
           "name": "LY Jean Baptiste",
           "club": "0878127 - ST GERMAIN EN LAYE",
           "category": "0878127 - ST GERMAIN EN LAYE",
-          "session": "Arc Classique U11 Hommes",
+          "session": "U11 Homme Arc Classique",
           "target": "32C"
         },
         {
@@ -1453,13 +1460,6 @@
           "category": "0892211 - ASNIERES SUR SEINE",
           "session": "S2 Femme Arc à Poulies, Scratch Femme Arc à Poulies",
           "target": "28C"
-        },
-        {
-          "name": "MARC Patricia",
-          "club": "0878093 - VERSAILLES",
-          "category": "0878093 - VERSAILLES",
-          "session": "S3 Femme Arc à Poulies, Scratch Femme Arc à Poulies",
-          "target": "5C"
         },
         {
           "name": "MARCHAND Thierry",
@@ -1500,8 +1500,15 @@
           "name": "MARTOUZET Mathilde",
           "club": "0892206 - ANTONY",
           "category": "0892206 - ANTONY",
-          "session": "S1 Femme Arc Classique National, Scratch Femme Arc Classique National",
+          "session": "Arc Classique Senior 1 Femmes National",
           "target": "14D"
+        },
+        {
+          "name": "MARTOUZET Mathilde",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "S1 Femme Arc Classique National, Scratch Femme Arc Classique National",
+          "target": "18B"
         },
         {
           "name": "MARUANI Edouard",
@@ -1592,7 +1599,7 @@
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
           "session": "S3 Femme Arc Classique, Scratch Femme Arc Classique",
-          "target": "8A"
+          "target": "10A"
         },
         {
           "name": "MOSNIER Leo",
@@ -1703,15 +1710,15 @@
           "name": "OGER-HODGE Sullivan",
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
-          "session": "U18 Homme Arc Classique",
-          "target": "12B"
+          "session": "Arc Classique U18 Hommes",
+          "target": "10C"
         },
         {
           "name": "OGER-HODGE Sullivan",
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
-          "session": "Arc Classique U18 Hommes",
-          "target": "8C"
+          "session": "U18 Homme Arc Classique",
+          "target": "12B"
         },
         {
           "name": "OSTROWSKI Nicolas",
@@ -1768,6 +1775,13 @@
           "category": "0892190 - NANTERRE",
           "session": "S3 Femme Arc à Poulies National, Scratch Femme Arc à Poulies National",
           "target": "20B"
+        },
+        {
+          "name": "PERSONNAZ Catherine",
+          "club": "0892190 - NANTERRE",
+          "category": "0892190 - NANTERRE",
+          "session": "S3 Femme Arc à Poulies, Scratch Femme Arc à Poulies",
+          "target": "27D"
         },
         {
           "name": "PHAM Laurie",
@@ -2095,15 +2109,15 @@
           "name": "VERNEUIL Marc",
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
-          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
-          "target": "10D"
+          "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
+          "target": "24B"
         },
         {
           "name": "VERNEUIL Marc",
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
-          "session": "S3 Homme Arc Classique National, Scratch Homme Arc Classique National",
-          "target": "24B"
+          "session": "S3 Homme Arc Classique, Scratch Homme Arc Classique",
+          "target": "9C"
         },
         {
           "name": "VERRIEZ Christian",
