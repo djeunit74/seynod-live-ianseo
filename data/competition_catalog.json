@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-02T17:24:23.491699+00:00",
+  "generated_at_utc": "2026-05-02T18:11:00.175679+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3135,14 +3135,28 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27828",
       "ena_url": "https://www.ianseo.net/TourData/2026/27828/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27828/IC.php",
-      "entries_count": 34,
+      "entries_count": 63,
       "entries": [
+        {
+          "name": "BAFFALY Kevin",
+          "club": "1146149 - CAHORS",
+          "category": "1146149 - CAHORS",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "27A"
+        },
         {
           "name": "BES Thomas",
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
-          "session": "Arc à Poulies U18 Hommes",
+          "session": "U18 Homme Arc à Poulies",
           "target": "20C"
+        },
+        {
+          "name": "BONICEL Florent",
+          "club": "1130043 - ST CHRISTOL LEZ ALES",
+          "category": "1130043 - ST CHRISTOL LEZ ALES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "25B"
         },
         {
           "name": "BORDERIE-KIM Emrys",
@@ -3152,10 +3166,17 @@
           "target": "2C"
         },
         {
+          "name": "BRACONNIER Nicolas",
+          "club": "1130040 - LANGLADE",
+          "category": "1130040 - LANGLADE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "25C"
+        },
+        {
           "name": "CALATAYUD Maxime",
           "club": "1130048 - ALES",
           "category": "1130048 - ALES",
-          "session": "Arc à Poulies Senior 1 Hommes",
+          "session": "S1 Homme Arc à Poulies",
           "target": "15B"
         },
         {
@@ -3166,6 +3187,20 @@
           "target": "3A"
         },
         {
+          "name": "CAZALENS Thomas",
+          "club": "1130043 - ST CHRISTOL LEZ ALES",
+          "category": "1130043 - ST CHRISTOL LEZ ALES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "22B"
+        },
+        {
+          "name": "CLERC Pierre",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "27B"
+        },
+        {
           "name": "COULON DE PRADA Teo",
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
@@ -3173,32 +3208,88 @@
           "target": "2A"
         },
         {
+          "name": "D OLIVEIRA REZENDE Eric",
+          "club": "1146149 - CAHORS",
+          "category": "1146149 - CAHORS",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "28A"
+        },
+        {
           "name": "DARDENNE Stephane",
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "18C"
+          "session": "S2 Homme Arc à Poulies",
+          "target": "18A"
         },
         {
           "name": "DEBAIG Isabelle",
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
-          "session": "Arc à Poulies Senior 2 Femmes",
+          "session": "S2 Femme Arc à Poulies",
           "target": "12A"
         },
         {
           "name": "DEMEULENAERE Vincent",
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
-          "session": "Arc à Poulies U21 Hommes",
-          "target": "19C"
+          "session": "U21 Homme Arc à Poulies",
+          "target": "19A"
+        },
+        {
+          "name": "DEUTSCH Stephanie",
+          "club": "1130043 - ST CHRISTOL LEZ ALES",
+          "category": "1130043 - ST CHRISTOL LEZ ALES",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "14B"
+        },
+        {
+          "name": "DUMONCEAU Ludovic",
+          "club": "1166191 - PERPIGNAN",
+          "category": "1166191 - PERPIGNAN",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "22A"
+        },
+        {
+          "name": "DUPRAT Lucas",
+          "club": "1146149 - CAHORS",
+          "category": "1146149 - CAHORS",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "26A"
         },
         {
           "name": "ESPEU Julien",
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
-          "session": "Arc à Poulies Senior 2 Hommes",
+          "session": "S2 Homme Arc à Poulies",
           "target": "17C"
+        },
+        {
+          "name": "ETIENNE Maxime",
+          "club": "1130040 - LANGLADE",
+          "category": "1130040 - LANGLADE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "22C"
+        },
+        {
+          "name": "FERRAT Jean-Luc",
+          "club": "1166191 - PERPIGNAN",
+          "category": "1166191 - PERPIGNAN",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "25A"
+        },
+        {
+          "name": "GAGNEPAIN Audrey",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "14C"
+        },
+        {
+          "name": "GARUET Eric",
+          "club": "1130043 - ST CHRISTOL LEZ ALES",
+          "category": "1130043 - ST CHRISTOL LEZ ALES",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "24B"
         },
         {
           "name": "GERMAIN Lucien",
@@ -3212,7 +3303,14 @@
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
           "session": "S2 Homme Arc Classique National",
-          "target": "10A"
+          "target": "9B"
+        },
+        {
+          "name": "GINER Francois",
+          "club": "1130043 - ST CHRISTOL LEZ ALES",
+          "category": "1130043 - ST CHRISTOL LEZ ALES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "23B"
         },
         {
           "name": "HENRY Stephane",
@@ -3225,8 +3323,22 @@
           "name": "IMBERTON Guilhem",
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
-          "session": "Arc à Poulies Senior 2 Hommes",
+          "session": "S2 Homme Arc à Poulies",
           "target": "16C"
+        },
+        {
+          "name": "JACQUET Sebastien",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "26B"
+        },
+        {
+          "name": "JOUVE Jocelyne",
+          "club": "1130043 - ST CHRISTOL LEZ ALES",
+          "category": "1130043 - ST CHRISTOL LEZ ALES",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "12B"
         },
         {
           "name": "KAPLAN Thierry",
@@ -3239,21 +3351,21 @@
           "name": "LACOMBE Bernard",
           "club": "1182219 - CASTELSARRASIN",
           "category": "1182219 - CASTELSARRASIN",
-          "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "20B"
+          "session": "S3 Homme Arc à Poulies",
+          "target": "28C"
         },
         {
           "name": "LEPINAY Pascal",
           "club": "1134122 - LE CRES",
           "category": "1134122 - LE CRES",
           "session": "S3 Homme Arc Classique National",
-          "target": "10C"
+          "target": "10A"
         },
         {
           "name": "LESAGE Pierre",
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
-          "session": "Arc à Poulies Senior 1 Hommes",
+          "session": "S1 Homme Arc à Poulies",
           "target": "21C"
         },
         {
@@ -3264,39 +3376,60 @@
           "target": "8C"
         },
         {
+          "name": "LORENTE Cyril",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "28B"
+        },
+        {
           "name": "MAGNARD Jonathan",
           "club": "1130048 - ALES",
           "category": "1130048 - ALES",
-          "session": "Arc à Poulies Senior 2 Hommes",
+          "session": "S2 Homme Arc à Poulies",
           "target": "16B"
         },
         {
           "name": "MARTIN Angel",
           "club": "1130048 - ALES",
           "category": "1130048 - ALES",
-          "session": "Arc à Poulies Senior 2 Hommes",
+          "session": "S2 Homme Arc à Poulies",
           "target": "17B"
         },
         {
           "name": "MARTIN Julien",
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "18A"
+          "session": "S1 Homme Arc à Poulies",
+          "target": "18C"
         },
         {
           "name": "MARTINEZ Guy",
           "club": "1182219 - CASTELSARRASIN",
           "category": "1182219 - CASTELSARRASIN",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "21B"
+          "session": "S1 Homme Arc à Poulies",
+          "target": "29C"
         },
         {
           "name": "MAURICE Olivier",
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
-          "session": "Arc à Poulies Senior 2 Hommes",
+          "session": "S2 Homme Arc à Poulies",
           "target": "15C"
+        },
+        {
+          "name": "MEYLAN Nicole",
+          "club": "1130043 - ST CHRISTOL LEZ ALES",
+          "category": "1130043 - ST CHRISTOL LEZ ALES",
+          "session": "S3 Femme Arc à Poulies",
+          "target": "13B"
+        },
+        {
+          "name": "MICHEL Fabrice",
+          "club": "1130040 - LANGLADE",
+          "category": "1130040 - LANGLADE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "23C"
         },
         {
           "name": "MOATY BAHLER Lea",
@@ -3306,25 +3439,60 @@
           "target": "4B"
         },
         {
+          "name": "NAUDY Chantal",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S3 Femme Arc à Poulies",
+          "target": "15A"
+        },
+        {
           "name": "OGER David",
           "club": "1134127 - LUNEL",
           "category": "1134127 - LUNEL",
           "session": "S2 Homme Arc Classique National",
-          "target": "10B"
+          "target": "9C"
         },
         {
           "name": "PAES Aymeric",
           "club": "1182219 - CASTELSARRASIN",
           "category": "1182219 - CASTELSARRASIN",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "18B"
+          "session": "S1 Homme Arc à Poulies",
+          "target": "26C"
         },
         {
           "name": "PETITJEAN Frederic",
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "21A"
+        },
+        {
+          "name": "PEYNAUD Yohan",
+          "club": "1166191 - PERPIGNAN",
+          "category": "1166191 - PERPIGNAN",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "23A"
+        },
+        {
+          "name": "PEYRON Laurent",
+          "club": "1146149 - CAHORS",
+          "category": "1146149 - CAHORS",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "29A"
+        },
+        {
+          "name": "POUILLY Franck",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "29B"
+        },
+        {
+          "name": "PROTHEAU Alain",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "S3 Homme Arc Classique National",
+          "target": "10B"
         },
         {
           "name": "QUEZIN Victor",
@@ -3337,35 +3505,63 @@
           "name": "RAVIDAT Rachel",
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
-          "session": "Arc à Poulies Senior 2 Femmes",
+          "session": "S2 Femme Arc à Poulies",
           "target": "14A"
+        },
+        {
+          "name": "RICHARD Olivier",
+          "club": "1130040 - LANGLADE",
+          "category": "1130040 - LANGLADE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "24C"
+        },
+        {
+          "name": "ROUSSEL Francois",
+          "club": "1166191 - PERPIGNAN",
+          "category": "1166191 - PERPIGNAN",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "24A"
         },
         {
           "name": "SALAS Mathieu",
           "club": "1182219 - CASTELSARRASIN",
           "category": "1182219 - CASTELSARRASIN",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "19B"
+          "session": "S1 Homme Arc à Poulies",
+          "target": "27C"
         },
         {
           "name": "SAVAJOLS Marine",
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
-          "session": "Arc à Poulies Senior 1 Femmes",
+          "session": "S1 Femme Arc à Poulies",
           "target": "13A"
         },
         {
           "name": "SENEJOUX Stephane",
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "19A"
+          "session": "S2 Homme Arc à Poulies",
+          "target": "19C"
+        },
+        {
+          "name": "SOULIE Jacques",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "S3 Homme Arc Classique National",
+          "target": "9A"
+        },
+        {
+          "name": "STACEY Michele",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S3 Femme Arc à Poulies",
+          "target": "13C"
         },
         {
           "name": "VIDAL Denis",
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
-          "session": "Arc à Poulies Senior 2 Hommes",
+          "session": "S2 Homme Arc à Poulies",
           "target": "20A"
         },
         {
@@ -3374,6 +3570,13 @@
           "category": "1134139 - MONTPELLIER",
           "session": "U15 Homme Arc Classique",
           "target": "4A"
+        },
+        {
+          "name": "VOLKA Ophelie",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "12C"
         }
       ]
     },
