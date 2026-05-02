@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-02T16:11:44.889881+00:00",
+  "generated_at_utc": "2026-05-02T17:24:23.491699+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27349",
       "ena_url": "https://www.ianseo.net/TourData/2026/27349/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27349/IC.php",
-      "entries_count": 314,
+      "entries_count": 315,
       "entries": [
         {
           "name": "ACQUAVIVA Pascal",
@@ -282,7 +282,7 @@
           "name": "BREELLE Elodie",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "S2 Femme Arc Classique National, Scratch Femme Arc Classique National",
+          "session": "Arc Classique Senior 2 Femmes National",
           "target": "9B"
         },
         {
@@ -2006,6 +2006,13 @@
           "category": "0878106 - ROCQUENCOURT",
           "session": "S2 Homme Arc Classique National, Scratch Homme Arc Classique National",
           "target": "19A"
+        },
+        {
+          "name": "SANCHEZ GOMEZ Miguel",
+          "club": "0878116 - POISSY",
+          "category": "0878116 - POISSY",
+          "session": "S3 Homme Arc à Poulies, Scratch Homme Arc à Poulies",
+          "target": "5C"
         },
         {
           "name": "SAUVESTRE Frederique",
