@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-02T15:27:13.250029+00:00",
+  "generated_at_utc": "2026-05-02T16:11:44.889881+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -4633,7 +4633,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27622",
       "ena_url": "https://www.ianseo.net/TourData/2026/27622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27622/IC.php",
-      "entries_count": 20,
+      "entries_count": 56,
       "entries": [
         {
           "name": "ANDRIANARISON Camille",
@@ -4641,6 +4641,34 @@
           "category": "0270074 - MARNAY",
           "session": "S1 Homme Arc Classique",
           "target": "9A"
+        },
+        {
+          "name": "BAUSSERON Gaelle",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Femme Arc Classique",
+          "target": "15C"
+        },
+        {
+          "name": "BELMONT Celine",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "S2 Femme Arc Classique",
+          "target": "18A"
+        },
+        {
+          "name": "BESNARD Gwendoline",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "U21 Femme Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "BIENVENU Marie",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S2 Femme Arc Classique",
+          "target": "18C"
         },
         {
           "name": "BONNELLES Alexis",
@@ -4657,9 +4685,30 @@
           "target": "4A"
         },
         {
+          "name": "BOURGEOIS Marine",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Femme Arc Classique",
+          "target": "12C"
+        },
+        {
+          "name": "BURNIER Romain",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "S2 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "CARTIER-COQUARD Brune",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "U21 Femme Arc Classique",
+          "target": "20B"
+        },
+        {
           "name": "CHARPENTIER Eulalie",
-          "club": "0654084 - VANDOEUVRE",
-          "category": "0654084 - VANDOEUVRE",
+          "club": "0654084 - VANDOEUVRE LES NANCY",
+          "category": "0654084 - VANDOEUVRE LES NANCY",
           "session": "U21 Femme Arc Classique",
           "target": "15A"
         },
@@ -4669,6 +4718,13 @@
           "category": "0780304 - MOREUIL",
           "session": "S1 Homme Arc Classique",
           "target": "2A"
+        },
+        {
+          "name": "CORDEAU Geraldine",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "S2 Femme Arc Classique",
+          "target": "12B"
         },
         {
           "name": "DAMERVALLE Maxandre",
@@ -4685,6 +4741,13 @@
           "target": "1B"
         },
         {
+          "name": "DOIGO Olivia",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "U21 Femme Arc Classique",
+          "target": "14B"
+        },
+        {
           "name": "DUPONTREUE Cyril",
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
@@ -4692,11 +4755,60 @@
           "target": "3A"
         },
         {
+          "name": "ENGELHARD Marie-Philippe",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S2 Femme Arc Classique",
+          "target": "13C"
+        },
+        {
           "name": "ESPINOSA Solene",
-          "club": "0654084 - VANDOEUVRE",
-          "category": "0654084 - VANDOEUVRE",
+          "club": "0654084 - VANDOEUVRE LES NANCY",
+          "category": "0654084 - VANDOEUVRE LES NANCY",
           "session": "S1 Femme Arc Classique",
           "target": "14A"
+        },
+        {
+          "name": "FAUCON Catherine",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "S2 Femme Arc Classique",
+          "target": "16A"
+        },
+        {
+          "name": "FAUCON Stephanie",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "S1 Femme Arc Classique",
+          "target": "17A"
+        },
+        {
+          "name": "FAUCONNIER Melissandre",
+          "club": "0103025 - YZEURE",
+          "category": "0103025 - YZEURE",
+          "session": "S1 Femme Arc Classique",
+          "target": "21C"
+        },
+        {
+          "name": "FOCKE Sybren",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "S1 Homme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "FONTENOY Angelique",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S2 Femme Arc Classique",
+          "target": "14C"
+        },
+        {
+          "name": "GAILLON Tristan",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "S1 Homme Arc Classique",
+          "target": "9C"
         },
         {
           "name": "GIRARDEAU Valentin",
@@ -4720,11 +4832,53 @@
           "target": "2B"
         },
         {
+          "name": "GUESDON Marine",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "S1 Femme Arc Classique",
+          "target": "19B"
+        },
+        {
           "name": "IUNG Alicia",
-          "club": "0654084 - VANDOEUVRE",
-          "category": "0654084 - VANDOEUVRE",
+          "club": "0654084 - VANDOEUVRE LES NANCY",
+          "category": "0654084 - VANDOEUVRE LES NANCY",
           "session": "S1 Femme Arc Classique",
           "target": "13A"
+        },
+        {
+          "name": "KLOTZ Thomas",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "S1 Homme Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "L'HERITIER Guillaume",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "S1 Homme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "LABESSE Kevin",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "S1 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "LAFORCE Clement",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "S1 Homme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "LANGLAIS Clara",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S1 Femme Arc Classique",
+          "target": "19C"
         },
         {
           "name": "LAVIER Maxime",
@@ -4734,11 +4888,81 @@
           "target": "6A"
         },
         {
+          "name": "MAROILLE Arnaud",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Homme Arc Classique",
+          "target": "4C"
+        },
+        {
+          "name": "MARTINET Sarah",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "U21 Femme Arc Classique",
+          "target": "22B"
+        },
+        {
+          "name": "MERENNE Oscar",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Homme Arc Classique",
+          "target": "3C"
+        },
+        {
           "name": "MOLE Clement",
           "club": "0221007 - CHATILLON S/SEINE",
           "category": "0221007 - CHATILLON S/SEINE",
           "session": "S1 Homme Arc Classique",
           "target": "8A"
+        },
+        {
+          "name": "PAUTRAT Aurore",
+          "club": "0103025 - YZEURE",
+          "category": "0103025 - YZEURE",
+          "session": "S1 Femme Arc Classique",
+          "target": "22C"
+        },
+        {
+          "name": "PAYET Emily",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U21 Femme Arc Classique",
+          "target": "19A"
+        },
+        {
+          "name": "PEYROT Lucas",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Homme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "PEYROT Thomas",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Homme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "PICHONNAZ Maxine",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "S1 Femme Arc Classique",
+          "target": "15B"
+        },
+        {
+          "name": "RAVE Sylvie",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S2 Femme Arc Classique",
+          "target": "17C"
+        },
+        {
+          "name": "REBET Emmy",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S1 Femme Arc Classique",
+          "target": "16C"
         },
         {
           "name": "RENAUD Arnaud",
@@ -4748,11 +4972,25 @@
           "target": "3B"
         },
         {
+          "name": "REYNAUD Julie",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "U21 Femme Arc Classique",
+          "target": "21B"
+        },
+        {
           "name": "RIEGER Marie",
-          "club": "0654084 - VANDOEUVRE",
-          "category": "0654084 - VANDOEUVRE",
+          "club": "0654084 - VANDOEUVRE LES NANCY",
+          "category": "0654084 - VANDOEUVRE LES NANCY",
           "session": "S1 Femme Arc Classique",
           "target": "12A"
+        },
+        {
+          "name": "ROJAT Cecile",
+          "club": "0103025 - YZEURE",
+          "category": "0103025 - YZEURE",
+          "session": "S2 Femme Arc Classique",
+          "target": "18B"
         },
         {
           "name": "SCHWALLER JOUBERT Leo",
@@ -4762,11 +5000,25 @@
           "target": "8B"
         },
         {
+          "name": "TRAON Louis",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "S1 Homme Arc Classique",
+          "target": "5B"
+        },
+        {
           "name": "VANEY Lucas",
           "club": "0270074 - MARNAY",
           "category": "0270074 - MARNAY",
           "session": "S1 Homme Arc Classique",
           "target": "11A"
+        },
+        {
+          "name": "VIALE Amandine",
+          "club": "0103025 - YZEURE",
+          "category": "0103025 - YZEURE",
+          "session": "S2 Femme Arc Classique",
+          "target": "20C"
         },
         {
           "name": "WALZ Michael",
