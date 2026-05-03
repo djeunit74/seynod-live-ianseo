@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-03T19:34:27.402487+00:00",
+  "generated_at_utc": "2026-05-03T20:43:51.126918+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 35,
+  "count": 36,
   "tournaments": [
     {
       "to_id": "27550",
@@ -2975,7 +2975,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27622",
       "ena_url": "https://www.ianseo.net/TourData/2026/27622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27622/IC.php",
-      "entries_count": 56,
+      "entries_count": 64,
       "entries": [
         {
           "name": "ANDRIANARISON Camille",
@@ -3032,6 +3032,13 @@
           "category": "0221014 - DIJON",
           "session": "S1 Femme Arc Classique",
           "target": "12C"
+        },
+        {
+          "name": "BOYER Loane",
+          "club": "0668179 - COLMAR",
+          "category": "0668179 - COLMAR",
+          "session": "S1 Femme Arc Classique",
+          "target": "21A"
         },
         {
           "name": "BURNIER Romain",
@@ -3095,6 +3102,13 @@
           "category": "0780304 - MOREUIL",
           "session": "S1 Homme Arc Classique",
           "target": "3A"
+        },
+        {
+          "name": "DUSSAUSSOY Jonathan",
+          "club": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "category": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "session": "S2 Homme Arc Classique",
+          "target": "6C"
         },
         {
           "name": "ENGELHARD Marie-Philippe",
@@ -3181,11 +3195,25 @@
           "target": "19B"
         },
         {
+          "name": "IMBERT Maxime",
+          "club": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "category": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "session": "S2 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
           "name": "IUNG Alicia",
           "club": "0654084 - VANDOEUVRE LES NANCY",
           "category": "0654084 - VANDOEUVRE LES NANCY",
           "session": "S1 Femme Arc Classique",
           "target": "13A"
+        },
+        {
+          "name": "KACZMAR Ludovic",
+          "club": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "category": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "session": "S2 Homme Arc Classique",
+          "target": "5C"
         },
         {
           "name": "KLOTZ Thomas",
@@ -3256,6 +3284,20 @@
           "category": "0221007 - CHATILLON S/SEINE",
           "session": "S1 Homme Arc Classique",
           "target": "8A"
+        },
+        {
+          "name": "MONCOURTOIS Damien",
+          "club": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "category": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "session": "S2 Homme Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "MUTH Christel",
+          "club": "0668179 - COLMAR",
+          "category": "0668179 - COLMAR",
+          "session": "S2 Femme Arc Classique",
+          "target": "16B"
         },
         {
           "name": "PAUTRAT Aurore",
@@ -3342,6 +3384,13 @@
           "target": "8B"
         },
         {
+          "name": "THOMAS Solenne",
+          "club": "0668179 - COLMAR",
+          "category": "0668179 - COLMAR",
+          "session": "S1 Femme Arc Classique",
+          "target": "20A"
+        },
+        {
           "name": "TRAON Louis",
           "club": "0875017 - PARIS XIII USMT",
           "category": "0875017 - PARIS XIII USMT",
@@ -3368,8 +3417,28 @@
           "category": "0221007 - CHATILLON S/SEINE",
           "session": "S1 Homme Arc Classique",
           "target": "5A"
+        },
+        {
+          "name": "WILHELM Gaelle",
+          "club": "0668179 - COLMAR",
+          "category": "0668179 - COLMAR",
+          "session": "S1 Femme Arc Classique",
+          "target": "17B"
         }
       ]
+    },
+    {
+      "to_id": "27748",
+      "year": "2026",
+      "name": "TIR EN EXTERIEUR",
+      "organizer": "GOSIER",
+      "date_text": "9-10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27748",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27748/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27748/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27949",
