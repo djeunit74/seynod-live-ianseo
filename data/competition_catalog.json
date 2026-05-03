@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-03T06:09:12.941542+00:00",
+  "generated_at_utc": "2026-05-03T08:20:37.112403+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 34,
+  "count": 35,
   "tournaments": [
     {
       "to_id": "27550",
@@ -522,6 +522,370 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/27652/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "27824",
+      "year": "2026",
+      "name": "FINALE DRE, TAE LES ARCHERS DE PEROLS",
+      "organizer": "LES ARCHERS DE PEROLS",
+      "date_text": "9 May",
+      "end_date": "2026-05-09",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27824",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27824/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27824/IC.php",
+      "entries_count": 50,
+      "entries": [
+        {
+          "name": "ALLE Antoine",
+          "club": "1148154 - ST CHELY D'APCHER",
+          "category": "1148154 - ST CHELY D'APCHER",
+          "session": "U21 Homme Arc Classique",
+          "target": "21A"
+        },
+        {
+          "name": "ANIEL Jean Christophe",
+          "club": "1134122 - LE CRES",
+          "category": "1134122 - LE CRES",
+          "session": "S2 Homme Arc Classique",
+          "target": "13A"
+        },
+        {
+          "name": "ARLOT Loic",
+          "club": "1146149 - CAHORS",
+          "category": "1146149 - CAHORS",
+          "session": "S2 Homme Arc Classique",
+          "target": "14B"
+        },
+        {
+          "name": "BARBABIANCA Francois",
+          "club": "1148154 - ST CHELY D'APCHER",
+          "category": "1148154 - ST CHELY D'APCHER",
+          "session": "S1 Homme Arc Classique",
+          "target": "22A"
+        },
+        {
+          "name": "BARON Christelle",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "S2 Femme Arc Classique",
+          "target": "19A"
+        },
+        {
+          "name": "BARRULL Valentin",
+          "club": "1148164 - CHANAC",
+          "category": "1148164 - CHANAC",
+          "session": "S2 Homme Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "BORDERIE-KIM Emrys",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U13 Homme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "CAIZAC Baptiste",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U21 Homme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "CANESSA Eric",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "S2 Homme Arc Classique",
+          "target": "18A"
+        },
+        {
+          "name": "CARO Marla",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "U15 Femme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "CAUSSE Frederic",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "S2 Homme Arc Classique",
+          "target": "20A"
+        },
+        {
+          "name": "CHABRIE Marie",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "U18 Femme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "CHAMPLAINE Catherine",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "Scratch Femme Arc Nu National",
+          "target": "5A"
+        },
+        {
+          "name": "CHIREN Frederic",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "S2 Homme Arc Classique National",
+          "target": "5C"
+        },
+        {
+          "name": "COULON DE PRADA Teo",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U13 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "CRIQUET Sebastien",
+          "club": "1148164 - CHANAC",
+          "category": "1148164 - CHANAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "15A"
+        },
+        {
+          "name": "DI LEO Federico",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S2 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "DOUFILS Lionel",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S3 Homme Arc Classique National",
+          "target": "5B"
+        },
+        {
+          "name": "DUBOIS Bruno",
+          "club": "1148154 - ST CHELY D'APCHER",
+          "category": "1148154 - ST CHELY D'APCHER",
+          "session": "S1 Homme Arc Classique",
+          "target": "23A"
+        },
+        {
+          "name": "DUMONT Erwan",
+          "club": "1132114 - SAMATAN",
+          "category": "1132114 - SAMATAN",
+          "session": "S1 Homme Arc Classique",
+          "target": "18C"
+        },
+        {
+          "name": "DUMONT Maelys",
+          "club": "1132114 - SAMATAN",
+          "category": "1132114 - SAMATAN",
+          "session": "S1 Femme Arc Classique",
+          "target": "19C"
+        },
+        {
+          "name": "FORTIER Martine",
+          "club": "1134122 - LE CRES",
+          "category": "1134122 - LE CRES",
+          "session": "S2 Femme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "GARAYT Baptiste",
+          "club": "1146149 - CAHORS",
+          "category": "1146149 - CAHORS",
+          "session": "S2 Homme Arc Classique",
+          "target": "15B"
+        },
+        {
+          "name": "GAZIL Alain",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "S2 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "GERZAIN Pierre",
+          "club": "1130065 - MANDUEL",
+          "category": "1130065 - MANDUEL",
+          "session": "S2 Homme Arc Classique",
+          "target": "21B"
+        },
+        {
+          "name": "GOUCHENE Nael",
+          "club": "1130065 - MANDUEL",
+          "category": "1130065 - MANDUEL",
+          "session": "U21 Homme Arc Classique",
+          "target": "24B"
+        },
+        {
+          "name": "JESUS Bruno",
+          "club": "1146144 - SOUILLAC",
+          "category": "1146144 - SOUILLAC",
+          "session": "S2 Homme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "JESUS Claudia",
+          "club": "1146144 - SOUILLAC",
+          "category": "1146144 - SOUILLAC",
+          "session": "U21 Femme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "LACROIX Eloise",
+          "club": "1130065 - MANDUEL",
+          "category": "1130065 - MANDUEL",
+          "session": "U21 Femme Arc Classique",
+          "target": "23B"
+        },
+        {
+          "name": "LASSOURREUILLE Lionel",
+          "club": "1146144 - SOUILLAC",
+          "category": "1146144 - SOUILLAC",
+          "session": "S2 Homme Arc Classique",
+          "target": "13C"
+        },
+        {
+          "name": "LEBRUN Alexandre",
+          "club": "1134122 - LE CRES",
+          "category": "1134122 - LE CRES",
+          "session": "S1 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "LEGROS Laurent",
+          "club": "1146144 - SOUILLAC",
+          "category": "1146144 - SOUILLAC",
+          "session": "S2 Homme Arc Classique",
+          "target": "12C"
+        },
+        {
+          "name": "MAHOUDEAUX Thomas",
+          "club": "1132114 - SAMATAN",
+          "category": "1132114 - SAMATAN",
+          "session": "S1 Homme Arc Classique",
+          "target": "17C"
+        },
+        {
+          "name": "MALLIE Hugo",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U18 Homme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "MARCO Alice",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "U11 Femme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "MIRON Nicolas",
+          "club": "1146149 - CAHORS",
+          "category": "1146149 - CAHORS",
+          "session": "S2 Homme Arc Classique",
+          "target": "16B"
+        },
+        {
+          "name": "MOTTARELLA-SICARD Nathalie",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "S2 Femme Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "OGER David",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "S2 Homme Arc Classique National",
+          "target": "6A"
+        },
+        {
+          "name": "OUMELBAT Manel",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "U15 Femme Arc Classique National",
+          "target": "2B"
+        },
+        {
+          "name": "PAYEN Lloyd",
+          "club": "1148164 - CHANAC",
+          "category": "1148164 - CHANAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "16A"
+        },
+        {
+          "name": "PELOURGEAS Patrick",
+          "club": "1130065 - MANDUEL",
+          "category": "1130065 - MANDUEL",
+          "session": "S2 Homme Arc Classique",
+          "target": "22B"
+        },
+        {
+          "name": "PERNIN Marc",
+          "club": "1134122 - LE CRES",
+          "category": "1134122 - LE CRES",
+          "session": "S3 Homme Arc Classique National",
+          "target": "6B"
+        },
+        {
+          "name": "RASHID AHMED Iqra",
+          "club": "1132114 - SAMATAN",
+          "category": "1132114 - SAMATAN",
+          "session": "S1 Femme Arc Classique",
+          "target": "20C"
+        },
+        {
+          "name": "SALMON Baptiste",
+          "club": "1146149 - CAHORS",
+          "category": "1146149 - CAHORS",
+          "session": "S2 Homme Arc Classique",
+          "target": "17B"
+        },
+        {
+          "name": "SCHIPPERS Albert",
+          "club": "1134122 - LE CRES",
+          "category": "1134122 - LE CRES",
+          "session": "S2 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "SICARD Lucile",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "U21 Femme Arc Classique",
+          "target": "12B"
+        },
+        {
+          "name": "SICARD Olivier",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "S2 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "SOLIGNAC Mathieu",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "S2 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "VECK Dimitri",
+          "club": "1148154 - ST CHELY D'APCHER",
+          "category": "1148154 - ST CHELY D'APCHER",
+          "session": "U21 Homme Arc Classique",
+          "target": "24A"
+        },
+        {
+          "name": "VELAY Gaetan",
+          "club": "1148164 - CHANAC",
+          "category": "1148164 - CHANAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "17A"
+        }
+      ]
     },
     {
       "to_id": "27598",
