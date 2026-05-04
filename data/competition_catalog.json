@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-04T19:42:36.952073+00:00",
+  "generated_at_utc": "2026-05-04T21:10:35.445596+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1717,14 +1717,14 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27598",
       "ena_url": "https://www.ianseo.net/TourData/2026/27598/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27598/IC.php",
-      "entries_count": 49,
+      "entries_count": 63,
       "entries": [
         {
           "name": "BASTIN Penelope",
           "club": "0760214 - ESTREES ST DENIS",
           "category": "0760214 - ESTREES ST DENIS",
           "session": "U13 Femme Arc Classique",
-          "target": ""
+          "target": "3C"
         },
         {
           "name": "BELLARD Cyril",
@@ -1734,18 +1734,32 @@
           "target": ""
         },
         {
+          "name": "BONNEVIE Maelys",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "U18 Femme Arc à Poulies National",
+          "target": "13B"
+        },
+        {
+          "name": "BOURGEOIS Aymeric",
+          "club": "0759129 - VALENCIENNES",
+          "category": "0759129 - VALENCIENNES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "19A"
+        },
+        {
+          "name": "BOURGEOIS David",
+          "club": "0759129 - VALENCIENNES",
+          "category": "0759129 - VALENCIENNES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "18A"
+        },
+        {
           "name": "BOUSSIERE Marie",
           "club": "0780318 - ABBEVILLE",
           "category": "0780318 - ABBEVILLE",
           "session": "Scratch Femme Arc Nu National",
-          "target": ""
-        },
-        {
-          "name": "BRAILLY Eric",
-          "club": "0780308 - SAINS EN AMIENOIS",
-          "category": "0780308 - SAINS EN AMIENOIS",
-          "session": "S2 Homme Arc Classique",
-          "target": ""
+          "target": "9B"
         },
         {
           "name": "BRAILLY Eric",
@@ -1755,25 +1769,32 @@
           "target": ""
         },
         {
+          "name": "BRAILLY Eric",
+          "club": "0780308 - SAINS EN AMIENOIS",
+          "category": "0780308 - SAINS EN AMIENOIS",
+          "session": "S2 Homme Arc Classique",
+          "target": "21C"
+        },
+        {
           "name": "BROCQ DA SILVA Flora",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
           "session": "U21 Femme Arc à Poulies National",
-          "target": ""
+          "target": "10C"
         },
         {
           "name": "BRUNET Herve",
           "club": "0780305 - BROUCHY",
           "category": "0780305 - BROUCHY",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "12D"
         },
         {
           "name": "BRUNET Sabine",
           "club": "0780305 - BROUCHY",
           "category": "0780305 - BROUCHY",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "11B"
         },
         {
           "name": "BUHL Jean-Jacques",
@@ -1801,28 +1822,35 @@
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
           "session": "S2 Femme Arc à Poulies",
-          "target": ""
+          "target": "19B"
+        },
+        {
+          "name": "CHIRAULT Benjamin",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "S1 Homme Arc Classique",
+          "target": "21A"
         },
         {
           "name": "COMONT Anne",
           "club": "0780308 - SAINS EN AMIENOIS",
           "category": "0780308 - SAINS EN AMIENOIS",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "12A"
         },
         {
           "name": "COURNIER Alain",
           "club": "0780340 - AILLY SUR NOYE",
           "category": "0780340 - AILLY SUR NOYE",
           "session": "Scratch Homme Arc Nu National",
-          "target": ""
+          "target": "9A"
         },
         {
           "name": "COUSIN Kevin",
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
           "session": "S1 Homme Arc à Poulies",
-          "target": ""
+          "target": "18C"
         },
         {
           "name": "CRUSSIERE Jerome",
@@ -1839,17 +1867,52 @@
           "target": ""
         },
         {
+          "name": "DECHERF Alexandre",
+          "club": "0760214 - ESTREES ST DENIS",
+          "category": "0760214 - ESTREES ST DENIS",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "19C"
+        },
+        {
           "name": "DEROUSSEN Patrice",
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "12C"
+        },
+        {
+          "name": "DILLIES Timeo",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "U15 Homme Arc Classique",
+          "target": "4B"
         },
         {
           "name": "DUCHEMIN Dominique",
           "club": "0760228 - LASSIGNY",
           "category": "0760228 - LASSIGNY",
           "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "DUCROCQ ROUCHES Julien",
+          "club": "0702331 - CIE D'ARC D'ETREUX",
+          "category": "0702331 - CIE D'ARC D'ETREUX",
+          "session": "U21 Homme Arc Classique",
+          "target": "21D"
+        },
+        {
+          "name": "DUPONTREUE Cyril",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "S1 Homme Arc Classique",
+          "target": "21B"
+        },
+        {
+          "name": "FIRMIN Camille",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "Scratch Femme Arc Nu National",
           "target": ""
         },
         {
@@ -1885,14 +1948,21 @@
           "club": "0760214 - ESTREES ST DENIS",
           "category": "0760214 - ESTREES ST DENIS",
           "session": "U18 Homme Arc Classique",
-          "target": ""
+          "target": "20B"
         },
         {
           "name": "HORDE Guillaume",
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
           "session": "S1 Homme Arc à Poulies",
-          "target": ""
+          "target": "19D"
+        },
+        {
+          "name": "HORDE Jean-Pierre",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "14C"
         },
         {
           "name": "JOLY Bertrand",
@@ -1913,14 +1983,14 @@
           "club": "0762284 - LA COUTURE",
           "category": "0762284 - LA COUTURE",
           "session": "U18 Femme Arc Classique National",
-          "target": ""
+          "target": "13C"
         },
         {
           "name": "LAIGNEL Amelie",
           "club": "0780311 - ERONDELLE",
           "category": "0780311 - ERONDELLE",
-          "session": "Arc Classique Senior 2 Femmes National",
-          "target": ""
+          "session": "S2 Femme Arc Classique National",
+          "target": "12B"
         },
         {
           "name": "LAMOUREUX Cathy",
@@ -1934,133 +2004,161 @@
           "club": "0760157 - SENLIS",
           "category": "0760157 - SENLIS",
           "session": "S2 Femme Arc à Poulies National",
-          "target": ""
+          "target": "13D"
         },
         {
           "name": "LETISSIER Mickael",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
           "session": "Scratch Homme Arc Nu National",
-          "target": ""
+          "target": "8D"
         },
         {
           "name": "LOTTIN Alexis",
           "club": "0780311 - ERONDELLE",
           "category": "0780311 - ERONDELLE",
-          "session": "Arc Nu Senior 1 Hommes National",
-          "target": ""
+          "session": "Scratch Homme Arc Nu National",
+          "target": "9D"
         },
         {
           "name": "MELIN Benoit",
           "club": "0780311 - ERONDELLE",
           "category": "0780311 - ERONDELLE",
-          "session": "Arc Nu Senior 1 Hommes National",
-          "target": ""
+          "session": "Scratch Homme Arc Nu National",
+          "target": "8A"
         },
         {
           "name": "MUTEL Jean-Christophe",
           "club": "0780318 - ABBEVILLE",
           "category": "0780318 - ABBEVILLE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "10B"
         },
         {
           "name": "NEVERS Yannick",
           "club": "0780319 - PIENNES-ONVILLERS",
           "category": "0780319 - PIENNES-ONVILLERS",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "11C"
         },
         {
           "name": "OBRY Ambre",
           "club": "0780318 - ABBEVILLE",
           "category": "0780318 - ABBEVILLE",
           "session": "U18 Femme Arc Nu National",
-          "target": ""
+          "target": "3A"
         },
         {
           "name": "OBRY Matthieu",
           "club": "0780318 - ABBEVILLE",
           "category": "0780318 - ABBEVILLE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "11A"
         },
         {
           "name": "OLMO Ludovic",
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
           "session": "S2 Homme Arc à Poulies",
-          "target": ""
+          "target": "18D"
         },
         {
           "name": "PAWLOWSKI Estelle",
           "club": "0760214 - ESTREES ST DENIS",
           "category": "0760214 - ESTREES ST DENIS",
           "session": "U15 Femme Arc Classique",
-          "target": ""
+          "target": "4A"
         },
         {
           "name": "PECHON Geoffrey",
           "club": "0760214 - ESTREES ST DENIS",
           "category": "0760214 - ESTREES ST DENIS",
           "session": "U18 Homme Arc Classique",
-          "target": ""
+          "target": "20A"
         },
         {
           "name": "PERRINE Francois",
           "club": "0780308 - SAINS EN AMIENOIS",
           "category": "0780308 - SAINS EN AMIENOIS",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "8C"
         },
         {
           "name": "QUILLENT Christophe",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
           "session": "S2 Homme Arc à Poulies National",
+          "target": "11D"
+        },
+        {
+          "name": "RIDEAU Nael",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "U15 Homme Arc Classique",
           "target": ""
+        },
+        {
+          "name": "RIDEAU Nael",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "U15 Homme Arc Classique",
+          "target": "4C"
         },
         {
           "name": "RIGAUD Lucas",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
           "session": "Scratch Homme Arc Nu National",
-          "target": ""
+          "target": "8B"
         },
         {
           "name": "SAVREUX Dimitri",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "10A"
         },
         {
           "name": "SCHRYVE Jean Loic",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "14A"
         },
         {
           "name": "SONNEVILLE Marc",
           "club": "0780308 - SAINS EN AMIENOIS",
           "category": "0780308 - SAINS EN AMIENOIS",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "10D"
         },
         {
           "name": "TETU Sebastien",
           "club": "0780308 - SAINS EN AMIENOIS",
           "category": "0780308 - SAINS EN AMIENOIS",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "9C"
+        },
+        {
+          "name": "THEBAULT Philippe",
+          "club": "0780320 - AMIENS",
+          "category": "0780320 - AMIENS",
+          "session": "S3 Homme Arc Classique National",
+          "target": "14B"
         },
         {
           "name": "VERKEST Elisabeth",
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
           "session": "S3 Femme Arc Classique National",
-          "target": ""
+          "target": "13A"
+        },
+        {
+          "name": "VOLTOLINI Sandrine",
+          "club": "0780311 - ERONDELLE",
+          "category": "0780311 - ERONDELLE",
+          "session": "S2 Femme Arc Classique National",
+          "target": "14D"
         }
       ]
     },
