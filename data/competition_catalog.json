@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-04T21:10:35.445596+00:00",
+  "generated_at_utc": "2026-05-04T22:33:46.041064+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27550",
       "ena_url": "https://www.ianseo.net/TourData/2026/27550/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27550/IC.php",
-      "entries_count": 68,
+      "entries_count": 72,
       "entries": [
         {
           "name": "ANGOT Corentin",
@@ -31,7 +31,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S3 Homme Arc à Poulies",
-          "target": ""
+          "target": "11C"
         },
         {
           "name": "BOUVET Gilles",
@@ -94,7 +94,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S1 Femme Arc Classique",
-          "target": "10C"
+          "target": "9B"
         },
         {
           "name": "COUSTOU Audran",
@@ -146,6 +146,13 @@
           "target": "9A"
         },
         {
+          "name": "DEBOEUF Frederic",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Homme Arc Classique",
+          "target": "9C"
+        },
+        {
           "name": "DELAHAYE Vanessa",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -195,6 +202,13 @@
           "target": "3C"
         },
         {
+          "name": "DUPUIS Anthony",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "11A"
+        },
+        {
           "name": "DUREL Jeanne",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -214,13 +228,6 @@
           "category": "0335060 - FOUGERES",
           "session": "U18 Femme Arc Classique",
           "target": "8C"
-        },
-        {
-          "name": "GICQUEL Matthieu",
-          "club": "0335056 - TINTENIAC",
-          "category": "0335056 - TINTENIAC",
-          "session": "S1 Homme Arc Classique",
-          "target": "10A"
         },
         {
           "name": "GOH LEMOINE Hadrien",
@@ -249,6 +256,20 @@
           "category": "0335067 - RENNES CIE",
           "session": "Arc Classique U21 Hommes",
           "target": "11C"
+        },
+        {
+          "name": "HERSAN Christophe",
+          "club": "1249049 - MAZE",
+          "category": "1249049 - MAZE",
+          "session": "S3 Homme Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "HERSAN Christophe",
+          "club": "1249049 - MAZE",
+          "category": "1249049 - MAZE",
+          "session": "S3 Homme Arc Classique",
+          "target": "8C"
         },
         {
           "name": "HOGUIN Lise",
@@ -314,6 +335,13 @@
           "target": "7B"
         },
         {
+          "name": "LEBRETON Myriam",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S2 Femme Arc Classique",
+          "target": "10A"
+        },
+        {
           "name": "MAHEAS Gabin",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -346,7 +374,7 @@
           "club": "0322005 - FREHEL",
           "category": "0322005 - FREHEL",
           "session": "S2 Femme Arc Classique",
-          "target": "9C"
+          "target": "10B"
         },
         {
           "name": "MOREL Eric",
