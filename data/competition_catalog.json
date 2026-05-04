@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-04T09:04:14.112945+00:00",
+  "generated_at_utc": "2026-05-04T11:23:10.793482+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -507,8 +507,828 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27967",
       "ena_url": "https://www.ianseo.net/TourData/2026/27967/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27967/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 117,
+      "entries": [
+        {
+          "name": "ADIER Manon",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U15 Mixte Arc Classique",
+          "target": "22B"
+        },
+        {
+          "name": "ALDIGIER Zoe",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U18 Mixte Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "ALLIBERT Mael",
+          "club": "0138088 - GRENOBLE",
+          "category": "0138088 - GRENOBLE",
+          "session": "U21 Mixte Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "ARTANCE Jeanne",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U15 Mixte Arc Classique",
+          "target": "26A"
+        },
+        {
+          "name": "AUBOYER Arthur",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U21 Mixte Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "BACHELET Thomas",
+          "club": "0163152 - LEZOUX",
+          "category": "0163152 - LEZOUX",
+          "session": "U13 Mixte Arc Classique",
+          "target": "44C"
+        },
+        {
+          "name": "BARILONE Noelie",
+          "club": "0169173 - COMMUNAY",
+          "category": "0169173 - COMMUNAY",
+          "session": "U15 Mixte Arc Classique",
+          "target": "32B"
+        },
+        {
+          "name": "BARNOUX Mattis",
+          "club": "0169192 - CHAPONOST",
+          "category": "0169192 - CHAPONOST",
+          "session": "U18 Mixte Arc Classique",
+          "target": "17A"
+        },
+        {
+          "name": "BLANCHOT Anna",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U13 Mixte Arc Classique",
+          "target": "42C"
+        },
+        {
+          "name": "BODEREAU COUALLIER Louanne",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U13 Mixte Arc Classique",
+          "target": "43B"
+        },
+        {
+          "name": "BONORA Nathan",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U18 Mixte Arc Classique",
+          "target": "14C"
+        },
+        {
+          "name": "BOUCETTA Jasmine",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "16B"
+        },
+        {
+          "name": "BOUCETTA Sherine",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U15 Mixte Arc Classique",
+          "target": "31C"
+        },
+        {
+          "name": "BOURGUIGNON Benoit",
+          "club": "0169192 - CHAPONOST",
+          "category": "0169192 - CHAPONOST",
+          "session": "U18 Mixte Arc Classique",
+          "target": "14B"
+        },
+        {
+          "name": "BOUTRAND Martin",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U18 Mixte Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "BRUN Baptiste",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U18 Mixte Arc Classique",
+          "target": "15A"
+        },
+        {
+          "name": "BRUNET Axel",
+          "club": "0169175 - CALUIRE",
+          "category": "0169175 - CALUIRE",
+          "session": "U18 Mixte Arc Classique",
+          "target": "15C"
+        },
+        {
+          "name": "BUES Thomas",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "BUSSER Loup",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U15 Mixte Arc Classique",
+          "target": "22C"
+        },
+        {
+          "name": "BUSSY Axel",
+          "club": "0101010 - BEYNOST",
+          "category": "0101010 - BEYNOST",
+          "session": "U18 Mixte Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "CAMBI Ezzio",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U18 Mixte Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "CAROBBIO Margot",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U21 Mixte Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "CARTIER-COQUARD Brune",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "19A"
+        },
+        {
+          "name": "CHABANOL Timothe",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U18 Mixte Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "CHAUVET VIENNE Malo",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U15 Mixte Arc Classique",
+          "target": "27C"
+        },
+        {
+          "name": "CHAUVET VIENNE Valentin",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U13 Mixte Arc Classique",
+          "target": "41B"
+        },
+        {
+          "name": "COHENDY Louis",
+          "club": "0163165 - ARTONNE - SAINT MYON",
+          "category": "0163165 - ARTONNE - SAINT MYON",
+          "session": "U13 Mixte Arc Classique",
+          "target": "44A"
+        },
+        {
+          "name": "COLLAS Thomas",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "U15 Mixte Arc Classique",
+          "target": "28C"
+        },
+        {
+          "name": "COLLIN Noa",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U15 Mixte Arc Classique",
+          "target": "25B"
+        },
+        {
+          "name": "CORNU Lisa",
+          "club": "0169173 - COMMUNAY",
+          "category": "0169173 - COMMUNAY",
+          "session": "U18 Mixte Arc Classique",
+          "target": "19B"
+        },
+        {
+          "name": "COUET Guillemette",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U21 Mixte Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "COURDIER Axelle",
+          "club": "0163164 - ISSOIRE",
+          "category": "0163164 - ISSOIRE",
+          "session": "U15 Mixte Arc Classique",
+          "target": "29C"
+        },
+        {
+          "name": "DE ABREU Tony",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "U18 Mixte Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "DELVAL Morgane",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U18 Mixte Arc Classique",
+          "target": "5A"
+        },
+        {
+          "name": "DENEUVILLE CONSTANT Elsa",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U21 Mixte Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "DESCHAUMES Ania",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "U15 Mixte Arc Classique",
+          "target": "26B"
+        },
+        {
+          "name": "DOLMAZON Chloe",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U18 Mixte Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "DUMAND Anais",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "U18 Mixte Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "DUPONT Julie",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "U18 Mixte Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "DUWICQUET Maxence",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U15 Mixte Arc Classique",
+          "target": "29B"
+        },
+        {
+          "name": "EVIEUX Hugo",
+          "club": "0271083 - AUTUN",
+          "category": "0271083 - AUTUN",
+          "session": "U15 Mixte Arc Classique",
+          "target": "24C"
+        },
+        {
+          "name": "FARESSE PONS Baptiste",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "U18 Mixte Arc Classique",
+          "target": "16A"
+        },
+        {
+          "name": "FAUCHER Abigael",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "18A"
+        },
+        {
+          "name": "FAUQUE Raphael",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U13 Mixte Arc Classique",
+          "target": "46A"
+        },
+        {
+          "name": "FERREIRA Lea",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U13 Mixte Arc Classique",
+          "target": "44B"
+        },
+        {
+          "name": "GASSER Aodrenn",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U21 Mixte Arc à Poulies",
+          "target": "21B"
+        },
+        {
+          "name": "GAUDRY Adrien",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U18 Mixte Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "GAUDRY Lise",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U13 Mixte Arc Classique",
+          "target": "38A"
+        },
+        {
+          "name": "GILLET Mathilde",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U18 Mixte Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "GIRAUD Axel",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U21 Mixte Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "GOUJON Aaron",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U15 Mixte Arc Classique",
+          "target": "30A"
+        },
+        {
+          "name": "GRANGE Gabin",
+          "club": "0107039 - ANNONAY",
+          "category": "0107039 - ANNONAY",
+          "session": "U21 Mixte Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "GRAPIN-COUCHOT Lucie",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "U15 Mixte Arc Classique",
+          "target": "31A"
+        },
+        {
+          "name": "GRUEL FASQUELLE Nathan",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "U18 Mixte Arc Classique",
+          "target": "12B"
+        },
+        {
+          "name": "HARRAULT Florian",
+          "club": "0142135 - PELUSSIN",
+          "category": "0142135 - PELUSSIN",
+          "session": "U15 Mixte Arc Classique",
+          "target": "27A"
+        },
+        {
+          "name": "HEBRARD Nathan",
+          "club": "0169192 - CHAPONOST",
+          "category": "0169192 - CHAPONOST",
+          "session": "U18 Mixte Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "HEMZELLEC Benjamin",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "U15 Mixte Arc Classique",
+          "target": "31B"
+        },
+        {
+          "name": "HENRY Lisa",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "U13 Mixte Arc Classique",
+          "target": "46B"
+        },
+        {
+          "name": "HUILLIER Kendra",
+          "club": "0221007 - CHATILLON S/SEINE",
+          "category": "0221007 - CHATILLON S/SEINE",
+          "session": "U18 Mixte Arc Classique",
+          "target": "13A"
+        },
+        {
+          "name": "IACOVELLA Matteo",
+          "club": "0142128 - IZIEUX",
+          "category": "0142128 - IZIEUX",
+          "session": "U15 Mixte Arc Classique",
+          "target": "25C"
+        },
+        {
+          "name": "JAPIOT Yoan",
+          "club": "0138088 - GRENOBLE",
+          "category": "0138088 - GRENOBLE",
+          "session": "U18 Mixte Arc Classique",
+          "target": "13C"
+        },
+        {
+          "name": "KONE COTE Emma",
+          "club": "0169171 - SAINTE FOY LES LYON",
+          "category": "0169171 - SAINTE FOY LES LYON",
+          "session": "U18 Mixte Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "LABOISSE Arthur",
+          "club": "0163165 - ARTONNE - SAINT MYON",
+          "category": "0163165 - ARTONNE - SAINT MYON",
+          "session": "U21 Mixte Arc Classique",
+          "target": "3C"
+        },
+        {
+          "name": "LESAFFRE Sarah",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "6C"
+        },
+        {
+          "name": "MADDALON Matheo",
+          "club": "0169173 - COMMUNAY",
+          "category": "0169173 - COMMUNAY",
+          "session": "U15 Mixte Arc Classique",
+          "target": "33B"
+        },
+        {
+          "name": "MALIGE Lino",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U13 Mixte Arc Classique",
+          "target": "41A"
+        },
+        {
+          "name": "MARINHO DALESME Anthony",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "MARTINET Sarah",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "U21 Mixte Arc Classique",
+          "target": "4C"
+        },
+        {
+          "name": "MASCHIO Axel",
+          "club": "0169212 - BRON",
+          "category": "0169212 - BRON",
+          "session": "U13 Mixte Arc Classique",
+          "target": "43C"
+        },
+        {
+          "name": "MATHE Timeo",
+          "club": "0163162 - THIERS",
+          "category": "0163162 - THIERS",
+          "session": "U13 Mixte Arc Classique",
+          "target": "40C"
+        },
+        {
+          "name": "MAZILLE Elsa",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "U15 Mixte Arc Classique",
+          "target": "29A"
+        },
+        {
+          "name": "MAZILLE Thomas",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "U13 Mixte Arc Classique",
+          "target": "38B"
+        },
+        {
+          "name": "MICHEL Mathieu",
+          "club": "0163152 - LEZOUX",
+          "category": "0163152 - LEZOUX",
+          "session": "U13 Mixte Arc Classique",
+          "target": "42A"
+        },
+        {
+          "name": "MICHEL Morgan",
+          "club": "0163152 - LEZOUX",
+          "category": "0163152 - LEZOUX",
+          "session": "U13 Mixte Arc Classique",
+          "target": "45B"
+        },
+        {
+          "name": "MOINE Corentin",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U13 Mixte Arc Classique",
+          "target": "41C"
+        },
+        {
+          "name": "MOLLON Julien",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U21 Mixte Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "MOREL A L'HUISSIER Hippolyte",
+          "club": "0163165 - ARTONNE - SAINT MYON",
+          "category": "0163165 - ARTONNE - SAINT MYON",
+          "session": "U15 Mixte Arc Classique",
+          "target": "30B"
+        },
+        {
+          "name": "NEYRIAL Loan",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U15 Mixte Arc Classique",
+          "target": "30C"
+        },
+        {
+          "name": "NIZET Maxence",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U18 Mixte Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "OURIET Julien",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "17C"
+        },
+        {
+          "name": "PARLANT Clotaire",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U13 Mixte Arc Classique",
+          "target": "38C"
+        },
+        {
+          "name": "PARLANT Romane",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U13 Mixte Arc Classique",
+          "target": "39C"
+        },
+        {
+          "name": "PETIT Paul",
+          "club": "0138088 - GRENOBLE",
+          "category": "0138088 - GRENOBLE",
+          "session": "U21 Mixte Arc à Poulies",
+          "target": "21A"
+        },
+        {
+          "name": "PETIT Paul",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U15 Mixte Arc Classique",
+          "target": "24B"
+        },
+        {
+          "name": "PICARD Clara",
+          "club": "0163165 - ARTONNE - SAINT MYON",
+          "category": "0163165 - ARTONNE - SAINT MYON",
+          "session": "U15 Mixte Arc Classique",
+          "target": "32A"
+        },
+        {
+          "name": "PICARD TOURNILHAC Themys",
+          "club": "0163165 - ARTONNE - SAINT MYON",
+          "category": "0163165 - ARTONNE - SAINT MYON",
+          "session": "U15 Mixte Arc Classique",
+          "target": "22A"
+        },
+        {
+          "name": "PIRES CARANCHINI Leo",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U13 Mixte Arc Classique",
+          "target": "40B"
+        },
+        {
+          "name": "PLANCHE Chloe",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U15 Mixte Arc Classique",
+          "target": "25A"
+        },
+        {
+          "name": "PORTE Marvin",
+          "club": "0271083 - AUTUN",
+          "category": "0271083 - AUTUN",
+          "session": "U15 Mixte Arc Classique",
+          "target": "23C"
+        },
+        {
+          "name": "POTIER Ethan",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U15 Mixte Arc Classique",
+          "target": "33A"
+        },
+        {
+          "name": "PUCH Eva",
+          "club": "0138088 - GRENOBLE",
+          "category": "0138088 - GRENOBLE",
+          "session": "U15 Mixte Arc Classique",
+          "target": "28B"
+        },
+        {
+          "name": "PUISSOCHET Lukas",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "QUINTY Franck",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U13 Mixte Arc Classique",
+          "target": "42B"
+        },
+        {
+          "name": "RAVET Gregory",
+          "club": "0173231 - CHAMBERY",
+          "category": "0173231 - CHAMBERY",
+          "session": "U18 Mixte Arc Classique",
+          "target": "16C"
+        },
+        {
+          "name": "REYNAUD Julie",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "18C"
+        },
+        {
+          "name": "RITOUET Robin",
+          "club": "0142278 - FEURS",
+          "category": "0142278 - FEURS",
+          "session": "U15 Mixte Arc Classique",
+          "target": "28A"
+        },
+        {
+          "name": "ROGER Emilie",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U13 Mixte Arc Classique",
+          "target": "43A"
+        },
+        {
+          "name": "ROGER Hugo",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U18 Mixte Arc Classique",
+          "target": "18B"
+        },
+        {
+          "name": "ROMAIN Hugo",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U15 Mixte Arc Classique",
+          "target": "26C"
+        },
+        {
+          "name": "ROSSIGNOL Mylan",
+          "club": "0163165 - ARTONNE - SAINT MYON",
+          "category": "0163165 - ARTONNE - SAINT MYON",
+          "session": "U13 Mixte Arc Classique",
+          "target": "39A"
+        },
+        {
+          "name": "SAAS Livian",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Mixte Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "SALVAT BERTHOIX Noelyne",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "U15 Mixte Arc Classique",
+          "target": "24A"
+        },
+        {
+          "name": "SICARD Nolan",
+          "club": "0142278 - FEURS",
+          "category": "0142278 - FEURS",
+          "session": "U13 Mixte Arc Classique",
+          "target": "40A"
+        },
+        {
+          "name": "SIVIGNON Gaspard",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U13 Mixte Arc Classique",
+          "target": "39B"
+        },
+        {
+          "name": "SIVIGNON Rose",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U18 Mixte Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "SOPP SOPP Nathan",
+          "club": "0138088 - GRENOBLE",
+          "category": "0138088 - GRENOBLE",
+          "session": "U21 Mixte Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "SORDE Damien",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U21 Mixte Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "SORDE Tanya",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U18 Mixte Arc Classique",
+          "target": "17B"
+        },
+        {
+          "name": "TERRAT Solea",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U18 Mixte Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "THIBAULT Sasha",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "U18 Mixte Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "TRINTIGNAC Coleen",
+          "club": "0289092 - POURRAIN",
+          "category": "0289092 - POURRAIN",
+          "session": "U18 Mixte Arc Classique",
+          "target": "15B"
+        },
+        {
+          "name": "VELGHE Charlie",
+          "club": "0169192 - CHAPONOST",
+          "category": "0169192 - CHAPONOST",
+          "session": "U15 Mixte Arc Classique",
+          "target": "23A"
+        },
+        {
+          "name": "VERBEKE _ BLOT Lou",
+          "club": "0163165 - ARTONNE - SAINT MYON",
+          "category": "0163165 - ARTONNE - SAINT MYON",
+          "session": "U15 Mixte Arc Classique",
+          "target": "27B"
+        },
+        {
+          "name": "VIRLOUVET Hugo",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "U13 Mixte Arc Classique",
+          "target": "45A"
+        },
+        {
+          "name": "VIVEL Zoe",
+          "club": "0169192 - CHAPONOST",
+          "category": "0169192 - CHAPONOST",
+          "session": "U18 Mixte Arc Classique",
+          "target": "12C"
+        },
+        {
+          "name": "VOUTE Gaspard",
+          "club": "0142278 - FEURS",
+          "category": "0142278 - FEURS",
+          "session": "U15 Mixte Arc Classique",
+          "target": "23B"
+        },
+        {
+          "name": "YVON Nathan",
+          "club": "0138088 - GRENOBLE",
+          "category": "0138088 - GRENOBLE",
+          "session": "U18 Mixte Arc Classique",
+          "target": "10B"
+        }
+      ]
     },
     {
       "to_id": "27652",
