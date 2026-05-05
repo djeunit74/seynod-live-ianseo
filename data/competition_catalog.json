@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-05T17:26:17.505010+00:00",
+  "generated_at_utc": "2026-05-05T18:55:16.270185+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -9286,13 +9286,41 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 14,
+      "entries_count": 26,
       "entries": [
+        {
+          "name": "ACQUISTAPACE Olivier",
+          "club": "0239049 - ASNANS",
+          "category": "0239049 - ASNANS",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": ""
+        },
+        {
+          "name": "BAILLON Maxence",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "U13 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "BEGIN Tom",
+          "club": "0221123 - LES ARCHERS SELONGEENS",
+          "category": "0221123 - LES ARCHERS SELONGEENS",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "BELLEMONT Xavier",
+          "club": "0239046 - A.J.T.",
+          "category": "0239046 - A.J.T.",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": ""
+        },
         {
           "name": "BILLOTTET Anthony",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
-          "session": "Arc Classique DEB5 CL - U18 2A+ et U21 à S3 1A - 30m 122cm",
+          "session": "Arc Classique Débutant U18 2A+ et U21 à S3 1A - 30m 122cm",
           "target": ""
         },
         {
@@ -9306,7 +9334,7 @@
           "name": "BOUCHET Clara",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
-          "session": "Arc Classique DEB5 CL - U18 2A+ et U21 à S3 1A - 30m 122cm",
+          "session": "Arc Classique Débutant U18 2A+ et U21 à S3 1A - 30m 122cm",
           "target": ""
         },
         {
@@ -9317,10 +9345,38 @@
           "target": ""
         },
         {
+          "name": "COMOY Sylvie",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "S3 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "DE MATOS Jose",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "S3 Homme Arc à Poulies National",
+          "target": ""
+        },
+        {
+          "name": "DE MIN Nicolas",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "DROUILLOT Clement",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "Arc Classique Débutant U21 à S3 2A+ - 30m 80cm",
+          "target": ""
+        },
+        {
+          "name": "DUBARRE Virginie",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "Arc Classique Débutant U18 2A+ et U21 à S3 1A - 30m 122cm",
           "target": ""
         },
         {
@@ -9341,7 +9397,21 @@
           "name": "GRAPIN-COUCHOT Marylou",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
-          "session": "Arc Classique DEB5 CL - U18 2A+ et U21 à S3 1A - 30m 122cm",
+          "session": "Arc Classique Débutant U18 2A+ et U21 à S3 1A - 30m 122cm",
+          "target": ""
+        },
+        {
+          "name": "GRIBELIN Gabriella",
+          "club": "0221123 - LES ARCHERS SELONGEENS",
+          "category": "0221123 - LES ARCHERS SELONGEENS",
+          "session": "Arc à Poulies Débutant U18 à S3 - 30m 80cm 6 zones",
+          "target": ""
+        },
+        {
+          "name": "JEAN DE DIEU Laura",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S1 Femme Arc Classique National",
           "target": ""
         },
         {
@@ -9359,9 +9429,23 @@
           "target": ""
         },
         {
+          "name": "LYANNAS Nathan",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "U13 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "MONNETTE Michel",
           "club": "0221123 - LES ARCHERS SELONGEENS",
           "category": "0221123 - LES ARCHERS SELONGEENS",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MOUTOT Eric",
+          "club": "0221016 - CHENOVE",
+          "category": "0221016 - CHENOVE",
           "session": "S3 Homme Arc Classique National",
           "target": ""
         },
@@ -9376,7 +9460,7 @@
           "name": "PROCUREUR Mady",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
-          "session": "Arc Nu DEB6 BB - U18 2A+ et U21 à S3 - 30m 122cm",
+          "session": "Arc Nu Débutant U18 2A+ et U21 à S3 - 30m 122cm",
           "target": ""
         },
         {
