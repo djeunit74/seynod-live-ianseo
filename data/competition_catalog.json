@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-05T20:08:59.029147+00:00",
+  "generated_at_utc": "2026-05-05T21:37:02.511322+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 36,
+  "count": 37,
   "tournaments": [
     {
       "to_id": "27550",
@@ -4985,6 +4985,489 @@
           "category": "0892193 - RUEIL MALMAISON STAR",
           "session": "S2 Femme Arc Classique",
           "target": "11B"
+        }
+      ]
+    },
+    {
+      "to_id": "28127",
+      "year": "2026",
+      "name": "1ére MANCHE D2 GROUPE 4",
+      "organizer": "Les archers de Boé",
+      "date_text": "9-10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28127",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28127/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28127/IC.php",
+      "entries_count": 67,
+      "entries": [
+        {
+          "name": "ADET Julien",
+          "club": "1272091 - LAIGNE SAINT GERVAIS",
+          "category": "1272091 - LAIGNE SAINT GERVAIS",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "23B"
+        },
+        {
+          "name": "ALLAIN Freddy",
+          "club": "1244027 - MONTOIR DE BRETAGNE",
+          "category": "1244027 - MONTOIR DE BRETAGNE",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "19C"
+        },
+        {
+          "name": "BABRON Diane",
+          "club": "1244044 - NANTES",
+          "category": "1244044 - NANTES",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "6C"
+        },
+        {
+          "name": "BARRAT Sophie",
+          "club": "1033113 - SAINT MEDARD EN JALLES",
+          "category": "1033113 - SAINT MEDARD EN JALLES",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "3C"
+        },
+        {
+          "name": "BAUDON Maelys",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Arc Classique U21 Femmes",
+          "target": "12A"
+        },
+        {
+          "name": "BECHIR Sylvain",
+          "club": "1064170 - LESCAR",
+          "category": "1064170 - LESCAR",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "13C"
+        },
+        {
+          "name": "BEGAUD Chloe",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "8B"
+        },
+        {
+          "name": "BLANCHARD Johanne",
+          "club": "1244044 - NANTES",
+          "category": "1244044 - NANTES",
+          "session": "Arc Classique U21 Femmes",
+          "target": "5C"
+        },
+        {
+          "name": "BORDENAVE Marie",
+          "club": "1033113 - SAINT MEDARD EN JALLES",
+          "category": "1033113 - SAINT MEDARD EN JALLES",
+          "session": "Arc Classique U21 Femmes",
+          "target": "4C"
+        },
+        {
+          "name": "BOUDIGUES Florence",
+          "club": "1040120 - BISCARROSSE",
+          "category": "1040120 - BISCARROSSE",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "6A"
+        },
+        {
+          "name": "BOURGET Solene",
+          "club": "1244044 - NANTES",
+          "category": "1244044 - NANTES",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "7C"
+        },
+        {
+          "name": "CABARET Fabien",
+          "club": "1272091 - LAIGNE SAINT GERVAIS",
+          "category": "1272091 - LAIGNE SAINT GERVAIS",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "24B"
+        },
+        {
+          "name": "CHALET Loane",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "7B"
+        },
+        {
+          "name": "CHOLLET Cyril",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "22A"
+        },
+        {
+          "name": "DAVID Louis",
+          "club": "1272091 - LAIGNE SAINT GERVAIS",
+          "category": "1272091 - LAIGNE SAINT GERVAIS",
+          "session": "Arc Classique Senior 3 Hommes",
+          "target": "22B"
+        },
+        {
+          "name": "DEFEVRE Leo",
+          "club": "1086189 - SMARVES",
+          "category": "1086189 - SMARVES",
+          "session": "Arc Classique U21 Hommes",
+          "target": "14A"
+        },
+        {
+          "name": "DEFEVRE Lucas",
+          "club": "1086189 - SMARVES",
+          "category": "1086189 - SMARVES",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "15A"
+        },
+        {
+          "name": "DELLANDREA Celine",
+          "club": "1040120 - BISCARROSSE",
+          "category": "1040120 - BISCARROSSE",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "7A"
+        },
+        {
+          "name": "DUBOYS DE LAVIGERIE Aurore",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "11A"
+        },
+        {
+          "name": "DUPUY Matthieu",
+          "club": "1087203 - LIMOGES-COUZEIX",
+          "category": "1087203 - LIMOGES-COUZEIX",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "15B"
+        },
+        {
+          "name": "ESPIAUBE Laetitia",
+          "club": "1040120 - BISCARROSSE",
+          "category": "1040120 - BISCARROSSE",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "5A"
+        },
+        {
+          "name": "FILHASTRE Lucie",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U21 Femmes",
+          "target": "1A"
+        },
+        {
+          "name": "FLICK Francois",
+          "club": "1064170 - LESCAR",
+          "category": "1064170 - LESCAR",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "14C"
+        },
+        {
+          "name": "FLORENTIN Stephane",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "24A"
+        },
+        {
+          "name": "FONSECA Lea",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "11B"
+        },
+        {
+          "name": "FRICOTEAUX Germain",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "21A"
+        },
+        {
+          "name": "GADAUD Xavier",
+          "club": "1087203 - LIMOGES-COUZEIX",
+          "category": "1087203 - LIMOGES-COUZEIX",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "16B"
+        },
+        {
+          "name": "GIBERT Eloise",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "9B"
+        },
+        {
+          "name": "GIBOIRE Arthur",
+          "club": "0437083 - ST AVERTIN",
+          "category": "0437083 - ST AVERTIN",
+          "session": "Arc Classique U21 Hommes",
+          "target": "18B"
+        },
+        {
+          "name": "GOUBEAU Franck",
+          "club": "1086189 - SMARVES",
+          "category": "1086189 - SMARVES",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "13A"
+        },
+        {
+          "name": "GUEDJ Aurelie",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "9A"
+        },
+        {
+          "name": "HENAULT Alexandre",
+          "club": "0437083 - ST AVERTIN",
+          "category": "0437083 - ST AVERTIN",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "20B"
+        },
+        {
+          "name": "HOO Maxime",
+          "club": "1064170 - LESCAR",
+          "category": "1064170 - LESCAR",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "15C"
+        },
+        {
+          "name": "INGRAND Lily",
+          "club": "1079182 - ARDIN",
+          "category": "1079182 - ARDIN",
+          "session": "Arc Classique U21 Femmes",
+          "target": "1B"
+        },
+        {
+          "name": "KERLEAU Clarisse",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "6B"
+        },
+        {
+          "name": "LABARRE Davia",
+          "club": "1244003 - THOUARE SUR LOIRE",
+          "category": "1244003 - THOUARE SUR LOIRE",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "22C"
+        },
+        {
+          "name": "LACOMBE Caroline",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "3A"
+        },
+        {
+          "name": "LAFORGUE Hugo",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "19A"
+        },
+        {
+          "name": "LAFORGUE Yvon",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U21 Hommes",
+          "target": "17A"
+        },
+        {
+          "name": "LAGRENADE Agathe",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "5B"
+        },
+        {
+          "name": "LALANNE Guillaume",
+          "club": "1087203 - LIMOGES-COUZEIX",
+          "category": "1087203 - LIMOGES-COUZEIX",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "14B"
+        },
+        {
+          "name": "LELLOUCHE Maxime",
+          "club": "0437083 - ST AVERTIN",
+          "category": "0437083 - ST AVERTIN",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "17B"
+        },
+        {
+          "name": "LEPINAY Justine",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "9C"
+        },
+        {
+          "name": "LEPINAY Lise",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "10A"
+        },
+        {
+          "name": "LOPEZ Oscar",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U21 Hommes",
+          "target": "18A"
+        },
+        {
+          "name": "MASSET Sandrine",
+          "club": "1040120 - BISCARROSSE",
+          "category": "1040120 - BISCARROSSE",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "8A"
+        },
+        {
+          "name": "MILET Ludovic",
+          "club": "1272091 - LAIGNE SAINT GERVAIS",
+          "category": "1272091 - LAIGNE SAINT GERVAIS",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "21B"
+        },
+        {
+          "name": "MONNEREAU Edwige",
+          "club": "1079182 - ARDIN",
+          "category": "1079182 - ARDIN",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "4B"
+        },
+        {
+          "name": "MOREAU Aigline",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U21 Femmes",
+          "target": "4A"
+        },
+        {
+          "name": "OUAIRY Dylan",
+          "club": "1244027 - MONTOIR DE BRETAGNE",
+          "category": "1244027 - MONTOIR DE BRETAGNE",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "18C"
+        },
+        {
+          "name": "PACE Sacha",
+          "club": "1064170 - LESCAR",
+          "category": "1064170 - LESCAR",
+          "session": "Arc Classique U21 Hommes",
+          "target": "16C"
+        },
+        {
+          "name": "PANDLE Sabine",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "S2 Femme Arc Classique",
+          "target": "12B"
+        },
+        {
+          "name": "PATON Clement",
+          "club": "0437083 - ST AVERTIN",
+          "category": "0437083 - ST AVERTIN",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "19B"
+        },
+        {
+          "name": "PELOQUIN Alexis",
+          "club": "1086189 - SMARVES",
+          "category": "1086189 - SMARVES",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "16A"
+        },
+        {
+          "name": "PERROT Joel",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "23A"
+        },
+        {
+          "name": "PICART Adrien",
+          "club": "1086189 - SMARVES",
+          "category": "1086189 - SMARVES",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "21C"
+        },
+        {
+          "name": "POTHIER Anaelle",
+          "club": "1244044 - NANTES",
+          "category": "1244044 - NANTES",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "8C"
+        },
+        {
+          "name": "PRIAROLLO Alexane",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U21 Femmes",
+          "target": "2A"
+        },
+        {
+          "name": "PROUILLAC Corinne",
+          "club": "1033113 - SAINT MEDARD EN JALLES",
+          "category": "1033113 - SAINT MEDARD EN JALLES",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "1C"
+        },
+        {
+          "name": "QUESLIER Romain",
+          "club": "1087203 - LIMOGES-COUZEIX",
+          "category": "1087203 - LIMOGES-COUZEIX",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "13B"
+        },
+        {
+          "name": "ROBINSON Meghan",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "10B"
+        },
+        {
+          "name": "ROUMEGAS Michael",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "20A"
+        },
+        {
+          "name": "SAUBIETTE Alan",
+          "club": "1244027 - MONTOIR DE BRETAGNE",
+          "category": "1244027 - MONTOIR DE BRETAGNE",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "17C"
+        },
+        {
+          "name": "SAUBIETTE Olivier",
+          "club": "1244027 - MONTOIR DE BRETAGNE",
+          "category": "1244027 - MONTOIR DE BRETAGNE",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "20C"
+        },
+        {
+          "name": "TISSEROND Fabienne",
+          "club": "1079182 - ARDIN",
+          "category": "1079182 - ARDIN",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "2B"
+        },
+        {
+          "name": "TISSEROND Juliette",
+          "club": "1079182 - ARDIN",
+          "category": "1079182 - ARDIN",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "3B"
+        },
+        {
+          "name": "TONDEUR Maeva",
+          "club": "1033113 - SAINT MEDARD EN JALLES",
+          "category": "1033113 - SAINT MEDARD EN JALLES",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "2C"
         }
       ]
     },
