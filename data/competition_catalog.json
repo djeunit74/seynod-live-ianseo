@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-05T08:11:37.985949+00:00",
+  "generated_at_utc": "2026-05-05T10:18:45.493645+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -535,7 +535,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27967",
       "ena_url": "https://www.ianseo.net/TourData/2026/27967/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27967/IC.php",
-      "entries_count": 117,
+      "entries_count": 122,
       "entries": [
         {
           "name": "ADIER Manon",
@@ -627,6 +627,13 @@
           "category": "0163154 - CHAMALIERES",
           "session": "U15 Mixte Arc Classique",
           "target": "31C"
+        },
+        {
+          "name": "BOUCHET Camille",
+          "club": "0107039 - ANNONAY",
+          "category": "0107039 - ANNONAY",
+          "session": "U15 Mixte Arc Classique",
+          "target": "33C"
         },
         {
           "name": "BOURGUIGNON Benoit",
@@ -797,6 +804,13 @@
           "target": "10C"
         },
         {
+          "name": "DOS SANTOS Yasin",
+          "club": "0107039 - ANNONAY",
+          "category": "0107039 - ANNONAY",
+          "session": "U15 Mixte Arc Classique",
+          "target": "34A"
+        },
+        {
           "name": "DUMAND Anais",
           "club": "0270074 - MARNAY",
           "category": "0270074 - MARNAY",
@@ -825,6 +839,13 @@
           "target": "24C"
         },
         {
+          "name": "EYNARD DUPINAY Maelys",
+          "club": "0107039 - ANNONAY",
+          "category": "0107039 - ANNONAY",
+          "session": "U15 Mixte Arc Classique",
+          "target": "32C"
+        },
+        {
           "name": "FARESSE PONS Baptiste",
           "club": "0169178 - BRIGNAIS",
           "category": "0169178 - BRIGNAIS",
@@ -844,6 +865,13 @@
           "category": "0163168 - ST BEAUZIRE",
           "session": "U13 Mixte Arc Classique",
           "target": "46A"
+        },
+        {
+          "name": "FAURY-LOCATELLI Sasha",
+          "club": "0107039 - ANNONAY",
+          "category": "0107039 - ANNONAY",
+          "session": "U15 Mixte Arc Classique",
+          "target": "25C"
         },
         {
           "name": "FERREIRA Lea",
@@ -955,7 +983,7 @@
           "club": "0142128 - IZIEUX",
           "category": "0142128 - IZIEUX",
           "session": "U15 Mixte Arc Classique",
-          "target": "25C"
+          "target": "34B"
         },
         {
           "name": "JAPIOT Yoan",
@@ -998,6 +1026,13 @@
           "category": "0143137 - BEAUZAC",
           "session": "U13 Mixte Arc Classique",
           "target": "41A"
+        },
+        {
+          "name": "MARCO BAHRI Esteban",
+          "club": "0138088 - GRENOBLE",
+          "category": "0138088 - GRENOBLE",
+          "session": "U13 Mixte Arc Classique",
+          "target": "45C"
         },
         {
           "name": "MARINHO DALESME Anthony",
