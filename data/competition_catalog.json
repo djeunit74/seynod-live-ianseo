@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-06T17:42:53.753363+00:00",
+  "generated_at_utc": "2026-05-06T19:47:56.450723+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1262,7 +1262,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27598",
       "ena_url": "https://www.ianseo.net/TourData/2026/27598/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27598/IC.php",
-      "entries_count": 80,
+      "entries_count": 84,
       "entries": [
         {
           "name": "BASTIN Penelope",
@@ -1461,6 +1461,13 @@
           "target": "2B"
         },
         {
+          "name": "DECHATRE Alexandre",
+          "club": "0760208 - RIEUX",
+          "category": "0760208 - RIEUX",
+          "session": "S1 Homme Arc Classique National",
+          "target": "9C"
+        },
+        {
           "name": "DECHERF Alexandre",
           "club": "0760214 - ESTREES ST DENIS",
           "category": "0760214 - ESTREES ST DENIS",
@@ -1514,7 +1521,7 @@
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
           "session": "Scratch Femme Arc Nu National",
-          "target": "6A"
+          "target": "9D"
         },
         {
           "name": "FOULON JOLY Ninon",
@@ -1552,11 +1559,25 @@
           "target": "20B"
         },
         {
+          "name": "GAURIN Kevin",
+          "club": "0760170 - NOYON",
+          "category": "0760170 - NOYON",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "6A"
+        },
+        {
           "name": "GAZIBAR Veronica",
           "club": "0780308 - SAINS EN AMIENOIS",
           "category": "0780308 - SAINS EN AMIENOIS",
           "session": "S1 Femme Arc Classique National",
           "target": "15A"
+        },
+        {
+          "name": "HERLICQ Sam",
+          "club": "0760171 - COMPIEGNE",
+          "category": "0760171 - COMPIEGNE",
+          "session": "S1 Homme Arc Classique",
+          "target": "15B"
         },
         {
           "name": "HORDE Guillaume",
@@ -1598,7 +1619,7 @@
           "club": "0780311 - ERONDELLE",
           "category": "0780311 - ERONDELLE",
           "session": "S2 Femme Arc Classique National",
-          "target": "12B"
+          "target": "11D"
         },
         {
           "name": "LAMOUREUX Cathy",
@@ -1627,6 +1648,13 @@
           "category": "0780311 - ERONDELLE",
           "session": "Scratch Homme Arc Nu National",
           "target": "9D"
+        },
+        {
+          "name": "MAQUET Noah",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "U18 Homme Arc Classique National",
+          "target": "12B"
         },
         {
           "name": "MELIN Benoit",
@@ -2304,7 +2332,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27200",
       "ena_url": "https://www.ianseo.net/TourData/2026/27200/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27200/IC.php",
-      "entries_count": 177,
+      "entries_count": 175,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -3376,20 +3404,6 @@
           "category": "0893219 - CLICHY SOUS BOIS",
           "session": "S1 Homme Arc Classique",
           "target": "1D"
-        },
-        {
-          "name": "SELLAOUTI Anes",
-          "club": "0893219 - CLICHY SOUS BOIS",
-          "category": "0893219 - CLICHY SOUS BOIS",
-          "session": "U21 Homme Arc Classique",
-          "target": "2B"
-        },
-        {
-          "name": "SELLAOUTI Ihsen",
-          "club": "0893219 - CLICHY SOUS BOIS",
-          "category": "0893219 - CLICHY SOUS BOIS",
-          "session": "S2 Homme Arc Classique",
-          "target": "1B"
         },
         {
           "name": "SERGENT Pascal",
