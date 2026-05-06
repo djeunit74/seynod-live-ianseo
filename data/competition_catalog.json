@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-06T13:14:18.174552+00:00",
+  "generated_at_utc": "2026-05-06T15:42:11.637764+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2293,19 +2293,6 @@
           "target": "12C"
         }
       ]
-    },
-    {
-      "to_id": "28125",
-      "year": "2026",
-      "name": "CONCOURS EXTERIEUR LA FLECHE",
-      "organizer": "COMPAGNIE D'ARC DE LA FLECHE",
-      "date_text": "10 May",
-      "end_date": "2026-05-10",
-      "details_url": "https://www.ianseo.net/Details.php?toId=28125",
-      "ena_url": "https://www.ianseo.net/TourData/2026/28125/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/28125/IC.php",
-      "entries_count": 0,
-      "entries": []
     },
     {
       "to_id": "27200",
@@ -8679,6 +8666,19 @@
           "target": "3A"
         }
       ]
+    },
+    {
+      "to_id": "28125",
+      "year": "2026",
+      "name": "CONCOURS EXTERIEUR LA FLECHE",
+      "organizer": "COMPAGNIE D'ARC DE LA FLECHE",
+      "date_text": "31 May",
+      "end_date": "2026-05-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28125",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28125/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28125/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27222",
