@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-07T12:18:01.420321+00:00",
+  "generated_at_utc": "2026-05-07T15:13:52.625888+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 37,
+  "count": 39,
   "tournaments": [
     {
       "to_id": "27967",
@@ -2323,6 +2323,19 @@
       ]
     },
     {
+      "to_id": "28185",
+      "year": "2026",
+      "name": "1iere manche D2 groupe 4 2026 matches",
+      "organizer": "Les archers de Boé",
+      "date_text": "10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28185",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28185/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28185/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27200",
       "year": "2026",
       "name": "TAE 09 & 10 2026 Jablines",
@@ -4494,7 +4507,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28127",
       "ena_url": "https://www.ianseo.net/TourData/2026/28127/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28127/IC.php",
-      "entries_count": 67,
+      "entries_count": 68,
       "entries": [
         {
           "name": "ADET Julien",
@@ -4621,6 +4634,13 @@
           "category": "1040120 - BISCARROSSE",
           "session": "Arc Classique Senior 2 Femmes",
           "target": "7A"
+        },
+        {
+          "name": "DESPERIER Solenn",
+          "club": "1244027 - MONTOIR DE BRETAGNE",
+          "category": "1244027 - MONTOIR DE BRETAGNE",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "10C"
         },
         {
           "name": "DUBOYS DE LAVIGERIE Aurore",
@@ -4966,6 +4986,19 @@
           "target": "2C"
         }
       ]
+    },
+    {
+      "to_id": "28187",
+      "year": "2026",
+      "name": "DIVISION NATIONALE 2 MANCHE 1 GROUPE 3",
+      "organizer": "ARC CLUB DE MANDUEL",
+      "date_text": "9-10 May",
+      "end_date": "2026-05-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28187",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28187/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28187/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27759",
