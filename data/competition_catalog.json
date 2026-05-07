@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-07T07:44:13.604705+00:00",
+  "generated_at_utc": "2026-05-07T10:25:46.646182+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -6727,7 +6727,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 62,
+      "entries_count": 63,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -7141,6 +7141,13 @@
           "category": "1131093 - BALMA",
           "session": "U13 Homme Arc Classique",
           "target": "2A"
+        },
+        {
+          "name": "VALAT Chloe",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Femme Arc Classique",
+          "target": "10B"
         },
         {
           "name": "VASSAL Olivier",
