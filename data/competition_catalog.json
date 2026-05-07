@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-07T20:48:45.307356+00:00",
+  "generated_at_utc": "2026-05-07T22:00:16.597113+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -9633,7 +9633,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 26,
+      "entries_count": 29,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -9696,6 +9696,13 @@
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "S3 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "CUCCIA Cedric",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S2 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -9811,10 +9818,24 @@
           "target": ""
         },
         {
+          "name": "RAYMOND Michel",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "ROUSSEL Claire",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "TERMELET Bernard",
+          "club": "0221006 - IS SUR TILLE",
+          "category": "0221006 - IS SUR TILLE",
+          "session": "Scratch Homme Arc Nu National",
           "target": ""
         }
       ]
