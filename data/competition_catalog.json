@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-08T18:11:49.713125+00:00",
+  "generated_at_utc": "2026-05-08T19:55:59.502920+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -7335,7 +7335,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 63,
+      "entries_count": 64,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -7464,6 +7464,13 @@
           "target": "2B"
         },
         {
+          "name": "CLERC Pierre",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "10D"
+        },
+        {
           "name": "COURTY Simon",
           "club": "1111017 - CASTELNAUDARY",
           "category": "1111017 - CASTELNAUDARY",
@@ -7531,7 +7538,7 @@
           "club": "1131088 - CUGNAUX",
           "category": "1131088 - CUGNAUX",
           "session": "S3 Homme Arc Classique National",
-          "target": "10A"
+          "target": "13B"
         },
         {
           "name": "DUPONT Mathieu",
@@ -7727,7 +7734,14 @@
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
           "session": "S2 Homme Arc Classique National",
-          "target": "10B"
+          "target": "13D"
+        },
+        {
+          "name": "STACEY Michele",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S3 Femme Arc à Poulies",
+          "target": "10A"
         },
         {
           "name": "STACEY Michele",
@@ -7735,13 +7749,6 @@
           "category": "1131073 - FRONTON",
           "session": "Arc à Poulies Senior 3 Femmes National",
           "target": "11C"
-        },
-        {
-          "name": "STACEY Michele",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "S3 Femme Arc à Poulies",
-          "target": "9A"
         },
         {
           "name": "TURBE HAN Antoine",
@@ -7762,7 +7769,7 @@
           "club": "1131088 - CUGNAUX",
           "category": "1131088 - CUGNAUX",
           "session": "S3 Homme Arc Classique National",
-          "target": "10C"
+          "target": "11D"
         },
         {
           "name": "VOLCKAERT Alexandre",
