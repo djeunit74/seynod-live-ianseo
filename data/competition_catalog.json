@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-08T13:50:51.661692+00:00",
+  "generated_at_utc": "2026-05-08T15:23:39.083064+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 38,
+  "count": 39,
   "tournaments": [
     {
       "to_id": "27598",
@@ -8857,6 +8857,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28125",
       "ena_url": "https://www.ianseo.net/TourData/2026/28125/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28125/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28177",
+      "year": "2026",
+      "name": "Division Régionale Jeunes IDF - Etape 2",
+      "organizer": "U.S. Villejuif Tir à l'arc",
+      "date_text": "31 May",
+      "end_date": "2026-05-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28177",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28177/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28177/IC.php",
       "entries_count": 0,
       "entries": []
     },
