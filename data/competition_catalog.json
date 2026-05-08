@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-08T15:23:39.083064+00:00",
+  "generated_at_utc": "2026-05-08T16:52:47.811368+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1115,14 +1115,14 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27759",
       "ena_url": "https://www.ianseo.net/TourData/2026/27759/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27759/IC.php",
-      "entries_count": 187,
+      "entries_count": 189,
       "entries": [
         {
           "name": "AKLI Olivier",
           "club": "0878134 - VILLEPREUX",
           "category": "0878134 - VILLEPREUX",
           "session": "S3 Homme Arc Classique",
-          "target": "2C"
+          "target": "2B"
         },
         {
           "name": "ALBA Anais",
@@ -1130,6 +1130,13 @@
           "category": "0878134 - VILLEPREUX",
           "session": "S1 Femme Arc Classique",
           "target": "3D"
+        },
+        {
+          "name": "AMRAOUI Rabah",
+          "club": "0878134 - VILLEPREUX",
+          "category": "0878134 - VILLEPREUX",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "7B"
         },
         {
           "name": "BABOULENE Henri",
@@ -1234,7 +1241,7 @@
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
           "session": "S2 Homme Arc Classique National",
-          "target": "6D"
+          "target": "7C"
         },
         {
           "name": "BOIG Philippe",
@@ -1261,14 +1268,14 @@
           "name": "BOTTARO Aline",
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
-          "session": "S2 Femme Arc Classique National",
+          "session": "Arc Classique Senior 2 Femmes National",
           "target": "10B"
         },
         {
           "name": "BOTTARO Aline",
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
-          "session": "Arc Classique Senior 2 Femmes National",
+          "session": "S2 Femme Arc Classique National",
           "target": "9B"
         },
         {
@@ -1332,7 +1339,7 @@
           "club": "0878127 - ST GERMAIN EN LAYE",
           "category": "0878127 - ST GERMAIN EN LAYE",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "7A"
         },
         {
           "name": "CHALUMEAU Damien",
@@ -1346,7 +1353,7 @@
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
           "session": "S3 Homme Arc Classique National",
-          "target": "6C"
+          "target": "7A"
         },
         {
           "name": "CHAMBRIN Melanie",
@@ -1429,14 +1436,14 @@
           "name": "COMFAITS Thierry",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "S2 Homme Arc Classique",
+          "session": "Arc Classique Senior 2 Hommes",
           "target": "4B"
         },
         {
           "name": "COMFAITS Thierry",
           "club": "0878143 - ELANCOURT",
           "category": "0878143 - ELANCOURT",
-          "session": "Arc Classique Senior 2 Hommes",
+          "session": "S2 Homme Arc Classique",
           "target": "4D"
         },
         {
@@ -1500,20 +1507,20 @@
           "club": "0878110 - MAREIL MARLY",
           "category": "0878110 - MAREIL MARLY",
           "session": "S3 Homme Arc Classique",
-          "target": "2A"
-        },
-        {
-          "name": "DELPIERRE Isabelle",
-          "club": "0878121 - BAZAINVILLE",
-          "category": "0878121 - BAZAINVILLE",
-          "session": "Arc Classique Senior 2 Femmes",
-          "target": "3B"
+          "target": "2D"
         },
         {
           "name": "DELPIERRE Isabelle",
           "club": "0878121 - BAZAINVILLE",
           "category": "0878121 - BAZAINVILLE",
           "session": "S2 Femme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "DELPIERRE Isabelle",
+          "club": "0878121 - BAZAINVILLE",
+          "category": "0878121 - BAZAINVILLE",
+          "session": "Arc Classique Senior 2 Femmes",
           "target": "4D"
         },
         {
@@ -1543,6 +1550,13 @@
           "category": "0892205 - LE PLESSIS ROBINSON",
           "session": "U21 Femme Arc Classique National",
           "target": "8C"
+        },
+        {
+          "name": "DEVOITIN Yoan",
+          "club": "0878134 - VILLEPREUX",
+          "category": "0878134 - VILLEPREUX",
+          "session": "U21 Homme Arc à Poulies National",
+          "target": "10D"
         },
         {
           "name": "DEVOITIN Yoan",
@@ -1744,14 +1758,14 @@
           "name": "GUERIN Julien",
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
-          "session": "S1 Homme Arc Classique",
+          "session": "Arc Classique Senior 1 Hommes",
           "target": "4A"
         },
         {
           "name": "GUERIN Julien",
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
-          "session": "Arc Classique Senior 1 Hommes",
+          "session": "S1 Homme Arc Classique",
           "target": "5D"
         },
         {
@@ -1801,7 +1815,7 @@
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "6D"
         },
         {
           "name": "HOLTZ Dominique",
@@ -1814,14 +1828,14 @@
           "name": "HUON Guy",
           "club": "0878119 - AUBERGENVILLE",
           "category": "0878119 - AUBERGENVILLE",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "1A"
         },
         {
           "name": "HUON Guy",
           "club": "0878119 - AUBERGENVILLE",
           "category": "0878119 - AUBERGENVILLE",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "1C"
         },
         {
@@ -1940,14 +1954,14 @@
           "name": "LHOUTELLIER Laura",
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
-          "session": "Arc Classique Senior 1 Femmes",
+          "session": "S1 Femme Arc Classique",
           "target": "3B"
         },
         {
           "name": "LHOUTELLIER Laura",
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
-          "session": "S1 Femme Arc Classique",
+          "session": "Arc Classique Senior 1 Femmes",
           "target": "3D"
         },
         {
@@ -1968,14 +1982,14 @@
           "name": "MARC Patricia",
           "club": "0878093 - VERSAILLES",
           "category": "0878093 - VERSAILLES",
-          "session": "S3 Femme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Femmes",
           "target": "1C"
         },
         {
           "name": "MARC Patricia",
           "club": "0878093 - VERSAILLES",
           "category": "0878093 - VERSAILLES",
-          "session": "Arc à Poulies Senior 3 Femmes",
+          "session": "S3 Femme Arc à Poulies",
           "target": "1D"
         },
         {
@@ -1997,14 +2011,14 @@
           "club": "0895289 - PONTOISE",
           "category": "0895289 - PONTOISE",
           "session": "S1 Homme Arc à Poulies National",
-          "target": "7A"
+          "target": "6C"
         },
         {
           "name": "MOREAU Sylvie",
           "club": "0895289 - PONTOISE",
           "category": "0895289 - PONTOISE",
           "session": "S3 Femme Arc à Poulies National",
-          "target": "7C"
+          "target": "6D"
         },
         {
           "name": "MORZADEC Mireille",
@@ -2067,7 +2081,7 @@
           "club": "0878111 - ACHERES",
           "category": "0878111 - ACHERES",
           "session": "U18 Homme Arc Classique",
-          "target": "2C"
+          "target": "2B"
         },
         {
           "name": "OSTROWSKI Nicolas",
@@ -2095,7 +2109,7 @@
           "club": "0892190 - NANTERRE",
           "category": "0892190 - NANTERRE",
           "session": "S3 Femme Arc à Poulies",
-          "target": "1B"
+          "target": "1C"
         },
         {
           "name": "PERSONNAZ Catherine",
@@ -2213,14 +2227,14 @@
           "name": "RIPAUX Pascal",
           "club": "0878113 - CONFLANS SAINTE-HONORINE",
           "category": "0878113 - CONFLANS SAINTE-HONORINE",
-          "session": "S2 Homme Arc Classique National",
+          "session": "Arc Classique Senior 2 Hommes National",
           "target": "10D"
         },
         {
           "name": "RIPAUX Pascal",
           "club": "0878113 - CONFLANS SAINTE-HONORINE",
           "category": "0878113 - CONFLANS SAINTE-HONORINE",
-          "session": "Arc Classique Senior 2 Hommes National",
+          "session": "S2 Homme Arc Classique National",
           "target": "7D"
         },
         {
@@ -2270,7 +2284,7 @@
           "club": "0892205 - LE PLESSIS ROBINSON",
           "category": "0892205 - LE PLESSIS ROBINSON",
           "session": "S2 Femme Arc à Poulies",
-          "target": "1C"
+          "target": "1B"
         },
         {
           "name": "SALESSE Jean-Bernard",
@@ -2297,14 +2311,14 @@
           "name": "SEGONDI Odile",
           "club": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
           "category": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
-          "session": "Arc Classique Senior 3 Femmes",
+          "session": "S3 Femme Arc Classique",
           "target": "2A"
         },
         {
           "name": "SEGONDI Odile",
           "club": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
           "category": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
-          "session": "S3 Femme Arc Classique",
+          "session": "Arc Classique Senior 3 Femmes",
           "target": "2C"
         },
         {
@@ -2367,15 +2381,15 @@
           "name": "VERNEUIL Marc",
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
-          "session": "Arc Classique Senior 3 Hommes",
-          "target": "2B"
+          "session": "S3 Homme Arc Classique",
+          "target": "2C"
         },
         {
           "name": "VERNEUIL Marc",
           "club": "0878114 - BUC",
           "category": "0878114 - BUC",
-          "session": "S3 Homme Arc Classique",
-          "target": "2C"
+          "session": "Arc Classique Senior 3 Hommes",
+          "target": "2D"
         },
         {
           "name": "VERNEUIL Marc",
@@ -2995,7 +3009,7 @@
           "name": "ALENCON Roshan",
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
-          "session": "U15 Homme Arc Classique National",
+          "session": "U15 Homme Arc Classique",
           "target": "11B"
         },
         {
@@ -3262,7 +3276,7 @@
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
           "session": "S2 Femme Arc Classique National",
-          "target": "11A"
+          "target": "9C"
         },
         {
           "name": "DOUCEDE Emy",
@@ -3531,6 +3545,13 @@
           "target": "1B"
         },
         {
+          "name": "JOURDAIN Cloe",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "U21 Femme Arc Classique",
+          "target": "2D"
+        },
+        {
           "name": "KALUZNY Christophe",
           "club": "0894263 - VILLEJUIF",
           "category": "0894263 - VILLEJUIF",
@@ -3583,7 +3604,7 @@
           "name": "LAMBERT Anne-Gaelle",
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
-          "session": "U15 Femme Arc Classique National",
+          "session": "U15 Femme Arc Classique",
           "target": "11A"
         },
         {
@@ -4105,13 +4126,6 @@
           "target": "4B"
         },
         {
-          "name": "VILFEU Emmanuel",
-          "club": "0877040 - SAINT GERMAIN SUR MORIN",
-          "category": "0877040 - SAINT GERMAIN SUR MORIN",
-          "session": "S2 Homme Arc Classique",
-          "target": "2D"
-        },
-        {
           "name": "VILLANUEVA Chloe",
           "club": "0894243 - ST GEORGES LE PERREUX",
           "category": "0894243 - ST GEORGES LE PERREUX",
@@ -4164,8 +4178,8 @@
           "name": "ZERROUKI Horiya",
           "club": "0893218 - ROMAINVILLE",
           "category": "0893218 - ROMAINVILLE",
-          "session": "S2 Femme Arc Classique",
-          "target": "1A"
+          "session": "S2 Femme Arc Classique National",
+          "target": "11A"
         },
         {
           "name": "ZERROUKI Horiya",
@@ -5599,8 +5613,457 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28187",
       "ena_url": "https://www.ianseo.net/TourData/2026/28187/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28187/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 64,
+      "entries": [
+        {
+          "name": "ARENAS Mia",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "U21 Femme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "ARMANINI Manon",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "U21 Femme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "ATCHY Kinjala",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S1 Femme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "AUDON Kevin",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S2 Homme Arc Classique",
+          "target": "19B"
+        },
+        {
+          "name": "BAILLION Laure",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "S1 Femme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "BEDROSSIAN Bryan",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "S1 Homme Arc Classique",
+          "target": "20C"
+        },
+        {
+          "name": "BERRUYER Eric",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S2 Homme Arc Classique",
+          "target": "21A"
+        },
+        {
+          "name": "BON-RANC Andrea",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U21 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "BOURGES Victor",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "18A"
+        },
+        {
+          "name": "CALATAYUD Amelie",
+          "club": "1130065 - MANDUEL",
+          "category": "1130065 - MANDUEL",
+          "session": "S1 Femme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "CANAGUIER Fanny",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U21 Femme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "CHARET Corentin",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U21 Homme Arc Classique",
+          "target": "14B"
+        },
+        {
+          "name": "CRUSSON Mathieu",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "16A"
+        },
+        {
+          "name": "CUMINAL Thibault",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "S1 Homme Arc Classique",
+          "target": "16C"
+        },
+        {
+          "name": "DE RUDNICKI Keona",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U21 Femme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "DEMOULIN Ulysse",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U21 Homme Arc Classique",
+          "target": "12B"
+        },
+        {
+          "name": "DENOYELLE Fabien",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "S1 Homme Arc Classique",
+          "target": "18C"
+        },
+        {
+          "name": "DERCAMP Amelie",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S1 Femme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "DESBOS Mathieu",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Homme Arc Classique",
+          "target": "22A"
+        },
+        {
+          "name": "DESIRY Nora",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "S1 Femme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "DESVIGNES Kevin",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S1 Homme Arc Classique",
+          "target": "20B"
+        },
+        {
+          "name": "DIAZ Kevin",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Homme Arc Classique",
+          "target": "15A"
+        },
+        {
+          "name": "DUCHENE Michelle",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "S2 Femme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "DUPIN Marion",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "S2 Femme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "FERDINAND Melina",
+          "club": "1131093 - BALMA",
+          "category": "1131093 - BALMA",
+          "session": "S1 Femme Arc Classique",
+          "target": "3C"
+        },
+        {
+          "name": "FILIPOWICZ Alix",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S1 Femme Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "FOCKE DE BEAUCOURT Soren",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "U21 Homme Arc Classique",
+          "target": "12C"
+        },
+        {
+          "name": "FOUILLAND Nicolas",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "19C"
+        },
+        {
+          "name": "FRAISSE Quentin",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S1 Homme Arc Classique",
+          "target": "18B"
+        },
+        {
+          "name": "FRISOT Aurore",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "S1 Femme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "GARRABE Damien",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "17A"
+        },
+        {
+          "name": "GASSMANN Maud",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "S1 Femme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "GENTY Yohan",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "S2 Homme Arc Classique",
+          "target": "14C"
+        },
+        {
+          "name": "HERANT Clara",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "S1 Femme Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "JOLY Remi",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Homme Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "LAFAYE Victoria",
+          "club": "1131093 - BALMA",
+          "category": "1131093 - BALMA",
+          "session": "U21 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "LASSUS Chantal",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S2 Femme Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "LEGMAR Magali",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S2 Femme Arc Classique",
+          "target": "5A"
+        },
+        {
+          "name": "LERDA Julien",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "S1 Homme Arc Classique",
+          "target": "22C"
+        },
+        {
+          "name": "LEROY Benjamin",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "S1 Homme Arc Classique",
+          "target": "21C"
+        },
+        {
+          "name": "LIAUDOIS Fanny",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "S1 Femme Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "MACE Godefroi",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "S1 Homme Arc Classique",
+          "target": "15B"
+        },
+        {
+          "name": "MENARDO GUZMAN Luna",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "S1 Femme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "MINATO Aline",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S1 Femme Arc Classique",
+          "target": "6C"
+        },
+        {
+          "name": "MONTAGNE Vanessa",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S2 Femme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "MOUTON Pierre",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U21 Homme Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "NICOLAI Julie",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "S2 Femme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "NUNES Eddy",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S2 Homme Arc Classique",
+          "target": "22B"
+        },
+        {
+          "name": "PAGES Alexandre",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S2 Homme Arc Classique",
+          "target": "20A"
+        },
+        {
+          "name": "PAILLER Sebastien",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "S2 Homme Arc Classique",
+          "target": "15C"
+        },
+        {
+          "name": "PEGEOT Ethan",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Homme Arc Classique",
+          "target": "13A"
+        },
+        {
+          "name": "PELLISSIER Loic",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Homme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "PORTAL Simon",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "S1 Homme Arc Classique",
+          "target": "17C"
+        },
+        {
+          "name": "QUENIART Virginie",
+          "club": "1131093 - BALMA",
+          "category": "1131093 - BALMA",
+          "session": "S2 Femme Arc Classique",
+          "target": "4C"
+        },
+        {
+          "name": "RAMES Evolene",
+          "club": "1131093 - BALMA",
+          "category": "1131093 - BALMA",
+          "session": "S1 Femme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "ROYER Christophe",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S2 Homme Arc Classique",
+          "target": "21B"
+        },
+        {
+          "name": "SACO Virginie",
+          "club": "1130065 - MANDUEL",
+          "category": "1130065 - MANDUEL",
+          "session": "S1 Femme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "SCIARRA Melany",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "S2 Femme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "SEGURA Antoine",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "U21 Homme Arc Classique",
+          "target": "16B"
+        },
+        {
+          "name": "TOSELLO Guillaume",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "S1 Homme Arc Classique",
+          "target": "13C"
+        },
+        {
+          "name": "TRINCARETTO ANTUNES Zia",
+          "club": "1130065 - MANDUEL",
+          "category": "1130065 - MANDUEL",
+          "session": "S1 Femme Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "VIDAL Nicolas",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "19A"
+        },
+        {
+          "name": "VIGNE Marc",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S1 Homme Arc Classique",
+          "target": "17B"
+        },
+        {
+          "name": "WOLFS Angelina",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "U21 Femme Arc Classique",
+          "target": "3B"
+        }
+      ]
     },
     {
       "to_id": "27728",
