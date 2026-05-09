@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-09T07:58:51.105217+00:00",
+  "generated_at_utc": "2026-05-09T09:26:59.097073+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 36,
+  "count": 37,
   "tournaments": [
     {
       "to_id": "27200",
@@ -6699,6 +6699,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27750",
       "ena_url": "https://www.ianseo.net/TourData/2026/27750/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27750/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "27975",
+      "year": "2026",
+      "name": "Championnat Départemental d'Ille-et-Vilaine de Run-Archery",
+      "organizer": "Avec le support des Archers de Sévigné",
+      "date_text": "24 May",
+      "end_date": "2026-05-24",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27975",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27975/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27975/IC.php",
       "entries_count": 0,
       "entries": []
     },
