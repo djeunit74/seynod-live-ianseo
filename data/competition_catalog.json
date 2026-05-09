@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-09T14:35:33.977095+00:00",
+  "generated_at_utc": "2026-05-09T15:54:32.994803+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1329,6 +1329,13 @@
           "target": "11C"
         },
         {
+          "name": "CADEI Janaelle",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "U21 Femme Arc Classique",
+          "target": "15B"
+        },
+        {
           "name": "CARTIER-COQUARD Brune",
           "club": "0169179 - VILLEURBANNE CIE HERACLES",
           "category": "0169179 - VILLEURBANNE CIE HERACLES",
@@ -1550,7 +1557,7 @@
           "club": "0169179 - VILLEURBANNE CIE HERACLES",
           "category": "0169179 - VILLEURBANNE CIE HERACLES",
           "session": "U21 Femme Arc Classique",
-          "target": "22B"
+          "target": "22A"
         },
         {
           "name": "MERENNE Oscar",
@@ -1607,13 +1614,6 @@
           "category": "0221014 - DIJON",
           "session": "S1 Homme Arc Classique",
           "target": "1C"
-        },
-        {
-          "name": "PICHONNAZ Maxine",
-          "club": "0174260 - ANNEMASSE",
-          "category": "0174260 - ANNEMASSE",
-          "session": "S1 Femme Arc Classique",
-          "target": "15B"
         },
         {
           "name": "RAVE Sylvie",
@@ -4481,15 +4481,8 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27828",
       "ena_url": "https://www.ianseo.net/TourData/2026/27828/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27828/IC.php",
-      "entries_count": 67,
+      "entries_count": 65,
       "entries": [
-        {
-          "name": "AFFI Emna",
-          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
-          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
-          "session": "U18 Femme Arc Classique",
-          "target": "7B"
-        },
         {
           "name": "BAFFALY Kevin",
           "club": "1146149 - CAHORS",
@@ -4502,7 +4495,7 @@
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
           "session": "U18 Homme Arc à Poulies",
-          "target": "20A"
+          "target": "20C"
         },
         {
           "name": "BONICEL Florent",
@@ -4547,13 +4540,6 @@
           "target": "22B"
         },
         {
-          "name": "CHABRIE Marie",
-          "club": "1134126 - FRONTIGNAN",
-          "category": "1134126 - FRONTIGNAN",
-          "session": "U18 Femme Arc Classique",
-          "target": "8B"
-        },
-        {
           "name": "CLERC Pierre",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
@@ -4594,6 +4580,13 @@
           "category": "1131072 - L UNION",
           "session": "U21 Homme Arc à Poulies",
           "target": "19A"
+        },
+        {
+          "name": "DEUTSCH Stephanie",
+          "club": "1130043 - ST CHRISTOL LEZ ALES",
+          "category": "1130043 - ST CHRISTOL LEZ ALES",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "14B"
         },
         {
           "name": "DUMONCEAU Ludovic",
@@ -4656,7 +4649,7 @@
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
           "session": "S2 Homme Arc Classique National",
-          "target": "9B"
+          "target": "7B"
         },
         {
           "name": "GINER Francois",
@@ -4670,7 +4663,7 @@
           "club": "1134127 - LUNEL",
           "category": "1134127 - LUNEL",
           "session": "S3 Homme Arc à Poulies",
-          "target": "11B"
+          "target": "11A"
         },
         {
           "name": "IMBERTON Guilhem",
@@ -4698,7 +4691,7 @@
           "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
           "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
           "session": "S3 Homme Arc Classique",
-          "target": "7A"
+          "target": "8A"
         },
         {
           "name": "LACOMBE Bernard",
@@ -4708,18 +4701,25 @@
           "target": "28C"
         },
         {
+          "name": "LEPINAY Pascal",
+          "club": "1134122 - LE CRES",
+          "category": "1134122 - LE CRES",
+          "session": "S3 Homme Arc Classique National",
+          "target": "10A"
+        },
+        {
           "name": "LESAGE Pierre",
           "club": "1131072 - L UNION",
           "category": "1131072 - L UNION",
           "session": "S1 Homme Arc à Poulies",
-          "target": "21A"
+          "target": "21C"
         },
         {
           "name": "LEVY Jean-Luc",
           "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
           "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
           "session": "S3 Homme Arc Classique",
-          "target": "8A"
+          "target": "8B"
         },
         {
           "name": "LORENTE Cyril",
@@ -4734,6 +4734,13 @@
           "category": "1130048 - ALES",
           "session": "S2 Homme Arc à Poulies",
           "target": "16B"
+        },
+        {
+          "name": "MARCO Alice",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "U11 Femme Arc Classique",
+          "target": "1A"
         },
         {
           "name": "MARTIN Angel",
@@ -4762,13 +4769,6 @@
           "category": "1131079 - TOURNEFEUILLE",
           "session": "S2 Homme Arc à Poulies",
           "target": "15C"
-        },
-        {
-          "name": "MAYMARD Mireille",
-          "club": "1130043 - ST CHRISTOL LEZ ALES",
-          "category": "1130043 - ST CHRISTOL LEZ ALES",
-          "session": "S3 Femme Arc à Poulies",
-          "target": "14B"
         },
         {
           "name": "MEYLAN Nicole",
@@ -4803,14 +4803,7 @@
           "club": "1134127 - LUNEL",
           "category": "1134127 - LUNEL",
           "session": "S2 Homme Arc Classique",
-          "target": "6B"
-        },
-        {
-          "name": "OUMELBAT Manel",
-          "club": "1134126 - FRONTIGNAN",
-          "category": "1134126 - FRONTIGNAN",
-          "session": "U15 Femme Arc Classique",
-          "target": "5C"
+          "target": "9B"
         },
         {
           "name": "PAES Aymeric",
@@ -4824,7 +4817,7 @@
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
           "session": "S3 Homme Arc à Poulies",
-          "target": "21C"
+          "target": "21A"
         },
         {
           "name": "PEYNAUD Yohan",
@@ -4869,13 +4862,6 @@
           "target": "14A"
         },
         {
-          "name": "REYDELLET Jean-Michel",
-          "club": "1134135 - PEROLS",
-          "category": "1134135 - PEROLS",
-          "session": "S3 Homme Arc à Poulies National",
-          "target": "10C"
-        },
-        {
           "name": "RICHARD Olivier",
           "club": "1130040 - LANGLADE",
           "category": "1130040 - LANGLADE",
@@ -4904,6 +4890,13 @@
           "target": "13A"
         },
         {
+          "name": "SENEJOUX Carine",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "11B"
+        },
+        {
           "name": "SENEJOUX Stephane",
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
@@ -4915,7 +4908,7 @@
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
           "session": "S3 Homme Arc Classique National",
-          "target": "9A"
+          "target": "7A"
         },
         {
           "name": "STACEY Michele",
@@ -4925,18 +4918,11 @@
           "target": "13C"
         },
         {
-          "name": "VENDEVILLE Sebastien",
-          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
-          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
-          "session": "Scratch Homme Arc Nu National",
-          "target": "10A"
-        },
-        {
           "name": "VIDAL Denis",
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
           "session": "S2 Homme Arc à Poulies",
-          "target": "20C"
+          "target": "20A"
         },
         {
           "name": "VIGANO Oscar",
