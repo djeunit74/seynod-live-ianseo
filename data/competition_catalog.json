@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-10T22:10:56.680288+00:00",
+  "generated_at_utc": "2026-05-10T23:27:12.761731+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2628,7 +2628,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 64,
+      "entries_count": 66,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -2725,14 +2725,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
@@ -2754,7 +2754,7 @@
           "club": "1109002 - PAMIERS",
           "category": "1109002 - PAMIERS",
           "session": "S2 Femme Arc Classique National",
-          "target": "2B"
+          "target": "1C"
         },
         {
           "name": "CLERC Pierre",
@@ -2904,6 +2904,13 @@
           "target": "12B"
         },
         {
+          "name": "HUYGHE Mathias",
+          "club": "1131081 - TOULOUSE TAC",
+          "category": "1131081 - TOULOUSE TAC",
+          "session": "S1 Homme Arc Classique National",
+          "target": "2C"
+        },
+        {
           "name": "JOURDAIN Alexis",
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
@@ -2951,6 +2958,13 @@
           "category": "1131093 - BALMA",
           "session": "U15 Femme Arc Classique",
           "target": "6A"
+        },
+        {
+          "name": "MALLENT Nicolas",
+          "club": "1131081 - TOULOUSE TAC",
+          "category": "1131081 - TOULOUSE TAC",
+          "session": "S1 Homme Arc Classique National",
+          "target": "1A"
         },
         {
           "name": "MENDOUSSE SIRVEN Eva",
