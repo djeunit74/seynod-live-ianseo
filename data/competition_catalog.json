@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-10T07:25:55.252413+00:00",
+  "generated_at_utc": "2026-05-10T09:13:15.851737+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -4211,7 +4211,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 29,
+      "entries_count": 31,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -4340,6 +4340,13 @@
           "target": ""
         },
         {
+          "name": "HAUSSE Didier",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": ""
+        },
+        {
           "name": "JEAN DE DIEU Laura",
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
@@ -4400,6 +4407,13 @@
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "RENAULT Cedric",
+          "club": "0221006 - IS SUR TILLE",
+          "category": "0221006 - IS SUR TILLE",
+          "session": "S1 Homme Arc Classique National",
           "target": ""
         },
         {
