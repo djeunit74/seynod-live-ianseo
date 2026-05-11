@@ -1,12 +1,25 @@
 {
-  "generated_at_utc": "2026-05-11T05:33:50.789372+00:00",
+  "generated_at_utc": "2026-05-11T09:41:40.481399+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 28,
+  "count": 31,
   "tournaments": [
+    {
+      "to_id": "27710",
+      "year": "2026",
+      "name": "TAE du mercredi 13 mai 2026",
+      "organizer": "Club des Archers de Saint-Avertin-Sports",
+      "date_text": "13 May",
+      "end_date": "2026-05-13",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27710",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27710/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27710/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
     {
       "to_id": "27728",
       "year": "2026",
@@ -5798,6 +5811,19 @@
       ]
     },
     {
+      "to_id": "28238",
+      "year": "2026",
+      "name": "TAE du mercredi 3 juin 2026",
+      "organizer": "Club des Archers de Saint-Avertin-Sports",
+      "date_text": "3 Jun",
+      "end_date": "2026-06-03",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28238",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28238/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28238/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27419",
       "year": "2026",
       "name": "Compétition groupe départemental CD74",
@@ -6534,6 +6560,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27345",
       "ena_url": "https://www.ianseo.net/TourData/2026/27345/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27345/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "27351",
+      "year": "2026",
+      "name": "Championnat de France Elite TAE 2026",
+      "organizer": "St Avertin CASAS / FFTA",
+      "date_text": "31 Jul - 2 Aug",
+      "end_date": "2026-08-02",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27351",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27351/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27351/IC.php",
       "entries_count": 0,
       "entries": []
     },
