@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-11T15:56:38.443525+00:00",
+  "generated_at_utc": "2026-05-11T17:55:41.575455+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2641,7 +2641,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 66,
+      "entries_count": 70,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -2738,14 +2738,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
@@ -2774,7 +2774,7 @@
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "S1 Homme Arc à Poulies",
-          "target": "10D"
+          "target": "10B"
         },
         {
           "name": "COURTY Simon",
@@ -2829,14 +2829,14 @@
           "name": "DRAPEAU Romain",
           "club": "1111008 - CARCASSONNE",
           "category": "1111008 - CARCASSONNE",
-          "session": "S1 Homme Arc Classique National",
+          "session": "Arc Classique Senior 1 Hommes National",
           "target": "4A"
         },
         {
           "name": "DRAPEAU Romain",
           "club": "1111008 - CARCASSONNE",
           "category": "1111008 - CARCASSONNE",
-          "session": "Arc Classique Senior 1 Hommes National",
+          "session": "S1 Homme Arc Classique National",
           "target": "4A"
         },
         {
@@ -2859,6 +2859,20 @@
           "category": "1131072 - L'UNION",
           "session": "Scratch Homme Arc Nu National",
           "target": "8A"
+        },
+        {
+          "name": "FAYE Amaury",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "Arc Classique Senior 1 Hommes National",
+          "target": "14C"
+        },
+        {
+          "name": "FAYE Amaury",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "S1 Homme Arc Classique National",
+          "target": "1B"
         },
         {
           "name": "GASPARD Loely",
@@ -2966,6 +2980,20 @@
           "target": "8D"
         },
         {
+          "name": "LE VAN Christian",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "10D"
+        },
+        {
+          "name": "LE VAN Christian",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "11A"
+        },
+        {
           "name": "M'BENGI Chelsea",
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
@@ -3026,7 +3054,7 @@
           "club": "1111017 - CASTELNAUDARY",
           "category": "1111017 - CASTELNAUDARY",
           "session": "S3 Homme Arc Classique National",
-          "target": "11A"
+          "target": "14B"
         },
         {
           "name": "RIGAULT Charlotte",
@@ -4730,7 +4758,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27376",
       "ena_url": "https://www.ianseo.net/TourData/2026/27376/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27376/IC.php",
-      "entries_count": 6,
+      "entries_count": 10,
       "entries": [
         {
           "name": "BATTEUX Mila",
@@ -4766,6 +4794,34 @@
           "category": "1131081 - TOULOUSE TAC",
           "session": "Arc Classique As 40cm 15m",
           "target": "10C"
+        },
+        {
+          "name": "LHOMME Enael",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "Arc Classique Niveau3 122cm15m",
+          "target": ""
+        },
+        {
+          "name": "LIECHTY Nolan",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "Arc Classique Niveau3 122cm15m",
+          "target": ""
+        },
+        {
+          "name": "NORMANDIN Lucas",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "Arc Classique Niveau3 122cm15m",
+          "target": ""
+        },
+        {
+          "name": "SANCHEZ Timothee",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "Arc Classique Niveau1 60cm 15m",
+          "target": ""
         },
         {
           "name": "TEHAR Mohamed",
