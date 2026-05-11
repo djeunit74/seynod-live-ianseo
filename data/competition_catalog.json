@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-11T12:39:45.425882+00:00",
+  "generated_at_utc": "2026-05-11T15:56:38.443525+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 31,
+  "count": 32,
   "tournaments": [
     {
       "to_id": "27710",
@@ -3169,13 +3169,20 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27216",
       "ena_url": "https://www.ianseo.net/TourData/2026/27216/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27216/IC.php",
-      "entries_count": 203,
+      "entries_count": 221,
       "entries": [
         {
           "name": "ACHA GONZALEZ Pablo",
           "club": "0163151 - CLERMONT FERRAND CIE",
           "category": "0163151 - CLERMONT FERRAND CIE",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "ADAM Olympe",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
         {
@@ -3267,6 +3274,13 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "BARBELIN Lisa",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Femme Arc Classique",
           "target": ""
         },
         {
@@ -3571,6 +3585,13 @@
           "target": ""
         },
         {
+          "name": "DE BONFILS Manon",
+          "club": "0271076 - MACON",
+          "category": "0271076 - MACON",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "DELAMARE Guillaume",
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
@@ -3627,6 +3648,13 @@
           "target": ""
         },
         {
+          "name": "DORIER Eloise",
+          "club": "0271076 - MACON",
+          "category": "0271076 - MACON",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "DRELON Carole",
           "club": "0893225 - NEUILLY SUR MARNE",
           "category": "0893225 - NEUILLY SUR MARNE",
@@ -3676,6 +3704,13 @@
           "target": ""
         },
         {
+          "name": "ER'RAHMOUNI Siham",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "EYENI Franck",
           "club": "1130041 - NIMES",
           "category": "1130041 - NIMES",
@@ -3690,6 +3725,13 @@
           "target": ""
         },
         {
+          "name": "FERRAND Aurelie",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "FERRAUD Alexia",
           "club": "1313090 - ST MARTIN DE CRAU",
           "category": "1313090 - ST MARTIN DE CRAU",
@@ -3701,6 +3743,13 @@
           "club": "0893225 - NEUILLY SUR MARNE",
           "category": "0893225 - NEUILLY SUR MARNE",
           "session": "Arc Classique Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "FICHET Romain",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Homme Arc Classique",
           "target": ""
         },
         {
@@ -3750,6 +3799,13 @@
           "club": "1016003 - RUELLE SUR TOUVRE",
           "category": "1016003 - RUELLE SUR TOUVRE",
           "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "GARNIER Adeline",
+          "club": "0271076 - MACON",
+          "category": "0271076 - MACON",
+          "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
         {
@@ -3830,6 +3886,13 @@
           "target": ""
         },
         {
+          "name": "HEPP Kylan",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "HERENT Vincent",
           "club": "0891175 - DRAVEIL SENART",
           "category": "0891175 - DRAVEIL SENART",
@@ -3865,6 +3928,13 @@
           "target": ""
         },
         {
+          "name": "JAMOT Maxence",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "JANGNAS Erika",
           "club": "0437083 - ST AVERTIN",
           "category": "0437083 - ST AVERTIN",
@@ -3875,6 +3945,13 @@
           "name": "JEANNIN Lucie",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "JOBERT Alexandra",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
           "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
@@ -4026,6 +4103,13 @@
           "target": ""
         },
         {
+          "name": "LOPEZ Caroline",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "LORTHIOIR Yann",
           "club": "1313090 - ST MARTIN DE CRAU",
           "category": "1313090 - ST MARTIN DE CRAU",
@@ -4114,6 +4198,13 @@
           "club": "0892193 - RUEIL MALMAISON STAR",
           "category": "0892193 - RUEIL MALMAISON STAR",
           "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "MONTOYA Estelle",
+          "club": "0271076 - MACON",
+          "category": "0271076 - MACON",
+          "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
         {
@@ -4278,6 +4369,13 @@
           "target": ""
         },
         {
+          "name": "POMARAT Alex",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "POTHIER Flavien",
           "club": "0895293 - SARCELLES",
           "category": "0895293 - SARCELLES",
@@ -4310,6 +4408,13 @@
           "club": "0895293 - SARCELLES",
           "category": "0895293 - SARCELLES",
           "session": "Arc Classique Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "RAMEL Aziliz",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Femme Arc Classique",
           "target": ""
         },
         {
@@ -4439,10 +4544,24 @@
           "target": ""
         },
         {
+          "name": "STROCK-HUTTEPAIN Thomas",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "SZOSTAK Leeloo",
           "club": "1033110 - AUROS",
           "category": "1033110 - AUROS",
           "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "TEILLARD Anne",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
         {
@@ -4541,6 +4660,13 @@
           "club": "0163151 - CLERMONT FERRAND CIE",
           "category": "0163151 - CLERMONT FERRAND CIE",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "VILLELOUP Myriam",
+          "club": "0271076 - MACON",
+          "category": "0271076 - MACON",
+          "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
         {
@@ -6612,6 +6738,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27837",
       "ena_url": "https://www.ianseo.net/TourData/2027/27837/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2027/27837/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28246",
+      "year": "2027",
+      "name": "Hallenlandesliga 2026/2027",
+      "organizer": "ASKÖ Steyrermühl - Bogensport",
+      "date_text": "31 Oct 2026 - 20 Feb 2027",
+      "end_date": "2027-02-20",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28246",
+      "ena_url": "https://www.ianseo.net/TourData/2027/28246/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/28246/IC.php",
       "entries_count": 0,
       "entries": []
     },
