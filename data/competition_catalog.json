@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-12T09:40:52.167019+00:00",
+  "generated_at_utc": "2026-05-12T11:59:14.636074+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2641,7 +2641,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 72,
+      "entries_count": 73,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -2777,6 +2777,13 @@
           "target": "10B"
         },
         {
+          "name": "COUDERT Tristan",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "U18 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
           "name": "COURTY Simon",
           "club": "1111017 - CASTELNAUDARY",
           "category": "1111017 - CASTELNAUDARY",
@@ -2829,14 +2836,14 @@
           "name": "DRAPEAU Romain",
           "club": "1111008 - CARCASSONNE",
           "category": "1111008 - CARCASSONNE",
-          "session": "Arc Classique Senior 1 Hommes National",
+          "session": "S1 Homme Arc Classique National",
           "target": "4A"
         },
         {
           "name": "DRAPEAU Romain",
           "club": "1111008 - CARCASSONNE",
           "category": "1111008 - CARCASSONNE",
-          "session": "S1 Homme Arc Classique National",
+          "session": "Arc Classique Senior 1 Hommes National",
           "target": "4A"
         },
         {
@@ -2928,7 +2935,7 @@
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "Arc Classique Senior 1 Hommes National",
-          "target": "11B"
+          "target": "10B"
         },
         {
           "name": "HUFSCHMIDT Jordan",
@@ -2990,15 +2997,15 @@
           "name": "LE VAN Christian",
           "club": "1182219 - CASTELSARRASIN",
           "category": "1182219 - CASTELSARRASIN",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "10D"
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "10A"
         },
         {
           "name": "LE VAN Christian",
           "club": "1182219 - CASTELSARRASIN",
           "category": "1182219 - CASTELSARRASIN",
-          "session": "S3 Homme Arc à Poulies National",
-          "target": "11A"
+          "session": "S3 Homme Arc à Poulies",
+          "target": "10D"
         },
         {
           "name": "M'BENGI Chelsea",
@@ -3019,7 +3026,7 @@
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
           "session": "U18 Femme Arc Classique",
-          "target": "10A"
+          "target": "11A"
         },
         {
           "name": "MOUYNET Valerie",
@@ -3033,7 +3040,7 @@
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "S3 Homme Arc Classique National",
-          "target": "11D"
+          "target": "10D"
         },
         {
           "name": "POGAM Jean-Philippe",
@@ -3103,7 +3110,7 @@
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "Arc à Poulies Senior 3 Femmes National",
-          "target": "11C"
+          "target": "10C"
         },
         {
           "name": "TURBE HAN Antoine",
@@ -3117,7 +3124,7 @@
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "U18 Femme Arc Classique",
-          "target": "10B"
+          "target": "11B"
         },
         {
           "name": "VASSAL Olivier",
