@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-12T06:44:24.479974+00:00",
+  "generated_at_utc": "2026-05-12T09:40:52.167019+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2641,7 +2641,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 70,
+      "entries_count": 72,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -2882,6 +2882,13 @@
           "target": "2B"
         },
         {
+          "name": "GILLES Jean",
+          "club": "1131088 - CUGNAUX",
+          "category": "1131088 - CUGNAUX",
+          "session": "S3 Homme Arc Classique National",
+          "target": "2B"
+        },
+        {
           "name": "GOUNIN Nicolas",
           "club": "1181202 - CASTRES",
           "category": "1181202 - CASTRES",
@@ -3118,6 +3125,13 @@
           "category": "1131088 - CUGNAUX",
           "session": "S3 Homme Arc Classique National",
           "target": "11D"
+        },
+        {
+          "name": "VISCHI Lionel",
+          "club": "1131081 - TOULOUSE TAC",
+          "category": "1131081 - TOULOUSE TAC",
+          "session": "S2 Homme Arc Classique National",
+          "target": "14D"
         },
         {
           "name": "VOLCKAERT Alexandre",
