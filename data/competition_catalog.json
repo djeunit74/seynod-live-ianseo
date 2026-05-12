@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-12T19:18:06.430997+00:00",
+  "generated_at_utc": "2026-05-12T21:00:04.132515+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 32,
+  "count": 33,
   "tournaments": [
     {
       "to_id": "27710",
@@ -17,6 +17,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27710",
       "ena_url": "https://www.ianseo.net/TourData/2026/27710/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27710/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28263",
+      "year": "2026",
+      "name": "Division Régionale Excellence Normandie - Manche N°1",
+      "organizer": "Les Archers de La Rose au Bouais",
+      "date_text": "17 May",
+      "end_date": "2026-05-17",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28263",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28263/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28263/IC.php",
       "entries_count": 0,
       "entries": []
     },
@@ -5792,7 +5805,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 31,
+      "entries_count": 37,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -5858,6 +5871,13 @@
           "target": ""
         },
         {
+          "name": "CONTET Leonie",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U15 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "CUCCIA Cedric",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
@@ -5876,6 +5896,13 @@
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "DE MIN Noah",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U15 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -5949,10 +5976,24 @@
           "target": ""
         },
         {
+          "name": "LUMINET Emma",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U15 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "LYANNAS Nathan",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "U13 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MALLERON Ronan",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U18 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -6005,10 +6046,24 @@
           "target": ""
         },
         {
+          "name": "SOMBSTAY Tristan",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "TERMELET Bernard",
           "club": "0221006 - IS SUR TILLE",
           "category": "0221006 - IS SUR TILLE",
           "session": "Scratch Homme Arc Nu National",
+          "target": ""
+        },
+        {
+          "name": "TOUTAIN Francois",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S3 Homme Arc Classique National",
           "target": ""
         }
       ]
