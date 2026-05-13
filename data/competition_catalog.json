@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-13T12:05:50.179812+00:00",
+  "generated_at_utc": "2026-05-13T15:25:13.135429+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2662,7 +2662,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 73,
+      "entries_count": 75,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -3062,6 +3062,20 @@
           "category": "1131093 - BALMA",
           "session": "S3 Homme Arc Classique National",
           "target": "10D"
+        },
+        {
+          "name": "PINCEMAIL Joseph",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S3 Homme Arc Classique",
+          "target": "11D"
+        },
+        {
+          "name": "PINCEMAIL Joseph",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S3 Homme Arc Classique National",
+          "target": "2D"
         },
         {
           "name": "POGAM Jean-Philippe",
