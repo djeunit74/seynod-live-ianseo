@@ -1,25 +1,12 @@
 {
-  "generated_at_utc": "2026-05-12T23:37:09.670239+00:00",
+  "generated_at_utc": "2026-05-13T03:29:44.815123+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 33,
+  "count": 32,
   "tournaments": [
-    {
-      "to_id": "27710",
-      "year": "2026",
-      "name": "TAE du mercredi 13 mai 2026",
-      "organizer": "Club des Archers de Saint-Avertin-Sports",
-      "date_text": "13 May",
-      "end_date": "2026-05-13",
-      "details_url": "https://www.ianseo.net/Details.php?toId=27710",
-      "ena_url": "https://www.ianseo.net/TourData/2026/27710/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/27710/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
     {
       "to_id": "28263",
       "year": "2026",
