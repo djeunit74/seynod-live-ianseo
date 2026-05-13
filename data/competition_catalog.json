@@ -1,12 +1,278 @@
 {
-  "generated_at_utc": "2026-05-13T19:56:27.589352+00:00",
+  "generated_at_utc": "2026-05-13T21:27:01.358273+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 35,
+  "count": 36,
   "tournaments": [
+    {
+      "to_id": "28290",
+      "year": "2026",
+      "name": "Tournoi Régional Jeune - Normandie 2026",
+      "organizer": "Les Archers de la Rose au Bouais",
+      "date_text": "16 May",
+      "end_date": "2026-05-16",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28290",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28290/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28290/IC.php",
+      "entries_count": 36,
+      "entries": [
+        {
+          "name": "ANNE Ivann",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "U18 Homme Arc à Poulies, TRJ - U18/U21 Arc à Poulies Mixte",
+          "target": "24A"
+        },
+        {
+          "name": "BARDOU BORDAIS Simeo",
+          "club": "0950064 - AVRANCHES",
+          "category": "0950064 - AVRANCHES",
+          "session": "U18 Homme Arc à Poulies, TRJ - U18/U21 Arc à Poulies Mixte",
+          "target": "24B"
+        },
+        {
+          "name": "BEAUFILS Leo-Paul",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "U18 Homme Arc Classique, TRJ - U18 Arc Classique Mixte",
+          "target": "25B"
+        },
+        {
+          "name": "BITU Arsene",
+          "club": "0950062 - VILLEDIEU LES POELES",
+          "category": "0950062 - VILLEDIEU LES POELES",
+          "session": "U15 Homme Arc Classique, TRJ - U15 Arc Classique Mixte",
+          "target": "23A"
+        },
+        {
+          "name": "BITU Jean-Francois",
+          "club": "0950062 - VILLEDIEU LES POELES",
+          "category": "0950062 - VILLEDIEU LES POELES",
+          "session": "S2 Homme Arc Classique",
+          "target": "28C"
+        },
+        {
+          "name": "BRISEMUR Theo",
+          "club": "0961077 - ALENCON ADD",
+          "category": "0961077 - ALENCON ADD",
+          "session": "U18 Homme Arc Classique, TRJ - U18 Arc Classique Mixte",
+          "target": "25D"
+        },
+        {
+          "name": "BUGHIN Odran",
+          "club": "0950072 - CHERBOURG EN COTENTIN",
+          "category": "0950072 - CHERBOURG EN COTENTIN",
+          "session": "U15 Homme Arc Classique, TRJ - U15 Arc Classique Mixte",
+          "target": "23C"
+        },
+        {
+          "name": "BUGHIN Soen",
+          "club": "0950072 - CHERBOURG EN COTENTIN",
+          "category": "0950072 - CHERBOURG EN COTENTIN",
+          "session": "U13 Homme Arc Classique, TRJ - U13 Arc Classique Mixte",
+          "target": "21C"
+        },
+        {
+          "name": "CAILLEUX Anais",
+          "club": "0976093 - SAINT VALERY EN CAUX",
+          "category": "0976093 - SAINT VALERY EN CAUX",
+          "session": "U15 Femme Arc Classique, TRJ - U15 Arc Classique Mixte",
+          "target": "22B"
+        },
+        {
+          "name": "DAREAU Pacome",
+          "club": "0950072 - CHERBOURG EN COTENTIN",
+          "category": "0950072 - CHERBOURG EN COTENTIN",
+          "session": "U15 Homme Arc Classique, TRJ - U15 Arc Classique Mixte",
+          "target": "22A"
+        },
+        {
+          "name": "DAVID Alexis",
+          "club": "0950072 - CHERBOURG EN COTENTIN",
+          "category": "0950072 - CHERBOURG EN COTENTIN",
+          "session": "U18 Homme Arc Classique, TRJ - U18 Arc Classique Mixte",
+          "target": "26A"
+        },
+        {
+          "name": "DEBROISE Herve",
+          "club": "0950062 - VILLEDIEU LES POELES",
+          "category": "0950062 - VILLEDIEU LES POELES",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "30C"
+        },
+        {
+          "name": "DELLINGER Emilie",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "29A"
+        },
+        {
+          "name": "DELPLACE POIRIER Annaeg",
+          "club": "0950064 - AVRANCHES",
+          "category": "0950064 - AVRANCHES",
+          "session": "U18 Homme Arc Nu National",
+          "target": "21B"
+        },
+        {
+          "name": "DELPLACE POIRIER Lysandre",
+          "club": "0950064 - AVRANCHES",
+          "category": "0950064 - AVRANCHES",
+          "session": "U13 Homme Arc Classique National",
+          "target": "32A"
+        },
+        {
+          "name": "DUBOC Noe",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "U21 Homme Arc Classique, TRJ - U21 Arc Classique Mixte",
+          "target": "27B"
+        },
+        {
+          "name": "DUFOUR Anais",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "29B"
+        },
+        {
+          "name": "FAUTRAT Quentin",
+          "club": "0950054 - BREHAL",
+          "category": "0950054 - BREHAL",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "29C"
+        },
+        {
+          "name": "GROISIL Nathalie",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "S2 Femme Arc à Poulies National",
+          "target": "30B"
+        },
+        {
+          "name": "GUERRIDA Yasmine",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "U13 Femme Arc Classique, TRJ - U13 Arc Classique Mixte",
+          "target": "21A"
+        },
+        {
+          "name": "LACHINE Maksim",
+          "club": "0927039 - VERNON CSADN",
+          "category": "0927039 - VERNON CSADN",
+          "session": "U18 Homme Arc Classique, TRJ - U18 Arc Classique Mixte",
+          "target": "25A"
+        },
+        {
+          "name": "LECLERC Laurent",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "U21 Homme Arc Classique, TRJ - U21 Arc Classique Mixte",
+          "target": "27A"
+        },
+        {
+          "name": "LEGOUPIL Izia",
+          "club": "0950060 - MONTEBOURG",
+          "category": "0950060 - MONTEBOURG",
+          "session": "U18 Femme Arc Classique, TRJ - U18 Arc Classique Mixte",
+          "target": "26D"
+        },
+        {
+          "name": "MAHAUX Sarah",
+          "club": "0961081 - BANVOU",
+          "category": "0961081 - BANVOU",
+          "session": "U18 Femme Arc Classique, TRJ - U18 Arc Classique Mixte",
+          "target": "26B"
+        },
+        {
+          "name": "MAJERI SORET Kelya",
+          "club": "0927039 - VERNON CSADN",
+          "category": "0927039 - VERNON CSADN",
+          "session": "U15 Femme Arc Classique, TRJ - U15 Arc Classique Mixte",
+          "target": "23D"
+        },
+        {
+          "name": "MARCHAND Gabin",
+          "club": "0950072 - CHERBOURG EN COTENTIN",
+          "category": "0950072 - CHERBOURG EN COTENTIN",
+          "session": "U15 Homme Arc Classique, TRJ - U15 Arc Classique Mixte",
+          "target": "23B"
+        },
+        {
+          "name": "MARTIN Julia",
+          "club": "0976112 - YERVILLE",
+          "category": "0976112 - YERVILLE",
+          "session": "U11 Femme Arc Classique",
+          "target": "20A"
+        },
+        {
+          "name": "MICHEL Arthur",
+          "club": "0976122 - EPOUVILLE",
+          "category": "0976122 - EPOUVILLE",
+          "session": "U21 Homme Arc Classique, TRJ - U21 Arc Classique Mixte",
+          "target": "27C"
+        },
+        {
+          "name": "ORMA Helene",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "S2 Femme Arc Classique National",
+          "target": "30A"
+        },
+        {
+          "name": "PANCHOU Viktor",
+          "club": "0976122 - EPOUVILLE",
+          "category": "0976122 - EPOUVILLE",
+          "session": "U18 Homme Arc Classique, TRJ - U18 Arc Classique Mixte",
+          "target": "26C"
+        },
+        {
+          "name": "SEGURA Anais",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "U15 Femme Arc Classique, TRJ - U15 Arc Classique Mixte",
+          "target": "22D"
+        },
+        {
+          "name": "SEGURA Eva",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "U21 Femme Arc Classique, TRJ - U21 Arc Classique Mixte",
+          "target": "28B"
+        },
+        {
+          "name": "TANGUY Alizee",
+          "club": "0976121 - OFFRANVILLE",
+          "category": "0976121 - OFFRANVILLE",
+          "session": "U15 Femme Arc Classique, TRJ - U15 Arc Classique Mixte",
+          "target": "22C"
+        },
+        {
+          "name": "VARD Lilly",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "U21 Femme Arc Classique, TRJ - U21 Arc Classique Mixte",
+          "target": "28A"
+        },
+        {
+          "name": "VILLALARD Evan",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "U18 Homme Arc Classique, TRJ - U18 Arc Classique Mixte",
+          "target": "25C"
+        },
+        {
+          "name": "XAVIER Adolphe",
+          "club": "0950062 - VILLEDIEU LES POELES",
+          "category": "0950062 - VILLEDIEU LES POELES",
+          "session": "S3 Homme Arc Classique",
+          "target": "31A"
+        }
+      ]
+    },
     {
       "to_id": "28263",
       "year": "2026",
