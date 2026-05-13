@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-13T09:45:50.533097+00:00",
+  "generated_at_utc": "2026-05-13T12:05:50.179812+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 32,
+  "count": 33,
   "tournaments": [
     {
       "to_id": "28263",
@@ -1290,7 +1290,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28221",
       "ena_url": "https://www.ianseo.net/TourData/2026/28221/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28221/IC.php",
-      "entries_count": 195,
+      "entries_count": 194,
       "entries": [
         {
           "name": "AFANTENOS Dimitris",
@@ -1562,15 +1562,15 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies National",
-          "target": "14C"
+          "session": "S3 Homme Arc à Poulies",
+          "target": "17C"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "17C"
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "18C"
         },
         {
           "name": "CAZARRE Jean-Francois",
@@ -1888,13 +1888,6 @@
           "target": "7A"
         },
         {
-          "name": "FLOURAC Jean-Paul",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "S3 Homme Arc Classique",
-          "target": "3A"
-        },
-        {
           "name": "FOURCADE Jean Pierre",
           "club": "1047144 - BOE",
           "category": "1047144 - BOE",
@@ -1927,7 +1920,7 @@
           "club": "1111008 - CARCASSONNE",
           "category": "1111008 - CARCASSONNE",
           "session": "Fédéral Homme Arc Classique",
-          "target": "2C"
+          "target": "3A"
         },
         {
           "name": "GALLI Eloise",
@@ -8190,6 +8183,195 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/27258/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "28268",
+      "year": "2026",
+      "name": "Concours qualificatif Beursault Fronton",
+      "organizer": "Les archers frontonnais",
+      "date_text": "18-19 Jul",
+      "end_date": "2026-07-19",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28268",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
+      "entries_count": 25,
+      "entries": [
+        {
+          "name": "ARANDA Joseph",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "ARANDA Joseph",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2D"
+        },
+        {
+          "name": "AUBERT Christine",
+          "club": "1132109 - CONDOM",
+          "category": "1132109 - CONDOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "BARBIER Yannick",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "BAYONNE Robert",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "Senior Homme Arc Nu",
+          "target": "1E"
+        },
+        {
+          "name": "BONNAFOUX Philippe",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "BONNET Martine",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "U18 Femme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "BORROT Kevin",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc Classique",
+          "target": "1E"
+        },
+        {
+          "name": "CAPO Jean-Marc",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "CEDIL-AUDOUIN Anneliese",
+          "club": "1132109 - CONDOM",
+          "category": "1132109 - CONDOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "2E"
+        },
+        {
+          "name": "DESCOURVIERES Benoit",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2E"
+        },
+        {
+          "name": "HUFSCHMIDT Jordan",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "U18 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "JACQUET Sebastien",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "JACQUET Sebastien",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "MARTIN Marie",
+          "club": "1132109 - CONDOM",
+          "category": "1132109 - CONDOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "MICHELOTTI Michel",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "MIGNON Jerome",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "U18 Homme Arc Classique",
+          "target": "2E"
+        },
+        {
+          "name": "MOUYNET Valerie",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "U18 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "NARBONNE Sebastien",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "NARBONNE Sebastien",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "POUILLY Franck",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "POUILLY Franck",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "Senior Homme Arc Droit",
+          "target": "2D"
+        },
+        {
+          "name": "STACEY Michele",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Femme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "VIVIES Carole",
+          "club": "1132109 - CONDOM",
+          "category": "1132109 - CONDOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "VOLKA Ophelie",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Femme Arc à Poulies",
+          "target": "2D"
+        }
+      ]
     },
     {
       "to_id": "27637",
