@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-13T15:25:13.135429+00:00",
+  "generated_at_utc": "2026-05-13T17:35:48.792404+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 33,
+  "count": 35,
   "tournaments": [
     {
       "to_id": "28263",
@@ -7587,6 +7587,19 @@
       "entries": []
     },
     {
+      "to_id": "28275",
+      "year": "2026",
+      "name": "Concours TAE - CD 44 2026",
+      "organizer": "Cie des Archers du Brivet",
+      "date_text": "14 Jun",
+      "end_date": "2026-06-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28275",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28275/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28275/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "28018",
       "year": "2026",
       "name": "TAE Nat - TAE INT 13/14 juin 2026",
@@ -8169,6 +8182,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27533",
       "ena_url": "https://www.ianseo.net/TourData/2026/27533/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27533/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28297",
+      "year": "2026",
+      "name": "Challenge Néo-licenciés 3 2026",
+      "organizer": "FFTA",
+      "date_text": "10-24 Jun",
+      "end_date": "2026-06-24",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28297",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28297/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28297/IC.php",
       "entries_count": 0,
       "entries": []
     },
