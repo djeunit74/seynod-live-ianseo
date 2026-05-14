@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-14T21:45:23.512804+00:00",
+  "generated_at_utc": "2026-05-14T22:57:47.718400+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -7157,7 +7157,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 37,
+      "entries_count": 45,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -7213,6 +7213,13 @@
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "S2 Femme Arc à Poulies National",
+          "target": ""
+        },
+        {
+          "name": "CARLOT Pascal",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "Arc Classique Débutant U21 à S3 2A+ - 30m 80cm",
           "target": ""
         },
         {
@@ -7272,6 +7279,20 @@
           "target": ""
         },
         {
+          "name": "GALLOIS Elodie",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "Arc Classique Débutant U15 2A+ et U18 1A - 20m 80cm",
+          "target": ""
+        },
+        {
+          "name": "GALLOIS Jean-Marc",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "GARAUDET Nicolas",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
@@ -7328,6 +7349,13 @@
           "target": ""
         },
         {
+          "name": "LEVE Alexandra",
+          "club": "0221007 - CHATILLON S/SEINE",
+          "category": "0221007 - CHATILLON S/SEINE",
+          "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "LUMINET Emma",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
@@ -7346,6 +7374,13 @@
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U18 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MASSON Charly",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S1 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -7405,6 +7440,13 @@
           "target": ""
         },
         {
+          "name": "SORDEL Lenaic",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "U15 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "TERMELET Bernard",
           "club": "0221006 - IS SUR TILLE",
           "category": "0221006 - IS SUR TILLE",
@@ -7416,6 +7458,20 @@
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "TOUTAIN Louis-Marie",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "WALZ Michael",
+          "club": "0221007 - CHATILLON S/SEINE",
+          "category": "0221007 - CHATILLON S/SEINE",
+          "session": "S1 Homme Arc Classique National",
           "target": ""
         }
       ]
