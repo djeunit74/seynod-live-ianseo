@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-15T18:27:06.374843+00:00",
+  "generated_at_utc": "2026-05-15T20:02:23.678930+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2824,7 +2824,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28221",
       "ena_url": "https://www.ianseo.net/TourData/2026/28221/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28221/IC.php",
-      "entries_count": 196,
+      "entries_count": 191,
       "entries": [
         {
           "name": "AFANTENOS Dimitris",
@@ -2880,7 +2880,7 @@
           "club": "1109002 - PAMIERS",
           "category": "1109002 - PAMIERS",
           "session": "S1 Homme Arc Classique",
-          "target": "8A"
+          "target": "7A"
         },
         {
           "name": "BAQUE Matthias",
@@ -2902,13 +2902,6 @@
           "category": "1132110 - L'ISLE JOURDAIN",
           "session": "U18 Homme Arc Classique National",
           "target": "24A"
-        },
-        {
-          "name": "BAYONNE Robert",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "Scratch Homme Arc Nu National",
-          "target": "11B"
         },
         {
           "name": "BEAUSSE Francois",
@@ -2937,20 +2930,6 @@
           "category": "1047146 - STE MAURE DE PEYRIAC",
           "session": "Arc Nu Senior 3 Femmes National",
           "target": "26A"
-        },
-        {
-          "name": "BERTONCELLO Kevin",
-          "club": "1109002 - PAMIERS",
-          "category": "1109002 - PAMIERS",
-          "session": "Arc Classique Senior 1 Hommes",
-          "target": "6A"
-        },
-        {
-          "name": "BERTONCELLO Kevin",
-          "club": "1109002 - PAMIERS",
-          "category": "1109002 - PAMIERS",
-          "session": "S1 Homme Arc Classique",
-          "target": "7A"
         },
         {
           "name": "BIGARD Christophe",
@@ -3034,7 +3013,7 @@
           "club": "1131072 - L'UNION",
           "category": "1131072 - L'UNION",
           "session": "S3 Femme Arc Classique National",
-          "target": "12B"
+          "target": "11B"
         },
         {
           "name": "BORDONADA Fabien",
@@ -3450,13 +3429,6 @@
           "target": "14A"
         },
         {
-          "name": "FOURNIER Brigitte",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "S3 Femme Arc Classique National",
-          "target": "10B"
-        },
-        {
           "name": "FOURNIER Laurent",
           "club": "1111008 - CARCASSONNE",
           "category": "1111008 - CARCASSONNE",
@@ -3685,7 +3657,7 @@
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "8B"
+          "target": "8A"
         },
         {
           "name": "LEROY Hugo",
@@ -3945,13 +3917,6 @@
           "category": "1131093 - BALMA",
           "session": "Open Homme Arc Classique National",
           "target": "24A"
-        },
-        {
-          "name": "PEYNAUD Yohan",
-          "club": "1166191 - PERPIGNAN",
-          "category": "1166191 - PERPIGNAN",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "6C"
         },
         {
           "name": "PINCEMAIL Joseph",
