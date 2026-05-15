@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-15T12:18:13.371809+00:00",
+  "generated_at_utc": "2026-05-15T15:01:33.527334+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -8845,7 +8845,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 45,
+      "entries_count": 46,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -9083,6 +9083,13 @@
           "club": "0221016 - CHENOVE",
           "category": "0221016 - CHENOVE",
           "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "PELLIER Patrick",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "Scratch Homme Arc Nu National",
           "target": ""
         },
         {
