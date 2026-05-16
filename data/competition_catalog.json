@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-16T08:08:27.409868+00:00",
+  "generated_at_utc": "2026-05-16T09:57:40.466826+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -6860,7 +6860,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27355",
       "ena_url": "https://www.ianseo.net/TourData/2026/27355/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27355/IC.php",
-      "entries_count": 243,
+      "entries_count": 258,
       "entries": [
         {
           "name": "ABID Remi",
@@ -7122,6 +7122,13 @@
           "target": ""
         },
         {
+          "name": "CAILLAUD Antonin",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U21 Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "CAILLEUX Anais",
           "club": "0976093 - SAINT VALERY EN CAUX",
           "category": "0976093 - SAINT VALERY EN CAUX",
@@ -7178,6 +7185,13 @@
           "target": ""
         },
         {
+          "name": "CAPLOT Valentin",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U21 Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "CARAES Solene",
           "club": "0445116 - SAINT JEAN DE BRAYE",
           "category": "0445116 - SAINT JEAN DE BRAYE",
@@ -7203,6 +7217,13 @@
           "club": "1017013 - SAINTES",
           "category": "1017013 - SAINTES",
           "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "CASANOVA Charlene",
+          "club": "0891144 - ETAMPES",
+          "category": "0891144 - ETAMPES",
+          "session": "U18 Femme Arc Classique",
           "target": ""
         },
         {
@@ -7276,6 +7297,13 @@
           "target": ""
         },
         {
+          "name": "DANES Agathe",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U18 Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "DAUDEY Leopold",
           "club": "0322009 - DINAN",
           "category": "0322009 - DINAN",
@@ -7318,6 +7346,20 @@
           "target": ""
         },
         {
+          "name": "DELAMOTTE Fabien",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "DELAMOTTE Maeva",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U13 Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "DELMAIRE Charles",
           "club": "0437073 - LA CROIX EN TOURAINE",
           "category": "0437073 - LA CROIX EN TOURAINE",
@@ -7357,6 +7399,13 @@
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "U15 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "DEVAUX Laura",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U18 Femme Arc Classique",
           "target": ""
         },
         {
@@ -7689,6 +7738,13 @@
           "target": ""
         },
         {
+          "name": "GREGORIO Lea-Lynn",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U21 Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "GRIMAUD-GARCIA Loup",
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
@@ -7738,6 +7794,13 @@
           "target": ""
         },
         {
+          "name": "HELYE Thomas",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U21 Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "HEPP Kylan",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
@@ -7749,6 +7812,13 @@
           "club": "1109002 - PAMIERS",
           "category": "1109002 - PAMIERS",
           "session": "U21 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "HERMANOVITS Timeo",
+          "club": "0322009 - DINAN",
+          "category": "0322009 - DINAN",
+          "session": "U13 Homme Arc Classique",
           "target": ""
         },
         {
@@ -7913,6 +7983,13 @@
           "target": ""
         },
         {
+          "name": "LEBAS Evan",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U21 Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "LECLERC Laurent",
           "club": "0927044 - THUIT SIGNOL",
           "category": "0927044 - THUIT SIGNOL",
@@ -8001,6 +8078,20 @@
           "club": "0961081 - BANVOU",
           "category": "0961081 - BANVOU",
           "session": "U18 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "MAHEAS Gabin",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U15 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "MAHEAS Louis",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U18 Homme Arc Classique",
           "target": ""
         },
         {
@@ -8134,6 +8225,13 @@
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
           "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "NECTOUX Gabriel",
+          "club": "0329053 - PLOURIN LES MORLAIX",
+          "category": "0329053 - PLOURIN LES MORLAIX",
+          "session": "U15 Homme Arc Classique",
           "target": ""
         },
         {
@@ -8519,6 +8617,13 @@
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "VILLERET-SZAWROWSKI Emma",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U21 Arc à Poulies",
           "target": ""
         },
         {
