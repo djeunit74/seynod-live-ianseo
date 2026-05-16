@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-16T18:01:16.909371+00:00",
+  "generated_at_utc": "2026-05-16T19:21:00.717358+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -10609,7 +10609,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27222",
       "ena_url": "https://www.ianseo.net/TourData/2026/27222/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27222/IC.php",
-      "entries_count": 127,
+      "entries_count": 134,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -10686,7 +10686,7 @@
           "club": "0760224 - NANTEUIL LE HAUDOUIN",
           "category": "0760224 - NANTEUIL LE HAUDOUIN",
           "session": "U13 Homme Arc Classique",
-          "target": "9A"
+          "target": "9C"
         },
         {
           "name": "BEY Joel",
@@ -10759,13 +10759,6 @@
           "target": "6D"
         },
         {
-          "name": "CABIOCH Guilhaume",
-          "club": "0760224 - NANTEUIL LE HAUDOUIN",
-          "category": "0760224 - NANTEUIL LE HAUDOUIN",
-          "session": "S1 Homme Arc Classique",
-          "target": "2B"
-        },
-        {
           "name": "CHAIR Frederic",
           "club": "0702078 - SERINGES ET NESLES",
           "category": "0702078 - SERINGES ET NESLES",
@@ -10815,13 +10808,6 @@
           "target": "5A"
         },
         {
-          "name": "COSTA Adrien",
-          "club": "0895280 - ERMONT",
-          "category": "0895280 - ERMONT",
-          "session": "S1 Homme Arc Classique",
-          "target": "2D"
-        },
-        {
           "name": "COUBEL Anthony",
           "club": "0895270 - VIARMES",
           "category": "0895270 - VIARMES",
@@ -10855,13 +10841,6 @@
           "category": "0760228 - LASSIGNY",
           "session": "U15 Femme Arc Classique National",
           "target": "9B"
-        },
-        {
-          "name": "DANIT Sophie",
-          "club": "0895299 - MONTIGNY LES CORMEILLES",
-          "category": "0895299 - MONTIGNY LES CORMEILLES",
-          "session": "S3 Femme Arc Classique",
-          "target": "3A"
         },
         {
           "name": "DOISY Arthur",
@@ -10941,6 +10920,27 @@
           "target": "2C"
         },
         {
+          "name": "DUVAL Pascal",
+          "club": "0702020 - PARCY TIGNY",
+          "category": "0702020 - PARCY TIGNY",
+          "session": "S3 Homme Arc Classique National",
+          "target": "8A"
+        },
+        {
+          "name": "ESMERY Antoine",
+          "club": "0760171 - COMPIEGNE",
+          "category": "0760171 - COMPIEGNE",
+          "session": "U18 Homme Arc Classique National",
+          "target": "7D"
+        },
+        {
+          "name": "ESMERY Eric",
+          "club": "0760199 - CREPY EN VALOIS",
+          "category": "0760199 - CREPY EN VALOIS",
+          "session": "S2 Homme Arc Classique National",
+          "target": "4B"
+        },
+        {
           "name": "FARHAT Shirley",
           "club": "0760224 - NANTEUIL LE HAUDOUIN",
           "category": "0760224 - NANTEUIL LE HAUDOUIN",
@@ -10983,16 +10983,23 @@
           "target": "3A"
         },
         {
+          "name": "GOSSELIN Jerome",
+          "club": "0760157 - SENLIS",
+          "category": "0760157 - SENLIS",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "3B"
+        },
+        {
           "name": "GREMONT Dimitri",
-          "club": "0759339 - VIEUX-CONDE",
-          "category": "0759339 - VIEUX-CONDE",
+          "club": "0759129 - VALENCIENNES",
+          "category": "0759129 - VALENCIENNES",
           "session": "Arc à Poulies Senior 1 Hommes National",
           "target": "5A"
         },
         {
           "name": "GREMONT Dimitri",
-          "club": "0759339 - VIEUX-CONDE",
-          "category": "0759339 - VIEUX-CONDE",
+          "club": "0759129 - VALENCIENNES",
+          "category": "0759129 - VALENCIENNES",
           "session": "S1 Homme Arc à Poulies National",
           "target": "5B"
         },
@@ -11002,6 +11009,20 @@
           "category": "0760197 - BEAUVAIS",
           "session": "S1 Homme Arc à Poulies",
           "target": "3D"
+        },
+        {
+          "name": "HARANG Edouard",
+          "club": "0760199 - CREPY EN VALOIS",
+          "category": "0760199 - CREPY EN VALOIS",
+          "session": "S3 Homme Arc Classique National",
+          "target": "8C"
+        },
+        {
+          "name": "HAUTIER Tony",
+          "club": "0702001 - BRAINE",
+          "category": "0702001 - BRAINE",
+          "session": "S2 Homme Arc Classique",
+          "target": "2D"
         },
         {
           "name": "HENNEBERT Lucas",
@@ -11016,6 +11037,20 @@
           "category": "0760208 - RIEUX",
           "session": "S2 Homme Arc Classique National",
           "target": "5D"
+        },
+        {
+          "name": "HENRION Matheis",
+          "club": "0702073 - VILLENEUVE ST GERMAIN",
+          "category": "0702073 - VILLENEUVE ST GERMAIN",
+          "session": "U15 Homme Arc Classique",
+          "target": "8D"
+        },
+        {
+          "name": "HENRION Matheis",
+          "club": "0702073 - VILLENEUVE ST GERMAIN",
+          "category": "0702073 - VILLENEUVE ST GERMAIN",
+          "session": "U15 Homme Arc Classique",
+          "target": "9A"
         },
         {
           "name": "JAMAIN Severine",
@@ -11051,13 +11086,6 @@
           "category": "0760228 - LASSIGNY",
           "session": "U18 Homme Arc Classique National",
           "target": "8B"
-        },
-        {
-          "name": "JOURDIN Hubert",
-          "club": "0895299 - MONTIGNY LES CORMEILLES",
-          "category": "0895299 - MONTIGNY LES CORMEILLES",
-          "session": "S2 Homme Arc Classique",
-          "target": "2A"
         },
         {
           "name": "LAFAY Mathis",
@@ -11145,15 +11173,15 @@
         },
         {
           "name": "LEFEBVRE Pascal",
-          "club": "0759339 - VIEUX-CONDE",
-          "category": "0759339 - VIEUX-CONDE",
+          "club": "0759129 - VALENCIENNES",
+          "category": "0759129 - VALENCIENNES",
           "session": "Arc à Poulies Senior 3 Hommes National",
           "target": "4A"
         },
         {
           "name": "LEFEBVRE Pascal",
-          "club": "0759339 - VIEUX-CONDE",
-          "category": "0759339 - VIEUX-CONDE",
+          "club": "0759129 - VALENCIENNES",
+          "category": "0759129 - VALENCIENNES",
           "session": "S3 Homme Arc à Poulies National",
           "target": "5D"
         },
@@ -11172,18 +11200,18 @@
           "target": "6A"
         },
         {
+          "name": "LEFEVRE Jean-Luc",
+          "club": "0760168 - RETHONDES",
+          "category": "0760168 - RETHONDES",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "7C"
+        },
+        {
           "name": "LEJEUNE Philippe",
           "club": "0702019 - CHEZY SUR MARNE",
           "category": "0702019 - CHEZY SUR MARNE",
           "session": "S2 Homme Arc à Poulies National",
           "target": "7C"
-        },
-        {
-          "name": "LEMAIRE Laurent",
-          "club": "0760199 - CREPY EN VALOIS",
-          "category": "0760199 - CREPY EN VALOIS",
-          "session": "S2 Homme Arc Classique National",
-          "target": "6D"
         },
         {
           "name": "LEMAIRE Laurent",
@@ -11284,11 +11312,25 @@
           "target": "7B"
         },
         {
+          "name": "MICHOT Hanae",
+          "club": "0760205 - NOGENT SUR OISE",
+          "category": "0760205 - NOGENT SUR OISE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "1B"
+        },
+        {
           "name": "MOITRE Steve",
           "club": "0760161 - RULLY",
           "category": "0760161 - RULLY",
           "session": "S2 Homme Arc Classique National",
           "target": "8D"
+        },
+        {
+          "name": "MOTTE Isabelle",
+          "club": "0760161 - RULLY",
+          "category": "0760161 - RULLY",
+          "session": "Scratch Femme Arc Nu National",
+          "target": "8B"
         },
         {
           "name": "MOUNIER Ellen",
@@ -11396,6 +11438,13 @@
           "target": "1C"
         },
         {
+          "name": "ROBASCIOTTI Sylvain",
+          "club": "0760182 - LONGUEIL ANNEL 2E",
+          "category": "0760182 - LONGUEIL ANNEL 2E",
+          "session": "S2 Homme Arc Classique National",
+          "target": "6D"
+        },
+        {
           "name": "SANCHEZ Barbara",
           "club": "0760223 - ERMENONVILLE",
           "category": "0760223 - ERMENONVILLE",
@@ -11424,6 +11473,13 @@
           "target": "9B"
         },
         {
+          "name": "SAUVAGE Henri",
+          "club": "0760199 - CREPY EN VALOIS",
+          "category": "0760199 - CREPY EN VALOIS",
+          "session": "S2 Homme Arc Classique National",
+          "target": "7B"
+        },
+        {
           "name": "SAUVAGE Oceane",
           "club": "0760199 - CREPY EN VALOIS",
           "category": "0760199 - CREPY EN VALOIS",
@@ -11431,11 +11487,11 @@
           "target": "5D"
         },
         {
-          "name": "SOULOT Marcel",
-          "club": "0894245 - CHAMPIGNY SUR MARNE",
-          "category": "0894245 - CHAMPIGNY SUR MARNE",
-          "session": "S2 Homme Arc Classique National",
-          "target": "7B"
+          "name": "SEYCHAL Lena",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "3A"
         },
         {
           "name": "SZLACHTA Antoine",
@@ -11457,13 +11513,6 @@
           "category": "0760199 - CREPY EN VALOIS",
           "session": "Scratch Homme Arc Nu National",
           "target": "7B"
-        },
-        {
-          "name": "THIERY Pascal",
-          "club": "0760199 - CREPY EN VALOIS",
-          "category": "0760199 - CREPY EN VALOIS",
-          "session": "Arc Nu Senior 3 Hommes National",
-          "target": "7C"
         },
         {
           "name": "VANNIER Leia",
