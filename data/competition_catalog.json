@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-17T18:03:02.527765+00:00",
+  "generated_at_utc": "2026-05-17T19:45:48.021600+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -637,7 +637,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28326",
       "ena_url": "https://www.ianseo.net/TourData/2026/28326/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28326/IC.php",
-      "entries_count": 334,
+      "entries_count": 337,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -672,7 +672,7 @@
           "club": "0891175 - DRAVEIL SENART",
           "category": "0891175 - DRAVEIL SENART",
           "session": "U21 Femme Arc Classique",
-          "target": "12C"
+          "target": "32B"
         },
         {
           "name": "ANANDANE Ishwar",
@@ -843,6 +843,13 @@
           "target": "7B"
         },
         {
+          "name": "BOUCHER Amaury",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "S1 Homme Arc Classique",
+          "target": "28B"
+        },
+        {
           "name": "BOURDONNEAU Leo",
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
@@ -911,6 +918,13 @@
           "category": "0891156 - ORSAY",
           "session": "S1 Homme Arc Classique",
           "target": "27B"
+        },
+        {
+          "name": "BUEB Anais",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "S1 Femme Arc Classique",
+          "target": "9D"
         },
         {
           "name": "CABALLERO-GONZALEZ Anthony",
@@ -1177,13 +1191,6 @@
           "category": "0878110 - MAREIL MARLY",
           "session": "S2 Homme Arc Classique",
           "target": "26C"
-        },
-        {
-          "name": "DEHU Florian",
-          "club": "0895292 - SAINT OUEN L'AUMONE",
-          "category": "0895292 - SAINT OUEN L'AUMONE",
-          "session": "S1 Homme Arc Classique",
-          "target": "32B"
         },
         {
           "name": "DELAGRANDA Dominique",
@@ -1550,6 +1557,13 @@
           "target": "28D"
         },
         {
+          "name": "GRANJOU Thomas",
+          "club": "0878143 - ELANCOURT",
+          "category": "0878143 - ELANCOURT",
+          "session": "S2 Homme Arc Classique",
+          "target": "21D"
+        },
+        {
           "name": "GREGOIRE Clement",
           "club": "0893214 - MONTREUIL 1ER",
           "category": "0893214 - MONTREUIL 1ER",
@@ -1655,13 +1669,6 @@
           "target": "45A"
         },
         {
-          "name": "HADJAL Florian",
-          "club": "0878143 - ELANCOURT",
-          "category": "0878143 - ELANCOURT",
-          "session": "S1 Homme Arc Classique",
-          "target": "21D"
-        },
-        {
           "name": "HAMEAU Laurent",
           "club": "0878139 - LES MUREAUX",
           "category": "0878139 - LES MUREAUX",
@@ -1722,7 +1729,7 @@
           "club": "0894263 - VILLEJUIF",
           "category": "0894263 - VILLEJUIF",
           "session": "S1 Femme Arc Classique",
-          "target": "27D"
+          "target": "28A"
         },
         {
           "name": "JACOB Alexandre",
@@ -1739,18 +1746,18 @@
           "target": "3C"
         },
         {
+          "name": "JAUD Clementine",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U21 Femme Arc Classique",
+          "target": "12C"
+        },
+        {
           "name": "JOIN-LAMBERT Anne-Lee",
           "club": "0878134 - VILLEPREUX",
           "category": "0878134 - VILLEPREUX",
           "session": "S2 Femme Arc Classique",
           "target": "14C"
-        },
-        {
-          "name": "JOURDAIN Cloe",
-          "club": "0891152 - MORSANG SUR ORGE",
-          "category": "0891152 - MORSANG SUR ORGE",
-          "session": "U21 Femme Arc Classique",
-          "target": "6D"
         },
         {
           "name": "JOURNEL Mathieu",
@@ -2033,6 +2040,13 @@
           "target": "26C"
         },
         {
+          "name": "LONGATTE Karine",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "S2 Femme Arc Classique",
+          "target": "6D"
+        },
+        {
           "name": "LOPEZ Javier",
           "club": "0875017 - PARIS XIII USMT",
           "category": "0875017 - PARIS XIII USMT",
@@ -2299,6 +2313,13 @@
           "target": "38C"
         },
         {
+          "name": "MUNIER Jean-Luc",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "S2 Homme Arc Classique",
+          "target": "27D"
+        },
+        {
           "name": "MUSCARELLO Matteo",
           "club": "0878123 - MAUREPAS",
           "category": "0878123 - MAUREPAS",
@@ -2327,18 +2348,18 @@
           "target": "50D"
         },
         {
-          "name": "NICOLAS Marie-Odile",
-          "club": "0891156 - ORSAY",
-          "category": "0891156 - ORSAY",
-          "session": "S2 Femme Arc Classique",
-          "target": "9D"
-        },
-        {
           "name": "NIERAT Dimitri",
           "club": "0892191 - CHAVILLE",
           "category": "0892191 - CHAVILLE",
           "session": "S1 Homme Arc Classique",
           "target": "23C"
+        },
+        {
+          "name": "NIKITINA Irina",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "33C"
         },
         {
           "name": "NOGRETTE Denis",
