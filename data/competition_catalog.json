@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-17T05:11:07.350044+00:00",
+  "generated_at_utc": "2026-05-17T07:56:32.273635+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 78,
+      "entries_count": 81,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -31,14 +31,14 @@
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "S3 Homme Arc Classique National",
-          "target": "11B"
+          "target": "14B"
         },
         {
           "name": "BELLEAU Patrice",
           "club": "1131102 - LEGUEVIN",
           "category": "1131102 - LEGUEVIN",
           "session": "S2 Homme Arc Classique National",
-          "target": "11A"
+          "target": "14A"
         },
         {
           "name": "BIGARD Christophe",
@@ -114,14 +114,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
@@ -151,6 +151,27 @@
           "category": "1131073 - FRONTON",
           "session": "S1 Homme Arc à Poulies",
           "target": "10B"
+        },
+        {
+          "name": "CONTIE Aela",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "U13 Femme Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "CONTIE Leneo",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "U15 Homme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "CONTIE Lilio",
+          "club": "1131080 - BLAGNAC",
+          "category": "1131080 - BLAGNAC",
+          "session": "U18 Homme Arc Classique",
+          "target": "11A"
         },
         {
           "name": "COUDERT Tristan",
@@ -185,13 +206,6 @@
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "S2 Homme Arc Classique National",
-          "target": "11C"
-        },
-        {
-          "name": "DE SAINT JORES Olivier",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "S2 Homme Arc Classique National",
           "target": "13C"
         },
         {
@@ -200,6 +214,13 @@
           "category": "1131091 - MURET",
           "session": "Arc Classique Senior 2 Hommes National",
           "target": "14A"
+        },
+        {
+          "name": "DE SAINT JORES Olivier",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "S2 Homme Arc Classique National",
+          "target": "14C"
         },
         {
           "name": "DERUMEAUX--BUREL Charlotte",
@@ -240,7 +261,7 @@
           "name": "DURAND David",
           "club": "1131072 - L'UNION",
           "category": "1131072 - L'UNION",
-          "session": "Scratch Homme Arc Nu National",
+          "session": "S2 Homme Arc Classique National",
           "target": "8A"
         },
         {
@@ -437,14 +458,14 @@
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
           "session": "S3 Homme Arc Classique",
-          "target": "11D"
+          "target": "11C"
         },
         {
           "name": "PINCEMAIL Joseph",
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
           "session": "S3 Homme Arc Classique National",
-          "target": "2D"
+          "target": "13B"
         },
         {
           "name": "POGAM Jean-Philippe",
@@ -535,7 +556,7 @@
           "club": "1131088 - CUGNAUX",
           "category": "1131088 - CUGNAUX",
           "session": "S3 Homme Arc Classique National",
-          "target": "11D"
+          "target": "12D"
         },
         {
           "name": "VASSEUR Alexandre",
