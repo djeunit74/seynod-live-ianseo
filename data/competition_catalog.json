@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-17T20:53:48.094845+00:00",
+  "generated_at_utc": "2026-05-17T21:57:03.999336+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -7767,13 +7767,20 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 46,
+      "entries_count": 49,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
           "club": "0239049 - ASNANS",
           "category": "0239049 - ASNANS",
           "session": "S3 Homme Arc à Poulies National",
+          "target": ""
+        },
+        {
+          "name": "ANDRIOT Julie",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S2 Femme Arc Classique National",
           "target": ""
         },
         {
@@ -8008,6 +8015,13 @@
           "target": ""
         },
         {
+          "name": "NIOI Jean Luc",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": ""
+        },
+        {
           "name": "PELLIER Patrick",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
@@ -8082,6 +8096,13 @@
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "VANDAME Loic",
+          "club": "0221015 - MEURSAULT",
+          "category": "0221015 - MEURSAULT",
+          "session": "Scratch Homme Arc Nu National",
           "target": ""
         },
         {
