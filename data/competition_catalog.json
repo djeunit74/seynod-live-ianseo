@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-19T05:45:48.619002+00:00",
+  "generated_at_utc": "2026-05-19T09:44:36.157488+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 83,
+      "entries_count": 84,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -80,7 +80,7 @@
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "U15 Femme Arc Classique National",
-          "target": "2C"
+          "target": "7C"
         },
         {
           "name": "BOUDIAF Zakarya",
@@ -121,14 +121,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
@@ -192,21 +192,21 @@
           "club": "1111017 - CASTELNAUDARY",
           "category": "1111017 - CASTELNAUDARY",
           "session": "U15 Homme Arc Classique",
-          "target": "6C"
+          "target": "5C"
         },
         {
           "name": "DABLANC Ben",
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "U13 Homme Arc Classique",
-          "target": "1C"
+          "target": "6C"
         },
         {
           "name": "DABLANC Leo",
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "U15 Homme Arc Classique",
-          "target": "6B"
+          "target": "5B"
         },
         {
           "name": "DE SAINT JORES Olivier",
@@ -297,14 +297,14 @@
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "S3 Femme Arc Classique National",
-          "target": "15A"
+          "target": "2A"
         },
         {
           "name": "GASPARD Loely",
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "U13 Femme Arc Classique",
-          "target": "2B"
+          "target": "7B"
         },
         {
           "name": "GILLES Jean",
@@ -374,14 +374,14 @@
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "U13 Homme Arc Classique",
-          "target": "1B"
+          "target": "6B"
         },
         {
           "name": "KHEMILI Adam",
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "U13 Homme Arc Classique",
-          "target": "1A"
+          "target": "6A"
         },
         {
           "name": "LE RALLIER Fantine",
@@ -416,7 +416,7 @@
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
           "session": "Arc Classique Senior 1 Hommes National",
-          "target": "15B"
+          "target": "2B"
         },
         {
           "name": "LESPES Alexandre",
@@ -430,7 +430,7 @@
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "U15 Femme Arc Classique",
-          "target": "6A"
+          "target": "5A"
         },
         {
           "name": "MALLENT Nicolas",
@@ -444,7 +444,7 @@
           "club": "1131080 - BLAGNAC",
           "category": "1131080 - BLAGNAC",
           "session": "S3 Homme Arc Classique National",
-          "target": "15D"
+          "target": "2C"
         },
         {
           "name": "MENDOUSSE SIRVEN Eva",
@@ -500,7 +500,7 @@
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "U15 Femme Arc Classique",
-          "target": "6D"
+          "target": "5D"
         },
         {
           "name": "REITENBACH Marc",
@@ -556,7 +556,7 @@
           "club": "1131093 - BALMA",
           "category": "1131093 - BALMA",
           "session": "U13 Homme Arc Classique",
-          "target": "2A"
+          "target": "7A"
         },
         {
           "name": "VALAT Chloe",
@@ -578,6 +578,13 @@
           "category": "1131079 - TOURNEFEUILLE",
           "session": "S2 Homme Arc Classique National",
           "target": "1D"
+        },
+        {
+          "name": "VASSEUR Alexandre",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": "2D"
         },
         {
           "name": "VISCHI Lionel",
@@ -7895,119 +7902,119 @@
           "club": "1131071 - SAINT GAUDENS",
           "category": "1131071 - SAINT GAUDENS",
           "session": "Arc Classique Niveau3 122cm15m",
-          "target": ""
+          "target": "5B"
         },
         {
           "name": "BATTEUX Mila",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "Arc Classique Niveau2 80cm 15m",
-          "target": "4A"
+          "target": "8C"
         },
         {
           "name": "DEBLADIS Olivia",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "Arc Classique Niveau3 122cm15m",
-          "target": ""
+          "target": "6C"
         },
         {
           "name": "DIEMER Loreline",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "Arc Classique As 40cm 15m",
-          "target": "10A"
+          "target": "12A"
         },
         {
           "name": "FOULLU MARTINEZ Edzio",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "Arc Classique Niveau1 60cm 15m",
-          "target": "8A"
+          "target": "9A"
         },
         {
           "name": "GASSMANN Elise",
           "club": "1131081 - TOULOUSE TAC",
           "category": "1131081 - TOULOUSE TAC",
           "session": "Arc Classique As 40cm 15m",
-          "target": "10B"
+          "target": "11B"
         },
         {
           "name": "LACOMBE Zoe",
           "club": "1131071 - SAINT GAUDENS",
           "category": "1131071 - SAINT GAUDENS",
           "session": "Arc Classique As 40cm 15m",
-          "target": ""
+          "target": "11A"
         },
         {
           "name": "LE GOFF Melodie",
           "club": "1131081 - TOULOUSE TAC",
           "category": "1131081 - TOULOUSE TAC",
           "session": "Arc Classique As 40cm 15m",
-          "target": "10C"
+          "target": "12C"
         },
         {
           "name": "LHOMME Enael",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "Arc Classique Niveau3 122cm15m",
-          "target": ""
+          "target": "4B"
         },
         {
           "name": "LIECHTY Nolan",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "Arc Classique Niveau3 122cm15m",
-          "target": ""
+          "target": "5A"
         },
         {
           "name": "MIRO Leonie",
           "club": "1131071 - SAINT GAUDENS",
           "category": "1131071 - SAINT GAUDENS",
           "session": "Arc Classique As 40cm 15m",
-          "target": ""
+          "target": "12B"
         },
         {
           "name": "MONFILS Leni",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "Arc Classique Niveau2 80cm 15m",
-          "target": ""
+          "target": "8B"
         },
         {
           "name": "NORMANDIN Lucas",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "Arc Classique Niveau3 122cm15m",
-          "target": ""
+          "target": "4C"
         },
         {
           "name": "RACCA Leo",
           "club": "1131071 - SAINT GAUDENS",
           "category": "1131071 - SAINT GAUDENS",
           "session": "Arc Classique Niveau3 122cm15m",
-          "target": ""
+          "target": "6A"
         },
         {
           "name": "RAMOS Naomie",
           "club": "1131071 - SAINT GAUDENS",
           "category": "1131071 - SAINT GAUDENS",
           "session": "Arc Classique Niveau2 80cm 15m",
-          "target": ""
+          "target": "8A"
         },
         {
           "name": "SANCHEZ Timothee",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "Arc Classique Niveau1 60cm 15m",
-          "target": ""
+          "target": "9C"
         },
         {
           "name": "TEHAR Mohamed",
           "club": "1131081 - TOULOUSE TAC",
           "category": "1131081 - TOULOUSE TAC",
           "session": "Arc Classique Niveau3 122cm15m",
-          "target": "3A"
+          "target": "4A"
         }
       ]
     },
