@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-19T20:14:47.345443+00:00",
+  "generated_at_utc": "2026-05-19T21:55:41.852193+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1400,7 +1400,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28307",
       "ena_url": "https://www.ianseo.net/TourData/2026/28307/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28307/IC.php",
-      "entries_count": 178,
+      "entries_count": 174,
       "entries": [
         {
           "name": "ALLEGRE Michel",
@@ -1529,20 +1529,6 @@
           "target": "9D"
         },
         {
-          "name": "BORTOLUSSI Loris",
-          "club": "1306027 - MENTON",
-          "category": "1306027 - MENTON",
-          "session": "S3 Homme Arc à Poulies National",
-          "target": "11A"
-        },
-        {
-          "name": "BORTOLUSSI Loris",
-          "club": "1306027 - MENTON",
-          "category": "1306027 - MENTON",
-          "session": "Arc à Poulies Senior 3 Hommes National",
-          "target": "7C"
-        },
-        {
           "name": "BOTTARO Romane",
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
@@ -1658,8 +1644,8 @@
           "name": "COURNAULT Eve",
           "club": "1306027 - MENTON",
           "category": "1306027 - MENTON",
-          "session": "U18 Femme Arc Classique National",
-          "target": "7B"
+          "session": "U18 Femme Arc Classique",
+          "target": "16D"
         },
         {
           "name": "COUSIN David",
@@ -2218,22 +2204,8 @@
           "name": "MASTERENKO Jean-Claude",
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
-          "session": "S3 Homme Arc à Poulies National",
-          "target": "11C"
-        },
-        {
-          "name": "MASTERENKO Jean-Claude",
-          "club": "1306041 - FA NICE",
-          "category": "1306041 - FA NICE",
           "session": "S3 Homme Arc à Poulies",
           "target": "6A"
-        },
-        {
-          "name": "MASTERENKO Jean-Claude",
-          "club": "1306041 - FA NICE",
-          "category": "1306041 - FA NICE",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "6C"
         },
         {
           "name": "MASTERENKO Jean-Claude",
