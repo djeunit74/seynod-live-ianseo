@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-19T18:22:13.589146+00:00",
+  "generated_at_utc": "2026-05-19T20:14:47.345443+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -9993,7 +9993,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 51,
+      "entries_count": 54,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -10129,6 +10129,13 @@
           "target": ""
         },
         {
+          "name": "FAGOT Yanis",
+          "club": "0221016 - CHENOVE",
+          "category": "0221016 - CHENOVE",
+          "session": "U18 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "GALLOIS Elodie",
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
@@ -10199,10 +10206,24 @@
           "target": ""
         },
         {
+          "name": "LARDIER Thybald",
+          "club": "0221016 - CHENOVE",
+          "category": "0221016 - CHENOVE",
+          "session": "U18 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "LEVE Alexandra",
           "club": "0221007 - CHATILLON S/SEINE",
           "category": "0221007 - CHATILLON S/SEINE",
           "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "LEVISTE Alexandra",
+          "club": "0289091 - LES CADETS D'AUXERRE",
+          "category": "0289091 - LES CADETS D'AUXERRE",
+          "session": "S1 Femme Arc Classique National",
           "target": ""
         },
         {
