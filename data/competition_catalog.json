@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-20T16:27:01.180206+00:00",
+  "generated_at_utc": "2026-05-20T18:41:33.083062+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1414,7 +1414,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28307",
       "ena_url": "https://www.ianseo.net/TourData/2026/28307/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28307/IC.php",
-      "entries_count": 171,
+      "entries_count": 173,
       "entries": [
         {
           "name": "ALLEGRE Michel",
@@ -1491,7 +1491,7 @@
           "club": "1306038 - NICE AC",
           "category": "1306038 - NICE AC",
           "session": "S1 Homme Arc Classique",
-          "target": "22D"
+          "target": "24C"
         },
         {
           "name": "BIFARELLA Marie-Catherine",
@@ -1638,7 +1638,7 @@
           "club": "0169178 - BRIGNAIS",
           "category": "0169178 - BRIGNAIS",
           "session": "S1 Femme Arc Classique",
-          "target": "22B"
+          "target": "22D"
         },
         {
           "name": "COURNAULT Eve",
@@ -1792,7 +1792,7 @@
           "club": "1306037 - MOUANS SARTOUX",
           "category": "1306037 - MOUANS SARTOUX",
           "session": "S2 Femme Arc Classique",
-          "target": "22C"
+          "target": "24A"
         },
         {
           "name": "DURBANO Theo",
@@ -1911,7 +1911,7 @@
           "club": "1306030 - CANNES MANDELIEU",
           "category": "1306030 - CANNES MANDELIEU",
           "session": "S1 Femme Arc Classique",
-          "target": "24A"
+          "target": "22B"
         },
         {
           "name": "FRISOT Aurore",
@@ -2068,6 +2068,13 @@
           "target": "14A"
         },
         {
+          "name": "KEMP Xavier",
+          "club": "1306035 - MONACO",
+          "category": "1306035 - MONACO",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "6C"
+        },
+        {
           "name": "KOCHERT Sebastien",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -2107,14 +2114,14 @@
           "club": "1306030 - CANNES MANDELIEU",
           "category": "1306030 - CANNES MANDELIEU",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "24C"
+          "target": "22C"
         },
         {
           "name": "LEYMARIE Oscar",
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
           "session": "U13 Homme Arc Classique",
-          "target": ""
+          "target": "4C"
         },
         {
           "name": "LIAUDOIS Fanny",
@@ -2122,6 +2129,13 @@
           "category": "1306030 - CANNES MANDELIEU",
           "session": "S1 Femme Arc Classique",
           "target": "24B"
+        },
+        {
+          "name": "LIPPI Valentin",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "U18 Homme Arc Classique National",
+          "target": "10D"
         },
         {
           "name": "LOPEZ Damien",
@@ -2149,7 +2163,7 @@
           "club": "1306027 - MENTON",
           "category": "1306027 - MENTON",
           "session": "U15 Homme Arc Classique National",
-          "target": "3D"
+          "target": "4A"
         },
         {
           "name": "MALGIERI Ksenija",
@@ -2345,7 +2359,7 @@
           "club": "1306035 - MONACO",
           "category": "1306035 - MONACO",
           "session": "S3 Homme Arc à Poulies National",
-          "target": "7D"
+          "target": "14D"
         },
         {
           "name": "PICAUD Sandrine",
