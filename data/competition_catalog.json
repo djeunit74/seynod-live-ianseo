@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-20T06:09:25.302787+00:00",
+  "generated_at_utc": "2026-05-20T10:01:10.224971+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -759,7 +759,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 84,
+      "entries_count": 86,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -863,14 +863,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
@@ -1039,7 +1039,14 @@
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "S3 Femme Arc Classique National",
-          "target": "2A"
+          "target": "14D"
+        },
+        {
+          "name": "FOURNIER Brigitte",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "S3 Femme Arc Classique National",
+          "target": "1C"
         },
         {
           "name": "GASPARD Loely",
@@ -1158,7 +1165,7 @@
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
           "session": "Arc Classique Senior 1 Hommes National",
-          "target": "2B"
+          "target": "2A"
         },
         {
           "name": "LESPES Alexandre",
@@ -1187,6 +1194,13 @@
           "category": "1131080 - BLAGNAC",
           "session": "S3 Homme Arc Classique National",
           "target": "2C"
+        },
+        {
+          "name": "MATHIEU Benoit",
+          "club": "1131081 - TOULOUSE TAC",
+          "category": "1131081 - TOULOUSE TAC",
+          "session": "S2 Homme Arc Classique National",
+          "target": "1A"
         },
         {
           "name": "MENDOUSSE SIRVEN Eva",
