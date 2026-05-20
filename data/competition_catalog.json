@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-20T21:00:03.024740+00:00",
+  "generated_at_utc": "2026-05-20T22:40:12.253284+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -10290,6 +10290,13 @@
           "target": ""
         },
         {
+          "name": "GUYOT Sophie",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "Scratch Femme Arc Nu National",
+          "target": ""
+        },
+        {
           "name": "HAUSSE Didier",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
@@ -10343,13 +10350,6 @@
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U15 Femme Arc Classique National",
-          "target": ""
-        },
-        {
-          "name": "LYANNAS Nathan",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "U13 Homme Arc Classique National",
           "target": ""
         },
         {
