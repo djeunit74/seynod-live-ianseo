@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T12:15:34.558923+00:00",
+  "generated_at_utc": "2026-05-21T15:57:35.749115+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27577",
       "ena_url": "https://www.ianseo.net/TourData/2026/27577/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27577/IC.php",
-      "entries_count": 58,
+      "entries_count": 59,
       "entries": [
         {
           "name": "BEAUCE Noemie",
@@ -129,7 +129,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S1 Homme Arc à Poulies",
-          "target": "6A"
+          "target": "7B"
         },
         {
           "name": "DUPUIS Anthony",
@@ -160,6 +160,13 @@
           "target": "9A"
         },
         {
+          "name": "GERMAIN Evan",
+          "club": "0329053 - PLOURIN LES MORLAIX",
+          "category": "0329053 - PLOURIN LES MORLAIX",
+          "session": "S1 Homme Arc Classique",
+          "target": "12A"
+        },
+        {
           "name": "GICQUEL Matthieu",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
@@ -171,7 +178,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "U15 Femme Arc Classique",
-          "target": "12A"
+          "target": "4A"
         },
         {
           "name": "HERSAN Christophe",
@@ -437,7 +444,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27578",
       "ena_url": "https://www.ianseo.net/TourData/2026/27578/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27578/IC.php",
-      "entries_count": 47,
+      "entries_count": 52,
       "entries": [
         {
           "name": "BABLEE Agnes",
@@ -457,7 +464,7 @@
           "name": "BAJARD Capucine",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
-          "session": "U13 Femme Arc Classique",
+          "session": "Arc Classique U13 Femmes",
           "target": "12A"
         },
         {
@@ -489,6 +496,13 @@
           "target": "3C"
         },
         {
+          "name": "COUSTOU Audran",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U11 Homme Arc Classique",
+          "target": "2B"
+        },
+        {
           "name": "CROIZARD Lena",
           "club": "0335087 - BETTON",
           "category": "0335087 - BETTON",
@@ -515,6 +529,13 @@
           "category": "0356118 - LORIENT ASAL",
           "session": "Fédéral Homme Arc à Poulies",
           "target": "6C"
+        },
+        {
+          "name": "DELOURMEL Theo",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U11 Homme Arc Classique",
+          "target": "2A"
         },
         {
           "name": "DELOURMEL Timeo",
@@ -577,7 +598,14 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "S1 Homme Arc Classique",
-          "target": "10A"
+          "target": "11A"
+        },
+        {
+          "name": "GOH LEMOINE Hadrien",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U13 Homme Arc Classique National",
+          "target": "2B"
         },
         {
           "name": "GUERET Mael",
@@ -585,6 +613,20 @@
           "category": "0335087 - BETTON",
           "session": "S1 Homme Arc Classique National",
           "target": "5B"
+        },
+        {
+          "name": "GUITTON Alois",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "IDENSEN Elina",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Femme Arc Classique",
+          "target": "9A"
         },
         {
           "name": "LARVOR Riwan",
@@ -598,20 +640,20 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "S2 Femme Arc Classique",
-          "target": "9C"
-        },
-        {
-          "name": "LE MANAC'H Lea Rose",
-          "club": "0335056 - TINTENIAC",
-          "category": "0335056 - TINTENIAC",
-          "session": "U18 Femme Arc Classique",
-          "target": "8B"
+          "target": "10C"
         },
         {
           "name": "LE MANAC'H Lea Rose",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "Arc Classique U18 Femmes",
+          "target": "8B"
+        },
+        {
+          "name": "LE MANAC'H Lea Rose",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U18 Femme Arc Classique",
           "target": "8B"
         },
         {
@@ -668,14 +710,14 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "U21 Femme Arc Classique",
-          "target": "9B"
+          "target": "10B"
         },
         {
           "name": "PIGEAUD Damien",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S2 Homme Arc Classique",
-          "target": "10C"
+          "target": "11C"
         },
         {
           "name": "PILLON Thibaut",
@@ -738,14 +780,14 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "Open Homme Arc Classique",
-          "target": "9A"
+          "target": "10A"
         },
         {
           "name": "VERZIER-ROUSSON Iewan",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S1 Homme Arc Classique",
-          "target": "10B"
+          "target": "11B"
         },
         {
           "name": "VINOUZE Candice",
@@ -5046,7 +5088,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27355",
       "ena_url": "https://www.ianseo.net/TourData/2026/27355/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27355/IC.php",
-      "entries_count": 257,
+      "entries_count": 256,
       "entries": [
         {
           "name": "ABID Remi",
@@ -6356,13 +6398,6 @@
           "category": "1033110 - AUROS",
           "session": "U18 Homme Arc Classique",
           "target": "13B"
-        },
-        {
-          "name": "MINET Quentin",
-          "club": "1017029 - SURGERES",
-          "category": "1017029 - SURGERES",
-          "session": "U21 Homme Arc Classique",
-          "target": "31A"
         },
         {
           "name": "MIREL Noa",
