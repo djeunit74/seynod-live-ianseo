@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-21T18:06:17.293305+00:00",
+  "generated_at_utc": "2026-05-21T20:20:13.556340+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 39,
+  "count": 40,
   "tournaments": [
     {
       "to_id": "27577",
@@ -9253,6 +9253,19 @@
           "target": ""
         }
       ]
+    },
+    {
+      "to_id": "28424",
+      "year": "2026",
+      "name": "Division Régionale Excellence Normandie - Manche N°2",
+      "organizer": "Les Archers Banoïciens",
+      "date_text": "31 May",
+      "end_date": "2026-05-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28424",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28424/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28424/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27222",
