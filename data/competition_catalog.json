@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-21T08:33:22.539845+00:00",
+  "generated_at_utc": "2026-05-21T12:15:34.558923+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 38,
+  "count": 39,
   "tournaments": [
     {
       "to_id": "27577",
@@ -771,6 +771,19 @@
       ]
     },
     {
+      "to_id": "28434",
+      "year": "2026",
+      "name": "Rencontre jeunes CD34 - Béziers",
+      "organizer": "Les Archers Biterrois",
+      "date_text": "23 May",
+      "end_date": "2026-05-23",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28434",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28434/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28434/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27185",
       "year": "2026",
       "name": "TAE Toulouse TAC à Pech-David 24 mai 2026",
@@ -780,7 +793,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 85,
+      "entries_count": 86,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -884,14 +897,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
@@ -998,6 +1011,13 @@
           "category": "1131072 - L'UNION",
           "session": "S2 Femme Arc à Poulies",
           "target": "10D"
+        },
+        {
+          "name": "DEBAIG Isabelle",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": "9C"
         },
         {
           "name": "DERUMEAUX--BUREL Charlotte",
@@ -2653,7 +2673,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28326",
       "ena_url": "https://www.ianseo.net/TourData/2026/28326/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28326/IC.php",
-      "entries_count": 338,
+      "entries_count": 337,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -2661,6 +2681,13 @@
           "category": "0894256 - CRETEIL",
           "session": "S1 Femme Arc Classique",
           "target": "16C"
+        },
+        {
+          "name": "ADRIASHENKO Daria",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "S1 Femme Arc Classique",
+          "target": "28C"
         },
         {
           "name": "AGAPOFF Sergei",
@@ -2768,11 +2795,25 @@
           "target": "41C"
         },
         {
+          "name": "BEAUR Jean Luc",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "S2 Homme Arc Classique",
+          "target": "17A"
+        },
+        {
           "name": "BEAURIN Gael",
           "club": "0894266 - IVRY SUR SEINE",
           "category": "0894266 - IVRY SUR SEINE",
           "session": "S1 Homme Arc Classique",
           "target": "13C"
+        },
+        {
+          "name": "BELMONT Yannick",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "S2 Homme Arc Classique",
+          "target": "32C"
         },
         {
           "name": "BERARDINO Raphael",
@@ -2787,13 +2828,6 @@
           "category": "0893218 - ROMAINVILLE",
           "session": "S1 Homme Arc Classique",
           "target": "14A"
-        },
-        {
-          "name": "BERTEL Adrien",
-          "club": "0891175 - DRAVEIL SENART",
-          "category": "0891175 - DRAVEIL SENART",
-          "session": "S2 Homme Arc Classique",
-          "target": "31B"
         },
         {
           "name": "BIERRY Melanie",
@@ -2866,13 +2900,6 @@
           "target": "7B"
         },
         {
-          "name": "BOUCHER Amaury",
-          "club": "0891152 - MORSANG SUR ORGE",
-          "category": "0891152 - MORSANG SUR ORGE",
-          "session": "S1 Homme Arc Classique",
-          "target": "28B"
-        },
-        {
           "name": "BOURDONNEAU Leo",
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
@@ -2913,6 +2940,13 @@
           "category": "0892203 - ISSY LES MOULINEAUX",
           "session": "S1 Femme Arc Classique",
           "target": "2C"
+        },
+        {
+          "name": "BRIAND Christophe",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S2 Homme Arc Classique",
+          "target": "25C"
         },
         {
           "name": "BROCHOT Ivanny",
@@ -3130,13 +3164,6 @@
           "category": "0877059 - BUSSY ST GEORGES",
           "session": "S2 Homme Arc Classique",
           "target": "22C"
-        },
-        {
-          "name": "CORNU Franck",
-          "club": "0877037 - VENEUX LES SABLONS",
-          "category": "0877037 - VENEUX LES SABLONS",
-          "session": "S2 Homme Arc Classique",
-          "target": "17A"
         },
         {
           "name": "CORSAT Bastien",
@@ -3496,6 +3523,13 @@
           "target": "25B"
         },
         {
+          "name": "GAMBON Marc",
+          "club": "0891152 - MORSANG SUR ORGE",
+          "category": "0891152 - MORSANG SUR ORGE",
+          "session": "S2 Homme Arc Classique",
+          "target": "28B"
+        },
+        {
           "name": "GARIN Gilles",
           "club": "0895297 - ECOUEN",
           "category": "0895297 - ECOUEN",
@@ -3675,7 +3709,14 @@
           "club": "0895297 - ECOUEN",
           "category": "0895297 - ECOUEN",
           "session": "S2 Femme Arc à Poulies",
-          "target": "36B"
+          "target": "37C"
+        },
+        {
+          "name": "GUTHERTZ Maxence",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "S1 Homme Arc Classique",
+          "target": "31B"
         },
         {
           "name": "HABRAN Franck",
@@ -4147,13 +4188,6 @@
           "target": "31D"
         },
         {
-          "name": "MARSIN David",
-          "club": "0894256 - CRETEIL",
-          "category": "0894256 - CRETEIL",
-          "session": "S2 Homme Arc Classique",
-          "target": "27A"
-        },
-        {
           "name": "MARTIN Fabrice",
           "club": "0878110 - MAREIL MARLY",
           "category": "0878110 - MAREIL MARLY",
@@ -4250,13 +4284,6 @@
           "category": "0891144 - ETAMPES",
           "session": "S2 Homme Arc Classique",
           "target": "32D"
-        },
-        {
-          "name": "MILLON Sandrine",
-          "club": "0893240 - PANTIN",
-          "category": "0893240 - PANTIN",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "34C"
         },
         {
           "name": "MONCOQ Joshua",
@@ -4466,7 +4493,7 @@
           "club": "0891175 - DRAVEIL SENART",
           "category": "0891175 - DRAVEIL SENART",
           "session": "U21 Femme Arc Classique",
-          "target": "32C"
+          "target": "27A"
         },
         {
           "name": "PENNETIER Gregory",
@@ -4714,13 +4741,6 @@
           "target": "50A"
         },
         {
-          "name": "SANTOS Virginie",
-          "club": "0895297 - ECOUEN",
-          "category": "0895297 - ECOUEN",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "38D"
-        },
-        {
           "name": "SAUVAGE Jean Francois",
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
@@ -4879,7 +4899,7 @@
           "club": "0895297 - ECOUEN",
           "category": "0895297 - ECOUEN",
           "session": "S2 Femme Arc à Poulies",
-          "target": "37C"
+          "target": "36B"
         },
         {
           "name": "UNG Brondon",
@@ -4999,13 +5019,6 @@
           "category": "0893227 - GAGNY",
           "session": "S2 Femme Arc à Poulies",
           "target": "37D"
-        },
-        {
-          "name": "WITTMANN Titouan",
-          "club": "0891148 - MORANGIS",
-          "category": "0891148 - MORANGIS",
-          "session": "U21 Homme Arc Classique",
-          "target": "25C"
         },
         {
           "name": "WU Viviane",
@@ -6041,7 +6054,7 @@
           "club": "0271076 - MACON",
           "category": "0271076 - MACON",
           "session": "U21 Arc à Poulies",
-          "target": "3A"
+          "target": "2C"
         },
         {
           "name": "JAGU-SABATHIER Mael",
@@ -6209,7 +6222,7 @@
           "club": "0976103 - LE HAVRE CHTA",
           "category": "0976103 - LE HAVRE CHTA",
           "session": "U21 Arc à Poulies",
-          "target": "2B"
+          "target": "3A"
         },
         {
           "name": "LOISEAU MAJEAU Lola",
@@ -6629,7 +6642,7 @@
           "club": "0976130 - NOTRE DAME DE GRAVENCHON",
           "category": "0976130 - NOTRE DAME DE GRAVENCHON",
           "session": "U21 Arc à Poulies",
-          "target": "2C"
+          "target": "2B"
         },
         {
           "name": "SALVAT BERTHOIX Noelyne",
@@ -11813,7 +11826,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28268",
       "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 25,
+      "entries_count": 27,
       "entries": [
         {
           "name": "ARANDA Joseph",
@@ -11914,6 +11927,13 @@
           "target": "2B"
         },
         {
+          "name": "LE VAN Christian",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1A"
+        },
+        {
           "name": "MARTIN Marie",
           "club": "1132109 - CONDOM",
           "category": "1132109 - CONDOM",
@@ -11954,6 +11974,13 @@
           "category": "1131072 - L'UNION",
           "session": "U18 Homme Arc à Poulies",
           "target": "2C"
+        },
+        {
+          "name": "PAES Christian",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1B"
         },
         {
           "name": "POUILLY Franck",
