@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-21T04:54:12.818325+00:00",
+  "generated_at_utc": "2026-05-21T08:33:22.539845+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,15 +17,8 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27577",
       "ena_url": "https://www.ianseo.net/TourData/2026/27577/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27577/IC.php",
-      "entries_count": 59,
+      "entries_count": 58,
       "entries": [
-        {
-          "name": "BARAER Edouard",
-          "club": "0356118 - LORIENT ASAL",
-          "category": "0356118 - LORIENT ASAL",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "12A"
-        },
         {
           "name": "BEAUCE Noemie",
           "club": "0335087 - BETTON",
@@ -118,6 +111,13 @@
           "target": "10B"
         },
         {
+          "name": "DENIS Quentin",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
           "name": "DUAULT Michel",
           "club": "0335065 - DOMLOUP",
           "category": "0335065 - DOMLOUP",
@@ -167,18 +167,11 @@
           "target": "11C"
         },
         {
-          "name": "GICQUEL Matthieu",
-          "club": "0335056 - TINTENIAC",
-          "category": "0335056 - TINTENIAC",
-          "session": "Arc Classique Senior 1 Hommes",
-          "target": "9A"
-        },
-        {
           "name": "GUILLAUME Fanny",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "U15 Femme Arc Classique",
-          "target": "4A"
+          "target": "12A"
         },
         {
           "name": "HERSAN Christophe",
@@ -235,6 +228,13 @@
           "category": "0322005 - FREHEL",
           "session": "S2 Femme Arc Classique",
           "target": "11B"
+        },
+        {
+          "name": "LALLOUE Tiffenn",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "S1 Femme Arc Classique",
+          "target": "11A"
         },
         {
           "name": "LARVOR Eleonore",
@@ -333,13 +333,6 @@
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
           "session": "S1 Homme Arc Classique",
           "target": "10C"
-        },
-        {
-          "name": "PILLON Thibaut",
-          "club": "0335056 - TINTENIAC",
-          "category": "0335056 - TINTENIAC",
-          "session": "S1 Homme Arc Classique",
-          "target": "11A"
         },
         {
           "name": "QUINTO Kaina",
@@ -444,7 +437,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27578",
       "ena_url": "https://www.ianseo.net/TourData/2026/27578/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27578/IC.php",
-      "entries_count": 43,
+      "entries_count": 47,
       "entries": [
         {
           "name": "BABLEE Agnes",
@@ -459,6 +452,20 @@
           "category": "0335067 - RENNES CIE",
           "session": "Arc à Poulies Senior 2 Femmes",
           "target": "6A"
+        },
+        {
+          "name": "BAJARD Capucine",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U13 Femme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "BAJARD Capucine",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U13 Femme Arc Classique",
+          "target": "3B"
         },
         {
           "name": "BERTHEMET Anais",
@@ -517,6 +524,13 @@
           "target": "4B"
         },
         {
+          "name": "DENIS Quentin",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
           "name": "DENOT Nelly",
           "club": "0335054 - RENNES CHR",
           "category": "0335054 - RENNES CHR",
@@ -563,7 +577,7 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "S1 Homme Arc Classique",
-          "target": "11A"
+          "target": "10A"
         },
         {
           "name": "GUERET Mael",
@@ -577,14 +591,14 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "U21 Homme Arc Classique",
-          "target": "9A"
+          "target": "10A"
         },
         {
           "name": "LE MANAC'H Florence",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "S2 Femme Arc Classique",
-          "target": "10C"
+          "target": "9C"
         },
         {
           "name": "LE MANAC'H Lea Rose",
@@ -661,7 +675,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S2 Homme Arc Classique",
-          "target": "10A"
+          "target": "10C"
         },
         {
           "name": "PILLON Thibaut",
@@ -675,14 +689,14 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "9B"
+          "target": "9A"
         },
         {
           "name": "QUINTO Frederic",
           "club": "0914003 - CAEN",
           "category": "0914003 - CAEN",
           "session": "S2 Homme Arc Classique",
-          "target": "9C"
+          "target": "10C"
         },
         {
           "name": "QUINTO Julie",
@@ -696,7 +710,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "U18 Femme Arc Classique",
-          "target": "10A"
+          "target": "7A"
         },
         {
           "name": "QUINTO Noam",
@@ -731,7 +745,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S1 Homme Arc Classique",
-          "target": "11C"
+          "target": "10B"
         },
         {
           "name": "VINOUZE Candice",
@@ -746,6 +760,13 @@
           "category": "0335065 - DOMLOUP",
           "session": "U13 Femme Arc Classique",
           "target": "3A"
+        },
+        {
+          "name": "WOZNIOK Antoine",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "10A"
         }
       ]
     },
@@ -759,7 +780,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 86,
+      "entries_count": 85,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -863,14 +884,14 @@
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "S3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Hommes",
           "target": "9D"
         },
         {
           "name": "CAPO Jean-Marc",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
-          "session": "Arc à Poulies Senior 3 Hommes",
+          "session": "S3 Homme Arc à Poulies",
           "target": "9D"
         },
         {
@@ -1039,14 +1060,7 @@
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "S3 Femme Arc Classique National",
-          "target": "14D"
-        },
-        {
-          "name": "FOURNIER Brigitte",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "S3 Femme Arc Classique National",
-          "target": "1C"
+          "target": "15C"
         },
         {
           "name": "GASPARD Loely",
@@ -1189,6 +1203,13 @@
           "target": "1A"
         },
         {
+          "name": "MALO Guillaume",
+          "club": "1131069 - AUZEVILLE",
+          "category": "1131069 - AUZEVILLE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "15A"
+        },
+        {
           "name": "MARQUILLANES Jeanluc",
           "club": "1131080 - BLAGNAC",
           "category": "1131080 - BLAGNAC",
@@ -1201,13 +1222,6 @@
           "category": "1131081 - TOULOUSE TAC",
           "session": "S2 Homme Arc Classique National",
           "target": "1A"
-        },
-        {
-          "name": "MENDOUSSE SIRVEN Eva",
-          "club": "1131079 - TOURNEFEUILLE",
-          "category": "1131079 - TOURNEFEUILLE",
-          "session": "U18 Femme Arc Classique",
-          "target": "11A"
         },
         {
           "name": "MOUYNET Valerie",
@@ -1332,15 +1346,15 @@
           "name": "VASSEUR Alexandre",
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
-          "session": "S2 Homme Arc Classique National",
-          "target": "1D"
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": "1C"
         },
         {
           "name": "VASSEUR Alexandre",
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
-          "session": "Arc Classique Senior 2 Hommes National",
-          "target": "2D"
+          "session": "S2 Homme Arc Classique National",
+          "target": "1D"
         },
         {
           "name": "VISCHI Lionel",
@@ -6845,7 +6859,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27216",
       "ena_url": "https://www.ianseo.net/TourData/2026/27216/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27216/IC.php",
-      "entries_count": 270,
+      "entries_count": 275,
       "entries": [
         {
           "name": "ACHA GONZALEZ Pablo",
@@ -7055,6 +7069,13 @@
           "club": "1306038 - NICE AC",
           "category": "1306038 - NICE AC",
           "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "BEUNARD Benoit",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "Arc Classique Senior 2 Homme",
           "target": ""
         },
         {
@@ -7786,6 +7807,13 @@
           "target": ""
         },
         {
+          "name": "JEAMBRUN Andeol",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "Arc à Poulies Senior 1 Homme",
+          "target": ""
+        },
+        {
           "name": "JEANNIN Lucie",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -8021,6 +8049,13 @@
           "club": "0610019 - ARCIS SUR AUBE",
           "category": "0610019 - ARCIS SUR AUBE",
           "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "MAHAUX Nathan",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "Arc Classique Senior 1 Homme",
           "target": ""
         },
         {
@@ -8342,7 +8377,7 @@
           "name": "POUPHILE David",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
-          "session": "Arc à Poulies Senior 2 Homme",
+          "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
         {
@@ -8371,6 +8406,13 @@
           "club": "0914003 - CAEN",
           "category": "0914003 - CAEN",
           "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "RAIMBAULT Thomas",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "Arc Classique Senior 1 Homme",
           "target": ""
         },
         {
@@ -8546,6 +8588,13 @@
           "club": "1079182 - ARDIN",
           "category": "1079182 - ARDIN",
           "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "SIMON Pierre",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "Arc Classique Senior 1 Homme",
           "target": ""
         },
         {
