@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T05:45:44.543160+00:00",
+  "generated_at_utc": "2026-05-22T09:26:05.613381+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -4991,7 +4991,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28326",
       "ena_url": "https://www.ianseo.net/TourData/2026/28326/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28326/IC.php",
-      "entries_count": 337,
+      "entries_count": 341,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -5027,13 +5027,6 @@
           "category": "0895297 - ECOUEN",
           "session": "S1 Femme Arc à Poulies",
           "target": "35A"
-        },
-        {
-          "name": "ALVES Maena",
-          "club": "0891175 - DRAVEIL SENART",
-          "category": "0891175 - DRAVEIL SENART",
-          "session": "U21 Femme Arc Classique",
-          "target": "32B"
         },
         {
           "name": "ANANDANE Ishwar",
@@ -5146,6 +5139,13 @@
           "category": "0893218 - ROMAINVILLE",
           "session": "S1 Homme Arc Classique",
           "target": "14A"
+        },
+        {
+          "name": "BERTEL Adrien",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "S2 Homme Arc Classique",
+          "target": "33B"
         },
         {
           "name": "BIERRY Melanie",
@@ -5554,6 +5554,13 @@
           "target": "26C"
         },
         {
+          "name": "DEHU Florian",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S1 Homme Arc Classique",
+          "target": "32B"
+        },
+        {
           "name": "DELAGRANDA Dominique",
           "club": "0877078 - LAGNY",
           "category": "0877078 - LAGNY",
@@ -5844,8 +5851,8 @@
           "name": "GAMBON Marc",
           "club": "0891152 - MORSANG SUR ORGE",
           "category": "0891152 - MORSANG SUR ORGE",
-          "session": "S2 Homme Arc Classique",
-          "target": "28B"
+          "session": "S3 Homme Arc Classique",
+          "target": "8B"
         },
         {
           "name": "GARIN Gilles",
@@ -5930,6 +5937,13 @@
           "category": "0878143 - ELANCOURT",
           "session": "S2 Homme Arc Classique",
           "target": "21D"
+        },
+        {
+          "name": "GRANJOU Thomas",
+          "club": "0878143 - ELANCOURT",
+          "category": "0878143 - ELANCOURT",
+          "session": "S2 Homme Arc Classique",
+          "target": "33D"
         },
         {
           "name": "GREGOIRE Clement",
@@ -6219,6 +6233,13 @@
           "target": "10A"
         },
         {
+          "name": "LANDREAU Florian",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "45D"
+        },
+        {
           "name": "LANNE Fabrice",
           "club": "0893232 - ROSNY S/BOIS CSL",
           "category": "0893232 - ROSNY S/BOIS CSL",
@@ -6489,7 +6510,7 @@
           "club": "0894256 - CRETEIL",
           "category": "0894256 - CRETEIL",
           "session": "S1 Homme Arc à Poulies",
-          "target": "33B"
+          "target": "46C"
         },
         {
           "name": "MARCO Benjamin",
@@ -6727,7 +6748,7 @@
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
           "session": "S2 Femme Arc à Poulies",
-          "target": "33C"
+          "target": "34C"
         },
         {
           "name": "NOGRETTE Denis",
@@ -7017,6 +7038,13 @@
           "target": "18A"
         },
         {
+          "name": "RICHARD Jean-Michel",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "S2 Homme Arc Classique",
+          "target": "33C"
+        },
+        {
           "name": "RISEDE Matthieu",
           "club": "0894266 - IVRY SUR SEINE",
           "category": "0894266 - IVRY SUR SEINE",
@@ -7203,7 +7231,7 @@
           "club": "0892206 - ANTONY",
           "category": "0892206 - ANTONY",
           "session": "S2 Femme Arc à Poulies",
-          "target": "33A"
+          "target": "46D"
         },
         {
           "name": "TREFAUT Mariem",
@@ -7248,13 +7276,6 @@
           "target": "27C"
         },
         {
-          "name": "VASLIER Gregory",
-          "club": "0892206 - ANTONY",
-          "category": "0892206 - ANTONY",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "45D"
-        },
-        {
           "name": "VAUDIER Stephane",
           "club": "0877040 - SAINT GERMAIN SUR MORIN",
           "category": "0877040 - SAINT GERMAIN SUR MORIN",
@@ -7295,6 +7316,13 @@
           "category": "0892206 - ANTONY",
           "session": "S2 Homme Arc Classique",
           "target": "19B"
+        },
+        {
+          "name": "VICOMTE Fabrice",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "S2 Homme Arc Classique",
+          "target": "33A"
         },
         {
           "name": "VIEL Wolfgang",
