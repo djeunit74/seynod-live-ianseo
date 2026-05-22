@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T15:33:42.513068+00:00",
+  "generated_at_utc": "2026-05-22T17:53:22.616666+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -864,7 +864,7 @@
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
           "session": "U21 Homme Arc Classique",
-          "target": "34C"
+          "target": "35A"
         },
         {
           "name": "AIT OUARABI Selma",
@@ -920,7 +920,7 @@
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "U21 Arc à Poulies",
-          "target": "6B"
+          "target": "6A"
         },
         {
           "name": "ARTALE Zoe",
@@ -1634,7 +1634,7 @@
           "club": "0895293 - SARCELLES",
           "category": "0895293 - SARCELLES",
           "session": "U21 Homme Arc Classique",
-          "target": "34B"
+          "target": "34C"
         },
         {
           "name": "GENTIN Lola",
@@ -1780,8 +1780,8 @@
           "name": "HASCOET Lucas",
           "club": "1253085 - CHATEAU GONTIER",
           "category": "1253085 - CHATEAU GONTIER",
-          "session": "U21 Arc à Poulies",
-          "target": "6A"
+          "session": "U21 Homme Arc Classique",
+          "target": "35C"
         },
         {
           "name": "HELYE Thomas",
@@ -4271,7 +4271,7 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S3 Femme Arc Classique",
-          "target": "16B"
+          "target": "18C"
         },
         {
           "name": "BESSIERE Clovis",
@@ -4298,15 +4298,15 @@
           "name": "BOIS Patrice",
           "club": "1306027 - MENTON",
           "category": "1306027 - MENTON",
-          "session": "S3 Homme Arc Classique",
-          "target": "18C"
+          "session": "S3 Homme Arc Classique National",
+          "target": "10B"
         },
         {
           "name": "BOIS Patrice",
           "club": "1306027 - MENTON",
           "category": "1306027 - MENTON",
-          "session": "S3 Homme Arc Classique National",
-          "target": "9B"
+          "session": "S3 Homme Arc Classique",
+          "target": "18C"
         },
         {
           "name": "BOREE Cedric",
@@ -4467,7 +4467,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S3 Homme Arc à Poulies National",
-          "target": "10A"
+          "target": "9A"
         },
         {
           "name": "DAMIANO Anthony",
@@ -4600,7 +4600,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S3 Homme Arc à Poulies National",
-          "target": "10B"
+          "target": "9B"
         },
         {
           "name": "ESCOFFIER Christine",
@@ -4753,15 +4753,15 @@
           "name": "GAUTHIER Michel",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
-          "session": "Arc Classique Senior 3 Hommes National",
-          "target": "11A"
+          "session": "S3 Homme Arc Classique National",
+          "target": "10A"
         },
         {
           "name": "GAUTHIER Michel",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
-          "session": "S3 Homme Arc Classique National",
-          "target": "9A"
+          "session": "Arc Classique Senior 3 Hommes National",
+          "target": "11A"
         },
         {
           "name": "GINESY Serge",
@@ -11148,7 +11148,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 54,
+      "entries_count": 58,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -11274,6 +11274,13 @@
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "Arc Classique Débutant U21 à S3 2A+ - 30m 80cm",
+          "target": ""
+        },
+        {
+          "name": "DUBANT Jean",
+          "club": "0221018 - SEMUR EN AUXOIS",
+          "category": "0221018 - SEMUR EN AUXOIS",
+          "session": "S1 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -11424,6 +11431,13 @@
           "target": ""
         },
         {
+          "name": "NICOL Laure",
+          "club": "0221018 - SEMUR EN AUXOIS",
+          "category": "0221018 - SEMUR EN AUXOIS",
+          "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "NIOI Jean Luc",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
@@ -11435,6 +11449,20 @@
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "Scratch Homme Arc Nu National",
+          "target": ""
+        },
+        {
+          "name": "PIAZZA Chloe",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S1 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "PIAZZA Louis",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "U21 Homme Arc Classique National",
           "target": ""
         },
         {
