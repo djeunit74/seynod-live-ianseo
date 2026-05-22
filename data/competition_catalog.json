@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T01:30:05.874012+00:00",
+  "generated_at_utc": "2026-05-22T05:45:44.543160+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2214,7 +2214,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27185",
       "ena_url": "https://www.ianseo.net/TourData/2026/27185/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27185/IC.php",
-      "entries_count": 86,
+      "entries_count": 88,
       "entries": [
         {
           "name": "ALLAIN Julien",
@@ -2348,6 +2348,20 @@
           "category": "1109002 - PAMIERS",
           "session": "S2 Femme Arc Classique National",
           "target": "1C"
+        },
+        {
+          "name": "CLAUZET Nathanael",
+          "club": "1132110 - L'ISLE JOURDAIN",
+          "category": "1132110 - L'ISLE JOURDAIN",
+          "session": "U18 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "CLAUZET Nathanael",
+          "club": "1132110 - L'ISLE JOURDAIN",
+          "category": "1132110 - L'ISLE JOURDAIN",
+          "session": "U18 Homme Arc Classique National",
+          "target": "2B"
         },
         {
           "name": "CLERC Pierre",
