@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T12:05:35.625413+00:00",
+  "generated_at_utc": "2026-05-22T15:33:42.513068+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,21 +17,21 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27578",
       "ena_url": "https://www.ianseo.net/TourData/2026/27578/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27578/IC.php",
-      "entries_count": 52,
+      "entries_count": 54,
       "entries": [
-        {
-          "name": "BABLEE Agnes",
-          "club": "0335067 - RENNES CIE",
-          "category": "0335067 - RENNES CIE",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "6A"
-        },
         {
           "name": "BABLEE Agnes",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "Arc à Poulies Senior 2 Femmes",
           "target": "6A"
+        },
+        {
+          "name": "BABLEE Agnes",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "7A"
         },
         {
           "name": "BAJARD Capucine",
@@ -45,14 +45,7 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "U13 Femme Arc Classique",
-          "target": "3B"
-        },
-        {
-          "name": "BERTHEMET Anais",
-          "club": "1244001 - GUERANDE",
-          "category": "1244001 - GUERANDE",
-          "session": "S1 Femme Arc Classique National",
-          "target": "5C"
+          "target": "4B"
         },
         {
           "name": "BEUNARD Benoit",
@@ -66,7 +59,7 @@
           "club": "0322015 - PORDIC",
           "category": "0322015 - PORDIC",
           "session": "Open et Fédéral Jeune National",
-          "target": "3C"
+          "target": "4A"
         },
         {
           "name": "COUSTOU Audran",
@@ -101,7 +94,7 @@
           "club": "0356118 - LORIENT ASAL",
           "category": "0356118 - LORIENT ASAL",
           "session": "Fédéral Homme Arc à Poulies",
-          "target": "6C"
+          "target": "7C"
         },
         {
           "name": "DELOURMEL Theo",
@@ -136,7 +129,7 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "U15 Homme Arc Classique",
-          "target": "4A"
+          "target": "12A"
         },
         {
           "name": "DUPONT Steven",
@@ -157,7 +150,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S2 Homme Arc à Poulies",
-          "target": "6B"
+          "target": "7B"
         },
         {
           "name": "FAURE Chloe",
@@ -186,6 +179,13 @@
           "category": "0335087 - BETTON",
           "session": "S1 Homme Arc Classique National",
           "target": "5B"
+        },
+        {
+          "name": "GUILLAUME Fanny",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U15 Femme Arc Classique",
+          "target": "12B"
         },
         {
           "name": "GUITTON Alois",
@@ -219,14 +219,14 @@
           "name": "LE MANAC'H Lea Rose",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
-          "session": "Arc Classique U18 Femmes",
+          "session": "U18 Femme Arc Classique",
           "target": "8B"
         },
         {
           "name": "LE MANAC'H Lea Rose",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
-          "session": "U18 Femme Arc Classique",
+          "session": "Arc Classique U18 Femmes",
           "target": "8B"
         },
         {
@@ -242,6 +242,20 @@
           "category": "0335056 - TINTENIAC",
           "session": "Arc Classique U13 Hommes",
           "target": "3B"
+        },
+        {
+          "name": "LEMOINE Raphael",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U13 Homme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "LEMOINE Raphael",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "Arc Classique U13 Hommes",
+          "target": "3C"
         },
         {
           "name": "MANSION MARTY Patrick",
@@ -395,8 +409,443 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28434",
       "ena_url": "https://www.ianseo.net/TourData/2026/28434/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28434/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 62,
+      "entries": [
+        {
+          "name": "ADIM Sarah",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "Arc Classique Niveau 2 femme",
+          "target": "15C"
+        },
+        {
+          "name": "ARMAND Killari",
+          "club": "1134135 - PEROLS",
+          "category": "1134135 - PEROLS",
+          "session": "Arc Classique Niveau 3 femme",
+          "target": "7C"
+        },
+        {
+          "name": "AUBERTIN Edy",
+          "club": "1134233 - GIGNAC",
+          "category": "1134233 - GIGNAC",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "9A"
+        },
+        {
+          "name": "BALMES Mika",
+          "club": "1134130 - SETE",
+          "category": "1134130 - SETE",
+          "session": "Arc Classique Poussin 9",
+          "target": "2C"
+        },
+        {
+          "name": "BASTARD Maelle",
+          "club": "1134140 - VIAS",
+          "category": "1134140 - VIAS",
+          "session": "Arc Classique Poussin 10",
+          "target": "4C"
+        },
+        {
+          "name": "BECRET Nathan",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "Arc Classique Niveau 2 homme",
+          "target": "12D"
+        },
+        {
+          "name": "BESSIERE Robin",
+          "club": "1134233 - GIGNAC",
+          "category": "1134233 - GIGNAC",
+          "session": "Arc Classique Niveau 2 homme",
+          "target": "15B"
+        },
+        {
+          "name": "BLAU-BELMONTE Kaelia",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Poussin 10",
+          "target": "3B"
+        },
+        {
+          "name": "BLAU-BELMONTE Maeline",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 3 femme",
+          "target": "7D"
+        },
+        {
+          "name": "BUCHACA Morgan",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Poussin 10",
+          "target": "4B"
+        },
+        {
+          "name": "CAPELLE Adonis",
+          "club": "1134233 - GIGNAC",
+          "category": "1134233 - GIGNAC",
+          "session": "Arc Classique Niveau 2 homme",
+          "target": "14C"
+        },
+        {
+          "name": "CARTIER Fany",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "Arc Classique Niveau 3 femme",
+          "target": "8C"
+        },
+        {
+          "name": "CARTIER Lucy",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "Arc Classique Niveau 3 femme",
+          "target": "10B"
+        },
+        {
+          "name": "CAZALS Celia",
+          "club": "1134233 - GIGNAC",
+          "category": "1134233 - GIGNAC",
+          "session": "Arc Classique Niveau 1 femme",
+          "target": "16C"
+        },
+        {
+          "name": "CEI SAINT MARTIN Lucile",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "Arc Classique Niveau AS femme",
+          "target": "19A"
+        },
+        {
+          "name": "DE MURCIA Liam",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Poussin 10",
+          "target": "6B"
+        },
+        {
+          "name": "DEAUDET Clara",
+          "club": "1134130 - SETE",
+          "category": "1134130 - SETE",
+          "session": "Arc Classique Niveau 1 femme",
+          "target": "18B"
+        },
+        {
+          "name": "DEBBAGHI Lilya",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "Arc Classique Niveau AS femme",
+          "target": "20C"
+        },
+        {
+          "name": "DEMEULIER Mae",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Poussin 10",
+          "target": "5B"
+        },
+        {
+          "name": "ESTEVE Arthur",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "Arc Classique Poussin 10",
+          "target": "4A"
+        },
+        {
+          "name": "FAKIH Marwa",
+          "club": "1134121 - BESSAN",
+          "category": "1134121 - BESSAN",
+          "session": "Arc Classique Niveau 2 femme",
+          "target": "13B"
+        },
+        {
+          "name": "FEDOROVA Polina",
+          "club": "1134140 - VIAS",
+          "category": "1134140 - VIAS",
+          "session": "Arc Classique Niveau 3 femme",
+          "target": "11B"
+        },
+        {
+          "name": "GARIT Ethan",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "8B"
+        },
+        {
+          "name": "GRELLIER Tiago",
+          "club": "1134121 - BESSAN",
+          "category": "1134121 - BESSAN",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "7A"
+        },
+        {
+          "name": "GUILLEMIN Louison",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 2 homme",
+          "target": "12A"
+        },
+        {
+          "name": "HARO Doryan",
+          "club": "1134127 - LUNEL",
+          "category": "1134127 - LUNEL",
+          "session": "Arc Classique Niveau 1 homme",
+          "target": "18A"
+        },
+        {
+          "name": "HERAIL DE CROZALS Nicolas",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "11A"
+        },
+        {
+          "name": "IMBERT Louane",
+          "club": "1134130 - SETE",
+          "category": "1134130 - SETE",
+          "session": "Arc Classique Niveau 1 femme",
+          "target": "16A"
+        },
+        {
+          "name": "JOUVENEL Cali",
+          "club": "1134128 - AC VALLEE DE L'HERAULT",
+          "category": "1134128 - AC VALLEE DE L'HERAULT",
+          "session": "Arc Classique Niveau AS femme",
+          "target": "20B"
+        },
+        {
+          "name": "LAIGLE Louna",
+          "club": "1134140 - VIAS",
+          "category": "1134140 - VIAS",
+          "session": "Arc Classique Poussin 9",
+          "target": "1B"
+        },
+        {
+          "name": "LEGMAR Corwin",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "Arc Classique Niveau 2 homme",
+          "target": "13A"
+        },
+        {
+          "name": "LEGMAR Ocean",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "Arc Classique Niveau AS homme",
+          "target": "19B"
+        },
+        {
+          "name": "MODAFFARI Axel",
+          "club": "1134140 - VIAS",
+          "category": "1134140 - VIAS",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "10C"
+        },
+        {
+          "name": "MODAFFARI Robin",
+          "club": "1134140 - VIAS",
+          "category": "1134140 - VIAS",
+          "session": "Arc Classique Poussin 9",
+          "target": "2B"
+        },
+        {
+          "name": "NOVE-JOSSERAND Eloane",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 3 femme",
+          "target": "7B"
+        },
+        {
+          "name": "PATE Maxim",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "Arc Classique Poussin 8",
+          "target": "1A"
+        },
+        {
+          "name": "PENARROYA Nathan",
+          "club": "1134133 - PRADES LE LEZ",
+          "category": "1134133 - PRADES LE LEZ",
+          "session": "Arc Classique Niveau 1 homme",
+          "target": "18C"
+        },
+        {
+          "name": "PEREIRA Camille",
+          "club": "1134128 - AC VALLEE DE L'HERAULT",
+          "category": "1134128 - AC VALLEE DE L'HERAULT",
+          "session": "Arc Classique Niveau 1 homme",
+          "target": "17B"
+        },
+        {
+          "name": "PEROSA THOMAS Emilie",
+          "club": "1134233 - GIGNAC",
+          "category": "1134233 - GIGNAC",
+          "session": "Arc Classique Niveau 1 femme",
+          "target": "17A"
+        },
+        {
+          "name": "PIETON-NANNINI Justine",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "Arc Classique Niveau 2 femme",
+          "target": "12C"
+        },
+        {
+          "name": "PLAZA LAHONDES Gabin",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "Arc Classique Poussin 9",
+          "target": "2A"
+        },
+        {
+          "name": "PONS Selene",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 3 femme",
+          "target": "10A"
+        },
+        {
+          "name": "RICCIARDI Loisa",
+          "club": "1134233 - GIGNAC",
+          "category": "1134233 - GIGNAC",
+          "session": "Arc Classique Niveau 3 femme",
+          "target": "8A"
+        },
+        {
+          "name": "RODRIGUEZ Lucia",
+          "club": "1134121 - BESSAN",
+          "category": "1134121 - BESSAN",
+          "session": "Arc Classique Niveau 2 femme",
+          "target": "14A"
+        },
+        {
+          "name": "ROUANET Theo",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "9B"
+        },
+        {
+          "name": "SAILLIER Elise",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "Arc Classique Niveau 1 femme",
+          "target": "17C"
+        },
+        {
+          "name": "SAINTS-JOURS Maelan",
+          "club": "1134121 - BESSAN",
+          "category": "1134121 - BESSAN",
+          "session": "Arc Classique Poussin 10",
+          "target": "3A"
+        },
+        {
+          "name": "SAOUF COUNADEN Ibtissem",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "Arc Classique Poussin 9",
+          "target": "1C"
+        },
+        {
+          "name": "SERVEL Pablo",
+          "club": "1134233 - GIGNAC",
+          "category": "1134233 - GIGNAC",
+          "session": "Arc Classique Niveau AS homme",
+          "target": "20A"
+        },
+        {
+          "name": "TOLU Nolhan",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Poussin 9",
+          "target": "1D"
+        },
+        {
+          "name": "TREMELAT Amori",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "Arc Classique Niveau 2 homme",
+          "target": "15A"
+        },
+        {
+          "name": "TRIQUET MARTIN Armand",
+          "club": "1134140 - VIAS",
+          "category": "1134140 - VIAS",
+          "session": "Arc Classique Poussin 10",
+          "target": "5C"
+        },
+        {
+          "name": "TRIQUET MARTIN Gabriel",
+          "club": "1134140 - VIAS",
+          "category": "1134140 - VIAS",
+          "session": "Arc Classique Poussin 10",
+          "target": "6A"
+        },
+        {
+          "name": "TUMMARELLO Lizandro",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "11C"
+        },
+        {
+          "name": "VERNHET Edouard",
+          "club": "1134133 - PRADES LE LEZ",
+          "category": "1134133 - PRADES LE LEZ",
+          "session": "Arc Classique Niveau 2 homme",
+          "target": "12B"
+        },
+        {
+          "name": "VETIER Lemmy",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "Arc Classique Niveau 1 homme",
+          "target": "16B"
+        },
+        {
+          "name": "VEYRET Tessa",
+          "club": "1134128 - AC VALLEE DE L'HERAULT",
+          "category": "1134128 - AC VALLEE DE L'HERAULT",
+          "session": "Arc Classique Niveau 2 femme",
+          "target": "14B"
+        },
+        {
+          "name": "VILLA Thomas",
+          "club": "1134126 - FRONTIGNAN",
+          "category": "1134126 - FRONTIGNAN",
+          "session": "Arc Classique Poussin 10",
+          "target": "3C"
+        },
+        {
+          "name": "VINCENT GARCIA Tyliann",
+          "club": "1134119 - BEZIERS",
+          "category": "1134119 - BEZIERS",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "8D"
+        },
+        {
+          "name": "VIOUX Thalie",
+          "club": "1134133 - PRADES LE LEZ",
+          "category": "1134133 - PRADES LE LEZ",
+          "session": "Arc Classique Niveau 2 femme",
+          "target": "13C"
+        },
+        {
+          "name": "VIOUX Ulysse",
+          "club": "1134133 - PRADES LE LEZ",
+          "category": "1134133 - PRADES LE LEZ",
+          "session": "Arc Classique Niveau 3 homme",
+          "target": "9C"
+        },
+        {
+          "name": "YERNAUX Hugo",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "Arc Classique Poussin 10",
+          "target": "5A"
+        }
+      ]
     },
     {
       "to_id": "27355",
@@ -408,7 +857,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27355",
       "ena_url": "https://www.ianseo.net/TourData/2026/27355/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27355/IC.php",
-      "entries_count": 256,
+      "entries_count": 255,
       "entries": [
         {
           "name": "ABID Remi",
@@ -831,13 +1280,6 @@
           "target": "19B"
         },
         {
-          "name": "DA ROCHA Martin",
-          "club": "0654086 - EINVILLE",
-          "category": "0654086 - EINVILLE",
-          "session": "U15 Homme Arc Classique",
-          "target": "54A"
-        },
-        {
           "name": "DANES Agathe",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -1017,7 +1459,7 @@
           "club": "0877042 - ESBLY",
           "category": "0877042 - ESBLY",
           "session": "U15 Homme Arc Classique",
-          "target": "54C"
+          "target": "53B"
         },
         {
           "name": "DUPUY Judith",
@@ -4991,7 +5433,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28326",
       "ena_url": "https://www.ianseo.net/TourData/2026/28326/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28326/IC.php",
-      "entries_count": 341,
+      "entries_count": 340,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -5033,7 +5475,7 @@
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
           "session": "S1 Homme Arc Classique",
-          "target": "11D"
+          "target": "27C"
         },
         {
           "name": "ANGOT Jean",
@@ -6128,6 +6570,13 @@
           "target": "46B"
         },
         {
+          "name": "JACQUELINE Maxime",
+          "club": "0893227 - GAGNY",
+          "category": "0893227 - GAGNY",
+          "session": "S1 Homme Arc Classique",
+          "target": "25A"
+        },
+        {
           "name": "JANIN Julie",
           "club": "0875017 - PARIS XIII USMT",
           "category": "0875017 - PARIS XIII USMT",
@@ -6335,7 +6784,7 @@
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
           "session": "S1 Homme Arc Classique",
-          "target": "27B"
+          "target": "11D"
         },
         {
           "name": "LECOMTE Yann",
@@ -6807,13 +7256,6 @@
           "target": "10C"
         },
         {
-          "name": "PANNETRAT Sylvain",
-          "club": "0891148 - MORANGIS",
-          "category": "0891148 - MORANGIS",
-          "session": "S2 Homme Arc Classique",
-          "target": "25A"
-        },
-        {
           "name": "PARTY Gilles",
           "club": "0895277 - MERY MERIEL",
           "category": "0895277 - MERY MERIEL",
@@ -7267,13 +7709,6 @@
           "category": "0891148 - MORANGIS",
           "session": "S2 Homme Arc Classique",
           "target": "12A"
-        },
-        {
-          "name": "VADELORGE Jerome",
-          "club": "0891148 - MORANGIS",
-          "category": "0891148 - MORANGIS",
-          "session": "S2 Homme Arc Classique",
-          "target": "27C"
         },
         {
           "name": "VAUDIER Stephane",
