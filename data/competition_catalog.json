@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-23T13:59:09.398760+00:00",
+  "generated_at_utc": "2026-05-23T15:10:35.154835+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28095",
       "ena_url": "https://www.ianseo.net/TourData/2026/28095/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28095/IC.php",
-      "entries_count": 127,
+      "entries_count": 129,
       "entries": [
         {
           "name": "ARNOLD Yves",
@@ -80,7 +80,7 @@
           "club": "0657111 - DIEUZE",
           "category": "0657111 - DIEUZE",
           "session": "S2 Femme Arc à Poulies National",
-          "target": "6A"
+          "target": "13B"
         },
         {
           "name": "BARBELIN Olivier",
@@ -150,14 +150,14 @@
           "club": "0892199 - SURESNES",
           "category": "0892199 - SURESNES",
           "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "7C"
+          "target": "12C"
         },
         {
           "name": "CADRONET Nathan",
           "club": "0892199 - SURESNES",
           "category": "0892199 - SURESNES",
           "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "9C"
+          "target": "7C"
         },
         {
           "name": "CAILLAUT Louise",
@@ -193,6 +193,13 @@
           "category": "0654086 - EINVILLE",
           "session": "S1 Homme Arc Classique",
           "target": "2B"
+        },
+        {
+          "name": "CHOPPIN Celestine",
+          "club": "0654077 - LUNEVILLE",
+          "category": "0654077 - LUNEVILLE",
+          "session": "U13 Femme Arc Classique",
+          "target": "21B"
         },
         {
           "name": "CHOPPIN Celestine",
@@ -360,7 +367,7 @@
           "club": "0657111 - DIEUZE",
           "category": "0657111 - DIEUZE",
           "session": "S1 Homme Arc Classique",
-          "target": "3A"
+          "target": "3B"
         },
         {
           "name": "GRIBELBAUER Quentin",
@@ -387,6 +394,13 @@
           "name": "HACHE Yan",
           "club": "0668169 - BRUNSTATT",
           "category": "0668169 - BRUNSTATT",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "12B"
+        },
+        {
+          "name": "HACHE Yan",
+          "club": "0668169 - BRUNSTATT",
+          "category": "0668169 - BRUNSTATT",
           "session": "Arc Classique Senior 2 Hommes",
           "target": "1C"
         },
@@ -396,13 +410,6 @@
           "category": "0668169 - BRUNSTATT",
           "session": "S2 Homme Arc à Poulies National",
           "target": "8A"
-        },
-        {
-          "name": "HACHE Yan",
-          "club": "0668169 - BRUNSTATT",
-          "category": "0668169 - BRUNSTATT",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "9B"
         },
         {
           "name": "HAMMAECHER Emilie",
@@ -454,6 +461,13 @@
           "target": "7A"
         },
         {
+          "name": "HINDERMEYER Cloe",
+          "club": "0657111 - DIEUZE",
+          "category": "0657111 - DIEUZE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "23B"
+        },
+        {
           "name": "IMBERT Maxime",
           "club": "0702010 - BEUVARDES ARCHERS OMOIS",
           "category": "0702010 - BEUVARDES ARCHERS OMOIS",
@@ -500,7 +514,7 @@
           "club": "0654079 - TOUL",
           "category": "0654079 - TOUL",
           "session": "S2 Femme Arc à Poulies",
-          "target": "9A"
+          "target": "12A"
         },
         {
           "name": "JUNGHEN Pierre",
@@ -570,7 +584,7 @@
           "club": "0668169 - BRUNSTATT",
           "category": "0668169 - BRUNSTATT",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": "3B"
+          "target": "3A"
         },
         {
           "name": "MASSON Emmanuel",
@@ -822,7 +836,7 @@
           "club": "0654077 - LUNEVILLE",
           "category": "0654077 - LUNEVILLE",
           "session": "U21 Femme Arc Classique National",
-          "target": "8B"
+          "target": "9A"
         },
         {
           "name": "TRUFFAUT Sylvain",
@@ -843,7 +857,7 @@
           "club": "0654081 - DOMBASLE SUR MEURTHE",
           "category": "0654081 - DOMBASLE SUR MEURTHE",
           "session": "U21 Femme Arc Classique National",
-          "target": "12A"
+          "target": "13A"
         },
         {
           "name": "VALTAT Nancy",
@@ -870,15 +884,15 @@
           "name": "VICTORINE Chloe",
           "club": "0654079 - TOUL",
           "category": "0654079 - TOUL",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "10A"
+          "session": "S2 Femme Arc à Poulies National",
+          "target": "7C"
         },
         {
           "name": "VICTORINE Chloe",
           "club": "0654079 - TOUL",
           "category": "0654079 - TOUL",
-          "session": "S2 Femme Arc à Poulies National",
-          "target": "7C"
+          "session": "S2 Femme Arc à Poulies",
+          "target": "9B"
         },
         {
           "name": "WANNER Joel",
