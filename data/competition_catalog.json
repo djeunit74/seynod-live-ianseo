@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-23T10:54:18.811237+00:00",
+  "generated_at_utc": "2026-05-23T12:01:04.207758+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2145,7 +2145,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28326",
       "ena_url": "https://www.ianseo.net/TourData/2026/28326/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28326/IC.php",
-      "entries_count": 339,
+      "entries_count": 336,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -2260,13 +2260,6 @@
           "target": "21C"
         },
         {
-          "name": "BEATO Luiz",
-          "club": "0891146 - EGLY",
-          "category": "0891146 - EGLY",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "41C"
-        },
-        {
           "name": "BEAUR Jean Luc",
           "club": "0877037 - VENEUX LES SABLONS",
           "category": "0877037 - VENEUX LES SABLONS",
@@ -2286,13 +2279,6 @@
           "category": "0891175 - DRAVEIL SENART",
           "session": "S2 Homme Arc Classique",
           "target": "32C"
-        },
-        {
-          "name": "BERARDINO Raphael",
-          "club": "0878121 - BAZAINVILLE",
-          "category": "0878121 - BAZAINVILLE",
-          "session": "S2 Homme Arc Classique",
-          "target": "17C"
         },
         {
           "name": "BERNIER Emmanuel",
@@ -2335,13 +2321,6 @@
           "category": "0894257 - VILLIERS SUR MARNE",
           "session": "S2 Femme Arc Classique",
           "target": "2A"
-        },
-        {
-          "name": "BOIG Philippe",
-          "club": "0875017 - PARIS XIII USMT",
-          "category": "0875017 - PARIS XIII USMT",
-          "session": "S2 Homme Arc Classique",
-          "target": "9C"
         },
         {
           "name": "BONNIN Alexandre",
@@ -3212,6 +3191,13 @@
           "target": "22D"
         },
         {
+          "name": "HAUS Guillaume",
+          "club": "0893227 - GAGNY",
+          "category": "0893227 - GAGNY",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "46A"
+        },
+        {
           "name": "HAVEGEER Manon",
           "club": "0877040 - SAINT GERMAIN SUR MORIN",
           "category": "0877040 - SAINT GERMAIN SUR MORIN",
@@ -3401,13 +3387,6 @@
           "target": "41C"
         },
         {
-          "name": "LARBI David",
-          "club": "0877041 - CHELLES",
-          "category": "0877041 - CHELLES",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "44B"
-        },
-        {
           "name": "LARHANT Pascal",
           "club": "0894263 - VILLEJUIF",
           "category": "0894263 - VILLEJUIF",
@@ -3531,7 +3510,7 @@
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
           "session": "U18 Homme Arc à Poulies",
-          "target": "46A"
+          "target": "51A"
         },
         {
           "name": "LEGEARD Renaud",
@@ -3902,7 +3881,7 @@
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
           "session": "S2 Femme Arc à Poulies",
-          "target": "34C"
+          "target": "51C"
         },
         {
           "name": "NOGRETTE Denis",
@@ -4087,6 +4066,13 @@
           "target": "24A"
         },
         {
+          "name": "PRAUD Sebastien",
+          "club": "0891146 - EGLY",
+          "category": "0891146 - EGLY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "41C"
+        },
+        {
           "name": "PROYART Thierry",
           "club": "0878139 - LES MUREAUX",
           "category": "0878139 - LES MUREAUX",
@@ -4246,13 +4232,6 @@
           "category": "0891146 - EGLY",
           "session": "S3 Homme Arc à Poulies",
           "target": "43A"
-        },
-        {
-          "name": "SEGERS Thierry",
-          "club": "0891146 - EGLY",
-          "category": "0891146 - EGLY",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "44B"
         },
         {
           "name": "SEGERS-ROBIN Patricia",
