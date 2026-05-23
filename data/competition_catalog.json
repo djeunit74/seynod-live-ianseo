@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-23T04:25:40.926338+00:00",
+  "generated_at_utc": "2026-05-23T07:17:10.762767+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28095",
       "ena_url": "https://www.ianseo.net/TourData/2026/28095/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28095/IC.php",
-      "entries_count": 126,
+      "entries_count": 127,
       "entries": [
         {
           "name": "ARNOLD Yves",
@@ -31,7 +31,7 @@
           "club": "0667144 - HAGUENAU",
           "category": "0667144 - HAGUENAU",
           "session": "S3 Homme Arc à Poulies National",
-          "target": "18C"
+          "target": "8C"
         },
         {
           "name": "AUMARD Maxence",
@@ -73,7 +73,7 @@
           "club": "0654073 - NANCY",
           "category": "0654073 - NANCY",
           "session": "S2 Homme Arc à Poulies",
-          "target": "8B"
+          "target": "18B"
         },
         {
           "name": "BARBELIN Marie-Elise",
@@ -122,7 +122,7 @@
           "club": "0657131 - SARREBOURG",
           "category": "0657131 - SARREBOURG",
           "session": "S2 Homme Arc Classique National",
-          "target": "16A"
+          "target": "6A"
         },
         {
           "name": "BOURGRAFF Charly",
@@ -171,14 +171,21 @@
           "club": "0667147 - OBERNAI",
           "category": "0667147 - OBERNAI",
           "session": "Arc Classique U18 Hommes National",
-          "target": "18B"
+          "target": "7A"
         },
         {
           "name": "CARREE Louis",
           "club": "0667147 - OBERNAI",
           "category": "0667147 - OBERNAI",
           "session": "Arc Classique U18 Hommes National",
-          "target": "7A"
+          "target": "8B"
+        },
+        {
+          "name": "CHANTEREAU-LEBEAU Killian",
+          "club": "0654086 - EINVILLE",
+          "category": "0654086 - EINVILLE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "16C"
         },
         {
           "name": "CHANTEREAU-LEBEAU Killian",
@@ -186,13 +193,6 @@
           "category": "0654086 - EINVILLE",
           "session": "S1 Homme Arc Classique",
           "target": "2B"
-        },
-        {
-          "name": "CHANTEREAU-LEBEAU Killian",
-          "club": "0654086 - EINVILLE",
-          "category": "0654086 - EINVILLE",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "6C"
         },
         {
           "name": "CHOPPIN Celestine",
@@ -387,15 +387,15 @@
           "name": "HACHE Yan",
           "club": "0668169 - BRUNSTATT",
           "category": "0668169 - BRUNSTATT",
-          "session": "S2 Homme Arc à Poulies National",
-          "target": "18A"
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "1C"
         },
         {
           "name": "HACHE Yan",
           "club": "0668169 - BRUNSTATT",
           "category": "0668169 - BRUNSTATT",
-          "session": "Arc Classique Senior 2 Hommes",
-          "target": "1C"
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "8A"
         },
         {
           "name": "HACHE Yan",
@@ -410,13 +410,6 @@
           "category": "0654069 - VARANGEVILLE",
           "session": "S2 Femme Arc à Poulies National",
           "target": "12B"
-        },
-        {
-          "name": "HARAND Leane",
-          "club": "0654089 - PONT A MOUSSON",
-          "category": "0654089 - PONT A MOUSSON",
-          "session": "S1 Femme Arc Classique National",
-          "target": "9A"
         },
         {
           "name": "HENRY Aline",
@@ -458,7 +451,7 @@
           "club": "0668169 - BRUNSTATT",
           "category": "0668169 - BRUNSTATT",
           "session": "S2 Homme Arc à Poulies National",
-          "target": "17A"
+          "target": "7A"
         },
         {
           "name": "IMBERT Maxime",
@@ -500,7 +493,7 @@
           "club": "0654081 - DOMBASLE SUR MEURTHE",
           "category": "0654081 - DOMBASLE SUR MEURTHE",
           "session": "Scratch Homme Arc Nu National",
-          "target": "16B"
+          "target": "6B"
         },
         {
           "name": "JOUSSELIN Cecile",
@@ -514,7 +507,7 @@
           "club": "0654081 - DOMBASLE SUR MEURTHE",
           "category": "0654081 - DOMBASLE SUR MEURTHE",
           "session": "S3 Homme Arc à Poulies",
-          "target": "7A"
+          "target": "17A"
         },
         {
           "name": "KIROUANE Chayma",
@@ -528,7 +521,7 @@
           "club": "0654081 - DOMBASLE SUR MEURTHE",
           "category": "0654081 - DOMBASLE SUR MEURTHE",
           "session": "S2 Homme Arc à Poulies",
-          "target": "6A"
+          "target": "16A"
         },
         {
           "name": "LAPOULE Lucie",
@@ -536,6 +529,13 @@
           "category": "0657131 - SARREBOURG",
           "session": "U18 Femme Arc Classique National",
           "target": "15A"
+        },
+        {
+          "name": "LECLERE Damien",
+          "club": "0654077 - LUNEVILLE",
+          "category": "0654077 - LUNEVILLE",
+          "session": "U21 Homme Arc à Poulies",
+          "target": "7B"
         },
         {
           "name": "LEICHTNAM Louis",
@@ -598,7 +598,7 @@
           "club": "999999 - LUXEMBOURG",
           "category": "999999 - LUXEMBOURG",
           "session": "Arc à Poulies Senior 2 Femmes",
-          "target": "7C"
+          "target": "17C"
         },
         {
           "name": "METHIVIEZ Alice",
@@ -612,14 +612,14 @@
           "club": "0654083 - SEICHAMPS",
           "category": "0654083 - SEICHAMPS",
           "session": "S2 Homme Arc à Poulies",
-          "target": "8A"
+          "target": "18A"
         },
         {
           "name": "MILLION Lola",
           "club": "0688203 - ST DIE",
           "category": "0688203 - ST DIE",
           "session": "U18 Femme Arc Classique National",
-          "target": "17B"
+          "target": "7B"
         },
         {
           "name": "MONTES Olivier",
@@ -689,14 +689,7 @@
           "club": "0688192 - THAON LES VOSGES",
           "category": "0688192 - THAON LES VOSGES",
           "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "6B"
-        },
-        {
-          "name": "REISS--BOSSI Guillaume",
-          "club": "0668176 - MUNSTER",
-          "category": "0668176 - MUNSTER",
-          "session": "Arc Classique U18 Hommes National",
-          "target": "16C"
+          "target": "16B"
         },
         {
           "name": "REISS--BOSSI Guillaume",
@@ -704,6 +697,13 @@
           "category": "0668176 - MUNSTER",
           "session": "Arc Classique U18 Hommes",
           "target": "4A"
+        },
+        {
+          "name": "REISS--BOSSI Guillaume",
+          "club": "0668176 - MUNSTER",
+          "category": "0668176 - MUNSTER",
+          "session": "Arc Classique U18 Hommes National",
+          "target": "6C"
         },
         {
           "name": "RICHARD Yannick",
@@ -752,7 +752,7 @@
           "club": "0688192 - THAON LES VOSGES",
           "category": "0688192 - THAON LES VOSGES",
           "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "7B"
+          "target": "17B"
         },
         {
           "name": "SCARANO Eldo",
@@ -802,6 +802,13 @@
           "category": "0667143 - LINGOLSHEIM",
           "session": "Arc Classique Senior 2 Hommes",
           "target": "3A"
+        },
+        {
+          "name": "THIRIET Franck",
+          "club": "0657105 - MARLY POURNOY",
+          "category": "0657105 - MARLY POURNOY",
+          "session": "S2 Homme Arc Classique National",
+          "target": "9A"
         },
         {
           "name": "THOMAS BOLMONT Yanis",
@@ -871,7 +878,7 @@
           "club": "0654079 - TOUL",
           "category": "0654079 - TOUL",
           "session": "S2 Femme Arc à Poulies National",
-          "target": "17C"
+          "target": "7C"
         },
         {
           "name": "WANNER Joel",
@@ -2138,7 +2145,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28326",
       "ena_url": "https://www.ianseo.net/TourData/2026/28326/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28326/IC.php",
-      "entries_count": 340,
+      "entries_count": 339,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -2195,6 +2202,13 @@
           "category": "0893225 - NEUILLY SUR MARNE",
           "session": "S1 Homme Arc Classique",
           "target": "20C"
+        },
+        {
+          "name": "ARMBRUSTER Sylvain",
+          "club": "0610019 - ARCIS SUR AUBE",
+          "category": "0610019 - ARCIS SUR AUBE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "40B"
         },
         {
           "name": "ASCENSIO Flavien",
@@ -2946,6 +2960,13 @@
           "target": "48D"
         },
         {
+          "name": "FENOLL Henri",
+          "club": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
+          "category": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
+          "session": "S3 Homme Arc Classique",
+          "target": "8D"
+        },
+        {
           "name": "FERRAND Herve",
           "club": "0895289 - PONTOISE",
           "category": "0895289 - PONTOISE",
@@ -3084,27 +3105,6 @@
           "category": "0878143 - ELANCOURT",
           "session": "S2 Homme Arc Classique",
           "target": "21D"
-        },
-        {
-          "name": "GRANJOU Thomas",
-          "club": "0878143 - ELANCOURT",
-          "category": "0878143 - ELANCOURT",
-          "session": "S2 Homme Arc Classique",
-          "target": "33D"
-        },
-        {
-          "name": "GREGOIRE Clement",
-          "club": "0893214 - MONTREUIL 1ER",
-          "category": "0893214 - MONTREUIL 1ER",
-          "session": "Arc Classique Senior 1 Hommes",
-          "target": "18D"
-        },
-        {
-          "name": "GREGOIRE Clement",
-          "club": "0893214 - MONTREUIL 1ER",
-          "category": "0893214 - MONTREUIL 1ER",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "45C"
         },
         {
           "name": "GRIMAUD Patrick",
