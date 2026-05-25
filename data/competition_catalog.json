@@ -1,25 +1,12 @@
 {
-  "generated_at_utc": "2026-05-25T00:00:19.437224+00:00",
+  "generated_at_utc": "2026-05-25T04:46:19.832042+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 31,
+  "count": 30,
   "tournaments": [
-    {
-      "to_id": "27749",
-      "year": "2026",
-      "name": "FEDERAL DE PRINTEMPS ET ROSE DES VENTS",
-      "organizer": "SAINT MARTIN",
-      "date_text": "23-25 May",
-      "end_date": "2026-05-25",
-      "details_url": "https://www.ianseo.net/Details.php?toId=27749",
-      "ena_url": "https://www.ianseo.net/TourData/2026/27749/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/27749/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
     {
       "to_id": "27216",
       "year": "2026",
