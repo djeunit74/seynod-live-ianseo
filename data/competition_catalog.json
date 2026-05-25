@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-25T19:41:09.905931+00:00",
+  "generated_at_utc": "2026-05-25T21:08:15.353311+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3656,7 +3656,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28444",
       "ena_url": "https://www.ianseo.net/TourData/2026/28444/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28444/IC.php",
-      "entries_count": 37,
+      "entries_count": 39,
       "entries": [
         {
           "name": "ALLIBERT Mael",
@@ -3678,6 +3678,13 @@
           "category": "0169192 - CHAPONOST",
           "session": "Arc Classique U18 Hommes",
           "target": "2A"
+        },
+        {
+          "name": "BONORA Nathan",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "U18 Homme Arc Classique",
+          "target": ""
         },
         {
           "name": "BOURGUIGNON Benoit",
@@ -3824,6 +3831,13 @@
           "club": "0138088 - GRENOBLE",
           "category": "0138088 - GRENOBLE",
           "session": "Arc Classique U18 Hommes",
+          "target": ""
+        },
+        {
+          "name": "JOLIVET Marine",
+          "club": "0101020 - SAINTE JULIE",
+          "category": "0101020 - SAINTE JULIE",
+          "session": "Arc Classique U18 Femmes",
           "target": ""
         },
         {
