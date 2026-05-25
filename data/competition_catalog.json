@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-25T04:46:19.832042+00:00",
+  "generated_at_utc": "2026-05-25T08:57:52.904349+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 30,
+  "count": 31,
   "tournaments": [
     {
       "to_id": "27216",
@@ -5745,6 +5745,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27533",
       "ena_url": "https://www.ianseo.net/TourData/2026/27533/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27533/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28458",
+      "year": "2026",
+      "name": "Championnat Régional TAE distances internationales 2026",
+      "organizer": "Créteil",
+      "date_text": "20-21 Jun",
+      "end_date": "2026-06-21",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28458",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28458/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28458/IC.php",
       "entries_count": 0,
       "entries": []
     },
