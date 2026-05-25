@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-25T08:57:52.904349+00:00",
+  "generated_at_utc": "2026-05-25T12:37:06.900158+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 31,
+  "count": 34,
   "tournaments": [
     {
       "to_id": "27216",
@@ -2123,8 +2123,723 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28177",
       "ena_url": "https://www.ianseo.net/TourData/2026/28177/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28177/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 102,
+      "entries": [
+        {
+          "name": "AIGLEHOUX FORTUNATI Blanche",
+          "club": "0877040 - SAINT GERMAIN SUR MORIN",
+          "category": "0877040 - SAINT GERMAIN SUR MORIN",
+          "session": "U13 Femme Arc Classique",
+          "target": "26D"
+        },
+        {
+          "name": "ALBARET Helios",
+          "club": "0877040 - SAINT GERMAIN SUR MORIN",
+          "category": "0877040 - SAINT GERMAIN SUR MORIN",
+          "session": "U15 Homme Arc Classique",
+          "target": "21A"
+        },
+        {
+          "name": "ALVES Maena",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U21 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "ATLAN MERLY Nino",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U15 Homme Arc Classique",
+          "target": "20C"
+        },
+        {
+          "name": "AYOUL Maelis",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "U15 Femme Arc Classique",
+          "target": "15C"
+        },
+        {
+          "name": "BAGOT Sidonie",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "U15 Femme Arc Classique",
+          "target": "20B"
+        },
+        {
+          "name": "BELGHAIT Eya",
+          "club": "0893235 - SEVRAN",
+          "category": "0893235 - SEVRAN",
+          "session": "U15 Femme Arc Classique",
+          "target": "18D"
+        },
+        {
+          "name": "BENARD Ethan",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U13 Homme Arc Classique",
+          "target": "27D"
+        },
+        {
+          "name": "BERGALA Raphael",
+          "club": "0878111 - ACHERES",
+          "category": "0878111 - ACHERES",
+          "session": "U13 Homme Arc Classique",
+          "target": "26A"
+        },
+        {
+          "name": "BIAGGINI Gabrielle",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U15 Femme Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "BON Eleonore",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U18 Femme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "BONNET Colin",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U15 Homme Arc Classique",
+          "target": "14C"
+        },
+        {
+          "name": "BOVE Milie",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U15 Femme Arc Classique",
+          "target": "21B"
+        },
+        {
+          "name": "BROCHOT Ivanny",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U21 Femme Arc Classique",
+          "target": "2D"
+        },
+        {
+          "name": "BRUIN Eva",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U18 Femme Arc Classique",
+          "target": "5D"
+        },
+        {
+          "name": "CAMOUILLY SEYLAT Roxanne",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U13 Femme Arc Classique",
+          "target": "27B"
+        },
+        {
+          "name": "CASANOVA Charlene",
+          "club": "0891144 - ETAMPES",
+          "category": "0891144 - ETAMPES",
+          "session": "U18 Femme Arc Classique",
+          "target": "6C"
+        },
+        {
+          "name": "CASANOVA Justine",
+          "club": "0891144 - ETAMPES",
+          "category": "0891144 - ETAMPES",
+          "session": "U18 Femme Arc Classique",
+          "target": "6D"
+        },
+        {
+          "name": "CHARLES Cesar",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U13 Homme Arc Classique",
+          "target": "25B"
+        },
+        {
+          "name": "CHEVE Lucie",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "U13 Femme Arc Classique",
+          "target": "23A"
+        },
+        {
+          "name": "COLIN Sacha",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U15 Homme Arc Classique",
+          "target": "20D"
+        },
+        {
+          "name": "CRESPO Gaurac",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "U13 Homme Arc Classique",
+          "target": "24C"
+        },
+        {
+          "name": "CRESPO Sanji",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "U15 Homme Arc Classique",
+          "target": "22B"
+        },
+        {
+          "name": "DALOT Juliette",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "U18 Femme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "DELMOTTE Benjamin",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "U18 Homme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "DEMIRKOL Erva",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "U15 Femme Arc Classique",
+          "target": "19D"
+        },
+        {
+          "name": "DENIS Mathilde",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "U15 Femme Arc Classique",
+          "target": "22C"
+        },
+        {
+          "name": "DESRAVINES Tyssia",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "Arc Classique U11 Femmes",
+          "target": "29B"
+        },
+        {
+          "name": "DJORDJEVIC Raphael",
+          "club": "0895293 - SARCELLES",
+          "category": "0895293 - SARCELLES",
+          "session": "U21 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "DUPUIS Mateo",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "U15 Homme Arc Classique",
+          "target": "22A"
+        },
+        {
+          "name": "DUPUY Judith",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U18 Femme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "DURRACQ Maxime",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "U18 Homme Arc Classique",
+          "target": "7D"
+        },
+        {
+          "name": "EDY-DUGORNAY Martin",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "U18 Homme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "FERNANDES Lucas",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U15 Homme Arc Classique",
+          "target": "17C"
+        },
+        {
+          "name": "FILBAS-TURPIN Armand",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U18 Homme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "FRID Zineb",
+          "club": "0893235 - SEVRAN",
+          "category": "0893235 - SEVRAN",
+          "session": "U15 Femme Arc Classique",
+          "target": "18C"
+        },
+        {
+          "name": "GABRIEL Clara",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "U21 Femme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "GALAT Alix",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "U13 Femme Arc Classique",
+          "target": "24A"
+        },
+        {
+          "name": "GOUJON Lona",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U18 Femme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "GUEDET Lyana",
+          "club": "0893235 - SEVRAN",
+          "category": "0893235 - SEVRAN",
+          "session": "U18 Femme Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "GUERRIERI--EA Vincent",
+          "club": "0877028 - TORCY",
+          "category": "0877028 - TORCY",
+          "session": "U18 Homme Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "HELIE Alexis",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "U18 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "HUBERT Romain",
+          "club": "0891144 - ETAMPES",
+          "category": "0891144 - ETAMPES",
+          "session": "U21 Homme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "JACQUOT Come",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U15 Homme Arc Classique",
+          "target": "14D"
+        },
+        {
+          "name": "JAUD Clementine",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U21 Femme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "LASCAUX_PAGET Laura",
+          "club": "0893235 - SEVRAN",
+          "category": "0893235 - SEVRAN",
+          "session": "U18 Femme Arc Classique",
+          "target": "4D"
+        },
+        {
+          "name": "LATAPY Alice",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "U15 Femme Arc Classique",
+          "target": "21C"
+        },
+        {
+          "name": "LE CHEVILLER Fanny",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U15 Femme Arc Classique",
+          "target": "16D"
+        },
+        {
+          "name": "LEBRETON Margot",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "U13 Femme Arc Classique",
+          "target": "24D"
+        },
+        {
+          "name": "LEBRUN Mathys",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U13 Homme Arc Classique",
+          "target": "25C"
+        },
+        {
+          "name": "LEBRUN Thyphaine",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U13 Femme Arc Classique",
+          "target": "28A"
+        },
+        {
+          "name": "LEGER William",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U15 Homme Arc Classique",
+          "target": "16C"
+        },
+        {
+          "name": "LEJEUNE Zoe",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U18 Femme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "LEKOUBY Lior",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U15 Femme Arc Classique",
+          "target": "13A"
+        },
+        {
+          "name": "LENTZ Elianor",
+          "club": "0893242 - AULNAY SOUS BOIS",
+          "category": "0893242 - AULNAY SOUS BOIS",
+          "session": "U15 Femme Arc Classique",
+          "target": "19B"
+        },
+        {
+          "name": "LEROUX Jules",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "Arc Classique U11 Hommes",
+          "target": "29C"
+        },
+        {
+          "name": "LEVEQUE Casilde",
+          "club": "0877040 - SAINT GERMAIN SUR MORIN",
+          "category": "0877040 - SAINT GERMAIN SUR MORIN",
+          "session": "U13 Femme Arc Classique",
+          "target": "27A"
+        },
+        {
+          "name": "LI Hanfei",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U18 Femme Arc Classique",
+          "target": "8D"
+        },
+        {
+          "name": "LIU Christian",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "U18 Homme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "LLUCIA Raphael",
+          "club": "0877028 - TORCY",
+          "category": "0877028 - TORCY",
+          "session": "U18 Homme Arc Classique",
+          "target": "9D"
+        },
+        {
+          "name": "LOMBARDERO Eva",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U18 Femme Arc Classique",
+          "target": "4C"
+        },
+        {
+          "name": "LUEG Constance",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U21 Femme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "MANUCCI Matthias",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "U21 Homme Arc à Poulies",
+          "target": "12C"
+        },
+        {
+          "name": "MARCHAL Diane",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "U15 Femme Arc Classique",
+          "target": "21D"
+        },
+        {
+          "name": "MARIE DUBOURG Lucas",
+          "club": "0877040 - SAINT GERMAIN SUR MORIN",
+          "category": "0877040 - SAINT GERMAIN SUR MORIN",
+          "session": "U13 Homme Arc Classique",
+          "target": "26C"
+        },
+        {
+          "name": "MARIEZ Elliot",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U21 Homme Arc Classique",
+          "target": "3C"
+        },
+        {
+          "name": "MAROUSE Linda",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U15 Femme Arc Classique",
+          "target": "18A"
+        },
+        {
+          "name": "MAROUSE Zoe",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U13 Femme Arc Classique",
+          "target": "25D"
+        },
+        {
+          "name": "MEILLAN Malo",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "U13 Homme Arc Classique",
+          "target": "23C"
+        },
+        {
+          "name": "MEILLAN Margot",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "Arc Classique U11 Femmes",
+          "target": "29A"
+        },
+        {
+          "name": "MONCELLY Alexandre",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "U18 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "MONTARON Justine",
+          "club": "0893235 - SEVRAN",
+          "category": "0893235 - SEVRAN",
+          "session": "U15 Femme Arc Classique",
+          "target": "19A"
+        },
+        {
+          "name": "MOUILLEZ Bryan",
+          "club": "0893235 - SEVRAN",
+          "category": "0893235 - SEVRAN",
+          "session": "U21 Homme Arc Classique",
+          "target": "3D"
+        },
+        {
+          "name": "NAMUR Marius",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "U15 Homme Arc Classique",
+          "target": "16A"
+        },
+        {
+          "name": "OURASITH Liam",
+          "club": "0877028 - TORCY",
+          "category": "0877028 - TORCY",
+          "session": "U15 Homme Arc Classique",
+          "target": "13D"
+        },
+        {
+          "name": "PAPON Nathan",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U18 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "PARISI Ines",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U18 Femme Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "PAUPY Clemence",
+          "club": "0893235 - SEVRAN",
+          "category": "0893235 - SEVRAN",
+          "session": "U18 Femme Arc Classique",
+          "target": "5A"
+        },
+        {
+          "name": "PAYET Emily",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U21 Femme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "PEETERS Camille",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U15 Femme Arc Classique",
+          "target": "17D"
+        },
+        {
+          "name": "PELTIER LEGROS Esteban",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "U18 Homme Arc Classique",
+          "target": "10D"
+        },
+        {
+          "name": "PIETRI Apolline",
+          "club": "0877028 - TORCY",
+          "category": "0877028 - TORCY",
+          "session": "U15 Femme Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "PONCHON Maxime",
+          "club": "0891156 - ORSAY",
+          "category": "0891156 - ORSAY",
+          "session": "U15 Homme Arc Classique",
+          "target": "18B"
+        },
+        {
+          "name": "PRADAS Alienor",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U18 Femme Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "PRUNIER Maxime",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "U15 Homme Arc Classique",
+          "target": "15D"
+        },
+        {
+          "name": "RACLIN Oceane",
+          "club": "0891144 - ETAMPES",
+          "category": "0891144 - ETAMPES",
+          "session": "U18 Femme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "REYNARD Taina",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U15 Femme Arc Classique",
+          "target": "17A"
+        },
+        {
+          "name": "REYNARD Tiara",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "U13 Femme Arc Classique",
+          "target": "25A"
+        },
+        {
+          "name": "RIGOUIN ROBIN Maelyss",
+          "club": "0878111 - ACHERES",
+          "category": "0878111 - ACHERES",
+          "session": "U13 Femme Arc Classique",
+          "target": "26B"
+        },
+        {
+          "name": "ROBIN-ALLET Tom",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "U15 Homme Arc Classique",
+          "target": "15B"
+        },
+        {
+          "name": "ROLLET Evan",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "U15 Homme Arc Classique",
+          "target": "22D"
+        },
+        {
+          "name": "ROUX Maelys",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "U18 Femme Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "ROY Pascaline",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "U15 Femme Arc Classique",
+          "target": "16B"
+        },
+        {
+          "name": "SCHWARTZ Eva",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "U13 Femme Arc Classique",
+          "target": "23B"
+        },
+        {
+          "name": "SMAIL Louise",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "U13 Femme Arc Classique",
+          "target": "28B"
+        },
+        {
+          "name": "TAING Louise",
+          "club": "0894263 - VILLEJUIF",
+          "category": "0894263 - VILLEJUIF",
+          "session": "Arc Classique U11 Femmes",
+          "target": "29D"
+        },
+        {
+          "name": "TAUFOUR Maxime",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U13 Homme Arc Classique",
+          "target": "24B"
+        },
+        {
+          "name": "TEOTBIALES Arthur",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "U15 Homme Arc Classique",
+          "target": "20A"
+        },
+        {
+          "name": "TERRIER Margaux",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U18 Femme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "VINCHON BIENFAIT Julia",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "U13 Femme Arc Classique",
+          "target": "23D"
+        },
+        {
+          "name": "WATERFALL Milo",
+          "club": "0875022 - PARIS TROIS LYS",
+          "category": "0875022 - PARIS TROIS LYS",
+          "session": "U18 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "WONG Claire",
+          "club": "0878111 - ACHERES",
+          "category": "0878111 - ACHERES",
+          "session": "U13 Femme Arc Classique",
+          "target": "27C"
+        }
+      ]
     },
     {
       "to_id": "28299",
@@ -4597,6 +5312,19 @@
       ]
     },
     {
+      "to_id": "28459",
+      "year": "2026",
+      "name": "Championnat départemental du Val-de-Marne TAE DN",
+      "organizer": "IVRY-SUR-SEINE",
+      "date_text": "7 Jun",
+      "end_date": "2026-06-07",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28459",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28459/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28459/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27514",
       "year": "2026",
       "name": "TAEI/N et Para Tir à l'Arc - 13 Juin 2026",
@@ -5771,6 +6499,32 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28297",
       "ena_url": "https://www.ianseo.net/TourData/2026/28297/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28297/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28465",
+      "year": "2026",
+      "name": "Championnat Régional PACA Jeunes 2026 - TAE I & N",
+      "organizer": "Compagnie d'Arc de Vedène",
+      "date_text": "27 Jun",
+      "end_date": "2026-06-27",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28465",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28465/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28465/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28466",
+      "year": "2026",
+      "name": "Championnat Régional PACA Adultes 2026 - TAE I & N",
+      "organizer": "Compagnie d'Arc de Vedène",
+      "date_text": "28 Jun",
+      "end_date": "2026-06-28",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28466",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28466/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28466/IC.php",
       "entries_count": 0,
       "entries": []
     },
