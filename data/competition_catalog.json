@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-25T12:37:06.900158+00:00",
+  "generated_at_utc": "2026-05-25T15:52:00.862143+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27216",
       "ena_url": "https://www.ianseo.net/TourData/2026/27216/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27216/IC.php",
-      "entries_count": 275,
+      "entries_count": 281,
       "entries": [
         {
           "name": "ACHA GONZALEZ Pablo",
@@ -115,6 +115,13 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "BAILLION Jeremy",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "Scratch Homme Arc Classique",
           "target": ""
         },
         {
@@ -282,6 +289,13 @@
           "name": "BOULCH Jean Philippe",
           "club": "0892193 - RUEIL MALMAISON STAR",
           "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "BOULEAU Victor",
+          "club": "0760197 - BEAUVAIS",
+          "category": "0760197 - BEAUVAIS",
           "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
@@ -734,6 +748,13 @@
           "target": ""
         },
         {
+          "name": "FIORETTI Thibault",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "FLORENT Anaelle",
           "club": "1130041 - NIMES",
           "category": "1130041 - NIMES",
@@ -888,6 +909,13 @@
           "target": ""
         },
         {
+          "name": "HENAULT Alexandre",
+          "club": "0437083 - ST AVERTIN",
+          "category": "0437083 - ST AVERTIN",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "HENNINOT Guillaume",
           "club": "0895293 - SARCELLES",
           "category": "0895293 - SARCELLES",
@@ -1021,6 +1049,13 @@
           "target": ""
         },
         {
+          "name": "KREJ Gregory",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "LABICHE Nicolas",
           "club": "0893225 - NEUILLY SUR MARNE",
           "category": "0893225 - NEUILLY SUR MARNE",
@@ -1105,6 +1140,13 @@
           "target": ""
         },
         {
+          "name": "LEFEBVRE Anthony",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "LEFEUVRE Camille",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -1136,7 +1178,7 @@
           "name": "LEMOINE Frederic",
           "club": "0759101 - VILLENEUVE D'ASCQ",
           "category": "0759101 - VILLENEUVE D'ASCQ",
-          "session": "Scratch Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 2 Homme",
           "target": ""
         },
         {
@@ -1661,7 +1703,7 @@
           "name": "ROUX Adrien",
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
-          "session": "Arc Classique Senior 1 Homme",
+          "session": "Scratch Homme Arc Classique",
           "target": ""
         },
         {
@@ -1899,7 +1941,7 @@
           "name": "VILLARD Laurena",
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
-          "session": "Scratch Femme Arc Classique",
+          "session": "Arc Classique Senior 1 Femme",
           "target": ""
         },
         {
@@ -4825,7 +4867,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 58,
+      "entries_count": 50,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -4870,13 +4912,6 @@
           "target": ""
         },
         {
-          "name": "BILLOTTET Anthony",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "Arc Classique Débutant U18 2A+ et U21 à S3 1A - 30m 122cm",
-          "target": ""
-        },
-        {
           "name": "BONNAVAUD Alexandre",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
@@ -4884,24 +4919,10 @@
           "target": ""
         },
         {
-          "name": "BOUCHET Clara",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "Arc Classique Débutant U18 2A+ et U21 à S3 1A - 30m 122cm",
-          "target": ""
-        },
-        {
           "name": "CARDIN Benedicte",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "S2 Femme Arc à Poulies National",
-          "target": ""
-        },
-        {
-          "name": "CARLOT Pascal",
-          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
-          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
-          "session": "Arc Classique Débutant U21 à S3 2A+ - 30m 80cm",
           "target": ""
         },
         {
@@ -4947,13 +4968,6 @@
           "target": ""
         },
         {
-          "name": "DROUILLOT Clement",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "Arc Classique Débutant U21 à S3 2A+ - 30m 80cm",
-          "target": ""
-        },
-        {
           "name": "DUBANT Jean",
           "club": "0221018 - SEMUR EN AUXOIS",
           "category": "0221018 - SEMUR EN AUXOIS",
@@ -4961,24 +4975,10 @@
           "target": ""
         },
         {
-          "name": "DUBARRE Virginie",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "Arc Classique Débutant U18 2A+ et U21 à S3 1A - 30m 122cm",
-          "target": ""
-        },
-        {
           "name": "FAGOT Yanis",
           "club": "0221016 - CHENOVE",
           "category": "0221016 - CHENOVE",
           "session": "U18 Homme Arc Classique National",
-          "target": ""
-        },
-        {
-          "name": "GALLOIS Elodie",
-          "club": "0221017 - SAINT APOLLINAIRE",
-          "category": "0221017 - SAINT APOLLINAIRE",
-          "session": "Arc Classique Débutant U15 2A+ et U18 1A - 20m 80cm",
           "target": ""
         },
         {
@@ -5000,20 +5000,6 @@
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
-        },
-        {
-          "name": "GRAPIN-COUCHOT Marylou",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "Arc Classique Débutant U18 2A+ et U21 à S3 1A - 30m 122cm",
-          "target": ""
-        },
-        {
-          "name": "GRIBELIN Gabriella",
-          "club": "0221123 - LES ARCHERS SELONGEENS",
-          "category": "0221123 - LES ARCHERS SELONGEENS",
-          "session": "Arc à Poulies Débutant U18 à S3 - 30m 80cm 6 zones",
           "target": ""
         },
         {
@@ -5073,6 +5059,13 @@
           "target": ""
         },
         {
+          "name": "LOUOT Liam",
+          "club": "0221016 - CHENOVE",
+          "category": "0221016 - CHENOVE",
+          "session": "U13 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "LUMINET Emma",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
@@ -5087,10 +5080,24 @@
           "target": ""
         },
         {
+          "name": "MARC Morgane",
+          "club": "0221018 - SEMUR EN AUXOIS",
+          "category": "0221018 - SEMUR EN AUXOIS",
+          "session": "U15 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "MASSON Charly",
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
           "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MENDYCK Tim",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "U18 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -5150,13 +5157,6 @@
           "target": ""
         },
         {
-          "name": "PROCUREUR Mady",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "Arc Nu Débutant U18 2A+ et U21 à S3 - 30m 122cm",
-          "target": ""
-        },
-        {
           "name": "RAYMOND Michel",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
@@ -5171,24 +5171,10 @@
           "target": ""
         },
         {
-          "name": "ROUSSEL Claire",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "S2 Femme Arc Classique National",
-          "target": ""
-        },
-        {
           "name": "SOMBSTAY Tristan",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
-        },
-        {
-          "name": "SORDEL Lenaic",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "U15 Homme Arc Classique National",
           "target": ""
         },
         {
