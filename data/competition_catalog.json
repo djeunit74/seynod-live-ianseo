@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-26T20:54:17.623354+00:00",
+  "generated_at_utc": "2026-05-26T22:20:40.368780+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 40,
+  "count": 41,
   "tournaments": [
     {
       "to_id": "27216",
@@ -4065,6 +4065,405 @@
       ]
     },
     {
+      "to_id": "28476",
+      "year": "2026",
+      "name": "2ème Manche DRAPE AURA 2026",
+      "organizer": "Les Archers De La Sallanche",
+      "date_text": "31 May",
+      "end_date": "2026-05-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28476",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28476/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28476/IC.php",
+      "entries_count": 55,
+      "entries": [
+        {
+          "name": "BAGAGLI Yoann",
+          "club": "0138094 - SALAISE SUR SANNE",
+          "category": "0138094 - SALAISE SUR SANNE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "11B"
+        },
+        {
+          "name": "BARA Patrice",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "Arc à Poulies Senior 2 Hommes National",
+          "target": "17B"
+        },
+        {
+          "name": "BERTRAND Anne Laure",
+          "club": "0174246 - SEYNOD",
+          "category": "0174246 - SEYNOD",
+          "session": "Arc Classique Senior 2 Femmes National",
+          "target": "19B"
+        },
+        {
+          "name": "BONDON Morgan",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "11A"
+        },
+        {
+          "name": "BONNAND Annick",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": "14B"
+        },
+        {
+          "name": "BOURGEAIS Stephane",
+          "club": "0174246 - SEYNOD",
+          "category": "0174246 - SEYNOD",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "5A"
+        },
+        {
+          "name": "BRAISAZ Mickael",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": "19C"
+        },
+        {
+          "name": "BROSSE Yann",
+          "club": "0107040 - VIVIERS",
+          "category": "0107040 - VIVIERS",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "6B"
+        },
+        {
+          "name": "CARUSO Anthony",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "10A"
+        },
+        {
+          "name": "CATIN Daniel",
+          "club": "0174246 - SEYNOD",
+          "category": "0174246 - SEYNOD",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "6A"
+        },
+        {
+          "name": "CHARRAT Blandine",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "14C"
+        },
+        {
+          "name": "CLEMENCEAU Mathieu",
+          "club": "0126059 - CHARPEY",
+          "category": "0126059 - CHARPEY",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "CLOT Agnes",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": "13B"
+        },
+        {
+          "name": "CORREIA Carlos",
+          "club": "0138094 - SALAISE SUR SANNE",
+          "category": "0138094 - SALAISE SUR SANNE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "10B"
+        },
+        {
+          "name": "DECINA Jean-Christophe",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "10C"
+        },
+        {
+          "name": "DEPOILLY Dominique",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc Classique Senior 3 Femmes National",
+          "target": "16C"
+        },
+        {
+          "name": "DOUET Stephane",
+          "club": "0174246 - SEYNOD",
+          "category": "0174246 - SEYNOD",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "7A"
+        },
+        {
+          "name": "DRAME Aliou",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "12C"
+        },
+        {
+          "name": "DUGAIN Francois",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "FAURON Alexis",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "5C"
+        },
+        {
+          "name": "FAVE Emeline",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "13C"
+        },
+        {
+          "name": "GAIDA Delphine",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Femmes National",
+          "target": "17A"
+        },
+        {
+          "name": "GARCIA Adrien",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "3B"
+        },
+        {
+          "name": "GIRARDY Yoan",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "11C"
+        },
+        {
+          "name": "GIRAUDON Antonin",
+          "club": "0138094 - SALAISE SUR SANNE",
+          "category": "0138094 - SALAISE SUR SANNE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "12B"
+        },
+        {
+          "name": "GRANIER Jordan",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc Classique Senior 1 Hommes National",
+          "target": "19A"
+        },
+        {
+          "name": "GUERRAZ Serge",
+          "club": "0107040 - VIVIERS",
+          "category": "0107040 - VIVIERS",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "5B"
+        },
+        {
+          "name": "GUILHEM Ludovic",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": "16B"
+        },
+        {
+          "name": "KOSAK Maxime",
+          "club": "0169188 - LYON 8EME",
+          "category": "0169188 - LYON 8EME",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "14A"
+        },
+        {
+          "name": "LAPORTE Sylvain",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "LASNIER Quentin",
+          "club": "0169188 - LYON 8EME",
+          "category": "0169188 - LYON 8EME",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "13A"
+        },
+        {
+          "name": "LAURENT Jonathan",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "12A"
+        },
+        {
+          "name": "LEJEUNE Maximilien",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "9A"
+        },
+        {
+          "name": "LEMAIRE Fabian",
+          "club": "0174246 - SEYNOD",
+          "category": "0174246 - SEYNOD",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "8A"
+        },
+        {
+          "name": "LEMOINE Daniel",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "6C"
+        },
+        {
+          "name": "LUQUET Jean-Baptiste",
+          "club": "0138094 - SALAISE SUR SANNE",
+          "category": "0138094 - SALAISE SUR SANNE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "9B"
+        },
+        {
+          "name": "MALLET Christian",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "3C"
+        },
+        {
+          "name": "PARIS Jeanmarc",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "9C"
+        },
+        {
+          "name": "PENOT Xavier",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Arc à Poulies Senior 3 Hommes",
+          "target": "8C"
+        },
+        {
+          "name": "PETIT Nathalie",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "15B"
+        },
+        {
+          "name": "PIERRET Gabriel",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "PIERRET Maxime",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "4B"
+        },
+        {
+          "name": "POGORELTSEV Sergei",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": "17C"
+        },
+        {
+          "name": "PRADELLE Allan",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "PRADELLE Olivier",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "7C"
+        },
+        {
+          "name": "ROGER Fabrice",
+          "club": "0163168 - ST BEAUZIRE",
+          "category": "0163168 - ST BEAUZIRE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "4C"
+        },
+        {
+          "name": "SAUVAN-MAGNET Cedric",
+          "club": "0107040 - VIVIERS",
+          "category": "0107040 - VIVIERS",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "7B"
+        },
+        {
+          "name": "SAUVAN-MAGNET Raymond",
+          "club": "0107040 - VIVIERS",
+          "category": "0107040 - VIVIERS",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "8B"
+        },
+        {
+          "name": "SCHMIDT Stephanie",
+          "club": "0138095 - VOIRON",
+          "category": "0138095 - VOIRON",
+          "session": "S2 Femme Arc à Poulies National",
+          "target": "16A"
+        },
+        {
+          "name": "SCHMITTE Remy",
+          "club": "0138109 - VILLEFONTAINE",
+          "category": "0138109 - VILLEFONTAINE",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "18A"
+        },
+        {
+          "name": "SERRE-BOUIT Floris",
+          "club": "0126059 - CHARPEY",
+          "category": "0126059 - CHARPEY",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "TURC Yann",
+          "club": "0126059 - CHARPEY",
+          "category": "0126059 - CHARPEY",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "3A"
+        },
+        {
+          "name": "VALLEMONT Antoine",
+          "club": "0169188 - LYON 8EME",
+          "category": "0169188 - LYON 8EME",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "15A"
+        },
+        {
+          "name": "VALLEMONT Elodie",
+          "club": "0169188 - LYON 8EME",
+          "category": "0169188 - LYON 8EME",
+          "session": "Arc à Poulies Senior 1 Femmes National",
+          "target": "18C"
+        },
+        {
+          "name": "VARNIER Helene",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "15C"
+        }
+      ]
+    },
+    {
       "to_id": "27222",
       "year": "2026",
       "name": "Concours TAE Estival 2026 - Crépy en Valois",
@@ -4074,7 +4473,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27222",
       "ena_url": "https://www.ianseo.net/TourData/2026/27222/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27222/IC.php",
-      "entries_count": 132,
+      "entries_count": 135,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -4102,7 +4501,7 @@
           "club": "0760208 - RIEUX",
           "category": "0760208 - RIEUX",
           "session": "S3 Homme Arc Classique National",
-          "target": "7D"
+          "target": "5C"
         },
         {
           "name": "ANDRE Mathieu",
@@ -4161,13 +4560,6 @@
           "target": "8C"
         },
         {
-          "name": "BIENAIME Thimothe",
-          "club": "0760233 - TROSLY BREUIL",
-          "category": "0760233 - TROSLY BREUIL",
-          "session": "S1 Homme Arc Classique National",
-          "target": "5C"
-        },
-        {
           "name": "BLANVILLAIN Eric",
           "club": "0702076 - COINCY",
           "category": "0702076 - COINCY",
@@ -4194,6 +4586,27 @@
           "category": "0702003 - VILLERS COTTERETS",
           "session": "S2 Homme Arc à Poulies National",
           "target": "5D"
+        },
+        {
+          "name": "BOULEAU Victor",
+          "club": "0760197 - BEAUVAIS",
+          "category": "0760197 - BEAUVAIS",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "3B"
+        },
+        {
+          "name": "BOULEAU Victor",
+          "club": "0760197 - BEAUVAIS",
+          "category": "0760197 - BEAUVAIS",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": "4A"
+        },
+        {
+          "name": "BOULEFROY Robert",
+          "club": "0760214 - ESTREES ST DENIS",
+          "category": "0760214 - ESTREES ST DENIS",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "3C"
         },
         {
           "name": "BROSSE Nicolas",
@@ -4280,11 +4693,11 @@
           "target": "7A"
         },
         {
-          "name": "CORNU Jean-Michel",
-          "club": "0760224 - NANTEUIL LE HAUDOUIN",
-          "category": "0760224 - NANTEUIL LE HAUDOUIN",
-          "session": "S3 Homme Arc à Poulies National",
-          "target": "5A"
+          "name": "COSTA Adrien",
+          "club": "0895280 - ERMONT",
+          "category": "0895280 - ERMONT",
+          "session": "S1 Homme Arc Classique National",
+          "target": "7D"
         },
         {
           "name": "COUBEL Anthony",
@@ -4299,13 +4712,6 @@
           "category": "0760243 - FLEURINES",
           "session": "S3 Homme Arc Classique National",
           "target": "8B"
-        },
-        {
-          "name": "COUTART Chloe",
-          "club": "0760157 - SENLIS",
-          "category": "0760157 - SENLIS",
-          "session": "S1 Femme Arc à Poulies National",
-          "target": "4C"
         },
         {
           "name": "CRUSSIERE Jerome",
@@ -4389,6 +4795,13 @@
           "club": "0651213 - BEZANNES",
           "category": "0651213 - BEZANNES",
           "session": "U18 Femme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "DUFER Eva",
+          "club": "0651213 - BEZANNES",
+          "category": "0651213 - BEZANNES",
+          "session": "Arc Classique U18 Femmes",
           "target": "3D"
         },
         {
@@ -4437,6 +4850,13 @@
           "name": "FRETTE Michael",
           "club": "0760157 - SENLIS",
           "category": "0760157 - SENLIS",
+          "session": "Arc à Poulies Senior 2 Hommes National",
+          "target": "4C"
+        },
+        {
+          "name": "FRETTE Michael",
+          "club": "0760157 - SENLIS",
+          "category": "0760157 - SENLIS",
           "session": "S2 Homme Arc à Poulies National",
           "target": "4D"
         },
@@ -4458,7 +4878,7 @@
           "name": "GOSSELIN Jerome",
           "club": "0760157 - SENLIS",
           "category": "0760157 - SENLIS",
-          "session": "S2 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 2 Hommes",
           "target": "3A"
         },
         {
@@ -4467,6 +4887,13 @@
           "category": "0760157 - SENLIS",
           "session": "S2 Homme Arc à Poulies",
           "target": "3B"
+        },
+        {
+          "name": "GOUSSU Clement",
+          "club": "0760171 - COMPIEGNE",
+          "category": "0760171 - COMPIEGNE",
+          "session": "U18 Homme Arc Classique",
+          "target": "2B"
         },
         {
           "name": "GREMONT Dimitri",
@@ -4481,6 +4908,13 @@
           "category": "0759129 - VALENCIENNES",
           "session": "S1 Homme Arc à Poulies National",
           "target": "5B"
+        },
+        {
+          "name": "GUIBERT Bruno",
+          "club": "0760197 - BEAUVAIS",
+          "category": "0760197 - BEAUVAIS",
+          "session": "S2 Homme Arc Classique National",
+          "target": "6C"
         },
         {
           "name": "HAINNEVILLE Edouard",
@@ -4504,24 +4938,10 @@
           "target": "2D"
         },
         {
-          "name": "HENNEBERT Lucas",
-          "club": "0760208 - RIEUX",
-          "category": "0760208 - RIEUX",
-          "session": "U18 Homme Arc Classique National",
-          "target": "6C"
-        },
-        {
-          "name": "HENNEBERT Vincent",
-          "club": "0760208 - RIEUX",
-          "category": "0760208 - RIEUX",
-          "session": "S2 Homme Arc Classique National",
-          "target": "5D"
-        },
-        {
           "name": "HENRION Matheis",
           "club": "0702073 - VILLENEUVE ST GERMAIN",
           "category": "0702073 - VILLENEUVE ST GERMAIN",
-          "session": "U15 Homme Arc Classique",
+          "session": "Arc Classique U15 Hommes",
           "target": "8D"
         },
         {
@@ -4557,14 +4977,28 @@
           "club": "0760228 - LASSIGNY",
           "category": "0760228 - LASSIGNY",
           "session": "S2 Homme Arc Classique National",
-          "target": "7C"
+          "target": "8B"
         },
         {
           "name": "JOLY Jairemy",
           "club": "0760228 - LASSIGNY",
           "category": "0760228 - LASSIGNY",
           "session": "U18 Homme Arc Classique National",
-          "target": "8B"
+          "target": "7C"
+        },
+        {
+          "name": "LADOUCETTE Sophie",
+          "club": "0651050 - SUIPPES",
+          "category": "0651050 - SUIPPES",
+          "session": "S2 Femme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "LADOUCETTE Sophie",
+          "club": "0651050 - SUIPPES",
+          "category": "0651050 - SUIPPES",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "2B"
         },
         {
           "name": "LAFAY Mathis",
@@ -4579,6 +5013,13 @@
           "category": "0760157 - SENLIS",
           "session": "S2 Femme Arc à Poulies National",
           "target": "4B"
+        },
+        {
+          "name": "LAMOUREUX Cathy",
+          "club": "0760157 - SENLIS",
+          "category": "0760157 - SENLIS",
+          "session": "Arc à Poulies Senior 2 Femmes National",
+          "target": "5A"
         },
         {
           "name": "LANGLOIS Isabelle",
@@ -4607,6 +5048,13 @@
           "category": "0760199 - CREPY EN VALOIS",
           "session": "S1 Homme Arc Classique National",
           "target": "4C"
+        },
+        {
+          "name": "LE MESTRE Marie-Carmen",
+          "club": "0894250 - SAINT MAUR",
+          "category": "0894250 - SAINT MAUR",
+          "session": "S3 Femme Arc à Poulies National",
+          "target": "5D"
         },
         {
           "name": "LEBAULT Roxane",
@@ -4658,23 +5106,9 @@
           "target": "5A"
         },
         {
-          "name": "LEFEBVRE Xavier",
-          "club": "0760160 - GOUVIEUX",
-          "category": "0760160 - GOUVIEUX",
-          "session": "Arc Classique Senior 3 Hommes National",
-          "target": "6A"
-        },
-        {
-          "name": "LEFEVRE Jean-Luc",
-          "club": "0760168 - RETHONDES",
-          "category": "0760168 - RETHONDES",
-          "session": "Scratch Homme Arc Nu National",
-          "target": "7C"
-        },
-        {
           "name": "LEJEUNE Philippe",
-          "club": "0702019 - CHEZY SUR MARNE",
-          "category": "0702019 - CHEZY SUR MARNE",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
           "session": "S2 Homme Arc à Poulies National",
           "target": "7C"
         },
@@ -4721,6 +5155,13 @@
           "target": "6B"
         },
         {
+          "name": "MARTIN Eric",
+          "club": "0760223 - ERMENONVILLE",
+          "category": "0760223 - ERMENONVILLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "5C"
+        },
+        {
           "name": "MARTINEZ Coralie",
           "club": "0760148 - IVORS",
           "category": "0760148 - IVORS",
@@ -4740,13 +5181,6 @@
           "category": "0760214 - ESTREES ST DENIS",
           "session": "S2 Homme Arc à Poulies",
           "target": "3A"
-        },
-        {
-          "name": "MERIAUX Sandrine",
-          "club": "0895270 - VIARMES",
-          "category": "0895270 - VIARMES",
-          "session": "S2 Femme Arc Classique",
-          "target": "2B"
         },
         {
           "name": "MERIAUX Sandrine",
@@ -4812,20 +5246,6 @@
           "target": "4D"
         },
         {
-          "name": "NEDJAR Abdennour",
-          "club": "0760171 - COMPIEGNE",
-          "category": "0760171 - COMPIEGNE",
-          "session": "U18 Homme Arc Classique",
-          "target": "3B"
-        },
-        {
-          "name": "NEDJAR Younes",
-          "club": "0760171 - COMPIEGNE",
-          "category": "0760171 - COMPIEGNE",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "4D"
-        },
-        {
           "name": "NIVAULT Pierre",
           "club": "0760205 - NOGENT SUR OISE",
           "category": "0760205 - NOGENT SUR OISE",
@@ -4859,13 +5279,6 @@
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "S2 Homme Arc Classique National",
           "target": "9C"
-        },
-        {
-          "name": "PUGNANT Emeline",
-          "club": "0760224 - NANTEUIL LE HAUDOUIN",
-          "category": "0760224 - NANTEUIL LE HAUDOUIN",
-          "session": "S1 Femme Arc Classique",
-          "target": "2A"
         },
         {
           "name": "QUINTIN Stephane",
@@ -4966,6 +5379,13 @@
           "target": "7B"
         },
         {
+          "name": "VANANTI Catherine",
+          "club": "0760226 - ORRY LA VILLE",
+          "category": "0760226 - ORRY LA VILLE",
+          "session": "S3 Femme Arc Classique National",
+          "target": "6A"
+        },
+        {
           "name": "VANNIER Leia",
           "club": "0760148 - IVORS",
           "category": "0760148 - IVORS",
@@ -4977,12 +5397,12 @@
           "club": "0760199 - CREPY EN VALOIS",
           "category": "0760199 - CREPY EN VALOIS",
           "session": "S3 Homme Arc Classique National",
-          "target": "5C"
+          "target": "7B"
         },
         {
           "name": "VERGEAUD Anthony",
-          "club": "0702019 - CHEZY SUR MARNE",
-          "category": "0702019 - CHEZY SUR MARNE",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
           "session": "S1 Homme Arc Classique National",
           "target": "8B"
         },

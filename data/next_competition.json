@@ -1,12 +1,95 @@
 {
-  "generated_at_utc": "2026-05-26T20:53:30.578416+00:00",
+  "generated_at_utc": "2026-05-26T22:19:54.551934+00:00",
   "today": "2026-05-26",
   "country": "FRA",
   "keywords": [
     "seynod",
     "0174246"
   ],
-  "found": false,
-  "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
-  "checked_candidates": 40
+  "found": true,
+  "next_competition": {
+    "to_id": "28476",
+    "year": "2026",
+    "name": "2ème Manche DRAPE AURA 2026",
+    "organizer": "Les Archers De La Sallanche",
+    "date_text": "31 May",
+    "end_date": "2026-05-31",
+    "details_url": "https://www.ianseo.net/Details.php?toId=28476",
+    "ena_url": "https://www.ianseo.net/TourData/2026/28476/ENA.php",
+    "ic_url": null,
+    "club_entries": [
+      {
+        "name": "BERTRAND Anne Laure",
+        "target": "19B",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "Arc Classique Senior 2 Femmes National"
+      },
+      {
+        "name": "BOURGEAIS Stephane",
+        "target": "5A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S1 Homme Arc à Poulies"
+      },
+      {
+        "name": "CATIN Daniel",
+        "target": "6A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S1 Homme Arc à Poulies"
+      },
+      {
+        "name": "DOUET Stephane",
+        "target": "7A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S1 Homme Arc à Poulies"
+      },
+      {
+        "name": "LEMAIRE Fabian",
+        "target": "8A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S1 Homme Arc à Poulies"
+      }
+    ],
+    "seynod_entries": [
+      {
+        "name": "BERTRAND Anne Laure",
+        "target": "19B",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "Arc Classique Senior 2 Femmes National"
+      },
+      {
+        "name": "BOURGEAIS Stephane",
+        "target": "5A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S1 Homme Arc à Poulies"
+      },
+      {
+        "name": "CATIN Daniel",
+        "target": "6A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S1 Homme Arc à Poulies"
+      },
+      {
+        "name": "DOUET Stephane",
+        "target": "7A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S1 Homme Arc à Poulies"
+      },
+      {
+        "name": "LEMAIRE Fabian",
+        "target": "8A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S1 Homme Arc à Poulies"
+      }
+    ]
+  }
 }
