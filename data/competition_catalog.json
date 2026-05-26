@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-26T18:42:47.306515+00:00",
+  "generated_at_utc": "2026-05-26T20:54:17.623354+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 38,
+  "count": 40,
   "tournaments": [
     {
       "to_id": "27216",
@@ -2234,6 +2234,19 @@
       ]
     },
     {
+      "to_id": "28300",
+      "year": "2026",
+      "name": "TAE SELECTIF + Championnat régional Para",
+      "organizer": "Les archers de Chateaurenard",
+      "date_text": "30 May",
+      "end_date": "2026-05-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28300",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28300/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28300/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "28125",
       "year": "2026",
       "name": "CONCOURS EXTERIEUR LA FLECHE",
@@ -2973,6 +2986,19 @@
           "target": "27C"
         }
       ]
+    },
+    {
+      "to_id": "28298",
+      "year": "2026",
+      "name": "2eme Manche de DRE Châteaurenard",
+      "organizer": "Les Archers de Chateaurenard",
+      "date_text": "31 May",
+      "end_date": "2026-05-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28298",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28298/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28298/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "28299",
@@ -3747,7 +3773,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28444",
       "ena_url": "https://www.ianseo.net/TourData/2026/28444/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28444/IC.php",
-      "entries_count": 39,
+      "entries_count": 41,
       "entries": [
         {
           "name": "ALLIBERT Mael",
@@ -3951,6 +3977,20 @@
           "category": "0169178 - BRIGNAIS",
           "session": "Arc Classique U18 Femmes",
           "target": "5C"
+        },
+        {
+          "name": "PASQUET Sophie",
+          "club": "0169213 - CHASSIEU",
+          "category": "0169213 - CHASSIEU",
+          "session": "Arc Nu Senior 2 Femmes National",
+          "target": "20A"
+        },
+        {
+          "name": "RASPAIL Benjamin",
+          "club": "0169213 - CHASSIEU",
+          "category": "0169213 - CHASSIEU",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": "20B"
         },
         {
           "name": "REYNAUD Julie",
@@ -4972,7 +5012,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27541",
       "ena_url": "https://www.ianseo.net/TourData/2026/27541/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27541/IC.php",
-      "entries_count": 50,
+      "entries_count": 54,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
@@ -5070,6 +5110,13 @@
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U15 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "DOUCHE Sebastien",
+          "club": "0652216 - COMPAGNIE D'ARC \"LA VINGEANNE\"",
+          "category": "0652216 - COMPAGNIE D'ARC \"LA VINGEANNE\"",
+          "session": "S2 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -5178,6 +5225,13 @@
           "target": ""
         },
         {
+          "name": "MAILLOT Philippe",
+          "club": "0652216 - COMPAGNIE D'ARC \"LA VINGEANNE\"",
+          "category": "0652216 - COMPAGNIE D'ARC \"LA VINGEANNE\"",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "MALLERON Ronan",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
@@ -5255,13 +5309,6 @@
           "target": ""
         },
         {
-          "name": "POTINET Annie",
-          "club": "0221012 - AUXONNE",
-          "category": "0221012 - AUXONNE",
-          "session": "Scratch Femme Arc Nu National",
-          "target": ""
-        },
-        {
           "name": "RAYMOND Michel",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
@@ -5272,6 +5319,27 @@
           "name": "RENAULT Cedric",
           "club": "0221006 - IS SUR TILLE",
           "category": "0221006 - IS SUR TILLE",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "ROULIN Benjamin",
+          "club": "0652216 - COMPAGNIE D'ARC \"LA VINGEANNE\"",
+          "category": "0652216 - COMPAGNIE D'ARC \"LA VINGEANNE\"",
+          "session": "Scratch Homme Arc Nu National",
+          "target": ""
+        },
+        {
+          "name": "SCHMIDT Joel",
+          "club": "0652216 - COMPAGNIE D'ARC \"LA VINGEANNE\"",
+          "category": "0652216 - COMPAGNIE D'ARC \"LA VINGEANNE\"",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "SLOWENSKY Adrien",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
           "session": "S1 Homme Arc Classique National",
           "target": ""
         },
