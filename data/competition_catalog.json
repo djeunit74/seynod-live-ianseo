@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-26T16:25:17.039341+00:00",
+  "generated_at_utc": "2026-05-26T18:42:47.306515+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 34,
+  "count": 38,
   "tournaments": [
     {
       "to_id": "27216",
@@ -3754,252 +3754,252 @@
           "club": "0138088 - GRENOBLE",
           "category": "0138088 - GRENOBLE",
           "session": "Arc Classique U21 Hommes",
-          "target": ""
+          "target": "18A"
         },
         {
           "name": "ARTANCE Matheo",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "1B"
         },
         {
           "name": "BARNOUX Mattis",
           "club": "0169192 - CHAPONOST",
           "category": "0169192 - CHAPONOST",
           "session": "Arc Classique U18 Hommes",
-          "target": "2A"
+          "target": "1A"
         },
         {
           "name": "BONORA Nathan",
           "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
-          "session": "U18 Homme Arc Classique",
-          "target": ""
+          "session": "Arc Classique U18 Hommes",
+          "target": "5A"
         },
         {
           "name": "BOURGUIGNON Benoit",
           "club": "0169192 - CHAPONOST",
           "category": "0169192 - CHAPONOST",
           "session": "Arc Classique U18 Hommes",
-          "target": "1A"
+          "target": "2A"
         },
         {
           "name": "BRUN Baptiste",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "4B"
         },
         {
           "name": "CAMPANELLI Hector",
           "club": "0101016 - PREVESSIN-MOENS",
           "category": "0101016 - PREVESSIN-MOENS",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "9A"
         },
         {
           "name": "CAROBBIO Margot",
           "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "session": "Arc Classique U21 Femmes",
-          "target": ""
+          "target": "17C"
         },
         {
           "name": "CARTIER-COQUARD Brune",
           "club": "0169179 - VILLEURBANNE CIE HERACLES",
           "category": "0169179 - VILLEURBANNE CIE HERACLES",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "10B"
         },
         {
           "name": "DABROWSKI-MANEVY Matteo",
           "club": "0101020 - SAINTE JULIE",
           "category": "0101020 - SAINTE JULIE",
           "session": "Arc Classique U21 Hommes",
-          "target": ""
+          "target": "19B"
         },
         {
           "name": "DABROWSKI-MANEVY Nael",
           "club": "0101020 - SAINTE JULIE",
           "category": "0101020 - SAINTE JULIE",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "13A"
         },
         {
           "name": "DAVID-MINAZZI Clemence",
           "club": "0174260 - ANNEMASSE",
           "category": "0174260 - ANNEMASSE",
           "session": "Arc Classique U21 Femmes",
-          "target": ""
+          "target": "19A"
         },
         {
           "name": "DELVAL Morgane",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "12B"
         },
         {
           "name": "DUPONT Julie",
           "club": "0169178 - BRIGNAIS",
           "category": "0169178 - BRIGNAIS",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "6C"
         },
         {
           "name": "ESPINOSA Gabin",
           "club": "0169179 - VILLEURBANNE CIE HERACLES",
           "category": "0169179 - VILLEURBANNE CIE HERACLES",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "9B"
         },
         {
           "name": "FARESSE PONS Baptiste",
           "club": "0169178 - BRIGNAIS",
           "category": "0169178 - BRIGNAIS",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "4C"
         },
         {
           "name": "GERARDIN Arthur",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "3B"
         },
         {
           "name": "GILLET Mathilde",
           "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "8A"
         },
         {
           "name": "GLEBOFF Adam",
           "club": "0169178 - BRIGNAIS",
           "category": "0169178 - BRIGNAIS",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "7C"
         },
         {
           "name": "GRUEL FASQUELLE Nathan",
           "club": "0174260 - ANNEMASSE",
           "category": "0174260 - ANNEMASSE",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "10C"
         },
         {
           "name": "GUY Samuel",
           "club": "0174260 - ANNEMASSE",
           "category": "0174260 - ANNEMASSE",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "11C"
         },
         {
           "name": "HARNIST Mathis",
           "club": "0101016 - PREVESSIN-MOENS",
           "category": "0101016 - PREVESSIN-MOENS",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "10A"
         },
         {
           "name": "HENNINGER JAMROZ Tissa",
           "club": "0101016 - PREVESSIN-MOENS",
           "category": "0101016 - PREVESSIN-MOENS",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "11A"
         },
         {
           "name": "HUGUENIN-ELIE ROGER Maeva",
           "club": "0174260 - ANNEMASSE",
           "category": "0174260 - ANNEMASSE",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "9C"
         },
         {
           "name": "JAPIOT Yoan",
           "club": "0138088 - GRENOBLE",
           "category": "0138088 - GRENOBLE",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "2C"
         },
         {
           "name": "JOLIVET Marine",
           "club": "0101020 - SAINTE JULIE",
           "category": "0101020 - SAINTE JULIE",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "15A"
         },
         {
           "name": "MARTINET Sarah",
           "club": "0169179 - VILLEURBANNE CIE HERACLES",
           "category": "0169179 - VILLEURBANNE CIE HERACLES",
           "session": "Arc Classique U21 Femmes",
-          "target": ""
+          "target": "18B"
         },
         {
           "name": "MERINO-PUJANTE EMONARD Dylan",
           "club": "0101020 - SAINTE JULIE",
           "category": "0101020 - SAINTE JULIE",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "14A"
         },
         {
           "name": "OUDIN Camille",
           "club": "0169178 - BRIGNAIS",
           "category": "0169178 - BRIGNAIS",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "5C"
         },
         {
           "name": "REYNAUD Julie",
           "club": "0169179 - VILLEURBANNE CIE HERACLES",
           "category": "0169179 - VILLEURBANNE CIE HERACLES",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "11B"
         },
         {
           "name": "ROGER Hugo",
           "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "6A"
         },
         {
           "name": "SOPP SOPP Nathan",
           "club": "0138088 - GRENOBLE",
           "category": "0138088 - GRENOBLE",
           "session": "Arc Classique U21 Hommes",
-          "target": ""
+          "target": "17B"
         },
         {
           "name": "SORDE Tanya",
           "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "7A"
         },
         {
           "name": "SULLICE Louis",
           "club": "0101016 - PREVESSIN-MOENS",
           "category": "0101016 - PREVESSIN-MOENS",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "12A"
         },
         {
           "name": "TERRAT Solea",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "2B"
         },
         {
           "name": "THONG SOUM Kinaly",
           "club": "0101020 - SAINTE JULIE",
           "category": "0101020 - SAINTE JULIE",
           "session": "Arc Classique U18 Femmes",
-          "target": ""
+          "target": "16A"
         },
         {
           "name": "VIVEL Zoe",
@@ -4013,14 +4013,14 @@
           "club": "0169192 - CHAPONOST",
           "category": "0169192 - CHAPONOST",
           "session": "Arc Classique U21 Femmes",
-          "target": ""
+          "target": "17A"
         },
         {
           "name": "YVON Nathan",
           "club": "0138088 - GRENOBLE",
           "category": "0138088 - GRENOBLE",
           "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "target": "1C"
         }
       ]
     },
@@ -6633,6 +6633,45 @@
       "entries": []
     },
     {
+      "to_id": "28502",
+      "year": "2026",
+      "name": "Championnat de France Para-Tir à l'Arc - Tir à l'Arc Extérieur - 2026",
+      "organizer": "Les Archers de l'Elan Sportif de Carpiquet et Les Archers d'Argences/ FFTA",
+      "date_text": "26-28 Jun",
+      "end_date": "2026-06-28",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28502",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28502/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28502/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28506",
+      "year": "2026",
+      "name": "Rennes - TAE i + TAE n",
+      "organizer": "Rennes Cie",
+      "date_text": "3 Jul",
+      "end_date": "2026-07-03",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28506",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28506/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28506/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28507",
+      "year": "2026",
+      "name": "Rennes - TAE i + TAE n",
+      "organizer": "Rennes Cie",
+      "date_text": "10 Jul",
+      "end_date": "2026-07-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28507",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28507/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28507/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27258",
       "year": "2026",
       "name": "Finale Nationale des DR",
@@ -6897,6 +6936,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27351",
       "ena_url": "https://www.ianseo.net/TourData/2026/27351/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27351/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28509",
+      "year": "2026",
+      "name": "Rennes - TAE i + TAE n",
+      "organizer": "Rennes Cie",
+      "date_text": "5 Sep",
+      "end_date": "2026-09-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28509",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28509/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28509/IC.php",
       "entries_count": 0,
       "entries": []
     },
