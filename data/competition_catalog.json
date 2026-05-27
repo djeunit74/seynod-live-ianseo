@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-27T03:53:27.245512+00:00",
+  "generated_at_utc": "2026-05-27T08:05:45.995006+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3773,7 +3773,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28444",
       "ena_url": "https://www.ianseo.net/TourData/2026/28444/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28444/IC.php",
-      "entries_count": 41,
+      "entries_count": 48,
       "entries": [
         {
           "name": "ALLIBERT Mael",
@@ -3802,6 +3802,20 @@
           "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "session": "Arc Classique U18 Hommes",
           "target": "5A"
+        },
+        {
+          "name": "BOSIO Francesco",
+          "club": "0169190 - LISSIEU",
+          "category": "0169190 - LISSIEU",
+          "session": "U18 Homme Arc Classique",
+          "target": "13C"
+        },
+        {
+          "name": "BOUCETTA Jasmine",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Femme Arc Classique",
+          "target": "16B"
         },
         {
           "name": "BOURGUIGNON Benoit",
@@ -3837,6 +3851,13 @@
           "category": "0169179 - VILLEURBANNE CIE HERACLES",
           "session": "Arc Classique U18 Femmes",
           "target": "10B"
+        },
+        {
+          "name": "D'ADAMO-QUERVILLE Margaux",
+          "club": "0169190 - LISSIEU",
+          "category": "0169190 - LISSIEU",
+          "session": "U18 Femme Arc Classique",
+          "target": "14C"
         },
         {
           "name": "DABROWSKI-MANEVY Matteo",
@@ -3886,6 +3907,20 @@
           "category": "0169178 - BRIGNAIS",
           "session": "Arc Classique U18 Hommes",
           "target": "4C"
+        },
+        {
+          "name": "FAUCHER Abigael",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Homme Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "FAUCHER Abigael",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Homme Arc Classique",
+          "target": "14B"
         },
         {
           "name": "GERARDIN Arthur",
@@ -3951,11 +3986,25 @@
           "target": "2C"
         },
         {
+          "name": "JEANSELME Maelys",
+          "club": "0169190 - LISSIEU",
+          "category": "0169190 - LISSIEU",
+          "session": "Arc Classique U21 Femmes",
+          "target": "19C"
+        },
+        {
           "name": "JOLIVET Marine",
           "club": "0101020 - SAINTE JULIE",
           "category": "0101020 - SAINTE JULIE",
           "session": "Arc Classique U18 Femmes",
           "target": "15A"
+        },
+        {
+          "name": "MARINHO DALESME Anthony",
+          "club": "0163154 - CHAMALIERES",
+          "category": "0163154 - CHAMALIERES",
+          "session": "U18 Homme Arc Classique",
+          "target": "15B"
         },
         {
           "name": "MARTINET Sarah",
