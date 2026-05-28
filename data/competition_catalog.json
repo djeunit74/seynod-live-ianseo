@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-28T00:01:27.574318+00:00",
+  "generated_at_utc": "2026-05-28T04:50:15.334027+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1998,7 +1998,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27376",
       "ena_url": "https://www.ianseo.net/TourData/2026/27376/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27376/IC.php",
-      "entries_count": 33,
+      "entries_count": 34,
       "entries": [
         {
           "name": "AUCHE Alexis",
@@ -2019,7 +2019,7 @@
           "club": "1131088 - CUGNAUX",
           "category": "1131088 - CUGNAUX",
           "session": "Arc Classique Niveau1 60cm 15m",
-          "target": "11B"
+          "target": "10B"
         },
         {
           "name": "BOISSARD REIX Thea",
@@ -2041,6 +2041,13 @@
           "category": "1131093 - BALMA",
           "session": "Arc Classique Niveau3 122cm15m",
           "target": "7C"
+        },
+        {
+          "name": "CHORLAY Maiwenn",
+          "club": "1131088 - CUGNAUX",
+          "category": "1131088 - CUGNAUX",
+          "session": "Arc Classique As 40cm 15m",
+          "target": "12A"
         },
         {
           "name": "CRAVE Lucie",
@@ -2068,21 +2075,21 @@
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "Arc Classique As 40cm 15m",
-          "target": "13C"
+          "target": "11D"
         },
         {
           "name": "FOULLU MARTINEZ Edzio",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "Arc Classique Niveau1 60cm 15m",
-          "target": "11A"
+          "target": "10A"
         },
         {
           "name": "GASSMANN Elise",
           "club": "1131081 - TOULOUSE TAC",
           "category": "1131081 - TOULOUSE TAC",
           "session": "Arc Classique As 40cm 15m",
-          "target": "13B"
+          "target": "11C"
         },
         {
           "name": "GOAZIOU Anastasie",
@@ -2103,7 +2110,7 @@
           "club": "1131071 - SAINT GAUDENS",
           "category": "1131071 - SAINT GAUDENS",
           "session": "Arc Classique As 40cm 15m",
-          "target": "13A"
+          "target": "11A"
         },
         {
           "name": "LE GOFF Melodie",
@@ -2152,7 +2159,7 @@
           "club": "1131071 - SAINT GAUDENS",
           "category": "1131071 - SAINT GAUDENS",
           "session": "Arc Classique As 40cm 15m",
-          "target": "12B"
+          "target": "12D"
         },
         {
           "name": "MONFILS Leni",
@@ -2208,7 +2215,7 @@
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "Arc Classique Niveau1 60cm 15m",
-          "target": "11C"
+          "target": "10C"
         },
         {
           "name": "TEHAR Mohamed",
