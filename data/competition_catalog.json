@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-29T20:26:53.792379+00:00",
+  "generated_at_utc": "2026-05-29T22:13:12.432405+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -6111,7 +6111,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28476",
       "ena_url": "https://www.ianseo.net/TourData/2026/28476/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28476/IC.php",
-      "entries_count": 57,
+      "entries_count": 58,
       "entries": [
         {
           "name": "BAGAGLI Yoann",
@@ -6294,6 +6294,13 @@
           "category": "0107040 - VIVIERS",
           "session": "S1 Homme Arc à Poulies",
           "target": "5B"
+        },
+        {
+          "name": "GUFFROY Sylvain",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": "18B"
         },
         {
           "name": "GUILHEM Ludovic",
