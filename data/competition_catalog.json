@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-29T17:34:34.675683+00:00",
+  "generated_at_utc": "2026-05-29T20:26:53.792379+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -6524,7 +6524,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27222",
       "ena_url": "https://www.ianseo.net/TourData/2026/27222/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27222/IC.php",
-      "entries_count": 136,
+      "entries_count": 132,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -6580,7 +6580,7 @@
           "club": "0894257 - VILLIERS SUR MARNE",
           "category": "0894257 - VILLIERS SUR MARNE",
           "session": "S1 Homme Arc à Poulies",
-          "target": "4B"
+          "target": "4A"
         },
         {
           "name": "BEKKAI Quentin",
@@ -6593,8 +6593,8 @@
           "name": "BENY Franck",
           "club": "0760224 - NANTEUIL LE HAUDOUIN",
           "category": "0760224 - NANTEUIL LE HAUDOUIN",
-          "session": "S3 Homme Arc Classique",
-          "target": "3C"
+          "session": "S3 Homme Arc Classique National",
+          "target": "9D"
         },
         {
           "name": "BEY Gregory",
@@ -6637,20 +6637,6 @@
           "category": "0702003 - VILLERS COTTERETS",
           "session": "S2 Homme Arc à Poulies National",
           "target": "5D"
-        },
-        {
-          "name": "BOULEAU Victor",
-          "club": "0760197 - BEAUVAIS",
-          "category": "0760197 - BEAUVAIS",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "3B"
-        },
-        {
-          "name": "BOULEAU Victor",
-          "club": "0760197 - BEAUVAIS",
-          "category": "0760197 - BEAUVAIS",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "4A"
         },
         {
           "name": "BOULEFROY Robert",
@@ -6853,7 +6839,7 @@
           "club": "0651213 - BEZANNES",
           "category": "0651213 - BEZANNES",
           "session": "Arc Classique U18 Femmes",
-          "target": "3D"
+          "target": "3C"
         },
         {
           "name": "DUMORTIER Stephane",
@@ -7098,7 +7084,7 @@
           "club": "0760199 - CREPY EN VALOIS",
           "category": "0760199 - CREPY EN VALOIS",
           "session": "S2 Homme Arc Classique National",
-          "target": "9D"
+          "target": "5C"
         },
         {
           "name": "LARGILLIERE Cyril",
@@ -7238,7 +7224,7 @@
           "club": "0760214 - ESTREES ST DENIS",
           "category": "0760214 - ESTREES ST DENIS",
           "session": "S2 Homme Arc à Poulies",
-          "target": "3A"
+          "target": "3B"
         },
         {
           "name": "MERIAUX Sandrine",
@@ -7266,7 +7252,7 @@
           "club": "0760205 - NOGENT SUR OISE",
           "category": "0760205 - NOGENT SUR OISE",
           "session": "U13 Femme Arc Classique National",
-          "target": "1B"
+          "target": "1C"
         },
         {
           "name": "MOITRE Steve",
@@ -7374,6 +7360,13 @@
           "target": "6D"
         },
         {
+          "name": "SAINT DIZIER Veronique",
+          "club": "0702050 - ACY",
+          "category": "0702050 - ACY",
+          "session": "S3 Femme Arc Classique National",
+          "target": "9B"
+        },
+        {
           "name": "SANCHEZ Barbara",
           "club": "0760223 - ERMENONVILLE",
           "category": "0760223 - ERMENONVILLE",
@@ -7416,20 +7409,6 @@
           "target": "3A"
         },
         {
-          "name": "SZLACHTA Antoine",
-          "club": "0760233 - TROSLY BREUIL",
-          "category": "0760233 - TROSLY BREUIL",
-          "session": "U18 Homme Arc Classique National",
-          "target": "5C"
-        },
-        {
-          "name": "SZLACHTA Manon",
-          "club": "0760233 - TROSLY BREUIL",
-          "category": "0760233 - TROSLY BREUIL",
-          "session": "U13 Femme Arc Classique National",
-          "target": "1A"
-        },
-        {
           "name": "THIERY Pascal",
           "club": "0760199 - CREPY EN VALOIS",
           "category": "0760199 - CREPY EN VALOIS",
@@ -7442,13 +7421,6 @@
           "category": "0760226 - ORRY LA VILLE",
           "session": "S3 Femme Arc Classique National",
           "target": "6A"
-        },
-        {
-          "name": "VANNIER Leia",
-          "club": "0760148 - IVORS",
-          "category": "0760148 - IVORS",
-          "session": "U13 Femme Arc Classique National",
-          "target": "1B"
         },
         {
           "name": "VARRY Gerard",
@@ -7896,7 +7868,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27631",
       "ena_url": "https://www.ianseo.net/TourData/2026/27631/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27631/IC.php",
-      "entries_count": 163,
+      "entries_count": 165,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -7937,7 +7909,7 @@
           "name": "BACHELET Hugues",
           "club": "0892186 - CHATILLON CIE 92",
           "category": "0892186 - CHATILLON CIE 92",
-          "session": "Arc Classique Senior 3 Hommes National",
+          "session": "S1 Homme Arc Classique National",
           "target": "21B"
         },
         {
@@ -7945,7 +7917,7 @@
           "club": "0892186 - CHATILLON CIE 92",
           "category": "0892186 - CHATILLON CIE 92",
           "session": "Arc Classique Senior 3 Hommes",
-          "target": "2A"
+          "target": "4A"
         },
         {
           "name": "BAGUEVANE NEPAL Maguy",
@@ -8000,7 +7972,7 @@
           "name": "BOUQUET Jacques",
           "club": "0893223 - NOISY LE GRAND",
           "category": "0893223 - NOISY LE GRAND",
-          "session": "Arc Classique Senior 2 Hommes National",
+          "session": "S2 Homme Arc Classique National",
           "target": "22B"
         },
         {
@@ -8021,7 +7993,7 @@
           "name": "BOURDONNEAU Leo",
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
-          "session": "Arc Classique Senior 1 Hommes National",
+          "session": "S1 Homme Arc Classique National",
           "target": "21C"
         },
         {
@@ -8035,7 +8007,7 @@
           "name": "BOURDONNEAU Tom",
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
-          "session": "Arc Classique Senior 1 Hommes National",
+          "session": "S1 Homme Arc Classique National",
           "target": "22B"
         },
         {
@@ -8057,7 +8029,7 @@
           "club": "0893240 - PANTIN",
           "category": "0893240 - PANTIN",
           "session": "S3 Femme Arc Classique (CD93)",
-          "target": "1A"
+          "target": "3A"
         },
         {
           "name": "CARMONA Francois",
@@ -8071,7 +8043,7 @@
           "club": "0893231 - NOISY LE SEC",
           "category": "0893231 - NOISY LE SEC",
           "session": "S1 Homme Arc à Poulies (CD93)",
-          "target": "17C"
+          "target": "18B"
         },
         {
           "name": "CHAFFAUX Thibaud",
@@ -8175,7 +8147,7 @@
           "name": "DERIAZ-VICOVAC Jules",
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
-          "session": "Arc Classique U18 Hommes National",
+          "session": "U18 Homme Arc Classique National",
           "target": "21A"
         },
         {
@@ -8204,7 +8176,7 @@
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
           "session": "S2 Femme Arc à Poulies (CD93)",
-          "target": "17C"
+          "target": "17B"
         },
         {
           "name": "DI GASPERO Anthony",
@@ -8266,7 +8238,7 @@
           "name": "DUMORTIER Stephane",
           "club": "0893218 - ROMAINVILLE",
           "category": "0893218 - ROMAINVILLE",
-          "session": "Arc Classique Senior 2 Hommes National",
+          "session": "S2 Homme Arc Classique National",
           "target": "24B"
         },
         {
@@ -8309,7 +8281,7 @@
           "club": "0878132 - MONTIGNY LE BRETONNEUX",
           "category": "0878132 - MONTIGNY LE BRETONNEUX",
           "session": "Arc Classique Senior 3 Hommes",
-          "target": "2C"
+          "target": "4B"
         },
         {
           "name": "FONTAINE Laurent",
@@ -8372,7 +8344,7 @@
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
           "session": "S1 Femme Arc à Poulies (CD93)",
-          "target": "17A"
+          "target": "17C"
         },
         {
           "name": "GOUTSALUK Nathalia",
@@ -8490,7 +8462,7 @@
           "name": "HEINRICH Jules",
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
-          "session": "Arc Classique U18 Hommes National",
+          "session": "U18 Homme Arc Classique (CD93)",
           "target": "20A"
         },
         {
@@ -8498,7 +8470,7 @@
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
           "session": "U18 Homme Arc Classique (CD93)",
-          "target": "2C"
+          "target": "3C"
         },
         {
           "name": "HENRICH Thomas",
@@ -8518,7 +8490,7 @@
           "name": "JACQUELINE Maxime",
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
-          "session": "Arc Classique Senior 1 Hommes National",
+          "session": "S1 Homme Arc Classique National",
           "target": "19A"
         },
         {
@@ -8637,8 +8609,15 @@
           "name": "LENTZ Philippe",
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
-          "session": "Arc Classique Senior 2 Hommes National",
+          "session": "S2 Homme Arc Classique National",
           "target": "21B"
+        },
+        {
+          "name": "LENTZ Philippe",
+          "club": "0893242 - AULNAY SOUS BOIS",
+          "category": "0893242 - AULNAY SOUS BOIS",
+          "session": "S2 Homme Arc Classique National",
+          "target": "22B"
         },
         {
           "name": "LENTZ Philippe",
@@ -8715,7 +8694,7 @@
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
           "session": "S3 Homme Arc Classique (CD93)",
-          "target": "2B"
+          "target": "2C"
         },
         {
           "name": "MERINE Jocelyne",
@@ -8765,6 +8744,13 @@
           "category": "0893226 - ROSNY S/ BOIS CIE",
           "session": "S1 Femme Arc à Poulies National",
           "target": "22B"
+        },
+        {
+          "name": "NOGRETTE Denis",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "9B"
         },
         {
           "name": "OTJACQUES Olivier",
@@ -8917,13 +8903,6 @@
           "name": "SIMON Alexis",
           "club": "0893219 - CLICHY SOUS BOIS",
           "category": "0893219 - CLICHY SOUS BOIS",
-          "session": "U18 Homme Arc Classique (CD93)",
-          "target": "1C"
-        },
-        {
-          "name": "SIMON Alexis",
-          "club": "0893219 - CLICHY SOUS BOIS",
-          "category": "0893219 - CLICHY SOUS BOIS",
           "session": "Arc Classique U18 Hommes",
           "target": "3C"
         },
@@ -8932,6 +8911,13 @@
           "club": "0893219 - CLICHY SOUS BOIS",
           "category": "0893219 - CLICHY SOUS BOIS",
           "session": "Arc Classique U18 Hommes",
+          "target": "4C"
+        },
+        {
+          "name": "SIMON Alexis",
+          "club": "0893219 - CLICHY SOUS BOIS",
+          "category": "0893219 - CLICHY SOUS BOIS",
+          "session": "U18 Homme Arc Classique (CD93)",
           "target": "4C"
         },
         {
@@ -8994,7 +8980,7 @@
           "name": "VIOLLETTE Djordann",
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
-          "session": "Arc Classique Senior 1 Hommes",
+          "session": "S1 Homme Arc Classique (CD93)",
           "target": "11C"
         },
         {
@@ -9029,7 +9015,7 @@
           "name": "ZERROUKI Horiya",
           "club": "0893218 - ROMAINVILLE",
           "category": "0893218 - ROMAINVILLE",
-          "session": "Arc Classique Senior 2 Femmes National",
+          "session": "S2 Femme Arc Classique National",
           "target": "23C"
         },
         {
