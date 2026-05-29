@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-29T13:46:06.791625+00:00",
+  "generated_at_utc": "2026-05-29T17:34:34.675683+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,15 +17,8 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27216",
       "ena_url": "https://www.ianseo.net/TourData/2026/27216/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27216/IC.php",
-      "entries_count": 281,
+      "entries_count": 279,
       "entries": [
-        {
-          "name": "ACHA GONZALEZ Pablo",
-          "club": "0163151 - CLERMONT FERRAND CIE",
-          "category": "0163151 - CLERMONT FERRAND CIE",
-          "session": "Scratch Homme Arc Classique",
-          "target": "36A"
-        },
         {
           "name": "ADAM Olympe",
           "club": "1244009 - CARQUEFOU",
@@ -200,13 +193,6 @@
           "category": "0610019 - ARCIS SUR AUBE",
           "session": "Scratch Homme Arc Classique",
           "target": "61B"
-        },
-        {
-          "name": "BERCHER Celine",
-          "club": "0610019 - ARCIS SUR AUBE",
-          "category": "0610019 - ARCIS SUR AUBE",
-          "session": "Scratch Femme Arc Classique",
-          "target": "40B"
         },
         {
           "name": "BERGUIN Manon",
@@ -1564,7 +1550,7 @@
           "club": "0891175 - DRAVEIL SENART",
           "category": "0891175 - DRAVEIL SENART",
           "session": "Scratch Homme Arc Classique",
-          "target": "55A"
+          "target": "48B"
         },
         {
           "name": "POTHIER Flavien",
@@ -1858,7 +1844,7 @@
           "club": "0891175 - DRAVEIL SENART",
           "category": "0891175 - DRAVEIL SENART",
           "session": "Scratch Homme Arc Classique",
-          "target": "48B"
+          "target": "55A"
         },
         {
           "name": "TOURAINE-HELIAS Kyla",
