@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-30T18:39:49.286534+00:00",
+  "generated_at_utc": "2026-05-30T20:10:19.259404+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1753,7 +1753,7 @@
           "club": "0893212 - BAGNOLET",
           "category": "0893212 - BAGNOLET",
           "session": "S1 Homme Arc Classique National",
-          "target": "24B"
+          "target": "24C"
         },
         {
           "name": "FLAMMANT Romain",
@@ -2452,8 +2452,8 @@
           "name": "TREFAUT Mariem",
           "club": "0894243 - ST GEORGES LE PERREUX",
           "category": "0894243 - ST GEORGES LE PERREUX",
-          "session": "U18 Femme Arc Classique National",
-          "target": "24C"
+          "session": "Arc Classique U18 Femmes",
+          "target": "2B"
         },
         {
           "name": "TUPPER Steven",
