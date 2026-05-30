@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-30T09:18:52.310312+00:00",
+  "generated_at_utc": "2026-05-30T10:57:41.211711+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 42,
+  "count": 43,
   "tournaments": [
     {
       "to_id": "27222",
@@ -2519,6 +2519,19 @@
           "target": "5C"
         }
       ]
+    },
+    {
+      "to_id": "28533",
+      "year": "2026",
+      "name": "Compétition qualificative Tir Beursault de la Compagnie d'Arc de Villepreux",
+      "organizer": "Compagnie d'Arc de Villepreux",
+      "date_text": "30-31 May",
+      "end_date": "2026-05-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28533",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28533/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28533/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "28125",
