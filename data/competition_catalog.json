@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-30T14:14:02.288071+00:00",
+  "generated_at_utc": "2026-05-30T15:47:37.077426+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -5116,7 +5116,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28444",
       "ena_url": "https://www.ianseo.net/TourData/2026/28444/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28444/IC.php",
-      "entries_count": 52,
+      "entries_count": 53,
       "entries": [
         {
           "name": "ALLIBERT Mael",
@@ -5150,14 +5150,14 @@
           "name": "BOSIO Francesco",
           "club": "0169190 - LISSIEU",
           "category": "0169190 - LISSIEU",
-          "session": "U18 Homme Arc Classique",
+          "session": "Arc Classique U18 Hommes",
           "target": "12C"
         },
         {
           "name": "BOUCETTA Jasmine",
           "club": "0163154 - CHAMALIERES",
           "category": "0163154 - CHAMALIERES",
-          "session": "U18 Femme Arc Classique",
+          "session": "Arc Classique U18 Femmes",
           "target": "14B"
         },
         {
@@ -5171,7 +5171,7 @@
           "name": "BOUTRAND Martin",
           "club": "0143137 - BEAUZAC",
           "category": "0143137 - BEAUZAC",
-          "session": "U18 Homme Arc Classique",
+          "session": "Arc Classique U18 Hommes",
           "target": "6B"
         },
         {
@@ -5185,14 +5185,14 @@
           "name": "BUES Thomas",
           "club": "0163154 - CHAMALIERES",
           "category": "0163154 - CHAMALIERES",
-          "session": "U18 Homme Arc Classique",
+          "session": "Arc Classique U18 Hommes",
           "target": "11C"
         },
         {
           "name": "CAMBI Ezzio",
           "club": "0143137 - BEAUZAC",
           "category": "0143137 - BEAUZAC",
-          "session": "U18 Homme Arc Classique",
+          "session": "Arc Classique U18 Hommes",
           "target": "7B"
         },
         {
@@ -5220,14 +5220,14 @@
           "name": "CHABANOL Timothe",
           "club": "0143137 - BEAUZAC",
           "category": "0143137 - BEAUZAC",
-          "session": "U18 Homme Arc Classique",
+          "session": "Arc Classique U18 Hommes",
           "target": "4C"
         },
         {
           "name": "D'ADAMO-QUERVILLE Margaux",
           "club": "0169190 - LISSIEU",
           "category": "0169190 - LISSIEU",
-          "session": "U18 Femme Arc Classique",
+          "session": "Arc Classique U18 Femmes",
           "target": "13C"
         },
         {
@@ -5256,7 +5256,7 @@
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Arc Classique U18 Femmes",
-          "target": "14C"
+          "target": "15B"
         },
         {
           "name": "DUPONT Julie",
@@ -5283,7 +5283,7 @@
           "name": "FAUCHER Abigael",
           "club": "0163154 - CHAMALIERES",
           "category": "0163154 - CHAMALIERES",
-          "session": "U18 Homme Arc Classique",
+          "session": "Arc Classique U18 Hommes",
           "target": "12B"
         },
         {
@@ -5329,6 +5329,13 @@
           "target": "9A"
         },
         {
+          "name": "HEBRARD Nathan",
+          "club": "0169192 - CHAPONOST",
+          "category": "0169192 - CHAPONOST",
+          "session": "Arc Classique U18 Hommes",
+          "target": "15A"
+        },
+        {
           "name": "HENNINGER JAMROZ Tissa",
           "club": "0101016 - PREVESSIN-MOENS",
           "category": "0101016 - PREVESSIN-MOENS",
@@ -5353,7 +5360,7 @@
           "name": "JEANSELME Maelys",
           "club": "0169190 - LISSIEU",
           "category": "0169190 - LISSIEU",
-          "session": "U21 Femme Arc Classique",
+          "session": "Arc Classique U21 Femmes",
           "target": "17B"
         },
         {
@@ -5367,7 +5374,7 @@
           "name": "MARINHO DALESME Anthony",
           "club": "0163154 - CHAMALIERES",
           "category": "0163154 - CHAMALIERES",
-          "session": "U18 Homme Arc Classique",
+          "session": "Arc Classique U18 Hommes",
           "target": "13B"
         },
         {
@@ -5423,7 +5430,7 @@
           "name": "SALVAT BERTHOIX Noelyne",
           "club": "0143137 - BEAUZAC",
           "category": "0143137 - BEAUZAC",
-          "session": "U18 Femme Arc Classique",
+          "session": "Arc Classique U18 Femmes",
           "target": "5B"
         },
         {
