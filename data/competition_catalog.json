@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-05-30T06:37:20.201331+00:00",
+  "generated_at_utc": "2026-05-30T09:18:52.310312+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 41,
+  "count": 42,
   "tournaments": [
     {
       "to_id": "27222",
@@ -5896,6 +5896,83 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/28238/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "28511",
+      "year": "2026",
+      "name": "TAE BOULOURIS",
+      "organizer": "COMITE REGIONAL 13",
+      "date_text": "3 Jun",
+      "end_date": "2026-06-03",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28511",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28511/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28511/IC.php",
+      "entries_count": 9,
+      "entries": [
+        {
+          "name": "BELLOT Baptiste",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "BONETTO Celia",
+          "club": "1313077 - MIRAMAS CRAU",
+          "category": "1313077 - MIRAMAS CRAU",
+          "session": "U18 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "BOUYER Stephane",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "CHAUDRON Karine",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "DAMIANO Anthony",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "S1 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "GIFFONE Cleophee",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "U18 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "GIFFONE Florestan",
+          "club": "1306030 - CANNES MANDELIEU",
+          "category": "1306030 - CANNES MANDELIEU",
+          "session": "U21 Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "NICOLAI Dylan",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SADEK Florent",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": ""
+        }
+      ]
     },
     {
       "to_id": "27419",
