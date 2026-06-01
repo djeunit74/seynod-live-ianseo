@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-01T05:26:08.180468+00:00",
+  "generated_at_utc": "2026-06-01T10:42:01.946353+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 31,
+  "count": 33,
   "tournaments": [
     {
       "to_id": "28238",
@@ -159,6 +159,19 @@
           "target": "4A"
         }
       ]
+    },
+    {
+      "to_id": "28586",
+      "year": "2026",
+      "name": "TAE National ou International",
+      "organizer": "Compagnie d'Arc d'Esbly",
+      "date_text": "6 Jun",
+      "end_date": "2026-06-06",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28586",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28586/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28586/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "28459",
@@ -944,6 +957,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28018",
       "ena_url": "https://www.ianseo.net/TourData/2026/28018/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28018/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28355",
+      "year": "2026",
+      "name": "Run Archery Vieux-Condé 1ère Etape Tour, Championnat du Nord",
+      "organizer": "Les Archers de Vieux-Condé",
+      "date_text": "13-14 Jun",
+      "end_date": "2026-06-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28355",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28355/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28355/IC.php",
       "entries_count": 0,
       "entries": []
     },
