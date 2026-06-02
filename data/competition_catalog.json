@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-02T15:42:42.151242+00:00",
+  "generated_at_utc": "2026-06-02T19:42:31.634914+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 35,
+  "count": 37,
   "tournaments": [
     {
       "to_id": "28238",
@@ -270,6 +270,342 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/28586/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "28611",
+      "year": "2026",
+      "name": "Championnat départemental du Val-de-Marne TAE DI",
+      "organizer": "Le comité départemental de tir à l’arc du Val de Marne",
+      "date_text": "6 Jun",
+      "end_date": "2026-06-06",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28611",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28611/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28611/IC.php",
+      "entries_count": 46,
+      "entries": [
+        {
+          "name": "ALLAM Marianne",
+          "club": "0894264 - VINCENNES",
+          "category": "0894264 - VINCENNES",
+          "session": "S1 Femme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "AMICHI Abdelmalek",
+          "club": "0894266 - IVRY SUR SEINE",
+          "category": "0894266 - IVRY SUR SEINE",
+          "session": "S3 Homme Arc Classique",
+          "target": "4C"
+        },
+        {
+          "name": "ARNOUX Leopold",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S1 Homme Arc Classique",
+          "target": "7D"
+        },
+        {
+          "name": "BEAURIN Gael",
+          "club": "0894266 - IVRY SUR SEINE",
+          "category": "0894266 - IVRY SUR SEINE",
+          "session": "S1 Homme Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "BEKKAI Quentin",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "15B"
+        },
+        {
+          "name": "BESOMBES Cyril",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "S2 Homme Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "BOBARD Valerie",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "S2 Femme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "BOUNMY Thibaut",
+          "club": "0894243 - ST GEORGES LE PERREUX",
+          "category": "0894243 - ST GEORGES LE PERREUX",
+          "session": "S1 Homme Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "BRIAND Christophe",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S2 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "COLLOT Pascal",
+          "club": "0894250 - SAINT MAUR",
+          "category": "0894250 - SAINT MAUR",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "14D"
+        },
+        {
+          "name": "DELHOMME Maxime",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "S1 Homme Arc Classique",
+          "target": "6D"
+        },
+        {
+          "name": "FAURE Antoine",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "S2 Homme Arc Classique",
+          "target": "9D"
+        },
+        {
+          "name": "FORMAUX Eric",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "14A"
+        },
+        {
+          "name": "GABIANE Gaelle",
+          "club": "0894266 - IVRY SUR SEINE",
+          "category": "0894266 - IVRY SUR SEINE",
+          "session": "S2 Femme Arc Classique",
+          "target": "8D"
+        },
+        {
+          "name": "GUILLON Nils",
+          "club": "0894243 - ST GEORGES LE PERREUX",
+          "category": "0894243 - ST GEORGES LE PERREUX",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "15A"
+        },
+        {
+          "name": "HEINRICH Jules",
+          "club": "0893227 - GAGNY",
+          "category": "0893227 - GAGNY",
+          "session": "U18 Homme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "HELIE Alexis",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "U18 Homme Arc Classique",
+          "target": "3C"
+        },
+        {
+          "name": "KELLOU Hakim",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "15D"
+        },
+        {
+          "name": "LACOURCELLE Ingrid",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "S2 Femme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "LASSERRE Dimitri",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "14B"
+        },
+        {
+          "name": "LE HERISSE Matthias",
+          "club": "0894261 - NOGENT S/MARNE 1ER",
+          "category": "0894261 - NOGENT S/MARNE 1ER",
+          "session": "S1 Homme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "LEFEUVRE Dominique",
+          "club": "0894266 - IVRY SUR SEINE",
+          "category": "0894266 - IVRY SUR SEINE",
+          "session": "S2 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "LENTZ Frederic",
+          "club": "0894243 - ST GEORGES LE PERREUX",
+          "category": "0894243 - ST GEORGES LE PERREUX",
+          "session": "S3 Homme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "MAI NGUYEN Thien Luan",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S1 Homme Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "MARIN Richard",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "S2 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "MENORET Henri",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "13D"
+        },
+        {
+          "name": "MOUNIER Ellen",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "S1 Femme Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "MOUNIER Jacques",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "S3 Homme Arc Classique",
+          "target": "4D"
+        },
+        {
+          "name": "NARDEAU Cyrille",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S2 Homme Arc Classique",
+          "target": "10D"
+        },
+        {
+          "name": "OUTTRABADY Lucky",
+          "club": "0894266 - IVRY SUR SEINE",
+          "category": "0894266 - IVRY SUR SEINE",
+          "session": "S2 Homme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "PARADIS Olivier",
+          "club": "0894264 - VINCENNES",
+          "category": "0894264 - VINCENNES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "13A"
+        },
+        {
+          "name": "PARK Da Jung",
+          "club": "0894266 - IVRY SUR SEINE",
+          "category": "0894266 - IVRY SUR SEINE",
+          "session": "S2 Femme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "PIEPLU Elise",
+          "club": "0894267 - VILLENEUVE LE ROI",
+          "category": "0894267 - VILLENEUVE LE ROI",
+          "session": "U21 Femme Arc Classique",
+          "target": "5A"
+        },
+        {
+          "name": "POILANE Hugo",
+          "club": "0894264 - VINCENNES",
+          "category": "0894264 - VINCENNES",
+          "session": "U18 Homme Arc Classique",
+          "target": "3D"
+        },
+        {
+          "name": "POILANE Yves",
+          "club": "0894264 - VINCENNES",
+          "category": "0894264 - VINCENNES",
+          "session": "S2 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "REVAULT COLLET Louise",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "S1 Femme Arc Classique",
+          "target": "5D"
+        },
+        {
+          "name": "RISEDE Matthieu",
+          "club": "0894266 - IVRY SUR SEINE",
+          "category": "0894266 - IVRY SUR SEINE",
+          "session": "S2 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "ROBIN-ALLET Tom",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "U15 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "SERGENT Pascal",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S3 Homme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "SMAIL Louise",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "U13 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "SORBIER Xavier",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "S2 Homme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "TANTOT Pascal",
+          "club": "0894243 - ST GEORGES LE PERREUX",
+          "category": "0894243 - ST GEORGES LE PERREUX",
+          "session": "S2 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "THOMASSON Jerome",
+          "club": "0894264 - VINCENNES",
+          "category": "0894264 - VINCENNES",
+          "session": "S2 Homme Arc Classique",
+          "target": "11D"
+        },
+        {
+          "name": "TREFAUT Mariem",
+          "club": "0894243 - ST GEORGES LE PERREUX",
+          "category": "0894243 - ST GEORGES LE PERREUX",
+          "session": "U18 Femme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "TRUONG Daniel",
+          "club": "0894256 - CRETEIL",
+          "category": "0894256 - CRETEIL",
+          "session": "S2 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "WU Viviane",
+          "club": "0894266 - IVRY SUR SEINE",
+          "category": "0894266 - IVRY SUR SEINE",
+          "session": "U18 Femme Arc à Poulies",
+          "target": "13C"
+        }
+      ]
     },
     {
       "to_id": "28459",
@@ -65915,6 +66251,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28506",
       "ena_url": "https://www.ianseo.net/TourData/2026/28506/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28506/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28614",
+      "year": "2026",
+      "name": "Championnat régional de Normandie de tir a l'arc distances international 2026",
+      "organizer": "Les archers Du Colombier",
+      "date_text": "5 Jul",
+      "end_date": "2026-07-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28614",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28614/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28614/IC.php",
       "entries_count": 0,
       "entries": []
     },
