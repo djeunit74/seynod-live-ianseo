@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-02T06:51:10.081784+00:00",
+  "generated_at_utc": "2026-06-02T11:19:42.574254+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 34,
+  "count": 35,
   "tournaments": [
     {
       "to_id": "28238",
@@ -949,6 +949,19 @@
           "target": "5D"
         }
       ]
+    },
+    {
+      "to_id": "28615",
+      "year": "2026",
+      "name": "3éme Manche DRE OCCITANIE - MURET 2026",
+      "organizer": "CIE D'ARCHERS DE MURET",
+      "date_text": "7 Jun",
+      "end_date": "2026-06-07",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28615",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28615/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28615/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27514",
