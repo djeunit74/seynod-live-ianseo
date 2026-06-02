@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-02T19:42:31.634914+00:00",
+  "generated_at_utc": "2026-06-02T22:24:13.263982+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 37,
+  "count": 38,
   "tournaments": [
     {
       "to_id": "28238",
@@ -1381,6 +1381,517 @@
           "category": "0894249 - CHEVILLY LARUE",
           "session": "U18 Homme Arc Classique National",
           "target": "5D"
+        }
+      ]
+    },
+    {
+      "to_id": "28567",
+      "year": "2026",
+      "name": "6ème CONCOURS REGIS NEEL 7 JUIN 2026",
+      "organizer": "LES ARCHERS DE LA SALLANCHE",
+      "date_text": "7 Jun",
+      "end_date": "2026-06-07",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28567",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28567/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28567/IC.php",
+      "entries_count": 71,
+      "entries": [
+        {
+          "name": "AMOMO Paul",
+          "club": "0174271 - THONES",
+          "category": "0174271 - THONES",
+          "session": "Arc Classique U18 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "BAUDUIN Nicolas",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "BAUDUIN Nicolas",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "BERTHELIER Annie",
+          "club": "0174257 - BERNEX",
+          "category": "0174257 - BERNEX",
+          "session": "Arc Classique Senior 3 Femmes",
+          "target": ""
+        },
+        {
+          "name": "BERTHELIER Annie",
+          "club": "0174257 - BERNEX",
+          "category": "0174257 - BERNEX",
+          "session": "Arc Classique Senior 3 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "BETTAZZA Adriano",
+          "club": "9900001 - AC JUSSY (SUISSE)",
+          "category": "9900001 - AC JUSSY (SUISSE)",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "BONDON Angelique",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": ""
+        },
+        {
+          "name": "BONDON Angelique",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": ""
+        },
+        {
+          "name": "BONDON Morgan",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "BONDON Morgan",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "BONORA Nathan",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique U18 Hommes",
+          "target": ""
+        },
+        {
+          "name": "BOURGUIGNON Christophe",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "BOURGUIGNON Christophe",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "BOURGUIGNON Emma",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique U18 Femmes",
+          "target": ""
+        },
+        {
+          "name": "BOURGUIGNON Emma",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique U18 Femmes",
+          "target": ""
+        },
+        {
+          "name": "BRAISAZ Mickael",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "CALLY Regis",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique Senior 3 Hommes",
+          "target": ""
+        },
+        {
+          "name": "CAROBBIO Margot",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique U21 Femmes",
+          "target": ""
+        },
+        {
+          "name": "CARUSO Anthony",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "CHALLUT Cecile",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": ""
+        },
+        {
+          "name": "COLMAIRE Pascale",
+          "club": "0174257 - BERNEX",
+          "category": "0174257 - BERNEX",
+          "session": "Arc Classique Senior 3 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "COLMAIRE Pascale",
+          "club": "0174257 - BERNEX",
+          "category": "0174257 - BERNEX",
+          "session": "Arc Classique Senior 3 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "DECREUSE Gilles",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique Senior 3 Hommes",
+          "target": ""
+        },
+        {
+          "name": "DEL SOLDATO Mathéo",
+          "club": "9900001 - AC JUSSY (SUISSE)",
+          "category": "9900001 - AC JUSSY (SUISSE)",
+          "session": "Arc Classique U21 Hommes",
+          "target": ""
+        },
+        {
+          "name": "DUCROUX Fabrice",
+          "club": "0174247 - CLUSES",
+          "category": "0174247 - CLUSES",
+          "session": "Arc Classique Senior 3 Hommes",
+          "target": ""
+        },
+        {
+          "name": "ESTRAN Clement",
+          "club": "0174257 - BERNEX",
+          "category": "0174257 - BERNEX",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": ""
+        },
+        {
+          "name": "ESTRAN Clement",
+          "club": "0174257 - BERNEX",
+          "category": "0174257 - BERNEX",
+          "session": "Arc à Poulies Senior 1 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "FRANCOZ Dominique",
+          "club": "0174247 - CLUSES",
+          "category": "0174247 - CLUSES",
+          "session": "Arc Classique Senior 3 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "GAIDA Delphine",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "GAIDA Delphine",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "GARCIA Adrien",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": ""
+        },
+        {
+          "name": "GARCIA Adrien",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": ""
+        },
+        {
+          "name": "GRANIER Jordan",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc Classique Senior 1 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "GUILHEM Ludovic",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "GUILHEM Ludovic",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "IMBERT Frederick",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "IMBERT Frederick",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "JOUBERT Olivier",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "JOUBERT Olivier",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "LABORDE Judith",
+          "club": "0173231 - CHAMBERY",
+          "category": "0173231 - CHAMBERY",
+          "session": "Arc Classique Senior 3 Femmes",
+          "target": ""
+        },
+        {
+          "name": "LABORDE Judith",
+          "club": "0173231 - CHAMBERY",
+          "category": "0173231 - CHAMBERY",
+          "session": "Arc Classique Senior 3 Femmes",
+          "target": ""
+        },
+        {
+          "name": "LAURENT Jonathan",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "LAURENT Jonathan",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "LEGRAND Fabrice",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc à Poulies Senior 3 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "LEGRAND Fabrice",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc à Poulies Senior 3 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "LEJEUNE Maximilien",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": ""
+        },
+        {
+          "name": "LEJEUNE Maximilien",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": ""
+        },
+        {
+          "name": "MEUROU Frederic",
+          "club": "0174271 - THONES",
+          "category": "0174271 - THONES",
+          "session": "Arc Nu Senior 3 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "MOINE Adrien",
+          "club": "0174257 - BERNEX",
+          "category": "0174257 - BERNEX",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "MOINE Liam",
+          "club": "0174257 - BERNEX",
+          "category": "0174257 - BERNEX",
+          "session": "Arc Classique U11 Hommes",
+          "target": ""
+        },
+        {
+          "name": "PATSNOUGUES Alain",
+          "club": "0174269 - ANNECY ST SEBASTIEN",
+          "category": "0174269 - ANNECY ST SEBASTIEN",
+          "session": "Arc Classique Senior 3 Hommes",
+          "target": ""
+        },
+        {
+          "name": "PIERRET Maxime",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc à Poulies Senior 1 Hommes",
+          "target": ""
+        },
+        {
+          "name": "POGORELTSEV Sergei",
+          "club": "0174272 - SALLANCHES",
+          "category": "0174272 - SALLANCHES",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "ROCHET Emma",
+          "club": "0174273 - THONON LES BAINS",
+          "category": "0174273 - THONON LES BAINS",
+          "session": "Arc Classique Senior 1 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "ROGAZY Berangere",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": ""
+        },
+        {
+          "name": "ROGAZY Berangere",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": ""
+        },
+        {
+          "name": "ROGER Emilie",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique U13 Femmes",
+          "target": ""
+        },
+        {
+          "name": "ROGER Hugo",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique U18 Hommes",
+          "target": ""
+        },
+        {
+          "name": "SINTES Camille",
+          "club": "0174271 - THONES",
+          "category": "0174271 - THONES",
+          "session": "Arc Classique U13 Femmes",
+          "target": ""
+        },
+        {
+          "name": "SINTES Didier",
+          "club": "0174271 - THONES",
+          "category": "0174271 - THONES",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "SINTES Manon",
+          "club": "0174271 - THONES",
+          "category": "0174271 - THONES",
+          "session": "Arc Classique U15 Femmes",
+          "target": ""
+        },
+        {
+          "name": "SORDE Cedric",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "SORDE Cedric",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Nu Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "SORDE Damien",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique U21 Hommes",
+          "target": ""
+        },
+        {
+          "name": "SORDE Damien",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique U21 Hommes",
+          "target": ""
+        },
+        {
+          "name": "SORDE Tanya",
+          "club": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
+          "session": "Arc Classique U18 Femmes",
+          "target": ""
+        },
+        {
+          "name": "TROUPEL Guillaume",
+          "club": "0174262 - ST JULIEN EN GENEVOIS",
+          "category": "0174262 - ST JULIEN EN GENEVOIS",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": ""
+        },
+        {
+          "name": "TROUPEL Guillaume",
+          "club": "0174262 - ST JULIEN EN GENEVOIS",
+          "category": "0174262 - ST JULIEN EN GENEVOIS",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "TRUELOVE Claire",
+          "club": "0174262 - ST JULIEN EN GENEVOIS",
+          "category": "0174262 - ST JULIEN EN GENEVOIS",
+          "session": "Arc Classique Senior 2 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "TRUELOVE Claire",
+          "club": "0174262 - ST JULIEN EN GENEVOIS",
+          "category": "0174262 - ST JULIEN EN GENEVOIS",
+          "session": "Arc Classique Senior 2 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "TURBELIN Gregory",
+          "club": "0174247 - CLUSES",
+          "category": "0174247 - CLUSES",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
         }
       ]
     },
