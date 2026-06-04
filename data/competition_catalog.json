@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-04T09:12:24.817688+00:00",
+  "generated_at_utc": "2026-06-04T12:28:36.187761+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 39,
+  "count": 40,
   "tournaments": [
     {
       "to_id": "27419",
@@ -4044,6 +4044,19 @@
           "target": "10C"
         }
       ]
+    },
+    {
+      "to_id": "28673",
+      "year": "2026",
+      "name": "Division Régionale Jeunes IDF - Etape 3",
+      "organizer": "Compagnie d'Arc d'Esbly",
+      "date_text": "7 Jun",
+      "end_date": "2026-06-07",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28673",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28673/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28673/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27514",
