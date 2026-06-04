@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-04T12:28:36.187761+00:00",
+  "generated_at_utc": "2026-06-04T16:02:27.313514+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 40,
+  "count": 41,
   "tournaments": [
     {
       "to_id": "27419",
@@ -80,7 +80,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28586",
       "ena_url": "https://www.ianseo.net/TourData/2026/28586/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28586/IC.php",
-      "entries_count": 100,
+      "entries_count": 99,
       "entries": [
         {
           "name": "ARNAUD Jeremy",
@@ -242,13 +242,6 @@
           "category": "0877074 - SAVIGNY LE TEMPLE",
           "session": "S1 Homme Arc Classique National",
           "target": "13C"
-        },
-        {
-          "name": "CHIATANTE Giovanni",
-          "club": "0877042 - ESBLY",
-          "category": "0877042 - ESBLY",
-          "session": "S3 Homme Arc Classique National",
-          "target": ""
         },
         {
           "name": "CORCY Jonathan",
@@ -69346,6 +69339,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28506",
       "ena_url": "https://www.ianseo.net/TourData/2026/28506/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28506/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28632",
+      "year": "2026",
+      "name": "Championnat régional de Normandie de tir a l'arc distances national 2026",
+      "organizer": "Les Archers Du Colombier",
+      "date_text": "4 Jul",
+      "end_date": "2026-07-04",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28632",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28632/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28632/IC.php",
       "entries_count": 0,
       "entries": []
     },
