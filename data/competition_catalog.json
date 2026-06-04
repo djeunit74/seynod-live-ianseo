@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-04T16:02:27.313514+00:00",
+  "generated_at_utc": "2026-06-04T18:35:08.119270+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1123,7 +1123,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28616",
       "ena_url": "https://www.ianseo.net/TourData/2026/28616/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28616/IC.php",
-      "entries_count": 86,
+      "entries_count": 87,
       "entries": [
         {
           "name": "ALI Mohamed",
@@ -1172,7 +1172,7 @@
           "club": "0759099 - ST AMAND CIBLE",
           "category": "0759099 - ST AMAND CIBLE",
           "session": "U13 Homme Arc Classique National",
-          "target": "23C"
+          "target": "24C"
         },
         {
           "name": "BOURGOIS Sophie",
@@ -1537,6 +1537,13 @@
           "category": "0759345 - ONNAING",
           "session": "S2 Homme Arc à Poulies National",
           "target": "7A"
+        },
+        {
+          "name": "MOCHEZ Maellys",
+          "club": "0759345 - ONNAING",
+          "category": "0759345 - ONNAING",
+          "session": "U13 Femme Arc Classique National",
+          "target": "24A"
         },
         {
           "name": "MORAUX Didier",
@@ -3103,7 +3110,7 @@
           "club": "0759111 - MARLY",
           "category": "0759111 - MARLY",
           "session": "S2 Femme Arc à Poulies",
-          "target": "6D"
+          "target": "6C"
         },
         {
           "name": "BECART Flavie",
@@ -3152,7 +3159,7 @@
           "club": "0762297 - WINGLES",
           "category": "0762297 - WINGLES",
           "session": "S2 Homme Arc Classique National",
-          "target": "18B"
+          "target": "18C"
         },
         {
           "name": "BOURGEOIS Amandine",
@@ -3313,7 +3320,7 @@
           "club": "0759101 - VILLENEUVE D'ASCQ",
           "category": "0759101 - VILLENEUVE D'ASCQ",
           "session": "U13 Femme Arc Classique National",
-          "target": "23B"
+          "target": "23A"
         },
         {
           "name": "COVIN Alice",
@@ -3586,7 +3593,7 @@
           "club": "0759129 - VALENCIENNES",
           "category": "0759129 - VALENCIENNES",
           "session": "U21 Homme Arc Classique",
-          "target": "2B"
+          "target": "2A"
         },
         {
           "name": "HENNART Gregoire",
