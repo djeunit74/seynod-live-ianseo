@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-05T17:20:15.618282+00:00",
+  "generated_at_utc": "2026-06-05T19:18:28.519107+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -115,7 +115,7 @@
           "club": "0893233 - MONTFERMEIL",
           "category": "0893233 - MONTFERMEIL",
           "session": "S2 Femme Arc Classique",
-          "target": ""
+          "target": "31C"
         },
         {
           "name": "BEL-GIESS Aloys",
@@ -199,7 +199,7 @@
           "club": "0877072 - BRIE COMTE ROBERT",
           "category": "0877072 - BRIE COMTE ROBERT",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "6B"
         },
         {
           "name": "CHABRAISON Stevan",
@@ -248,14 +248,14 @@
           "club": "0877078 - LAGNY",
           "category": "0877078 - LAGNY",
           "session": "S3 Femme Arc Classique",
-          "target": ""
+          "target": "26B"
         },
         {
           "name": "DEMONCHAUX Jean-Louis",
           "club": "0877068 - PROVINS",
           "category": "0877068 - PROVINS",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "23A"
         },
         {
           "name": "DESRAVINES Tyssia",
@@ -339,28 +339,28 @@
           "club": "0877076 - VERT ST DENIS - CESSON",
           "category": "0877076 - VERT ST DENIS - CESSON",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "21B"
         },
         {
           "name": "GAUTIER Maurice",
           "club": "0877076 - VERT ST DENIS - CESSON",
           "category": "0877076 - VERT ST DENIS - CESSON",
           "session": "S2 Homme Arc Classique National",
-          "target": "21A"
+          "target": "21C"
         },
         {
           "name": "GELIN Michel",
           "club": "0877059 - BUSSY ST GEORGES",
           "category": "0877059 - BUSSY ST GEORGES",
           "session": "S2 Homme Arc Classique National",
-          "target": "6B"
+          "target": "6D"
         },
         {
           "name": "GERMAIN Guillaume",
           "club": "0877069 - MITRY MORY",
           "category": "0877069 - MITRY MORY",
           "session": "S2 Homme Arc Classique National",
-          "target": "19A"
+          "target": "19C"
         },
         {
           "name": "GERMAIN Leanne",
@@ -500,7 +500,7 @@
           "club": "0877034 - COUILLY PONT AUX DAMES",
           "category": "0877034 - COUILLY PONT AUX DAMES",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "19A"
         },
         {
           "name": "LENGLET Nathan",
@@ -514,7 +514,7 @@
           "club": "0877043 - CHAUMES EN BRIE",
           "category": "0877043 - CHAUMES EN BRIE",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "16B"
         },
         {
           "name": "LESSEUX Romain",
@@ -535,7 +535,7 @@
           "club": "0702045 - CHEZY EN ORXOIS",
           "category": "0702045 - CHEZY EN ORXOIS",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "15A"
         },
         {
           "name": "LOIRE Nicolas",
@@ -640,7 +640,7 @@
           "club": "0877059 - BUSSY ST GEORGES",
           "category": "0877059 - BUSSY ST GEORGES",
           "session": "S1 Homme Arc Classique",
-          "target": "31A"
+          "target": "31B"
         },
         {
           "name": "PHAN Thien",
@@ -654,7 +654,7 @@
           "club": "0877042 - ESBLY",
           "category": "0877042 - ESBLY",
           "session": "S2 Homme Arc à Poulies National",
-          "target": "15A"
+          "target": "15C"
         },
         {
           "name": "POULAILLEAU Patrick",
@@ -703,14 +703,14 @@
           "club": "0877029 - PONTAULT COMBAULT",
           "category": "0877029 - PONTAULT COMBAULT",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "21A"
         },
         {
           "name": "SOUSA DE ARAUJO Sandrine",
           "club": "0877042 - ESBLY",
           "category": "0877042 - ESBLY",
           "session": "S1 Femme Arc Classique National",
-          "target": ""
+          "target": "16D"
         },
         {
           "name": "TABERNER Claude",
@@ -752,7 +752,7 @@
           "club": "0877040 - SAINT GERMAIN SUR MORIN",
           "category": "0877040 - SAINT GERMAIN SUR MORIN",
           "session": "S2 Homme Arc Classique",
-          "target": ""
+          "target": "31A"
         },
         {
           "name": "WALLE Antoine",
@@ -4303,6 +4303,13 @@
           "target": "14A"
         },
         {
+          "name": "DE LAUZON Agnes",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "U15 Femme Arc Classique",
+          "target": "16D"
+        },
+        {
           "name": "DELMOTTE Benjamin",
           "club": "0877037 - VENEUX LES SABLONS",
           "category": "0877037 - VENEUX LES SABLONS",
@@ -4350,13 +4357,6 @@
           "category": "0877037 - VENEUX LES SABLONS",
           "session": "U18 Homme Arc Classique",
           "target": "27A"
-        },
-        {
-          "name": "FAULCONNIER Jade",
-          "club": "0875017 - PARIS XIII USMT",
-          "category": "0875017 - PARIS XIII USMT",
-          "session": "U13 Femme Arc Classique",
-          "target": "3C"
         },
         {
           "name": "FILBAS-TURPIN Armand",
@@ -4489,7 +4489,7 @@
           "club": "0891156 - ORSAY",
           "category": "0891156 - ORSAY",
           "session": "U13 Homme Arc Classique",
-          "target": "2D"
+          "target": "3C"
         },
         {
           "name": "LEBRUN Thyphaine",
@@ -4579,7 +4579,7 @@
           "name": "M'LIK Naïm",
           "club": "0877028 - TORCY",
           "category": "0877028 - TORCY",
-          "session": "Arc Classique U21 Hommes",
+          "session": "U21 Homme Arc Classique",
           "target": "31B"
         },
         {
