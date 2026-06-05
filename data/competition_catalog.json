@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-05T08:08:22.206056+00:00",
+  "generated_at_utc": "2026-06-05T11:43:41.579043+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 42,
+  "count": 43,
   "tournaments": [
     {
       "to_id": "27419",
@@ -1172,7 +1172,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28616",
       "ena_url": "https://www.ianseo.net/TourData/2026/28616/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28616/IC.php",
-      "entries_count": 87,
+      "entries_count": 88,
       "entries": [
         {
           "name": "ALI Mohamed",
@@ -1187,6 +1187,13 @@
           "category": "0759089 - COUDEKERQUE BRANCHE",
           "session": "S2 Homme Arc Classique National",
           "target": "10C"
+        },
+        {
+          "name": "BAILLY Pauline",
+          "club": "0759101 - VILLENEUVE D'ASCQ",
+          "category": "0759101 - VILLENEUVE D'ASCQ",
+          "session": "U18 Femme Arc Classique National",
+          "target": "20C"
         },
         {
           "name": "BECUWE Charlene",
@@ -4878,6 +4885,19 @@
       "entries": []
     },
     {
+      "to_id": "28648",
+      "year": "2026",
+      "name": "Championnat Departemental 93 TAEDN 2026",
+      "organizer": "Sevran",
+      "date_text": "6-7 Jun",
+      "end_date": "2026-06-07",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28648",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28648/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28648/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27514",
       "year": "2026",
       "name": "TAEI/N et Para Tir à l'Arc - 13 Juin 2026",
@@ -6675,7 +6695,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27217",
       "ena_url": "https://www.ianseo.net/TourData/2026/27217/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27217/IC.php",
-      "entries_count": 107,
+      "entries_count": 167,
       "entries": [
         {
           "name": "ACHA GONZALEZ Pablo",
@@ -6695,6 +6715,13 @@
           "name": "ALBANESE Remy",
           "club": "1313078 - MIRAMAS",
           "category": "1313078 - MIRAMAS",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "ALOUANI Neil",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
           "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
@@ -6734,6 +6761,13 @@
           "target": ""
         },
         {
+          "name": "AUBERT Thomas",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "BABLEE Agnes",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -6769,6 +6803,13 @@
           "target": ""
         },
         {
+          "name": "BARITEAUD Iban",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "BASSIMON Lou",
           "club": "0762288 - MONCHY AU BOIS",
           "category": "0762288 - MONCHY AU BOIS",
@@ -6780,6 +6821,13 @@
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "Arc Classique Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "BAZIN Bertille",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Arc à Poulies Senior 2 Femme",
           "target": ""
         },
         {
@@ -6804,6 +6852,13 @@
           "target": ""
         },
         {
+          "name": "BERGUIN Philippe",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "BERNARDI Nicolas",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -6825,6 +6880,13 @@
           "target": ""
         },
         {
+          "name": "BLOCH Emily",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "BLONDEL Elisa",
           "club": "0950072 - CHERBOURG EN COTENTIN",
           "category": "0950072 - CHERBOURG EN COTENTIN",
@@ -6839,10 +6901,24 @@
           "target": ""
         },
         {
+          "name": "BOULCH Jean Philippe",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "BOURGEOIS Aymeric",
           "club": "0759129 - VALENCIENNES",
           "category": "0759129 - VALENCIENNES",
           "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "BOURON Laetitia",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
         {
@@ -6853,10 +6929,24 @@
           "target": ""
         },
         {
+          "name": "BRAUN Romain",
+          "club": "0762297 - WINGLES",
+          "category": "0762297 - WINGLES",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "BRESSON Victor",
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "Arc Classique Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "BRIERE Adrien",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
         {
@@ -6874,6 +6964,20 @@
           "target": ""
         },
         {
+          "name": "CHARAUDEAU Alexis",
+          "club": "1313090 - ST MARTIN DE CRAU",
+          "category": "1313090 - ST MARTIN DE CRAU",
+          "session": "Arc à Poulies Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "CHAUVEAU Baptiste",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "CHIRAULT Thomas",
           "club": "0163151 - CLERMONT FERRAND CIE",
           "category": "0163151 - CLERMONT FERRAND CIE",
@@ -6888,10 +6992,24 @@
           "target": ""
         },
         {
+          "name": "COHENDET Angeline",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "COLLAUD-BRETHENET Evann",
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "CONESA Anna",
+          "club": "1313090 - ST MARTIN DE CRAU",
+          "category": "1313090 - ST MARTIN DE CRAU",
+          "session": "Arc à Poulies Senior 2 Femme",
           "target": ""
         },
         {
@@ -6937,10 +7055,24 @@
           "target": ""
         },
         {
+          "name": "CROES Quentin",
+          "club": "0762297 - WINGLES",
+          "category": "0762297 - WINGLES",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "CRUSSON Mathieu",
           "club": "1131080 - BLAGNAC",
           "category": "1131080 - BLAGNAC",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "DELOBELLE Fabien",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
         {
@@ -6975,6 +7107,13 @@
           "name": "DEVAUX Laura",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "DIOMBO Esmei Anne Marcelle",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
           "session": "Scratch Femme Arc Classique",
           "target": ""
         },
@@ -7021,10 +7160,31 @@
           "target": ""
         },
         {
+          "name": "ETIENNE David",
+          "club": "0759101 - VILLENEUVE D'ASCQ",
+          "category": "0759101 - VILLENEUVE D'ASCQ",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "EYENI Franck",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "FERRAND Aurelie",
           "club": "1244009 - CARQUEFOU",
           "category": "1244009 - CARQUEFOU",
           "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "FERRAUD Alexia",
+          "club": "1313090 - ST MARTIN DE CRAU",
+          "category": "1313090 - ST MARTIN DE CRAU",
+          "session": "Arc à Poulies Senior 1 Femme",
           "target": ""
         },
         {
@@ -7042,6 +7202,13 @@
           "target": ""
         },
         {
+          "name": "FLORENT Anaelle",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "FOUACE-PEOUX Alexandra",
           "club": "0950072 - CHERBOURG EN COTENTIN",
           "category": "0950072 - CHERBOURG EN COTENTIN",
@@ -7056,10 +7223,38 @@
           "target": ""
         },
         {
+          "name": "FREMERY-DELESTAN Mila",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "GARDEUR Antonin",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "GARRABE Damien",
           "club": "1131080 - BLAGNAC",
           "category": "1131080 - BLAGNAC",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "GILSON Esteban",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "GIRARD Marion",
+          "club": "1313090 - ST MARTIN DE CRAU",
+          "category": "1313090 - ST MARTIN DE CRAU",
+          "session": "Arc à Poulies Senior 1 Femme",
           "target": ""
         },
         {
@@ -7070,9 +7265,44 @@
           "target": ""
         },
         {
+          "name": "GLEMET Ophelie",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "GREGORIO Lea-Lynn",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "GRILLAT Nathan",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "HERENT Vincent",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "HERVE Sandra",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "HORACKOVA Marie",
+          "club": "0610019 - ARCIS SUR AUBE",
+          "category": "0610019 - ARCIS SUR AUBE",
           "session": "Scratch Femme Arc Classique",
           "target": ""
         },
@@ -7081,6 +7311,13 @@
           "club": "0163151 - CLERMONT FERRAND CIE",
           "category": "0163151 - CLERMONT FERRAND CIE",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "JAKUSIC Anna",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "Scratch Femme Arc Classique",
           "target": ""
         },
         {
@@ -7098,10 +7335,31 @@
           "target": ""
         },
         {
+          "name": "KIENER Audrey",
+          "club": "1313090 - ST MARTIN DE CRAU",
+          "category": "1313090 - ST MARTIN DE CRAU",
+          "session": "Arc à Poulies Senior 2 Femme",
+          "target": ""
+        },
+        {
           "name": "LACOUME Marlene",
           "club": "0950072 - CHERBOURG EN COTENTIN",
           "category": "0950072 - CHERBOURG EN COTENTIN",
           "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LAFARGUETTE Loris",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LALLEMANT Julien",
+          "club": "0759101 - VILLENEUVE D'ASCQ",
+          "category": "0759101 - VILLENEUVE D'ASCQ",
+          "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
         {
@@ -7133,6 +7391,13 @@
           "target": ""
         },
         {
+          "name": "LEMOINE Frederic",
+          "club": "0759101 - VILLENEUVE D'ASCQ",
+          "category": "0759101 - VILLENEUVE D'ASCQ",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": ""
+        },
+        {
           "name": "LEPELLETIER Paul",
           "club": "0950072 - CHERBOURG EN COTENTIN",
           "category": "0950072 - CHERBOURG EN COTENTIN",
@@ -7147,9 +7412,23 @@
           "target": ""
         },
         {
+          "name": "LIENARD Sebastien",
+          "club": "0759101 - VILLENEUVE D'ASCQ",
+          "category": "0759101 - VILLENEUVE D'ASCQ",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": ""
+        },
+        {
           "name": "LOIRE Guillaume",
           "club": "0759129 - VALENCIENNES",
           "category": "0759129 - VALENCIENNES",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "LOISEAU Antoine",
+          "club": "1182216 - NEGREPELISSE",
+          "category": "1182216 - NEGREPELISSE",
           "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
@@ -7158,6 +7437,13 @@
           "club": "1047144 - BOE",
           "category": "1047144 - BOE",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LORTHIOIR Yann",
+          "club": "1313090 - ST MARTIN DE CRAU",
+          "category": "1313090 - ST MARTIN DE CRAU",
+          "session": "Arc à Poulies Senior 1 Homme",
           "target": ""
         },
         {
@@ -7175,6 +7461,13 @@
           "target": ""
         },
         {
+          "name": "MARCHAND-REVERS Jeremy",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "MARTIN Brice",
           "club": "0950072 - CHERBOURG EN COTENTIN",
           "category": "0950072 - CHERBOURG EN COTENTIN",
@@ -7186,6 +7479,13 @@
           "club": "0877033 - SAINT MARD",
           "category": "0877033 - SAINT MARD",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "MENARD Astrid",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Scratch Femme Arc à Poulies",
           "target": ""
         },
         {
@@ -7210,6 +7510,20 @@
           "target": ""
         },
         {
+          "name": "MOINE Maxence",
+          "club": "0892193 - RUEIL MALMAISON STAR",
+          "category": "0892193 - RUEIL MALMAISON STAR",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "MORAINNES Julien",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "MOUTON Pierre",
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
@@ -7221,6 +7535,13 @@
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "Arc Classique Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "MULOT Florent",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "Scratch Homme Arc Classique",
           "target": ""
         },
         {
@@ -7242,6 +7563,13 @@
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
           "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "PARPILLON Julien",
+          "club": "1313090 - ST MARTIN DE CRAU",
+          "category": "1313090 - ST MARTIN DE CRAU",
+          "session": "Arc à Poulies Senior 1 Homme",
           "target": ""
         },
         {
@@ -7280,6 +7608,13 @@
           "target": ""
         },
         {
+          "name": "PEYRONDET Francois",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "PLANCHET Erwan",
           "club": "1079182 - ARDIN",
           "category": "1079182 - ARDIN",
@@ -7287,10 +7622,45 @@
           "target": ""
         },
         {
+          "name": "PONCHEL Matthieu",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "PRINGEZ Camille",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "RENAUDINEAU Alexis",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "RICCI Thais",
           "club": "0762288 - MONCHY AU BOIS",
           "category": "0762288 - MONCHY AU BOIS",
           "session": "Arc Classique U18 Femme",
+          "target": ""
+        },
+        {
+          "name": "RIFAUT Nicolas",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "RIGAULT CHUPIN Julie",
+          "club": "1016003 - RUELLE SUR TOUVRE",
+          "category": "1016003 - RUELLE SUR TOUVRE",
+          "session": "Arc à Poulies Senior 2 Femme",
           "target": ""
         },
         {
@@ -7308,10 +7678,45 @@
           "target": ""
         },
         {
+          "name": "ROGAZY Berangere",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "ROUMEGAS Michael",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "ROUX Adrien",
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "Arc Classique Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "ROUX Herve",
+          "club": "0762297 - WINGLES",
+          "category": "0762297 - WINGLES",
+          "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "RUGGIERI Laura",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SAGOT Thomas",
+          "club": "0762297 - WINGLES",
+          "category": "0762297 - WINGLES",
+          "session": "Scratch Homme Arc à Poulies",
           "target": ""
         },
         {
@@ -7326,6 +7731,20 @@
           "club": "1079182 - ARDIN",
           "category": "1079182 - ARDIN",
           "session": "Scratch Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "SEBASTIAN Victoria",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SENAY Alexandre",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "Scratch Homme Arc Classique",
           "target": ""
         },
         {
@@ -7350,6 +7769,13 @@
           "target": ""
         },
         {
+          "name": "TINCU Maia",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Scratch Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "TUAL Gaetan",
           "club": "1047144 - BOE",
           "category": "1047144 - BOE",
@@ -7360,6 +7786,13 @@
           "name": "UTSCHEID Lars",
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
+          "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "VALLADONT Jean Charles",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
           "session": "Scratch Homme Arc Classique",
           "target": ""
         },
@@ -7403,6 +7836,13 @@
           "club": "1131080 - BLAGNAC",
           "category": "1131080 - BLAGNAC",
           "session": "Scratch Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "VIGNON Anais",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "Scratch Femme Arc Classique",
           "target": ""
         },
         {
