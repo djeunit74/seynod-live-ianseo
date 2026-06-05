@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-04T23:46:59.163975+00:00",
+  "generated_at_utc": "2026-06-05T03:48:14.811109+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 41,
+  "count": 42,
   "tournaments": [
     {
       "to_id": "27419",
@@ -4863,6 +4863,19 @@
           "target": "2C"
         }
       ]
+    },
+    {
+      "to_id": "28553",
+      "year": "2026",
+      "name": "TAE JUIN 2026",
+      "organizer": "CAPESTERRE",
+      "date_text": "6-7 Jun",
+      "end_date": "2026-06-07",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28553",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28553/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28553/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27514",
