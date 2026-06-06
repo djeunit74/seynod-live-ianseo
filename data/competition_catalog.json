@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-06T04:37:50.771093+00:00",
+  "generated_at_utc": "2026-06-06T07:47:05.744006+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -950,6 +950,13 @@
           "target": "2C"
         },
         {
+          "name": "ARENAS Pascal",
+          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
+          "session": "S2 Homme Arc Classique",
+          "target": "17B"
+        },
+        {
           "name": "ARMANINI Manon",
           "club": "1306038 - NICE AC",
           "category": "1306038 - NICE AC",
@@ -962,13 +969,6 @@
           "category": "1131079 - TOURNEFEUILLE",
           "session": "S1 Femme Arc Classique",
           "target": "5C"
-        },
-        {
-          "name": "AUDON Kevin",
-          "club": "1134123 - LATTES SAINT JEAN DE VEDAS",
-          "category": "1134123 - LATTES SAINT JEAN DE VEDAS",
-          "session": "S2 Homme Arc Classique",
-          "target": "17B"
         },
         {
           "name": "BAILLION Laure",
@@ -988,7 +988,7 @@
           "name": "BELLOT Baptiste",
           "club": "1306030 - CANNES MANDELIEU",
           "category": "1306030 - CANNES MANDELIEU",
-          "session": "U18 Homme Arc Classique",
+          "session": "U21 Homme Arc Classique",
           "target": "14C"
         },
         {
@@ -1051,7 +1051,7 @@
           "name": "DE RUDNICKI Keona",
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
-          "session": "U18 Femme Arc Classique",
+          "session": "U21 Femme Arc Classique",
           "target": "6B"
         },
         {
@@ -1170,7 +1170,7 @@
           "name": "GRIMAUD-GARCIA Loup",
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
-          "session": "U18 Homme Arc Classique",
+          "session": "U21 Homme Arc Classique",
           "target": "22A"
         },
         {
@@ -1191,7 +1191,7 @@
           "name": "LEDUC ETILE Zoe",
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
-          "session": "U18 Femme Arc Classique",
+          "session": "U21 Femme Arc Classique",
           "target": "7B"
         },
         {
@@ -1226,7 +1226,7 @@
           "name": "LOMBART Mackenzie",
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
-          "session": "U18 Homme Arc Classique",
+          "session": "U21 Homme Arc Classique",
           "target": "20A"
         },
         {
@@ -3725,7 +3725,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28673",
       "ena_url": "https://www.ianseo.net/TourData/2026/28673/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28673/IC.php",
-      "entries_count": 104,
+      "entries_count": 108,
       "entries": [
         {
           "name": "AIGLEHOUX FORTUNATI Blanche",
@@ -3812,6 +3812,13 @@
           "target": "20B"
         },
         {
+          "name": "BRISTIEL Timeo",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U13 Homme Arc Classique",
+          "target": "3D"
+        },
+        {
           "name": "BROCHOT Ivanny",
           "club": "0891175 - DRAVEIL SENART",
           "category": "0891175 - DRAVEIL SENART",
@@ -3896,13 +3903,6 @@
           "target": "14A"
         },
         {
-          "name": "DE LAUZON Agnes",
-          "club": "0875017 - PARIS XIII USMT",
-          "category": "0875017 - PARIS XIII USMT",
-          "session": "U15 Femme Arc Classique",
-          "target": "16D"
-        },
-        {
           "name": "DELMOTTE Benjamin",
           "club": "0877037 - VENEUX LES SABLONS",
           "category": "0877037 - VENEUX LES SABLONS",
@@ -3950,6 +3950,20 @@
           "category": "0877037 - VENEUX LES SABLONS",
           "session": "U18 Homme Arc Classique",
           "target": "27A"
+        },
+        {
+          "name": "FAULCONNIER Jade",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "U13 Femme Arc Classique",
+          "target": "5D"
+        },
+        {
+          "name": "FERNANDES Lucas",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U15 Homme Arc Classique",
+          "target": "16D"
         },
         {
           "name": "FILBAS-TURPIN Armand",
@@ -4281,6 +4295,13 @@
           "target": "24D"
         },
         {
+          "name": "PEETERS Camille",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U15 Femme Arc Classique",
+          "target": "19B"
+        },
+        {
           "name": "PELTIER LEGROS Esteban",
           "club": "0875017 - PARIS XIII USMT",
           "category": "0875017 - PARIS XIII USMT",
@@ -4384,6 +4405,13 @@
           "category": "0894263 - VILLEJUIF",
           "session": "U11 Femme Arc Classique",
           "target": "1A"
+        },
+        {
+          "name": "TAUFOUR Maxime",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U13 Homme Arc Classique",
+          "target": "2D"
         },
         {
           "name": "TEOTBIALES Arthur",
