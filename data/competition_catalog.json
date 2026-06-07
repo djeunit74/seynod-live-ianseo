@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-07T18:06:05.710703+00:00",
+  "generated_at_utc": "2026-06-07T19:55:31.643870+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,343 +17,504 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27514",
       "ena_url": "https://www.ianseo.net/TourData/2026/27514/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27514/IC.php",
-      "entries_count": 48,
+      "entries_count": 71,
       "entries": [
+        {
+          "name": "ARLOT Nelly",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
+          "target": "21A"
+        },
         {
           "name": "AUBRY Lionel",
           "club": "0221123 - LES ARCHERS SELONGEENS",
           "category": "0221123 - LES ARCHERS SELONGEENS",
           "session": "Arc Classique Débutant U21 à S3 - CL - 30M",
-          "target": ""
+          "target": "17A"
+        },
+        {
+          "name": "BAPT Benjamin",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S1 Homme Arc Classique",
+          "target": "3B"
         },
         {
           "name": "BAUDOT Charlotte",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
-          "target": ""
+          "target": "22B"
+        },
+        {
+          "name": "BAUSSERON Gaelle",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Femme Arc Classique",
+          "target": "2A"
         },
         {
           "name": "BOISSON Lalie",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U13 Femme Arc Classique",
-          "target": ""
+          "target": "14A"
+        },
+        {
+          "name": "BON Melina",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "Arc Classique Débutant U11 et U13 - 1ère année - CL/BB - 15M",
+          "target": "29C"
         },
         {
           "name": "BONDOIS Adele",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc Classique Débutant U11, U13 et U15 1ère année - CL/BB - 20M",
-          "target": ""
+          "target": "25A"
+        },
+        {
+          "name": "BOUSSITA Eden-Kelyah",
+          "club": "0221016 - CHENOVE",
+          "category": "0221016 - CHENOVE",
+          "session": "U15 Femme Arc Classique",
+          "target": "11A"
         },
         {
           "name": "BOY Lorenzo",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc Classique Débutant U11 et U13 - 1ère année - CL/BB - 15M",
-          "target": ""
+          "target": "29A"
+        },
+        {
+          "name": "BRUN Laurent",
+          "club": "0239049 - ASNANS",
+          "category": "0239049 - ASNANS",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "5A"
         },
         {
           "name": "CALDERERO MICHAUD Clemence",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U15 Femme Arc Classique",
-          "target": ""
+          "target": "11B"
         },
         {
           "name": "CHEVANNE Arthur",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U18 Homme Arc Classique",
-          "target": ""
+          "target": "4A"
         },
         {
           "name": "CHEVANNE Louison",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U15 Homme Arc Classique",
-          "target": ""
+          "target": "11C"
         },
         {
           "name": "CHLOSTAWA Richard",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "5C"
         },
         {
           "name": "COMOY Sylvie",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "S3 Femme Arc Classique National",
-          "target": ""
+          "target": "7A"
         },
         {
           "name": "CONTET Leonie",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U15 Femme Arc Classique",
-          "target": ""
+          "target": "12A"
+        },
+        {
+          "name": "DAROLLES Jerome",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "S1 Homme Arc Classique",
+          "target": "3A"
         },
         {
           "name": "DE FREITAS Juliette",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U11 Femme Arc Classique",
-          "target": ""
+          "target": "23A"
         },
         {
           "name": "DE MIN Noah",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U15 Homme Arc Classique",
-          "target": ""
+          "target": "12B"
         },
         {
           "name": "DESFILLES Yves",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "Arc Classique Débutant U21 à S3 - CL - 30M",
-          "target": ""
+          "target": "16B"
+        },
+        {
+          "name": "DESMEURS Charly",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
+          "target": "20C"
         },
         {
           "name": "DOYEN Philippe",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
-          "target": ""
+          "target": "21B"
         },
         {
           "name": "DROUILLOT Clement",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "Arc Classique Débutant U21 à S3 - CL - 30M",
-          "target": ""
+          "target": "18C"
         },
         {
           "name": "DUBARRE Virginie",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
-          "target": ""
+          "target": "19A"
+        },
+        {
+          "name": "DUFOUR Camille",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "10A"
+        },
+        {
+          "name": "FERNANDES Cassy",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "Arc Classique Débutant U11 et U13 - 1ère année - CL/BB - 15M",
+          "target": "28B"
         },
         {
           "name": "FOIGNOT MARIDET Selenne",
           "club": "0221123 - LES ARCHERS SELONGEENS",
           "category": "0221123 - LES ARCHERS SELONGEENS",
           "session": "Arc Classique Débutant U15 et U18 - CL - 20M",
-          "target": ""
+          "target": "27A"
         },
         {
           "name": "FOIGNOT Romuald",
           "club": "0221123 - LES ARCHERS SELONGEENS",
           "category": "0221123 - LES ARCHERS SELONGEENS",
           "session": "Arc à Poulies Débutant U15 à S3 - CO 30M",
-          "target": ""
+          "target": "15C"
         },
         {
           "name": "FRANCOIS Arthur",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "U11 Homme Arc Classique",
-          "target": ""
+          "target": "23B"
+        },
+        {
+          "name": "FRELIN Leo",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Homme Arc Classique National",
+          "target": "6A"
         },
         {
           "name": "GALLOIS Elodie",
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
           "session": "Arc Classique Débutant U15 et U18 - CL - 20M",
-          "target": ""
+          "target": "27B"
         },
         {
           "name": "GENTIS Theo",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "Arc Classique Débutant U21 à S3 - CL - 30M",
-          "target": ""
+          "target": "16C"
+        },
+        {
+          "name": "GILBERT Salome",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "Arc Classique Débutant U11 et U13 - 1ère année - CL/BB - 15M",
+          "target": "29B"
         },
         {
           "name": "GILBERT Sylvain",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "Arc Classique Débutant U21 à S3 - CL - 30M",
-          "target": ""
+          "target": "18A"
+        },
+        {
+          "name": "GRAPIN-COUCHOT Lucie",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "U15 Femme Arc Classique",
+          "target": "12C"
+        },
+        {
+          "name": "GRAPIN-COUCHOT Marylou",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
+          "target": "21C"
         },
         {
           "name": "GRIBELIN Gabriella",
           "club": "0221123 - LES ARCHERS SELONGEENS",
           "category": "0221123 - LES ARCHERS SELONGEENS",
           "session": "Arc à Poulies Débutant U15 à S3 - CO 30M",
-          "target": ""
+          "target": "15A"
+        },
+        {
+          "name": "GROLLIER Alexis",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "Arc Classique Débutant U11, U13 et U15 1ère année - CL/BB - 20M",
+          "target": "26A"
+        },
+        {
+          "name": "GUERIN Maxime",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "10C"
+        },
+        {
+          "name": "HAUSSE Didier",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "7C"
         },
         {
           "name": "HOSSANN Alice",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc Classique Débutant U11, U13 et U15 1ère année - CL/BB - 20M",
-          "target": ""
+          "target": "26B"
+        },
+        {
+          "name": "JEAN DE DIEU Laura",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S1 Femme Arc Classique National",
+          "target": "9A"
         },
         {
           "name": "JULIEN Benjamin",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
-          "target": ""
+          "target": "19B"
         },
         {
           "name": "LUMINET Emma",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U15 Femme Arc Classique",
-          "target": ""
+          "target": "13A"
         },
         {
           "name": "LYANNAS Nathan",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "U13 Homme Arc Classique",
-          "target": ""
-        },
-        {
-          "name": "MALAISE Pascale",
-          "club": "0221015 - MEURSAULT",
-          "category": "0221015 - MEURSAULT",
-          "session": "Arc Classique Débutant U21 à S3 - CL - 30M",
-          "target": ""
+          "target": "14B"
         },
         {
           "name": "MALLERON Ronan",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U18 Homme Arc Classique",
-          "target": ""
+          "target": "4B"
         },
         {
           "name": "MARIDET Aurore",
           "club": "0221123 - LES ARCHERS SELONGEENS",
           "category": "0221123 - LES ARCHERS SELONGEENS",
           "session": "Arc Nu Débutant U15 à S3 - BB- 30M",
-          "target": ""
+          "target": "20B"
+        },
+        {
+          "name": "MASSON Charly",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "9B"
         },
         {
           "name": "MODOT Giulia",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U11 Femme Arc Classique",
-          "target": ""
+          "target": "23C"
         },
         {
           "name": "MONNETTE Michel",
           "club": "0221123 - LES ARCHERS SELONGEENS",
           "category": "0221123 - LES ARCHERS SELONGEENS",
           "session": "S3 Homme Arc Classique",
-          "target": ""
+          "target": "4C"
         },
         {
           "name": "MORY Solal",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc à Poulies Débutant U15 à S3 - CO 30M",
-          "target": ""
+          "target": "15B"
+        },
+        {
+          "name": "MOST Julien",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Homme Arc Classique National",
+          "target": "7B"
         },
         {
           "name": "MOUTOT Eric",
           "club": "0221016 - CHENOVE",
           "category": "0221016 - CHENOVE",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "6B"
         },
         {
           "name": "PAGES Alexandre",
           "club": "0271086 - MONTCEAU LES MINES",
           "category": "0271086 - MONTCEAU LES MINES",
           "session": "S2 Homme Arc Classique",
-          "target": ""
+          "target": "1A"
         },
         {
           "name": "PALACH Agnes",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "6C"
         },
         {
           "name": "PERCEAU Jean Pierre",
           "club": "0221016 - CHENOVE",
           "category": "0221016 - CHENOVE",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "8A"
         },
         {
           "name": "PEYROT Thomas",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "S1 Homme Arc Classique",
-          "target": ""
+          "target": "1B"
         },
         {
           "name": "PITOISET Anne-Sophie",
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
           "session": "Arc Classique Débutant U21 à S3 - CL - 30M",
-          "target": ""
+          "target": "16A"
         },
         {
           "name": "POKRIFCAK Louise",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "U11 Femme Arc Classique",
-          "target": ""
+          "target": "24A"
         },
         {
           "name": "PROCUREUR Mady",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "Arc Nu Débutant U15 à S3 - BB- 30M",
-          "target": ""
+          "target": "22A"
+        },
+        {
+          "name": "PUGEAUX Sandrine",
+          "club": "0239049 - ASNANS",
+          "category": "0239049 - ASNANS",
+          "session": "S1 Femme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "RAUSCHER Sacha",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U13 Homme Arc Classique",
+          "target": "14C"
         },
         {
           "name": "ROCHE Liam",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc Classique Débutant U11, U13 et U15 1ère année - CL/BB - 20M",
-          "target": ""
+          "target": "25B"
         },
         {
-          "name": "SCHMITT Bastien",
-          "club": "0221014 - DIJON",
-          "category": "0221014 - DIJON",
+          "name": "ROMER Marilou",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "U11 Femme Arc Classique",
+          "target": "24B"
+        },
+        {
+          "name": "RTAM Ines",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "Arc Classique Débutant U11 et U13 - 1ère année - CL/BB - 15M",
-          "target": ""
+          "target": "28A"
         },
         {
           "name": "SORDEL Lenaic",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "U15 Homme Arc Classique",
-          "target": ""
+          "target": "13B"
         },
         {
           "name": "TAILLANDIER Gabriel",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc à Poulies Débutant U11 à U15 - CO - 20M",
-          "target": ""
+          "target": "27C"
+        },
+        {
+          "name": "TOUTAIN Francois",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S3 Homme Arc Classique National",
+          "target": "8B"
         },
         {
           "name": "VEROUIL Lucie",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "Arc Classique Débutant U21 à S3 - CL - 30M",
-          "target": ""
+          "target": "18B"
         },
         {
           "name": "YE Sylvie",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
-          "target": ""
+          "target": "19C"
         }
       ]
     },
