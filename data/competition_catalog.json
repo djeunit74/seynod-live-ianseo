@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-07T19:55:31.643870+00:00",
+  "generated_at_utc": "2026-06-07T21:14:18.052131+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -528,27 +528,41 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27526",
       "ena_url": "https://www.ianseo.net/TourData/2026/27526/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27526/IC.php",
-      "entries_count": 53,
+      "entries_count": 90,
       "entries": [
         {
           "name": "ACQUISTAPACE Olivier",
           "club": "0239049 - ASNANS",
           "category": "0239049 - ASNANS",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "23A"
         },
         {
           "name": "ALLEBOURG Christophe",
           "club": "0271081 - PARAY LEMONIAL",
           "category": "0271081 - PARAY LEMONIAL",
           "session": "S1 Homme Arc à Poulies National",
-          "target": ""
+          "target": "25B"
         },
         {
-          "name": "BEGIN Tom",
-          "club": "0221123 - LES ARCHERS SELONGEENS",
-          "category": "0221123 - LES ARCHERS SELONGEENS",
-          "session": "S1 Homme Arc Classique National",
+          "name": "BAILLON Maxence",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "U13 Homme Arc Classique National",
+          "target": "29A"
+        },
+        {
+          "name": "BALTHAZARD Laetitia",
+          "club": "0271083 - AUTUN",
+          "category": "0271083 - AUTUN",
+          "session": "S1 Femme Arc Classique National",
+          "target": "6A"
+        },
+        {
+          "name": "BAUSSERON Gaelle",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S1 Femme Arc Classique National",
           "target": ""
         },
         {
@@ -556,350 +570,595 @@
           "club": "0239046 - A.J.T.",
           "category": "0239046 - A.J.T.",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "17A"
         },
         {
           "name": "BERCOT Maryline",
           "club": "0270065 - LURE",
           "category": "0270065 - LURE",
           "session": "S2 Femme Arc à Poulies National",
-          "target": ""
+          "target": "14B"
         },
         {
           "name": "BERCOT Thierry",
           "club": "0270065 - LURE",
           "category": "0270065 - LURE",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "3A"
         },
         {
           "name": "BILLAUDEL Arnaud",
           "club": "0289106 - ST MARTIN DU TERTRE",
           "category": "0289106 - ST MARTIN DU TERTRE",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "17B"
+        },
+        {
+          "name": "BOISSON Lalie",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U13 Femme Arc Classique National",
+          "target": "29C"
+        },
+        {
+          "name": "BONNAVAUD Alexandre",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S2 Homme Arc Classique National",
+          "target": "11B"
+        },
+        {
+          "name": "BONVALLOT Celine",
+          "club": "0290115 - BELFORT - SAVOUREUSE",
+          "category": "0290115 - BELFORT - SAVOUREUSE",
+          "session": "S2 Femme Arc Classique National",
+          "target": "4C"
         },
         {
           "name": "BRIDRON Marie-Dominique",
           "club": "0289106 - ST MARTIN DU TERTRE",
           "category": "0289106 - ST MARTIN DU TERTRE",
           "session": "S3 Femme Arc Classique National",
-          "target": ""
+          "target": "16C"
         },
         {
           "name": "BUGUET Isabelle",
           "club": "0271086 - MONTCEAU LES MINES",
           "category": "0271086 - MONTCEAU LES MINES",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "12B"
+        },
+        {
+          "name": "CALDERERO MICHAUD Clemence",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U15 Femme Arc Classique National",
+          "target": "28C"
+        },
+        {
+          "name": "CAMPANA Daniel",
+          "club": "0289112 - SENS",
+          "category": "0289112 - SENS",
+          "session": "S3 Homme Arc Classique National",
+          "target": "23C"
+        },
+        {
+          "name": "CHENILLOT Alexandre",
+          "club": "0225030 - TORPES",
+          "category": "0225030 - TORPES",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "6B"
+        },
+        {
+          "name": "CHENILLOT Pierre",
+          "club": "0225030 - TORPES",
+          "category": "0225030 - TORPES",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "16B"
         },
         {
           "name": "CLAUDON Kevin",
           "club": "0270065 - LURE",
           "category": "0270065 - LURE",
           "session": "S1 Homme Arc à Poulies National",
-          "target": ""
+          "target": "4B"
         },
         {
           "name": "COMOY Sylvie",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "S3 Femme Arc Classique National",
-          "target": ""
+          "target": "18C"
+        },
+        {
+          "name": "CROISSANT Eric",
+          "club": "0289093 - TONNERRE AS",
+          "category": "0289093 - TONNERRE AS",
+          "session": "S3 Homme Arc Classique National",
+          "target": "8C"
         },
         {
           "name": "CUCCIA Cedric",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "18B"
+        },
+        {
+          "name": "DAUPHIN Sebastien",
+          "club": "0221014 - DIJON",
+          "category": "0221014 - DIJON",
+          "session": "S2 Homme Arc Classique National",
+          "target": "20B"
         },
         {
           "name": "DAVID Elodie",
           "club": "0290115 - BELFORT - SAVOUREUSE",
           "category": "0290115 - BELFORT - SAVOUREUSE",
           "session": "S1 Femme Arc Classique National",
-          "target": ""
+          "target": "6C"
+        },
+        {
+          "name": "DE MATOS Jose",
+          "club": "0221015 - MEURSAULT",
+          "category": "0221015 - MEURSAULT",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "27C"
         },
         {
           "name": "DE MIN Nicolas",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "19B"
+        },
+        {
+          "name": "DE MIN Noah",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "U15 Homme Arc Classique National",
+          "target": "28B"
         },
         {
           "name": "DETILLEUX David",
           "club": "0225026 - BESANCON AC",
           "category": "0225026 - BESANCON AC",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "1B"
         },
         {
           "name": "DIMITRIJEVIC Romain",
           "club": "0239050 - DOLE",
           "category": "0239050 - DOLE",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "18A"
         },
         {
           "name": "DUBANT Jean",
           "club": "0221018 - SEMUR EN AUXOIS",
           "category": "0221018 - SEMUR EN AUXOIS",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "14A"
+        },
+        {
+          "name": "DUMAND Anais",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "U18 Femme Arc Classique National",
+          "target": "13C"
         },
         {
           "name": "DUMARTIN Stephane",
           "club": "0258053 - LA CHARITE SUR LOIRE",
           "category": "0258053 - LA CHARITE SUR LOIRE",
           "session": "S1 Homme Arc à Poulies National",
-          "target": ""
+          "target": "2B"
         },
         {
           "name": "ENGELHARD Marie-Philippe",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "21B"
+        },
+        {
+          "name": "FAGOT Yanis",
+          "club": "0221016 - CHENOVE",
+          "category": "0221016 - CHENOVE",
+          "session": "U18 Homme Arc Classique National",
+          "target": "24C"
+        },
+        {
+          "name": "FROMAGEOT Damien",
+          "club": "0289106 - ST MARTIN DU TERTRE",
+          "category": "0289106 - ST MARTIN DU TERTRE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "27B"
         },
         {
           "name": "GADEA Christophe",
           "club": "0258053 - LA CHARITE SUR LOIRE",
           "category": "0258053 - LA CHARITE SUR LOIRE",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "19A"
         },
         {
           "name": "GALLOIS Jean-Marc",
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "13A"
         },
         {
           "name": "GARAUDET Nicolas",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "12A"
         },
         {
           "name": "GIBOULET Alain",
           "club": "0270065 - LURE",
           "category": "0270065 - LURE",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "5B"
         },
         {
           "name": "GILARDOT Sandra",
           "club": "0221015 - MEURSAULT",
           "category": "0221015 - MEURSAULT",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "7C"
+        },
+        {
+          "name": "GRANDJEAN Johann",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "S2 Homme Arc Classique National",
+          "target": "9C"
         },
         {
           "name": "GUYOT Sophie",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "Scratch Femme Arc Nu National",
-          "target": ""
+          "target": "23B"
         },
         {
           "name": "HAUSSE Didier",
           "club": "0221012 - AUXONNE",
           "category": "0221012 - AUXONNE",
           "session": "Scratch Homme Arc Nu National",
-          "target": ""
+          "target": "25A"
         },
         {
           "name": "HEURLEY Corinne",
           "club": "0289106 - ST MARTIN DU TERTRE",
           "category": "0289106 - ST MARTIN DU TERTRE",
           "session": "Scratch Femme Arc Nu National",
-          "target": ""
+          "target": "5A"
         },
         {
           "name": "JEAN DE DIEU Laura",
           "club": "0221017 - SAINT APOLLINAIRE",
           "category": "0221017 - SAINT APOLLINAIRE",
           "session": "S1 Femme Arc Classique National",
-          "target": ""
+          "target": "2C"
+        },
+        {
+          "name": "LALLEMENT Florian",
+          "club": "0221017 - SAINT APOLLINAIRE",
+          "category": "0221017 - SAINT APOLLINAIRE",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "22A"
         },
         {
           "name": "LAMOTTE Christophe",
           "club": "0239049 - ASNANS",
           "category": "0239049 - ASNANS",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "7B"
         },
         {
           "name": "LAMOTTE Marie Eve",
           "club": "0239049 - ASNANS",
           "category": "0239049 - ASNANS",
           "session": "S2 Femme Arc à Poulies National",
-          "target": ""
+          "target": "16A"
         },
         {
           "name": "LARCHER Bruno",
           "club": "0258053 - LA CHARITE SUR LOIRE",
           "category": "0258053 - LA CHARITE SUR LOIRE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "11C"
+        },
+        {
+          "name": "LARDIER Thybald",
+          "club": "0221016 - CHENOVE",
+          "category": "0221016 - CHENOVE",
+          "session": "U18 Homme Arc Classique National",
+          "target": "25C"
         },
         {
           "name": "LAUDE William",
           "club": "0225034 - BESANCON DB",
           "category": "0225034 - BESANCON DB",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "12C"
+        },
+        {
+          "name": "LENOIR Jean-Luc",
+          "club": "0289093 - TONNERRE AS",
+          "category": "0289093 - TONNERRE AS",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "7A"
+        },
+        {
+          "name": "LEVE Alexandra",
+          "club": "0221007 - CHATILLON S/SEINE",
+          "category": "0221007 - CHATILLON S/SEINE",
+          "session": "S2 Femme Arc Classique National",
+          "target": "5C"
+        },
+        {
+          "name": "LEVISTE Alexandra",
+          "club": "0289091 - LES CADETS D'AUXERRE",
+          "category": "0289091 - LES CADETS D'AUXERRE",
+          "session": "S1 Femme Arc Classique National",
+          "target": "1C"
+        },
+        {
+          "name": "LOUOT Liam",
+          "club": "0221016 - CHENOVE",
+          "category": "0221016 - CHENOVE",
+          "session": "U13 Homme Arc Classique National",
+          "target": "30A"
         },
         {
           "name": "LUMINET Emma",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
-          "session": "Arc Classique U15 Femmes National",
-          "target": ""
+          "session": "U15 Femme Arc Classique National",
+          "target": "28A"
+        },
+        {
+          "name": "MAIROT Elise",
+          "club": "0270074 - MARNAY",
+          "category": "0270074 - MARNAY",
+          "session": "S2 Femme Arc Classique National",
+          "target": "26B"
         },
         {
           "name": "MARQUES Gabin",
           "club": "0271085 - GUEUGNON",
           "category": "0271085 - GUEUGNON",
           "session": "U18 Homme Arc Classique National",
-          "target": ""
+          "target": "26C"
         },
         {
           "name": "MENETRIER David",
           "club": "0289107 - BRIENON/ARMANCON",
           "category": "0289107 - BRIENON/ARMANCON",
           "session": "Scratch Homme Arc Nu National",
-          "target": ""
+          "target": "27A"
         },
         {
           "name": "MIGNE Emilie",
           "club": "0239050 - DOLE",
           "category": "0239050 - DOLE",
           "session": "S1 Femme Arc Classique National",
-          "target": ""
+          "target": "10C"
         },
         {
           "name": "MIGNE Ludovic",
           "club": "0239050 - DOLE",
           "category": "0239050 - DOLE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "10B"
+        },
+        {
+          "name": "MONNETTE Michel",
+          "club": "0221123 - LES ARCHERS SELONGEENS",
+          "category": "0221123 - LES ARCHERS SELONGEENS",
+          "session": "S3 Homme Arc Classique National",
+          "target": "13B"
         },
         {
           "name": "MONNOT Alexandre",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "22B"
+        },
+        {
+          "name": "MOULIN Vincent",
+          "club": "0258055 - NEVERS",
+          "category": "0258055 - NEVERS",
+          "session": "S1 Homme Arc Classique National",
+          "target": "8A"
         },
         {
           "name": "MOUTOT Eric",
           "club": "0221016 - CHENOVE",
           "category": "0221016 - CHENOVE",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "20C"
         },
         {
           "name": "NICOL Laure",
           "club": "0221018 - SEMUR EN AUXOIS",
           "category": "0221018 - SEMUR EN AUXOIS",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "15B"
         },
         {
           "name": "PAQUEZ Justine",
           "club": "0289106 - ST MARTIN DU TERTRE",
           "category": "0289106 - ST MARTIN DU TERTRE",
           "session": "S1 Femme Arc Classique National",
-          "target": ""
+          "target": "3C"
+        },
+        {
+          "name": "PARMIN Theo",
+          "club": "0270063 - VESOUL",
+          "category": "0270063 - VESOUL",
+          "session": "U21 Homme Arc à Poulies National",
+          "target": "15A"
+        },
+        {
+          "name": "PAUL Jean-Philippe",
+          "club": "0239050 - DOLE",
+          "category": "0239050 - DOLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "24B"
+        },
+        {
+          "name": "PELLIER Patrick",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "20A"
         },
         {
           "name": "PERCEAU Jean Pierre",
           "club": "0221016 - CHENOVE",
           "category": "0221016 - CHENOVE",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "8B"
+        },
+        {
+          "name": "PLANCHON Francois",
+          "club": "0271086 - MONTCEAU LES MINES",
+          "category": "0271086 - MONTCEAU LES MINES",
+          "session": "S3 Homme Arc Classique National",
+          "target": "22C"
         },
         {
           "name": "POULET Yves",
           "club": "0225026 - BESANCON AC",
           "category": "0225026 - BESANCON AC",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "14C"
+        },
+        {
+          "name": "PRABEL Audrey",
+          "club": "0271076 - MACON",
+          "category": "0271076 - MACON",
+          "session": "S1 Femme Arc à Poulies National",
+          "target": "3B"
+        },
+        {
+          "name": "PRABEL Marie-Pierre",
+          "club": "0271076 - MACON",
+          "category": "0271076 - MACON",
+          "session": "S3 Femme Arc à Poulies National",
+          "target": "9B"
+        },
+        {
+          "name": "PRABEL Thierry",
+          "club": "0271076 - MACON",
+          "category": "0271076 - MACON",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "26A"
+        },
+        {
+          "name": "RAYMOND Michel",
+          "club": "0221012 - AUXONNE",
+          "category": "0221012 - AUXONNE",
+          "session": "S3 Homme Arc Classique National",
+          "target": "19C"
         },
         {
           "name": "REMOND Gael",
           "club": "0270065 - LURE",
           "category": "0270065 - LURE",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "21A"
         },
         {
           "name": "SAUGET Berengere",
           "club": "0270063 - VESOUL",
           "category": "0270063 - VESOUL",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "17C"
+        },
+        {
+          "name": "SCHMITT Marine",
+          "club": "0225034 - BESANCON DB",
+          "category": "0225034 - BESANCON DB",
+          "session": "S1 Femme Arc à Poulies National",
+          "target": "15C"
         },
         {
           "name": "SIMERAY Jean Luc",
           "club": "0225026 - BESANCON AC",
           "category": "0225026 - BESANCON AC",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "24A"
         },
         {
           "name": "SITEAUT Jules",
           "club": "0289106 - ST MARTIN DU TERTRE",
           "category": "0289106 - ST MARTIN DU TERTRE",
           "session": "U13 Homme Arc Classique National",
-          "target": ""
+          "target": "29B"
         },
         {
           "name": "SUSS Frederic",
           "club": "0221014 - DIJON",
           "category": "0221014 - DIJON",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "11A"
         },
         {
           "name": "TERMELET Bernard",
           "club": "0221006 - IS SUR TILLE",
           "category": "0221006 - IS SUR TILLE",
           "session": "Scratch Homme Arc Nu National",
-          "target": ""
+          "target": "4A"
         },
         {
           "name": "TOURRETTE Aurelien",
           "club": "0270065 - LURE",
           "category": "0270065 - LURE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "2A"
         },
         {
           "name": "TOURRETTE Chloe",
           "club": "0270065 - LURE",
           "category": "0270065 - LURE",
           "session": "U13 Femme Arc Classique National",
-          "target": ""
+          "target": "30B"
         },
         {
           "name": "TOURRETTE Emilie",
           "club": "0270065 - LURE",
           "category": "0270065 - LURE",
           "session": "Open Femme Arc à Poulies National",
-          "target": ""
+          "target": "1A"
+        },
+        {
+          "name": "TOUTAIN Francois",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S3 Homme Arc Classique National",
+          "target": "21C"
+        },
+        {
+          "name": "TOUTAIN Louis-Marie",
+          "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
+          "session": "S1 Homme Arc Classique National",
+          "target": "10A"
         },
         {
           "name": "WALZ Michael",
           "club": "0221007 - CHATILLON S/SEINE",
           "category": "0221007 - CHATILLON S/SEINE",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "9A"
         }
       ]
     },
