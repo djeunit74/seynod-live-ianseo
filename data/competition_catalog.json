@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-08T05:13:57.192852+00:00",
+  "generated_at_utc": "2026-06-08T10:04:18.683719+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -66754,7 +66754,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28268",
       "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 27,
+      "entries_count": 28,
       "entries": [
         {
           "name": "ARANDA Joseph",
@@ -66776,6 +66776,13 @@
           "category": "1132109 - CONDOM",
           "session": "U18 Femme Arc Classique",
           "target": "1D"
+        },
+        {
+          "name": "AZZHIRI Claemence",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "Senior Femme Arc Nu",
+          "target": "1E"
         },
         {
           "name": "BARBIER Yannick",
