@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-08T14:34:44.751151+00:00",
+  "generated_at_utc": "2026-06-08T17:54:46.841570+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 32,
+  "count": 33,
   "tournaments": [
     {
       "to_id": "27514",
@@ -1778,6 +1778,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28355",
       "ena_url": "https://www.ianseo.net/TourData/2026/28355/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28355/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28564",
+      "year": "2026",
+      "name": "Division Régionale Adulte IDF - Etape 3",
+      "organizer": "COMPAGNIE D'ARC D'ELANCOURT",
+      "date_text": "13-14 Jun",
+      "end_date": "2026-06-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28564",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28564/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28564/IC.php",
       "entries_count": 0,
       "entries": []
     },
