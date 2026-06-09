@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-09T03:33:58.981394+00:00",
+  "generated_at_utc": "2026-06-09T07:50:49.445926+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 33,
+  "count": 34,
   "tournaments": [
     {
       "to_id": "27514",
@@ -67739,6 +67739,111 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/28614/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "28206",
+      "year": "2026",
+      "name": "Concours Beursault",
+      "organizer": "Cie Arc Crépy",
+      "date_text": "3-5 Jul",
+      "end_date": "2026-07-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28206",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28206/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28206/IC.php",
+      "entries_count": 13,
+      "entries": [
+        {
+          "name": "AUBRY Gilles",
+          "club": "0895275 - CIE ARC MONTMORENCY",
+          "category": "0895275 - CIE ARC MONTMORENCY",
+          "session": "Senior Homme Arc Droit",
+          "target": "2C"
+        },
+        {
+          "name": "BENARD Sylvie",
+          "club": "0895275 - CIE ARC MONTMORENCY",
+          "category": "0895275 - CIE ARC MONTMORENCY",
+          "session": "Senior Femme Arc Nu",
+          "target": "2E"
+        },
+        {
+          "name": "CLEMENT Jerome",
+          "club": "0895275 - CIE ARC MONTMORENCY",
+          "category": "0895275 - CIE ARC MONTMORENCY",
+          "session": "Senior Homme Arc Droit",
+          "target": "2A"
+        },
+        {
+          "name": "DEBETZ Samuel",
+          "club": "0895275 - CIE ARC MONTMORENCY",
+          "category": "0895275 - CIE ARC MONTMORENCY",
+          "session": "Senior Homme Arc Nu",
+          "target": "2D"
+        },
+        {
+          "name": "DUTRANNOY Marc",
+          "club": "0895275 - CIE ARC MONTMORENCY",
+          "category": "0895275 - CIE ARC MONTMORENCY",
+          "session": "Senior Homme Arc Droit",
+          "target": "2B"
+        },
+        {
+          "name": "LANOIS Julien",
+          "club": "0877073 - CIE ARC LE PIN",
+          "category": "0877073 - CIE ARC LE PIN",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "LEJEUNE Philippe",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 2 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "MICHAUT Aurelie",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 2 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "POTTIER-LANOIS Delphine",
+          "club": "0877073 - CIE ARC LE PIN",
+          "category": "0877073 - CIE ARC LE PIN",
+          "session": "Senior 2 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "PRUD'HOMME Didier",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "VAN AUDEKERK Arnaud",
+          "club": "0877312 - CIE ARC CHARNY",
+          "category": "0877312 - CIE ARC CHARNY",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "VECCHI Yann",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 1 Homme Arc à Poulies",
+          "target": "1E"
+        },
+        {
+          "name": "VERGEAUD Anthony",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 1 Homme Arc Classique",
+          "target": "1A"
+        }
+      ]
     },
     {
       "to_id": "28507",
