@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-09T14:00:14.272697+00:00",
+  "generated_at_utc": "2026-06-09T16:36:45.229193+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -515,6 +515,573 @@
           "category": "0221014 - DIJON",
           "session": "Arc Classique Débutant U21 à S3 - 1ère année - CL - 30M",
           "target": "19C"
+        }
+      ]
+    },
+    {
+      "to_id": "28535",
+      "year": "2026",
+      "name": "Division Régionale Excellence Normandie - Manche N°3",
+      "organizer": "1 ére compagnie d'arc de Neufchâtel",
+      "date_text": "14 Jun",
+      "end_date": "2026-06-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28535",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28535/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28535/IC.php",
+      "entries_count": 79,
+      "entries": [
+        {
+          "name": "AUBOURG Florian",
+          "club": "0927135 - BERNAY",
+          "category": "0927135 - BERNAY",
+          "session": "S1 Homme Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "BEAUFILS Leo-Paul",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "U21 Homme Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "BERTRAND Jacques",
+          "club": "0976093 - SAINT VALERY EN CAUX",
+          "category": "0976093 - SAINT VALERY EN CAUX",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "23B"
+        },
+        {
+          "name": "BESNARD Jonathan",
+          "club": "0927040 - BEAUMONT LE ROGER RISLE",
+          "category": "0927040 - BEAUMONT LE ROGER RISLE",
+          "session": "S2 Homme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "BESNARD Nelly",
+          "club": "0927040 - BEAUMONT LE ROGER RISLE",
+          "category": "0927040 - BEAUMONT LE ROGER RISLE",
+          "session": "S2 Femme Arc Classique",
+          "target": "13C"
+        },
+        {
+          "name": "BIHEL Olivier",
+          "club": "0950071 - LES PIEUX",
+          "category": "0950071 - LES PIEUX",
+          "session": "S2 Homme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "BOCAGE Katia",
+          "club": "0927135 - BERNAY",
+          "category": "0927135 - BERNAY",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "17B"
+        },
+        {
+          "name": "BOULLE Titouan",
+          "club": "0950071 - LES PIEUX",
+          "category": "0950071 - LES PIEUX",
+          "session": "U21 Homme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "BOURGEOIS Jean-Mayeul",
+          "club": "0927046 - VERNON CIE",
+          "category": "0927046 - VERNON CIE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "21A"
+        },
+        {
+          "name": "BRACHAIS Guillaume",
+          "club": "0927046 - VERNON CIE",
+          "category": "0927046 - VERNON CIE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "22A"
+        },
+        {
+          "name": "BRIERE Loic",
+          "club": "0976110 - PETIT COURONNE",
+          "category": "0976110 - PETIT COURONNE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "25B"
+        },
+        {
+          "name": "BUREAU Pierre",
+          "club": "0927046 - VERNON CIE",
+          "category": "0927046 - VERNON CIE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "23A"
+        },
+        {
+          "name": "CAUCHARD Ronan",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "S1 Homme Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "CHABLE Damien",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "CHAINIER Alexis",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "S1 Homme Arc Classique",
+          "target": "14C"
+        },
+        {
+          "name": "CRATERE Marc Andre",
+          "club": "0927046 - VERNON CIE",
+          "category": "0927046 - VERNON CIE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "24A"
+        },
+        {
+          "name": "CROZATIER Aurelien",
+          "club": "0914021 - HEROUVILLE SAINT CLAIR",
+          "category": "0914021 - HEROUVILLE SAINT CLAIR",
+          "session": "S2 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "DARCHE Valentin",
+          "club": "0976121 - OFFRANVILLE",
+          "category": "0976121 - OFFRANVILLE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "25C"
+        },
+        {
+          "name": "DARCILLON Cecile",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "18A"
+        },
+        {
+          "name": "DARCILLON Denis",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "27A"
+        },
+        {
+          "name": "DELAHAYE Chloe",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "S1 Femme Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "DELAMOTTE Julie",
+          "club": "0976117 - BEUZEVILLE LA GRENIER",
+          "category": "0976117 - BEUZEVILLE LA GRENIER",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "18C"
+        },
+        {
+          "name": "DELLINGER Emilie",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "20C"
+        },
+        {
+          "name": "DIEP Chan-Vandy",
+          "club": "0927040 - BEAUMONT LE ROGER RISLE",
+          "category": "0927040 - BEAUMONT LE ROGER RISLE",
+          "session": "S2 Homme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "DOUASBIN Joachim",
+          "club": "0950071 - LES PIEUX",
+          "category": "0950071 - LES PIEUX",
+          "session": "S2 Homme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "DUBOC Noe",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "U21 Homme Arc Classique",
+          "target": "5A"
+        },
+        {
+          "name": "DUCLOS Marie",
+          "club": "0976110 - PETIT COURONNE",
+          "category": "0976110 - PETIT COURONNE",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "17C"
+        },
+        {
+          "name": "DUHAMEL Gregory",
+          "club": "0976122 - EPOUVILLE",
+          "category": "0976122 - EPOUVILLE",
+          "session": "S2 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "DURAND Philippe",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S2 Homme Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "DUTEURTRE Emmanuel",
+          "club": "0927040 - BEAUMONT LE ROGER RISLE",
+          "category": "0927040 - BEAUMONT LE ROGER RISLE",
+          "session": "S2 Homme Arc Classique",
+          "target": "3C"
+        },
+        {
+          "name": "ELET Sebastien",
+          "club": "0950072 - CHERBOURG EN COTENTIN",
+          "category": "0950072 - CHERBOURG EN COTENTIN",
+          "session": "S2 Homme Arc Classique",
+          "target": "16A"
+        },
+        {
+          "name": "FESSARD Mickael",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "FICHEZ Theo",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "S2 Homme Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "FONTAINE Damien",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "25A"
+        },
+        {
+          "name": "GAILLARD Herve",
+          "club": "0927135 - BERNAY",
+          "category": "0927135 - BERNAY",
+          "session": "S2 Homme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "GHEUX Maxime",
+          "club": "0976122 - EPOUVILLE",
+          "category": "0976122 - EPOUVILLE",
+          "session": "S2 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "GUILBERT Celine",
+          "club": "0927135 - BERNAY",
+          "category": "0927135 - BERNAY",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "18B"
+        },
+        {
+          "name": "GUILBERT Sebastien",
+          "club": "0927135 - BERNAY",
+          "category": "0927135 - BERNAY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "24C"
+        },
+        {
+          "name": "HEBERT Damien",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S1 Homme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "HENRIO Clement",
+          "club": "0950071 - LES PIEUX",
+          "category": "0950071 - LES PIEUX",
+          "session": "S1 Homme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "HOCQ Quentin",
+          "club": "0976117 - BEUZEVILLE LA GRENIER",
+          "category": "0976117 - BEUZEVILLE LA GRENIER",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "21C"
+        },
+        {
+          "name": "JEANNE Didier",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "28A"
+        },
+        {
+          "name": "LECLERC Laurent",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "U21 Homme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "LEDUEY Nicolas",
+          "club": "0976117 - BEUZEVILLE LA GRENIER",
+          "category": "0976117 - BEUZEVILLE LA GRENIER",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "22C"
+        },
+        {
+          "name": "LEDUEY Suzy",
+          "club": "0976117 - BEUZEVILLE LA GRENIER",
+          "category": "0976117 - BEUZEVILLE LA GRENIER",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "19C"
+        },
+        {
+          "name": "LELIEVRE Maxime",
+          "club": "0927044 - THUIT SIGNOL",
+          "category": "0927044 - THUIT SIGNOL",
+          "session": "S2 Homme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "LEPLANQUAIS Florian",
+          "club": "0976110 - PETIT COURONNE",
+          "category": "0976110 - PETIT COURONNE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "26B"
+        },
+        {
+          "name": "LEROI Eloise",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "S1 Femme Arc Classique",
+          "target": "14B"
+        },
+        {
+          "name": "LEROY Sebastien",
+          "club": "0927135 - BERNAY",
+          "category": "0927135 - BERNAY",
+          "session": "S2 Homme Arc Classique",
+          "target": "12C"
+        },
+        {
+          "name": "LETELLIER Patrice",
+          "club": "0976121 - OFFRANVILLE",
+          "category": "0976121 - OFFRANVILLE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "26C"
+        },
+        {
+          "name": "LHERMINIER Yvan",
+          "club": "0976110 - PETIT COURONNE",
+          "category": "0976110 - PETIT COURONNE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "27B"
+        },
+        {
+          "name": "LIMARE Jeremy",
+          "club": "0976117 - BEUZEVILLE LA GRENIER",
+          "category": "0976117 - BEUZEVILLE LA GRENIER",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "23C"
+        },
+        {
+          "name": "LUCAS Ellea",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "U21 Femme Arc Classique",
+          "target": "13A"
+        },
+        {
+          "name": "MADELEINE Heloise",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "S1 Femme Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "MASSON Didier",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "S2 Homme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "MICHEL Arthur",
+          "club": "0976122 - EPOUVILLE",
+          "category": "0976122 - EPOUVILLE",
+          "session": "U21 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "MOUDOULAUD Timothy",
+          "club": "0914021 - HEROUVILLE SAINT CLAIR",
+          "category": "0914021 - HEROUVILLE SAINT CLAIR",
+          "session": "S1 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "NEUVEGLISE Sixtine",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "S1 Femme Arc Classique",
+          "target": "15B"
+        },
+        {
+          "name": "NOUVEL Christian",
+          "club": "0976096 - VIEUX ROUEN SUR BRESLE",
+          "category": "0976096 - VIEUX ROUEN SUR BRESLE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "21B"
+        },
+        {
+          "name": "OSLOBANU Andreea",
+          "club": "0927135 - BERNAY",
+          "category": "0927135 - BERNAY",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "19B"
+        },
+        {
+          "name": "PAILLEUX Lyne",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "17A"
+        },
+        {
+          "name": "POISSON Joris",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "QUINTO Frederic",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S2 Homme Arc Classique",
+          "target": "6C"
+        },
+        {
+          "name": "QUINTO Julie",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "19A"
+        },
+        {
+          "name": "RABASSE Lea",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "U21 Femme Arc Classique",
+          "target": "15A"
+        },
+        {
+          "name": "RICARD Laurent",
+          "club": "0976110 - PETIT COURONNE",
+          "category": "0976110 - PETIT COURONNE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "28B"
+        },
+        {
+          "name": "RICHARD Pierre",
+          "club": "0927135 - BERNAY",
+          "category": "0927135 - BERNAY",
+          "session": "S2 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "ROBERT Frederic",
+          "club": "0976122 - EPOUVILLE",
+          "category": "0976122 - EPOUVILLE",
+          "session": "S2 Homme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "ROTROU Anne Marie",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S3 Femme Arc à Poulies",
+          "target": "20A"
+        },
+        {
+          "name": "SEGURA Eva",
+          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
+          "session": "U21 Femme Arc Classique",
+          "target": "16B"
+        },
+        {
+          "name": "TAFFARD Vincent",
+          "club": "0914021 - HEROUVILLE SAINT CLAIR",
+          "category": "0914021 - HEROUVILLE SAINT CLAIR",
+          "session": "S1 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "TARIN Emrick",
+          "club": "0914021 - HEROUVILLE SAINT CLAIR",
+          "category": "0914021 - HEROUVILLE SAINT CLAIR",
+          "session": "S1 Homme Arc Classique",
+          "target": "12B"
+        },
+        {
+          "name": "TILLIEZ Thomas",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "26A"
+        },
+        {
+          "name": "TIRARD Christophe",
+          "club": "0976121 - OFFRANVILLE",
+          "category": "0976121 - OFFRANVILLE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "27C"
+        },
+        {
+          "name": "TURCK Alain",
+          "club": "0950056 - COUTANCES",
+          "category": "0950056 - COUTANCES",
+          "session": "S2 Homme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "VALLEE Jean Paul",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S2 Homme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "VALLOIS Anthony",
+          "club": "0976098 - T.R.A.C.",
+          "category": "0976098 - T.R.A.C.",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "22B"
+        },
+        {
+          "name": "VILLALARD Evan",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "U21 Homme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "WAXIN Michel",
+          "club": "0976121 - OFFRANVILLE",
+          "category": "0976121 - OFFRANVILLE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "28C"
         }
       ]
     },
@@ -1187,573 +1754,6 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/28517/IC.php",
       "entries_count": 0,
       "entries": []
-    },
-    {
-      "to_id": "28535",
-      "year": "2026",
-      "name": "Division Régionale Excellence Normandie - Manche N°3",
-      "organizer": "1 ére compagnie d'arc de Neufchâtel",
-      "date_text": "14 Jun",
-      "end_date": "2026-06-14",
-      "details_url": "https://www.ianseo.net/Details.php?toId=28535",
-      "ena_url": "https://www.ianseo.net/TourData/2026/28535/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/28535/IC.php",
-      "entries_count": 79,
-      "entries": [
-        {
-          "name": "AUBOURG Florian",
-          "club": "0927135 - BERNAY",
-          "category": "0927135 - BERNAY",
-          "session": "S1 Homme Arc Classique",
-          "target": "9C"
-        },
-        {
-          "name": "BEAUFILS Leo-Paul",
-          "club": "0950056 - COUTANCES",
-          "category": "0950056 - COUTANCES",
-          "session": "U21 Homme Arc Classique",
-          "target": "5B"
-        },
-        {
-          "name": "BERTRAND Jacques",
-          "club": "0976093 - SAINT VALERY EN CAUX",
-          "category": "0976093 - SAINT VALERY EN CAUX",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "23B"
-        },
-        {
-          "name": "BESNARD Jonathan",
-          "club": "0927040 - BEAUMONT LE ROGER RISLE",
-          "category": "0927040 - BEAUMONT LE ROGER RISLE",
-          "session": "S2 Homme Arc Classique",
-          "target": "1C"
-        },
-        {
-          "name": "BESNARD Nelly",
-          "club": "0927040 - BEAUMONT LE ROGER RISLE",
-          "category": "0927040 - BEAUMONT LE ROGER RISLE",
-          "session": "S2 Femme Arc Classique",
-          "target": "13C"
-        },
-        {
-          "name": "BIHEL Olivier",
-          "club": "0950071 - LES PIEUX",
-          "category": "0950071 - LES PIEUX",
-          "session": "S2 Homme Arc Classique",
-          "target": "1B"
-        },
-        {
-          "name": "BOCAGE Katia",
-          "club": "0927135 - BERNAY",
-          "category": "0927135 - BERNAY",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "17B"
-        },
-        {
-          "name": "BOULLE Titouan",
-          "club": "0950071 - LES PIEUX",
-          "category": "0950071 - LES PIEUX",
-          "session": "U21 Homme Arc Classique",
-          "target": "2B"
-        },
-        {
-          "name": "BOURGEOIS Jean-Mayeul",
-          "club": "0927046 - VERNON CIE",
-          "category": "0927046 - VERNON CIE",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "21A"
-        },
-        {
-          "name": "BRACHAIS Guillaume",
-          "club": "0927046 - VERNON CIE",
-          "category": "0927046 - VERNON CIE",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "22A"
-        },
-        {
-          "name": "BRIERE Loic",
-          "club": "0976110 - PETIT COURONNE",
-          "category": "0976110 - PETIT COURONNE",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "25B"
-        },
-        {
-          "name": "BUREAU Pierre",
-          "club": "0927046 - VERNON CIE",
-          "category": "0927046 - VERNON CIE",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "23A"
-        },
-        {
-          "name": "CAUCHARD Ronan",
-          "club": "0950056 - COUTANCES",
-          "category": "0950056 - COUTANCES",
-          "session": "S1 Homme Arc Classique",
-          "target": "6B"
-        },
-        {
-          "name": "CHABLE Damien",
-          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "session": "S1 Homme Arc Classique",
-          "target": "1A"
-        },
-        {
-          "name": "CHAINIER Alexis",
-          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "session": "S1 Homme Arc Classique",
-          "target": "14C"
-        },
-        {
-          "name": "CRATERE Marc Andre",
-          "club": "0927046 - VERNON CIE",
-          "category": "0927046 - VERNON CIE",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "24A"
-        },
-        {
-          "name": "CROZATIER Aurelien",
-          "club": "0914021 - HEROUVILLE SAINT CLAIR",
-          "category": "0914021 - HEROUVILLE SAINT CLAIR",
-          "session": "S2 Homme Arc Classique",
-          "target": "9B"
-        },
-        {
-          "name": "DARCHE Valentin",
-          "club": "0976121 - OFFRANVILLE",
-          "category": "0976121 - OFFRANVILLE",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "25C"
-        },
-        {
-          "name": "DARCILLON Cecile",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "18A"
-        },
-        {
-          "name": "DARCILLON Denis",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "27A"
-        },
-        {
-          "name": "DELAHAYE Chloe",
-          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "session": "S1 Femme Arc Classique",
-          "target": "13B"
-        },
-        {
-          "name": "DELAMOTTE Julie",
-          "club": "0976117 - BEUZEVILLE LA GRENIER",
-          "category": "0976117 - BEUZEVILLE LA GRENIER",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "18C"
-        },
-        {
-          "name": "DELLINGER Emilie",
-          "club": "0927044 - THUIT SIGNOL",
-          "category": "0927044 - THUIT SIGNOL",
-          "session": "S1 Femme Arc à Poulies",
-          "target": "20C"
-        },
-        {
-          "name": "DIEP Chan-Vandy",
-          "club": "0927040 - BEAUMONT LE ROGER RISLE",
-          "category": "0927040 - BEAUMONT LE ROGER RISLE",
-          "session": "S2 Homme Arc Classique",
-          "target": "2C"
-        },
-        {
-          "name": "DOUASBIN Joachim",
-          "club": "0950071 - LES PIEUX",
-          "category": "0950071 - LES PIEUX",
-          "session": "S2 Homme Arc Classique",
-          "target": "3B"
-        },
-        {
-          "name": "DUBOC Noe",
-          "club": "0927044 - THUIT SIGNOL",
-          "category": "0927044 - THUIT SIGNOL",
-          "session": "U21 Homme Arc Classique",
-          "target": "5A"
-        },
-        {
-          "name": "DUCLOS Marie",
-          "club": "0976110 - PETIT COURONNE",
-          "category": "0976110 - PETIT COURONNE",
-          "session": "S1 Femme Arc à Poulies",
-          "target": "17C"
-        },
-        {
-          "name": "DUHAMEL Gregory",
-          "club": "0976122 - EPOUVILLE",
-          "category": "0976122 - EPOUVILLE",
-          "session": "S2 Homme Arc Classique",
-          "target": "9A"
-        },
-        {
-          "name": "DURAND Philippe",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S2 Homme Arc Classique",
-          "target": "7C"
-        },
-        {
-          "name": "DUTEURTRE Emmanuel",
-          "club": "0927040 - BEAUMONT LE ROGER RISLE",
-          "category": "0927040 - BEAUMONT LE ROGER RISLE",
-          "session": "S2 Homme Arc Classique",
-          "target": "3C"
-        },
-        {
-          "name": "ELET Sebastien",
-          "club": "0950072 - CHERBOURG EN COTENTIN",
-          "category": "0950072 - CHERBOURG EN COTENTIN",
-          "session": "S2 Homme Arc Classique",
-          "target": "16A"
-        },
-        {
-          "name": "FESSARD Mickael",
-          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "session": "S1 Homme Arc Classique",
-          "target": "2A"
-        },
-        {
-          "name": "FICHEZ Theo",
-          "club": "0927044 - THUIT SIGNOL",
-          "category": "0927044 - THUIT SIGNOL",
-          "session": "S2 Homme Arc Classique",
-          "target": "6A"
-        },
-        {
-          "name": "FONTAINE Damien",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "25A"
-        },
-        {
-          "name": "GAILLARD Herve",
-          "club": "0927135 - BERNAY",
-          "category": "0927135 - BERNAY",
-          "session": "S2 Homme Arc Classique",
-          "target": "10C"
-        },
-        {
-          "name": "GHEUX Maxime",
-          "club": "0976122 - EPOUVILLE",
-          "category": "0976122 - EPOUVILLE",
-          "session": "S2 Homme Arc Classique",
-          "target": "10A"
-        },
-        {
-          "name": "GUILBERT Celine",
-          "club": "0927135 - BERNAY",
-          "category": "0927135 - BERNAY",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "18B"
-        },
-        {
-          "name": "GUILBERT Sebastien",
-          "club": "0927135 - BERNAY",
-          "category": "0927135 - BERNAY",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "24C"
-        },
-        {
-          "name": "HEBERT Damien",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S1 Homme Arc Classique",
-          "target": "5C"
-        },
-        {
-          "name": "HENRIO Clement",
-          "club": "0950071 - LES PIEUX",
-          "category": "0950071 - LES PIEUX",
-          "session": "S1 Homme Arc Classique",
-          "target": "4B"
-        },
-        {
-          "name": "HOCQ Quentin",
-          "club": "0976117 - BEUZEVILLE LA GRENIER",
-          "category": "0976117 - BEUZEVILLE LA GRENIER",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "21C"
-        },
-        {
-          "name": "JEANNE Didier",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "28A"
-        },
-        {
-          "name": "LECLERC Laurent",
-          "club": "0927044 - THUIT SIGNOL",
-          "category": "0927044 - THUIT SIGNOL",
-          "session": "U21 Homme Arc Classique",
-          "target": "7A"
-        },
-        {
-          "name": "LEDUEY Nicolas",
-          "club": "0976117 - BEUZEVILLE LA GRENIER",
-          "category": "0976117 - BEUZEVILLE LA GRENIER",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "22C"
-        },
-        {
-          "name": "LEDUEY Suzy",
-          "club": "0976117 - BEUZEVILLE LA GRENIER",
-          "category": "0976117 - BEUZEVILLE LA GRENIER",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "19C"
-        },
-        {
-          "name": "LELIEVRE Maxime",
-          "club": "0927044 - THUIT SIGNOL",
-          "category": "0927044 - THUIT SIGNOL",
-          "session": "S2 Homme Arc Classique",
-          "target": "8A"
-        },
-        {
-          "name": "LEPLANQUAIS Florian",
-          "club": "0976110 - PETIT COURONNE",
-          "category": "0976110 - PETIT COURONNE",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "26B"
-        },
-        {
-          "name": "LEROI Eloise",
-          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "session": "S1 Femme Arc Classique",
-          "target": "14B"
-        },
-        {
-          "name": "LEROY Sebastien",
-          "club": "0927135 - BERNAY",
-          "category": "0927135 - BERNAY",
-          "session": "S2 Homme Arc Classique",
-          "target": "12C"
-        },
-        {
-          "name": "LETELLIER Patrice",
-          "club": "0976121 - OFFRANVILLE",
-          "category": "0976121 - OFFRANVILLE",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "26C"
-        },
-        {
-          "name": "LHERMINIER Yvan",
-          "club": "0976110 - PETIT COURONNE",
-          "category": "0976110 - PETIT COURONNE",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "27B"
-        },
-        {
-          "name": "LIMARE Jeremy",
-          "club": "0976117 - BEUZEVILLE LA GRENIER",
-          "category": "0976117 - BEUZEVILLE LA GRENIER",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "23C"
-        },
-        {
-          "name": "LUCAS Ellea",
-          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "session": "U21 Femme Arc Classique",
-          "target": "13A"
-        },
-        {
-          "name": "MADELEINE Heloise",
-          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "session": "S1 Femme Arc Classique",
-          "target": "14A"
-        },
-        {
-          "name": "MASSON Didier",
-          "club": "0950056 - COUTANCES",
-          "category": "0950056 - COUTANCES",
-          "session": "S2 Homme Arc Classique",
-          "target": "7B"
-        },
-        {
-          "name": "MICHEL Arthur",
-          "club": "0976122 - EPOUVILLE",
-          "category": "0976122 - EPOUVILLE",
-          "session": "U21 Homme Arc Classique",
-          "target": "11A"
-        },
-        {
-          "name": "MOUDOULAUD Timothy",
-          "club": "0914021 - HEROUVILLE SAINT CLAIR",
-          "category": "0914021 - HEROUVILLE SAINT CLAIR",
-          "session": "S1 Homme Arc Classique",
-          "target": "10B"
-        },
-        {
-          "name": "NEUVEGLISE Sixtine",
-          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "session": "S1 Femme Arc Classique",
-          "target": "15B"
-        },
-        {
-          "name": "NOUVEL Christian",
-          "club": "0976096 - VIEUX ROUEN SUR BRESLE",
-          "category": "0976096 - VIEUX ROUEN SUR BRESLE",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "21B"
-        },
-        {
-          "name": "OSLOBANU Andreea",
-          "club": "0927135 - BERNAY",
-          "category": "0927135 - BERNAY",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "19B"
-        },
-        {
-          "name": "PAILLEUX Lyne",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S1 Femme Arc à Poulies",
-          "target": "17A"
-        },
-        {
-          "name": "POISSON Joris",
-          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "session": "S1 Homme Arc Classique",
-          "target": "3A"
-        },
-        {
-          "name": "QUINTO Frederic",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S2 Homme Arc Classique",
-          "target": "6C"
-        },
-        {
-          "name": "QUINTO Julie",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "19A"
-        },
-        {
-          "name": "RABASSE Lea",
-          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "session": "U21 Femme Arc Classique",
-          "target": "15A"
-        },
-        {
-          "name": "RICARD Laurent",
-          "club": "0976110 - PETIT COURONNE",
-          "category": "0976110 - PETIT COURONNE",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "28B"
-        },
-        {
-          "name": "RICHARD Pierre",
-          "club": "0927135 - BERNAY",
-          "category": "0927135 - BERNAY",
-          "session": "S2 Homme Arc Classique",
-          "target": "11C"
-        },
-        {
-          "name": "ROBERT Frederic",
-          "club": "0976122 - EPOUVILLE",
-          "category": "0976122 - EPOUVILLE",
-          "session": "S2 Homme Arc Classique",
-          "target": "12A"
-        },
-        {
-          "name": "ROTROU Anne Marie",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S3 Femme Arc à Poulies",
-          "target": "20A"
-        },
-        {
-          "name": "SEGURA Eva",
-          "club": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "category": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "session": "U21 Femme Arc Classique",
-          "target": "16B"
-        },
-        {
-          "name": "TAFFARD Vincent",
-          "club": "0914021 - HEROUVILLE SAINT CLAIR",
-          "category": "0914021 - HEROUVILLE SAINT CLAIR",
-          "session": "S1 Homme Arc Classique",
-          "target": "11B"
-        },
-        {
-          "name": "TARIN Emrick",
-          "club": "0914021 - HEROUVILLE SAINT CLAIR",
-          "category": "0914021 - HEROUVILLE SAINT CLAIR",
-          "session": "S1 Homme Arc Classique",
-          "target": "12B"
-        },
-        {
-          "name": "TILLIEZ Thomas",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "26A"
-        },
-        {
-          "name": "TIRARD Christophe",
-          "club": "0976121 - OFFRANVILLE",
-          "category": "0976121 - OFFRANVILLE",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "27C"
-        },
-        {
-          "name": "TURCK Alain",
-          "club": "0950056 - COUTANCES",
-          "category": "0950056 - COUTANCES",
-          "session": "S2 Homme Arc Classique",
-          "target": "8B"
-        },
-        {
-          "name": "VALLEE Jean Paul",
-          "club": "0914003 - CAEN",
-          "category": "0914003 - CAEN",
-          "session": "S2 Homme Arc Classique",
-          "target": "8C"
-        },
-        {
-          "name": "VALLOIS Anthony",
-          "club": "0976098 - T.R.A.C.",
-          "category": "0976098 - T.R.A.C.",
-          "session": "S1 Homme Arc à Poulies",
-          "target": "22B"
-        },
-        {
-          "name": "VILLALARD Evan",
-          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
-          "session": "U21 Homme Arc Classique",
-          "target": "4A"
-        },
-        {
-          "name": "WAXIN Michel",
-          "club": "0976121 - OFFRANVILLE",
-          "category": "0976121 - OFFRANVILLE",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "28C"
-        }
-      ]
     },
     {
       "to_id": "28018",
