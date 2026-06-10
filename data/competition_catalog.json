@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-10T12:22:20.093264+00:00",
+  "generated_at_utc": "2026-06-10T16:22:07.353453+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 35,
+  "count": 36,
   "tournaments": [
     {
       "to_id": "27514",
@@ -69926,6 +69926,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28466",
       "ena_url": "https://www.ianseo.net/TourData/2026/28466/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28466/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28785",
+      "year": "2026",
+      "name": "TIR DE LA DERNIERE CHANCE",
+      "organizer": "GOSIER",
+      "date_text": "27-28 Jun",
+      "end_date": "2026-06-28",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28785",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28785/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28785/IC.php",
       "entries_count": 0,
       "entries": []
     },
