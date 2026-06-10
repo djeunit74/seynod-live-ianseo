@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-10T19:11:17.287649+00:00",
+  "generated_at_utc": "2026-06-10T21:36:19.007202+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2617,7 +2617,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28656",
       "ena_url": "https://www.ianseo.net/TourData/2026/28656/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28656/IC.php",
-      "entries_count": 61,
+      "entries_count": 65,
       "entries": [
         {
           "name": "ABID Remi",
@@ -2652,7 +2652,7 @@
           "club": "1306030 - CANNES MANDELIEU",
           "category": "1306030 - CANNES MANDELIEU",
           "session": "U18 Homme Arc Classique",
-          "target": "7B"
+          "target": "11B"
         },
         {
           "name": "BILGER Cecile",
@@ -2730,6 +2730,20 @@
           "category": "1306030 - CANNES MANDELIEU",
           "session": "U13 Femme Arc Classique",
           "target": "19C"
+        },
+        {
+          "name": "COUSIN Imane",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "U18 Femme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "DEBAUX GUERIN Esteban",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "U13 Homme Arc Classique",
+          "target": "23A"
         },
         {
           "name": "DEMADE-MAALLEM Malik",
@@ -2834,7 +2848,7 @@
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "U18 Femme Arc Classique",
-          "target": "9A"
+          "target": "11A"
         },
         {
           "name": "GRIMAUD-GARCIA Loup",
@@ -2891,6 +2905,13 @@
           "category": "1306037 - MOUANS SARTOUX",
           "session": "U18 Homme Arc Classique",
           "target": "8A"
+        },
+        {
+          "name": "HUGEBAERT Lola",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "U18 Femme Arc Classique",
+          "target": "9A"
         },
         {
           "name": "JACQUES Matteo",
@@ -3017,6 +3038,13 @@
           "category": "1306038 - NICE AC",
           "session": "U18 Homme Arc Classique",
           "target": "6C"
+        },
+        {
+          "name": "ROVAI Romain",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "U18 Homme Arc Classique",
+          "target": "11C"
         },
         {
           "name": "SCORDEL Enzo",
