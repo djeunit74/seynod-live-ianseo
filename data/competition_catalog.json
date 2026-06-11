@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-11T19:19:24.171820+00:00",
+  "generated_at_utc": "2026-06-11T21:35:47.699597+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 36,
+  "count": 39,
   "tournaments": [
     {
       "to_id": "27514",
@@ -610,6 +610,321 @@
       ]
     },
     {
+      "to_id": "28653",
+      "year": "2026",
+      "name": "CHAMPIONNAT DEPARTEMENTAL TAE N 2026",
+      "organizer": "ARCHERS DE VARANGEVILLE",
+      "date_text": "13 Jun",
+      "end_date": "2026-06-13",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28653",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28653/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28653/IC.php",
+      "entries_count": 43,
+      "entries": [
+        {
+          "name": "AUMARD Maxence",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Homme Arc Classique National",
+          "target": "14A"
+        },
+        {
+          "name": "BAILLOT Marion",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U21 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "BANSEPT Manon",
+          "club": "0654073 - NANCY",
+          "category": "0654073 - NANCY",
+          "session": "S1 Femme Arc à Poulies National",
+          "target": "8A"
+        },
+        {
+          "name": "BANSEPT Pascal",
+          "club": "0654073 - NANCY",
+          "category": "0654073 - NANCY",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "9A"
+        },
+        {
+          "name": "BARRAGAN Juan",
+          "club": "0654212 - HEILLECOURT",
+          "category": "0654212 - HEILLECOURT",
+          "session": "S3 Homme Arc Classique National",
+          "target": "4C"
+        },
+        {
+          "name": "BOURSIER David",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "7A"
+        },
+        {
+          "name": "COSTER Nora",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "13C"
+        },
+        {
+          "name": "DEHARO Mathieu",
+          "club": "0654083 - SEICHAMPS",
+          "category": "0654083 - SEICHAMPS",
+          "session": "U11 Homme Arc Classique",
+          "target": "15B"
+        },
+        {
+          "name": "DIDIERJEAN Stephane",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "8C"
+        },
+        {
+          "name": "DUCHESNE COCHON Nolann",
+          "club": "0654086 - EINVILLE",
+          "category": "0654086 - EINVILLE",
+          "session": "U13 Homme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "FAVIER Axel",
+          "club": "0654212 - HEILLECOURT",
+          "category": "0654212 - HEILLECOURT",
+          "session": "Support 2 Arc Classique National",
+          "target": "16A"
+        },
+        {
+          "name": "FRICARD Louise",
+          "club": "0654079 - TOUL",
+          "category": "0654079 - TOUL",
+          "session": "S1 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "GALARME Ludovic",
+          "club": "0654067 - MONT L'ETROIT",
+          "category": "0654067 - MONT L'ETROIT",
+          "session": "S2 Homme Arc Classique National",
+          "target": "9C"
+        },
+        {
+          "name": "HAMMAECHER Emilie",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Femme Arc à Poulies National",
+          "target": "6C"
+        },
+        {
+          "name": "HAYE Lison",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "13A"
+        },
+        {
+          "name": "HERR Michel",
+          "club": "0654084 - VANDOEUVRE",
+          "category": "0654084 - VANDOEUVRE",
+          "session": "S3 Homme Arc Classique National",
+          "target": "2A"
+        },
+        {
+          "name": "IMBERT Maxime",
+          "club": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "category": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "session": "S2 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "JACQUES Ghislaine",
+          "club": "0654081 - DOMBASLE SUR MEURTHE",
+          "category": "0654081 - DOMBASLE SUR MEURTHE",
+          "session": "S3 Femme Arc Classique National",
+          "target": "5B"
+        },
+        {
+          "name": "JACQUES Philippe",
+          "club": "0654081 - DOMBASLE SUR MEURTHE",
+          "category": "0654081 - DOMBASLE SUR MEURTHE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "7B"
+        },
+        {
+          "name": "LABOURE Olivier",
+          "club": "0654081 - DOMBASLE SUR MEURTHE",
+          "category": "0654081 - DOMBASLE SUR MEURTHE",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "6B"
+        },
+        {
+          "name": "LAMULLE Sylvain",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "2B"
+        },
+        {
+          "name": "LARDIN DIDRY Clement",
+          "club": "0654066 - FROUARD",
+          "category": "0654066 - FROUARD",
+          "session": "U11 Homme Arc Classique",
+          "target": "15A"
+        },
+        {
+          "name": "LEDAUPHIN Maelle",
+          "club": "0654083 - SEICHAMPS",
+          "category": "0654083 - SEICHAMPS",
+          "session": "U18 Femme Arc Classique National",
+          "target": "3C"
+        },
+        {
+          "name": "LEMAITRE Laurence",
+          "club": "0654212 - HEILLECOURT",
+          "category": "0654212 - HEILLECOURT",
+          "session": "Support 2 Arc Classique National",
+          "target": "17A"
+        },
+        {
+          "name": "MARTIN Emmanuelle",
+          "club": "0654212 - HEILLECOURT",
+          "category": "0654212 - HEILLECOURT",
+          "session": "S2 Femme Arc Classique National",
+          "target": "10B"
+        },
+        {
+          "name": "MARTIN Patrick",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S3 Homme Arc Classique National",
+          "target": "4A"
+        },
+        {
+          "name": "MAUJEAN Frederic",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "5A"
+        },
+        {
+          "name": "MAUJEAN Sonia",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S1 Femme Arc Classique National",
+          "target": "3A"
+        },
+        {
+          "name": "NOEL Adrien",
+          "club": "0654078 - LUDRES",
+          "category": "0654078 - LUDRES",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "8B"
+        },
+        {
+          "name": "PICARDAT Baptiste",
+          "club": "0654078 - LUDRES",
+          "category": "0654078 - LUDRES",
+          "session": "U15 Homme Arc Classique National",
+          "target": "12B"
+        },
+        {
+          "name": "SATRE-BUISSON Catherine",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Femme Arc Classique National",
+          "target": "4B"
+        },
+        {
+          "name": "SCARANO Eldo",
+          "club": "0654083 - SEICHAMPS",
+          "category": "0654083 - SEICHAMPS",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "5C"
+        },
+        {
+          "name": "SCHEFFER Gabriel",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U15 Homme Arc Classique National",
+          "target": "12C"
+        },
+        {
+          "name": "SCHEFFER Leane",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "14B"
+        },
+        {
+          "name": "SEVERIN Florent",
+          "club": "0654084 - VANDOEUVRE",
+          "category": "0654084 - VANDOEUVRE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "9B"
+        },
+        {
+          "name": "SUGER Brandon",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "10A"
+        },
+        {
+          "name": "THIERY Lena",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "13B"
+        },
+        {
+          "name": "TRUFFAUT Sylvain",
+          "club": "0654078 - LUDRES",
+          "category": "0654078 - LUDRES",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "2C"
+        },
+        {
+          "name": "VAILLANT Thomas",
+          "club": "0654079 - TOUL",
+          "category": "0654079 - TOUL",
+          "session": "S1 Homme Arc Classique National",
+          "target": "10C"
+        },
+        {
+          "name": "VALTAT Marie",
+          "club": "0654081 - DOMBASLE SUR MEURTHE",
+          "category": "0654081 - DOMBASLE SUR MEURTHE",
+          "session": "U21 Femme Arc Classique National",
+          "target": "3B"
+        },
+        {
+          "name": "VALTAT Nancy",
+          "club": "0654081 - DOMBASLE SUR MEURTHE",
+          "category": "0654081 - DOMBASLE SUR MEURTHE",
+          "session": "S2 Femme Arc à Poulies National",
+          "target": "6A"
+        },
+        {
+          "name": "VALTAT Olivier",
+          "club": "0654081 - DOMBASLE SUR MEURTHE",
+          "category": "0654081 - DOMBASLE SUR MEURTHE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "7C"
+        },
+        {
+          "name": "VANDER-TAELEM Zoe",
+          "club": "0654079 - TOUL",
+          "category": "0654079 - TOUL",
+          "session": "U15 Femme Arc Classique",
+          "target": "11A"
+        }
+      ]
+    },
+    {
       "to_id": "28517",
       "year": "2026",
       "name": "ACB TAE Juin 2026",
@@ -1188,6 +1503,264 @@
           "target": "28C"
         }
       ]
+    },
+    {
+      "to_id": "28654",
+      "year": "2026",
+      "name": "CHAMPIONNAT DÉPARTEMENTAL 54 PAR ÉQUIPE",
+      "organizer": "LES ARCHERS DE VARANGEVILLE",
+      "date_text": "14 Jun",
+      "end_date": "2026-06-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28654",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28654/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28654/IC.php",
+      "entries_count": 33,
+      "entries": [
+        {
+          "name": "AUMARD Maxence",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Homme Arc Classique National",
+          "target": "10C"
+        },
+        {
+          "name": "BAILLOT Marion",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U21 Femme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "BANSEPT Manon",
+          "club": "0654073 - NANCY",
+          "category": "0654073 - NANCY",
+          "session": "S1 Femme Arc à Poulies National",
+          "target": "2A"
+        },
+        {
+          "name": "BANSEPT Pascal",
+          "club": "0654073 - NANCY",
+          "category": "0654073 - NANCY",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "7A"
+        },
+        {
+          "name": "BILLON Florent",
+          "club": "0654077 - LUNEVILLE",
+          "category": "0654077 - LUNEVILLE",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "2C"
+        },
+        {
+          "name": "BOULANGEOT Julien",
+          "club": "0651036 - CHALONS EN CHAMPAGNE",
+          "category": "0651036 - CHALONS EN CHAMPAGNE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "3C"
+        },
+        {
+          "name": "BOURSIER David",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "4C"
+        },
+        {
+          "name": "BUREAU Veronique",
+          "club": "0654079 - TOUL",
+          "category": "0654079 - TOUL",
+          "session": "S2 Femme Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "CLEMENT Enzo",
+          "club": "0654077 - LUNEVILLE",
+          "category": "0654077 - LUNEVILLE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "9A"
+        },
+        {
+          "name": "CORZIN Stephane",
+          "club": "0654080 - HOMECOURT",
+          "category": "0654080 - HOMECOURT",
+          "session": "S2 Homme Arc Classique National",
+          "target": "6A"
+        },
+        {
+          "name": "COSTER Nora",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "11A"
+        },
+        {
+          "name": "DE SOLA FERON Luc",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "2B"
+        },
+        {
+          "name": "DIDIERJEAN Stephane",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "7C"
+        },
+        {
+          "name": "DONTAIL Yann",
+          "club": "0654078 - LUDRES",
+          "category": "0654078 - LUDRES",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "1C"
+        },
+        {
+          "name": "FOLTZER Jean-Yves",
+          "club": "0654078 - LUDRES",
+          "category": "0654078 - LUDRES",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "8C"
+        },
+        {
+          "name": "GARNEAUX Yann",
+          "club": "0651036 - CHALONS EN CHAMPAGNE",
+          "category": "0651036 - CHALONS EN CHAMPAGNE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "3B"
+        },
+        {
+          "name": "GOUDMETZ Zayen",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U15 Homme Arc Classique National",
+          "target": "11B"
+        },
+        {
+          "name": "HAMMAECHER Emilie",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S2 Femme Arc à Poulies National",
+          "target": "7B"
+        },
+        {
+          "name": "HOELT THIBAUT Romane",
+          "club": "0169212 - BRON",
+          "category": "0169212 - BRON",
+          "session": "U18 Femme Arc Classique National",
+          "target": "4B"
+        },
+        {
+          "name": "IMBERT Maxime",
+          "club": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "category": "0702010 - BEUVARDES ARCHERS OMOIS",
+          "session": "S2 Homme Arc Classique National",
+          "target": "4A"
+        },
+        {
+          "name": "IUNG Evann",
+          "club": "0654077 - LUNEVILLE",
+          "category": "0654077 - LUNEVILLE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "9C"
+        },
+        {
+          "name": "MARTINS Teo",
+          "club": "0651036 - CHALONS EN CHAMPAGNE",
+          "category": "0651036 - CHALONS EN CHAMPAGNE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "3A"
+        },
+        {
+          "name": "MAUJEAN Sonia",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S1 Femme Arc Classique National",
+          "target": "8A"
+        },
+        {
+          "name": "NOEL Adrien",
+          "club": "0654078 - LUDRES",
+          "category": "0654078 - LUDRES",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "1B"
+        },
+        {
+          "name": "PIERSON Sebastien",
+          "club": "0654080 - HOMECOURT",
+          "category": "0654080 - HOMECOURT",
+          "session": "S2 Homme Arc Classique National",
+          "target": "6C"
+        },
+        {
+          "name": "SCHEFFER Gabriel",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U15 Homme Arc Classique National",
+          "target": "11C"
+        },
+        {
+          "name": "SCHEFFER Leane",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "10A"
+        },
+        {
+          "name": "SUGER Brandon",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "8B"
+        },
+        {
+          "name": "THIERY Lena",
+          "club": "0654069 - VARANGEVILLE",
+          "category": "0654069 - VARANGEVILLE",
+          "session": "U13 Femme Arc Classique National",
+          "target": "10B"
+        },
+        {
+          "name": "THOMAS Denis",
+          "club": "0654080 - HOMECOURT",
+          "category": "0654080 - HOMECOURT",
+          "session": "S3 Homme Arc Classique National",
+          "target": "6B"
+        },
+        {
+          "name": "THOMAS-BOLMONT Maelle",
+          "club": "0654077 - LUNEVILLE",
+          "category": "0654077 - LUNEVILLE",
+          "session": "U21 Femme Arc Classique National",
+          "target": "9B"
+        },
+        {
+          "name": "TRUFFAUT Sylvain",
+          "club": "0654078 - LUDRES",
+          "category": "0654078 - LUDRES",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "1A"
+        },
+        {
+          "name": "VAILLANT Thomas",
+          "club": "0654079 - TOUL",
+          "category": "0654079 - TOUL",
+          "session": "S1 Homme Arc Classique National",
+          "target": "5A"
+        }
+      ]
+    },
+    {
+      "to_id": "28655",
+      "year": "2026",
+      "name": "Championnat Departemental 54 par equipe",
+      "organizer": "Cd54 et club des archers de varangeville",
+      "date_text": "14 Jun",
+      "end_date": "2026-06-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28655",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28655/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28655/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27526",
