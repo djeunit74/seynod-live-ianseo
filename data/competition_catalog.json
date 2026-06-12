@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-12T17:23:50.255501+00:00",
+  "generated_at_utc": "2026-06-12T19:30:56.605835+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2484,14 +2484,14 @@
           "name": "BONNAFE Mael",
           "club": "1182212 - MONTECH",
           "category": "1182212 - MONTECH",
-          "session": "U13 Homme Arc Classique",
+          "session": "Arc Classique U13 Hommes",
           "target": "6A"
         },
         {
           "name": "BONNAFE Mael",
           "club": "1182212 - MONTECH",
           "category": "1182212 - MONTECH",
-          "session": "Arc Classique U13 Hommes",
+          "session": "U13 Homme Arc Classique",
           "target": "6A"
         },
         {
@@ -2537,6 +2537,13 @@
           "target": "2B"
         },
         {
+          "name": "BONNAFE Melanie",
+          "club": "1182212 - MONTECH",
+          "category": "1182212 - MONTECH",
+          "session": "S2 Femme Arc Classique",
+          "target": "2D"
+        },
+        {
           "name": "BONNAFE Nicolas",
           "club": "1182212 - MONTECH",
           "category": "1182212 - MONTECH",
@@ -2547,14 +2554,14 @@
           "name": "BONNEAU Pierre",
           "club": "1047146 - STE MAURE DE PEYRIAC",
           "category": "1047146 - STE MAURE DE PEYRIAC",
-          "session": "Arc à Poulies Senior 3 Hommes National",
+          "session": "S3 Homme Arc à Poulies National",
           "target": "3B"
         },
         {
           "name": "BONNEAU Pierre",
           "club": "1047146 - STE MAURE DE PEYRIAC",
           "category": "1047146 - STE MAURE DE PEYRIAC",
-          "session": "S3 Homme Arc à Poulies National",
+          "session": "Arc à Poulies Senior 3 Hommes National",
           "target": "3B"
         },
         {
@@ -2612,13 +2619,6 @@
           "category": "1182219 - CASTELSARRASIN",
           "session": "U18 Femme Arc Classique National",
           "target": "10C"
-        },
-        {
-          "name": "COURTY Simon",
-          "club": "1111017 - CASTELNAUDARY",
-          "category": "1111017 - CASTELNAUDARY",
-          "session": "U15 Homme Arc Classique",
-          "target": "7C"
         },
         {
           "name": "DARDENNE Stephane",
@@ -2796,6 +2796,13 @@
           "target": "7A"
         },
         {
+          "name": "IMBERTON Guilhem",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "10D"
+        },
+        {
           "name": "IVORA Axel",
           "club": "1047144 - BOE",
           "category": "1047144 - BOE",
@@ -2869,14 +2876,14 @@
           "name": "LOISEAU Antoine",
           "club": "1182216 - NEGREPELISSE",
           "category": "1182216 - NEGREPELISSE",
-          "session": "Arc à Poulies Senior 1 Hommes",
+          "session": "S1 Homme Arc à Poulies",
           "target": "5B"
         },
         {
           "name": "LOISEAU Antoine",
           "club": "1182216 - NEGREPELISSE",
           "category": "1182216 - NEGREPELISSE",
-          "session": "S1 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 1 Hommes",
           "target": "5B"
         },
         {
@@ -2892,13 +2899,6 @@
           "category": "1047144 - BOE",
           "session": "Arc Classique U18 Femmes",
           "target": "4A"
-        },
-        {
-          "name": "MARTINEZ Guy",
-          "club": "1182219 - CASTELSARRASIN",
-          "category": "1182219 - CASTELSARRASIN",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "5A"
         },
         {
           "name": "MARTINEZ Guy",
