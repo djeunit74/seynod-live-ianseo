@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-12T19:30:56.605835+00:00",
+  "generated_at_utc": "2026-06-12T21:18:17.626512+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 40,
+  "count": 41,
   "tournaments": [
     {
       "to_id": "27514",
@@ -75005,6 +75005,76 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/27351/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "28823",
+      "year": "2026",
+      "name": "Qualificatif Beursault Tremblay 2026",
+      "organizer": "Les Archers du Vert Galant",
+      "date_text": "29-30 Aug",
+      "end_date": "2026-08-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28823",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
+      "entries_count": 8,
+      "entries": [
+        {
+          "name": "AMIARD Cedric",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "1B"
+        },
+        {
+          "name": "BESOMBES Cyril",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "2B"
+        },
+        {
+          "name": "BROUSSARD Anita",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 3 Femme",
+          "target": "1A"
+        },
+        {
+          "name": "DI GASPERO Anthony",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "1C"
+        },
+        {
+          "name": "HUARD DE JORNA Marie-Amélie",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 2 Femme",
+          "target": "2C"
+        },
+        {
+          "name": "MILLON Sandrine",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc à Poulies Senior 2 Femme",
+          "target": "2A"
+        },
+        {
+          "name": "PINNA Jean-Louis",
+          "club": "0893227 - GAGNY",
+          "category": "0893227 - GAGNY",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "WIDEMANN Nathalie",
+          "club": "0893227 - GAGNY",
+          "category": "0893227 - GAGNY",
+          "session": "Arc à Poulies Senior 2 Femme",
+          "target": ""
+        }
+      ]
     },
     {
       "to_id": "28509",
