@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-13T13:06:27.276549+00:00",
+  "generated_at_utc": "2026-06-13T15:18:24.297732+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 39,
+  "count": 40,
   "tournaments": [
     {
       "to_id": "28355",
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28564",
       "ena_url": "https://www.ianseo.net/TourData/2026/28564/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28564/IC.php",
-      "entries_count": 328,
+      "entries_count": 326,
       "entries": [
         {
           "name": "ABDALLAH Fanny",
@@ -733,13 +733,6 @@
           "target": "3A"
         },
         {
-          "name": "DUBOS Alain",
-          "club": "0878143 - ELANCOURT",
-          "category": "0878143 - ELANCOURT",
-          "session": "S3 Homme Arc à Poulies",
-          "target": "38D"
-        },
-        {
           "name": "DUBREUCQ Gilles",
           "club": "0877041 - CHELLES",
           "category": "0877041 - CHELLES",
@@ -1002,7 +995,7 @@
           "name": "GUIGNET Delphine",
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
-          "session": "S2 Femme Arc à Poulies",
+          "session": "Arc à Poulies Senior 2 Femmes",
           "target": "33C"
         },
         {
@@ -1209,13 +1202,6 @@
           "target": "6A"
         },
         {
-          "name": "LAFARGUETTE Loris",
-          "club": "0891175 - DRAVEIL SENART",
-          "category": "0891175 - DRAVEIL SENART",
-          "session": "U21 Homme Arc Classique",
-          "target": "32A"
-        },
-        {
           "name": "LAGER Franck",
           "club": "0891148 - MORANGIS",
           "category": "0891148 - MORANGIS",
@@ -1339,7 +1325,7 @@
           "club": "0891175 - DRAVEIL SENART",
           "category": "0891175 - DRAVEIL SENART",
           "session": "S1 Homme Arc Classique",
-          "target": "15A"
+          "target": "32A"
         },
         {
           "name": "LECOMTE Yann",
@@ -73714,6 +73700,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28614",
       "ena_url": "https://www.ianseo.net/TourData/2026/28614/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28614/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28834",
+      "year": "2026",
+      "name": "ACB TAEI Championnat Régional Jeunes et Adultes 2026",
+      "organizer": "Arc Club de Blagnac",
+      "date_text": "4-5 Jul",
+      "end_date": "2026-07-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28834",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28834/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28834/IC.php",
       "entries_count": 0,
       "entries": []
     },
