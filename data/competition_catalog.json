@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-15T17:31:05.187617+00:00",
+  "generated_at_utc": "2026-06-15T20:39:10.459915+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 29,
+  "count": 30,
   "tournaments": [
     {
       "to_id": "27217",
@@ -66806,6 +66806,19 @@
       "entries": []
     },
     {
+      "to_id": "27515",
+      "year": "2026",
+      "name": "TAEI/N et Para Tir à l'Arc - 04 et 05 Juillet 2026",
+      "organizer": "1ERE COMPAGNIE D'ARC DE DIJON",
+      "date_text": "4-5 Jul",
+      "end_date": "2026-07-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=27515",
+      "ena_url": "https://www.ianseo.net/TourData/2026/27515/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/27515/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "28834",
       "year": "2026",
       "name": "ACB TAEI Championnat Régional Jeunes et Adultes 2026",
@@ -66828,7 +66841,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28206",
       "ena_url": "https://www.ianseo.net/TourData/2026/28206/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28206/IC.php",
-      "entries_count": 17,
+      "entries_count": 19,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -66887,6 +66900,13 @@
           "target": "2B"
         },
         {
+          "name": "GAGE Xavier",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "1C"
+        },
+        {
           "name": "LANOIS Julien",
           "club": "0877073 - CIE ARC LE PIN",
           "category": "0877073 - CIE ARC LE PIN",
@@ -66925,6 +66945,13 @@
           "name": "PRUD'HOMME Didier",
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "SAUVAGE Henri",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior 2 Homme Arc Classique",
           "target": "1D"
         },
