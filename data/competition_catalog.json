@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-15T05:37:20.844107+00:00",
+  "generated_at_utc": "2026-06-15T12:15:46.501805+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -66702,8 +66702,15 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28206",
       "ena_url": "https://www.ianseo.net/TourData/2026/28206/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28206/IC.php",
-      "entries_count": 13,
+      "entries_count": 17,
       "entries": [
+        {
+          "name": "ACHEKIAN Eliane",
+          "club": "0877033 - ARCHERS DE SAINT MARD",
+          "category": "0877033 - ARCHERS DE SAINT MARD",
+          "session": "Senior 3 Femme Arc Classique",
+          "target": "1D"
+        },
         {
           "name": "AUBRY Gilles",
           "club": "0895275 - CIE ARC MONTMORENCY",
@@ -66717,6 +66724,13 @@
           "category": "0895275 - CIE ARC MONTMORENCY",
           "session": "Senior Femme Arc Nu",
           "target": "2E"
+        },
+        {
+          "name": "BOURSIER Philippe",
+          "club": "0760158 - CIE ARC DE BETHISY",
+          "category": "0760158 - CIE ARC DE BETHISY",
+          "session": "Senior Homme Arc Droit",
+          "target": "1B"
         },
         {
           "name": "CLEMENT Jerome",
@@ -66733,6 +66747,13 @@
           "target": "2D"
         },
         {
+          "name": "DUBREUIL Auriane",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "U15 Femme Arc Classique",
+          "target": "1A"
+        },
+        {
           "name": "DUTRANNOY Marc",
           "club": "0895275 - CIE ARC MONTMORENCY",
           "category": "0895275 - CIE ARC MONTMORENCY",
@@ -66745,6 +66766,13 @@
           "category": "0877073 - CIE ARC LE PIN",
           "session": "Senior 2 Homme Arc Classique",
           "target": "1D"
+        },
+        {
+          "name": "LEBLOND Arnaud",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Senior 2 Homme Arc à Poulies",
+          "target": "1A"
         },
         {
           "name": "LEJEUNE Philippe",
@@ -66833,7 +66861,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28268",
       "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 28,
+      "entries_count": 31,
       "entries": [
         {
           "name": "ARANDA Joseph",
@@ -66906,6 +66934,13 @@
           "target": "2A"
         },
         {
+          "name": "CAPO Jean-Marc",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
           "name": "CEDIL-AUDOUIN Anneliese",
           "club": "1132109 - CONDOM",
           "category": "1132109 - CONDOM",
@@ -66913,11 +66948,32 @@
           "target": "2E"
         },
         {
+          "name": "CHEVRET Severine",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "U18 Femme Arc Classique",
+          "target": "1E"
+        },
+        {
           "name": "DESCOURVIERES Benoit",
           "club": "1131097 - PECHBONNIEU",
           "category": "1131097 - PECHBONNIEU",
           "session": "U18 Homme Arc à Poulies",
           "target": "2E"
+        },
+        {
+          "name": "DUPUIS Emmanuel",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "U18 Homme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "GAYRAL Matthieu",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "U18 Homme Arc Classique",
+          "target": "2B"
         },
         {
           "name": "HUFSCHMIDT Jordan",
@@ -66931,7 +66987,7 @@
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "U18 Homme Arc à Poulies",
-          "target": "2B"
+          "target": "2A"
         },
         {
           "name": "JACQUET Sebastien",
@@ -66988,13 +67044,6 @@
           "category": "1131072 - L'UNION",
           "session": "U18 Homme Arc à Poulies",
           "target": "2C"
-        },
-        {
-          "name": "PAES Christian",
-          "club": "1182219 - CASTELSARRASIN",
-          "category": "1182219 - CASTELSARRASIN",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1B"
         },
         {
           "name": "POUILLY Franck",
