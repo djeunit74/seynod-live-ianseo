@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-16T08:27:38.005527+00:00",
+  "generated_at_utc": "2026-06-16T13:13:40.979822+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 30,
+  "count": 31,
   "tournaments": [
     {
       "to_id": "27217",
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27217",
       "ena_url": "https://www.ianseo.net/TourData/2026/27217/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27217/IC.php",
-      "entries_count": 267,
+      "entries_count": 268,
       "entries": [
         {
           "name": "ADAM Olympe",
@@ -367,7 +367,7 @@
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
           "session": "Scratch Homme Arc Classique",
-          "target": "28C"
+          "target": "29C"
         },
         {
           "name": "CARNEVALI Clement",
@@ -1081,7 +1081,7 @@
           "club": "0169188 - LYON 8EME",
           "category": "0169188 - LYON 8EME",
           "session": "Scratch Homme Arc Classique",
-          "target": "28B"
+          "target": "29A"
         },
         {
           "name": "LASVENES Alexandre",
@@ -1231,13 +1231,6 @@
           "target": "24A"
         },
         {
-          "name": "MARIN-LAFLECHE Kevin",
-          "club": "0895293 - SARCELLES",
-          "category": "0895293 - SARCELLES",
-          "session": "Arc à Poulies Senior 2 Homme",
-          "target": "50C"
-        },
-        {
           "name": "MARTIN Brice",
           "club": "0950072 - CHERBOURG EN COTENTIN",
           "category": "0950072 - CHERBOURG EN COTENTIN",
@@ -1319,7 +1312,7 @@
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
           "session": "Scratch Homme Arc Classique",
-          "target": "26C"
+          "target": "28C"
         },
         {
           "name": "MOY Frederic",
@@ -1469,6 +1462,13 @@
           "target": "21A"
         },
         {
+          "name": "POLLET Sony",
+          "club": "0895293 - SARCELLES",
+          "category": "0895293 - SARCELLES",
+          "session": "Scratch Homme Arc Classique",
+          "target": "26C"
+        },
+        {
           "name": "POMARAT Alex",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
@@ -1544,6 +1544,13 @@
           "category": "0163157 - RIOM",
           "session": "Scratch Femme Arc Classique",
           "target": "3A"
+        },
+        {
+          "name": "RANDRIANTSARA Lai-Tsan",
+          "club": "3597022 - SAINT DENIS DE LA REUNION",
+          "category": "3597022 - SAINT DENIS DE LA REUNION",
+          "session": "Scratch Femme Arc Classique",
+          "target": "25B"
         },
         {
           "name": "RENAUD Eva",
@@ -1915,6 +1922,923 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/28818/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "28875",
+      "year": "2026",
+      "name": "Championnat départemental du Morbihan de TAE 2026 à QUEVEN",
+      "organizer": "Comité Départemental du Morbihan",
+      "date_text": "21 Jun",
+      "end_date": "2026-06-21",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28875",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28875/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28875/IC.php",
+      "entries_count": 129,
+      "entries": [
+        {
+          "name": "BAILLY Olivier",
+          "club": "0356095 - ST AVE",
+          "category": "0356095 - ST AVE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "10A"
+        },
+        {
+          "name": "BAILLY Olivier",
+          "club": "0356095 - ST AVE",
+          "category": "0356095 - ST AVE",
+          "session": "S1 Homme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "BALCON Sabine",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S2 Femme Arc Classique National",
+          "target": "11C"
+        },
+        {
+          "name": "BENQUET Baptiste",
+          "club": "0356102 - PLOERMEL",
+          "category": "0356102 - PLOERMEL",
+          "session": "S1 Homme Arc Classique National",
+          "target": "10C"
+        },
+        {
+          "name": "BERNARD Mael",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "U13 Homme Arc Classique National",
+          "target": "2A"
+        },
+        {
+          "name": "BIGUET Jacky",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "10B"
+        },
+        {
+          "name": "BIGUET Jacky",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "17A"
+        },
+        {
+          "name": "BIGUET Marie-Pierre",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S2 Femme Arc Classique National",
+          "target": "14C"
+        },
+        {
+          "name": "BIGUET Thomas",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S1 Homme Arc Classique National",
+          "target": "12A"
+        },
+        {
+          "name": "BRAUD Laurent",
+          "club": "0356104 - LA VRAIE CROIX",
+          "category": "0356104 - LA VRAIE CROIX",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "11A"
+        },
+        {
+          "name": "BRIENDO Antoine",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc Classique National",
+          "target": "18A"
+        },
+        {
+          "name": "BRIFFAUT Remi",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S2 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "BRIFFAUT Remi",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S2 Homme Arc Classique National",
+          "target": "17C"
+        },
+        {
+          "name": "BRUYERE Laurent",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S2 Homme Arc Classique National",
+          "target": "18B"
+        },
+        {
+          "name": "BRUYERE Laurent",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S2 Homme Arc Classique National",
+          "target": "20A"
+        },
+        {
+          "name": "CAILLAUD Leonie",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U13 Femme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "CHAMOULAUD Philippe",
+          "club": "0356120 - ARZAL",
+          "category": "0356120 - ARZAL",
+          "session": "S3 Homme Arc Classique National",
+          "target": "23B"
+        },
+        {
+          "name": "CHAMOULAUD Sophie",
+          "club": "0356120 - ARZAL",
+          "category": "0356120 - ARZAL",
+          "session": "S3 Femme Arc Classique National",
+          "target": "22A"
+        },
+        {
+          "name": "CHAMPION Charlotte",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "Scratch Femme Arc Nu National",
+          "target": "12C"
+        },
+        {
+          "name": "CHARLES Vinciane",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Femme Arc Classique National",
+          "target": "16A"
+        },
+        {
+          "name": "COCHERIL Louis",
+          "club": "0322009 - DINAN",
+          "category": "0322009 - DINAN",
+          "session": "U15 Homme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "COEFFIC Axel",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U15 Homme Arc Classique National",
+          "target": "3B"
+        },
+        {
+          "name": "COLOMBO Luc",
+          "club": "0329050 - QUERRIEN",
+          "category": "0329050 - QUERRIEN",
+          "session": "S3 Homme Arc Classique National",
+          "target": "19A"
+        },
+        {
+          "name": "DANES Quentin",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S1 Homme Arc à Poulies National",
+          "target": "18C"
+        },
+        {
+          "name": "DARLEON Maia",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "U13 Femme Arc Classique National",
+          "target": "1A"
+        },
+        {
+          "name": "DEBIAIS Claude",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "17B"
+        },
+        {
+          "name": "DEBIAIS Claude",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "9B"
+        },
+        {
+          "name": "DEBIAIS Claudine",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Femme Arc Classique",
+          "target": "14B"
+        },
+        {
+          "name": "DEBIAIS Claudine",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Femme Arc Classique National",
+          "target": "22B"
+        },
+        {
+          "name": "DEBOEUF Frederic",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Homme Arc Classique National",
+          "target": "19B"
+        },
+        {
+          "name": "DEBOEUF Frederic",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "DEGAND Gilles",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "DEGAND Gilles",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc Classique National",
+          "target": "24C"
+        },
+        {
+          "name": "DEMAY-INKUAN Paul",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U15 Homme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "DESCHAMPS Antonin",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U11 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "DESLANDES Gwenael",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S3 Homme Arc Classique National",
+          "target": "25A"
+        },
+        {
+          "name": "DUBOURG Pierreyves",
+          "club": "0329026 - QUIMPERLE",
+          "category": "0329026 - QUIMPERLE",
+          "session": "S2 Homme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "DUCHET Fabian",
+          "club": "0356120 - ARZAL",
+          "category": "0356120 - ARZAL",
+          "session": "S2 Homme Arc Classique National",
+          "target": "26C"
+        },
+        {
+          "name": "ETIENNE Delphine",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S2 Femme Arc Classique National",
+          "target": "13C"
+        },
+        {
+          "name": "ETIENNE Delphine",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S2 Femme Arc Classique National",
+          "target": "18B"
+        },
+        {
+          "name": "EVENO Ghislaine",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Femme Arc à Poulies National",
+          "target": "13B"
+        },
+        {
+          "name": "EVENO Ghislaine",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "15B"
+        },
+        {
+          "name": "FOURNIER Philippe",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "S3 Homme Arc Classique National",
+          "target": "25B"
+        },
+        {
+          "name": "GARANDEL Ethan",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "U21 Homme Arc Classique",
+          "target": "6A"
+        },
+        {
+          "name": "GEFFROY Bruno",
+          "club": "1244011 - BASSE GOULAINE",
+          "category": "1244011 - BASSE GOULAINE",
+          "session": "S3 Homme Arc Classique National",
+          "target": "19B"
+        },
+        {
+          "name": "GERMAN Yves",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc Classique",
+          "target": "13A"
+        },
+        {
+          "name": "GERMAN Yves",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc Classique National",
+          "target": "25C"
+        },
+        {
+          "name": "GILLOTON Christian",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "8B"
+        },
+        {
+          "name": "GOASGUEN Nolwenn",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "S2 Femme Arc Classique National",
+          "target": "15C"
+        },
+        {
+          "name": "GOUSSE Nathan",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U21 Homme Arc Classique National",
+          "target": "7C"
+        },
+        {
+          "name": "GRAVELLE Alain",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S3 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "GRAVELLE Alain",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S3 Homme Arc Classique National",
+          "target": "24B"
+        },
+        {
+          "name": "GUERIN Etienne",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "14A"
+        },
+        {
+          "name": "GUILHEM Christian",
+          "club": "0356122 - SARZEAU",
+          "category": "0356122 - SARZEAU",
+          "session": "S3 Homme Arc Classique",
+          "target": "13B"
+        },
+        {
+          "name": "GUILLAUME Frederic",
+          "club": "0356112 - PEAULE",
+          "category": "0356112 - PEAULE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "19C"
+        },
+        {
+          "name": "HALBERT Lena",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "U15 Femme Arc Classique National",
+          "target": "3A"
+        },
+        {
+          "name": "HRYCAN Karl",
+          "club": "0356099 - PONTIVY",
+          "category": "0356099 - PONTIVY",
+          "session": "S1 Homme Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "JANIAUD Sebastien",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "13A"
+        },
+        {
+          "name": "JAPPE Sebastien",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S1 Homme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "JENOUVRIER Ines",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S1 Femme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "JOSSOT Patrice",
+          "club": "0356112 - PEAULE",
+          "category": "0356112 - PEAULE",
+          "session": "S3 Homme Arc Classique",
+          "target": "12B"
+        },
+        {
+          "name": "JOSSOT Patrice",
+          "club": "0356112 - PEAULE",
+          "category": "0356112 - PEAULE",
+          "session": "S3 Homme Arc Classique National",
+          "target": "26B"
+        },
+        {
+          "name": "JOUANNO Anais",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S1 Femme Arc à Poulies National",
+          "target": "15B"
+        },
+        {
+          "name": "JOUANNO Anais",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "15C"
+        },
+        {
+          "name": "KERLAU Marceau",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U13 Homme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "KERVINIO Isawenn",
+          "club": "0356102 - PLOERMEL",
+          "category": "0356102 - PLOERMEL",
+          "session": "U21 Femme Arc Classique National",
+          "target": "7A"
+        },
+        {
+          "name": "LE BAIL Morgane",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Femme Arc Classique National",
+          "target": "16B"
+        },
+        {
+          "name": "LE BAIL Pierre Francois",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "15A"
+        },
+        {
+          "name": "LE BERRIGAUD Bleuenn",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U15 Femme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "LE BOURSICAUD Victor",
+          "club": "0356104 - LA VRAIE CROIX",
+          "category": "0356104 - LA VRAIE CROIX",
+          "session": "U13 Homme Arc Classique National",
+          "target": "2B"
+        },
+        {
+          "name": "LE DARZ Jean Luc",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S3 Homme Arc Classique National",
+          "target": "23C"
+        },
+        {
+          "name": "LE FEE Bruno",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc Classique National",
+          "target": "20A"
+        },
+        {
+          "name": "LE FEE Bruno",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "LE FRAPPER Louis",
+          "club": "0356121 - AURAY",
+          "category": "0356121 - AURAY",
+          "session": "U15 Homme Arc à Poulies National",
+          "target": "4C"
+        },
+        {
+          "name": "LE LESLE Jean-Francois",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "14B"
+        },
+        {
+          "name": "LE LESLE Jean-Francois",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "16C"
+        },
+        {
+          "name": "LE MIGNAN Pascal",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S3 Homme Arc Classique National",
+          "target": "27A"
+        },
+        {
+          "name": "LELEU-GUILHEM Nelly",
+          "club": "0356122 - SARZEAU",
+          "category": "0356122 - SARZEAU",
+          "session": "S3 Femme Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "LESPES Alexandre",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "18A"
+        },
+        {
+          "name": "LESPES Alexandre",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "S1 Homme Arc Classique National",
+          "target": "19A"
+        },
+        {
+          "name": "LORANT Thierry",
+          "club": "0356102 - PLOERMEL",
+          "category": "0356102 - PLOERMEL",
+          "session": "S2 Homme Arc Classique National",
+          "target": "20B"
+        },
+        {
+          "name": "LORIOT Stephane",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "11B"
+        },
+        {
+          "name": "LORIOT Stephane",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "16A"
+        },
+        {
+          "name": "MADEC Cyrille",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Homme Arc à Poulies National",
+          "target": "12B"
+        },
+        {
+          "name": "MADEC Cyrille",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "15A"
+        },
+        {
+          "name": "MANSION MARTY Patrick",
+          "club": "0356107 - JOSSELIN",
+          "category": "0356107 - JOSSELIN",
+          "session": "S3 Homme Arc Classique National",
+          "target": "27B"
+        },
+        {
+          "name": "MASSON Eric",
+          "club": "0356099 - PONTIVY",
+          "category": "0356099 - PONTIVY",
+          "session": "S2 Homme Arc Classique National",
+          "target": "20C"
+        },
+        {
+          "name": "MASSON Eric",
+          "club": "0356099 - PONTIVY",
+          "category": "0356099 - PONTIVY",
+          "session": "S2 Homme Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "MERCIER Jerome",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "S2 Homme Arc Classique National",
+          "target": "21A"
+        },
+        {
+          "name": "MEURZEC Loevan",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "U15 Homme Arc Classique National",
+          "target": "4A"
+        },
+        {
+          "name": "MOLINA Lucie",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "S1 Femme Arc Classique National",
+          "target": "8C"
+        },
+        {
+          "name": "MOREAU Madeline",
+          "club": "0356112 - PEAULE",
+          "category": "0356112 - PEAULE",
+          "session": "S1 Femme Arc Classique National",
+          "target": "24A"
+        },
+        {
+          "name": "MOREAU Madeline",
+          "club": "0356112 - PEAULE",
+          "category": "0356112 - PEAULE",
+          "session": "S1 Femme Arc Classique",
+          "target": "6C"
+        },
+        {
+          "name": "MOREL Frederic",
+          "club": "0356099 - PONTIVY",
+          "category": "0356099 - PONTIVY",
+          "session": "S2 Homme Arc Classique National",
+          "target": "21B"
+        },
+        {
+          "name": "MOREL--PONSARD Aodren",
+          "club": "0356099 - PONTIVY",
+          "category": "0356099 - PONTIVY",
+          "session": "U21 Homme Arc Classique National",
+          "target": "8A"
+        },
+        {
+          "name": "MOSER Herve",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S3 Homme Arc Classique National",
+          "target": "27C"
+        },
+        {
+          "name": "MOSER Morgane",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Femme Arc Classique National",
+          "target": "17A"
+        },
+        {
+          "name": "MOSER Morgane",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Femme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "NESTOUR Mathieu",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "NICOL Nolwenn",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S1 Femme Arc Classique National",
+          "target": "9A"
+        },
+        {
+          "name": "PENVEN Patrice",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S3 Homme Arc Classique",
+          "target": "12C"
+        },
+        {
+          "name": "PICARD-PLUS Fanny",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U15 Femme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "PICOT Rene",
+          "club": "1244046 - PORNIC",
+          "category": "1244046 - PORNIC",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "20B"
+        },
+        {
+          "name": "PICOU Muy-Keang",
+          "club": "0356102 - PLOERMEL",
+          "category": "0356102 - PLOERMEL",
+          "session": "S2 Femme Arc Classique National",
+          "target": "18C"
+        },
+        {
+          "name": "PLANCHENAULT Abel",
+          "club": "0356095 - ST AVE",
+          "category": "0356095 - ST AVE",
+          "session": "U13 Homme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "PLUS Caroline",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Femme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "POIROT-ROZEC Gwenaele",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "S1 Femme Arc Classique National",
+          "target": "9C"
+        },
+        {
+          "name": "POISSON Beatrice",
+          "club": "0356120 - ARZAL",
+          "category": "0356120 - ARZAL",
+          "session": "S3 Femme Arc Classique National",
+          "target": "22C"
+        },
+        {
+          "name": "POISSON Jean Pierre",
+          "club": "0356120 - ARZAL",
+          "category": "0356120 - ARZAL",
+          "session": "S3 Homme Arc Classique National",
+          "target": "6A"
+        },
+        {
+          "name": "POREE Dorine",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U21 Femme Arc Classique",
+          "target": "5A"
+        },
+        {
+          "name": "POREE Dorine",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U21 Femme Arc Classique",
+          "target": "5A"
+        },
+        {
+          "name": "POUILLARD Gaspard",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "U15 Homme Arc Classique National",
+          "target": "4B"
+        },
+        {
+          "name": "POUILLARD Lou-Marine",
+          "club": "0356111 - QUEVEN",
+          "category": "0356111 - QUEVEN",
+          "session": "U21 Femme Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "PRESSE Nicolas",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc Classique National",
+          "target": "21C"
+        },
+        {
+          "name": "PRESSE Nicolas",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc Classique",
+          "target": "7C"
+        },
+        {
+          "name": "PRIEUR Jacques",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "ROSSI Matthieu",
+          "club": "0329026 - QUIMPERLE",
+          "category": "0329026 - QUIMPERLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "5C"
+        },
+        {
+          "name": "ROSSI Matthieu",
+          "club": "0329026 - QUIMPERLE",
+          "category": "0329026 - QUIMPERLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "ROUCHONNAT Francis",
+          "club": "0356099 - PONTIVY",
+          "category": "0356099 - PONTIVY",
+          "session": "S3 Homme Arc Classique National",
+          "target": "6B"
+        },
+        {
+          "name": "SICARD Aymeric",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "16B"
+        },
+        {
+          "name": "SIFI Florence",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Femme Arc Classique National",
+          "target": "16C"
+        },
+        {
+          "name": "SONNIC Martial",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "SONNIC Martial",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc Classique National",
+          "target": "6C"
+        },
+        {
+          "name": "TANGUY Bruno",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S3 Homme Arc Classique National",
+          "target": "26A"
+        },
+        {
+          "name": "TURMEL Zoe",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U13 Femme Arc Classique National",
+          "target": "1B"
+        },
+        {
+          "name": "URBAIN Isis",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "U21 Femme Arc Classique National",
+          "target": "7B"
+        },
+        {
+          "name": "VERMANDEL Xavier",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "17C"
+        },
+        {
+          "name": "WEYANT Sylvie",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Femme Arc Classique National",
+          "target": "23A"
+        },
+        {
+          "name": "ZOGHLAMI BERTIER Hajer",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Femme Arc Classique National",
+          "target": "17B"
+        }
+      ]
     },
     {
       "to_id": "28458",
@@ -65181,7 +66105,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27906",
       "ena_url": "https://www.ianseo.net/TourData/2026/27906/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27906/IC.php",
-      "entries_count": 224,
+      "entries_count": 226,
       "entries": [
         {
           "name": "AIT OUARABI Selma",
@@ -65202,6 +66126,13 @@
           "club": "0976130 - NOTRE DAME DE GRAVENCHON",
           "category": "0976130 - NOTRE DAME DE GRAVENCHON",
           "session": "U21 Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "APPELTANTS Tom",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U21 Homme Arc Classique",
           "target": ""
         },
         {
@@ -65237,6 +66168,13 @@
           "club": "0418003 - ST FLORENT SUR CHER",
           "category": "0418003 - ST FLORENT SUR CHER",
           "session": "U13 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "BAILLION Jeremy",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "U21 Homme Arc Classique",
           "target": ""
         },
         {
@@ -66776,8 +67714,422 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28506",
       "ena_url": "https://www.ianseo.net/TourData/2026/28506/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28506/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 59,
+      "entries": [
+        {
+          "name": "ANEST Antoine",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "6C"
+        },
+        {
+          "name": "BOUSQUET Muriel",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "S2 Femme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "BRISSON Pierre",
+          "club": "0335073 - LIFFRE",
+          "category": "0335073 - LIFFRE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "6B"
+        },
+        {
+          "name": "CADORET Anais",
+          "club": "1244010 - DONGES",
+          "category": "1244010 - DONGES",
+          "session": "Arc à Poulies U18 Femmes",
+          "target": "6A"
+        },
+        {
+          "name": "CADORET Anais",
+          "club": "1244010 - DONGES",
+          "category": "1244010 - DONGES",
+          "session": "U18 Femme Arc à Poulies",
+          "target": "7A"
+        },
+        {
+          "name": "CADORET Franck",
+          "club": "1244010 - DONGES",
+          "category": "1244010 - DONGES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "7C"
+        },
+        {
+          "name": "CADORET Franck",
+          "club": "1244010 - DONGES",
+          "category": "1244010 - DONGES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "7C"
+        },
+        {
+          "name": "CADORET Romuald",
+          "club": "1244010 - DONGES",
+          "category": "1244010 - DONGES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "6A"
+        },
+        {
+          "name": "CADORET Romuald",
+          "club": "1244010 - DONGES",
+          "category": "1244010 - DONGES",
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "6B"
+        },
+        {
+          "name": "CHIRON Celine",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "6C"
+        },
+        {
+          "name": "COUPARD Anael",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "10A"
+        },
+        {
+          "name": "COUPARD Anael",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Femme Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "CROIZARD Aidan",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "U18 Homme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "DANES Agathe",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U18 Femme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "DEBIAIS Claude",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": "5B"
+        },
+        {
+          "name": "DEBIAIS Claudine",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Femme Arc Classique National",
+          "target": "5C"
+        },
+        {
+          "name": "DELAMOTTE Maeva",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U13 Femme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "DELAMOTTE Maeva",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U13 Femme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "DESEMERY Alexandre",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "Arc Classique Senior 2 Hommes",
+          "target": "9A"
+        },
+        {
+          "name": "DESEMERY Alexandre",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "S2 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "DEVAUX Laura",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U18 Femme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "DULIN Nicolas",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "FRAY Aurelie",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Femme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "FRAY Aurelie",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Senior 1 Femmes",
+          "target": "9B"
+        },
+        {
+          "name": "GAUTHO Aouregan",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "S1 Femme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "HOGUIN Lise",
+          "club": "0335073 - LIFFRE",
+          "category": "0335073 - LIFFRE",
+          "session": "S1 Femme Arc à Poulies National",
+          "target": "5C"
+        },
+        {
+          "name": "HOGUIN Lise",
+          "club": "0335073 - LIFFRE",
+          "category": "0335073 - LIFFRE",
+          "session": "Arc à Poulies Senior 1 Femmes National",
+          "target": "5C"
+        },
+        {
+          "name": "HUAUME Elen",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "U21 Femme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "LALLOUE Tiffenn",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "S1 Femme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "LE BARS Antoine",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "S1 Homme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "LE MANAC'H Florence",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "10A"
+        },
+        {
+          "name": "LE MANAC'H Florence",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S2 Femme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "LE MANAC'H Noah",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U13 Homme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "LE MANAC'H Noah",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "Arc Classique U13 Hommes",
+          "target": "3B"
+        },
+        {
+          "name": "LE VIAVANT Gwen",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "LEMOINE Raphael",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "Arc Classique U13 Hommes",
+          "target": "3A"
+        },
+        {
+          "name": "LEMOINE Raphael",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "U13 Homme Arc Classique",
+          "target": "3B"
+        },
+        {
+          "name": "LESOURD Jean",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S3 Homme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "LORCY Christophe",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "5A"
+        },
+        {
+          "name": "LORCY Christophe",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "Arc Nu Senior 2 Hommes National",
+          "target": "5A"
+        },
+        {
+          "name": "MAHEAS Gabin",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U15 Homme Arc Classique",
+          "target": "4B"
+        },
+        {
+          "name": "MAHEAS Louis",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U18 Homme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "MILLINER Michel",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "7A"
+        },
+        {
+          "name": "MOREL Eric",
+          "club": "0335080 - CHAVAGNE",
+          "category": "0335080 - CHAVAGNE",
+          "session": "S3 Homme Arc Classique",
+          "target": "8B"
+        },
+        {
+          "name": "PEDRON Maxime",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "PENDU Thais",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "U21 Femme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "PENNETIER Gregory",
+          "club": "0878132 - MONTIGNY LE BRETONNEUX",
+          "category": "0878132 - MONTIGNY LE BRETONNEUX",
+          "session": "S1 Homme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "PILLON Thibaut",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "PILLON Thibaut",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "9C"
+        },
+        {
+          "name": "PIQUET Romain",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "10C"
+        },
+        {
+          "name": "PIQUET Romain",
+          "club": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "category": "0950057 - ASAM CHERBOURG-OCTEVILLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "RAIMBAULT Thomas",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "S1 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "ROTROU Anne Marie",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "Arc à Poulies Senior 3 Femmes National",
+          "target": "5B"
+        },
+        {
+          "name": "ROTROU Anne Marie",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "Arc à Poulies Senior 3 Femmes",
+          "target": "6A"
+        },
+        {
+          "name": "ROTROU Anne Marie",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "S3 Femme Arc à Poulies",
+          "target": "6C"
+        },
+        {
+          "name": "TREMAUDANT Pascal",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Nu Senior 3 Hommes National",
+          "target": "5A"
+        },
+        {
+          "name": "TREMAUDANT Pascal",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "5B"
+        },
+        {
+          "name": "TREVILLY Margot",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "S1 Femme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "VERZIER-ROUSSON Iewan",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Homme Arc Classique",
+          "target": "9C"
+        }
+      ]
     },
     {
       "to_id": "28632",
@@ -67014,7 +68366,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28268",
       "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 31,
+      "entries_count": 35,
       "entries": [
         {
           "name": "ARANDA Joseph",
@@ -67171,11 +68523,32 @@
           "target": "2A"
         },
         {
+          "name": "MICHELOTTI Michel",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
           "name": "MIGNON Jerome",
           "club": "1131091 - MURET",
           "category": "1131091 - MURET",
           "session": "U18 Homme Arc Classique",
           "target": "2E"
+        },
+        {
+          "name": "MOREL Marc",
+          "club": "0914018 - ARGENCES",
+          "category": "0914018 - ARGENCES",
+          "session": "Senior Homme Arc Nu",
+          "target": "1C"
+        },
+        {
+          "name": "MOREL Marc",
+          "club": "0914018 - ARGENCES",
+          "category": "0914018 - ARGENCES",
+          "session": "Senior Homme Arc Nu",
+          "target": "1D"
         },
         {
           "name": "MOUYNET Valerie",
@@ -67197,6 +68570,13 @@
           "category": "1131072 - L'UNION",
           "session": "U18 Homme Arc à Poulies",
           "target": "2C"
+        },
+        {
+          "name": "PAES Christian",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1B"
         },
         {
           "name": "POUILLY Franck",
