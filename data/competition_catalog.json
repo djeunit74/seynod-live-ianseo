@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-17T07:34:13.508612+00:00",
+  "generated_at_utc": "2026-06-17T12:17:23.512227+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27217",
       "ena_url": "https://www.ianseo.net/TourData/2026/27217/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27217/IC.php",
-      "entries_count": 268,
+      "entries_count": 267,
       "entries": [
         {
           "name": "ADAM Olympe",
@@ -573,13 +573,6 @@
           "target": "10C"
         },
         {
-          "name": "DEVAUX Laura",
-          "club": "0335067 - RENNES CIE",
-          "category": "0335067 - RENNES CIE",
-          "session": "Scratch Femme Arc Classique",
-          "target": "13A"
-        },
-        {
           "name": "DIOMBO Esmei Anne Marcelle",
           "club": "1130041 - NIMES",
           "category": "1130041 - NIMES",
@@ -860,6 +853,13 @@
           "target": "36C"
         },
         {
+          "name": "GUTHERTZ Maxence",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "Scratch Homme Arc Classique",
+          "target": "15B"
+        },
+        {
           "name": "HARMAND Maxence",
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
@@ -1026,13 +1026,6 @@
           "category": "0437083 - ST AVERTIN",
           "session": "Scratch Femme Arc Classique",
           "target": "2B"
-        },
-        {
-          "name": "LAFARGUETTE Loris",
-          "club": "0891175 - DRAVEIL SENART",
-          "category": "0891175 - DRAVEIL SENART",
-          "session": "Scratch Homme Arc Classique",
-          "target": "15B"
         },
         {
           "name": "LALLEMANT Julien",
@@ -1550,7 +1543,7 @@
           "club": "3597022 - SAINT DENIS DE LA REUNION",
           "category": "3597022 - SAINT DENIS DE LA REUNION",
           "session": "Scratch Femme Arc Classique",
-          "target": "25B"
+          "target": "13A"
         },
         {
           "name": "RENAUD Eva",
@@ -69893,7 +69886,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28268",
       "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 35,
+      "entries_count": 36,
       "entries": [
         {
           "name": "ARANDA Joseph",
@@ -70034,6 +70027,13 @@
           "category": "1182219 - CASTELSARRASIN",
           "session": "U18 Homme Arc à Poulies",
           "target": "1A"
+        },
+        {
+          "name": "LORENTE Cyril",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2D"
         },
         {
           "name": "MARTIN Marie",
