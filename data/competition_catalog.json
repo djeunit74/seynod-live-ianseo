@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-17T18:42:22.281385+00:00",
+  "generated_at_utc": "2026-06-17T21:07:29.612593+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -70435,7 +70435,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28206",
       "ena_url": "https://www.ianseo.net/TourData/2026/28206/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28206/IC.php",
-      "entries_count": 19,
+      "entries_count": 24,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -70443,6 +70443,13 @@
           "category": "0877033 - ARCHERS DE SAINT MARD",
           "session": "Senior 3 Femme Arc Classique",
           "target": "1D"
+        },
+        {
+          "name": "ADANDE Mona Stella",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "U15 Femme Arc Classique",
+          "target": "1B"
         },
         {
           "name": "AUBRY Gilles",
@@ -70463,7 +70470,7 @@
           "club": "0760158 - CIE ARC DE BETHISY",
           "category": "0760158 - CIE ARC DE BETHISY",
           "session": "Senior Homme Arc Droit",
-          "target": "1B"
+          "target": "2A"
         },
         {
           "name": "CLEMENT Jerome",
@@ -70471,6 +70478,20 @@
           "category": "0895275 - CIE ARC MONTMORENCY",
           "session": "Senior Homme Arc Droit",
           "target": "2A"
+        },
+        {
+          "name": "COURTEILLE Emmanuel",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Senior Homme Arc Droit",
+          "target": "1C"
+        },
+        {
+          "name": "COURTEILLE Kerian",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "U13 Homme Arc Classique",
+          "target": "1A"
         },
         {
           "name": "DEBETZ Samuel",
@@ -70498,7 +70519,7 @@
           "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior 2 Homme Arc Classique",
-          "target": "1C"
+          "target": "2B"
         },
         {
           "name": "LANOIS Julien",
@@ -70512,7 +70533,7 @@
           "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior 2 Homme Arc à Poulies",
-          "target": "1A"
+          "target": "1B"
         },
         {
           "name": "LEJEUNE Philippe",
@@ -70527,6 +70548,20 @@
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 2 Femme Arc Classique",
           "target": "1B"
+        },
+        {
+          "name": "PAGE Julya",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "U15 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "PAGE Steve",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "Senior 1 Homme Arc Classique",
+          "target": "2D"
         },
         {
           "name": "POTTIER-LANOIS Delphine",
@@ -70547,7 +70582,7 @@
           "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior 2 Homme Arc Classique",
-          "target": "1D"
+          "target": "2C"
         },
         {
           "name": "VAN AUDEKERK Arnaud",
@@ -70926,7 +70961,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28823",
       "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
-      "entries_count": 8,
+      "entries_count": 9,
       "entries": [
         {
           "name": "AMIARD Cedric",
@@ -70962,6 +70997,13 @@
           "category": "0893240 - PANTIN",
           "session": "Arc Classique Senior 2 Femme",
           "target": "2C"
+        },
+        {
+          "name": "MACQUET Jean Francois",
+          "club": "0877069 - MITRY MORY",
+          "category": "0877069 - MITRY MORY",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": ""
         },
         {
           "name": "MILLON Sandrine",
