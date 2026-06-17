@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-17T12:17:23.512227+00:00",
+  "generated_at_utc": "2026-06-17T16:12:30.554026+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -69221,8 +69221,730 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28502",
       "ena_url": "https://www.ianseo.net/TourData/2026/28502/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28502/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 103,
+      "entries": [
+        {
+          "name": "ALOUI Karim",
+          "club": "0169171 - SAINTE FOY LES LYON",
+          "category": "0169171 - SAINTE FOY LES LYON",
+          "session": "Fédéral Homme Arc Classique National",
+          "target": "13B"
+        },
+        {
+          "name": "AUDOUYS Romuald",
+          "club": "1244041 - VERTOU",
+          "category": "1244041 - VERTOU",
+          "session": "Open Homme Arc Classique",
+          "target": "20A"
+        },
+        {
+          "name": "AYMONIN Cyrielle",
+          "club": "0289106 - ST MARTIN DU TERTRE",
+          "category": "0289106 - ST MARTIN DU TERTRE",
+          "session": "Fédéral Femme Arc Classique National",
+          "target": "11A"
+        },
+        {
+          "name": "BAILLARGEAUX Francis",
+          "club": "0437075 - ST CYR SUR LOIRE",
+          "category": "0437075 - ST CYR SUR LOIRE",
+          "session": "Fédéral Homme Arc à Poulies National",
+          "target": "17A"
+        },
+        {
+          "name": "BALESTIC Kevin",
+          "club": "1064163 - BIARRITZ",
+          "category": "1064163 - BIARRITZ",
+          "session": "Critérium Arc Classique National",
+          "target": "2A"
+        },
+        {
+          "name": "BANSEPT Pascal",
+          "club": "0654073 - NANCY",
+          "category": "0654073 - NANCY",
+          "session": "Open Homme Arc à Poulies",
+          "target": "11A"
+        },
+        {
+          "name": "BARBE Tiya",
+          "club": "1244024 - ST NAZAIRE",
+          "category": "1244024 - ST NAZAIRE",
+          "session": "Open et Fédéral Jeune National",
+          "target": "8A"
+        },
+        {
+          "name": "BAUDRIT Eric",
+          "club": "0437092 - JOUE LES TOURS",
+          "category": "0437092 - JOUE LES TOURS",
+          "session": "Fédéral Homme Arc Classique",
+          "target": "21B"
+        },
+        {
+          "name": "BERTONCINI Florent",
+          "club": "0762272 - COULOGNE",
+          "category": "0762272 - COULOGNE",
+          "session": "Fédéral Homme Arc à Poulies National",
+          "target": "18A"
+        },
+        {
+          "name": "BOMMART Sylvain",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Open Homme Arc à Poulies",
+          "target": "11B"
+        },
+        {
+          "name": "BONTEMPS Herve",
+          "club": "0877040 - SAINT GERMAIN SUR MORIN",
+          "category": "0877040 - SAINT GERMAIN SUR MORIN",
+          "session": "Open Homme Arc Classique",
+          "target": "17B"
+        },
+        {
+          "name": "BOULARD Aurelien",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "Open Homme Arc Classique",
+          "target": "18A"
+        },
+        {
+          "name": "CAMOU Frederic",
+          "club": "1064163 - BIARRITZ",
+          "category": "1064163 - BIARRITZ",
+          "session": "Fédéral Homme Arc Classique",
+          "target": "22A"
+        },
+        {
+          "name": "CAMUS Leo",
+          "club": "0322015 - PORDIC",
+          "category": "0322015 - PORDIC",
+          "session": "Open et Fédéral Jeune National",
+          "target": "8B"
+        },
+        {
+          "name": "CARVILLOT MEYER Gwenaelle",
+          "club": "0891146 - EGLY",
+          "category": "0891146 - EGLY",
+          "session": "Open et Fédéral Jeune National",
+          "target": "9B"
+        },
+        {
+          "name": "CASTELL Morgane",
+          "club": "1131093 - BALMA",
+          "category": "1131093 - BALMA",
+          "session": "Open Femme Arc Classique",
+          "target": "15A"
+        },
+        {
+          "name": "CHAGUE Edmond",
+          "club": "1064163 - BIARRITZ",
+          "category": "1064163 - BIARRITZ",
+          "session": "HV Libre Arc Classique National",
+          "target": "5B"
+        },
+        {
+          "name": "CIMETIERE Thierry",
+          "club": "1017039 - LA ROCHELLE",
+          "category": "1017039 - LA ROCHELLE",
+          "session": "Fédéral Homme Arc à Poulies National",
+          "target": "19A"
+        },
+        {
+          "name": "CORBEC Coralie",
+          "club": "1131071 - SAINT GAUDENS",
+          "category": "1131071 - SAINT GAUDENS",
+          "session": "Support 2 Arc Classique National",
+          "target": "2A"
+        },
+        {
+          "name": "CRATERE Marc Andre",
+          "club": "0927046 - VERNON CIE",
+          "category": "0927046 - VERNON CIE",
+          "session": "Open Homme Arc à Poulies",
+          "target": "10B"
+        },
+        {
+          "name": "DARNAULT Sylvain",
+          "club": "0437083 - ST AVERTIN",
+          "category": "0437083 - ST AVERTIN",
+          "session": "Fédéral Homme Arc Classique National",
+          "target": "14A"
+        },
+        {
+          "name": "DAVID Sebastien",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "Fédéral Homme Arc à Poulies",
+          "target": "13A"
+        },
+        {
+          "name": "DELESTRE Dylan",
+          "club": "0760205 - NOGENT SUR OISE",
+          "category": "0760205 - NOGENT SUR OISE",
+          "session": "Critérium Arc Classique National",
+          "target": "3A"
+        },
+        {
+          "name": "DESRUTIN Clemence",
+          "club": "0894264 - VINCENNES",
+          "category": "0894264 - VINCENNES",
+          "session": "Fédéral Femme Arc Classique National",
+          "target": "12B"
+        },
+        {
+          "name": "DHENNIN Thibault",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "Open Homme Arc Classique National",
+          "target": "13A"
+        },
+        {
+          "name": "DRAME Aliou",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Open Homme Arc à Poulies",
+          "target": "9A"
+        },
+        {
+          "name": "DUFAYS Antony",
+          "club": "0418015 - BOURGES 1ERE",
+          "category": "0418015 - BOURGES 1ERE",
+          "session": "Critérium Arc à Poulies National",
+          "target": "5A"
+        },
+        {
+          "name": "DUPONT Steven",
+          "club": "0329026 - QUIMPERLE",
+          "category": "0329026 - QUIMPERLE",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "19A"
+        },
+        {
+          "name": "ESTEVE Benoit",
+          "club": "1111008 - CARCASSONNE",
+          "category": "1111008 - CARCASSONNE",
+          "session": "Fédéral Homme Arc Classique",
+          "target": "22B"
+        },
+        {
+          "name": "FAVIER Axel",
+          "club": "0654212 - HEILLECOURT",
+          "category": "0654212 - HEILLECOURT",
+          "session": "Support 2 Arc Classique National",
+          "target": "3A"
+        },
+        {
+          "name": "FLORINEDA Pascal",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "21A"
+        },
+        {
+          "name": "FONTAINE Emie",
+          "club": "0877054 - LE MEE SUR SEINE",
+          "category": "0877054 - LE MEE SUR SEINE",
+          "session": "Critérium Arc Classique National",
+          "target": "1B"
+        },
+        {
+          "name": "FOURNIER Arnaud",
+          "club": "0138095 - VOIRON",
+          "category": "0138095 - VOIRON",
+          "session": "Open Homme Arc Classique National",
+          "target": "12B"
+        },
+        {
+          "name": "FOURNIER Laurent",
+          "club": "1111008 - CARCASSONNE",
+          "category": "1111008 - CARCASSONNE",
+          "session": "Fédéral Homme Arc Classique National",
+          "target": "16A"
+        },
+        {
+          "name": "GERARDIN Christophe",
+          "club": "1130041 - NIMES",
+          "category": "1130041 - NIMES",
+          "session": "HV Libre Arc à Poulies National",
+          "target": "7B"
+        },
+        {
+          "name": "GETREAU David",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "Fédéral Homme Arc Classique",
+          "target": "23A"
+        },
+        {
+          "name": "GILBERT Marianne",
+          "club": "1064215 - LES ARCHERS DU LABOURD",
+          "category": "1064215 - LES ARCHERS DU LABOURD",
+          "session": "Challenge Arc Classique National",
+          "target": "7A"
+        },
+        {
+          "name": "GILBERT Stephane",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "Open Homme Arc à Poulies",
+          "target": "8B"
+        },
+        {
+          "name": "GIRAUD Christophe",
+          "club": "0878139 - LES MUREAUX",
+          "category": "0878139 - LES MUREAUX",
+          "session": "Open Homme Arc Classique",
+          "target": "19A"
+        },
+        {
+          "name": "GIRAUD Valentin",
+          "club": "1086196 - LUSIGNAN",
+          "category": "1086196 - LUSIGNAN",
+          "session": "Open Homme Arc Classique",
+          "target": "20B"
+        },
+        {
+          "name": "GUERIN Gaetan",
+          "club": "1285121 - MONTAIGU",
+          "category": "1285121 - MONTAIGU",
+          "session": "Fédéral Homme Arc Classique National",
+          "target": "16B"
+        },
+        {
+          "name": "GUIGNET Patrick",
+          "club": "0893227 - GAGNY",
+          "category": "0893227 - GAGNY",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "18B"
+        },
+        {
+          "name": "GUILLOU Emmanuel",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "Fédéral Homme Arc Classique",
+          "target": "21A"
+        },
+        {
+          "name": "HABRAN Franck",
+          "club": "0877042 - ESBLY",
+          "category": "0877042 - ESBLY",
+          "session": "Fédéral Homme Arc à Poulies National",
+          "target": "18B"
+        },
+        {
+          "name": "HAUDOIN Franck",
+          "club": "1249047 - CANDE",
+          "category": "1249047 - CANDE",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "19B"
+        },
+        {
+          "name": "HIVERT Isabelle",
+          "club": "1033100 - AMBARES",
+          "category": "1033100 - AMBARES",
+          "session": "HV1",
+          "target": "3A"
+        },
+        {
+          "name": "HORNER Philippe",
+          "club": "0668173 - STE CROIX ARC CLUB",
+          "category": "0668173 - STE CROIX ARC CLUB",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "17B"
+        },
+        {
+          "name": "JOURDIN Hubert",
+          "club": "0895299 - MONTIGNY LES CORMEILLES",
+          "category": "0895299 - MONTIGNY LES CORMEILLES",
+          "session": "Open Homme Arc Classique National",
+          "target": "15A"
+        },
+        {
+          "name": "JULIEN Mickael",
+          "club": "1033080 - BEGLES",
+          "category": "1033080 - BEGLES",
+          "session": "Fédéral Homme Arc Classique National",
+          "target": "15A"
+        },
+        {
+          "name": "LACASSAGNE Jean-Francois",
+          "club": "1249068 - DAUMERAY",
+          "category": "1249068 - DAUMERAY",
+          "session": "Open Homme Arc Classique National",
+          "target": "16A"
+        },
+        {
+          "name": "LADOUCETTE Sophie",
+          "club": "0651050 - SUIPPES",
+          "category": "0651050 - SUIPPES",
+          "session": "Open Femme Arc Classique",
+          "target": "14B"
+        },
+        {
+          "name": "LALIN Florent",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "Fédéral Homme Arc à Poulies",
+          "target": "13B"
+        },
+        {
+          "name": "LE BESNERAIS Michel",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "HV1",
+          "target": "1A"
+        },
+        {
+          "name": "LEBRE Olivier",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "HV Libre Arc Classique National",
+          "target": "6A"
+        },
+        {
+          "name": "LEFORT Leo",
+          "club": "0610023 - ROMILLY SUR SEINE",
+          "category": "0610023 - ROMILLY SUR SEINE",
+          "session": "Open et Fédéral Jeune National",
+          "target": "9A"
+        },
+        {
+          "name": "LELGOUACH Stephane",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "HV1",
+          "target": "2A"
+        },
+        {
+          "name": "LELOU Daniel",
+          "club": "1249050 - CHOLET TAC",
+          "category": "1249050 - CHOLET TAC",
+          "session": "Open Homme Arc à Poulies",
+          "target": "10A"
+        },
+        {
+          "name": "LEMAITRE Laurence",
+          "club": "0654212 - HEILLECOURT",
+          "category": "0654212 - HEILLECOURT",
+          "session": "Support 2 Arc Classique National",
+          "target": "4A"
+        },
+        {
+          "name": "LEPETIT Emilie",
+          "club": "0322015 - PORDIC",
+          "category": "0322015 - PORDIC",
+          "session": "Open Femme Arc Classique",
+          "target": "14A"
+        },
+        {
+          "name": "LEQUERTIER Patrick",
+          "club": "0418001 - BOURGES AC",
+          "category": "0418001 - BOURGES AC",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "20B"
+        },
+        {
+          "name": "LESBARRERES Jacques",
+          "club": "1040124 - DAX",
+          "category": "1040124 - DAX",
+          "session": "HV1",
+          "target": "3B"
+        },
+        {
+          "name": "LETULLE Damien",
+          "club": "1244009 - CARQUEFOU",
+          "category": "1244009 - CARQUEFOU",
+          "session": "W1",
+          "target": "5A"
+        },
+        {
+          "name": "LOISY Rose-Marie",
+          "club": "0169179 - VILLEURBANNE CIE HERACLES",
+          "category": "0169179 - VILLEURBANNE CIE HERACLES",
+          "session": "Fédéral Femme Arc Classique National",
+          "target": "12A"
+        },
+        {
+          "name": "LOURENCO Arnaud",
+          "club": "1040124 - DAX",
+          "category": "1040124 - DAX",
+          "session": "Challenge Arc Classique National",
+          "target": "7B"
+        },
+        {
+          "name": "LUC Jean-Rene",
+          "club": "0760205 - NOGENT SUR OISE",
+          "category": "0760205 - NOGENT SUR OISE",
+          "session": "Challenge Arc Classique National",
+          "target": "6B"
+        },
+        {
+          "name": "MAISONS Gregory",
+          "club": "0878106 - ROCQUENCOURT",
+          "category": "0878106 - ROCQUENCOURT",
+          "session": "Open Homme Arc Classique National",
+          "target": "14A"
+        },
+        {
+          "name": "MAITIA Atonia",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "Open Arc à Poulies Senior 3 Hommes",
+          "target": "12B"
+        },
+        {
+          "name": "MEOULLE Laure",
+          "club": "1040124 - DAX",
+          "category": "1040124 - DAX",
+          "session": "HV Libre Arc Classique National",
+          "target": "5A"
+        },
+        {
+          "name": "MERCIER Jerome",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "Fédéral Homme Arc Classique",
+          "target": "23B"
+        },
+        {
+          "name": "MEUNIER Fabrice",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "Open Homme Arc Classique",
+          "target": "17A"
+        },
+        {
+          "name": "MILLOT Valerie",
+          "club": "0892205 - LE PLESSIS ROBINSON",
+          "category": "0892205 - LE PLESSIS ROBINSON",
+          "session": "Fédéral Femme Arc Classique",
+          "target": "16A"
+        },
+        {
+          "name": "MORELLE Benjamin",
+          "club": "0445125 - FLEURY-SARAN",
+          "category": "0445125 - FLEURY-SARAN",
+          "session": "Challenge Arc Classique National",
+          "target": "6A"
+        },
+        {
+          "name": "MUNOZ Herve",
+          "club": "0169193 - RILLIEUX",
+          "category": "0169193 - RILLIEUX",
+          "session": "Open Homme Arc Classique National",
+          "target": "13B"
+        },
+        {
+          "name": "NIETO David",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Open Homme Arc à Poulies",
+          "target": "8A"
+        },
+        {
+          "name": "NSEKE BEKOMBO Soline",
+          "club": "0914024 - CARPIQUET",
+          "category": "0914024 - CARPIQUET",
+          "session": "HV2-3",
+          "target": "4A"
+        },
+        {
+          "name": "PALLAS Kevin",
+          "club": "1033100 - AMBARES",
+          "category": "1033100 - AMBARES",
+          "session": "Fédéral Homme Arc Classique National",
+          "target": "15B"
+        },
+        {
+          "name": "PERE Fabien",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
+          "session": "Open Homme Arc Classique",
+          "target": "19B"
+        },
+        {
+          "name": "PEREZ Alain",
+          "club": "1249056 - ANGERS",
+          "category": "1249056 - ANGERS",
+          "session": "Open Homme Arc Classique National",
+          "target": "15B"
+        },
+        {
+          "name": "PERRIN Mathieu",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "Open Homme Arc à Poulies",
+          "target": "9B"
+        },
+        {
+          "name": "PERROT Xavier",
+          "club": "1131093 - BALMA",
+          "category": "1131093 - BALMA",
+          "session": "Open Homme Arc Classique National",
+          "target": "14B"
+        },
+        {
+          "name": "PIAT Jerome",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Open Homme Arc Classique National",
+          "target": "16B"
+        },
+        {
+          "name": "PIMOR Olivier",
+          "club": "0418015 - BOURGES 1ERE",
+          "category": "0418015 - BOURGES 1ERE",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "17A"
+        },
+        {
+          "name": "PORCHER Laetitia",
+          "club": "0891162 - STE GENEVIEVE DES BOIS",
+          "category": "0891162 - STE GENEVIEVE DES BOIS",
+          "session": "Critérium Arc Classique National",
+          "target": "1A"
+        },
+        {
+          "name": "PREMEL-CABIC Monique",
+          "club": "0877060 - FONTAINEBLEAU",
+          "category": "0877060 - FONTAINEBLEAU",
+          "session": "Open Femme Arc Classique",
+          "target": "15B"
+        },
+        {
+          "name": "QUILLENT Christophe",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "18A"
+        },
+        {
+          "name": "RAHARINJATOVO Alain",
+          "club": "0914024 - CARPIQUET",
+          "category": "0914024 - CARPIQUET",
+          "session": "Support 1 Arc Classique National",
+          "target": "1A"
+        },
+        {
+          "name": "RENON Gerald",
+          "club": "0891162 - STE GENEVIEVE DES BOIS",
+          "category": "0891162 - STE GENEVIEVE DES BOIS",
+          "session": "Critérium Arc Classique National",
+          "target": "2B"
+        },
+        {
+          "name": "ROTROU Anne Marie",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "Fédéral Femme Arc à Poulies",
+          "target": "6A"
+        },
+        {
+          "name": "ROUILLON Richard",
+          "club": "0688207 - VITTEL",
+          "category": "0688207 - VITTEL",
+          "session": "Open Homme Arc Classique National",
+          "target": "12A"
+        },
+        {
+          "name": "ROULE Didier",
+          "club": "0894252 - L'HAY LES ROSES",
+          "category": "0894252 - L'HAY LES ROSES",
+          "session": "HV1",
+          "target": "2B"
+        },
+        {
+          "name": "SADEK Florent",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "Fédéral Homme Arc à Poulies National",
+          "target": "19B"
+        },
+        {
+          "name": "SCHMIDT Stephanie",
+          "club": "0138095 - VOIRON",
+          "category": "0138095 - VOIRON",
+          "session": "HV Libre Arc à Poulies National",
+          "target": "7A"
+        },
+        {
+          "name": "SORBIER Xavier",
+          "club": "0894249 - CHEVILLY LARUE",
+          "category": "0894249 - CHEVILLY LARUE",
+          "session": "HV1",
+          "target": "1B"
+        },
+        {
+          "name": "TEUIAU Raiarii",
+          "club": "0892206 - ANTONY",
+          "category": "0892206 - ANTONY",
+          "session": "Open Arc à Poulies Senior 1 Hommes",
+          "target": "12A"
+        },
+        {
+          "name": "TOURRETTE Emilie",
+          "club": "0270065 - LURE",
+          "category": "0270065 - LURE",
+          "session": "Open Femme Arc à Poulies National",
+          "target": "11B"
+        },
+        {
+          "name": "TUAL Sebastien",
+          "club": "0437091 - TOURS US",
+          "category": "0437091 - TOURS US",
+          "session": "Fédéral Homme Arc à Poulies National",
+          "target": "17B"
+        },
+        {
+          "name": "TUPPER Steven",
+          "club": "0892205 - LE PLESSIS ROBINSON",
+          "category": "0892205 - LE PLESSIS ROBINSON",
+          "session": "Fédéral Homme Arc Classique National",
+          "target": "14B"
+        },
+        {
+          "name": "VILATTE Lada",
+          "club": "0289107 - BRIENON/ARMANCON",
+          "category": "0289107 - BRIENON/ARMANCON",
+          "session": "Open Femme Arc à Poulies",
+          "target": "6B"
+        },
+        {
+          "name": "VINES Latifa",
+          "club": "1244002 - ST HERBLAIN",
+          "category": "1244002 - ST HERBLAIN",
+          "session": "HV2-3",
+          "target": "4B"
+        },
+        {
+          "name": "VINSON Charlotte",
+          "club": "0173227 - ALBERTVILLE",
+          "category": "0173227 - ALBERTVILLE",
+          "session": "Open Femme Arc à Poulies",
+          "target": "7A"
+        },
+        {
+          "name": "WILLEKENS Frederic",
+          "club": "1285142 - STAC",
+          "category": "1285142 - STAC",
+          "session": "Open Homme Arc à Poulies National",
+          "target": "20A"
+        },
+        {
+          "name": "ZAMBONETTI Kevin",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "Fédéral Homme Arc Classique National",
+          "target": "13A"
+        },
+        {
+          "name": "ZELGHIN Jennifer",
+          "club": "0445130 - COURTENAY",
+          "category": "0445130 - COURTENAY",
+          "session": "Open Femme Arc Classique National",
+          "target": "11A"
+        }
+      ]
     },
     {
       "to_id": "28506",
