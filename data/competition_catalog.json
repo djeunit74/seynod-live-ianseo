@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-18T05:18:00.702406+00:00",
+  "generated_at_utc": "2026-06-18T09:55:10.715095+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27217",
       "ena_url": "https://www.ianseo.net/TourData/2026/27217/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27217/IC.php",
-      "entries_count": 267,
+      "entries_count": 266,
       "entries": [
         {
           "name": "ADAM Olympe",
@@ -1481,13 +1481,6 @@
           "category": "0895293 - SARCELLES",
           "session": "Arc Classique Senior 2 Homme",
           "target": "20C"
-        },
-        {
-          "name": "POUPHILE David",
-          "club": "0221014 - DIJON",
-          "category": "0221014 - DIJON",
-          "session": "Scratch Homme Arc à Poulies",
-          "target": "40C"
         },
         {
           "name": "POURRIER Pauline",
