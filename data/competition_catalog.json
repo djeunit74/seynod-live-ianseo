@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-18T09:55:10.715095+00:00",
+  "generated_at_utc": "2026-06-18T12:53:16.307585+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27217",
       "ena_url": "https://www.ianseo.net/TourData/2026/27217/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27217/IC.php",
-      "entries_count": 266,
+      "entries_count": 265,
       "entries": [
         {
           "name": "ADAM Olympe",
@@ -417,13 +417,6 @@
           "category": "1166191 - PERPIGNAN",
           "session": "Arc Classique Senior 1 Femme",
           "target": "22B"
-        },
-        {
-          "name": "CHESSE Joanna",
-          "club": "0893225 - NEUILLY SUR MARNE",
-          "category": "0893225 - NEUILLY SUR MARNE",
-          "session": "Scratch Femme Arc à Poulies",
-          "target": "39A"
         },
         {
           "name": "CHIRAULT Thomas",
@@ -832,13 +825,6 @@
           "target": "9A"
         },
         {
-          "name": "GRILLAT Nathan",
-          "club": "1130041 - NIMES",
-          "category": "1130041 - NIMES",
-          "session": "Scratch Homme Arc Classique",
-          "target": "6B"
-        },
-        {
           "name": "GUEDJ Aurelie",
           "club": "1016003 - RUELLE SUR TOUVRE",
           "category": "1016003 - RUELLE SUR TOUVRE",
@@ -1208,6 +1194,13 @@
           "category": "0335065 - DOMLOUP",
           "session": "Arc Classique Senior 1 Homme",
           "target": "21B"
+        },
+        {
+          "name": "MALGERARD Isabelle",
+          "club": "0893225 - NEUILLY SUR MARNE",
+          "category": "0893225 - NEUILLY SUR MARNE",
+          "session": "Scratch Femme Arc à Poulies",
+          "target": ""
         },
         {
           "name": "MANGELLE Mateo",
