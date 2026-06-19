@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-19T18:17:16.396963+00:00",
+  "generated_at_utc": "2026-06-19T20:15:52.549159+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3480,7 +3480,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28458",
       "ena_url": "https://www.ianseo.net/TourData/2026/28458/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28458/IC.php",
-      "entries_count": 218,
+      "entries_count": 215,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -3565,13 +3565,6 @@
           "category": "0877040 - SAINT GERMAIN SUR MORIN",
           "session": "U18 Femme Arc Classique",
           "target": "18C"
-        },
-        {
-          "name": "AUCEJO Gabrielle",
-          "club": "0878124 - CARRIERES SUR SEINE",
-          "category": "0878124 - CARRIERES SUR SEINE",
-          "session": "U15 Femme Arc Classique",
-          "target": "10A"
         },
         {
           "name": "BACHELET Hugues",
@@ -4141,13 +4134,6 @@
           "target": "22D"
         },
         {
-          "name": "FLEURANCE Jean-Yves",
-          "club": "0878132 - MONTIGNY LE BRETONNEUX",
-          "category": "0878132 - MONTIGNY LE BRETONNEUX",
-          "session": "S3 Homme Arc Classique",
-          "target": "36C"
-        },
-        {
           "name": "FOCKE Sybren",
           "club": "0891152 - MORSANG SUR ORGE",
           "category": "0891152 - MORSANG SUR ORGE",
@@ -4383,7 +4369,7 @@
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
           "session": "U15 Femme Arc Classique",
-          "target": "11D"
+          "target": "11C"
         },
         {
           "name": "LAMBERT David",
@@ -4404,7 +4390,7 @@
           "club": "0877042 - ESBLY",
           "category": "0877042 - ESBLY",
           "session": "U15 Femme Arc Classique",
-          "target": "10B"
+          "target": "10A"
         },
         {
           "name": "LE CLERCQ Alexandre",
@@ -4474,7 +4460,7 @@
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
           "session": "U15 Femme Arc Classique",
-          "target": "11A"
+          "target": "10C"
         },
         {
           "name": "LESSEUX Romain",
@@ -4544,7 +4530,7 @@
           "club": "0891156 - ORSAY",
           "category": "0891156 - ORSAY",
           "session": "U15 Femme Arc Classique",
-          "target": "10C"
+          "target": "10B"
         },
         {
           "name": "MAROUSE Zoe",
@@ -4685,6 +4671,13 @@
           "category": "0891175 - DRAVEIL SENART",
           "session": "U21 Femme Arc Classique",
           "target": "6B"
+        },
+        {
+          "name": "PEETERS Camille",
+          "club": "0892191 - CHAVILLE",
+          "category": "0892191 - CHAVILLE",
+          "session": "U15 Femme Arc Classique",
+          "target": "11D"
         },
         {
           "name": "PELTIER LEGROS Esteban",
@@ -4841,13 +4834,6 @@
           "target": "26A"
         },
         {
-          "name": "SCHNEIDER Florent",
-          "club": "0878114 - BUC",
-          "category": "0878114 - BUC",
-          "session": "S2 Homme Arc Classique",
-          "target": "17D"
-        },
-        {
           "name": "SEGONDI Odile",
           "club": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
           "category": "0892198 - SCEAUX-FONTENAY-AUX-ROSES",
@@ -4888,13 +4874,6 @@
           "category": "0894256 - CRETEIL",
           "session": "S3 Homme Arc Classique",
           "target": "36A"
-        },
-        {
-          "name": "SIMERAY Tao",
-          "club": "0878114 - BUC",
-          "category": "0878114 - BUC",
-          "session": "S1 Homme Arc Classique",
-          "target": "19A"
         },
         {
           "name": "SIMON Alexis",
@@ -4971,7 +4950,7 @@
           "club": "0891169 - MASSY",
           "category": "0891169 - MASSY",
           "session": "U15 Femme Arc Classique",
-          "target": "11C"
+          "target": "11A"
         },
         {
           "name": "VERNEUIL Marc",
