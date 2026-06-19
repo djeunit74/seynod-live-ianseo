@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-19T12:59:46.623073+00:00",
+  "generated_at_utc": "2026-06-19T16:12:14.047866+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 32,
+  "count": 33,
   "tournaments": [
     {
       "to_id": "27217",
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27217",
       "ena_url": "https://www.ianseo.net/TourData/2026/27217/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27217/IC.php",
-      "entries_count": 265,
+      "entries_count": 266,
       "entries": [
         {
           "name": "ADAM Olympe",
@@ -360,7 +360,7 @@
           "club": "0892199 - SURESNES",
           "category": "0892199 - SURESNES",
           "session": "Scratch Homme Arc à Poulies",
-          "target": "52B"
+          "target": "49B"
         },
         {
           "name": "CAIZAC Baptiste",
@@ -576,7 +576,7 @@
           "name": "DORIER Eloise",
           "club": "0271076 - MACON",
           "category": "0271076 - MACON",
-          "session": "Arc à Poulies Senior 1 Femme",
+          "session": "Scratch Femme Arc à Poulies",
           "target": "43C"
         },
         {
@@ -751,7 +751,7 @@
           "name": "GARNIER Adeline",
           "club": "0271076 - MACON",
           "category": "0271076 - MACON",
-          "session": "Arc à Poulies Senior 2 Femme",
+          "session": "Scratch Femme Arc à Poulies",
           "target": "41C"
         },
         {
@@ -773,7 +773,7 @@
           "club": "0892199 - SURESNES",
           "category": "0892199 - SURESNES",
           "session": "Scratch Homme Arc à Poulies",
-          "target": "49B"
+          "target": "52B"
         },
         {
           "name": "GERARDIN Arthur",
@@ -1749,6 +1749,13 @@
           "target": "3C"
         },
         {
+          "name": "TONNAIRE Hugo",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "0891175 - DRAVEIL SENART",
+          "session": "Scratch Homme Arc Classique",
+          "target": "28B"
+        },
+        {
           "name": "TUAL Gaetan",
           "club": "1047144 - BOE",
           "category": "1047144 - BOE",
@@ -1850,7 +1857,7 @@
           "name": "VILLELOUP Myriam",
           "club": "0271076 - MACON",
           "category": "0271076 - MACON",
-          "session": "Arc à Poulies Senior 2 Femme",
+          "session": "Scratch Femme Arc à Poulies",
           "target": "42C"
         },
         {
@@ -71026,6 +71033,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28614",
       "ena_url": "https://www.ianseo.net/TourData/2026/28614/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28614/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "28926",
+      "year": "2026",
+      "name": "Championnat Regional TAEI Grand EST 2026",
+      "organizer": "Les Archers de Marly Pournoy La Chétive Avec l'aide informatique du CD54",
+      "date_text": "5 Jul",
+      "end_date": "2026-07-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28926",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28926/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28926/IC.php",
       "entries_count": 0,
       "entries": []
     },
