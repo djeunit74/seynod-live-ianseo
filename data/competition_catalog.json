@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-20T18:55:21.503150+00:00",
+  "generated_at_utc": "2026-06-20T20:15:48.832759+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1562,8 +1562,15 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28875",
       "ena_url": "https://www.ianseo.net/TourData/2026/28875/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28875/IC.php",
-      "entries_count": 124,
+      "entries_count": 126,
       "entries": [
+        {
+          "name": "ANTONINI Christelle",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S2 Femme Arc Classique",
+          "target": "5B"
+        },
         {
           "name": "BAILLY Olivier",
           "club": "0356095 - ST AVE",
@@ -1666,7 +1673,7 @@
           "name": "BRUYÈRE Laurent",
           "club": "0356121 - AURAY",
           "category": "0356121 - AURAY",
-          "session": "S2 Homme Arc Classique National",
+          "session": "Arc Classique Senior 2 Hommes National",
           "target": "20A"
         },
         {
@@ -1715,7 +1722,7 @@
           "name": "DANES Quentin",
           "club": "0356098 - KERVIGNAC",
           "category": "0356098 - KERVIGNAC",
-          "session": "S1 Homme Arc à Poulies National",
+          "session": "Arc à Poulies Senior 1 Hommes National",
           "target": "18C"
         },
         {
@@ -1789,6 +1796,13 @@
           "target": "3A"
         },
         {
+          "name": "DESCHAMPS Antonin",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "U11 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
           "name": "DESLANDES Gwenael",
           "club": "0356098 - KERVIGNAC",
           "category": "0356098 - KERVIGNAC",
@@ -1813,7 +1827,7 @@
           "name": "ETIENNE Delphine",
           "club": "0356121 - AURAY",
           "category": "0356121 - AURAY",
-          "session": "S2 Femme Arc Classique National",
+          "session": "Arc Classique Senior 2 Femmes National",
           "target": "18B"
         },
         {
@@ -2093,7 +2107,7 @@
           "name": "LESPES Alexandre",
           "club": "1131079 - TOURNEFEUILLE",
           "category": "1131079 - TOURNEFEUILLE",
-          "session": "S1 Homme Arc Classique National",
+          "session": "Arc Classique Senior 1 Hommes National",
           "target": "19A"
         },
         {
