@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-20T08:22:50.072078+00:00",
+  "generated_at_utc": "2026-06-20T10:59:04.400870+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -66365,7 +66365,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27906",
       "ena_url": "https://www.ianseo.net/TourData/2026/27906/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27906/IC.php",
-      "entries_count": 226,
+      "entries_count": 225,
       "entries": [
         {
           "name": "AIT OUARABI Selma",
@@ -67236,13 +67236,6 @@
           "target": ""
         },
         {
-          "name": "KEROURIN Coline",
-          "club": "0437088 - CHAMBRAY LES TOURS",
-          "category": "0437088 - CHAMBRAY LES TOURS",
-          "session": "U21 Arc à Poulies",
-          "target": ""
-        },
-        {
           "name": "KHARCHOUF Mael",
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
@@ -67366,6 +67359,13 @@
           "club": "0976103 - LE HAVRE CHTA",
           "category": "0976103 - LE HAVRE CHTA",
           "session": "U21 Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "LI Hanfei",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "U18 Femme Arc Classique",
           "target": ""
         },
         {
@@ -67705,6 +67705,13 @@
           "target": ""
         },
         {
+          "name": "RAVET Gregory",
+          "club": "0173231 - CHAMBERY",
+          "category": "0173231 - CHAMBERY",
+          "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "RAVIOLA Romain",
           "club": "1306038 - NICE AC",
           "category": "1306038 - NICE AC",
@@ -67845,13 +67852,6 @@
           "target": ""
         },
         {
-          "name": "TERRAT Solea",
-          "club": "0163157 - RIOM",
-          "category": "0163157 - RIOM",
-          "session": "U18 Femme Arc Classique",
-          "target": ""
-        },
-        {
           "name": "TERRIER Margaux",
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
@@ -67898,13 +67898,6 @@
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
           "session": "U21 Femme Arc Classique",
-          "target": ""
-        },
-        {
-          "name": "TOROSSIAN Elise",
-          "club": "0441103 - VINEUIL",
-          "category": "0441103 - VINEUIL",
-          "session": "U18 Femme Arc Classique",
           "target": ""
         },
         {
