@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-21T17:05:50.087317+00:00",
+  "generated_at_utc": "2026-06-21T19:01:39.392832+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -66283,14 +66283,14 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28268",
       "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 37,
+      "entries_count": 39,
       "entries": [
         {
           "name": "ARANDA Joseph",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "U18 Homme Arc Classique",
-          "target": "1C"
+          "target": "1E"
         },
         {
           "name": "ARANDA Joseph",
@@ -66374,7 +66374,7 @@
           "club": "1109002 - PAMIERS",
           "category": "1109002 - PAMIERS",
           "session": "U18 Femme Arc Classique",
-          "target": "1E"
+          "target": "1A"
         },
         {
           "name": "DESCOURVIERES Benoit",
@@ -66419,6 +66419,13 @@
           "target": "2B"
         },
         {
+          "name": "KAHIA Cecilia",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "U18 Femme Arc Classique, U18 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
           "name": "LAURENCE Sylviane",
           "club": "1182226 - POMPIGNAN",
           "category": "1182226 - POMPIGNAN",
@@ -66458,7 +66465,7 @@
           "club": "1131097 - PECHBONNIEU",
           "category": "1131097 - PECHBONNIEU",
           "session": "U18 Homme Arc à Poulies",
-          "target": "2C"
+          "target": "2E"
         },
         {
           "name": "MIGNON Jerome",
@@ -66510,6 +66517,13 @@
           "target": "1B"
         },
         {
+          "name": "PINCEMAIL Joseph",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "U18 Homme Arc Classique",
+          "target": "2D"
+        },
+        {
           "name": "POUILLY Franck",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
@@ -66542,7 +66556,7 @@
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
           "session": "U18 Femme Arc à Poulies",
-          "target": "2D"
+          "target": "2C"
         }
       ]
     },
