@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-21T19:01:39.392832+00:00",
+  "generated_at_utc": "2026-06-21T20:52:58.224526+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -66075,7 +66075,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28206",
       "ena_url": "https://www.ianseo.net/TourData/2026/28206/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28206/IC.php",
-      "entries_count": 24,
+      "entries_count": 26,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -66201,7 +66201,7 @@
           "club": "0760224 - NANTEUIL LE HAUDOUIN",
           "category": "0760224 - NANTEUIL LE HAUDOUIN",
           "session": "Senior 1 Homme Arc Classique",
-          "target": "2D"
+          "target": "1D"
         },
         {
           "name": "POTTIER-LANOIS Delphine",
@@ -66223,6 +66223,20 @@
           "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior 2 Homme Arc Classique",
           "target": "2C"
+        },
+        {
+          "name": "VALEYRE Beatrice",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "Senior 2 Femme Arc à Poulies",
+          "target": "1E"
+        },
+        {
+          "name": "VALEYRE Sylvain",
+          "club": "0760344 - ACV",
+          "category": "0760344 - ACV",
+          "session": "Senior 2 Homme Arc à Poulies",
+          "target": "2D"
         },
         {
           "name": "VAN AUDEKERK Arnaud",
