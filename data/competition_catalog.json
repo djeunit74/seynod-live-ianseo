@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-24T19:46:44.899772+00:00",
+  "generated_at_utc": "2026-06-24T21:23:10.310585+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -4272,7 +4272,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28206",
       "ena_url": "https://www.ianseo.net/TourData/2026/28206/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28206/IC.php",
-      "entries_count": 26,
+      "entries_count": 27,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -4283,8 +4283,8 @@
         },
         {
           "name": "ADANDE Mona Stella",
-          "club": "0760224 - NANTEUIL LE HAUDOUIN",
-          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "club": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
           "session": "U15 Femme Arc Classique",
           "target": "1B"
         },
@@ -4308,6 +4308,13 @@
           "category": "0760158 - CIE ARC DE BETHISY",
           "session": "Senior Homme Arc Droit",
           "target": "2A"
+        },
+        {
+          "name": "CHRETIEN Herve",
+          "club": "0892204 - ARC CLUB BOULOGNE BILLANCOURT",
+          "category": "0892204 - ARC CLUB BOULOGNE BILLANCOURT",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": ""
         },
         {
           "name": "CLEMENT Jerome",
@@ -4377,28 +4384,28 @@
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 2 Homme Arc à Poulies",
-          "target": "1C"
+          "target": "1A"
         },
         {
           "name": "MICHAUT Aurelie",
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 2 Femme Arc Classique",
-          "target": "1B"
+          "target": "1D"
         },
         {
           "name": "PAGE Julya",
-          "club": "0760224 - NANTEUIL LE HAUDOUIN",
-          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "club": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
           "session": "U15 Femme Arc Classique",
           "target": "1C"
         },
         {
           "name": "PAGE Steve",
-          "club": "0760224 - NANTEUIL LE HAUDOUIN",
-          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "club": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
           "session": "Senior 1 Homme Arc Classique",
-          "target": "1D"
+          "target": "1E"
         },
         {
           "name": "POTTIER-LANOIS Delphine",
@@ -4412,7 +4419,7 @@
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 2 Homme Arc Classique",
-          "target": "1D"
+          "target": "1E"
         },
         {
           "name": "SAUVAGE Henri",
@@ -4423,17 +4430,17 @@
         },
         {
           "name": "VALEYRE Beatrice",
-          "club": "0760224 - NANTEUIL LE HAUDOUIN",
-          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "club": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
           "session": "Senior 2 Femme Arc à Poulies",
-          "target": "1E"
+          "target": "2D"
         },
         {
           "name": "VALEYRE Sylvain",
-          "club": "0760344 - ACV",
-          "category": "0760344 - ACV",
+          "club": "0760344 - CIE ARC CHAUMONT EN VEXIN",
+          "category": "0760344 - CIE ARC CHAUMONT EN VEXIN",
           "session": "Senior 2 Homme Arc à Poulies",
-          "target": "2D"
+          "target": "1D"
         },
         {
           "name": "VAN AUDEKERK Arnaud",
@@ -4447,14 +4454,14 @@
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "1E"
+          "target": "1B"
         },
         {
           "name": "VERGEAUD Anthony",
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 1 Homme Arc Classique",
-          "target": "1A"
+          "target": "1C"
         }
       ]
     },
