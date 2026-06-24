@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-24T10:51:04.730181+00:00",
+  "generated_at_utc": "2026-06-24T13:23:34.917843+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -619,7 +619,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28466",
       "ena_url": "https://www.ianseo.net/TourData/2026/28466/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28466/IC.php",
-      "entries_count": 102,
+      "entries_count": 104,
       "entries": [
         {
           "name": "ALLEGRE Michel",
@@ -647,7 +647,7 @@
           "club": "1306037 - MOUANS SARTOUX",
           "category": "1306037 - MOUANS SARTOUX",
           "session": "Scratch Homme Arc Nu National",
-          "target": "21B"
+          "target": "20B"
         },
         {
           "name": "BARON Robert",
@@ -668,7 +668,7 @@
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
           "session": "Scratch Homme Arc Nu National",
-          "target": "22B"
+          "target": "21B"
         },
         {
           "name": "BOUILLY Antoine",
@@ -682,14 +682,14 @@
           "club": "1384139 - L'ISLE SUR LA SORGUE",
           "category": "1384139 - L'ISLE SUR LA SORGUE",
           "session": "S2 Homme Arc Classique National",
-          "target": "26C"
+          "target": "26B"
         },
         {
           "name": "BOUYER Stephane",
           "club": "1304010 - MANOSQUE",
           "category": "1304010 - MANOSQUE",
           "session": "S2 Homme Arc Classique National",
-          "target": "25A"
+          "target": "24B"
         },
         {
           "name": "BROCARDO Alexandre",
@@ -759,7 +759,7 @@
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S1 Femme Arc Classique National",
-          "target": "24A"
+          "target": "23B"
         },
         {
           "name": "DAHMAN Nordine",
@@ -822,7 +822,7 @@
           "club": "1384142 - CAVAILLON",
           "category": "1384142 - CAVAILLON",
           "session": "S1 Homme Arc Classique National",
-          "target": "23B"
+          "target": "22B"
         },
         {
           "name": "DONCHAK Olha",
@@ -885,7 +885,7 @@
           "club": "1384151 - BOLLENE",
           "category": "1384151 - BOLLENE",
           "session": "Scratch Homme Arc Nu National",
-          "target": "21A"
+          "target": "20A"
         },
         {
           "name": "GARCIA Guy",
@@ -941,7 +941,7 @@
           "club": "1384143 - AVIGNON",
           "category": "1384143 - AVIGNON",
           "session": "S1 Homme Arc Classique National",
-          "target": "23C"
+          "target": "23A"
         },
         {
           "name": "GUERIN Dominique",
@@ -962,7 +962,7 @@
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Homme Arc Classique National",
-          "target": "25C"
+          "target": "25B"
         },
         {
           "name": "HERANT Clara",
@@ -1000,11 +1000,18 @@
           "target": "13C"
         },
         {
+          "name": "KOCHERT Sebastien",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "25C"
+        },
+        {
           "name": "LACOUR Barbara",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Scratch Femme Arc Nu National",
-          "target": "22C"
+          "target": "21C"
         },
         {
           "name": "LAJARIGE Martine",
@@ -1046,7 +1053,7 @@
           "club": "1313098 - MARSEILLE TROIS LUCS",
           "category": "1313098 - MARSEILLE TROIS LUCS",
           "session": "S2 Homme Arc Classique National",
-          "target": "27B"
+          "target": "27A"
         },
         {
           "name": "LIAUDOIS Fanny",
@@ -1060,7 +1067,7 @@
           "club": "1383159 - VIDAUBAN",
           "category": "1383159 - VIDAUBAN",
           "session": "S2 Homme Arc Classique National",
-          "target": "27A"
+          "target": "26C"
         },
         {
           "name": "MALHEURTY Sandra",
@@ -1088,7 +1095,7 @@
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Homme Arc Classique National",
-          "target": "26B"
+          "target": "26A"
         },
         {
           "name": "MICHAUX Xavier",
@@ -1102,7 +1109,7 @@
           "club": "1384143 - AVIGNON",
           "category": "1384143 - AVIGNON",
           "session": "S1 Femme Arc Classique National",
-          "target": "24C"
+          "target": "24A"
         },
         {
           "name": "MOLE Dominique",
@@ -1123,7 +1130,7 @@
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S1 Femme Arc Classique National",
-          "target": "24B"
+          "target": "23C"
         },
         {
           "name": "MORISCOT Rose-Marie",
@@ -1137,7 +1144,7 @@
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "S1 Homme Arc Classique National",
-          "target": "23A"
+          "target": "22A"
         },
         {
           "name": "MOY Frederic",
@@ -1151,7 +1158,7 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Scratch Homme Arc Nu National",
-          "target": "21C"
+          "target": "20C"
         },
         {
           "name": "NOUVEAU Stephane",
@@ -1194,6 +1201,13 @@
           "category": "1383124 - LA GARDE",
           "session": "S3 Femme Arc à Poulies National",
           "target": "36A"
+        },
+        {
+          "name": "PLACHTA Thibaut",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
+          "session": "S1 Homme Arc Classique",
+          "target": "22C"
         },
         {
           "name": "REGIS Christian",
@@ -1263,7 +1277,7 @@
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S2 Homme Arc Classique National",
-          "target": "26A"
+          "target": "25A"
         },
         {
           "name": "SUBLIME Erika",
@@ -1319,14 +1333,14 @@
           "club": "1313046 - CHATEAURENARD",
           "category": "1313046 - CHATEAURENARD",
           "session": "S2 Homme Arc Classique National",
-          "target": "25B"
+          "target": "24C"
         },
         {
           "name": "VINCENZA Romain",
           "club": "1313046 - CHATEAURENARD",
           "category": "1313046 - CHATEAURENARD",
           "session": "Scratch Homme Arc Nu National",
-          "target": "22A"
+          "target": "21A"
         },
         {
           "name": "WILKES Jonathan",
@@ -1347,548 +1361,8 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28942",
       "ena_url": "https://www.ianseo.net/TourData/2026/28942/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28942/IC.php",
-      "entries_count": 77,
-      "entries": [
-        {
-          "name": "ALEMANY ACQUAVIVA Florian",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Classique U18 Hommes National",
-          "target": "6A"
-        },
-        {
-          "name": "ALEMANY Jean Francois",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Nu Senior 2 Hommes National",
-          "target": "5A"
-        },
-        {
-          "name": "ANGELINI Jean-Louis",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "13A"
-        },
-        {
-          "name": "ANGELINI Lucien",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "8B"
-        },
-        {
-          "name": "BECCIU Sylvain",
-          "club": "052A001 - SUD CORSE",
-          "category": "052A001 - SUD CORSE",
-          "session": "Arc Classique Senior 1 Hommes National",
-          "target": "7C"
-        },
-        {
-          "name": "BOLLON Alexandre",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 1 Hommes National",
-          "target": "4B"
-        },
-        {
-          "name": "BOLLON Alexandre",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 1 Hommes National",
-          "target": "6A"
-        },
-        {
-          "name": "BOLLON Christophe",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes National",
-          "target": "7A"
-        },
-        {
-          "name": "BOLLON Christophe",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "9B"
-        },
-        {
-          "name": "BOLLON Veronique",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Femmes National",
-          "target": "7A"
-        },
-        {
-          "name": "BREVET Anne Sophie",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Classique Senior 2 Femmes National",
-          "target": "5B"
-        },
-        {
-          "name": "CALZARELLI Auguste",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 3 Hommes National",
-          "target": "4A"
-        },
-        {
-          "name": "CAPRON Cedric",
-          "club": "052A001 - SUD CORSE",
-          "category": "052A001 - SUD CORSE",
-          "session": "Arc Classique Senior 1 Hommes National",
-          "target": "8C"
-        },
-        {
-          "name": "CASULA Noel",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "10B"
-        },
-        {
-          "name": "CASULA Noel",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "13A"
-        },
-        {
-          "name": "CASULA Sebastien",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes National",
-          "target": "8A"
-        },
-        {
-          "name": "CUENOUD Gael",
-          "club": "052A001 - SUD CORSE",
-          "category": "052A001 - SUD CORSE",
-          "session": "Arc à Poulies Senior 1 Hommes National",
-          "target": "6C"
-        },
-        {
-          "name": "CUENOUD Gael",
-          "club": "052A001 - SUD CORSE",
-          "category": "052A001 - SUD CORSE",
-          "session": "Arc à Poulies Senior 1 Hommes National",
-          "target": "9C"
-        },
-        {
-          "name": "DASILVA MARTINS Nicolas",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc Classique U18 Hommes National",
-          "target": "1A"
-        },
-        {
-          "name": "DASILVA MARTINS Nicolas",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc Classique U18 Hommes",
-          "target": "3A"
-        },
-        {
-          "name": "DESMOULINS Christophe",
-          "club": "052A007 - CAURO",
-          "category": "052A007 - CAURO",
-          "session": "Arc Classique Senior 2 Hommes",
-          "target": "1C"
-        },
-        {
-          "name": "DESMOULINS Christophe",
-          "club": "052A007 - CAURO",
-          "category": "052A007 - CAURO",
-          "session": "Arc Classique Senior 2 Hommes National",
-          "target": "3C"
-        },
-        {
-          "name": "DOLCEROCCA Jean Pierre",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Nu Senior 2 Hommes National",
-          "target": "6B"
-        },
-        {
-          "name": "DOLCEROCCA Jean Pierre",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes National",
-          "target": "9A"
-        },
-        {
-          "name": "DOUVRY Ange",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc Nu U18 Hommes National",
-          "target": "14A"
-        },
-        {
-          "name": "DUBITON Dominique",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 3 Hommes National",
-          "target": "6B"
-        },
-        {
-          "name": "DUWEZ Alix",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Classique U13 Femmes National",
-          "target": "15A"
-        },
-        {
-          "name": "DUWEZ Stanislas",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 1 Hommes National",
-          "target": "10A"
-        },
-        {
-          "name": "DUWEZ Stanislas",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "11B"
-        },
-        {
-          "name": "GAMBLIN Nicolas",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "12B"
-        },
-        {
-          "name": "GAMBLIN Nicolas",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "9C"
-        },
-        {
-          "name": "GIOVANNINI Ange",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "12B"
-        },
-        {
-          "name": "GIOVANNINI Ange",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 3 Hommes National",
-          "target": "1B"
-        },
-        {
-          "name": "GODET Armand ,Gilles",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Nu Senior 3 Hommes National",
-          "target": "7B"
-        },
-        {
-          "name": "IMBERT Guy",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 3 Hommes National",
-          "target": "7B"
-        },
-        {
-          "name": "JOURDAN Cyril",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "11A"
-        },
-        {
-          "name": "JOURDAN Cyril",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "8A"
-        },
-        {
-          "name": "LEYRAT Aurelia",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 2 Femmes National",
-          "target": "2A"
-        },
-        {
-          "name": "LEYRAT Aurelia",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 2 Femmes",
-          "target": "9A"
-        },
-        {
-          "name": "LOTA David",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 2 Hommes National",
-          "target": "8B"
-        },
-        {
-          "name": "MADRAU Arthur",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Classique U18 Hommes National",
-          "target": "2B"
-        },
-        {
-          "name": "MADRAU Arthur",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Classique U18 Hommes",
-          "target": "3B"
-        },
-        {
-          "name": "MAGDELEINE Petru Maria",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "10C"
-        },
-        {
-          "name": "MAGDELEINE Petru Maria",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "13B"
-        },
-        {
-          "name": "MARTINS MIRANDA Fernanda Maria",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 2 Femmes",
-          "target": "2A"
-        },
-        {
-          "name": "MARTINS MIRANDA Fernanda Maria",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 2 Femmes National",
-          "target": "9B"
-        },
-        {
-          "name": "MARTINS MIRANDA Jessica",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc à Poulies U21 Femmes",
-          "target": "11C"
-        },
-        {
-          "name": "MARTINS MIRANDA Jessica",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc à Poulies U21 Femmes",
-          "target": "11C"
-        },
-        {
-          "name": "MERCIER Regis",
-          "club": "052A007 - CAURO",
-          "category": "052A007 - CAURO",
-          "session": "Arc à Poulies Senior 3 Hommes National",
-          "target": "4C"
-        },
-        {
-          "name": "MIGHELI Lucien",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "10A"
-        },
-        {
-          "name": "MIGHELI Lucien",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 3 Hommes",
-          "target": "12A"
-        },
-        {
-          "name": "PERI Stephane",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 1 Hommes",
-          "target": "11A"
-        },
-        {
-          "name": "PERI Stephane",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 1 Hommes National",
-          "target": "3A"
-        },
-        {
-          "name": "PETRONZI Francesco",
-          "club": "052A001 - SUD CORSE",
-          "category": "052A001 - SUD CORSE",
-          "session": "Arc à Poulies Senior 2 Hommes National",
-          "target": "10C"
-        },
-        {
-          "name": "PETRONZI Francesco",
-          "club": "052A001 - SUD CORSE",
-          "category": "052A001 - SUD CORSE",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "12C"
-        },
-        {
-          "name": "PINTO Tiffanie",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Femmes",
-          "target": "11B"
-        },
-        {
-          "name": "PINTO Tiffanie",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Femmes",
-          "target": "12A"
-        },
-        {
-          "name": "POZZI Loetitia",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 2 Femmes National",
-          "target": "10B"
-        },
-        {
-          "name": "POZZI Loetitia",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 2 Femmes",
-          "target": "1B"
-        },
-        {
-          "name": "REY Frederic",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "13B"
-        },
-        {
-          "name": "REY Frederic",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes National",
-          "target": "4A"
-        },
-        {
-          "name": "RICCI Christine",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Classique Senior 3 Femmes National",
-          "target": "3B"
-        },
-        {
-          "name": "RICCI Florian",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Classique Senior 1 Hommes",
-          "target": "1A"
-        },
-        {
-          "name": "RICCI Florian",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc Classique Senior 1 Hommes National",
-          "target": "4B"
-        },
-        {
-          "name": "ROMITI Paula",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique U21 Femmes National",
-          "target": "1C"
-        },
-        {
-          "name": "ROMITI Paula",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique U21 Femmes",
-          "target": "2B"
-        },
-        {
-          "name": "SANTORIELLO Olivier",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes National",
-          "target": "5B"
-        },
-        {
-          "name": "SANTORIELLO Olivier",
-          "club": "052B010 - BASTIA ASPTT",
-          "category": "052B010 - BASTIA ASPTT",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "8C"
-        },
-        {
-          "name": "STILZ Florian",
-          "club": "052A007 - CAURO",
-          "category": "052A007 - CAURO",
-          "session": "Arc Classique Senior 1 Hommes",
-          "target": "2C"
-        },
-        {
-          "name": "STILZ Florian",
-          "club": "052A007 - CAURO",
-          "category": "052A007 - CAURO",
-          "session": "Arc Classique Senior 1 Hommes National",
-          "target": "5C"
-        },
-        {
-          "name": "VILLANUEVA Thierry",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 3 Hommes National",
-          "target": "2C"
-        },
-        {
-          "name": "VILLANUEVA Thierry",
-          "club": "052B009 - BASTIA",
-          "category": "052B009 - BASTIA",
-          "session": "Arc Classique Senior 3 Hommes National",
-          "target": "4C"
-        },
-        {
-          "name": "VITALI Stephanie",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc Classique Senior 2 Femmes National",
-          "target": "5A"
-        },
-        {
-          "name": "XYPOLITAS Philippe",
-          "club": "052A007 - CAURO",
-          "category": "052A007 - CAURO",
-          "session": "Arc Classique Senior 2 Hommes National",
-          "target": "5C"
-        },
-        {
-          "name": "XYPOLITAS Philippe",
-          "club": "052A007 - CAURO",
-          "category": "052A007 - CAURO",
-          "session": "Arc Classique Senior 2 Hommes National",
-          "target": "6C"
-        },
-        {
-          "name": "ZAPPINO Petr' Antu",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc Classique U13 Hommes National",
-          "target": "14A"
-        },
-        {
-          "name": "ZAPPINO Petr' Antu",
-          "club": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "category": "052A005 - MEZZAVIA AJACCIO ASPTT",
-          "session": "Arc Classique U13 Hommes",
-          "target": "14B"
-        }
-      ]
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "28785",
