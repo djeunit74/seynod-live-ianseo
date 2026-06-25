@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-25T20:57:55.360035+00:00",
+  "generated_at_utc": "2026-06-25T22:24:31.946626+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28465",
       "ena_url": "https://www.ianseo.net/TourData/2026/28465/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28465/IC.php",
-      "entries_count": 83,
+      "entries_count": 82,
       "entries": [
         {
           "name": "ABID Remi",
@@ -244,13 +244,6 @@
           "target": "27B"
         },
         {
-          "name": "FERRY Chloe",
-          "club": "1304008 - BARCELONNETTE",
-          "category": "1304008 - BARCELONNETTE",
-          "session": "U13 Femme Arc Classique National",
-          "target": "34C"
-        },
-        {
           "name": "FINDIK Sinem",
           "club": "1313074 - MARIGNANE",
           "category": "1313074 - MARIGNANE",
@@ -262,7 +255,7 @@
           "club": "1306037 - MOUANS SARTOUX",
           "category": "1306037 - MOUANS SARTOUX",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "1C"
+          "target": "2C"
         },
         {
           "name": "FOCKE DE BEAUCOURT Soren",
@@ -521,7 +514,7 @@
           "club": "1304008 - BARCELONNETTE",
           "category": "1304008 - BARCELONNETTE",
           "session": "U13 Homme Arc Classique",
-          "target": "28B"
+          "target": "29B"
         },
         {
           "name": "REUS Nina",
@@ -577,7 +570,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "1A"
+          "target": "2A"
         },
         {
           "name": "VEVE Loriana",
@@ -612,7 +605,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28466",
       "ena_url": "https://www.ianseo.net/TourData/2026/28466/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28466/IC.php",
-      "entries_count": 105,
+      "entries_count": 104,
       "entries": [
         {
           "name": "ALLEGRE Michel",
@@ -634,13 +627,6 @@
           "category": "1304005 - DIGNE LES BAINS",
           "session": "S3 Femme Arc à Poulies National",
           "target": "36B"
-        },
-        {
-          "name": "BAILLION Yvan",
-          "club": "1306037 - MOUANS SARTOUX",
-          "category": "1306037 - MOUANS SARTOUX",
-          "session": "Scratch Homme Arc Nu National",
-          "target": "20B"
         },
         {
           "name": "BARON Robert",
