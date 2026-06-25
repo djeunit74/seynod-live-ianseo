@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-25T13:36:56.327841+00:00",
+  "generated_at_utc": "2026-06-25T16:25:07.920724+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28465",
       "ena_url": "https://www.ianseo.net/TourData/2026/28465/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28465/IC.php",
-      "entries_count": 84,
+      "entries_count": 83,
       "entries": [
         {
           "name": "ABID Remi",
@@ -76,13 +76,6 @@
           "target": "6C"
         },
         {
-          "name": "BILGER Cecile",
-          "club": "1306038 - NICE AC",
-          "category": "1306038 - NICE AC",
-          "session": "U18 Femme Arc Classique National",
-          "target": "18A"
-        },
-        {
           "name": "BONETTO Celia",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
@@ -109,13 +102,6 @@
           "category": "1384132 - MORNAS",
           "session": "U15 Homme Arc Classique",
           "target": "24A"
-        },
-        {
-          "name": "BRUNA Logan",
-          "club": "1383124 - LA GARDE",
-          "category": "1383124 - LA GARDE",
-          "session": "U13 Homme Arc Classique",
-          "target": "29C"
         },
         {
           "name": "CANNETI Thibault",
@@ -270,6 +256,13 @@
           "category": "1313074 - MARIGNANE",
           "session": "U13 Femme Arc Classique",
           "target": "33A"
+        },
+        {
+          "name": "FIORETTI Thibault",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "Arc Classique Senior 1 Hommes",
+          "target": "1C"
         },
         {
           "name": "FOCKE DE BEAUCOURT Soren",
