@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-26T10:52:08.162898+00:00",
+  "generated_at_utc": "2026-06-26T13:12:30.765588+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3711,7 +3711,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28506",
       "ena_url": "https://www.ianseo.net/TourData/2026/28506/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28506/IC.php",
-      "entries_count": 68,
+      "entries_count": 69,
       "entries": [
         {
           "name": "ANEST Antoine",
@@ -3766,15 +3766,15 @@
           "name": "CADORET Franck",
           "club": "1244010 - DONGES",
           "category": "1244010 - DONGES",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "7B"
+          "session": "S2 Homme Arc à Poulies",
+          "target": "6C"
         },
         {
           "name": "CADORET Franck",
           "club": "1244010 - DONGES",
           "category": "1244010 - DONGES",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "7C"
+          "session": "Arc à Poulies Senior 2 Hommes",
+          "target": "7B"
         },
         {
           "name": "CADORET Romuald",
@@ -3851,14 +3851,14 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "U13 Femme Arc Classique",
-          "target": "4A"
+          "target": "12A"
         },
         {
           "name": "DELAMOTTE Maeva",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
-          "session": "U13 Femme Arc Classique",
-          "target": "4B"
+          "session": "Arc Classique U13 Femmes",
+          "target": "3B"
         },
         {
           "name": "DELORAINE Aurelien",
@@ -3908,6 +3908,13 @@
           "category": "0335056 - TINTENIAC",
           "session": "U18 Femme Arc Classique",
           "target": "8C"
+        },
+        {
+          "name": "DUREL Jeanne",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Femme Arc Classique",
+          "target": "10C"
         },
         {
           "name": "FRAY Aurelie",
@@ -3977,7 +3984,7 @@
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
           "session": "S1 Homme Arc Classique",
-          "target": "10C"
+          "target": "12A"
         },
         {
           "name": "LE MANAC'H Florence",
@@ -3997,15 +4004,15 @@
           "name": "LE MANAC'H Noah",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
-          "session": "U13 Homme Arc Classique",
-          "target": "3A"
+          "session": "Arc Classique U13 Hommes",
+          "target": "12A"
         },
         {
           "name": "LE MANAC'H Noah",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
-          "session": "Arc Classique U13 Hommes",
-          "target": "3B"
+          "session": "U13 Homme Arc Classique",
+          "target": "3A"
         },
         {
           "name": "LE VIAVANT Gwen",
@@ -4130,7 +4137,7 @@
           "name": "ROTROU Anne Marie",
           "club": "0914003 - CAEN",
           "category": "0914003 - CAEN",
-          "session": "Arc à Poulies Senior 3 Femmes National",
+          "session": "S3 Femme Arc à Poulies National",
           "target": "5B"
         },
         {
@@ -4145,7 +4152,7 @@
           "club": "0914003 - CAEN",
           "category": "0914003 - CAEN",
           "session": "S3 Femme Arc à Poulies",
-          "target": "6C"
+          "target": "7C"
         },
         {
           "name": "SALIOU Dominique",
@@ -4187,7 +4194,7 @@
           "club": "0335065 - DOMLOUP",
           "category": "0335065 - DOMLOUP",
           "session": "U15 Femme Arc Classique",
-          "target": "12A"
+          "target": "4A"
         }
       ]
     },
