@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-27T15:16:52.512780+00:00",
+  "generated_at_utc": "2026-06-27T16:39:25.745876+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2340,7 +2340,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28466",
       "ena_url": "https://www.ianseo.net/TourData/2026/28466/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28466/IC.php",
-      "entries_count": 105,
+      "entries_count": 107,
       "entries": [
         {
           "name": "ALLEGRE Michel",
@@ -2425,6 +2425,13 @@
           "category": "1384131 - VEDENE",
           "session": "S3 Homme Arc Classique",
           "target": "12A"
+        },
+        {
+          "name": "CARDOSO Emmanuelle",
+          "club": "1313074 - MARIGNANE",
+          "category": "1313074 - MARIGNANE",
+          "session": "Arc à Poulies Senior 2 Femmes",
+          "target": "17B"
         },
         {
           "name": "CARDOSO Frederic",
@@ -2558,6 +2565,13 @@
           "category": "1313051 - MARSEILLE",
           "session": "S1 Homme Arc Classique",
           "target": "3A"
+        },
+        {
+          "name": "DUCHENE Michelle",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "Arc Classique Senior 2 Femmes",
+          "target": "8C"
         },
         {
           "name": "DUNEAU Brigitte",
@@ -2934,7 +2948,7 @@
           "name": "PLACHTA Thibaut",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
-          "session": "S1 Homme Arc Classique",
+          "session": "S1 Homme Arc Classique National",
           "target": "22B"
         },
         {
