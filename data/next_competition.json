@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-06-27T22:36:06.097894+00:00",
-  "today": "2026-06-27",
+  "generated_at_utc": "2026-06-28T00:02:44.725855+00:00",
+  "today": "2026-06-28",
   "country": "FRA",
   "keywords": [
     "seynod",
@@ -8,5 +8,5 @@
   ],
   "found": false,
   "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
-  "checked_candidates": 28
+  "checked_candidates": 22
 }
