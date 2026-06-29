@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-29T13:51:09.882966+00:00",
+  "generated_at_utc": "2026-06-29T16:53:36.994997+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 22,
+  "count": 24,
   "tournaments": [
     {
       "to_id": "28506",
@@ -572,6 +572,32 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28921",
       "ena_url": "https://www.ianseo.net/TourData/2026/28921/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28921/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29034",
+      "year": "2026",
+      "name": "Championnat Régional Auvergne Rhône Alpes TAE DI Arc Classique 2026",
+      "organizer": "VIVIERS",
+      "date_text": "4-5 Jul",
+      "end_date": "2026-07-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29034",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29034/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29034/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29035",
+      "year": "2026",
+      "name": "Championnat régional Auvergne-Rhône-Alpes TAE DI arc à poulies et TAE DN 2026",
+      "organizer": "VILLEURBANNE CIE HERACLES",
+      "date_text": "4-5 Jul",
+      "end_date": "2026-07-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29035",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29035/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29035/IC.php",
       "entries_count": 0,
       "entries": []
     },
