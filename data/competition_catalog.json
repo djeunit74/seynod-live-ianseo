@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-29T09:02:45.689664+00:00",
+  "generated_at_utc": "2026-06-29T13:51:09.882966+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28506",
       "ena_url": "https://www.ianseo.net/TourData/2026/28506/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28506/IC.php",
-      "entries_count": 69,
+      "entries_count": 68,
       "entries": [
         {
           "name": "ANEST Antoine",
@@ -69,32 +69,18 @@
           "target": "7A"
         },
         {
-          "name": "CADORET Franck",
-          "club": "1244010 - DONGES",
-          "category": "1244010 - DONGES",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "6C"
-        },
-        {
-          "name": "CADORET Franck",
-          "club": "1244010 - DONGES",
-          "category": "1244010 - DONGES",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": "7B"
-        },
-        {
-          "name": "CADORET Romuald",
-          "club": "1244010 - DONGES",
-          "category": "1244010 - DONGES",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "6A"
-        },
-        {
           "name": "CADORET Romuald",
           "club": "1244010 - DONGES",
           "category": "1244010 - DONGES",
           "session": "Arc à Poulies Senior 2 Hommes",
           "target": "6B"
+        },
+        {
+          "name": "CADORET Romuald",
+          "club": "1244010 - DONGES",
+          "category": "1244010 - DONGES",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "7C"
         },
         {
           "name": "CAPLOT Valentin",
@@ -261,15 +247,15 @@
           "name": "HOGUIN Lise",
           "club": "0335073 - LIFFRE",
           "category": "0335073 - LIFFRE",
-          "session": "S1 Femme Arc à Poulies National",
+          "session": "Arc à Poulies Senior 1 Femmes National",
           "target": "5C"
         },
         {
           "name": "HOGUIN Lise",
           "club": "0335073 - LIFFRE",
           "category": "0335073 - LIFFRE",
-          "session": "Arc à Poulies Senior 1 Femmes National",
-          "target": "5C"
+          "session": "S1 Femme Arc à Poulies National",
+          "target": "6B"
         },
         {
           "name": "HUAUME Elen",
@@ -443,14 +429,14 @@
           "name": "ROTROU Anne Marie",
           "club": "0914003 - CAEN",
           "category": "0914003 - CAEN",
-          "session": "S3 Femme Arc à Poulies National",
+          "session": "Arc à Poulies Senior 3 Femmes National",
           "target": "5B"
         },
         {
           "name": "ROTROU Anne Marie",
           "club": "0914003 - CAEN",
           "category": "0914003 - CAEN",
-          "session": "Arc à Poulies Senior 3 Femmes",
+          "session": "S3 Femme Arc à Poulies National",
           "target": "6A"
         },
         {
@@ -458,7 +444,7 @@
           "club": "0914003 - CAEN",
           "category": "0914003 - CAEN",
           "session": "S3 Femme Arc à Poulies",
-          "target": "7C"
+          "target": "6A"
         },
         {
           "name": "SALIOU Dominique",
@@ -487,6 +473,13 @@
           "category": "0335056 - TINTENIAC",
           "session": "S1 Femme Arc Classique",
           "target": "11B"
+        },
+        {
+          "name": "TRICHOT Christophe",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "6B"
         },
         {
           "name": "VERZIER-ROUSSON Iewan",
