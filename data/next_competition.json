@@ -1,12 +1,53 @@
 {
-  "generated_at_utc": "2026-06-30T14:18:47.977462+00:00",
+  "generated_at_utc": "2026-06-30T16:36:12.579706+00:00",
   "today": "2026-06-30",
   "country": "FRA",
   "keywords": [
     "seynod",
     "0174246"
   ],
-  "found": false,
-  "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
-  "checked_candidates": 24
+  "found": true,
+  "next_competition": {
+    "to_id": "29035",
+    "year": "2026",
+    "name": "Championnat régional Auvergne-Rhône-Alpes TAE DI arc à poulies et TAE DN 2026",
+    "organizer": "VILLEURBANNE CIE HERACLES",
+    "date_text": "4-5 Jul",
+    "end_date": "2026-07-05",
+    "details_url": "https://www.ianseo.net/Details.php?toId=29035",
+    "ena_url": "https://www.ianseo.net/TourData/2026/29035/ENA.php",
+    "ic_url": null,
+    "club_entries": [
+      {
+        "name": "BOURGEAIS Stephane",
+        "target": "8C",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S2 Homme Arc à Poulies"
+      },
+      {
+        "name": "CATIN Daniel",
+        "target": "12C",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S2 Homme Arc à Poulies"
+      }
+    ],
+    "seynod_entries": [
+      {
+        "name": "BOURGEAIS Stephane",
+        "target": "8C",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S2 Homme Arc à Poulies"
+      },
+      {
+        "name": "CATIN Daniel",
+        "target": "12C",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "S2 Homme Arc à Poulies"
+      }
+    ]
+  }
 }
