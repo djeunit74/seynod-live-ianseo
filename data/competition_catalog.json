@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-01T11:38:35.934440+00:00",
+  "generated_at_utc": "2026-07-01T14:36:26.862335+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 24,
+  "count": 25,
   "tournaments": [
     {
       "to_id": "28506",
@@ -2408,6 +2408,19 @@
       "entries": []
     },
     {
+      "to_id": "29126",
+      "year": "2026",
+      "name": "tae boe 7 26 L'ultime chance",
+      "organizer": "Les archers de Boé",
+      "date_text": "5 Jul",
+      "end_date": "2026-07-05",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29126",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29126/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29126/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27515",
       "year": "2026",
       "name": "TAEI/N et Para Tir à l'Arc - 04 et 05 Juillet 2026",
@@ -3136,7 +3149,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29034",
       "ena_url": "https://www.ianseo.net/TourData/2026/29034/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29034/IC.php",
-      "entries_count": 183,
+      "entries_count": 186,
       "entries": [
         {
           "name": "ABATE Giovanni",
@@ -3566,6 +3579,13 @@
           "target": "8B"
         },
         {
+          "name": "DOLMAZON Chloe",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "Arc Classique U18 Femmes",
+          "target": "10C"
+        },
+        {
           "name": "DUBUGET Benoit",
           "club": "0169179 - VILLEURBANNE CIE HERACLES",
           "category": "0169179 - VILLEURBANNE CIE HERACLES",
@@ -3627,6 +3647,13 @@
           "category": "0107039 - ANNONAY",
           "session": "U15 Femme Arc Classique",
           "target": "16D"
+        },
+        {
+          "name": "FARESSE PONS Baptiste",
+          "club": "0169178 - BRIGNAIS",
+          "category": "0169178 - BRIGNAIS",
+          "session": "Arc Classique U18 Hommes",
+          "target": "10D"
         },
         {
           "name": "FERREIRA Lea",
@@ -3949,6 +3976,13 @@
           "category": "0126060 - CHATEAUNEUF DU RHONE",
           "session": "S2 Femme Arc Classique",
           "target": "17B"
+        },
+        {
+          "name": "MOINE Corentin",
+          "club": "0143137 - BEAUZAC",
+          "category": "0143137 - BEAUZAC",
+          "session": "Arc Classique U13 Hommes",
+          "target": "23C"
         },
         {
           "name": "MOLLON Julien",
@@ -4431,7 +4465,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29035",
       "ena_url": "https://www.ianseo.net/TourData/2026/29035/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29035/IC.php",
-      "entries_count": 173,
+      "entries_count": 172,
       "entries": [
         {
           "name": "AMOMO Paul",
@@ -4494,7 +4528,7 @@
           "club": "0142278 - FEURS",
           "category": "0142278 - FEURS",
           "session": "U13 Homme Arc Classique National",
-          "target": "11B"
+          "target": "10C"
         },
         {
           "name": "BASSET Aurore",
@@ -4550,7 +4584,7 @@
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "U13 Femme Arc Classique National",
-          "target": "15A"
+          "target": "14A"
         },
         {
           "name": "BOBENRIETH Estelle",
@@ -4571,7 +4605,7 @@
           "club": "0107039 - ANNONAY",
           "category": "0107039 - ANNONAY",
           "session": "U13 Homme Arc Classique National",
-          "target": "11A"
+          "target": "10B"
         },
         {
           "name": "BOURGEAIS Stephane",
@@ -4634,7 +4668,7 @@
           "club": "0101010 - BEYNOST",
           "category": "0101010 - BEYNOST",
           "session": "U13 Homme Arc Classique National",
-          "target": "11C"
+          "target": "11A"
         },
         {
           "name": "BUSSY Maell",
@@ -4718,7 +4752,7 @@
           "club": "0126068 - SAINT PAUL TROIS CHATEAUX",
           "category": "0126068 - SAINT PAUL TROIS CHATEAUX",
           "session": "U13 Homme Arc Classique National",
-          "target": "13B"
+          "target": "12C"
         },
         {
           "name": "CLEMENCEAU Mathieu",
@@ -4753,7 +4787,7 @@
           "club": "0142123 - VILLEREST",
           "category": "0142123 - VILLEREST",
           "session": "U18 Homme Arc Classique National",
-          "target": "4C"
+          "target": "4B"
         },
         {
           "name": "COQUAND Eric",
@@ -4977,14 +5011,14 @@
           "club": "0142278 - FEURS",
           "category": "0142278 - FEURS",
           "session": "U13 Femme Arc Classique National",
-          "target": "15B"
+          "target": "14B"
         },
         {
           "name": "GENTIN Teo",
           "club": "0101005 - CHATILLON SUR CHALARONNE",
           "category": "0101005 - CHATILLON SUR CHALARONNE",
           "session": "U13 Homme Arc Classique National",
-          "target": "12C"
+          "target": "12A"
         },
         {
           "name": "GERLAND Loic",
@@ -5034,13 +5068,6 @@
           "category": "0101012 - BOURG EN BRESSE",
           "session": "U18 Femme Arc Classique National",
           "target": "5A"
-        },
-        {
-          "name": "GOUAT Romain",
-          "club": "0173244 - AIX LES BAINS",
-          "category": "0173244 - AIX LES BAINS",
-          "session": "U18 Homme Arc Classique National",
-          "target": "4A"
         },
         {
           "name": "GRANGE Amandine",
@@ -5110,7 +5137,7 @@
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "U13 Homme Arc Classique National",
-          "target": "13A"
+          "target": "12B"
         },
         {
           "name": "HUMBERT Bruno",
@@ -5124,7 +5151,7 @@
           "club": "0138099 - VIENNE AC",
           "category": "0138099 - VIENNE AC",
           "session": "U13 Femme Arc Classique National",
-          "target": "13C"
+          "target": "13A"
         },
         {
           "name": "HUMBERT SORIANO Nicole",
@@ -5138,7 +5165,7 @@
           "club": "0138286 - GIERES",
           "category": "0138286 - GIERES",
           "session": "U13 Homme Arc Classique National",
-          "target": "12A"
+          "target": "11B"
         },
         {
           "name": "JACQUET Guy",
@@ -5166,7 +5193,7 @@
           "club": "0101005 - CHATILLON SUR CHALARONNE",
           "category": "0101005 - CHATILLON SUR CHALARONNE",
           "session": "U13 Homme Arc Classique National",
-          "target": "12B"
+          "target": "11C"
         },
         {
           "name": "KONE COTE Emma",
@@ -5250,7 +5277,7 @@
           "club": "0101005 - CHATILLON SUR CHALARONNE",
           "category": "0101005 - CHATILLON SUR CHALARONNE",
           "session": "U13 Femme Arc Classique National",
-          "target": "14A"
+          "target": "13B"
         },
         {
           "name": "MACIEL Emmanuel",
@@ -5348,7 +5375,7 @@
           "club": "0142123 - VILLEREST",
           "category": "0142123 - VILLEREST",
           "session": "U18 Homme Arc Classique National",
-          "target": "4B"
+          "target": "4A"
         },
         {
           "name": "PARIS Jeanmarc",
@@ -5397,7 +5424,7 @@
           "club": "0101284 - CROTTET",
           "category": "0101284 - CROTTET",
           "session": "U13 Femme Arc Classique National",
-          "target": "14B"
+          "target": "13C"
         },
         {
           "name": "PIERRET Gabriel",
@@ -5453,7 +5480,7 @@
           "club": "0163168 - ST BEAUZIRE",
           "category": "0163168 - ST BEAUZIRE",
           "session": "U18 Femme Arc Nu National",
-          "target": "10B"
+          "target": "10A"
         },
         {
           "name": "RASPAIL Benjamin",
@@ -5544,7 +5571,7 @@
           "club": "0101284 - CROTTET",
           "category": "0101284 - CROTTET",
           "session": "U15 Femme Arc Classique National",
-          "target": "10A"
+          "target": "9C"
         },
         {
           "name": "SZAMVEBER Jean Michel",
