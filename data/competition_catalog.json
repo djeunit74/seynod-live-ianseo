@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-01T14:36:26.862335+00:00",
+  "generated_at_utc": "2026-07-01T17:13:58.486350+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -4528,7 +4528,7 @@
           "club": "0142278 - FEURS",
           "category": "0142278 - FEURS",
           "session": "U13 Homme Arc Classique National",
-          "target": "10C"
+          "target": "11B"
         },
         {
           "name": "BASSET Aurore",
@@ -4584,7 +4584,7 @@
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "U13 Femme Arc Classique National",
-          "target": "14A"
+          "target": "14C"
         },
         {
           "name": "BOBENRIETH Estelle",
@@ -4605,7 +4605,7 @@
           "club": "0107039 - ANNONAY",
           "category": "0107039 - ANNONAY",
           "session": "U13 Homme Arc Classique National",
-          "target": "10B"
+          "target": "11A"
         },
         {
           "name": "BOURGEAIS Stephane",
@@ -4668,7 +4668,7 @@
           "club": "0101010 - BEYNOST",
           "category": "0101010 - BEYNOST",
           "session": "U13 Homme Arc Classique National",
-          "target": "11A"
+          "target": "11C"
         },
         {
           "name": "BUSSY Maell",
@@ -4693,8 +4693,8 @@
         },
         {
           "name": "CAMACHO Pablo",
-          "club": "0169188 - LYON 8EME",
-          "category": "0169188 - LYON 8EME",
+          "club": "0169212 - BRON",
+          "category": "0169212 - BRON",
           "session": "Arc à Poulies U18 Hommes",
           "target": "1A"
         },
@@ -4752,7 +4752,7 @@
           "club": "0126068 - SAINT PAUL TROIS CHATEAUX",
           "category": "0126068 - SAINT PAUL TROIS CHATEAUX",
           "session": "U13 Homme Arc Classique National",
-          "target": "12C"
+          "target": "13B"
         },
         {
           "name": "CLEMENCEAU Mathieu",
@@ -4847,8 +4847,8 @@
         },
         {
           "name": "DELAHAIE Yann",
-          "club": "0138099 - VIENNE AC",
-          "category": "0138099 - VIENNE AC",
+          "club": "0138093 - ST CLAIR DU RHONE",
+          "category": "0138093 - ST CLAIR DU RHONE",
           "session": "S1 Homme Arc à Poulies National",
           "target": "16B"
         },
@@ -5011,14 +5011,14 @@
           "club": "0142278 - FEURS",
           "category": "0142278 - FEURS",
           "session": "U13 Femme Arc Classique National",
-          "target": "14B"
+          "target": "15A"
         },
         {
           "name": "GENTIN Teo",
           "club": "0101005 - CHATILLON SUR CHALARONNE",
           "category": "0101005 - CHATILLON SUR CHALARONNE",
           "session": "U13 Homme Arc Classique National",
-          "target": "12A"
+          "target": "12C"
         },
         {
           "name": "GERLAND Loic",
@@ -5137,7 +5137,7 @@
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "U13 Homme Arc Classique National",
-          "target": "12B"
+          "target": "13A"
         },
         {
           "name": "HUMBERT Bruno",
@@ -5151,7 +5151,7 @@
           "club": "0138099 - VIENNE AC",
           "category": "0138099 - VIENNE AC",
           "session": "U13 Femme Arc Classique National",
-          "target": "13A"
+          "target": "13C"
         },
         {
           "name": "HUMBERT SORIANO Nicole",
@@ -5165,7 +5165,7 @@
           "club": "0138286 - GIERES",
           "category": "0138286 - GIERES",
           "session": "U13 Homme Arc Classique National",
-          "target": "11B"
+          "target": "12A"
         },
         {
           "name": "JACQUET Guy",
@@ -5193,7 +5193,7 @@
           "club": "0101005 - CHATILLON SUR CHALARONNE",
           "category": "0101005 - CHATILLON SUR CHALARONNE",
           "session": "U13 Homme Arc Classique National",
-          "target": "11C"
+          "target": "12B"
         },
         {
           "name": "KONE COTE Emma",
@@ -5277,7 +5277,7 @@
           "club": "0101005 - CHATILLON SUR CHALARONNE",
           "category": "0101005 - CHATILLON SUR CHALARONNE",
           "session": "U13 Femme Arc Classique National",
-          "target": "13B"
+          "target": "14A"
         },
         {
           "name": "MACIEL Emmanuel",
@@ -5424,7 +5424,7 @@
           "club": "0101284 - CROTTET",
           "category": "0101284 - CROTTET",
           "session": "U13 Femme Arc Classique National",
-          "target": "13C"
+          "target": "14B"
         },
         {
           "name": "PIERRET Gabriel",
@@ -5480,7 +5480,7 @@
           "club": "0163168 - ST BEAUZIRE",
           "category": "0163168 - ST BEAUZIRE",
           "session": "U18 Femme Arc Nu National",
-          "target": "10A"
+          "target": "10B"
         },
         {
           "name": "RASPAIL Benjamin",
@@ -5571,7 +5571,7 @@
           "club": "0101284 - CROTTET",
           "category": "0101284 - CROTTET",
           "session": "U15 Femme Arc Classique National",
-          "target": "9C"
+          "target": "10A"
         },
         {
           "name": "SZAMVEBER Jean Michel",
