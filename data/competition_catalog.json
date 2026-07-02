@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-02T04:40:02.479400+00:00",
+  "generated_at_utc": "2026-07-02T08:11:34.404453+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 25,
+  "count": 26,
   "tournaments": [
     {
       "to_id": "28506",
@@ -3194,6 +3194,13 @@
           "target": "24B"
         },
         {
+          "name": "ASTIER Teodor",
+          "club": "0138088 - GRENOBLE",
+          "category": "0138088 - GRENOBLE",
+          "session": "U15 Homme Arc Classique",
+          "target": "14D"
+        },
+        {
           "name": "AUDOUARD Serge",
           "club": "0169187 - ST PRIEST",
           "category": "0169187 - ST PRIEST",
@@ -4188,13 +4195,6 @@
           "target": "10B"
         },
         {
-          "name": "RITOUET Robin",
-          "club": "0142278 - FEURS",
-          "category": "0142278 - FEURS",
-          "session": "U15 Homme Arc Classique",
-          "target": "14D"
-        },
-        {
           "name": "ROBERT Clement",
           "club": "0163151 - CLERMONT FERRAND CIE",
           "category": "0163151 - CLERMONT FERRAND CIE",
@@ -4626,7 +4626,7 @@
           "club": "0103033 - VILLEFRANCHE D'ALLIER",
           "category": "0103033 - VILLEFRANCHE D'ALLIER",
           "session": "S3 Homme Arc à Poulies",
-          "target": "15C"
+          "target": "16A"
         },
         {
           "name": "BRANDON Pascal",
@@ -4710,7 +4710,7 @@
           "club": "0174246 - SEYNOD",
           "category": "0174246 - SEYNOD",
           "session": "S2 Homme Arc à Poulies",
-          "target": "12C"
+          "target": "13A"
         },
         {
           "name": "CAZALA Emilie",
@@ -4773,7 +4773,7 @@
           "club": "0174260 - ANNEMASSE",
           "category": "0174260 - ANNEMASSE",
           "session": "S2 Femme Arc à Poulies",
-          "target": "14B"
+          "target": "14C"
         },
         {
           "name": "COLMAIRE Pascale",
@@ -4822,14 +4822,14 @@
           "club": "0169215 - LOZANNE",
           "category": "0169215 - LOZANNE",
           "session": "S2 Homme Arc à Poulies",
-          "target": "13B"
+          "target": "13C"
         },
         {
           "name": "DECINA Jean-Christophe",
           "club": "0169217 - LYON 9EME",
           "category": "0169217 - LYON 9EME",
           "session": "S3 Homme Arc à Poulies",
-          "target": "16A"
+          "target": "16B"
         },
         {
           "name": "DELABRE Enzo",
@@ -4843,7 +4843,7 @@
           "club": "0142129 - UNIEUX",
           "category": "0142129 - UNIEUX",
           "session": "S2 Homme Arc à Poulies",
-          "target": "12B"
+          "target": "12C"
         },
         {
           "name": "DELAHAIE Yann",
@@ -4941,7 +4941,7 @@
           "club": "0142126 - ANDREZIEUX-BOUTHEON",
           "category": "0142126 - ANDREZIEUX-BOUTHEON",
           "session": "S2 Femme Arc à Poulies",
-          "target": "14C"
+          "target": "15A"
         },
         {
           "name": "FELIX Emilie",
@@ -4969,7 +4969,7 @@
           "club": "0142133 - ST ETIENNE",
           "category": "0142133 - ST ETIENNE",
           "session": "S3 Homme Arc à Poulies",
-          "target": "15B"
+          "target": "15C"
         },
         {
           "name": "FOURNIER Alain",
@@ -5053,14 +5053,14 @@
           "club": "0173244 - AIX LES BAINS",
           "category": "0173244 - AIX LES BAINS",
           "session": "S3 Femme Arc à Poulies",
-          "target": "17C"
+          "target": "18B"
         },
         {
           "name": "GOITSCHEL Philippe",
           "club": "0173244 - AIX LES BAINS",
           "category": "0173244 - AIX LES BAINS",
           "session": "S3 Homme Arc à Poulies",
-          "target": "15A"
+          "target": "15B"
         },
         {
           "name": "GOJON Clara",
@@ -5081,7 +5081,7 @@
           "club": "0169190 - LISSIEU",
           "category": "0169190 - LISSIEU",
           "session": "S2 Homme Arc à Poulies",
-          "target": "11B"
+          "target": "11C"
         },
         {
           "name": "GRANGEON Loic",
@@ -5095,14 +5095,14 @@
           "club": "0142129 - UNIEUX",
           "category": "0142129 - UNIEUX",
           "session": "S2 Homme Arc à Poulies",
-          "target": "13A"
+          "target": "13B"
         },
         {
           "name": "GROUILLER Bernard",
           "club": "0142132 - ROANNE",
           "category": "0142132 - ROANNE",
           "session": "S3 Homme Arc à Poulies",
-          "target": "16C"
+          "target": "17A"
         },
         {
           "name": "GUERLOT Eric",
@@ -5368,7 +5368,7 @@
           "club": "0163292 - ARCHERS DE COURNON D'AUVERGNE",
           "category": "0163292 - ARCHERS DE COURNON D'AUVERGNE",
           "session": "S2 Femme Arc à Poulies",
-          "target": "13C"
+          "target": "14A"
         },
         {
           "name": "MUZELLE Shown",
@@ -5382,7 +5382,7 @@
           "club": "0169217 - LYON 9EME",
           "category": "0169217 - LYON 9EME",
           "session": "S3 Homme Arc à Poulies",
-          "target": "17B"
+          "target": "18A"
         },
         {
           "name": "PASQUET Sophie",
@@ -5403,7 +5403,7 @@
           "club": "0169217 - LYON 9EME",
           "category": "0169217 - LYON 9EME",
           "session": "S3 Homme Arc à Poulies",
-          "target": "16B"
+          "target": "16C"
         },
         {
           "name": "PETIT Paul",
@@ -5445,7 +5445,7 @@
           "club": "0103033 - VILLEFRANCHE D'ALLIER",
           "category": "0103033 - VILLEFRANCHE D'ALLIER",
           "session": "S2 Homme Arc à Poulies",
-          "target": "11C"
+          "target": "12A"
         },
         {
           "name": "PIVET Maxime",
@@ -5529,7 +5529,7 @@
           "club": "0142134 - ST CHAMOND 1ERE CIE",
           "category": "0142134 - ST CHAMOND 1ERE CIE",
           "session": "S3 Homme Arc à Poulies",
-          "target": "17A"
+          "target": "17B"
         },
         {
           "name": "ROSSIGNOL Eric",
@@ -5592,7 +5592,7 @@
           "club": "0101005 - CHATILLON SUR CHALARONNE",
           "category": "0101005 - CHATILLON SUR CHALARONNE",
           "session": "S2 Femme Arc à Poulies",
-          "target": "14A"
+          "target": "14B"
         },
         {
           "name": "TOUMAZET Jean Pierre",
@@ -5662,7 +5662,7 @@
           "club": "0101020 - SAINTE JULIE",
           "category": "0101020 - SAINTE JULIE",
           "session": "S2 Homme Arc à Poulies",
-          "target": "12A"
+          "target": "12B"
         },
         {
           "name": "VILTARD Pascal",
@@ -5683,7 +5683,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28206",
       "ena_url": "https://www.ianseo.net/TourData/2026/28206/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28206/IC.php",
-      "entries_count": 27,
+      "entries_count": 30,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -5725,7 +5725,7 @@
           "club": "0892204 - ARC CLUB BOULOGNE BILLANCOURT",
           "category": "0892204 - ARC CLUB BOULOGNE BILLANCOURT",
           "session": "Senior 3 Homme Arc Classique",
-          "target": "1A"
+          "target": "1C"
         },
         {
           "name": "CLEMENT Jerome",
@@ -5754,6 +5754,13 @@
           "category": "0895275 - CIE ARC MONTMORENCY",
           "session": "Senior Homme Arc Nu",
           "target": "2D"
+        },
+        {
+          "name": "DUBAN Yves",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": "1D"
         },
         {
           "name": "DUBREUIL Auriane",
@@ -5817,6 +5824,20 @@
           "category": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
           "session": "Senior 1 Homme Arc Classique",
           "target": "1E"
+        },
+        {
+          "name": "PATOU Cyrille",
+          "club": "0895270 - VIARMES",
+          "category": "0895270 - VIARMES",
+          "session": "Senior 2 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "PATOU Sandrine",
+          "club": "0895270 - VIARMES",
+          "category": "0895270 - VIARMES",
+          "session": "Senior 2 Femme Arc à Poulies",
+          "target": "1A"
         },
         {
           "name": "POTTIER-LANOIS Delphine",
@@ -6891,6 +6912,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27835",
       "ena_url": "https://www.ianseo.net/TourData/2027/27835/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2027/27835/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29112",
+      "year": "2027",
+      "name": "Trening stevne Eidsvoll vinteren 2026/2027",
+      "organizer": "Eidsvoll Bueskyttere",
+      "date_text": "1 Oct 2026 - 26 Apr 2027",
+      "end_date": "2027-04-26",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29112",
+      "ena_url": "https://www.ianseo.net/TourData/2027/29112/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/29112/IC.php",
       "entries_count": 0,
       "entries": []
     }
