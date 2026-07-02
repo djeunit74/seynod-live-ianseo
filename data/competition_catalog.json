@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-02T08:11:34.404453+00:00",
+  "generated_at_utc": "2026-07-02T11:06:45.338160+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3149,7 +3149,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29034",
       "ena_url": "https://www.ianseo.net/TourData/2026/29034/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29034/IC.php",
-      "entries_count": 186,
+      "entries_count": 184,
       "entries": [
         {
           "name": "ABATE Giovanni",
@@ -3222,13 +3222,6 @@
           "target": "14C"
         },
         {
-          "name": "BARILONE Noelie",
-          "club": "0169173 - COMMUNAY",
-          "category": "0169173 - COMMUNAY",
-          "session": "U15 Femme Arc Classique",
-          "target": "16A"
-        },
-        {
           "name": "BARNOUX Mattis",
           "club": "0169192 - CHAPONOST",
           "category": "0169192 - CHAPONOST",
@@ -3276,13 +3269,6 @@
           "category": "0174252 - BONNEVILLE-LA ROCHE SUR FORON",
           "session": "U18 Homme Arc Classique",
           "target": "4B"
-        },
-        {
-          "name": "BOSSEUR DIT TOBY Yoann",
-          "club": "0169188 - LYON 8EME",
-          "category": "0169188 - LYON 8EME",
-          "session": "S1 Homme Arc Classique",
-          "target": "4A"
         },
         {
           "name": "BOUCHET Camille",
@@ -3471,7 +3457,7 @@
           "club": "0169187 - ST PRIEST",
           "category": "0169187 - ST PRIEST",
           "session": "S1 Homme Arc Classique",
-          "target": "4D"
+          "target": "4C"
         },
         {
           "name": "COLLAS Thomas",
@@ -3898,7 +3884,7 @@
           "club": "0169178 - BRIGNAIS",
           "category": "0169178 - BRIGNAIS",
           "session": "S1 Homme Arc Classique",
-          "target": "4B"
+          "target": "4A"
         },
         {
           "name": "JOUBERT Olivier",
@@ -3955,6 +3941,13 @@
           "category": "0169173 - COMMUNAY",
           "session": "U15 Homme Arc Classique",
           "target": "12D"
+        },
+        {
+          "name": "MARONGUI METZMACHER Chloe",
+          "club": "0174260 - ANNEMASSE",
+          "category": "0174260 - ANNEMASSE",
+          "session": "U15 Femme Arc Classique",
+          "target": "16A"
         },
         {
           "name": "MARTINET Sarah",
@@ -4034,13 +4027,6 @@
           "target": "6A"
         },
         {
-          "name": "PATSNOUGUES Alain",
-          "club": "0174269 - ANNECY ST SEBASTIEN",
-          "category": "0174269 - ANNECY ST SEBASTIEN",
-          "session": "S3 Homme Arc Classique",
-          "target": "21C"
-        },
-        {
           "name": "PAUTRAT Aurore",
           "club": "0103025 - YZEURE",
           "category": "0103025 - YZEURE",
@@ -4052,7 +4038,7 @@
           "club": "0169188 - LYON 8EME",
           "category": "0169188 - LYON 8EME",
           "session": "S1 Homme Arc Classique",
-          "target": "4C"
+          "target": "4B"
         },
         {
           "name": "PELLISSIER Loic",
@@ -4171,7 +4157,7 @@
           "club": "0169192 - CHAPONOST",
           "category": "0169192 - CHAPONOST",
           "session": "S3 Homme Arc Classique",
-          "target": "21D"
+          "target": "21C"
         },
         {
           "name": "RAVET Gregory",
@@ -4818,6 +4804,13 @@
           "target": "6B"
         },
         {
+          "name": "CUSIMANO Caroline",
+          "club": "0169206 - LYON 7EME",
+          "category": "0169206 - LYON 7EME",
+          "session": "S2 Femme Arc Classique National",
+          "target": "7D"
+        },
+        {
           "name": "DARTEVELLE Francois",
           "club": "0169215 - LOZANNE",
           "category": "0169215 - LOZANNE",
@@ -5173,13 +5166,6 @@
           "category": "0173239 - SAINT ALBAN-LEYSSE",
           "session": "S3 Homme Arc Classique National",
           "target": "15D"
-        },
-        {
-          "name": "JALIN Christine",
-          "club": "0138088 - GRENOBLE",
-          "category": "0138088 - GRENOBLE",
-          "session": "S2 Femme Arc Classique National",
-          "target": "7D"
         },
         {
           "name": "JANNOT Pauline",
@@ -6918,7 +6904,7 @@
     {
       "to_id": "29112",
       "year": "2027",
-      "name": "Trening stevne Eidsvoll vinteren 2026/2027",
+      "name": "Online Winter Series 2026/2027",
       "organizer": "Eidsvoll Bueskyttere",
       "date_text": "1 Oct 2026 - 26 Apr 2027",
       "end_date": "2027-04-26",
