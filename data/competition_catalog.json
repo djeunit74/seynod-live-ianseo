@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-03T10:05:19.097832+00:00",
+  "generated_at_utc": "2026-07-03T12:26:08.821757+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2929,7 +2929,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29126",
       "ena_url": "https://www.ianseo.net/TourData/2026/29126/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29126/IC.php",
-      "entries_count": 19,
+      "entries_count": 23,
       "entries": [
         {
           "name": "AZANOWSKY Katarina",
@@ -2971,6 +2971,20 @@
           "club": "1047144 - BOE",
           "category": "1047144 - BOE",
           "session": "Arc Classique U13 Femmes",
+          "target": ""
+        },
+        {
+          "name": "FERRAND Nonie",
+          "club": "0436066 - ARGENTON SUR CREUSE",
+          "category": "0436066 - ARGENTON SUR CREUSE",
+          "session": "Arc Classique Senior 3 Femmes",
+          "target": ""
+        },
+        {
+          "name": "FERRAND Nonie",
+          "club": "0436066 - ARGENTON SUR CREUSE",
+          "category": "0436066 - ARGENTON SUR CREUSE",
+          "session": "Arc Classique Senior 3 Femmes",
           "target": ""
         },
         {
@@ -3041,6 +3055,20 @@
           "club": "1047144 - BOE",
           "category": "1047144 - BOE",
           "session": "S1 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SANTIN Irina",
+          "club": "1047147 - MARMANDE",
+          "category": "1047147 - MARMANDE",
+          "session": "U15 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SANTIN Irina",
+          "club": "1047147 - MARMANDE",
+          "category": "1047147 - MARMANDE",
+          "session": "Arc Classique U15 Femmes",
           "target": ""
         },
         {
@@ -6415,13 +6443,6 @@
           "target": "2B"
         },
         {
-          "name": "CROIZARD Lena",
-          "club": "0335087 - BETTON",
-          "category": "0335087 - BETTON",
-          "session": "S2 Femme Arc Classique National",
-          "target": "5A"
-        },
-        {
           "name": "DANES Agathe",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
@@ -6462,6 +6483,13 @@
           "category": "0335067 - RENNES CIE",
           "session": "S1 Homme Arc à Poulies",
           "target": "7A"
+        },
+        {
+          "name": "DENOT Nelly",
+          "club": "0335054 - RENNES CHR",
+          "category": "0335054 - RENNES CHR",
+          "session": "S3 Femme Arc Classique National",
+          "target": "5A"
         },
         {
           "name": "DEVAUX Laura",
@@ -6678,7 +6706,7 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "Arc Classique Senior 1 Hommes",
-          "target": "9A"
+          "target": "10A"
         },
         {
           "name": "PILLON Thibaut",
@@ -6769,7 +6797,7 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "S1 Femme Arc Classique",
-          "target": "10A"
+          "target": "9A"
         },
         {
           "name": "VERZIER-ROUSSON Iewan",
