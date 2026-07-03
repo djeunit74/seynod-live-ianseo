@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-03T17:57:35.089142+00:00",
+  "generated_at_utc": "2026-07-03T19:35:56.430571+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2145,7 +2145,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28926",
       "ena_url": "https://www.ianseo.net/TourData/2026/28926/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28926/IC.php",
-      "entries_count": 110,
+      "entries_count": 113,
       "entries": [
         {
           "name": "BAILLOT Marion",
@@ -2160,6 +2160,13 @@
           "category": "0657105 - MARLY POURNOY",
           "session": "S2 Homme Arc Classique",
           "target": "24A"
+        },
+        {
+          "name": "BANSEPT Manon",
+          "club": "0654073 - NANCY",
+          "category": "0654073 - NANCY",
+          "session": "S1 Femme Arc à Poulies",
+          "target": "9D"
         },
         {
           "name": "BAULER Jeannine",
@@ -2180,7 +2187,7 @@
           "club": "0668173 - STE CROIX ARC CLUB",
           "category": "0668173 - STE CROIX ARC CLUB",
           "session": "U21 Homme Arc Classique",
-          "target": "20A"
+          "target": "31A"
         },
         {
           "name": "BOURGEOIS Guerric",
@@ -2383,7 +2390,7 @@
           "club": "0667158 - BRUMATH",
           "category": "0667158 - BRUMATH",
           "session": "S1 Homme Arc Classique",
-          "target": "19B"
+          "target": "31C"
         },
         {
           "name": "FRANZ Eirynn",
@@ -2530,7 +2537,7 @@
           "club": "0668183 - MULHOUSE STAM",
           "category": "0668183 - MULHOUSE STAM",
           "session": "U18 Femme Arc Classique",
-          "target": "16A"
+          "target": "19A"
         },
         {
           "name": "LAPOULE Lucie",
@@ -2575,11 +2582,18 @@
           "target": "7D"
         },
         {
+          "name": "LUCOT Laurent",
+          "club": "0654073 - NANCY",
+          "category": "0654073 - NANCY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "16A"
+        },
+        {
           "name": "LUDINARD Laurine",
           "club": "0608007 - VRIGNE AUX BOIS",
           "category": "0608007 - VRIGNE AUX BOIS",
-          "session": "U21 Femme Arc Classique",
-          "target": "19C"
+          "session": "U21 Femme Arc à Poulies",
+          "target": "16D"
         },
         {
           "name": "MALARD Ethan",
@@ -2621,14 +2635,14 @@
           "club": "0668169 - BRUNSTATT",
           "category": "0668169 - BRUNSTATT",
           "session": "S3 Homme Arc Classique",
-          "target": "16D"
+          "target": "19D"
         },
         {
           "name": "MATTE Charles-Hippolyte",
           "club": "0654079 - TOUL",
           "category": "0654079 - TOUL",
           "session": "U21 Homme Arc Classique",
-          "target": "20B"
+          "target": "31B"
         },
         {
           "name": "MAULARD Tristan",
@@ -2687,6 +2701,13 @@
           "target": "27C"
         },
         {
+          "name": "NICOLEY Catherine",
+          "club": "0654073 - NANCY",
+          "category": "0654073 - NANCY",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "16B"
+        },
+        {
           "name": "NICOLLE Jil",
           "club": "0667160 - STRASBOURG 1ER CIE",
           "category": "0667160 - STRASBOURG 1ER CIE",
@@ -2712,7 +2733,7 @@
           "club": "0688192 - THAON LES VOSGES",
           "category": "0688192 - THAON LES VOSGES",
           "session": "S3 Homme Arc Classique",
-          "target": "16C"
+          "target": "19C"
         },
         {
           "name": "PETAT Pierre",
@@ -2845,7 +2866,7 @@
           "club": "0688192 - THAON LES VOSGES",
           "category": "0688192 - THAON LES VOSGES",
           "session": "U18 Homme Arc Classique",
-          "target": "16B"
+          "target": "19B"
         },
         {
           "name": "TRUFFAUT Sylvain",
@@ -2866,7 +2887,7 @@
           "club": "0654081 - DOMBASLE SUR MEURTHE",
           "category": "0654081 - DOMBASLE SUR MEURTHE",
           "session": "S1 Femme Arc Classique",
-          "target": "19A"
+          "target": "20A"
         },
         {
           "name": "VERMEERSCH Eliott",
