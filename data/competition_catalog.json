@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-03T03:17:17.437172+00:00",
+  "generated_at_utc": "2026-07-03T06:47:34.343813+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2929,8 +2929,142 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29126",
       "ena_url": "https://www.ianseo.net/TourData/2026/29126/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29126/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 19,
+      "entries": [
+        {
+          "name": "AZANOWSKY Katarina",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Nu Senior 1 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "BESCHE Frederic",
+          "club": "0927042 - GISORS",
+          "category": "0927042 - GISORS",
+          "session": "Arc Nu Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "BESCHE Frederic",
+          "club": "0927042 - GISORS",
+          "category": "0927042 - GISORS",
+          "session": "Arc Nu Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "CHANILIERE Julien",
+          "club": "1047146 - STE MAURE DE PEYRIAC",
+          "category": "1047146 - STE MAURE DE PEYRIAC",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "DUTAU Noelie",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "U13 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "DUTAU Noelie",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U13 Femmes",
+          "target": ""
+        },
+        {
+          "name": "LACOMBE Caroline",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "S2 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LAFORGUE Hugo",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "S1 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LAFORGUE Yvon",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "U21 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LAFORGUE Yvon",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U21 Hommes",
+          "target": ""
+        },
+        {
+          "name": "MOREAU Aigline",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "U18 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "MOREAU Aigline",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U18 Femmes",
+          "target": ""
+        },
+        {
+          "name": "MORILLAS Capucine",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "U15 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "MORILLAS Capucine",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U15 Femmes",
+          "target": ""
+        },
+        {
+          "name": "PELLAPRAT Jessica",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique Senior 1 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "PELLAPRAT Jessica",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "S1 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SENSAMAT Timeo",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U13 Hommes",
+          "target": ""
+        },
+        {
+          "name": "SENSAMAT Timeo",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "Arc Classique U13 Hommes",
+          "target": ""
+        },
+        {
+          "name": "SIRBEN Elorri",
+          "club": "1047144 - BOE",
+          "category": "1047144 - BOE",
+          "session": "U21 Femme Arc Classique",
+          "target": ""
+        }
+      ]
     },
     {
       "to_id": "27515",
