@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-04T04:11:26.859708+00:00",
+  "generated_at_utc": "2026-07-04T07:22:23.754057+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -736,7 +736,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29034",
       "ena_url": "https://www.ianseo.net/TourData/2026/29034/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29034/IC.php",
-      "entries_count": 184,
+      "entries_count": 185,
       "entries": [
         {
           "name": "ABATE Giovanni",
@@ -842,6 +842,13 @@
           "category": "0103027 - ST POURCAIN SUR SIOULE",
           "session": "U13 Femme Arc Classique",
           "target": "23A"
+        },
+        {
+          "name": "BODEREAU COUALLIER Louanne",
+          "club": "0163157 - RIOM",
+          "category": "0163157 - RIOM",
+          "session": "U13 Femme Arc Classique",
+          "target": "23D"
         },
         {
           "name": "BONNET Auxence",
@@ -1568,7 +1575,7 @@
           "name": "MOINE Corentin",
           "club": "0143137 - BEAUZAC",
           "category": "0143137 - BEAUZAC",
-          "session": "Arc Classique U13 Hommes",
+          "session": "U13 Homme Arc Classique",
           "target": "23C"
         },
         {
