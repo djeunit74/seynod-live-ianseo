@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-04T14:37:45.218455+00:00",
+  "generated_at_utc": "2026-07-04T16:02:29.553728+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -792,7 +792,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29034",
       "ena_url": "https://www.ianseo.net/TourData/2026/29034/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29034/IC.php",
-      "entries_count": 185,
+      "entries_count": 184,
       "entries": [
         {
           "name": "ABATE Giovanni",
@@ -1225,7 +1225,7 @@
           "name": "DOLMAZON Chloe",
           "club": "0143137 - BEAUZAC",
           "category": "0143137 - BEAUZAC",
-          "session": "Arc Classique U18 Femmes",
+          "session": "U18 Femme Arc Classique",
           "target": "10C"
         },
         {
@@ -1773,13 +1773,6 @@
           "category": "0169185 - SLCTA",
           "session": "U15 Femme Arc Classique",
           "target": "17A"
-        },
-        {
-          "name": "PREVOT Lucas",
-          "club": "0126060 - CHATEAUNEUF DU RHONE",
-          "category": "0126060 - CHATEAUNEUF DU RHONE",
-          "session": "U13 Homme Arc Classique",
-          "target": "19C"
         },
         {
           "name": "PRINGEZ Camille",
@@ -3571,7 +3564,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28206",
       "ena_url": "https://www.ianseo.net/TourData/2026/28206/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28206/IC.php",
-      "entries_count": 30,
+      "entries_count": 37,
       "entries": [
         {
           "name": "ACHEKIAN Eliane",
@@ -3592,7 +3585,7 @@
           "club": "0895275 - CIE ARC MONTMORENCY",
           "category": "0895275 - CIE ARC MONTMORENCY",
           "session": "Senior Homme Arc Droit",
-          "target": "2C"
+          "target": "2B"
         },
         {
           "name": "BENARD Sylvie",
@@ -3609,9 +3602,16 @@
           "target": "2A"
         },
         {
+          "name": "BOURSIER Philippe",
+          "club": "0760158 - CIE ARC DE BETHISY",
+          "category": "0760158 - CIE ARC DE BETHISY",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": "2B"
+        },
+        {
           "name": "CHRETIEN Herve",
-          "club": "0892204 - ARC CLUB BOULOGNE BILLANCOURT",
-          "category": "0892204 - ARC CLUB BOULOGNE BILLANCOURT",
+          "club": "0892199 - SURESNES",
+          "category": "0892199 - SURESNES",
           "session": "Senior 3 Homme Arc Classique",
           "target": "1C"
         },
@@ -3627,7 +3627,7 @@
           "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior Homme Arc Droit",
-          "target": "1C"
+          "target": "1B"
         },
         {
           "name": "COURTEILLE Kerian",
@@ -3662,42 +3662,77 @@
           "club": "0895275 - CIE ARC MONTMORENCY",
           "category": "0895275 - CIE ARC MONTMORENCY",
           "session": "Senior Homme Arc Droit",
-          "target": "2B"
+          "target": "2C"
+        },
+        {
+          "name": "GAGE Xavier",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "2A"
         },
         {
           "name": "GAGE Xavier",
           "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior 2 Homme Arc Classique",
-          "target": "2B"
+          "target": "2C"
+        },
+        {
+          "name": "GAGE Xavier",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "3C"
+        },
+        {
+          "name": "GODARD Philippe",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": "3A"
+        },
+        {
+          "name": "GUIOCHON Valeriane",
+          "club": "0702019 - CHEZY SUR MARNE",
+          "category": "0702019 - CHEZY SUR MARNE",
+          "session": "Senior 3 Femme Arc Classique",
+          "target": "1E"
+        },
+        {
+          "name": "JAMEZ Claude",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": "1E"
         },
         {
           "name": "LANOIS Julien",
           "club": "0877073 - CIE ARC LE PIN",
           "category": "0877073 - CIE ARC LE PIN",
           "session": "Senior 2 Homme Arc Classique",
-          "target": "1D"
+          "target": "1C"
         },
         {
           "name": "LEBLOND Arnaud",
           "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior 2 Homme Arc à Poulies",
-          "target": "1B"
+          "target": "1C"
         },
         {
-          "name": "LEJEUNE Philippe",
-          "club": "0702351 - ARCHERS DAME ALINE",
-          "category": "0702351 - ARCHERS DAME ALINE",
-          "session": "Senior 2 Homme Arc à Poulies",
-          "target": "1A"
+          "name": "LEMAIRE Laurent",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "1E"
         },
         {
           "name": "MICHAUT Aurelie",
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 2 Femme Arc Classique",
-          "target": "1D"
+          "target": "1C"
         },
         {
           "name": "PAGE Julya",
@@ -3732,28 +3767,35 @@
           "club": "0877073 - CIE ARC LE PIN",
           "category": "0877073 - CIE ARC LE PIN",
           "session": "Senior 2 Femme Arc Classique",
-          "target": "1C"
+          "target": "1B"
         },
         {
           "name": "PRUD'HOMME Didier",
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 2 Homme Arc Classique",
-          "target": "1E"
+          "target": "1D"
         },
         {
           "name": "SAUVAGE Henri",
           "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
           "session": "Senior 2 Homme Arc Classique",
-          "target": "2C"
+          "target": "2D"
+        },
+        {
+          "name": "SAUVAGE Henri",
+          "club": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "category": "0760199 - CIE ARC DE CREPY-EN-VALOIS",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "3B"
         },
         {
           "name": "VALEYRE Beatrice",
           "club": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
           "category": "0760224 - CIE ARC NANTEUIL LE HAUDOUIN",
           "session": "Senior 2 Femme Arc à Poulies",
-          "target": "2D"
+          "target": "2B"
         },
         {
           "name": "VALEYRE Sylvain",
@@ -3774,14 +3816,14 @@
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "1B"
+          "target": "1A"
         },
         {
           "name": "VERGEAUD Anthony",
           "club": "0702351 - ARCHERS DAME ALINE",
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 1 Homme Arc Classique",
-          "target": "1C"
+          "target": "1B"
         }
       ]
     },
@@ -4607,7 +4649,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28926",
       "ena_url": "https://www.ianseo.net/TourData/2026/28926/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28926/IC.php",
-      "entries_count": 113,
+      "entries_count": 112,
       "entries": [
         {
           "name": "BAILLOT Marion",
@@ -5315,13 +5357,6 @@
           "category": "0667143 - LINGOLSHEIM",
           "session": "S2 Homme Arc Classique",
           "target": "24B"
-        },
-        {
-          "name": "SUDOL Anais",
-          "club": "0688192 - THAON LES VOSGES",
-          "category": "0688192 - THAON LES VOSGES",
-          "session": "U15 Femme Arc Classique",
-          "target": "5D"
         },
         {
           "name": "SUDOL Vincent",
