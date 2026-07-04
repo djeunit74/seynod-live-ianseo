@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-04T09:36:14.480407+00:00",
+  "generated_at_utc": "2026-07-04T11:27:43.144831+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3395,8 +3395,8 @@
           "name": "1075714I",
           "club": "HENRIQUES SANTOS Gabriel",
           "category": "HENRIQUES SANTOS Gabriel",
-          "session": "U15 Hommes",
-          "target": ""
+          "session": "U18 Hommes",
+          "target": "1075714I"
         },
         {
           "name": "1076860K",
@@ -3549,7 +3549,7 @@
           "name": "1052341J",
           "club": "VERDIER Carine",
           "category": "VERDIER Carine",
-          "session": "S2 Hommes",
+          "session": "S2 Femmes",
           "target": "1052341J"
         },
         {
