@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-04T11:27:43.144831+00:00",
+  "generated_at_utc": "2026-07-04T12:45:57.889065+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3326,238 +3326,238 @@
           "club": "BECUWE Arthur",
           "category": "BECUWE Arthur",
           "session": "U18 Hommes",
-          "target": "1018619J"
+          "target": ""
         },
         {
           "name": "0975047J",
           "club": "CACHAU Francis",
           "category": "CACHAU Francis",
           "session": "S3 Hommes",
-          "target": "0975047J"
+          "target": ""
         },
         {
           "name": "0963523H",
           "club": "CAQUERET Florian",
           "category": "CAQUERET Florian",
           "session": "S1 Hommes",
-          "target": "0963523H"
+          "target": "78"
         },
         {
           "name": "1061260K",
           "club": "COINDET Justine",
           "category": "COINDET Justine",
           "session": "S1 Femmes",
-          "target": "1061260K"
+          "target": "77"
         },
         {
           "name": "0860696P",
           "club": "ESCOTTE Guillaume",
           "category": "ESCOTTE Guillaume",
           "session": "S2 Hommes",
-          "target": "0860696P"
+          "target": "55"
         },
         {
           "name": "1035638Y",
           "club": "FABAS Philippe",
           "category": "FABAS Philippe",
           "session": "S3 Hommes",
-          "target": "1035638Y"
+          "target": "73"
         },
         {
           "name": "0947650E",
           "club": "FOURNIER Paul",
           "category": "FOURNIER Paul",
           "session": "S2 Hommes",
-          "target": "0947650E"
+          "target": "76"
         },
         {
           "name": "0002665X",
           "club": "GIRARD Muriel",
           "category": "GIRARD Muriel",
           "session": "S2 Femmes",
-          "target": "0002665X"
+          "target": "51"
         },
         {
           "name": "0037935J",
           "club": "GRAS Jean-Philippe",
           "category": "GRAS Jean-Philippe",
           "session": "S2 Hommes",
-          "target": "0037935J"
+          "target": "53"
         },
         {
           "name": "0830218L",
           "club": "HARDY Zoé",
           "category": "HARDY Zoé",
           "session": "S1 Femmes",
-          "target": "0830218L"
+          "target": "63"
         },
         {
           "name": "1075714I",
           "club": "HENRIQUES SANTOS Gabriel",
           "category": "HENRIQUES SANTOS Gabriel",
           "session": "U18 Hommes",
-          "target": "1075714I"
+          "target": "79"
         },
         {
           "name": "1076860K",
           "club": "HOMPS Elea",
           "category": "HOMPS Elea",
           "session": "U18 Femmes",
-          "target": "1076860K"
+          "target": "81"
         },
         {
           "name": "1036626Y",
           "club": "JOLY-VENDROT Léo",
           "category": "JOLY-VENDROT Léo",
           "session": "U21 Hommes",
-          "target": "1036626Y"
+          "target": "56"
         },
         {
           "name": "1035651L",
           "club": "KOCZOR Mahault",
           "category": "KOCZOR Mahault",
           "session": "S1 Femmes",
-          "target": "1035651L"
+          "target": "78"
         },
         {
           "name": "0018369S",
           "club": "LAGNEAUX Quentin",
           "category": "LAGNEAUX Quentin",
           "session": "S1 Hommes",
-          "target": "0018369S"
+          "target": "59"
         },
         {
           "name": "1052682M",
           "club": "LAUMON Fabrice",
           "category": "LAUMON Fabrice",
           "session": "S2 Hommes",
-          "target": "1052682M"
+          "target": "74"
         },
         {
           "name": "0000000X",
           "club": "LEBLOND Charlotte",
           "category": "LEBLOND Charlotte",
           "session": "U18 Femmes",
-          "target": "0000000X"
+          "target": "80"
         },
         {
           "name": "0033083K",
           "club": "LEBON BIANCHI Alessandro",
           "category": "LEBON BIANCHI Alessandro",
           "session": "U18 Hommes",
-          "target": "0033083K"
+          "target": "75"
         },
         {
           "name": "0253108T",
           "club": "LEBRUNET Rémi",
           "category": "LEBRUNET Rémi",
           "session": "S2 Hommes",
-          "target": "0253108T"
+          "target": "83"
         },
         {
           "name": "1075898K",
           "club": "MONTARDIER Anaïs",
           "category": "MONTARDIER Anaïs",
           "session": "S1 Femmes",
-          "target": "1075898K"
+          "target": "62"
         },
         {
           "name": "0011780E",
           "club": "MOTHE Fréderic",
           "category": "MOTHE Fréderic",
           "session": "S2 Hommes",
-          "target": "0011780E"
+          "target": "71"
         },
         {
           "name": "0802017H",
           "club": "MOTHE Muriel",
           "category": "MOTHE Muriel",
           "session": "S2 Femmes",
-          "target": "0802017H"
+          "target": "57"
         },
         {
           "name": "0969628U",
           "club": "MOTHE Romane",
           "category": "MOTHE Romane",
           "session": "S1 Femmes",
-          "target": "0969628U"
+          "target": "64"
         },
         {
           "name": "1052605N",
           "club": "ORIANO Clément",
           "category": "ORIANO Clément",
           "session": "U21 Hommes",
-          "target": "1052605N"
+          "target": "70"
         },
         {
           "name": "1052607P",
           "club": "ORIANO Julien",
           "category": "ORIANO Julien",
           "session": "S2 Hommes",
-          "target": "1052607P"
+          "target": "52"
         },
         {
           "name": "1024743X",
           "club": "PARIS Julie",
           "category": "PARIS Julie",
           "session": "S2 Femmes",
-          "target": "1024743X"
+          "target": "66"
         },
         {
           "name": "1007528U",
           "club": "POITEVIN Céline",
           "category": "POITEVIN Céline",
           "session": "S1 Femmes",
-          "target": "1007528U"
+          "target": "68"
         },
         {
           "name": "0808645M",
           "club": "SORIN Benjamin",
           "category": "SORIN Benjamin",
           "session": "S1 Hommes",
-          "target": "0808645M"
+          "target": "54"
         },
         {
           "name": "0064661J",
           "club": "SOULARD Benoit",
           "category": "SOULARD Benoit",
           "session": "S2 Hommes",
-          "target": "0064661J"
+          "target": "67"
         },
         {
           "name": "0394631X",
           "club": "SUSKI Daphné",
           "category": "SUSKI Daphné",
           "session": "S1 Femmes",
-          "target": "0394631X"
+          "target": "61"
         },
         {
           "name": "0978912K",
           "club": "THEBAUDEAU Jérome",
           "category": "THEBAUDEAU Jérome",
           "session": "S2 Hommes",
-          "target": "0978912K"
+          "target": "58"
         },
         {
           "name": "0012557Z",
           "club": "THOREAU Simon",
           "category": "THOREAU Simon",
           "session": "S1 Hommes",
-          "target": "0012557Z"
+          "target": "69"
         },
         {
           "name": "1052341J",
           "club": "VERDIER Carine",
           "category": "VERDIER Carine",
           "session": "S2 Femmes",
-          "target": "1052341J"
+          "target": "65"
         },
         {
           "name": "1000184I",
           "club": "VILCOCQ Marie",
           "category": "VILCOCQ Marie",
           "session": "S2 Femmes",
-          "target": "1000184I"
+          "target": "60"
         }
       ]
     },
