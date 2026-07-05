@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-05T13:39:44.012642+00:00",
+  "generated_at_utc": "2026-07-05T15:12:57.290038+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -866,7 +866,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28823",
       "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
-      "entries_count": 11,
+      "entries_count": 13,
       "entries": [
         {
           "name": "AMIARD Cedric",
@@ -897,6 +897,13 @@
           "target": "1A"
         },
         {
+          "name": "CAMAIL Nicolas",
+          "club": "0893242 - AULNAY SOUS BOIS",
+          "category": "0893242 - AULNAY SOUS BOIS",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "2B"
+        },
+        {
           "name": "DI GASPERO Anthony",
           "club": "0893240 - PANTIN",
           "category": "0893240 - PANTIN",
@@ -908,7 +915,7 @@
           "club": "0894257 - VILLIERS SUR MARNE",
           "category": "0894257 - VILLIERS SUR MARNE",
           "session": "Arc Classique Senior 3 Femme",
-          "target": "1A"
+          "target": "1B"
         },
         {
           "name": "HUARD DE JORNA Marie-Amélie",
@@ -936,6 +943,13 @@
           "club": "0893227 - GAGNY",
           "category": "0893227 - GAGNY",
           "session": "Arc Classique Senior 3 Homme",
+          "target": "1A"
+        },
+        {
+          "name": "SAUVAGE Jean Francois",
+          "club": "0893242 - AULNAY SOUS BOIS",
+          "category": "0893242 - AULNAY SOUS BOIS",
+          "session": "Arc à Poulies Senior 2 Homme",
           "target": "1A"
         },
         {
