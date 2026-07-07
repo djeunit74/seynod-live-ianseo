@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-07T15:27:05.422590+00:00",
+  "generated_at_utc": "2026-07-07T17:33:38.971872+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -657,6 +657,13 @@
           "target": "20B"
         },
         {
+          "name": "BEYLSTEIN Jessica",
+          "club": "1285113 - LA GARNACHE",
+          "category": "1285113 - LA GARNACHE",
+          "session": "Arc à Poulies Senior 1 Femme",
+          "target": "28D"
+        },
+        {
           "name": "BIGGIO Claire",
           "club": "0891152 - MORSANG SUR ORGE",
           "category": "0891152 - MORSANG SUR ORGE",
@@ -1033,13 +1040,6 @@
           "category": "0289107 - BRIENON/ARMANCON",
           "session": "Arc à Poulies U21 Femme",
           "target": "39D"
-        },
-        {
-          "name": "CHIRON Marina",
-          "club": "1285113 - LA GARNACHE",
-          "category": "1285113 - LA GARNACHE",
-          "session": "Arc à Poulies Senior 2 Femme",
-          "target": "28D"
         },
         {
           "name": "CHOURRE Nathalie",
