@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-08T13:03:44.226597+00:00",
+  "generated_at_utc": "2026-07-08T15:41:43.062519+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1539,13 +1539,6 @@
           "target": "22D"
         },
         {
-          "name": "GAREL Oceane",
-          "club": "0169212 - BRON",
-          "category": "0169212 - BRON",
-          "session": "Arc Classique U21 Femme",
-          "target": "28A"
-        },
-        {
           "name": "GASSIOT Mathieu",
           "club": "0878134 - VILLEPREUX",
           "category": "0878134 - VILLEPREUX",
@@ -2650,6 +2643,13 @@
           "category": "0895297 - ECOUEN",
           "session": "Arc à Poulies Senior 2 Femme",
           "target": "30C"
+        },
+        {
+          "name": "SAURAT Agnes",
+          "club": "0169212 - BRON",
+          "category": "0169212 - BRON",
+          "session": "Arc Classique Senior 1 Femme",
+          "target": "28A"
         },
         {
           "name": "SAUVAGE Jean Francois",
