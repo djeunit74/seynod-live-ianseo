@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-08T03:24:30.995301+00:00",
+  "generated_at_utc": "2026-07-08T06:13:01.727610+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 15,
+  "count": 16,
   "tournaments": [
     {
       "to_id": "28507",
@@ -3338,6 +3338,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28509",
       "ena_url": "https://www.ianseo.net/TourData/2026/28509/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28509/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29201",
+      "year": "2027",
+      "name": "9. Dreikönigsturnier des BSV Sagitta et Arcum Judenburg",
+      "organizer": "Bogensportverein Sagitta et Arcum Judenburg",
+      "date_text": "5-6 Jan",
+      "end_date": "2027-01-06",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29201",
+      "ena_url": "https://www.ianseo.net/TourData/2027/29201/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/29201/IC.php",
       "entries_count": 0,
       "entries": []
     },
