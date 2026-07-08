@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-08T09:06:36.596530+00:00",
+  "generated_at_utc": "2026-07-08T11:22:56.710004+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 16,
+  "count": 17,
   "tournaments": [
     {
       "to_id": "28507",
@@ -3163,6 +3163,19 @@
           "target": "2C"
         }
       ]
+    },
+    {
+      "to_id": "29214",
+      "year": "2026",
+      "name": "CHALLENGE INTER-DEPARTEMENTAL 2026",
+      "organizer": "100000 - CRNATA",
+      "date_text": "18-19 Jul",
+      "end_date": "2026-07-19",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29214",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29214/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29214/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27637",
