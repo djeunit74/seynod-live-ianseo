@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-09T20:19:05.626579+00:00",
+  "generated_at_utc": "2026-07-09T21:57:46.578058+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -52,7 +52,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "S3 Homme Arc à Poulies",
-          "target": ""
+          "target": "6A"
         },
         {
           "name": "BOSSARD Florian",
@@ -125,18 +125,18 @@
           "target": ""
         },
         {
-          "name": "DELAMOTTE Fabien",
-          "club": "0335056 - TINTENIAC",
-          "category": "0335056 - TINTENIAC",
-          "session": "Arc Classique U18 Hommes",
-          "target": ""
+          "name": "DAVAUX Claire",
+          "club": "0437083 - ST AVERTIN",
+          "category": "0437083 - ST AVERTIN",
+          "session": "U18 Femme Arc Classique",
+          "target": "7C"
         },
         {
           "name": "DELAMOTTE Fabien",
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
-          "session": "U18 Homme Arc Classique",
-          "target": "8A"
+          "session": "Arc Classique U18 Hommes",
+          "target": ""
         },
         {
           "name": "DELAMOTTE Maeva",
@@ -164,7 +164,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "U18 Femme Arc Classique",
-          "target": ""
+          "target": "7B"
         },
         {
           "name": "DUCHESNE Axel",
@@ -178,7 +178,7 @@
           "club": "0335056 - TINTENIAC",
           "category": "0335056 - TINTENIAC",
           "session": "U18 Femme Arc Classique",
-          "target": "7B"
+          "target": "8A"
         },
         {
           "name": "DUREL Jeanne",
@@ -213,7 +213,7 @@
           "club": "1285121 - MONTAIGU",
           "category": "1285121 - MONTAIGU",
           "session": "S2 Femme Arc Classique",
-          "target": ""
+          "target": "11B"
         },
         {
           "name": "JEANNE Nathalie",
@@ -304,7 +304,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "U15 Homme Arc Classique",
-          "target": ""
+          "target": "4C"
         },
         {
           "name": "MAUPILET Gilbert",
@@ -388,7 +388,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "U18 Femme Arc Classique",
-          "target": ""
+          "target": "7A"
         },
         {
           "name": "RENARD Garance",
