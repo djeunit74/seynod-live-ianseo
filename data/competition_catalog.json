@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-10T19:01:12.015513+00:00",
+  "generated_at_utc": "2026-07-10T20:49:42.811044+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 16,
+  "count": 17,
   "tournaments": [
     {
       "to_id": "27258",
@@ -2365,6 +2365,19 @@
           "target": "38D"
         }
       ]
+    },
+    {
+      "to_id": "29009",
+      "year": "2026",
+      "name": "L'ULTIME",
+      "organizer": "GOSIER",
+      "date_text": "11-12 Jul",
+      "end_date": "2026-07-12",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29009",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29009/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29009/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "28268",
