@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-14T10:16:38.814746+00:00",
+  "generated_at_utc": "2026-07-14T11:54:24.762877+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -109,6 +109,13 @@
           "category": "1132109 - CONDOM",
           "session": "U18 Femme Arc Classique",
           "target": "2E"
+        },
+        {
+          "name": "CEYRAT-AUDEGUY Emma",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "U18 Femme Arc Classique",
+          "target": "1B"
         },
         {
           "name": "CHEVRET Severine",
@@ -249,13 +256,6 @@
           "category": "1131072 - L'UNION",
           "session": "U18 Homme Arc à Poulies",
           "target": "2B"
-        },
-        {
-          "name": "PAES Christian",
-          "club": "1182219 - CASTELSARRASIN",
-          "category": "1182219 - CASTELSARRASIN",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1B"
         },
         {
           "name": "PINCEMAIL Joseph",
