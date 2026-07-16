@@ -1,12 +1,39 @@
 {
-  "generated_at_utc": "2026-07-16T06:42:46.587847+00:00",
+  "generated_at_utc": "2026-07-16T09:13:00.992979+00:00",
   "today": "2026-07-16",
   "country": "FRA",
   "keywords": [
     "seynod",
     "0174246"
   ],
-  "found": false,
-  "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
-  "checked_candidates": 15
+  "found": true,
+  "next_competition": {
+    "to_id": "27294",
+    "year": "2026",
+    "name": "Championnat de France Tir à l'Arc Extérieur Adulte 2026",
+    "organizer": "Les Archers Riomois / FFTA",
+    "date_text": "24-26 Jul",
+    "end_date": "2026-07-26",
+    "details_url": "https://www.ianseo.net/Details.php?toId=27294",
+    "ena_url": "https://www.ianseo.net/TourData/2026/27294/ENA.php",
+    "ic_url": null,
+    "club_entries": [
+      {
+        "name": "BOURGEAIS Stephane",
+        "target": "45B",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "Senior 2 Homme Arc à Poulies"
+      }
+    ],
+    "seynod_entries": [
+      {
+        "name": "BOURGEAIS Stephane",
+        "target": "45B",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "Senior 2 Homme Arc à Poulies"
+      }
+    ]
+  }
 }
