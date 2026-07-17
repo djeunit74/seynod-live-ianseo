@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-16T23:25:11.747572+00:00",
+  "generated_at_utc": "2026-07-17T01:01:08.438361+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -7,313 +7,6 @@
   ],
   "count": 15,
   "tournaments": [
-    {
-      "to_id": "28268",
-      "year": "2026",
-      "name": "Concours qualificatif Beursault Fronton",
-      "organizer": "Les archers frontonnais",
-      "date_text": "18-19 Jul",
-      "end_date": "2026-07-19",
-      "details_url": "https://www.ianseo.net/Details.php?toId=28268",
-      "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 40,
-      "entries": [
-        {
-          "name": "ARANDA Joseph",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc Classique",
-          "target": "1E"
-        },
-        {
-          "name": "ARANDA Joseph",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2D"
-        },
-        {
-          "name": "AUBERT Christine",
-          "club": "1132109 - CONDOM",
-          "category": "1132109 - CONDOM",
-          "session": "U18 Femme Arc Classique",
-          "target": "1D"
-        },
-        {
-          "name": "AZZHIRI Claemence",
-          "club": "1182219 - CASTELSARRASIN",
-          "category": "1182219 - CASTELSARRASIN",
-          "session": "Senior Femme Arc Nu",
-          "target": "1E"
-        },
-        {
-          "name": "BARBIER Yannick",
-          "club": "1131097 - PECHBONNIEU",
-          "category": "1131097 - PECHBONNIEU",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2A"
-        },
-        {
-          "name": "BARBIER Yannick",
-          "club": "1131097 - PECHBONNIEU",
-          "category": "1131097 - PECHBONNIEU",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2B"
-        },
-        {
-          "name": "BAYONNE Robert",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "Senior Homme Arc Nu",
-          "target": "1E"
-        },
-        {
-          "name": "BONNAFOUX Philippe",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc Classique",
-          "target": "2D"
-        },
-        {
-          "name": "BONNET Martine",
-          "club": "1131072 - L'UNION",
-          "category": "1131072 - L'UNION",
-          "session": "U18 Femme Arc Classique",
-          "target": "2C"
-        },
-        {
-          "name": "BORROT Kevin",
-          "club": "1131097 - PECHBONNIEU",
-          "category": "1131097 - PECHBONNIEU",
-          "session": "U18 Homme Arc Classique",
-          "target": "1E"
-        },
-        {
-          "name": "CAPO Jean-Marc",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1B"
-        },
-        {
-          "name": "CAPO Jean-Marc",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1B"
-        },
-        {
-          "name": "CEDIL-AUDOUIN Anneliese",
-          "club": "1132109 - CONDOM",
-          "category": "1132109 - CONDOM",
-          "session": "U18 Femme Arc Classique",
-          "target": "2E"
-        },
-        {
-          "name": "CEYRAT-AUDEGUY Emma",
-          "club": "1182219 - CASTELSARRASIN",
-          "category": "1182219 - CASTELSARRASIN",
-          "session": "U18 Femme Arc Classique",
-          "target": "1B"
-        },
-        {
-          "name": "CHEVRET Severine",
-          "club": "1109002 - PAMIERS",
-          "category": "1109002 - PAMIERS",
-          "session": "U18 Femme Arc Classique",
-          "target": "2D"
-        },
-        {
-          "name": "CLEMENT Dominique",
-          "club": "1182216 - NEGREPELISSE",
-          "category": "1182216 - NEGREPELISSE",
-          "session": "U18 Homme Arc Classique",
-          "target": "2C"
-        },
-        {
-          "name": "DESCOURVIERES Benoit",
-          "club": "1131097 - PECHBONNIEU",
-          "category": "1131097 - PECHBONNIEU",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1C"
-        },
-        {
-          "name": "DUPUIS Emmanuel",
-          "club": "1109002 - PAMIERS",
-          "category": "1109002 - PAMIERS",
-          "session": "U18 Homme Arc Classique",
-          "target": "1D"
-        },
-        {
-          "name": "FAYE Amaury",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc Classique",
-          "target": "1D"
-        },
-        {
-          "name": "HUFSCHMIDT Jordan",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "U18 Homme Arc Classique",
-          "target": "1A"
-        },
-        {
-          "name": "JACQUET Sebastien",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2A"
-        },
-        {
-          "name": "JACQUET Sebastien",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2A"
-        },
-        {
-          "name": "KAHIA Cecilia",
-          "club": "1131079 - TOURNEFEUILLE",
-          "category": "1131079 - TOURNEFEUILLE",
-          "session": "U18 Femme Arc Classique",
-          "target": "1D"
-        },
-        {
-          "name": "LAURENCE Sylviane",
-          "club": "1182226 - POMPIGNAN",
-          "category": "1182226 - POMPIGNAN",
-          "session": "U18 Femme Arc Classique",
-          "target": "2E"
-        },
-        {
-          "name": "LE VAN Christian",
-          "club": "1182219 - CASTELSARRASIN",
-          "category": "1182219 - CASTELSARRASIN",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1A"
-        },
-        {
-          "name": "LORENTE Cyril",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2C"
-        },
-        {
-          "name": "MARTIN Marie",
-          "club": "1132109 - CONDOM",
-          "category": "1132109 - CONDOM",
-          "session": "U18 Femme Arc Classique",
-          "target": "1B"
-        },
-        {
-          "name": "MICHELOTTI Michel",
-          "club": "1131097 - PECHBONNIEU",
-          "category": "1131097 - PECHBONNIEU",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1A"
-        },
-        {
-          "name": "MICHELOTTI Michel",
-          "club": "1131097 - PECHBONNIEU",
-          "category": "1131097 - PECHBONNIEU",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2A"
-        },
-        {
-          "name": "MIGNON Jerome",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "U18 Homme Arc Classique",
-          "target": "2E"
-        },
-        {
-          "name": "MOREL Marc",
-          "club": "0914018 - ARGENCES",
-          "category": "0914018 - ARGENCES",
-          "session": "Senior Homme Arc Nu",
-          "target": "1C"
-        },
-        {
-          "name": "MOREL Marc",
-          "club": "0914018 - ARGENCES",
-          "category": "0914018 - ARGENCES",
-          "session": "Senior Homme Arc Nu",
-          "target": "2E"
-        },
-        {
-          "name": "NARBONNE Sebastien",
-          "club": "1131072 - L'UNION",
-          "category": "1131072 - L'UNION",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1A"
-        },
-        {
-          "name": "NARBONNE Sebastien",
-          "club": "1131072 - L'UNION",
-          "category": "1131072 - L'UNION",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2B"
-        },
-        {
-          "name": "PINCEMAIL Joseph",
-          "club": "1131079 - TOURNEFEUILLE",
-          "category": "1131079 - TOURNEFEUILLE",
-          "session": "U18 Homme Arc Classique",
-          "target": "1C"
-        },
-        {
-          "name": "POUILLY Franck",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2B"
-        },
-        {
-          "name": "POUILLY Franck",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "Senior Homme Arc Droit",
-          "target": "2D"
-        },
-        {
-          "name": "STACEY Michele",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Femme Arc à Poulies",
-          "target": "2C"
-        },
-        {
-          "name": "VIVIES Carole",
-          "club": "1132109 - CONDOM",
-          "category": "1132109 - CONDOM",
-          "session": "U18 Femme Arc Classique",
-          "target": "1C"
-        },
-        {
-          "name": "VOLKA Ophelie",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Femme Arc à Poulies",
-          "target": "2B"
-        }
-      ]
-    },
-    {
-      "to_id": "29214",
-      "year": "2026",
-      "name": "CHALLENGE INTER-DEPARTEMENTAL 2026",
-      "organizer": "100000 - CRNATA",
-      "date_text": "18-19 Jul",
-      "end_date": "2026-07-19",
-      "details_url": "https://www.ianseo.net/Details.php?toId=29214",
-      "ena_url": "https://www.ianseo.net/TourData/2026/29214/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/29214/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
     {
       "to_id": "27637",
       "year": "2026",
@@ -1216,6 +909,313 @@
           "target": ""
         }
       ]
+    },
+    {
+      "to_id": "28268",
+      "year": "2026",
+      "name": "Concours qualificatif Beursault Fronton",
+      "organizer": "Les archers frontonnais",
+      "date_text": "18-19 Jul",
+      "end_date": "2026-07-19",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28268",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
+      "entries_count": 40,
+      "entries": [
+        {
+          "name": "ARANDA Joseph",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc Classique",
+          "target": "1E"
+        },
+        {
+          "name": "ARANDA Joseph",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2D"
+        },
+        {
+          "name": "AUBERT Christine",
+          "club": "1132109 - CONDOM",
+          "category": "1132109 - CONDOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "AZZHIRI Claemence",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "Senior Femme Arc Nu",
+          "target": "1E"
+        },
+        {
+          "name": "BARBIER Yannick",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "BARBIER Yannick",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "BAYONNE Robert",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "Senior Homme Arc Nu",
+          "target": "1E"
+        },
+        {
+          "name": "BONNAFOUX Philippe",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc Classique",
+          "target": "2D"
+        },
+        {
+          "name": "BONNET Martine",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "U18 Femme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "BORROT Kevin",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc Classique",
+          "target": "1E"
+        },
+        {
+          "name": "CAPO Jean-Marc",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "CAPO Jean-Marc",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "CEDIL-AUDOUIN Anneliese",
+          "club": "1132109 - CONDOM",
+          "category": "1132109 - CONDOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "2E"
+        },
+        {
+          "name": "CEYRAT-AUDEGUY Emma",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "U18 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "CHEVRET Severine",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "U18 Femme Arc Classique",
+          "target": "2D"
+        },
+        {
+          "name": "CLEMENT Dominique",
+          "club": "1182216 - NEGREPELISSE",
+          "category": "1182216 - NEGREPELISSE",
+          "session": "U18 Homme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "DESCOURVIERES Benoit",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "DUPUIS Emmanuel",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "U18 Homme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "FAYE Amaury",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "HUFSCHMIDT Jordan",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "U18 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "JACQUET Sebastien",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "JACQUET Sebastien",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "KAHIA Cecilia",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "U18 Femme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "LAURENCE Sylviane",
+          "club": "1182226 - POMPIGNAN",
+          "category": "1182226 - POMPIGNAN",
+          "session": "U18 Femme Arc Classique",
+          "target": "2E"
+        },
+        {
+          "name": "LE VAN Christian",
+          "club": "1182219 - CASTELSARRASIN",
+          "category": "1182219 - CASTELSARRASIN",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "LORENTE Cyril",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "MARTIN Marie",
+          "club": "1132109 - CONDOM",
+          "category": "1132109 - CONDOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "MICHELOTTI Michel",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "MICHELOTTI Michel",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "MIGNON Jerome",
+          "club": "1131091 - MURET",
+          "category": "1131091 - MURET",
+          "session": "U18 Homme Arc Classique",
+          "target": "2E"
+        },
+        {
+          "name": "MOREL Marc",
+          "club": "0914018 - ARGENCES",
+          "category": "0914018 - ARGENCES",
+          "session": "Senior Homme Arc Nu",
+          "target": "1C"
+        },
+        {
+          "name": "MOREL Marc",
+          "club": "0914018 - ARGENCES",
+          "category": "0914018 - ARGENCES",
+          "session": "Senior Homme Arc Nu",
+          "target": "2E"
+        },
+        {
+          "name": "NARBONNE Sebastien",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "NARBONNE Sebastien",
+          "club": "1131072 - L'UNION",
+          "category": "1131072 - L'UNION",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "PINCEMAIL Joseph",
+          "club": "1131079 - TOURNEFEUILLE",
+          "category": "1131079 - TOURNEFEUILLE",
+          "session": "U18 Homme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "POUILLY Franck",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "POUILLY Franck",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "Senior Homme Arc Droit",
+          "target": "2D"
+        },
+        {
+          "name": "STACEY Michele",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Femme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "VIVIES Carole",
+          "club": "1132109 - CONDOM",
+          "category": "1132109 - CONDOM",
+          "session": "U18 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "VOLKA Ophelie",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Femme Arc à Poulies",
+          "target": "2B"
+        }
+      ]
+    },
+    {
+      "to_id": "29214",
+      "year": "2026",
+      "name": "CHALLENGE INTER-DEPARTEMENTAL 2026",
+      "organizer": "100000 - CRNATA",
+      "date_text": "18-19 Jul",
+      "end_date": "2026-07-19",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29214",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29214/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29214/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "27294",
