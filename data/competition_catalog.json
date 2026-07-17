@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-17T09:27:02.299387+00:00",
+  "generated_at_utc": "2026-07-17T11:06:06.059033+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -920,7 +920,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28268",
       "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 40,
+      "entries_count": 38,
       "entries": [
         {
           "name": "ARANDA Joseph",
@@ -965,13 +965,6 @@
           "target": "2B"
         },
         {
-          "name": "BAYONNE Robert",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "Senior Homme Arc Nu",
-          "target": "1E"
-        },
-        {
           "name": "BONNAFOUX Philippe",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
@@ -1005,13 +998,6 @@
           "category": "1131073 - FRONTON",
           "session": "U18 Homme Arc à Poulies",
           "target": "1B"
-        },
-        {
-          "name": "CEDIL-AUDOUIN Anneliese",
-          "club": "1132109 - CONDOM",
-          "category": "1132109 - CONDOM",
-          "session": "U18 Femme Arc Classique",
-          "target": "2E"
         },
         {
           "name": "CEYRAT-AUDEGUY Emma",
@@ -1056,13 +1042,6 @@
           "target": "1D"
         },
         {
-          "name": "HUFSCHMIDT Jordan",
-          "club": "1131091 - MURET",
-          "category": "1131091 - MURET",
-          "session": "U18 Homme Arc Classique",
-          "target": "1A"
-        },
-        {
           "name": "JACQUET Sebastien",
           "club": "1131073 - FRONTON",
           "category": "1131073 - FRONTON",
@@ -1096,6 +1075,13 @@
           "category": "1182219 - CASTELSARRASIN",
           "session": "U18 Homme Arc à Poulies",
           "target": "1A"
+        },
+        {
+          "name": "LORENTE Cyril",
+          "club": "1131073 - FRONTON",
+          "category": "1131073 - FRONTON",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2B"
         },
         {
           "name": "LORENTE Cyril",
@@ -1158,7 +1144,7 @@
           "club": "1131072 - L'UNION",
           "category": "1131072 - L'UNION",
           "session": "U18 Homme Arc à Poulies",
-          "target": "2B"
+          "target": "1A"
         },
         {
           "name": "PINCEMAIL Joseph",
