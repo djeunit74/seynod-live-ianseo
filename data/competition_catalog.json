@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-18T17:30:14.082854+00:00",
+  "generated_at_utc": "2026-07-18T18:31:55.831970+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28268",
       "ena_url": "https://www.ianseo.net/TourData/2026/28268/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28268/IC.php",
-      "entries_count": 38,
+      "entries_count": 39,
       "entries": [
         {
           "name": "ARANDA Joseph",
@@ -46,13 +46,6 @@
           "category": "1182219 - CASTELSARRASIN",
           "session": "Senior Femme Arc Nu",
           "target": "1E"
-        },
-        {
-          "name": "BARBIER Yannick",
-          "club": "1131097 - PECHBONNIEU",
-          "category": "1131097 - PECHBONNIEU",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "2A"
         },
         {
           "name": "BARBIER Yannick",
@@ -90,13 +83,6 @@
           "target": "1B"
         },
         {
-          "name": "CAPO Jean-Marc",
-          "club": "1131073 - FRONTON",
-          "category": "1131073 - FRONTON",
-          "session": "U18 Homme Arc à Poulies",
-          "target": "1B"
-        },
-        {
           "name": "CEYRAT-AUDEGUY Emma",
           "club": "1182219 - CASTELSARRASIN",
           "category": "1182219 - CASTELSARRASIN",
@@ -111,6 +97,13 @@
           "target": "2D"
         },
         {
+          "name": "CHEVRET Severine",
+          "club": "1109002 - PAMIERS",
+          "category": "1109002 - PAMIERS",
+          "session": "U18 Femme Arc Classique",
+          "target": "2E"
+        },
+        {
           "name": "CLEMENT Dominique",
           "club": "1182216 - NEGREPELISSE",
           "category": "1182216 - NEGREPELISSE",
@@ -123,6 +116,13 @@
           "category": "1131097 - PECHBONNIEU",
           "session": "U18 Homme Arc à Poulies",
           "target": "1C"
+        },
+        {
+          "name": "DESCOURVIERES Benoit",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "2A"
         },
         {
           "name": "DUPUIS Emmanuel",
@@ -200,6 +200,13 @@
           "category": "1131097 - PECHBONNIEU",
           "session": "U18 Homme Arc à Poulies",
           "target": "1A"
+        },
+        {
+          "name": "MICHELOTTI Michel",
+          "club": "1131097 - PECHBONNIEU",
+          "category": "1131097 - PECHBONNIEU",
+          "session": "U18 Homme Arc à Poulies",
+          "target": "1B"
         },
         {
           "name": "MICHELOTTI Michel",
