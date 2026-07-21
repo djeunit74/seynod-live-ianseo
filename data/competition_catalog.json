@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-21T12:07:53.431298+00:00",
+  "generated_at_utc": "2026-07-21T14:33:59.406156+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27294",
       "ena_url": "https://www.ianseo.net/TourData/2026/27294/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27294/IC.php",
-      "entries_count": 848,
+      "entries_count": 843,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -116,13 +116,6 @@
           "category": "0759119 - LOOS",
           "session": "Homme Arc Nu TAE Nat 50m 122cm",
           "target": "4B"
-        },
-        {
-          "name": "APPIETTO Christian",
-          "club": "0169187 - ST PRIEST",
-          "category": "0169187 - ST PRIEST",
-          "session": "Senior 3 Homme Arc Classique TAE Nat 50m 122cm",
-          "target": "31A"
         },
         {
           "name": "AREVALO Yoen",
@@ -514,7 +507,7 @@
           "club": "0878122 - FONTENAY LE FLEURY",
           "category": "0878122 - FONTENAY LE FLEURY",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "53A"
+          "target": "52A"
         },
         {
           "name": "BONNAUD Yohann",
@@ -752,7 +745,7 @@
           "club": "0335073 - LIFFRE",
           "category": "0335073 - LIFFRE",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "54A"
+          "target": "53A"
         },
         {
           "name": "BROU Cidgy",
@@ -1074,7 +1067,7 @@
           "club": "0101009 - MONTMERLE SUR SAONE",
           "category": "0101009 - MONTMERLE SUR SAONE",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "53D"
+          "target": "52D"
         },
         {
           "name": "CHARLOT Cedric",
@@ -1354,7 +1347,7 @@
           "club": "0780304 - MOREUIL",
           "category": "0780304 - MOREUIL",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "52C"
+          "target": "51B"
         },
         {
           "name": "COUVREUR Claire",
@@ -2138,7 +2131,7 @@
           "club": "0289092 - POURRAIN",
           "category": "0289092 - POURRAIN",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "54D"
+          "target": "53D"
         },
         {
           "name": "FAURON Alexis",
@@ -2552,13 +2545,6 @@
           "category": "0759103 - LILLE CIE",
           "session": "Senior 1 Homme Arc Classique",
           "target": "16B"
-        },
-        {
-          "name": "GIBEAUD Emilien",
-          "club": "1285122 - FONTENAY LE COMTE",
-          "category": "1285122 - FONTENAY LE COMTE",
-          "session": "Senior 2 Homme Arc Classique TAE Nat 50m 122cm",
-          "target": "21C"
         },
         {
           "name": "GIBOULET Alain",
@@ -3132,7 +3118,7 @@
           "club": "1244036 - LA TURBALLE",
           "category": "1244036 - LA TURBALLE",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "52D"
+          "target": "53C"
         },
         {
           "name": "JUGUET Vincent",
@@ -3180,7 +3166,7 @@
           "name": "KOLESNIKOVA Ekaterina",
           "club": "1033102 - ANDERNOS LES BAINS",
           "category": "1033102 - ANDERNOS LES BAINS",
-          "session": "Arc Classique Senior 1 Femme TAE Nat 50m 122cm",
+          "session": "Senior 1 Femme Arc Classique TAE Nat 50m 122cm",
           "target": "41D"
         },
         {
@@ -3469,13 +3455,6 @@
           "category": "0892203 - ISSY LES MOULINEAUX",
           "session": "Senior 1 Homme Arc Classique",
           "target": "11A"
-        },
-        {
-          "name": "LE BLIGUET Loic",
-          "club": "1047144 - BOE",
-          "category": "1047144 - BOE",
-          "session": "Senior 1 Homme Arc à Poulies",
-          "target": "52A"
         },
         {
           "name": "LE CLERCQ Alexandre",
@@ -3881,7 +3860,7 @@
           "club": "0428055 - NOGENT LE ROI",
           "category": "0428055 - NOGENT LE ROI",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "53C"
+          "target": "52C"
         },
         {
           "name": "MARTIN Angel",
@@ -3916,7 +3895,7 @@
           "club": "1134135 - PEROLS",
           "category": "1134135 - PEROLS",
           "session": "Senior 1 Homme Arc à Poulies",
-          "target": "54B"
+          "target": "53B"
         },
         {
           "name": "MARTINA Lionel",
@@ -5060,13 +5039,6 @@
           "target": "51C"
         },
         {
-          "name": "REGIS Stephanie",
-          "club": "0169178 - BRIGNAIS",
-          "category": "0169178 - BRIGNAIS",
-          "session": "Senior 2 Femme Arc Classique",
-          "target": "4C"
-        },
-        {
           "name": "REGNAULT Jean-Louis",
           "club": "0950066 - AGNEAUX",
           "category": "0950066 - AGNEAUX",
@@ -5420,7 +5392,7 @@
           "name": "SELLAOUTI Ali",
           "club": "0893219 - CLICHY SOUS BOIS",
           "category": "0893219 - CLICHY SOUS BOIS",
-          "session": "Arc Classique Senior 1 Homme TAE Inter",
+          "session": "Senior 1 Homme Arc Classique",
           "target": "25A"
         },
         {
@@ -5695,13 +5667,6 @@
           "category": "0895274 - SANNOIS",
           "session": "Senior 3 Homme Arc Classique",
           "target": "31A"
-        },
-        {
-          "name": "TUAL Gaetan",
-          "club": "1047144 - BOE",
-          "category": "1047144 - BOE",
-          "session": "Senior 1 Homme Arc à Poulies",
-          "target": "44C"
         },
         {
           "name": "TURC Sebastien",
@@ -8444,7 +8409,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28823",
       "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
-      "entries_count": 14,
+      "entries_count": 16,
       "entries": [
         {
           "name": "AMIARD Cedric",
@@ -8489,6 +8454,13 @@
           "target": ""
         },
         {
+          "name": "FAELCHLIN Andre",
+          "club": "0895282 - MARLY LA VILLE",
+          "category": "0895282 - MARLY LA VILLE",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": ""
+        },
+        {
           "name": "GASNIER Pascale",
           "club": "0894257 - VILLIERS SUR MARNE",
           "category": "0894257 - VILLIERS SUR MARNE",
@@ -8528,6 +8500,13 @@
           "club": "0877076 - VERT ST DENIS - CESSON",
           "category": "0877076 - VERT ST DENIS - CESSON",
           "session": "Arc Classique Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "ROUSSEL Mathieu",
+          "club": "0892196 - COLOMBES",
+          "category": "0892196 - COLOMBES",
+          "session": "Arc Classique Senior 1 Homme",
           "target": ""
         },
         {
