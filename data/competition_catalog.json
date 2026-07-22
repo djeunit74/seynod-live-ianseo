@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-22T00:58:54.443683+00:00",
+  "generated_at_utc": "2026-07-22T07:10:19.579644+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -8389,7 +8389,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27351",
       "ena_url": "https://www.ianseo.net/TourData/2026/27351/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27351/IC.php",
-      "entries_count": 164,
+      "entries_count": 163,
       "entries": [
         {
           "name": "ADDIS Baptiste",
@@ -8831,13 +8831,6 @@
           "category": "0163157 - RIOM",
           "session": "Elite Homme Arc Classique",
           "target": "18B"
-        },
-        {
-          "name": "FILHASTRE Lucie",
-          "club": "1047144 - BOE",
-          "category": "1047144 - BOE",
-          "session": "Elite Femme Arc Classique",
-          "target": "10A"
         },
         {
           "name": "FILIPOWICZ Alix",
