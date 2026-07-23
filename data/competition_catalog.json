@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-23T12:09:38.936786+00:00",
+  "generated_at_utc": "2026-07-23T14:40:40.417562+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27294",
       "ena_url": "https://www.ianseo.net/TourData/2026/27294/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27294/IC.php",
-      "entries_count": 843,
+      "entries_count": 842,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -207,13 +207,6 @@
           "category": "0895293 - SARCELLES",
           "session": "Senior 1 Homme Arc Classique",
           "target": "11D"
-        },
-        {
-          "name": "BALDINI Kevin",
-          "club": "1109002 - PAMIERS",
-          "category": "1109002 - PAMIERS",
-          "session": "Senior 1 Homme Arc Classique",
-          "target": "22C"
         },
         {
           "name": "BARBIER Anthony",
@@ -5463,7 +5456,7 @@
           "club": "1132241 - LABEJAN",
           "category": "1132241 - LABEJAN",
           "session": "Senior 3 Homme Arc à Poulies TAE Nat 50m 122cm",
-          "target": "35D"
+          "target": "36A"
         },
         {
           "name": "SOUCHET Beatrice",
