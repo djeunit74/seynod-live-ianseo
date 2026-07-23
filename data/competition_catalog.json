@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-23T19:17:20.910007+00:00",
+  "generated_at_utc": "2026-07-23T20:35:31.761879+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 12,
+  "count": 14,
   "tournaments": [
     {
       "to_id": "27294",
@@ -9526,6 +9526,32 @@
           "target": "6B"
         }
       ]
+    },
+    {
+      "to_id": "29432",
+      "year": "2026",
+      "name": "Championnat de France Campagne 2026",
+      "organizer": "Comité départemental Pas de Calais / FFTA",
+      "date_text": "5-9 Aug",
+      "end_date": "2026-08-09",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29432",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29432/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29432/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29418",
+      "year": "2026",
+      "name": "Championnat de France 3D 2026",
+      "organizer": "Les Archers d'Ecouen / FFTA",
+      "date_text": "12-16 Aug",
+      "end_date": "2026-08-16",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29418",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29418/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29418/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "28823",
