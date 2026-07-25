@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-25T07:16:42.396546+00:00",
+  "generated_at_utc": "2026-07-25T09:17:12.470474+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27294",
       "ena_url": "https://www.ianseo.net/TourData/2026/27294/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27294/IC.php",
-      "entries_count": 840,
+      "entries_count": 835,
       "entries": [
         {
           "name": "ABADIE Nathalie",
@@ -1161,13 +1161,6 @@
           "target": "46A"
         },
         {
-          "name": "CHRIST Cyril",
-          "club": "0610019 - ARCIS SUR AUBE",
-          "category": "0610019 - ARCIS SUR AUBE",
-          "session": "Senior 2 Homme Arc à Poulies TAE Nat 50m 122cm",
-          "target": "40D"
-        },
-        {
           "name": "CHRISTIN Clement",
           "club": "0169212 - BRON",
           "category": "0169212 - BRON",
@@ -1586,13 +1579,6 @@
           "category": "1019047 - BRIVE LA GAILLARDE",
           "session": "Senior 3 Femme Arc Classique",
           "target": "28B"
-        },
-        {
-          "name": "DELAPORTE Kevin",
-          "club": "1244042 - ORVAULT",
-          "category": "1244042 - ORVAULT",
-          "session": "Senior 1 Homme Arc Classique",
-          "target": "24C"
         },
         {
           "name": "DELEVILLE Laurence",
@@ -2610,13 +2596,6 @@
           "target": "1D"
         },
         {
-          "name": "GOALARD David",
-          "club": "0138095 - VOIRON",
-          "category": "0138095 - VOIRON",
-          "session": "Senior 2 Homme Arc Classique TAE Nat 50m 122cm",
-          "target": "53B"
-        },
-        {
           "name": "GOHARD Lorene",
           "club": "0445113 - PITHIVIERS",
           "category": "0445113 - PITHIVIERS",
@@ -3576,13 +3555,6 @@
           "target": "36C"
         },
         {
-          "name": "LELOU Daniel",
-          "club": "1249050 - CHOLET TAC",
-          "category": "1249050 - CHOLET TAC",
-          "session": "Senior 3 Homme Arc à Poulies",
-          "target": "39B"
-        },
-        {
           "name": "LEMAIRE Sebastien",
           "club": "1384137 - BONNIEUX",
           "category": "1384137 - BONNIEUX",
@@ -3749,13 +3721,6 @@
           "category": "0239052 - LONS LE SAUNIER",
           "session": "Senior 2 Homme Arc à Poulies",
           "target": "55A"
-        },
-        {
-          "name": "LUCAS Vincent",
-          "club": "1244041 - VERTOU",
-          "category": "1244041 - VERTOU",
-          "session": "Senior 2 Homme Arc Classique",
-          "target": "24D"
         },
         {
           "name": "LUROL Sylvie",
