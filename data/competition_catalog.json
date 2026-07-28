@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-28T20:01:04.300663+00:00",
+  "generated_at_utc": "2026-07-28T21:38:18.630253+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 13,
+  "count": 14,
   "tournaments": [
     {
       "to_id": "27345",
@@ -3747,6 +3747,412 @@
           "category": "0893227 - GAGNY",
           "session": "Arc à Poulies Senior 2 Femme",
           "target": ""
+        }
+      ]
+    },
+    {
+      "to_id": "28536",
+      "year": "2026",
+      "name": "Qualificatif Beursault Brouchy",
+      "organizer": "Compagnie d'arc de Brouchy",
+      "date_text": "17-30 Aug",
+      "end_date": "2026-08-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28536",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28536/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28536/IC.php",
+      "entries_count": 56,
+      "entries": [
+        {
+          "name": "BROUILLE Bruno",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "BROUILLE Bruno",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "BRUIET Bernadette",
+          "club": "0702027 - LA FERE",
+          "category": "0702027 - LA FERE",
+          "session": "Senior 2 Femme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "BRUIET Rayhann",
+          "club": "0702027 - LA FERE",
+          "category": "0702027 - LA FERE",
+          "session": "U21 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "BRUIET Rayhann",
+          "club": "0702027 - LA FERE",
+          "category": "0702027 - LA FERE",
+          "session": "U21 Homme Arc Classique",
+          "target": "2D"
+        },
+        {
+          "name": "BRUIET Yoann",
+          "club": "0702027 - LA FERE",
+          "category": "0702027 - LA FERE",
+          "session": "Senior 2 Homme Arc à Poulies",
+          "target": "1D"
+        },
+        {
+          "name": "BRUIET Yoann",
+          "club": "0702027 - LA FERE",
+          "category": "0702027 - LA FERE",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "BUHL Jean-Jacques",
+          "club": "0651039 - FISMES",
+          "category": "0651039 - FISMES",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1D"
+        },
+        {
+          "name": "CARON Pascal",
+          "club": "0780318 - ABBEVILLE",
+          "category": "0780318 - ABBEVILLE",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "CARPENTIER Christian",
+          "club": "0780299 - NESLE",
+          "category": "0780299 - NESLE",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "CARTON Lucille",
+          "club": "0780311 - ERONDELLE",
+          "category": "0780311 - ERONDELLE",
+          "session": "Senior 2 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "CLERE Sandrine",
+          "club": "0780323 - ROYE",
+          "category": "0780323 - ROYE",
+          "session": "Senior 2 Femme Arc à Poulies",
+          "target": "1D"
+        },
+        {
+          "name": "COUSIN Kevin",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "Senior 1 Homme Arc à Poulies",
+          "target": "1D"
+        },
+        {
+          "name": "DALLANCON Patrick",
+          "club": "0780299 - NESLE",
+          "category": "0780299 - NESLE",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "DARRAS Thierry",
+          "club": "0780323 - ROYE",
+          "category": "0780323 - ROYE",
+          "session": "Senior 2 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "DEBRAY Carole",
+          "club": "0780311 - ERONDELLE",
+          "category": "0780311 - ERONDELLE",
+          "session": "Senior 2 Femme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "DEGOUY Marcel",
+          "club": "0760253 - MORLINCOURT",
+          "category": "0760253 - MORLINCOURT",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": "1E"
+        },
+        {
+          "name": "DELPHIN Georges",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "DELPHIN Georges",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "DEROUSSEN Patrice",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": "1E"
+        },
+        {
+          "name": "DIEU Danielle",
+          "club": "0780299 - NESLE",
+          "category": "0780299 - NESLE",
+          "session": "Senior 3 Femme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "DIEU Jean-Bruno",
+          "club": "0780299 - NESLE",
+          "category": "0780299 - NESLE",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "DIEU Pascal",
+          "club": "0877083 - VERNOU LA CELLE SUR SEINE",
+          "category": "0877083 - VERNOU LA CELLE SUR SEINE",
+          "session": "Senior 3 Homme Arc Classique",
+          "target": "2D"
+        },
+        {
+          "name": "FOSSIER Laetitia",
+          "club": "0702022 - JUSSY",
+          "category": "0702022 - JUSSY",
+          "session": "Senior Femme Arc Nu",
+          "target": "2A"
+        },
+        {
+          "name": "GALLAND - DEBRAY Louane",
+          "club": "0780311 - ERONDELLE",
+          "category": "0780311 - ERONDELLE",
+          "session": "U15 Femme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "GALLAND DEBRAY Manon",
+          "club": "0780311 - ERONDELLE",
+          "category": "0780311 - ERONDELLE",
+          "session": "U21 Femme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "GORET Maxime",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "Senior 1 Homme Arc Classique",
+          "target": "2E"
+        },
+        {
+          "name": "JANER Noah",
+          "club": "0760253 - MORLINCOURT",
+          "category": "0760253 - MORLINCOURT",
+          "session": "U21 Homme Arc Classique",
+          "target": "2E"
+        },
+        {
+          "name": "JANER Owen",
+          "club": "0760253 - MORLINCOURT",
+          "category": "0760253 - MORLINCOURT",
+          "session": "Senior 1 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "JANER Sebastien",
+          "club": "0760253 - MORLINCOURT",
+          "category": "0760253 - MORLINCOURT",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "2C"
+        },
+        {
+          "name": "LAFORGE Francoise",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Femme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "LAFORGE Francoise",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Femme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "LEJEUNE Philippe",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 2 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
+          "name": "LEROY Carole",
+          "club": "0702022 - JUSSY",
+          "category": "0702022 - JUSSY",
+          "session": "Senior 2 Femme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "LETISSIER Mickael",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior Homme Arc Nu",
+          "target": "1A"
+        },
+        {
+          "name": "LETISSIER Mickael",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior Homme Arc Nu",
+          "target": "1B"
+        },
+        {
+          "name": "MACAISNE Martial",
+          "club": "0702002 - CHAUNY",
+          "category": "0702002 - CHAUNY",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "1C"
+        },
+        {
+          "name": "MACAISNE Myriam",
+          "club": "0702002 - CHAUNY",
+          "category": "0702002 - CHAUNY",
+          "session": "Senior 3 Femme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "NEVERS Yannick",
+          "club": "0780319 - PIENNES-ONVILLERS",
+          "category": "0780319 - PIENNES-ONVILLERS",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "NEVERS Yannick",
+          "club": "0780319 - PIENNES-ONVILLERS",
+          "category": "0780319 - PIENNES-ONVILLERS",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1E"
+        },
+        {
+          "name": "PARFAIT Helene",
+          "club": "0702086 - VIVIERES",
+          "category": "0702086 - VIVIERES",
+          "session": "Senior 1 Femme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "PARFAIT Sylvie",
+          "club": "0702086 - VIVIERES",
+          "category": "0702086 - VIVIERES",
+          "session": "Senior 3 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "PAVAILLON Patrice",
+          "club": "0780301 - LA BOISSIERE-FESCAMPS",
+          "category": "0780301 - LA BOISSIERE-FESCAMPS",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "PONTHIEUX Jean-Pierre",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "PONTHIEUX Jean-Pierre",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "PRUD'HOMME Didier",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 2 Homme Arc Classique",
+          "target": "2B"
+        },
+        {
+          "name": "RIDEAU Nael",
+          "club": "0780304 - MOREUIL",
+          "category": "0780304 - MOREUIL",
+          "session": "U15 Homme Arc Classique",
+          "target": "2D"
+        },
+        {
+          "name": "RIGAUD Nicole",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Femme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "RIGAUD Nicole",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Femme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "RIGAUD Pierre",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
+          "name": "RIGAUD Pierre",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "SAGUEZ Paul",
+          "club": "0780328 - VILLERS BRETONNEUX",
+          "category": "0780328 - VILLERS BRETONNEUX",
+          "session": "Senior 1 Homme Arc Classique",
+          "target": "1E"
+        },
+        {
+          "name": "SAINT DIZIER Veronique",
+          "club": "0702050 - ACY",
+          "category": "0702050 - ACY",
+          "session": "Senior 3 Femme Arc Classique",
+          "target": "1E"
+        },
+        {
+          "name": "THEOT Elodie",
+          "club": "0780323 - ROYE",
+          "category": "0780323 - ROYE",
+          "session": "Senior 2 Femme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "VERGEAUD Anthony",
+          "club": "0702351 - ARCHERS DAME ALINE",
+          "category": "0702351 - ARCHERS DAME ALINE",
+          "session": "Senior 1 Homme Arc Classique",
+          "target": "2A"
+        },
+        {
+          "name": "ZAKONICKY Pierre-Yves",
+          "club": "0702086 - VIVIERES",
+          "category": "0702086 - VIVIERES",
+          "session": "Senior 1 Homme Arc à Poulies",
+          "target": "1C"
         }
       ]
     },
