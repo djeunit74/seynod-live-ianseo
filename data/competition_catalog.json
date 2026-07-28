@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-28T07:13:13.131761+00:00",
+  "generated_at_utc": "2026-07-28T10:05:46.874421+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -2474,7 +2474,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27351",
       "ena_url": "https://www.ianseo.net/TourData/2026/27351/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/27351/IC.php",
-      "entries_count": 163,
+      "entries_count": 160,
       "entries": [
         {
           "name": "ADDIS Baptiste",
@@ -2862,13 +2862,6 @@
           "target": "43B"
         },
         {
-          "name": "DUBOURG Antoine",
-          "club": "1033100 - AMBARES",
-          "category": "1033100 - AMBARES",
-          "session": "Elite Homme Arc à Poulies",
-          "target": "51B"
-        },
-        {
           "name": "DUFOUR Camille",
           "club": "0221013 - CHEVIGNY SAINT SAUVEUR",
           "category": "0221013 - CHEVIGNY SAINT SAUVEUR",
@@ -3086,13 +3079,6 @@
           "target": "35A"
         },
         {
-          "name": "JOLLIVET Laurent",
-          "club": "1033100 - AMBARES",
-          "category": "1033100 - AMBARES",
-          "session": "Elite Homme Arc à Poulies",
-          "target": "52B"
-        },
-        {
           "name": "JOUBERT Valentin",
           "club": "0893225 - NEUILLY SUR MARNE",
           "category": "0893225 - NEUILLY SUR MARNE",
@@ -3133,13 +3119,6 @@
           "category": "0760171 - COMPIEGNE",
           "session": "Elite Homme Arc Classique",
           "target": "18C"
-        },
-        {
-          "name": "LACROIX Emilie",
-          "club": "0437083 - ST AVERTIN",
-          "category": "0437083 - ST AVERTIN",
-          "session": "Elite Femme Arc Classique",
-          "target": "4C"
         },
         {
           "name": "LAMOURET Mael",
@@ -3457,10 +3436,10 @@
           "target": "25A"
         },
         {
-          "name": "SABLIN Romane",
+          "name": "SABLIN Benedicte",
           "club": "0976130 - NOTRE DAME DE GRAVENCHON",
           "category": "0976130 - NOTRE DAME DE GRAVENCHON",
-          "session": "Elite Femme Arc à Poulies",
+          "session": "Arc à Poulies Senior 1 Femmes",
           "target": "37B"
         },
         {
