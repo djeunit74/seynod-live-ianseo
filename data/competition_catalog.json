@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-31T08:04:12.243716+00:00",
+  "generated_at_utc": "2026-07-31T11:05:57.276112+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 13,
+  "count": 15,
   "tournaments": [
     {
       "to_id": "27351",
@@ -1788,6 +1788,19 @@
       "entries": []
     },
     {
+      "to_id": "29508",
+      "year": "2027",
+      "name": "TargetMasters 3 (4)",
+      "organizer": "Alingsås BK",
+      "date_text": "30 Jan",
+      "end_date": "2027-01-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29508",
+      "ena_url": "https://www.ianseo.net/TourData/2027/29508/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/29508/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "27836",
       "year": "2027",
       "name": "Bollnäs 25:an",
@@ -1823,6 +1836,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28246",
       "ena_url": "https://www.ianseo.net/TourData/2027/28246/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2027/28246/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29509",
+      "year": "2027",
+      "name": "TargetMasters 4 (4)",
+      "organizer": "Alingsås BK",
+      "date_text": "27 Feb",
+      "end_date": "2027-02-27",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29509",
+      "ena_url": "https://www.ianseo.net/TourData/2027/29509/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/29509/IC.php",
       "entries_count": 0,
       "entries": []
     },
