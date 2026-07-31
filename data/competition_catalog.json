@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-31T04:59:16.927718+00:00",
+  "generated_at_utc": "2026-07-31T08:04:12.243716+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1303,7 +1303,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28536",
       "ena_url": "https://www.ianseo.net/TourData/2026/28536/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28536/IC.php",
-      "entries_count": 61,
+      "entries_count": 63,
       "entries": [
         {
           "name": "BROUILLE Bruno",
@@ -1647,6 +1647,20 @@
           "category": "0702351 - ARCHERS DAME ALINE",
           "session": "Senior 2 Homme Arc Classique",
           "target": "2B"
+        },
+        {
+          "name": "RIBEAUCOURT Francois",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1D"
+        },
+        {
+          "name": "RIBEAUCOURT Nicole",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "Senior 3 Femme Arc à Poulies",
+          "target": "1E"
         },
         {
           "name": "RIDEAU Nael",
