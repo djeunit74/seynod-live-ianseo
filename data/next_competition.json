@@ -1,12 +1,53 @@
 {
-  "generated_at_utc": "2026-08-01T07:27:17.190255+00:00",
+  "generated_at_utc": "2026-08-01T09:31:49.285074+00:00",
   "today": "2026-08-01",
   "country": "FRA",
   "keywords": [
     "seynod",
     "0174246"
   ],
-  "found": false,
-  "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
-  "checked_candidates": 15
+  "found": true,
+  "next_competition": {
+    "to_id": "29432",
+    "year": "2026",
+    "name": "Championnat de France Campagne 2026",
+    "organizer": "Comité départemental Pas de Calais / FFTA",
+    "date_text": "5-9 Aug",
+    "end_date": "2026-08-09",
+    "details_url": "https://www.ianseo.net/Details.php?toId=29432",
+    "ena_url": "https://www.ianseo.net/TourData/2026/29432/ENA.php",
+    "ic_url": null,
+    "club_entries": [
+      {
+        "name": "BOURGEAIS Stephane",
+        "target": "3C",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "Senior 2 Homme Arc à Poulies"
+      },
+      {
+        "name": "GUALDI Marie Helene",
+        "target": "7A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "Senior 2 Femme Arc Nu"
+      }
+    ],
+    "seynod_entries": [
+      {
+        "name": "BOURGEAIS Stephane",
+        "target": "3C",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "Senior 2 Homme Arc à Poulies"
+      },
+      {
+        "name": "GUALDI Marie Helene",
+        "target": "7A",
+        "club": "0174246 - SEYNOD",
+        "category": "0174246 - SEYNOD",
+        "session": "Senior 2 Femme Arc Nu"
+      }
+    ]
+  }
 }
