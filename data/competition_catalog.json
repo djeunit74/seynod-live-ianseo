@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-04T20:09:07.454381+00:00",
+  "generated_at_utc": "2026-08-04T21:48:50.021975+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29432",
       "ena_url": "https://www.ianseo.net/TourData/2026/29432/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29432/IC.php",
-      "entries_count": 380,
+      "entries_count": 379,
       "entries": [
         {
           "name": "ABIVEN Coraline",
@@ -212,7 +212,7 @@
           "club": "0668179 - COLMAR",
           "category": "0668179 - COLMAR",
           "session": "U21 Femme Arc à Poulies",
-          "target": "15D"
+          "target": "15C"
         },
         {
           "name": "BELIN Steve",
@@ -800,7 +800,7 @@
           "club": "1304010 - MANOSQUE",
           "category": "1304010 - MANOSQUE",
           "session": "U21 Femme Arc à Poulies",
-          "target": "15C"
+          "target": "15B"
         },
         {
           "name": "DELAHAYE Megane",
@@ -1753,13 +1753,6 @@
           "category": "1313074 - MARIGNANE",
           "session": "Senior 2 Homme Arc à Poulies",
           "target": "3D"
-        },
-        {
-          "name": "LYET Stephane",
-          "club": "0221016 - CHENOVE",
-          "category": "0221016 - CHENOVE",
-          "session": "Senior 2 Homme Arc à Poulies",
-          "target": "6D"
         },
         {
           "name": "MACE Jacky",
