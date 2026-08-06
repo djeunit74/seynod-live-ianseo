@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-06T06:30:23.897607+00:00",
+  "generated_at_utc": "2026-08-06T09:24:57.192535+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29432",
       "ena_url": "https://www.ianseo.net/TourData/2026/29432/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29432/IC.php",
-      "entries_count": 379,
+      "entries_count": 377,
       "entries": [
         {
           "name": "ABIVEN Coraline",
@@ -254,7 +254,7 @@
           "club": "1033111 - MERIGNAC",
           "category": "1033111 - MERIGNAC",
           "session": "U18 Femme Arc à Poulies",
-          "target": "13B"
+          "target": "12D"
         },
         {
           "name": "BERGUIN Manon",
@@ -541,7 +541,7 @@
           "club": "1313074 - MARIGNANE",
           "category": "1313074 - MARIGNANE",
           "session": "U18 Femme Arc à Poulies",
-          "target": "12D"
+          "target": "12C"
         },
         {
           "name": "CARDOSO Clement",
@@ -1038,7 +1038,7 @@
           "club": "0878120 - BOIS D'ARCY",
           "category": "0878120 - BOIS D'ARCY",
           "session": "U18 Homme Arc Nu",
-          "target": "12C"
+          "target": "13A"
         },
         {
           "name": "DUMAY Adrien",
@@ -1123,13 +1123,6 @@
           "category": "0289092 - POURRAIN",
           "session": "Senior 1 Homme Arc à Poulies",
           "target": "17C"
-        },
-        {
-          "name": "FETRE Maxime",
-          "club": "0103031 - BOURBON L'ARCHAMBAULT",
-          "category": "0103031 - BOURBON L'ARCHAMBAULT",
-          "session": "U21 Homme Arc à Poulies",
-          "target": "16C"
         },
         {
           "name": "FICHOT Sylvain",
@@ -1620,13 +1613,6 @@
           "category": "1249056 - ANGERS",
           "session": "Senior 2 Homme Arc Classique",
           "target": "19C"
-        },
-        {
-          "name": "LEFEVRE Pierre",
-          "club": "0668171 - THANN",
-          "category": "0668171 - THANN",
-          "session": "Arc à Poulies Senior 2 Homme",
-          "target": "5C"
         },
         {
           "name": "LEGUY Eliott",
@@ -2158,7 +2144,7 @@
           "club": "1384129 - ROBION",
           "category": "1384129 - ROBION",
           "session": "U18 Homme Arc Nu",
-          "target": "13A"
+          "target": "13B"
         },
         {
           "name": "RANOU Geraldine",
