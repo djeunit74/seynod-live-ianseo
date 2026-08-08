@@ -1,25 +1,12 @@
 {
-  "generated_at_utc": "2026-08-07T23:33:24.936968+00:00",
+  "generated_at_utc": "2026-08-08T01:38:08.100711+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 15,
+  "count": 14,
   "tournaments": [
-    {
-      "to_id": "29525",
-      "year": "2026",
-      "name": "EUROPEAN CHAMPIONSHIP CROSSBOW 2026",
-      "organizer": "FRENCH SHOOTING FEDERATION",
-      "date_text": "5-8 Aug",
-      "end_date": "2026-08-08",
-      "details_url": "https://www.ianseo.net/Details.php?toId=29525",
-      "ena_url": "https://www.ianseo.net/TourData/2026/29525/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/29525/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
     {
       "to_id": "29432",
       "year": "2026",
