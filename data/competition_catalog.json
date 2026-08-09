@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-09T15:01:12.800734+00:00",
+  "generated_at_utc": "2026-08-09T15:56:58.310325+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3958,7 +3958,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28823",
       "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
-      "entries_count": 25,
+      "entries_count": 27,
       "entries": [
         {
           "name": "AMIARD Cedric",
@@ -4087,10 +4087,24 @@
           "target": ""
         },
         {
+          "name": "MIGNATON Laurent",
+          "club": "0877041 - CHELLES",
+          "category": "0877041 - CHELLES",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": ""
+        },
+        {
           "name": "MILLON Sandrine",
           "club": "0893240 - PANTIN",
           "category": "0893240 - PANTIN",
           "session": "Arc à Poulies Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "PELC Franzy",
+          "club": "0877041 - CHELLES",
+          "category": "0877041 - CHELLES",
+          "session": "Arc à Poulies Senior 2 Homme",
           "target": ""
         },
         {
