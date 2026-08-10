@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-10T11:13:57.413569+00:00",
+  "generated_at_utc": "2026-08-10T12:08:18.886743+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3958,7 +3958,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28823",
       "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
-      "entries_count": 27,
+      "entries_count": 26,
       "entries": [
         {
           "name": "AMIARD Cedric",
@@ -4133,13 +4133,6 @@
           "club": "0893242 - AULNAY SOUS BOIS",
           "category": "0893242 - AULNAY SOUS BOIS",
           "session": "Arc à Poulies Senior 2 Homme",
-          "target": ""
-        },
-        {
-          "name": "VERDREL Sebastien",
-          "club": "0893221 - TREMBLAY EN FRANCE",
-          "category": "0893221 - TREMBLAY EN FRANCE",
-          "session": "Arc Classique Senior 2 Homme",
           "target": ""
         },
         {
