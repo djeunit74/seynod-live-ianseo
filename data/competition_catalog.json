@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-11T08:30:34.727519+00:00",
+  "generated_at_utc": "2026-08-11T10:00:10.242322+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 14,
+  "count": 15,
   "tournaments": [
     {
       "to_id": "29418",
@@ -4622,6 +4622,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28509",
       "ena_url": "https://www.ianseo.net/TourData/2026/28509/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28509/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29640",
+      "year": "2026",
+      "name": "Tir en Campagne",
+      "organizer": "Rennes Cie",
+      "date_text": "26 Sep",
+      "end_date": "2026-09-26",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29640",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29640/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29640/IC.php",
       "entries_count": 0,
       "entries": []
     },
