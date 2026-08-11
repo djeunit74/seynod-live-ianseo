@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-11T07:06:43.357798+00:00",
+  "generated_at_utc": "2026-08-11T08:30:34.727519+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 13,
+  "count": 14,
   "tournaments": [
     {
       "to_id": "29418",
@@ -3947,6 +3947,19 @@
           "target": "1C"
         }
       ]
+    },
+    {
+      "to_id": "29627",
+      "year": "2026",
+      "name": "Rennes - TAE i + TAE n (Préparation Sélections JO)",
+      "organizer": "Rennes Cie",
+      "date_text": "27-28 Aug",
+      "end_date": "2026-08-28",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29627",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29627/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29627/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "28823",
