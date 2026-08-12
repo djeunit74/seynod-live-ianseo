@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-12T08:47:28.463945+00:00",
+  "generated_at_utc": "2026-08-12T10:04:10.611450+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 15,
+  "count": 16,
   "tournaments": [
     {
       "to_id": "29418",
@@ -4635,6 +4635,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29640",
       "ena_url": "https://www.ianseo.net/TourData/2026/29640/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29640/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29643",
+      "year": "2026",
+      "name": "Championnat Départemental CD35 - Tir Nature",
+      "organizer": "Rennes Cie",
+      "date_text": "27 Sep",
+      "end_date": "2026-09-27",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29643",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29643/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29643/IC.php",
       "entries_count": 0,
       "entries": []
     },
