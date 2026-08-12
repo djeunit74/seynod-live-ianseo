@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-12T13:56:53.483431+00:00",
+  "generated_at_utc": "2026-08-12T15:00:37.144905+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 16,
+  "count": 17,
   "tournaments": [
     {
       "to_id": "29418",
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29418",
       "ena_url": "https://www.ianseo.net/TourData/2026/29418/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29418/IC.php",
-      "entries_count": 561,
+      "entries_count": 555,
       "entries": [
         {
           "name": "ABERBOUR Nacer",
@@ -563,7 +563,7 @@
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
           "session": "Senior 3 Homme Arc Libre",
-          "target": "10D"
+          "target": "10C"
         },
         {
           "name": "BRUERE Tymeo",
@@ -620,13 +620,6 @@
           "category": "1244010 - DONGES",
           "session": "U18 Femme Arc Libre",
           "target": "24B"
-        },
-        {
-          "name": "CADORET Franck",
-          "club": "1244010 - DONGES",
-          "category": "1244010 - DONGES",
-          "session": "Senior 2 Homme Arc Libre",
-          "target": "3A"
         },
         {
           "name": "CADORET Romuald",
@@ -718,13 +711,6 @@
           "category": "0138095 - VOIRON",
           "session": "Senior 2 Homme Arc Chasse",
           "target": "15D"
-        },
-        {
-          "name": "CATILLON Olivier",
-          "club": "0668215 - A3F",
-          "category": "0668215 - A3F",
-          "session": "Senior 3 Homme Arc Chasse",
-          "target": "4B"
         },
         {
           "name": "CATTANEO Philippe",
@@ -1515,7 +1501,7 @@
           "club": "0437088 - CHAMBRAY LES TOURS",
           "category": "0437088 - CHAMBRAY LES TOURS",
           "session": "Senior 3 Homme Arc Libre",
-          "target": "11A"
+          "target": "10D"
         },
         {
           "name": "GARAU Patrick",
@@ -2027,13 +2013,6 @@
           "category": "0418007 - AVORD",
           "session": "Senior 3 Homme Arc Libre",
           "target": "11D"
-        },
-        {
-          "name": "JUBE Benjamin",
-          "club": "1244036 - LA TURBALLE",
-          "category": "1244036 - LA TURBALLE",
-          "session": "Senior 1 Homme Arc Libre",
-          "target": "18A"
         },
         {
           "name": "JUMPERTZ Patrick",
@@ -2848,25 +2827,11 @@
           "target": "5C"
         },
         {
-          "name": "PAUNER Bernard",
-          "club": "1313078 - MIRAMAS",
-          "category": "1313078 - MIRAMAS",
-          "session": "Senior 3 Homme Arc Libre",
-          "target": "10B"
-        },
-        {
           "name": "PAUNER Joan",
           "club": "1313078 - MIRAMAS",
           "category": "1313078 - MIRAMAS",
           "session": "Senior 1 Homme Arc Libre",
           "target": "14A"
-        },
-        {
-          "name": "PAUNER Regine",
-          "club": "1313078 - MIRAMAS",
-          "category": "1313078 - MIRAMAS",
-          "session": "Senior 3 Femme Arc Libre",
-          "target": "20A"
         },
         {
           "name": "PAYET Alizarine",
@@ -3371,13 +3336,6 @@
           "category": "1131078 - AUCAMVILLE",
           "session": "Senior 2 Homme Arc Libre",
           "target": "6D"
-        },
-        {
-          "name": "SALAUN Herve",
-          "club": "0651031 - REIMS",
-          "category": "0651031 - REIMS",
-          "session": "Senior 3 Homme Arc Libre",
-          "target": "10C"
         },
         {
           "name": "SALLET Jules",
@@ -4648,6 +4606,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29643",
       "ena_url": "https://www.ianseo.net/TourData/2026/29643/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29643/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29669",
+      "year": "2026",
+      "name": "Rennes - Tir à 18 m",
+      "organizer": "Rennes Cie",
+      "date_text": "30 Oct",
+      "end_date": "2026-10-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29669",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29669/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29669/IC.php",
       "entries_count": 0,
       "entries": []
     },
