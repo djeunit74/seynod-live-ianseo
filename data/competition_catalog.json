@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-13T11:46:13.074179+00:00",
+  "generated_at_utc": "2026-08-13T13:09:38.914927+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 17,
+  "count": 18,
   "tournaments": [
     {
       "to_id": "29418",
@@ -4593,6 +4593,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29640",
       "ena_url": "https://www.ianseo.net/TourData/2026/29640/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29640/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29622",
+      "year": "2026",
+      "name": "AIX EN PROVENCE TIR DE LA RENTRÉE",
+      "organizer": "1ERE CIE DE TIR A L'ARC D'AIX EN PROVENCE",
+      "date_text": "27 Sep",
+      "end_date": "2026-09-27",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29622",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
       "entries_count": 0,
       "entries": []
     },
