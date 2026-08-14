@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-14T08:45:02.364072+00:00",
+  "generated_at_utc": "2026-08-14T10:01:27.664910+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 19,
+  "count": 21,
   "tournaments": [
     {
       "to_id": "29418",
@@ -4645,6 +4645,32 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29686",
       "ena_url": "https://www.ianseo.net/TourData/2026/29686/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29686/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29687",
+      "year": "2026",
+      "name": "Rennes - Tir à 18 m",
+      "organizer": "Rennes Cie",
+      "date_text": "20 Nov",
+      "end_date": "2026-11-20",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29687",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29687/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29687/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29688",
+      "year": "2026",
+      "name": "Rennes - Tir à 18 m",
+      "organizer": "Rennes Cie",
+      "date_text": "27 Nov",
+      "end_date": "2026-11-27",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29688",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29688/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29688/IC.php",
       "entries_count": 0,
       "entries": []
     },
