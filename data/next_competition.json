@@ -1,39 +1,12 @@
 {
-  "generated_at_utc": "2026-08-15T23:44:48.956964+00:00",
-  "today": "2026-08-15",
+  "generated_at_utc": "2026-08-16T01:16:30.856445+00:00",
+  "today": "2026-08-16",
   "country": "FRA",
   "keywords": [
     "seynod",
     "0174246"
   ],
-  "found": true,
-  "next_competition": {
-    "to_id": "29418",
-    "year": "2026",
-    "name": "Championnat de France 3D 2026",
-    "organizer": "Les Archers d'Ecouen / FFTA",
-    "date_text": "12-16 Aug",
-    "end_date": "2026-08-16",
-    "details_url": "https://www.ianseo.net/Details.php?toId=29418",
-    "ena_url": "https://www.ianseo.net/TourData/2026/29418/ENA.php",
-    "ic_url": null,
-    "club_entries": [
-      {
-        "name": "MAILLET Thibaud",
-        "target": "18B",
-        "club": "0174246 - SEYNOD",
-        "category": "0174246 - SEYNOD",
-        "session": "Senior 2 Homme Arc Chasse"
-      }
-    ],
-    "seynod_entries": [
-      {
-        "name": "MAILLET Thibaud",
-        "target": "18B",
-        "club": "0174246 - SEYNOD",
-        "category": "0174246 - SEYNOD",
-        "session": "Senior 2 Homme Arc Chasse"
-      }
-    ]
-  }
+  "found": false,
+  "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
+  "checked_candidates": 20
 }
