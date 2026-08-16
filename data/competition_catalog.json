@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-16T18:57:46.905638+00:00",
+  "generated_at_utc": "2026-08-16T19:24:06.509438+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -226,7 +226,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28536",
       "ena_url": "https://www.ianseo.net/TourData/2026/28536/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28536/IC.php",
-      "entries_count": 74,
+      "entries_count": 71,
       "entries": [
         {
           "name": "BAURIN Luc",
@@ -309,7 +309,7 @@
           "name": "BUHL Jean-Jacques",
           "club": "0651039 - FISMES",
           "category": "0651039 - FISMES",
-          "session": "Senior 3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Homme",
           "target": "1D"
         },
         {
@@ -366,6 +366,13 @@
           "club": "0780299 - NESLE",
           "category": "0780299 - NESLE",
           "session": "Senior 3 Homme Arc à Poulies",
+          "target": "1A"
+        },
+        {
+          "name": "DALLANCON Patrick",
+          "club": "0780299 - NESLE",
+          "category": "0780299 - NESLE",
+          "session": "Arc à Poulies Senior 3 Homme",
           "target": "1C"
         },
         {
@@ -395,20 +402,6 @@
           "category": "0760253 - MORLINCOURT",
           "session": "Senior 3 Homme Arc Classique",
           "target": "1E"
-        },
-        {
-          "name": "DELPHIN Georges",
-          "club": "0702061 - ST QUENTIN",
-          "category": "0702061 - ST QUENTIN",
-          "session": "Senior 3 Homme Arc à Poulies",
-          "target": "1B"
-        },
-        {
-          "name": "DELPHIN Georges",
-          "club": "0702061 - ST QUENTIN",
-          "category": "0702061 - ST QUENTIN",
-          "session": "Senior 3 Homme Arc à Poulies",
-          "target": "2C"
         },
         {
           "name": "DEROUSSEN Patrice",
@@ -596,7 +589,7 @@
           "name": "NEVERS Yannick",
           "club": "0780319 - PIENNES-ONVILLERS",
           "category": "0780319 - PIENNES-ONVILLERS",
-          "session": "Senior 3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Homme",
           "target": "1E"
         },
         {
@@ -638,7 +631,7 @@
           "name": "PONTHIEUX Jean-Pierre",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
-          "session": "Senior 3 Homme Arc à Poulies",
+          "session": "Arc à Poulies Senior 3 Homme",
           "target": "1C"
         },
         {
@@ -682,20 +675,6 @@
           "category": "0702061 - ST QUENTIN",
           "session": "Senior 3 Femme Arc à Poulies",
           "target": "2B"
-        },
-        {
-          "name": "RIGAUD Pierre",
-          "club": "0702061 - ST QUENTIN",
-          "category": "0702061 - ST QUENTIN",
-          "session": "Senior 3 Homme Arc à Poulies",
-          "target": "1E"
-        },
-        {
-          "name": "RIGAUD Pierre",
-          "club": "0702061 - ST QUENTIN",
-          "category": "0702061 - ST QUENTIN",
-          "session": "Senior 3 Homme Arc à Poulies",
-          "target": "2A"
         },
         {
           "name": "SAGUEZ Paul",
