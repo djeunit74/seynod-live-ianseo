@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-17T10:32:01.175572+00:00",
+  "generated_at_utc": "2026-08-17T11:25:17.787447+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28536",
       "ena_url": "https://www.ianseo.net/TourData/2026/28536/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28536/IC.php",
-      "entries_count": 74,
+      "entries_count": 76,
       "entries": [
         {
           "name": "BAURIN Luc",
@@ -59,6 +59,13 @@
           "category": "0702020 - PARCY TIGNY",
           "session": "Senior 3 Homme Arc Classique",
           "target": "1D"
+        },
+        {
+          "name": "BROCQ DA SILVA Flora",
+          "club": "0702061 - ST QUENTIN",
+          "category": "0702061 - ST QUENTIN",
+          "session": "U21 Femme Arc à Poulies",
+          "target": "2C"
         },
         {
           "name": "BROUILLE Bruno",
@@ -283,6 +290,13 @@
           "category": "0780304 - MOREUIL",
           "session": "Senior 1 Homme Arc Classique",
           "target": "2E"
+        },
+        {
+          "name": "GOZET Alex",
+          "club": "0762291 - AIRE SUR LA LYS",
+          "category": "0762291 - AIRE SUR LA LYS",
+          "session": "U21 Homme Arc à Poulies",
+          "target": "1A"
         },
         {
           "name": "GOZET Alex",
