@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-17T05:34:50.439017+00:00",
+  "generated_at_utc": "2026-08-17T06:54:27.857741+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28536",
       "ena_url": "https://www.ianseo.net/TourData/2026/28536/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28536/IC.php",
-      "entries_count": 71,
+      "entries_count": 74,
       "entries": [
         {
           "name": "BAURIN Luc",
@@ -142,7 +142,7 @@
           "club": "0780311 - ERONDELLE",
           "category": "0780311 - ERONDELLE",
           "session": "Senior 2 Femme Arc Classique",
-          "target": "1B"
+          "target": "1D"
         },
         {
           "name": "CHIRAULT Benjamin",
@@ -198,7 +198,7 @@
           "club": "0780311 - ERONDELLE",
           "category": "0780311 - ERONDELLE",
           "session": "Senior 2 Femme Arc Classique",
-          "target": "1A"
+          "target": "1E"
         },
         {
           "name": "DEGOUY Marcel",
@@ -268,14 +268,14 @@
           "club": "0780311 - ERONDELLE",
           "category": "0780311 - ERONDELLE",
           "session": "U15 Femme Arc Classique",
-          "target": "1C"
+          "target": "1A"
         },
         {
           "name": "GALLAND DEBRAY Manon",
           "club": "0780311 - ERONDELLE",
           "category": "0780311 - ERONDELLE",
           "session": "U21 Femme Arc Classique",
-          "target": "1D"
+          "target": "1B"
         },
         {
           "name": "GORET Maxime",
@@ -283,6 +283,27 @@
           "category": "0780304 - MOREUIL",
           "session": "Senior 1 Homme Arc Classique",
           "target": "2E"
+        },
+        {
+          "name": "GOZET Alex",
+          "club": "0762291 - AIRE SUR LA LYS",
+          "category": "0762291 - AIRE SUR LA LYS",
+          "session": "U21 Homme Arc à Poulies",
+          "target": "1C"
+        },
+        {
+          "name": "GOZET Alicia",
+          "club": "0762291 - AIRE SUR LA LYS",
+          "category": "0762291 - AIRE SUR LA LYS",
+          "session": "Senior 1 Femme Arc Classique",
+          "target": "1D"
+        },
+        {
+          "name": "GOZET Alicia",
+          "club": "0762291 - AIRE SUR LA LYS",
+          "category": "0762291 - AIRE SUR LA LYS",
+          "session": "Senior 1 Femme Arc Classique",
+          "target": "2C"
         },
         {
           "name": "GRUAU Philippe",
@@ -408,7 +429,7 @@
           "club": "0702086 - VIVIERES",
           "category": "0702086 - VIVIERES",
           "session": "Senior 1 Femme Arc Classique",
-          "target": "1A"
+          "target": "1E"
         },
         {
           "name": "PARFAIT Sylvie",
@@ -485,7 +506,7 @@
           "club": "0780328 - VILLERS BRETONNEUX",
           "category": "0780328 - VILLERS BRETONNEUX",
           "session": "Senior 1 Homme Arc Classique",
-          "target": "1E"
+          "target": "2B"
         },
         {
           "name": "SAINT DIZIER Veronique",
@@ -505,7 +526,7 @@
           "name": "SCHMIT Sylvain",
           "club": "0762297 - WINGLES",
           "category": "0762297 - WINGLES",
-          "session": "Senior 2 Homme Arc Classique",
+          "session": "Arc Classique Senior 2 Homme",
           "target": "2D"
         },
         {
