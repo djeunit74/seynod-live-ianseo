@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-18T13:41:56.008868+00:00",
+  "generated_at_utc": "2026-08-18T14:33:29.985991+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 20,
+  "count": 21,
   "tournaments": [
     {
       "to_id": "29627",
@@ -935,6 +935,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27837",
       "ena_url": "https://www.ianseo.net/TourData/2027/27837/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2027/27837/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29709",
+      "year": "2027",
+      "name": "Borlängeträffen",
+      "organizer": "BK Dalpilen Borlänge Sweden",
+      "date_text": "14 Feb",
+      "end_date": "2027-02-14",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29709",
+      "ena_url": "https://www.ianseo.net/TourData/2027/29709/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/29709/IC.php",
       "entries_count": 0,
       "entries": []
     },
