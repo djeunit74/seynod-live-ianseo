@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-19T19:24:47.966422+00:00",
+  "generated_at_utc": "2026-08-19T19:50:11.481709+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 21,
+  "count": 22,
   "tournaments": [
     {
       "to_id": "29627",
@@ -935,6 +935,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=27837",
       "ena_url": "https://www.ianseo.net/TourData/2027/27837/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2027/27837/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29683",
+      "year": "2027",
+      "name": "Tockington Archers Portmouth Feb 2027",
+      "organizer": "Tockington Archers",
+      "date_text": "13 Feb",
+      "end_date": "2027-02-13",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29683",
+      "ena_url": "https://www.ianseo.net/TourData/2027/29683/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/29683/IC.php",
       "entries_count": 0,
       "entries": []
     },
