@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-22T11:46:05.763808+00:00",
+  "generated_at_utc": "2026-08-22T12:38:18.063759+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 22,
+  "count": 23,
   "tournaments": [
     {
       "to_id": "29627",
@@ -1090,6 +1090,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29112",
       "ena_url": "https://www.ianseo.net/TourData/2027/29112/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2027/29112/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "29457",
+      "year": "2027",
+      "name": "第5回夢の島大会 午前",
+      "organizer": "東京都アーチェリー協会",
+      "date_text": "23 Sep 2026 - 23 Sep 2027",
+      "end_date": "2027-09-23",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29457",
+      "ena_url": "https://www.ianseo.net/TourData/2027/29457/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/29457/IC.php",
       "entries_count": 0,
       "entries": []
     }
