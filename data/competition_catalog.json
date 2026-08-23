@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-23T20:22:19.500256+00:00",
+  "generated_at_utc": "2026-08-23T20:49:41.965448+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -660,7 +660,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28823",
       "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
-      "entries_count": 25,
+      "entries_count": 26,
       "entries": [
         {
           "name": "AMIARD Cedric",
@@ -689,6 +689,13 @@
           "category": "0893240 - PANTIN",
           "session": "Arc Classique Senior 3 Femme",
           "target": "1B"
+        },
+        {
+          "name": "BROUSSELLE Patrick",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "1D"
         },
         {
           "name": "CAILLOUX Alain",
