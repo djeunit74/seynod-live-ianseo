@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-23T15:22:05.721919+00:00",
+  "generated_at_utc": "2026-08-23T15:47:39.144616+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -660,14 +660,14 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28823",
       "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
-      "entries_count": 26,
+      "entries_count": 25,
       "entries": [
         {
           "name": "AMIARD Cedric",
           "club": "0893240 - PANTIN",
           "category": "0893240 - PANTIN",
           "session": "Arc Classique Senior 2 Homme",
-          "target": "1B"
+          "target": "1C"
         },
         {
           "name": "BEKKAI Quentin",
@@ -688,7 +688,7 @@
           "club": "0893240 - PANTIN",
           "category": "0893240 - PANTIN",
           "session": "Arc Classique Senior 3 Femme",
-          "target": "1A"
+          "target": "1B"
         },
         {
           "name": "CAILLOUX Alain",
@@ -705,18 +705,11 @@
           "target": "1B"
         },
         {
-          "name": "DI GASPERO Anthony",
-          "club": "0893240 - PANTIN",
-          "category": "0893240 - PANTIN",
-          "session": "Arc Classique Senior 2 Homme",
-          "target": "1C"
-        },
-        {
           "name": "DJERRADINE Grégory",
           "club": "0893240 - PANTIN",
           "category": "0893240 - PANTIN",
           "session": "Arc Classique Senior 1 Homme",
-          "target": "2D"
+          "target": "2A"
         },
         {
           "name": "DURAND Damien",
@@ -751,7 +744,7 @@
           "club": "0760163 - JAUX",
           "category": "0760163 - JAUX",
           "session": "Arc Classique Senior 2 Homme",
-          "target": "1E"
+          "target": "1C"
         },
         {
           "name": "HENRIET-DRUBIGNY Celine",
@@ -800,7 +793,7 @@
           "club": "0893240 - PANTIN",
           "category": "0893240 - PANTIN",
           "session": "Arc à Poulies Senior 2 Femme",
-          "target": "2A"
+          "target": "1A"
         },
         {
           "name": "PELC Franzy",
