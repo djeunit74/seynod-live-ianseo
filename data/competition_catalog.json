@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-08-28T00:15:49.892332+00:00",
+  "generated_at_utc": "2026-08-28T11:39:25.014799+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 16,
+  "count": 17,
   "tournaments": [
     {
       "to_id": "28536",
@@ -1153,6 +1153,41 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/29801/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "29899",
+      "year": "2026",
+      "name": "Concours des pistoles 2026",
+      "organizer": "CBTA Brignoles",
+      "date_text": "14-15 Nov",
+      "end_date": "2026-11-15",
+      "details_url": "https://www.ianseo.net/Details.php?toId=29899",
+      "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
+      "entries_count": 3,
+      "entries": [
+        {
+          "name": "GAUTHIER Chantal",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "GAUTHIER Michel",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "PELLAT Sylvianne",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Femme Arc Classique",
+          "target": ""
+        }
+      ]
     },
     {
       "to_id": "29687",
