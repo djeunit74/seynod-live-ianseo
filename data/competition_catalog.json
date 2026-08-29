@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-29T15:31:02.916750+00:00",
+  "generated_at_utc": "2026-08-29T19:14:14.979377+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -213,7 +213,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28536",
       "ena_url": "https://www.ianseo.net/TourData/2026/28536/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28536/IC.php",
-      "entries_count": 106,
+      "entries_count": 104,
       "entries": [
         {
           "name": "BAURIN Luc",
@@ -555,7 +555,7 @@
           "name": "DUMEZ Lena",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
-          "session": "U15 Femme Arc Classique",
+          "session": "Arc Classique U15 Femme",
           "target": "2C"
         },
         {
@@ -569,14 +569,14 @@
           "name": "DUMEZ Lilou",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
-          "session": "U18 Femme Arc Classique",
+          "session": "Arc Classique U18 Femme",
           "target": "1E"
         },
         {
           "name": "DUMEZ Lilou",
           "club": "0702061 - ST QUENTIN",
           "category": "0702061 - ST QUENTIN",
-          "session": "U18 Femme Arc Classique",
+          "session": "Arc Classique U18 Femme",
           "target": "2B"
         },
         {
@@ -606,13 +606,6 @@
           "category": "0780311 - ERONDELLE",
           "session": "U21 Femme Arc Classique",
           "target": "1C"
-        },
-        {
-          "name": "GILLINGHAM Agathe",
-          "club": "0702022 - JUSSY",
-          "category": "0702022 - JUSSY",
-          "session": "Senior 1 Femme Arc à Poulies",
-          "target": "1B"
         },
         {
           "name": "GORET Maxime",
@@ -942,13 +935,6 @@
           "category": "0760168 - RETHONDES",
           "session": "Senior Homme Arc Nu",
           "target": "2D"
-        },
-        {
-          "name": "VERGEAUD Anthony",
-          "club": "0702351 - ARCHERS DAME ALINE",
-          "category": "0702351 - ARCHERS DAME ALINE",
-          "session": "Senior 1 Homme Arc Classique",
-          "target": "2A"
         },
         {
           "name": "ZAKONICKY Pierre-Yves",
