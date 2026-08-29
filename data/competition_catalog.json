@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-28T21:45:48.854303+00:00",
+  "generated_at_utc": "2026-08-29T03:32:14.435334+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -7,6 +7,202 @@
   ],
   "count": 17,
   "tournaments": [
+    {
+      "to_id": "28823",
+      "year": "2026",
+      "name": "Qualificatif Beursault Tremblay 2026",
+      "organizer": "Les Archers du Vert Galant",
+      "date_text": "29-30 Aug",
+      "end_date": "2026-08-30",
+      "details_url": "https://www.ianseo.net/Details.php?toId=28823",
+      "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
+      "entries_count": 26,
+      "entries": [
+        {
+          "name": "AMIARD Cedric",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "1C"
+        },
+        {
+          "name": "BEKKAI Quentin",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "Arc à Poulies Senior 1 Homme",
+          "target": "1C"
+        },
+        {
+          "name": "BESOMBES Cyril",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "2B"
+        },
+        {
+          "name": "BROUSSARD Anita",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 3 Femme",
+          "target": "1B"
+        },
+        {
+          "name": "BROUSSELLE Patrick",
+          "club": "0875017 - PARIS XIII USMT",
+          "category": "0875017 - PARIS XIII USMT",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "1D"
+        },
+        {
+          "name": "CAILLOUX Alain",
+          "club": "0893218 - ROMAINVILLE",
+          "category": "0893218 - ROMAINVILLE",
+          "session": "Arc à Poulies Senior 3 Homme",
+          "target": "1A"
+        },
+        {
+          "name": "CAMAIL Nicolas",
+          "club": "0893242 - AULNAY SOUS BOIS",
+          "category": "0893242 - AULNAY SOUS BOIS",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "1B"
+        },
+        {
+          "name": "DJERRADINE Grégory",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "2A"
+        },
+        {
+          "name": "DURAND Damien",
+          "club": "0895270 - VIARMES",
+          "category": "0895270 - VIARMES",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "2C"
+        },
+        {
+          "name": "FAELCHLIN Andre",
+          "club": "0895282 - MARLY LA VILLE",
+          "category": "0895282 - MARLY LA VILLE",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "1D"
+        },
+        {
+          "name": "GALFRE Christophe",
+          "club": "0895290 - BEAUCHAMP",
+          "category": "0895290 - BEAUCHAMP",
+          "session": "Arc à Poulies Senior 3 Homme",
+          "target": "1A"
+        },
+        {
+          "name": "GASNIER Pascale",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "0894257 - VILLIERS SUR MARNE",
+          "session": "Arc Classique Senior 3 Femme",
+          "target": "1D"
+        },
+        {
+          "name": "GOENSE David",
+          "club": "0760163 - JAUX",
+          "category": "0760163 - JAUX",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "1C"
+        },
+        {
+          "name": "HENRIET-DRUBIGNY Celine",
+          "club": "0895270 - VIARMES",
+          "category": "0895270 - VIARMES",
+          "session": "Arc à Poulies Senior 2 Femme",
+          "target": "2D"
+        },
+        {
+          "name": "HUARD DE JORNA Marie-Amélie",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc Classique Senior 2 Femme",
+          "target": "2C"
+        },
+        {
+          "name": "LEGER Sandra",
+          "club": "0877041 - CHELLES",
+          "category": "0877041 - CHELLES",
+          "session": "Arc Classique Senior 2 Femme",
+          "target": "2B"
+        },
+        {
+          "name": "MARTRY Eddy",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "2A"
+        },
+        {
+          "name": "MARTRY Koline",
+          "club": "0895292 - SAINT OUEN L'AUMONE",
+          "category": "0895292 - SAINT OUEN L'AUMONE",
+          "session": "Arc à Poulies Senior 1 Femme",
+          "target": "2B"
+        },
+        {
+          "name": "MERIEN Patrice",
+          "club": "0895290 - BEAUCHAMP",
+          "category": "0895290 - BEAUCHAMP",
+          "session": "Arc à Poulies Senior 3 Homme",
+          "target": "1B"
+        },
+        {
+          "name": "MILLON Sandrine",
+          "club": "0893240 - PANTIN",
+          "category": "0893240 - PANTIN",
+          "session": "Arc à Poulies Senior 2 Femme",
+          "target": "1A"
+        },
+        {
+          "name": "PELC Franzy",
+          "club": "0877041 - CHELLES",
+          "category": "0877041 - CHELLES",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "2A"
+        },
+        {
+          "name": "PINNA Jean-Louis",
+          "club": "0893227 - GAGNY",
+          "category": "0893227 - GAGNY",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "1C"
+        },
+        {
+          "name": "PLE Pierre",
+          "club": "0877076 - VERT ST DENIS - CESSON",
+          "category": "0877076 - VERT ST DENIS - CESSON",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "2C"
+        },
+        {
+          "name": "ROUSSEL Mathieu",
+          "club": "0892196 - COLOMBES",
+          "category": "0892196 - COLOMBES",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "2D"
+        },
+        {
+          "name": "SAUVAGE Jean Francois",
+          "club": "0893242 - AULNAY SOUS BOIS",
+          "category": "0893242 - AULNAY SOUS BOIS",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "1A"
+        },
+        {
+          "name": "WIDEMANN Nathalie",
+          "club": "0893227 - GAGNY",
+          "category": "0893227 - GAGNY",
+          "session": "Arc à Poulies Senior 2 Femme",
+          "target": "1B"
+        }
+      ]
+    },
     {
       "to_id": "28536",
       "year": "2026",
@@ -760,202 +956,6 @@
           "category": "0702086 - VIVIERES",
           "session": "Senior 1 Homme Arc à Poulies",
           "target": "1A"
-        }
-      ]
-    },
-    {
-      "to_id": "28823",
-      "year": "2026",
-      "name": "Qualificatif Beursault Tremblay 2026",
-      "organizer": "Les Archers du Vert Galant",
-      "date_text": "29-30 Aug",
-      "end_date": "2026-08-30",
-      "details_url": "https://www.ianseo.net/Details.php?toId=28823",
-      "ena_url": "https://www.ianseo.net/TourData/2026/28823/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/28823/IC.php",
-      "entries_count": 26,
-      "entries": [
-        {
-          "name": "AMIARD Cedric",
-          "club": "0893240 - PANTIN",
-          "category": "0893240 - PANTIN",
-          "session": "Arc Classique Senior 2 Homme",
-          "target": "1C"
-        },
-        {
-          "name": "BEKKAI Quentin",
-          "club": "0894257 - VILLIERS SUR MARNE",
-          "category": "0894257 - VILLIERS SUR MARNE",
-          "session": "Arc à Poulies Senior 1 Homme",
-          "target": "1C"
-        },
-        {
-          "name": "BESOMBES Cyril",
-          "club": "0893240 - PANTIN",
-          "category": "0893240 - PANTIN",
-          "session": "Arc Classique Senior 2 Homme",
-          "target": "2B"
-        },
-        {
-          "name": "BROUSSARD Anita",
-          "club": "0893240 - PANTIN",
-          "category": "0893240 - PANTIN",
-          "session": "Arc Classique Senior 3 Femme",
-          "target": "1B"
-        },
-        {
-          "name": "BROUSSELLE Patrick",
-          "club": "0875017 - PARIS XIII USMT",
-          "category": "0875017 - PARIS XIII USMT",
-          "session": "Arc Classique Senior 2 Homme",
-          "target": "1D"
-        },
-        {
-          "name": "CAILLOUX Alain",
-          "club": "0893218 - ROMAINVILLE",
-          "category": "0893218 - ROMAINVILLE",
-          "session": "Arc à Poulies Senior 3 Homme",
-          "target": "1A"
-        },
-        {
-          "name": "CAMAIL Nicolas",
-          "club": "0893242 - AULNAY SOUS BOIS",
-          "category": "0893242 - AULNAY SOUS BOIS",
-          "session": "Arc à Poulies Senior 2 Homme",
-          "target": "1B"
-        },
-        {
-          "name": "DJERRADINE Grégory",
-          "club": "0893240 - PANTIN",
-          "category": "0893240 - PANTIN",
-          "session": "Arc Classique Senior 1 Homme",
-          "target": "2A"
-        },
-        {
-          "name": "DURAND Damien",
-          "club": "0895270 - VIARMES",
-          "category": "0895270 - VIARMES",
-          "session": "Arc à Poulies Senior 2 Homme",
-          "target": "2C"
-        },
-        {
-          "name": "FAELCHLIN Andre",
-          "club": "0895282 - MARLY LA VILLE",
-          "category": "0895282 - MARLY LA VILLE",
-          "session": "Arc Classique Senior 3 Homme",
-          "target": "1D"
-        },
-        {
-          "name": "GALFRE Christophe",
-          "club": "0895290 - BEAUCHAMP",
-          "category": "0895290 - BEAUCHAMP",
-          "session": "Arc à Poulies Senior 3 Homme",
-          "target": "1A"
-        },
-        {
-          "name": "GASNIER Pascale",
-          "club": "0894257 - VILLIERS SUR MARNE",
-          "category": "0894257 - VILLIERS SUR MARNE",
-          "session": "Arc Classique Senior 3 Femme",
-          "target": "1D"
-        },
-        {
-          "name": "GOENSE David",
-          "club": "0760163 - JAUX",
-          "category": "0760163 - JAUX",
-          "session": "Arc Classique Senior 2 Homme",
-          "target": "1C"
-        },
-        {
-          "name": "HENRIET-DRUBIGNY Celine",
-          "club": "0895270 - VIARMES",
-          "category": "0895270 - VIARMES",
-          "session": "Arc à Poulies Senior 2 Femme",
-          "target": "2D"
-        },
-        {
-          "name": "HUARD DE JORNA Marie-Amélie",
-          "club": "0893240 - PANTIN",
-          "category": "0893240 - PANTIN",
-          "session": "Arc Classique Senior 2 Femme",
-          "target": "2C"
-        },
-        {
-          "name": "LEGER Sandra",
-          "club": "0877041 - CHELLES",
-          "category": "0877041 - CHELLES",
-          "session": "Arc Classique Senior 2 Femme",
-          "target": "2B"
-        },
-        {
-          "name": "MARTRY Eddy",
-          "club": "0895292 - SAINT OUEN L'AUMONE",
-          "category": "0895292 - SAINT OUEN L'AUMONE",
-          "session": "Arc à Poulies Senior 2 Homme",
-          "target": "2A"
-        },
-        {
-          "name": "MARTRY Koline",
-          "club": "0895292 - SAINT OUEN L'AUMONE",
-          "category": "0895292 - SAINT OUEN L'AUMONE",
-          "session": "Arc à Poulies Senior 1 Femme",
-          "target": "2B"
-        },
-        {
-          "name": "MERIEN Patrice",
-          "club": "0895290 - BEAUCHAMP",
-          "category": "0895290 - BEAUCHAMP",
-          "session": "Arc à Poulies Senior 3 Homme",
-          "target": "1B"
-        },
-        {
-          "name": "MILLON Sandrine",
-          "club": "0893240 - PANTIN",
-          "category": "0893240 - PANTIN",
-          "session": "Arc à Poulies Senior 2 Femme",
-          "target": "1A"
-        },
-        {
-          "name": "PELC Franzy",
-          "club": "0877041 - CHELLES",
-          "category": "0877041 - CHELLES",
-          "session": "Arc à Poulies Senior 2 Homme",
-          "target": "2A"
-        },
-        {
-          "name": "PINNA Jean-Louis",
-          "club": "0893227 - GAGNY",
-          "category": "0893227 - GAGNY",
-          "session": "Arc Classique Senior 3 Homme",
-          "target": "1C"
-        },
-        {
-          "name": "PLE Pierre",
-          "club": "0877076 - VERT ST DENIS - CESSON",
-          "category": "0877076 - VERT ST DENIS - CESSON",
-          "session": "Arc Classique Senior 3 Homme",
-          "target": "2C"
-        },
-        {
-          "name": "ROUSSEL Mathieu",
-          "club": "0892196 - COLOMBES",
-          "category": "0892196 - COLOMBES",
-          "session": "Arc Classique Senior 1 Homme",
-          "target": "2D"
-        },
-        {
-          "name": "SAUVAGE Jean Francois",
-          "club": "0893242 - AULNAY SOUS BOIS",
-          "category": "0893242 - AULNAY SOUS BOIS",
-          "session": "Arc à Poulies Senior 2 Homme",
-          "target": "1A"
-        },
-        {
-          "name": "WIDEMANN Nathalie",
-          "club": "0893227 - GAGNY",
-          "category": "0893227 - GAGNY",
-          "session": "Arc à Poulies Senior 2 Femme",
-          "target": "1B"
         }
       ]
     },
