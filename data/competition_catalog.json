@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-01T20:03:33.250049+00:00",
+  "generated_at_utc": "2026-09-01T22:44:07.930828+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -338,8 +338,43 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 4,
+      "entries_count": 15,
       "entries": [
+        {
+          "name": "ALEXANDER Claire-Helene",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "S2 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "CHEMIN Theo",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S1 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "CHEMIN Theo",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "DECKER GARCIA Lea",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "U21 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "DECKER GARCIA Lea",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Arc Classique U21 Femme",
+          "target": ""
+        },
         {
           "name": "GAUTHIER Chantal",
           "club": "1383115 - BRIGNOLES",
@@ -355,6 +390,34 @@
           "target": ""
         },
         {
+          "name": "GRALL Cyril",
+          "club": "1304013 - L'ESCALE",
+          "category": "1304013 - L'ESCALE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "GRASSER Clara",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "U18 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "HIDEUX Luc",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "Scratch Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "HIDEUX Sylvie",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "Scratch Femme Arc Nu",
+          "target": ""
+        },
+        {
           "name": "PELLAT Sylvianne",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -365,6 +428,20 @@
           "name": "PIAT Jerome",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "ROBLES Jose",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "ROCHER Julien",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
           "session": "S2 Homme Arc Classique",
           "target": ""
         }
