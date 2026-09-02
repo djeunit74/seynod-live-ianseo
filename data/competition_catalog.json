@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-02T17:59:23.321271+00:00",
+  "generated_at_utc": "2026-09-02T20:56:48.802348+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -444,7 +444,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 27,
+      "entries_count": 28,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -598,6 +598,13 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "PEJO Benoit",
+          "club": "1304013 - L'ESCALE",
+          "category": "1304013 - L'ESCALE",
+          "session": "S2 Homme Arc à Poulies",
           "target": ""
         },
         {
