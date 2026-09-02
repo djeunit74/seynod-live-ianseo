@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-02T09:51:36.951303+00:00",
+  "generated_at_utc": "2026-09-02T14:07:39.297375+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -234,8 +234,114 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=28509",
       "ena_url": "https://www.ianseo.net/TourData/2026/28509/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/28509/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 15,
+      "entries": [
+        {
+          "name": "AUGEY Quentin",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
+          "name": "BONNAUD Yohann",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "BONTEMPS Herve",
+          "club": "0877040 - SAINT GERMAIN SUR MORIN",
+          "category": "0877040 - SAINT GERMAIN SUR MORIN",
+          "session": "S2 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
+          "name": "CALVEZ Eric",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S2 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "CALVEZ Nicolas",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "S1 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
+          "name": "DAMOUR Yann",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "6A"
+        },
+        {
+          "name": "DESEMERY Alexandre",
+          "club": "0892203 - ISSY LES MOULINEAUX",
+          "category": "0892203 - ISSY LES MOULINEAUX",
+          "session": "S2 Homme Arc Classique",
+          "target": "10C"
+        },
+        {
+          "name": "GOUIN Chantal",
+          "club": "1253084 - MAYENNE",
+          "category": "1253084 - MAYENNE",
+          "session": "Scratch Femme Arc Nu National",
+          "target": "5A"
+        },
+        {
+          "name": "GOUIN Maxime",
+          "club": "1253084 - MAYENNE",
+          "category": "1253084 - MAYENNE",
+          "session": "U18 Homme Arc Classique National",
+          "target": "7B"
+        },
+        {
+          "name": "GOUIN Stephane",
+          "club": "1253084 - MAYENNE",
+          "category": "1253084 - MAYENNE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "5C"
+        },
+        {
+          "name": "HUAUME Elen",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "S1 Femme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "HUGUENIN Frederic",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "Scratch Homme Arc Nu National",
+          "target": "7C"
+        },
+        {
+          "name": "MOREL Eric",
+          "club": "0335080 - CHAVAGNE",
+          "category": "0335080 - CHAVAGNE",
+          "session": "S3 Homme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "PENVEN Patrice",
+          "club": "0356098 - KERVIGNAC",
+          "category": "0356098 - KERVIGNAC",
+          "session": "S2 Homme Arc Classique",
+          "target": "9C"
+        },
+        {
+          "name": "PRIEUR Jacques",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "S3 Homme Arc Classique",
+          "target": "8C"
+        }
+      ]
     },
     {
       "to_id": "29640",
@@ -338,13 +444,34 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 22,
+      "entries_count": 27,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
           "club": "1383109 - LORGUES",
           "category": "1383109 - LORGUES",
           "session": "S2 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "BICHET Maurice",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "Scratch Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "BICHET Maurice",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "BIGI Alexandre",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S2 Homme Arc Classique",
           "target": ""
         },
         {
@@ -401,6 +528,20 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "FLORINEDA Pascal",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "FLORINEDA Pascal",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "Arc à Poulies Senior 2 Homme",
           "target": ""
         },
         {
