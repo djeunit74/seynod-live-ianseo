@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-02T05:28:53.236308+00:00",
+  "generated_at_utc": "2026-09-02T09:51:36.951303+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -24,21 +24,21 @@
           "club": "1130041 - NIMES",
           "category": "1130041 - NIMES",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "1B"
+          "target": "2A"
         },
         {
           "name": "ARMAND Raphael",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "7B"
+          "target": "7A"
         },
         {
           "name": "BARBELIN Lisa",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Femme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "12B"
+          "target": "11A"
         },
         {
           "name": "BARITEAUD Iban",
@@ -52,7 +52,7 @@
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "3B"
+          "target": "5A"
         },
         {
           "name": "BOSSARD Florian",
@@ -80,7 +80,7 @@
           "club": "0174260 - ANNEMASSE",
           "category": "0174260 - ANNEMASSE",
           "session": "Femme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "11A"
+          "target": "11B"
         },
         {
           "name": "COUPARD Anael",
@@ -94,63 +94,63 @@
           "club": "0892203 - ISSY LES MOULINEAUX",
           "category": "0892203 - ISSY LES MOULINEAUX",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "6A"
+          "target": "4B"
         },
         {
           "name": "ER'RAHMOUNI Siham",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Femme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "13B"
+          "target": "15A"
         },
         {
           "name": "FICHET Romain",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "7A"
+          "target": "4A"
         },
         {
           "name": "FIORETTI Thibault",
           "club": "1306037 - MOUANS SARTOUX",
           "category": "1306037 - MOUANS SARTOUX",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "8A"
+          "target": "9B"
         },
         {
           "name": "FREMERY-DELESTAN Mila",
           "club": "1130041 - NIMES",
           "category": "1130041 - NIMES",
           "session": "Femme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "13A"
+          "target": "13B"
         },
         {
           "name": "HERLICQ Sam",
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "8B"
+          "target": "8A"
         },
         {
           "name": "LAMOURET Mael",
           "club": "0950072 - CHERBOURG EN COTENTIN",
           "category": "0950072 - CHERBOURG EN COTENTIN",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "3A"
+          "target": "1B"
         },
         {
           "name": "LELLOUCHE Maxime",
           "club": "0437083 - ST AVERTIN",
           "category": "0437083 - ST AVERTIN",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "9B"
+          "target": "8B"
         },
         {
           "name": "LOPEZ Caroline",
           "club": "0163157 - RIOM",
           "category": "0163157 - RIOM",
           "session": "Femme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "11B"
+          "target": "12A"
         },
         {
           "name": "MIREL Noa",
@@ -164,28 +164,28 @@
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "4B"
+          "target": "5B"
         },
         {
           "name": "RANDRIANTSARA Lai-Tsan",
           "club": "3597022 - SAINT DENIS DE LA REUNION",
           "category": "3597022 - SAINT DENIS DE LA REUNION",
           "session": "Femme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "15A"
+          "target": "13A"
         },
         {
           "name": "RENAUDINEAU Alexis",
           "club": "1130041 - NIMES",
           "category": "1130041 - NIMES",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "5A"
+          "target": "7B"
         },
         {
           "name": "SEBASTIAN Victoria",
           "club": "1130041 - NIMES",
           "category": "1130041 - NIMES",
           "session": "Femme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "12A"
+          "target": "12B"
         },
         {
           "name": "SENAY Alexandre",
@@ -206,21 +206,21 @@
           "club": "1130041 - NIMES",
           "category": "1130041 - NIMES",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "2A"
+          "target": "3A"
         },
         {
           "name": "VERZIER-ROUSSON Iewan",
           "club": "0335067 - RENNES CIE",
           "category": "0335067 - RENNES CIE",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "5B"
+          "target": "6A"
         },
         {
           "name": "VIALE Romain",
           "club": "0163151 - CLERMONT FERRAND CIE",
           "category": "0163151 - CLERMONT FERRAND CIE",
           "session": "Homme Arc Classique, Tournoi 1 (J3) — tableau principal, Tournoi 2 (J3) — tableau principal, Tournoi 3 (J3) — tableau principal, Tournoi 4 (J3) — tableau principal, Tournoi 5 (J4) — tableau principal, Tournoi 6 (J4) — tableau principal, 5 matchs simulés (J4) — duel 1, 5 matchs simulés (J4) — duel 2, 5 matchs simulés (J4) — duel 3, 5 matchs simulés (J4) — duel 4, 5 matchs simulés (J4) — duel 5",
-          "target": "4A"
+          "target": "3B"
         }
       ]
     },
@@ -338,13 +338,27 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 15,
+      "entries_count": 22,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
           "club": "1383109 - LORGUES",
           "category": "1383109 - LORGUES",
           "session": "S2 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "BOMMART Sylvain",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "BOMMART Sylvain",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Arc à Poulies Senior 3 Homme",
           "target": ""
         },
         {
@@ -362,6 +376,13 @@
           "target": ""
         },
         {
+          "name": "COQUEUGNIOT Melanie",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S2 Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "DECKER GARCIA Lea",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -373,6 +394,13 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "Arc Classique U21 Femme",
+          "target": ""
+        },
+        {
+          "name": "DUBOURG Philippe",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc Classique",
           "target": ""
         },
         {
@@ -404,6 +432,13 @@
           "target": ""
         },
         {
+          "name": "HERBIN Julien",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "HIDEUX Luc",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
@@ -415,6 +450,13 @@
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "Scratch Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "LAN Michel",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc Classique",
           "target": ""
         },
         {
@@ -443,6 +485,13 @@
           "club": "1383109 - LORGUES",
           "category": "1383109 - LORGUES",
           "session": "S2 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "VERVOITTE Chantal",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Femme Arc Classique",
           "target": ""
         }
       ]
