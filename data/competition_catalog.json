@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-03T11:32:09.890825+00:00",
+  "generated_at_utc": "2026-09-03T15:53:44.343619+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -366,7 +366,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 14,
+      "entries_count": 16,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -393,6 +393,20 @@
           "name": "CHAUDRON Karine",
           "club": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "category": "1304014 - CHATEAU ARNOUX ST AUBAN",
+          "session": "Arc Classique Senior 2 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "COQUEUGNIOT Melanie",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "COQUEUGNIOT Melanie",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
           "session": "Arc Classique Senior 2 Femmes National",
           "target": ""
         },
@@ -543,14 +557,14 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 31,
+      "entries_count": 33,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
           "club": "1383109 - LORGUES",
           "category": "1383109 - LORGUES",
           "session": "S2 Femme Arc Classique",
-          "target": "6A"
+          "target": "7D"
         },
         {
           "name": "BERTHOUD Murielle",
@@ -630,11 +644,25 @@
           "target": "1B"
         },
         {
+          "name": "DORANGE Corinne",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Femme Arc Classique",
+          "target": "6A"
+        },
+        {
           "name": "DUBOURG Philippe",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
           "target": "7B"
+        },
+        {
+          "name": "DURAND Gilbert",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc Classique",
+          "target": "7A"
         },
         {
           "name": "FLORINEDA Pascal",
