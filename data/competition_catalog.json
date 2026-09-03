@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-03T15:53:44.343619+00:00",
+  "generated_at_utc": "2026-09-03T19:08:26.694556+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -366,7 +366,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 16,
+      "entries_count": 18,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -380,6 +380,13 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc à Poulies Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "BIGI Alexandre",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S2 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -429,6 +436,13 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LACOUR Barbara",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "Scratch Femme Arc Nu National",
           "target": ""
         },
         {
