@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-04T12:51:23.728504+00:00",
+  "generated_at_utc": "2026-09-04T16:45:20.477479+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -149,7 +149,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 29,
+      "entries_count": 30,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -352,6 +352,13 @@
           "club": "1384142 - CAVAILLON",
           "category": "1384142 - CAVAILLON",
           "session": "S3 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SALLANDIER Alain",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S3 Homme Arc Classique National",
           "target": ""
         }
       ]
