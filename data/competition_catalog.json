@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-04T03:11:36.911105+00:00",
+  "generated_at_utc": "2026-09-04T08:09:18.959804+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -149,7 +149,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 18,
+      "entries_count": 26,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -212,6 +212,62 @@
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
           "session": "Arc Classique Senior 3 Hommes",
+          "target": ""
+        },
+        {
+          "name": "GAUTHIER Chantal",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "GAUTHIER Chantal",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Arc Classique Senior 3 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "GAUTHIER Michel",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "GAUTHIER Michel",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Arc Classique Senior 3 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "JACQUES Aurelien",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Scratch Homme Arc Nu National",
+          "target": ""
+        },
+        {
+          "name": "JACQUES Aurelien",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Arc Nu Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "JACQUES Matteo",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "U15 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "JACQUES Matteo",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Arc Classique U15 Hommes",
           "target": ""
         },
         {
