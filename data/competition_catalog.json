@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-04T08:09:18.959804+00:00",
+  "generated_at_utc": "2026-09-04T12:51:23.728504+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -149,7 +149,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 26,
+      "entries_count": 29,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -332,6 +332,27 @@
           "category": "1304008 - BARCELONNETTE",
           "session": "S1 Homme Arc Classique National",
           "target": ""
+        },
+        {
+          "name": "PELLETIER Charlotte",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S1 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "PELLETIER Charlotte",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "Arc Classique Senior 1 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "PERROT Jocelyne",
+          "club": "1384142 - CAVAILLON",
+          "category": "1384142 - CAVAILLON",
+          "session": "S3 Femme Arc Classique",
+          "target": ""
         }
       ]
     },
@@ -410,7 +431,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 33,
+      "entries_count": 35,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -508,7 +529,7 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
-          "target": "7B"
+          "target": "8B"
         },
         {
           "name": "DURAND Gilbert",
@@ -581,6 +602,13 @@
           "target": "6A"
         },
         {
+          "name": "LAGARDE Dominique",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Homme Arc Classique",
+          "target": "8C"
+        },
+        {
           "name": "LAN Michel",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -600,6 +628,13 @@
           "category": "1383124 - LA GARDE",
           "session": "S3 Homme Arc à Poulies",
           "target": "2B"
+        },
+        {
+          "name": "NARDIN Patrick",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "Scratch Homme Arc Nu",
+          "target": "8A"
         },
         {
           "name": "PEJO Benoit",
