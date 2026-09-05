@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-05T07:48:47.673542+00:00",
+  "generated_at_utc": "2026-09-05T11:40:50.042175+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -347,7 +347,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 35,
+      "entries_count": 43,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -376,6 +376,20 @@
           "category": "1383101 - GONFARON",
           "session": "Scratch Homme Arc Nu",
           "target": "6D"
+        },
+        {
+          "name": "BIDEGAINBERRY Vincent",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "8D"
+        },
+        {
+          "name": "BIDEGAINBERRY Vincent",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "8D"
         },
         {
           "name": "BIGI Alexandre",
@@ -413,6 +427,27 @@
           "target": "7C"
         },
         {
+          "name": "COLLIN Xavier",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "COLOMBEL Fabrice",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "7B"
+        },
+        {
+          "name": "COLOMBEL Sonia",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Femme Arc Classique",
+          "target": "9B"
+        },
+        {
           "name": "COQUEUGNIOT Melanie",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
@@ -423,15 +458,15 @@
           "name": "DECKER GARCIA Lea",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
-          "session": "U21 Femme Arc Classique",
-          "target": "1B"
+          "session": "Arc Classique U21 Femme",
+          "target": "8A"
         },
         {
           "name": "DECKER GARCIA Lea",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
-          "session": "Arc Classique U21 Femme",
-          "target": "1B"
+          "session": "U21 Femme Arc Classique",
+          "target": "9C"
         },
         {
           "name": "DORANGE Corinne",
@@ -452,7 +487,7 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
-          "target": "7A"
+          "target": "7B"
         },
         {
           "name": "FLORINEDA Pascal",
@@ -473,7 +508,7 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Femme Arc Classique",
-          "target": "1D"
+          "target": "5A"
         },
         {
           "name": "GAUTHIER Michel",
@@ -532,6 +567,20 @@
           "target": "7A"
         },
         {
+          "name": "LEA Gerald",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "LEA Stephanie",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "1D"
+        },
+        {
           "name": "LESAFFRE Thierry",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
@@ -544,6 +593,13 @@
           "category": "1383124 - LA GARDE",
           "session": "S3 Homme Arc à Poulies",
           "target": "2B"
+        },
+        {
+          "name": "MICHEL Stephane",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S2 Homme Arc Classique",
+          "target": "9A"
         },
         {
           "name": "NARDIN Patrick",
