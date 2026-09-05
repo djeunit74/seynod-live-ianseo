@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-05T19:16:45.639386+00:00",
+  "generated_at_utc": "2026-09-05T21:31:32.358642+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -375,7 +375,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 43,
+      "entries_count": 49,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -441,11 +441,32 @@
           "target": "1A"
         },
         {
+          "name": "BUSSOLON Adrien",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S1 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
+          "name": "BUSSOLON Adrien",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "7D"
+        },
+        {
+          "name": "BUSSOLON Adrien",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "8C"
+        },
+        {
           "name": "CHEMIN Theo",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S1 Homme Arc Classique",
-          "target": "6A"
+          "target": "7C"
         },
         {
           "name": "CHEMIN Theo",
@@ -515,7 +536,7 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
-          "target": "7B"
+          "target": "7D"
         },
         {
           "name": "FLORINEDA Pascal",
@@ -581,6 +602,20 @@
           "target": "6A"
         },
         {
+          "name": "HILLIER Patrice",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "7A"
+        },
+        {
+          "name": "HILLIER Patrice",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
+          "session": "S3 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
           "name": "LAGARDE Dominique",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
@@ -609,6 +644,13 @@
           "target": "1D"
         },
         {
+          "name": "LEPERS Pierre",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "7B"
+        },
+        {
           "name": "LESAFFRE Thierry",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
@@ -627,7 +669,7 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S2 Homme Arc Classique",
-          "target": "9A"
+          "target": "9D"
         },
         {
           "name": "NARDIN Patrick",
