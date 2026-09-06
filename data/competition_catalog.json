@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-06T18:03:52.992544+00:00",
+  "generated_at_utc": "2026-09-06T20:39:39.392851+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 38,
+      "entries_count": 42,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -180,6 +180,20 @@
           "target": ""
         },
         {
+          "name": "LAHAYE Sacha",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LAHAYE Stephane",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "LEA Gerald",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
@@ -297,6 +311,20 @@
           "category": "1383114 - OLLIOULES",
           "session": "S3 Homme Arc Classique National",
           "target": ""
+        },
+        {
+          "name": "SUBE Christophe",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "SUBE Christophe",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
         }
       ]
     },
@@ -375,7 +403,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 51,
+      "entries_count": 53,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -726,6 +754,20 @@
           "category": "1383109 - LORGUES",
           "session": "S2 Homme Arc Classique",
           "target": "6C"
+        },
+        {
+          "name": "TREILLE Odile",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Femme Arc Classique",
+          "target": "10B"
+        },
+        {
+          "name": "TREILLE Odile",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "Arc Classique Senior 3 Femme",
+          "target": "8B"
         },
         {
           "name": "VERVOITTE Chantal",
