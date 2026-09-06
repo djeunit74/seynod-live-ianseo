@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-06T15:38:23.946825+00:00",
+  "generated_at_utc": "2026-09-06T18:03:52.992544+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -375,7 +375,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 49,
+      "entries_count": 51,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -536,7 +536,21 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
-          "target": "7D"
+          "target": "8D"
+        },
+        {
+          "name": "FERDINAND Sandra",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S2 Femme Arc Classique",
+          "target": "8A"
+        },
+        {
+          "name": "FERDINAND Sandra",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "Arc Classique Senior 2 Femme",
+          "target": "8A"
         },
         {
           "name": "FLORINEDA Pascal",
