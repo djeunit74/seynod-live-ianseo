@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-07T05:43:47.485021+00:00",
+  "generated_at_utc": "2026-09-07T11:43:39.024494+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 42,
+      "entries_count": 46,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -50,6 +50,13 @@
           "name": "BIGI Alexandre",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "BOUSCHBACHER Laurent",
+          "club": "1384139 - L'ISLE SUR LA SORGUE",
+          "category": "1384139 - L'ISLE SUR LA SORGUE",
           "session": "S2 Homme Arc Classique National",
           "target": ""
         },
@@ -163,6 +170,20 @@
           "club": "1313066 - GEMENOS",
           "category": "1313066 - GEMENOS",
           "session": "Arc Classique U15 Hommes",
+          "target": ""
+        },
+        {
+          "name": "JAFFRE Catherine",
+          "club": "1304008 - BARCELONNETTE",
+          "category": "1304008 - BARCELONNETTE",
+          "session": "S3 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "JAFFRE Catherine",
+          "club": "1304008 - BARCELONNETTE",
+          "category": "1304008 - BARCELONNETTE",
+          "session": "Arc Classique Senior 3 Femmes National",
           "target": ""
         },
         {
@@ -310,6 +331,13 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "SERTA Sandrine",
+          "club": "1384139 - L'ISLE SUR LA SORGUE",
+          "category": "1384139 - L'ISLE SUR LA SORGUE",
+          "session": "S2 Femme Arc Classique National",
           "target": ""
         },
         {
