@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-07T17:21:25.443987+00:00",
+  "generated_at_utc": "2026-09-07T20:42:47.335073+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 46,
+      "entries_count": 52,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -44,6 +44,13 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc à Poulies Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "BARON Robert",
+          "club": "1313077 - MIRAMAS CRAU",
+          "category": "1313077 - MIRAMAS CRAU",
+          "session": "S3 Homme Arc à Poulies National",
           "target": ""
         },
         {
@@ -86,6 +93,20 @@
           "club": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "category": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "session": "Arc Classique Senior 2 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "COQUEREL Yoann",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "S2 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "COQUEREL Yoann",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "Arc Classique Senior 2 Hommes",
           "target": ""
         },
         {
@@ -268,6 +289,27 @@
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "LUCE Damien",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "Découverte",
+          "target": ""
+        },
+        {
+          "name": "LUCE LAURANS Leo",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "LUCE LAURANS Thelio",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "U15 Homme Arc Classique National",
           "target": ""
         },
         {
