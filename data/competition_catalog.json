@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-08T16:05:52.728785+00:00",
+  "generated_at_utc": "2026-09-08T19:29:58.356066+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 54,
+      "entries_count": 59,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -47,10 +47,31 @@
           "target": ""
         },
         {
+          "name": "APOSTOLAKIS Olivier",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "APOSTOLAKIS Olivier",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "Arc Classique Senior 3 Hommes",
+          "target": ""
+        },
+        {
           "name": "BARON Robert",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "S3 Homme Arc à Poulies National",
+          "target": ""
+        },
+        {
+          "name": "BERTHOUD Murielle",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Femme Arc Classique National",
           "target": ""
         },
         {
@@ -401,6 +422,20 @@
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "TREILLE Odile",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "TREILLE Odile",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Femme Arc Classique National",
           "target": ""
         },
         {
