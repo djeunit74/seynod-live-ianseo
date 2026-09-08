@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-08T06:17:39.749505+00:00",
+  "generated_at_utc": "2026-09-08T11:35:18.178995+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 52,
+      "entries_count": 54,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -79,6 +79,13 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "BUTTIGIEG Roland",
+          "club": "1313081 - PELISSANNE",
+          "category": "1313081 - PELISSANNE",
+          "session": "S3 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -395,6 +402,13 @@
           "category": "1384147 - CARPENTRAS",
           "session": "Arc Classique Senior 2 Hommes National",
           "target": ""
+        },
+        {
+          "name": "WILKES Jonathan",
+          "club": "1313077 - MIRAMAS CRAU",
+          "category": "1313077 - MIRAMAS CRAU",
+          "session": "S2 Homme Arc à Poulies",
+          "target": ""
         }
       ]
     },
@@ -473,7 +487,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 53,
+      "entries_count": 51,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -487,20 +501,6 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S3 Femme Arc Classique",
-          "target": "6D"
-        },
-        {
-          "name": "BICHET Maurice",
-          "club": "1383101 - GONFARON",
-          "category": "1383101 - GONFARON",
-          "session": "Arc Nu Senior 3 Homme",
-          "target": "6C"
-        },
-        {
-          "name": "BICHET Maurice",
-          "club": "1383101 - GONFARON",
-          "category": "1383101 - GONFARON",
-          "session": "Scratch Homme Arc Nu",
           "target": "6D"
         },
         {
