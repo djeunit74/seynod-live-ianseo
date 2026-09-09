@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-09T09:35:48.282151+00:00",
+  "generated_at_utc": "2026-09-09T14:11:58.303257+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -529,7 +529,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 51,
+      "entries_count": 53,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -579,6 +579,13 @@
           "category": "1383115 - BRIGNOLES",
           "session": "Arc à Poulies Senior 3 Homme",
           "target": "1A"
+        },
+        {
+          "name": "BORAKOVSKI Bruno",
+          "club": "1383127 - FREJUS",
+          "category": "1383127 - FREJUS",
+          "session": "S3 Homme Arc Classique",
+          "target": "8C"
         },
         {
           "name": "BUSSOLON Adrien",
@@ -817,6 +824,13 @@
           "category": "1383124 - LA GARDE",
           "session": "S3 Homme Arc à Poulies",
           "target": "2B"
+        },
+        {
+          "name": "MARQUEZ Marie-Josee",
+          "club": "1383127 - FREJUS",
+          "category": "1383127 - FREJUS",
+          "session": "S3 Femme Arc Classique",
+          "target": "6C"
         },
         {
           "name": "MICHEL Stephane",
