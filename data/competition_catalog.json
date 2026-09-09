@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-09T14:11:58.303257+00:00",
+  "generated_at_utc": "2026-09-09T20:31:31.334025+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 60,
+      "entries_count": 62,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -152,6 +152,13 @@
           "target": ""
         },
         {
+          "name": "DAHMAN Nordine",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "FLOQUET Jean-Louis",
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
@@ -191,6 +198,13 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "Arc Classique Senior 3 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "GOSSELIN Franck",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S3 Homme Arc Classique",
           "target": ""
         },
         {
@@ -529,7 +543,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 53,
+      "entries_count": 54,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -880,6 +894,13 @@
           "category": "1383109 - LORGUES",
           "session": "S2 Homme Arc Classique",
           "target": "6C"
+        },
+        {
+          "name": "SALLANDIER Alain",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S3 Homme Arc Classique",
+          "target": "10D"
         },
         {
           "name": "TREILLE Odile",
