@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-09T05:00:06.141944+00:00",
+  "generated_at_utc": "2026-09-09T09:35:48.282151+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 59,
+      "entries_count": 60,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -240,6 +240,13 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "KROUN Philippe",
+          "club": "1313090 - ST MARTIN DE CRAU",
+          "category": "1313090 - ST MARTIN DE CRAU",
+          "session": "S3 Homme Arc Classique National",
           "target": ""
         },
         {
