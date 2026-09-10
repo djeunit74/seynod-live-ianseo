@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-10T21:04:48.963404+00:00",
+  "generated_at_utc": "2026-09-10T23:20:09.665082+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 62,
+      "entries_count": 66,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -271,6 +271,13 @@
           "target": ""
         },
         {
+          "name": "LAGARDE Dominique",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "LAHAYE Sacha",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
@@ -299,6 +306,20 @@
           "target": ""
         },
         {
+          "name": "LEBRE Olivier",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "Découverte",
+          "target": ""
+        },
+        {
+          "name": "LEBRE Olivier",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "Arc Classique Découverte",
+          "target": ""
+        },
+        {
           "name": "LEMAIRE Sebastien",
           "club": "1384137 - BONNIEUX",
           "category": "1384137 - BONNIEUX",
@@ -324,6 +345,13 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc à Poulies Senior 3 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "LESTIENNE Thibaut",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S1 Homme Arc Classique National",
           "target": ""
         },
         {
