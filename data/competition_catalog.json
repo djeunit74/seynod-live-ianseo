@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-11T15:58:08.661244+00:00",
+  "generated_at_utc": "2026-09-11T19:05:35.638193+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 71,
+      "entries_count": 73,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -478,6 +478,20 @@
           "club": "1384142 - CAVAILLON",
           "category": "1384142 - CAVAILLON",
           "session": "S3 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "PLACHTA Thibaut",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "PLACHTA Thibaut",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
+          "session": "Arc Classique Senior 1 Hommes National",
           "target": ""
         },
         {
