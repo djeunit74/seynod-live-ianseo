@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-11T01:20:52.176189+00:00",
+  "generated_at_utc": "2026-09-11T06:26:11.019902+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -571,7 +571,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 54,
+      "entries_count": 58,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -579,6 +579,20 @@
           "category": "1383109 - LORGUES",
           "session": "S2 Femme Arc Classique",
           "target": "7D"
+        },
+        {
+          "name": "ANGEBAUD Damien",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "1B"
+        },
+        {
+          "name": "ANGEBAUD Damien",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "2A"
         },
         {
           "name": "BERTHOUD Murielle",
@@ -654,15 +668,15 @@
           "name": "CHEMIN Theo",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
-          "session": "S1 Homme Arc Classique",
+          "session": "Arc Classique Senior 1 Homme",
           "target": "7C"
         },
         {
           "name": "CHEMIN Theo",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
-          "session": "Arc Classique Senior 1 Homme",
-          "target": "7C"
+          "session": "S1 Homme Arc Classique",
+          "target": "9C"
         },
         {
           "name": "COLLIN Xavier",
@@ -726,6 +740,13 @@
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
           "target": "8D"
+        },
+        {
+          "name": "ESCHBACH Vincent",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc Classique",
+          "target": "9A"
         },
         {
           "name": "FERDINAND Sandra",
@@ -866,6 +887,13 @@
           "category": "1383124 - LA GARDE",
           "session": "S3 Homme Arc à Poulies",
           "target": "2B"
+        },
+        {
+          "name": "LESTIENNE Thibaut",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Scratch Homme Arc Nu",
+          "target": "8D"
         },
         {
           "name": "MARQUEZ Marie-Josee",
