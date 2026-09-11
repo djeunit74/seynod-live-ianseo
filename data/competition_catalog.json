@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-11T11:42:00.832086+00:00",
+  "generated_at_utc": "2026-09-11T15:58:08.661244+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 66,
+      "entries_count": 71,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -65,6 +65,13 @@
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "S3 Homme Arc à Poulies National",
+          "target": ""
+        },
+        {
+          "name": "BARTHELEMY Jean Denis",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
+          "session": "S3 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -390,6 +397,20 @@
           "target": ""
         },
         {
+          "name": "MASSE Bertrand",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MASSE Bertrand",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
           "name": "MAUSSIERE Florence",
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
@@ -422,6 +443,20 @@
           "club": "1304008 - BARCELONNETTE",
           "category": "1304008 - BARCELONNETTE",
           "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MORISCOT Aurore",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S1 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MORISCOT Aurore",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "Arc Classique Senior 1 Femmes National",
           "target": ""
         },
         {
