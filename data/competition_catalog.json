@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-12T08:04:33.428006+00:00",
+  "generated_at_utc": "2026-09-12T12:17:39.908837+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 13,
+  "count": 14,
   "tournaments": [
     {
       "to_id": "29640",
@@ -555,6 +555,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29643",
       "ena_url": "https://www.ianseo.net/TourData/2026/29643/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29643/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "30101",
+      "year": "2026",
+      "name": "Tir à 18m - Valide + Para - Octobre",
+      "organizer": "Compagnie d'Arc de Vedène",
+      "date_text": "17-18 Oct",
+      "end_date": "2026-10-18",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30101",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30101/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30101/IC.php",
       "entries_count": 0,
       "entries": []
     },
