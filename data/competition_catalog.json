@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-12T20:53:11.702954+00:00",
+  "generated_at_utc": "2026-09-12T22:52:01.265600+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -621,8 +621,1157 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30113",
       "ena_url": "https://www.ianseo.net/TourData/2026/30113/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30113/IC.php",
-      "entries_count": 0,
-      "entries": []
+      "entries_count": 164,
+      "entries": [
+        {
+          "name": "BERTHIER Jean-Philippe",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Senior 2 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "BERTHIER Jean-Philippe",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "BERTHIER Jean-Philippe",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "BERTHIER Jean-Philippe",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "BURTIN Stephane",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Senior 2 Homme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "BURTIN Stephane",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc Chasse Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "BURTIN Stephane",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc Chasse Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Alexandre",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Senior 1 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Alexandre",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Arc Libre Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Alexandre",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Arc Libre Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Alexandre",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Arc Libre Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Christophe",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Senior 2 Homme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Christophe",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Arc Chasse Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Enzo",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Senior 1 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Enzo",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Arc Nu Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Enzo",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Arc Nu Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARBONNEL Enzo",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Arc Nu Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARRETTA Lionel",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Senior 3 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "CARRETTA Lionel",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Libre Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARRETTA Lionel",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Libre Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARRETTA Lionel",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Libre Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "CHATELARD Thomas",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Scratch Homme Arc à Poulies Nu",
+          "target": ""
+        },
+        {
+          "name": "CHATELARD Thomas",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "CHATELARD Thomas",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "CHATELARD Thomas",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "CHISTE Chrystelle",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Senior 2 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "CHISTE Chrystelle",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc Nu Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "CHISTE Chrystelle",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc Nu Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "CHISTE Herve",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Senior 3 Homme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "CHISTE Herve",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "CHISTE Herve",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "CONSTANTIN Jerome",
+          "club": "1130068 - ROCHEFORT DU GARD",
+          "category": "1130068 - ROCHEFORT DU GARD",
+          "session": "Senior 2 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "CONSTANTIN Jerome",
+          "club": "1130068 - ROCHEFORT DU GARD",
+          "category": "1130068 - ROCHEFORT DU GARD",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "COUSIN Naya",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "U15 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "DELAFORGE-DURAISIN Lise",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "U18-U21 Femme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "DELAFORGE-DURAISIN Lise",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Arc Libre U21 Femme",
+          "target": ""
+        },
+        {
+          "name": "DELVAUX Didier",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Senior 3 Homme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "DELVAUX Didier",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "DELVAUX Didier",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "DELVAUX Didier",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "DURAISIN Isabelle",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Senior 2 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "DURAISIN Isabelle",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Arc Nu Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "DURAISIN Isabelle",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Arc Nu Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "DURAISIN Isabelle",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Arc Nu Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "FOURNIER Celine",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Senior 1 Femme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "FOURNIER Celine",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc Chasse Senior 1 Femme",
+          "target": ""
+        },
+        {
+          "name": "FOURNIER Celine",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc Chasse Senior 1 Femme",
+          "target": ""
+        },
+        {
+          "name": "GALLARDO Alain",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Senior 3 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "GALLARDO Alain",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "GALLARDO Alain",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "GALLARDO Alain",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "GALLARDO Melanie",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Senior 1 Femme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "GALLARDO Melanie",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 1 Femme",
+          "target": ""
+        },
+        {
+          "name": "GALLARDO Melanie",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 1 Femme",
+          "target": ""
+        },
+        {
+          "name": "GALLARDO Melanie",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Droit Senior 1 Femme",
+          "target": ""
+        },
+        {
+          "name": "GARREYN Herve",
+          "club": "0169187 - ST PRIEST",
+          "category": "0169187 - ST PRIEST",
+          "session": "Senior 2 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "GARREYN Herve",
+          "club": "0169187 - ST PRIEST",
+          "category": "0169187 - ST PRIEST",
+          "session": "Arc Droit Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GARREYN Herve",
+          "club": "0169187 - ST PRIEST",
+          "category": "0169187 - ST PRIEST",
+          "session": "Arc Droit Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GARREYN Herve",
+          "club": "0169187 - ST PRIEST",
+          "category": "0169187 - ST PRIEST",
+          "session": "Arc Droit Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GARREYN Isabelle",
+          "club": "0169187 - ST PRIEST",
+          "category": "0169187 - ST PRIEST",
+          "session": "Senior 2 Femme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "GARREYN Isabelle",
+          "club": "0169187 - ST PRIEST",
+          "category": "0169187 - ST PRIEST",
+          "session": "Arc Droit Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "GARREYN Isabelle",
+          "club": "0169187 - ST PRIEST",
+          "category": "0169187 - ST PRIEST",
+          "session": "Arc Droit Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "GARREYN Isabelle",
+          "club": "0169187 - ST PRIEST",
+          "category": "0169187 - ST PRIEST",
+          "session": "Arc Droit Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "GASPAR Helene",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Senior 3 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "GASPAR Helene",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GASPAR Helene",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GASPAR Helene",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GAUDRON Martine",
+          "club": "1383128 - SAINT-RAPHAEL",
+          "category": "1383128 - SAINT-RAPHAEL",
+          "session": "Senior 3 Femme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "GAUDRON Martine",
+          "club": "1383128 - SAINT-RAPHAEL",
+          "category": "1383128 - SAINT-RAPHAEL",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GAUDRON Martine",
+          "club": "1383128 - SAINT-RAPHAEL",
+          "category": "1383128 - SAINT-RAPHAEL",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GAUDRON Martine",
+          "club": "1383128 - SAINT-RAPHAEL",
+          "category": "1383128 - SAINT-RAPHAEL",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GERARD Aline",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Senior 2 Femme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "GIET Laurent",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Senior 2 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "GIET Laurent",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GIET Laurent",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GIET Laurent",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GIRARDY Yoan",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Senior 2 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "GIRARDY Yoan",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GIRARDY Yoan",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GIRARDY Yoan",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GIROST Florence",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Senior 3 Femme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "GREGOIRE Florence",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Senior 3 Femme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "GREGOIRE Florence",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Droit Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GREGOIRE Florence",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Droit Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GREGOIRE Florence",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Droit Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "GUILLELMET Gilles",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Senior 2 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "GUILLELMET Gilles",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Arc Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GUILLELMET Gilles",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Arc Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GUILLELMET Gilles",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "Arc Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "HAMBACHER Paul",
+          "club": "1130068 - ROCHEFORT DU GARD",
+          "category": "1130068 - ROCHEFORT DU GARD",
+          "session": "Senior 3 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "HAMBACHER Paul",
+          "club": "1130068 - ROCHEFORT DU GARD",
+          "category": "1130068 - ROCHEFORT DU GARD",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "INAREJOS Ricardo",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Senior 3 Homme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "INAREJOS Ricardo",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "INAREJOS Ricardo",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "INAREJOS Ricardo",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "JUILLARD Patricia",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Senior 2 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "JUILLARD Patricia",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Arc Nu Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "JUILLARD Patricia",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Arc Nu Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "JURADO Cecile",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Senior 2 Femme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "JURADO Cecile",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Droit Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "L'HOTEL Francoise",
+          "club": "1384148 - LE THOR",
+          "category": "1384148 - LE THOR",
+          "session": "Senior 3 Femme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "L'HOTEL Francoise",
+          "club": "1384148 - LE THOR",
+          "category": "1384148 - LE THOR",
+          "session": "Arc Droit Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "L'HOTEL Francoise",
+          "club": "1384148 - LE THOR",
+          "category": "1384148 - LE THOR",
+          "session": "Arc Droit Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "L'HOTEL Francoise",
+          "club": "1384148 - LE THOR",
+          "category": "1384148 - LE THOR",
+          "session": "Arc Droit Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "L'HOTEL Jean-Claude",
+          "club": "1384148 - LE THOR",
+          "category": "1384148 - LE THOR",
+          "session": "Senior 3 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "L'HOTEL Jean-Claude",
+          "club": "1384148 - LE THOR",
+          "category": "1384148 - LE THOR",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "L'HOTEL Jean-Claude",
+          "club": "1384148 - LE THOR",
+          "category": "1384148 - LE THOR",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "L'HOTEL Jean-Claude",
+          "club": "1384148 - LE THOR",
+          "category": "1384148 - LE THOR",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "LEYDIER Guylaine",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "Senior 3 Femme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "LEYDIER Guylaine",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "Arc Chasse Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "LEYDIER Guylaine",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "Arc Chasse Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "LEYDIER Jean-Paul",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "Senior 3 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "LEYDIER Jean-Paul",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "LEYDIER Jean-Paul",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "LEYDIER Jean-Paul",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "MAUBON Eric",
+          "club": "1384161 - LES ARCHERS DES BALAIS",
+          "category": "1384161 - LES ARCHERS DES BALAIS",
+          "session": "Senior 3 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "MAUBON Eric",
+          "club": "1384161 - LES ARCHERS DES BALAIS",
+          "category": "1384161 - LES ARCHERS DES BALAIS",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "MAUBON Eric",
+          "club": "1384161 - LES ARCHERS DES BALAIS",
+          "category": "1384161 - LES ARCHERS DES BALAIS",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "MAUBON Eric",
+          "club": "1384161 - LES ARCHERS DES BALAIS",
+          "category": "1384161 - LES ARCHERS DES BALAIS",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "MAUBON Isabelle",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Senior 3 Femme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "MAUBON Isabelle",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "MAUBON Isabelle",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "MAUBON Isabelle",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "MORARD Danielle",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Scratch Femme Arc à Poulies Nu",
+          "target": ""
+        },
+        {
+          "name": "MORARD Danielle",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc à Poulies Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "MORARD Danielle",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc à Poulies Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "MORARD Danielle",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc à Poulies Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "NORTES ALCARAZ Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Senior 3 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "NORTES ALCARAZ Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "NORTES ALCARAZ Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "NORTES ALCARAZ Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "NORTES ALCARAZ Mireille",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Senior 3 Femme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "NORTES ALCARAZ Mireille",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "NORTES ALCARAZ Mireille",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "NORTES ALCARAZ Mireille",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "PAULEAU Colette",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Senior 3 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "PAULEAU Colette",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "PAULEAU Colette",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "PAULEAU Colette",
+          "club": "1384129 - ROBION",
+          "category": "1384129 - ROBION",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "PEUCAT Charlotte",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Senior 1 Femme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "PEUCAT Charlotte",
+          "club": "0169217 - LYON 9EME",
+          "category": "0169217 - LYON 9EME",
+          "session": "Arc Chasse Senior 1 Femme",
+          "target": ""
+        },
+        {
+          "name": "PITIOT Eric",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Senior 3 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "PITIOT Eric",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "PITIOT Eric",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "PITIOT Eric",
+          "club": "0142282 - LES ARCHERS DU DAHU",
+          "category": "0142282 - LES ARCHERS DU DAHU",
+          "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "PONCET Boris",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Senior 2 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "PONCET Boris",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "PONCET Boris",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "PONCET Boris",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "PONCET Kylian",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Senior 1 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "PONCET Kylian",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Arc Libre Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "PONCET Kylian",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Arc Libre Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "PONCET Kylian",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Arc Libre Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "PONCET Sabrina",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Senior 2 Femme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "PONCET Sabrina",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Arc Libre Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "PONCET Sabrina",
+          "club": "0169208 - VILLEFRANCHE",
+          "category": "0169208 - VILLEFRANCHE",
+          "session": "Arc Libre Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "ROLLET Thierry",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Scratch Homme Arc à Poulies Nu",
+          "target": ""
+        },
+        {
+          "name": "ROLLET Thierry",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "ROLLET Thierry",
+          "club": "0101018 - BELLEGARDE SUR VALSERINE",
+          "category": "0101018 - BELLEGARDE SUR VALSERINE",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "SIEGEL Pierre",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Scratch Homme Arc à Poulies Nu",
+          "target": ""
+        },
+        {
+          "name": "TRANCHIMAND Roselyne",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Senior 3 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "TRANCHIMAND Roselyne",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "TRANCHIMAND Roselyne",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "TRANCHIMAND Roselyne",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        }
+      ]
     },
     {
       "to_id": "29686",
