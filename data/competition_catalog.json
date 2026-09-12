@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-12T15:44:32.254189+00:00",
+  "generated_at_utc": "2026-09-12T18:09:10.107612+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 14,
+  "count": 15,
   "tournaments": [
     {
       "to_id": "29640",
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 73,
+      "entries_count": 75,
       "entries": [
         {
           "name": "ANGEBAUD Damien",
@@ -299,6 +299,13 @@
           "target": ""
         },
         {
+          "name": "LAMBERT Mathilde",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S1 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "LEA Gerald",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
@@ -460,6 +467,13 @@
           "target": ""
         },
         {
+          "name": "PAILLASSON Raphael",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "PELLETIER Charlotte",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
@@ -594,6 +608,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29669",
       "ena_url": "https://www.ianseo.net/TourData/2026/29669/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29669/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "30113",
+      "year": "2026",
+      "name": "Nature Yelloh! Village",
+      "organizer": "Compagnie d'Arc de Vedène",
+      "date_text": "31 Oct - 1 Nov",
+      "end_date": "2026-11-01",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30113",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30113/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30113/IC.php",
       "entries_count": 0,
       "entries": []
     },
