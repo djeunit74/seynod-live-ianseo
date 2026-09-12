@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-12T12:17:39.908837+00:00",
+  "generated_at_utc": "2026-09-12T15:44:32.254189+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -633,7 +633,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 58,
+      "entries_count": 66,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -717,14 +717,14 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
-          "target": "7D"
+          "target": "8C"
         },
         {
           "name": "BUSSOLON Adrien",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
-          "target": "8C"
+          "target": "9B"
         },
         {
           "name": "CHEMIN Theo",
@@ -878,7 +878,7 @@
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "Scratch Homme Arc Nu",
-          "target": "6B"
+          "target": "9C"
         },
         {
           "name": "HIDEUX Sylvie",
@@ -891,15 +891,22 @@
           "name": "HILLIER Patrice",
           "club": "1383111 - TOULON",
           "category": "1383111 - TOULON",
-          "session": "Arc Classique Senior 3 Homme",
-          "target": "7A"
+          "session": "S3 Homme Arc Classique",
+          "target": "9A"
         },
         {
           "name": "HILLIER Patrice",
           "club": "1383111 - TOULON",
           "category": "1383111 - TOULON",
-          "session": "S3 Homme Arc Classique",
+          "session": "Arc Classique Senior 3 Homme",
           "target": "9A"
+        },
+        {
+          "name": "LACOUR Barbara",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "Scratch Femme Arc Nu",
+          "target": "11A"
         },
         {
           "name": "LAGARDE Dominique",
@@ -955,7 +962,28 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "Scratch Homme Arc Nu",
+          "target": "9D"
+        },
+        {
+          "name": "LUCE Damien",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S2 Homme Arc Classique",
+          "target": "6B"
+        },
+        {
+          "name": "LUCE LAURANS Leo",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "U18 Homme Arc Classique",
           "target": "8D"
+        },
+        {
+          "name": "LUCE LAURANS Thelio",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "U15 Homme Arc Classique",
+          "target": "5A"
         },
         {
           "name": "MARQUEZ Marie-Josee",
@@ -998,6 +1026,34 @@
           "category": "1383115 - BRIGNOLES",
           "session": "S2 Homme Arc Classique",
           "target": "1D"
+        },
+        {
+          "name": "PIERRON Mickael",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S1 Homme Arc Classique",
+          "target": "7A"
+        },
+        {
+          "name": "PLANCON Christophe",
+          "club": "1111243 - ACM-ARC CLUB MONTFERRAND",
+          "category": "1111243 - ACM-ARC CLUB MONTFERRAND",
+          "session": "Scratch Homme Arc Nu",
+          "target": "6A"
+        },
+        {
+          "name": "QUACHERO Kieran",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "U18 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
+          "name": "QUACHERO Nicolas",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "8B"
         },
         {
           "name": "ROBLES Jose",
