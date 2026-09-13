@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-13T00:38:53.203260+00:00",
+  "generated_at_utc": "2026-09-13T05:42:06.045460+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1809,7 +1809,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 66,
+      "entries_count": 68,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -2076,6 +2076,20 @@
           "category": "1383111 - TOULON",
           "session": "Arc Classique Senior 3 Homme",
           "target": "9A"
+        },
+        {
+          "name": "JACQUES Aurelien",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Scratch Homme Arc Nu",
+          "target": "7C"
+        },
+        {
+          "name": "JACQUES Matteo",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "U15 Homme Arc Classique",
+          "target": "5A"
         },
         {
           "name": "LACOUR Barbara",
