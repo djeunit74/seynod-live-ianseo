@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-13T18:04:48.844806+00:00",
+  "generated_at_utc": "2026-09-13T21:02:22.547515+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1809,7 +1809,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 68,
+      "entries_count": 71,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -1882,6 +1882,13 @@
           "target": "8C"
         },
         {
+          "name": "BOUTIN Laurent",
+          "club": "1383100 - PUGET SUR ARGENS",
+          "category": "1383100 - PUGET SUR ARGENS",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "2C"
+        },
+        {
           "name": "BUSSOLON Adrien",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
@@ -1901,6 +1908,13 @@
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
           "target": "9B"
+        },
+        {
+          "name": "CHARRIER Ludovic",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "2B"
         },
         {
           "name": "CHEMIN Theo",
@@ -2013,6 +2027,13 @@
           "category": "1383106 - SANARY",
           "session": "Arc à Poulies Senior 2 Homme",
           "target": "1A"
+        },
+        {
+          "name": "GALEAZZI Jean-Charles",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S2 Homme Arc Classique",
+          "target": "11B"
         },
         {
           "name": "GAUTHIER Chantal",
