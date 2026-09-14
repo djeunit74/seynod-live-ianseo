@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14T13:41:16.453789+00:00",
+  "generated_at_utc": "2026-09-14T19:03:31.857373+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -610,7 +610,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 59,
+      "entries_count": 64,
       "entries": [
         {
           "name": "BABOU Eric",
@@ -646,6 +646,20 @@
           "category": "1383100 - PUGET SUR ARGENS",
           "session": "S2 Homme Arc à Poulies",
           "target": "5C"
+        },
+        {
+          "name": "BUREL Guillaume",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
+          "name": "BUREL-BOSCHER Eileen",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "U15 Femme Arc Classique",
+          "target": "3A"
         },
         {
           "name": "CARCENAC-ROGER Catherine",
@@ -704,6 +718,20 @@
           "target": "9A"
         },
         {
+          "name": "DAHMAN Nordine",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "3B"
+        },
+        {
+          "name": "DAHMAN Nordine",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S3 Homme Arc Classique",
+          "target": "9A"
+        },
+        {
           "name": "DE VULPIAN Maguelone",
           "club": "1383111 - TOULON",
           "category": "1383111 - TOULON",
@@ -744,6 +772,13 @@
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U21 Homme Arc Classique",
           "target": "4A"
+        },
+        {
+          "name": "DOSDA Alexandra",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "6A"
         },
         {
           "name": "DOSDA Damien",
@@ -981,7 +1016,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U18 Femme Arc Classique",
-          "target": "3A"
+          "target": "4C"
         },
         {
           "name": "THOMAS Julie",
