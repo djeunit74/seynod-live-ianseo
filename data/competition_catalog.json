@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14T19:03:31.857373+00:00",
+  "generated_at_utc": "2026-09-14T22:39:02.769113+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,8 +30,15 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 79,
+      "entries_count": 82,
       "entries": [
+        {
+          "name": "ANDRIASOLOMAHEFA Paul",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
         {
           "name": "ANGEBAUD Damien",
           "club": "1383124 - LA GARDE",
@@ -97,8 +104,8 @@
         },
         {
           "name": "BOUSCHBACHER Laurent",
-          "club": "1384139 - L'ISLE SUR LA SORGUE",
-          "category": "1384139 - L'ISLE SUR LA SORGUE",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
           "session": "S2 Homme Arc Classique National",
           "target": ""
         },
@@ -135,6 +142,13 @@
           "club": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "category": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "session": "Arc Classique Senior 2 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "CHENAVAS Francoise",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S2 Femme Arc Classique National",
           "target": ""
         },
         {
@@ -544,9 +558,16 @@
           "target": ""
         },
         {
+          "name": "SANAUR Sebastien",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "SERTA Sandrine",
-          "club": "1384139 - L'ISLE SUR LA SORGUE",
-          "category": "1384139 - L'ISLE SUR LA SORGUE",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
           "session": "S2 Femme Arc Classique National",
           "target": ""
         },
@@ -610,7 +631,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 64,
+      "entries_count": 68,
       "entries": [
         {
           "name": "BABOU Eric",
@@ -652,7 +673,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Homme Arc Classique",
-          "target": "1A"
+          "target": "11A"
         },
         {
           "name": "BUREL-BOSCHER Eileen",
@@ -688,6 +709,13 @@
           "category": "1383119 - PIERREFEU",
           "session": "S2 Femme Arc à Poulies",
           "target": "5B"
+        },
+        {
+          "name": "CAUWET-COURDOUAN Alyssa",
+          "club": "1383119 - PIERREFEU",
+          "category": "1383119 - PIERREFEU",
+          "session": "U21 Femme Arc à Poulies",
+          "target": "5D"
         },
         {
           "name": "CHAMPTOUSSEL Thomas",
@@ -774,6 +802,13 @@
           "target": "4A"
         },
         {
+          "name": "DJENNETIAN Pascal",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Homme Arc Classique",
+          "target": "10A"
+        },
+        {
           "name": "DOSDA Alexandra",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -858,6 +893,20 @@
           "target": "4A"
         },
         {
+          "name": "GRANDJEAN Luc",
+          "club": "1383100 - PUGET SUR ARGENS",
+          "category": "1383100 - PUGET SUR ARGENS",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "5C"
+        },
+        {
+          "name": "GRANDJEAN Luc",
+          "club": "1383100 - PUGET SUR ARGENS",
+          "category": "1383100 - PUGET SUR ARGENS",
+          "session": "Arc à Poulies Senior 3 Homme",
+          "target": "5D"
+        },
+        {
           "name": "GUENEAU Patrick",
           "club": "1383109 - LORGUES",
           "category": "1383109 - LORGUES",
@@ -918,7 +967,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Femme Arc Classique",
-          "target": "1C"
+          "target": "11C"
         },
         {
           "name": "LORENTZ Valerie",
