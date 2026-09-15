@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-15T06:28:25.877386+00:00",
+  "generated_at_utc": "2026-09-15T12:01:20.519217+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -631,7 +631,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 68,
+      "entries_count": 69,
       "entries": [
         {
           "name": "BABOU Eric",
@@ -667,6 +667,13 @@
           "category": "1383100 - PUGET SUR ARGENS",
           "session": "S2 Homme Arc à Poulies",
           "target": "5C"
+        },
+        {
+          "name": "BUEST Olivier",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Homme Arc Classique",
+          "target": "12A"
         },
         {
           "name": "BUREL Guillaume",
@@ -1160,8 +1167,50 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30113",
       "ena_url": "https://www.ianseo.net/TourData/2026/30113/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30113/IC.php",
-      "entries_count": 202,
+      "entries_count": 231,
       "entries": [
+        {
+          "name": "ALLEGRE Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Scratch Homme Arc à Poulies Nu",
+          "target": ""
+        },
+        {
+          "name": "ALLEGRE Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "ALLEGRE Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "ALLEGRE Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "BEDIN Fabrice",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "Senior 3 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "BEDIN Fabrice",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": ""
+        },
         {
           "name": "BERTHIER Jean-Philippe",
           "club": "1384129 - ROBION",
@@ -1216,6 +1265,20 @@
           "club": "0126077 - PIERRELATTE",
           "category": "0126077 - PIERRELATTE",
           "session": "Arc Libre Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "BRUNEAU Muriel",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Senior 2 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "BRUNEAU Muriel",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Nu Senior 2 Femme",
           "target": ""
         },
         {
@@ -1310,6 +1373,34 @@
           "target": ""
         },
         {
+          "name": "CARON Christelle",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Scratch Femme Arc à Poulies Nu",
+          "target": ""
+        },
+        {
+          "name": "CARON Christelle",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc à Poulies Nu Senior 2 Femme",
+          "target": ""
+        },
+        {
+          "name": "CARON David",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Senior 2 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "CARON David",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
           "name": "CARRETTA Lionel",
           "club": "1313098 - MARSEILLE TROIS LUCS",
           "category": "1313098 - MARSEILLE TROIS LUCS",
@@ -1338,6 +1429,20 @@
           "target": ""
         },
         {
+          "name": "CHALANDE Xavier",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Senior 2 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "CHALANDE Xavier",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
           "name": "CHATELARD Thomas",
           "club": "0142282 - LES ARCHERS DU DAHU",
           "category": "0142282 - LES ARCHERS DU DAHU",
@@ -1363,6 +1468,20 @@
           "club": "0142282 - LES ARCHERS DU DAHU",
           "category": "0142282 - LES ARCHERS DU DAHU",
           "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "CHAUVIN Bernard",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Senior 2 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "CHAUVIN Bernard",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Arc Nu Senior 2 Homme",
           "target": ""
         },
         {
@@ -1632,6 +1751,20 @@
           "target": ""
         },
         {
+          "name": "GARREAU-GIGNOUX Nils",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "Senior 1 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "GARREAU-GIGNOUX Nils",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "Arc Droit Senior 1 Homme",
+          "target": ""
+        },
+        {
           "name": "GARREYN Herve",
           "club": "0169187 - ST PRIEST",
           "category": "0169187 - ST PRIEST",
@@ -1818,6 +1951,20 @@
           "club": "0142282 - LES ARCHERS DU DAHU",
           "category": "0142282 - LES ARCHERS DU DAHU",
           "session": "Arc Libre Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "GILHODES Gerard",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Senior 3 Homme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "GILHODES Gerard",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Chasse Senior 3 Homme",
           "target": ""
         },
         {
@@ -2479,6 +2626,20 @@
           "target": ""
         },
         {
+          "name": "RAZ Theodore",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Senior 3 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "RAZ Theodore",
+          "club": "1384137 - BONNIEUX",
+          "category": "1384137 - BONNIEUX",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": ""
+        },
+        {
           "name": "REGGIANI Ines",
           "club": "1384130 - MORIERES LES AVIGNON",
           "category": "1384130 - MORIERES LES AVIGNON",
@@ -2518,6 +2679,20 @@
           "club": "1313098 - MARSEILLE TROIS LUCS",
           "category": "1313098 - MARSEILLE TROIS LUCS",
           "session": "Scratch Homme Arc à Poulies Nu",
+          "target": ""
+        },
+        {
+          "name": "TANGUY Anne",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "Senior 3 Femme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "TANGUY Anne",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "Arc Droit Senior 3 Femme",
           "target": ""
         },
         {
@@ -2574,6 +2749,41 @@
           "club": "1384137 - BONNIEUX",
           "category": "1384137 - BONNIEUX",
           "session": "Arc Nu Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "VAVUOLO BRUNEAU Selena",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "U18-U21 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "VAVUOLO BRUNEAU Selena",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc Nu U18 Femme",
+          "target": ""
+        },
+        {
+          "name": "VAVUOLO Philipe",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Scratch Homme Arc à Poulies Nu",
+          "target": ""
+        },
+        {
+          "name": "VAVUOLO Philipe",
+          "club": "1313098 - MARSEILLE TROIS LUCS",
+          "category": "1313098 - MARSEILLE TROIS LUCS",
+          "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "VILLEDIEU Pierre",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Senior 3 Homme Arc Nu",
           "target": ""
         }
       ]
