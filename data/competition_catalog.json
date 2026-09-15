@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-15T12:01:20.519217+00:00",
+  "generated_at_utc": "2026-09-15T17:12:05.172189+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -631,7 +631,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 69,
+      "entries_count": 72,
       "entries": [
         {
           "name": "BABOU Eric",
@@ -723,6 +723,13 @@
           "category": "1383119 - PIERREFEU",
           "session": "U21 Femme Arc à Poulies",
           "target": "5D"
+        },
+        {
+          "name": "CAUX Jean-Michel",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "Scratch Homme Arc Nu",
+          "target": "10B"
         },
         {
           "name": "CHAMPTOUSSEL Thomas",
@@ -963,6 +970,13 @@
           "target": "9B"
         },
         {
+          "name": "LESTIENNE Thibaut",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Scratch Homme Arc Nu",
+          "target": "10A"
+        },
+        {
           "name": "LOPEZ Damien",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -982,6 +996,13 @@
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "Arc Classique Senior 2 Femme",
           "target": "1D"
+        },
+        {
+          "name": "LUCE LAURANS Leo",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "U18 Homme Arc Classique",
+          "target": "11A"
         },
         {
           "name": "MARLOT Kevin",
