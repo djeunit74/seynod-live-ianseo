@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-15T17:12:05.172189+00:00",
+  "generated_at_utc": "2026-09-15T20:22:42.371800+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -631,7 +631,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 72,
+      "entries_count": 76,
       "entries": [
         {
           "name": "BABOU Eric",
@@ -743,7 +743,7 @@
           "club": "1383120 - ROQUEBRUNE S/ARGENS CIE",
           "category": "1383120 - ROQUEBRUNE S/ARGENS CIE",
           "session": "U15 Homme Arc Classique",
-          "target": "1D"
+          "target": "12A"
         },
         {
           "name": "COURDOUAN Olivia",
@@ -998,11 +998,25 @@
           "target": "1D"
         },
         {
+          "name": "LUCE Damien",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S2 Homme Arc Classique",
+          "target": "1D"
+        },
+        {
           "name": "LUCE LAURANS Leo",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "U18 Homme Arc Classique",
           "target": "11A"
+        },
+        {
+          "name": "LUCE LAURANS Thelio",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "U15 Homme Arc Classique",
+          "target": "12B"
         },
         {
           "name": "MARLOT Kevin",
@@ -1087,6 +1101,20 @@
           "category": "1383120 - ROQUEBRUNE S/ARGENS CIE",
           "session": "S3 Femme Arc Classique",
           "target": "4B"
+        },
+        {
+          "name": "SADEK Florent",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "Fédéral Homme Arc à Poulies",
+          "target": "5B"
+        },
+        {
+          "name": "SADEK Florent",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "Fédéral Arc à Poulies Senior 1 Homme",
+          "target": "5B"
         },
         {
           "name": "SENECHAL POILLOT Milia",
@@ -1188,7 +1216,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30113",
       "ena_url": "https://www.ianseo.net/TourData/2026/30113/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30113/IC.php",
-      "entries_count": 231,
+      "entries_count": 236,
       "entries": [
         {
           "name": "ALLEGRE Michel",
@@ -1975,6 +2003,13 @@
           "target": ""
         },
         {
+          "name": "GILBERT Jean",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Senior 3 Homme Arc Droit",
+          "target": ""
+        },
+        {
           "name": "GILHODES Gerard",
           "club": "1384137 - BONNIEUX",
           "category": "1384137 - BONNIEUX",
@@ -2318,6 +2353,13 @@
           "target": ""
         },
         {
+          "name": "LUKSENBERG Nelly",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Senior 3 Femme Arc Droit",
+          "target": ""
+        },
+        {
           "name": "MAUBON Eric",
           "club": "1384161 - LES ARCHERS DES BALAIS",
           "category": "1384161 - LES ARCHERS DES BALAIS",
@@ -2497,6 +2539,20 @@
           "club": "1383123 - LE MUY",
           "category": "1383123 - LE MUY",
           "session": "Arc Libre Senior 3 Femme",
+          "target": ""
+        },
+        {
+          "name": "OCHIN Claude",
+          "club": "0126066 - PORTES LES VALENCE",
+          "category": "0126066 - PORTES LES VALENCE",
+          "session": "Senior 3 Homme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "OCHIN Claude",
+          "club": "0126066 - PORTES LES VALENCE",
+          "category": "0126066 - PORTES LES VALENCE",
+          "session": "Arc Chasse Senior 3 Homme",
           "target": ""
         },
         {
@@ -2693,6 +2749,13 @@
           "club": "0101018 - BELLEGARDE SUR VALSERINE",
           "category": "0101018 - BELLEGARDE SUR VALSERINE",
           "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "SEGUIN Nathalie",
+          "club": "1313071 - PEYNIER",
+          "category": "1313071 - PEYNIER",
+          "session": "Senior 2 Femme Arc Nu",
           "target": ""
         },
         {
