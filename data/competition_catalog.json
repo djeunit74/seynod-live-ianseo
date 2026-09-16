@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-16T07:18:35.068745+00:00",
+  "generated_at_utc": "2026-09-16T12:43:56.577058+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 82,
+      "entries_count": 86,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
@@ -131,6 +131,13 @@
           "target": ""
         },
         {
+          "name": "CASTELLAN Jean-Daniel",
+          "club": "1313074 - MARIGNANE",
+          "category": "1313074 - MARIGNANE",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": ""
+        },
+        {
           "name": "CHAUDRON Karine",
           "club": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "category": "1304014 - CHATEAU ARNOUX ST AUBAN",
@@ -187,6 +194,13 @@
           "target": ""
         },
         {
+          "name": "DROUAN Doris",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "FLOQUET Jean-Louis",
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
@@ -240,6 +254,20 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "GOWARD Thomas",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": ""
+        },
+        {
+          "name": "GOWARD Thomas",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S1 Homme Arc à Poulies National",
           "target": ""
         },
         {
