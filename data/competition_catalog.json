@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-16T17:29:47.543517+00:00",
+  "generated_at_utc": "2026-09-16T20:23:22.369107+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -659,8 +659,15 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 80,
+      "entries_count": 90,
       "entries": [
+        {
+          "name": "AMBROSINO Loane",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S1 Femme Arc Classique",
+          "target": "6C"
+        },
         {
           "name": "BABOU Eric",
           "club": "1383106 - SANARY",
@@ -715,7 +722,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U15 Femme Arc Classique",
-          "target": "3A"
+          "target": "3C"
         },
         {
           "name": "CARCENAC-ROGER Catherine",
@@ -851,6 +858,13 @@
           "target": "10A"
         },
         {
+          "name": "DORANGE Corinne",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Femme Arc Classique",
+          "target": "12A"
+        },
+        {
           "name": "DOSDA Alexandra",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -863,6 +877,13 @@
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Homme Arc Classique",
           "target": "2A"
+        },
+        {
+          "name": "DUPUY Martine",
+          "club": "1383101 - GONFARON",
+          "category": "1383101 - GONFARON",
+          "session": "S3 Femme Arc Classique",
+          "target": "11D"
         },
         {
           "name": "DURAND Gilbert",
@@ -970,6 +991,20 @@
           "target": "2B"
         },
         {
+          "name": "HALET Elric",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "12B"
+        },
+        {
+          "name": "HALET Elric",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S1 Homme Arc Classique",
+          "target": "1A"
+        },
+        {
           "name": "HALET Patrick",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -988,7 +1023,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U15 Femme Arc Classique",
-          "target": "3C"
+          "target": "3A"
         },
         {
           "name": "KOCHERT Sebastien",
@@ -1010,6 +1045,27 @@
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
           "target": "9B"
+        },
+        {
+          "name": "LECLERC Philippe",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "6B"
+        },
+        {
+          "name": "LECLERC Sebastien",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": "6D"
+        },
+        {
+          "name": "LESAFFRE Thierry",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "6B"
         },
         {
           "name": "LESTIENNE Thibaut",
@@ -1082,6 +1138,13 @@
           "target": "4A"
         },
         {
+          "name": "MARQUEZ Marie-Josee",
+          "club": "1383127 - FREJUS",
+          "category": "1383127 - FREJUS",
+          "session": "S3 Femme Arc Classique",
+          "target": "13A"
+        },
+        {
           "name": "MARTY Henri",
           "club": "1383101 - GONFARON",
           "category": "1383101 - GONFARON",
@@ -1143,6 +1206,13 @@
           "category": "1383115 - BRIGNOLES",
           "session": "S2 Homme Arc Classique",
           "target": "1A"
+        },
+        {
+          "name": "RISSO Patrick",
+          "club": "1383127 - FREJUS",
+          "category": "1383127 - FREJUS",
+          "session": "S2 Homme Arc Classique",
+          "target": "12C"
         },
         {
           "name": "ROUSSEAU DUMARCET Remi",
