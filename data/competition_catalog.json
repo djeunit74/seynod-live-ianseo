@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-16T12:43:56.577058+00:00",
+  "generated_at_utc": "2026-09-16T17:29:47.543517+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 16,
+  "count": 17,
   "tournaments": [
     {
       "to_id": "29640",
@@ -1233,6 +1233,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30101",
       "ena_url": "https://www.ianseo.net/TourData/2026/30101/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30101/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "30166",
+      "year": "2026",
+      "name": "1er Concours salle 10/2026 Valide + PARA",
+      "organizer": "Compagnie d'arc de Fontainebleau-Avon",
+      "date_text": "17-18 Oct",
+      "end_date": "2026-10-18",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30166",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30166/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30166/IC.php",
       "entries_count": 0,
       "entries": []
     },
