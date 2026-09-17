@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-17T17:30:12.360957+00:00",
+  "generated_at_utc": "2026-09-17T20:31:28.264208+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3250,7 +3250,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 73,
+      "entries_count": 79,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -3298,7 +3298,7 @@
           "name": "BIDEGAINBERRY Vincent",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
-          "session": "S2 Homme Arc Classique",
+          "session": "Arc Classique Senior 2 Homme",
           "target": "8D"
         },
         {
@@ -3356,6 +3356,20 @@
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
           "target": "9B"
+        },
+        {
+          "name": "CAUX Jean-Michel",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "Scratch Homme Arc Nu",
+          "target": "9D"
+        },
+        {
+          "name": "CHAMPALOUX Nathalie",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S2 Femme Arc Classique",
+          "target": "10A"
         },
         {
           "name": "CHARRIER Ludovic",
@@ -3435,6 +3449,20 @@
           "target": "6A"
         },
         {
+          "name": "DOSDA Alexandra",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "1D"
+        },
+        {
+          "name": "DOSDA Damien",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Homme Arc Classique",
+          "target": "11C"
+        },
+        {
           "name": "DUBOURG Philippe",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -3447,6 +3475,13 @@
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
           "target": "8D"
+        },
+        {
+          "name": "DUVAL Thierry",
+          "club": "1383100 - PUGET SUR ARGENS",
+          "category": "1383100 - PUGET SUR ARGENS",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "3B"
         },
         {
           "name": "ESCHBACH Vincent",
@@ -3568,6 +3603,13 @@
           "target": "5A"
         },
         {
+          "name": "KAZAZIAN Jean Jacques",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "11D"
+        },
+        {
           "name": "LACOUR Barbara",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
@@ -3628,7 +3670,7 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "Scratch Homme Arc Nu",
-          "target": "9D"
+          "target": "10D"
         },
         {
           "name": "LUCE Damien",
