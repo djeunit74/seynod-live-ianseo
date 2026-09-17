@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-17T20:31:28.264208+00:00",
+  "generated_at_utc": "2026-09-17T23:24:14.774130+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -659,7 +659,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 105,
+      "entries_count": 106,
       "entries": [
         {
           "name": "AMBROSINO Loane",
@@ -687,7 +687,7 @@
           "club": "1383111 - TOULON",
           "category": "1383111 - TOULON",
           "session": "U18 Homme Arc Classique",
-          "target": "12D"
+          "target": "12B"
         },
         {
           "name": "BIANCO Magali",
@@ -771,7 +771,7 @@
           "club": "1383119 - PIERREFEU",
           "category": "1383119 - PIERREFEU",
           "session": "U21 Femme Arc à Poulies",
-          "target": "5D"
+          "target": "6A"
         },
         {
           "name": "CAUX Jean-Michel",
@@ -798,22 +798,22 @@
           "name": "CHEMIN Theo",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
-          "session": "Arc Classique Senior 1 Homme",
-          "target": "6D"
+          "session": "S1 Homme Arc Classique",
+          "target": "5D"
         },
         {
           "name": "CHEMIN Theo",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
-          "session": "S1 Homme Arc Classique",
-          "target": "9A"
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "6D"
         },
         {
           "name": "COSTE Hugo",
           "club": "1383120 - ROQUEBRUNE S/ARGENS CIE",
           "category": "1383120 - ROQUEBRUNE S/ARGENS CIE",
           "session": "U15 Homme Arc Classique",
-          "target": "12A"
+          "target": "14A"
         },
         {
           "name": "COURDOUAN Olivia",
@@ -974,7 +974,7 @@
           "club": "1383106 - SANARY",
           "category": "1383106 - SANARY",
           "session": "Open Homme Arc à Poulies",
-          "target": "9B"
+          "target": "6B"
         },
         {
           "name": "FLORINEDA Pascal",
@@ -1198,7 +1198,7 @@
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "U15 Homme Arc Classique",
-          "target": "12B"
+          "target": "14C"
         },
         {
           "name": "MARLOT Kevin",
@@ -1317,6 +1317,13 @@
           "club": "1383127 - FREJUS",
           "category": "1383127 - FREJUS",
           "session": "S2 Homme Arc Classique",
+          "target": "12A"
+        },
+        {
+          "name": "ROBLES Jose",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S3 Homme Arc Classique",
           "target": "12C"
         },
         {
