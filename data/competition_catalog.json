@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-17T07:14:07.463134+00:00",
+  "generated_at_utc": "2026-09-17T12:43:01.317079+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3047,7 +3047,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 71,
+      "entries_count": 73,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -3055,6 +3055,13 @@
           "category": "1383109 - LORGUES",
           "session": "S2 Femme Arc Classique",
           "target": "7D"
+        },
+        {
+          "name": "AMBROSINO Loane",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S1 Femme Arc Classique",
+          "target": "3C"
         },
         {
           "name": "ANGEBAUD Damien",
@@ -3068,7 +3075,7 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc à Poulies Senior 2 Homme",
-          "target": "2A"
+          "target": "3A"
         },
         {
           "name": "BERTHOUD Murielle",
@@ -3195,6 +3202,13 @@
           "category": "1383124 - LA GARDE",
           "session": "S2 Femme Arc Classique",
           "target": "7B"
+        },
+        {
+          "name": "COURDOUAN Olivia",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "U18 Femme Arc Classique",
+          "target": "2A"
         },
         {
           "name": "DECKER GARCIA Lea",
