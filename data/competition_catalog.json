@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-18T06:21:35.538332+00:00",
+  "generated_at_utc": "2026-09-18T11:38:30.158906+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 86,
+      "entries_count": 90,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
@@ -128,6 +128,20 @@
           "club": "1313081 - PELISSANNE",
           "category": "1313081 - PELISSANNE",
           "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "CARRERE Christophe",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "Découverte",
+          "target": ""
+        },
+        {
+          "name": "CARRERE Christophe",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "Arc Classique Découverte",
           "target": ""
         },
         {
@@ -285,6 +299,13 @@
           "target": ""
         },
         {
+          "name": "IMBERT Olivier",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "S1 Homme Arc à Poulies",
+          "target": ""
+        },
+        {
           "name": "JACQUES Aurelien",
           "club": "1313066 - GEMENOS",
           "category": "1313066 - GEMENOS",
@@ -324,6 +345,13 @@
           "club": "1304008 - BARCELONNETTE",
           "category": "1304008 - BARCELONNETTE",
           "session": "Arc Classique Senior 3 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "JOBELIN Matthieu",
+          "club": "1304010 - MANOSQUE",
+          "category": "1304010 - MANOSQUE",
+          "session": "S2 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -1467,7 +1495,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30113",
       "ena_url": "https://www.ianseo.net/TourData/2026/30113/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30113/IC.php",
-      "entries_count": 250,
+      "entries_count": 258,
       "entries": [
         {
           "name": "ALLEGRE Michel",
@@ -3031,6 +3059,34 @@
           "target": ""
         },
         {
+          "name": "RATTO Richard",
+          "club": "1313096 - PUY SAINTE REPARADE ARR",
+          "category": "1313096 - PUY SAINTE REPARADE ARR",
+          "session": "Senior 3 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "RATTO Richard",
+          "club": "1313096 - PUY SAINTE REPARADE ARR",
+          "category": "1313096 - PUY SAINTE REPARADE ARR",
+          "session": "Arc Libre Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "RATTO Richard",
+          "club": "1313096 - PUY SAINTE REPARADE ARR",
+          "category": "1313096 - PUY SAINTE REPARADE ARR",
+          "session": "Arc Libre Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "RATTO Richard",
+          "club": "1313096 - PUY SAINTE REPARADE ARR",
+          "category": "1313096 - PUY SAINTE REPARADE ARR",
+          "session": "Arc Libre Senior 3 Homme",
+          "target": ""
+        },
+        {
           "name": "RAZ Theodore",
           "club": "1384137 - BONNIEUX",
           "category": "1384137 - BONNIEUX",
@@ -3077,6 +3133,34 @@
           "club": "0101018 - BELLEGARDE SUR VALSERINE",
           "category": "0101018 - BELLEGARDE SUR VALSERINE",
           "session": "Arc à Poulies Nu Senior 2 Homme",
+          "target": ""
+        },
+        {
+          "name": "RUIZ Alain",
+          "club": "1383103 - COGOLIN",
+          "category": "1383103 - COGOLIN",
+          "session": "Senior 3 Homme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "RUIZ Alain",
+          "club": "1383103 - COGOLIN",
+          "category": "1383103 - COGOLIN",
+          "session": "Arc Libre Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "RUIZ Carol",
+          "club": "1383103 - COGOLIN",
+          "category": "1383103 - COGOLIN",
+          "session": "Senior 3 Femme Arc Libre",
+          "target": ""
+        },
+        {
+          "name": "RUIZ Carol",
+          "club": "1383103 - COGOLIN",
+          "category": "1383103 - COGOLIN",
+          "session": "Arc Libre Senior 3 Femme",
           "target": ""
         },
         {
