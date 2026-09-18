@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-18T15:56:19.533132+00:00",
+  "generated_at_utc": "2026-09-18T18:55:29.824980+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -687,7 +687,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 106,
+      "entries_count": 109,
       "entries": [
         {
           "name": "AMBROSINO Loane",
@@ -695,6 +695,13 @@
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S1 Femme Arc Classique",
           "target": "6C"
+        },
+        {
+          "name": "AUDOIN Tanguy",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "S1 Homme Arc Classique",
+          "target": "12D"
         },
         {
           "name": "BABOU Eric",
@@ -1101,6 +1108,20 @@
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Homme Arc à Poulies",
           "target": "5A"
+        },
+        {
+          "name": "HILLIER Patrice",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
+          "session": "S3 Homme Arc Classique",
+          "target": "8C"
+        },
+        {
+          "name": "HUY Carole",
+          "club": "1306041 - FA NICE",
+          "category": "1306041 - FA NICE",
+          "session": "S2 Femme Arc Classique",
+          "target": "8A"
         },
         {
           "name": "JULLIEN Denis",
