@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-19T15:28:18.304082+00:00",
+  "generated_at_utc": "2026-09-19T18:11:12.955190+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 90,
+      "entries_count": 96,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
@@ -152,6 +152,13 @@
           "target": ""
         },
         {
+          "name": "CEYLAN Eda",
+          "club": "1313074 - MARIGNANE",
+          "category": "1313074 - MARIGNANE",
+          "session": "U13 Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "CHAUDRON Karine",
           "club": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "category": "1304014 - CHATEAU ARNOUX ST AUBAN",
@@ -215,6 +222,20 @@
           "target": ""
         },
         {
+          "name": "DUSSAUD Jerome",
+          "club": "1384139 - L'ISLE SUR LA SORGUE",
+          "category": "1384139 - L'ISLE SUR LA SORGUE",
+          "session": "S3 Homme Arc à Poulies National",
+          "target": ""
+        },
+        {
+          "name": "FINDIK Sinem",
+          "club": "1313074 - MARIGNANE",
+          "category": "1313074 - MARIGNANE",
+          "session": "U13 Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "FLOQUET Jean-Louis",
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
@@ -226,6 +247,13 @@
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
           "session": "Arc Classique Senior 3 Hommes",
+          "target": ""
+        },
+        {
+          "name": "GARCIA Guy",
+          "club": "1384139 - L'ISLE SUR LA SORGUE",
+          "category": "1384139 - L'ISLE SUR LA SORGUE",
+          "session": "S3 Homme Arc à Poulies National",
           "target": ""
         },
         {
@@ -296,6 +324,13 @@
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "HERRMANN Lilou",
+          "club": "1313074 - MARIGNANE",
+          "category": "1313074 - MARIGNANE",
+          "session": "U18 Femme Arc Classique National",
           "target": ""
         },
         {
@@ -478,6 +513,13 @@
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "LOISY CADALEN Leona",
+          "club": "1313074 - MARIGNANE",
+          "category": "1313074 - MARIGNANE",
+          "session": "U15 Femme Arc Classique",
           "target": ""
         },
         {
