@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-20T18:00:52.202317+00:00",
+  "generated_at_utc": "2026-09-20T20:43:46.052489+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 96,
+      "entries_count": 98,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
@@ -211,6 +211,13 @@
           "name": "DAHMAN Nordine",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "DEULOFEU Francois Xavier",
+          "club": "1384147 - CARPENTRAS",
+          "category": "1384147 - CARPENTRAS",
           "session": "S3 Homme Arc Classique National",
           "target": ""
         },
@@ -646,6 +653,13 @@
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "Arc Classique Senior 1 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "REBOUL Angelique",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "S2 Femme Arc Classique National",
           "target": ""
         },
         {
@@ -4258,8 +4272,22 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 81,
+      "entries_count": 86,
       "entries": [
+        {
+          "name": "AIRAULT Julien",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "3D"
+        },
+        {
+          "name": "AIRAULT Julien",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S2 Homme Arc Classique",
+          "target": "9D"
+        },
         {
           "name": "ALEXANDER Claire-Helene",
           "club": "1383109 - LORGUES",
@@ -4315,6 +4343,13 @@
           "category": "1383114 - OLLIOULES",
           "session": "S2 Homme Arc Classique",
           "target": "6B"
+        },
+        {
+          "name": "BOGNAUD Marc",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc Classique",
+          "target": "8B"
         },
         {
           "name": "BOMMART Sylvain",
@@ -4489,7 +4524,7 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
-          "target": "8B"
+          "target": "12C"
         },
         {
           "name": "DURAND Gilbert",
@@ -4545,7 +4580,7 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S2 Homme Arc Classique",
-          "target": "11B"
+          "target": "12B"
         },
         {
           "name": "GAUTHIER Chantal",
@@ -4819,6 +4854,20 @@
           "category": "1383124 - LA GARDE",
           "session": "Arc Classique Senior 3 Femme",
           "target": "8B"
+        },
+        {
+          "name": "VACCARO Laurent",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
+          "name": "VACCARO Sandrine",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "Scratch Femme Arc Nu",
+          "target": "12A"
         },
         {
           "name": "VERVOITTE Chantal",
