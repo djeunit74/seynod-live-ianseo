@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-20T00:43:01.520763+00:00",
+  "generated_at_utc": "2026-09-20T05:46:40.305616+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -3404,7 +3404,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 79,
+      "entries_count": 81,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -3510,6 +3510,20 @@
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
           "target": "9B"
+        },
+        {
+          "name": "CANTOURNET Melyne",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "U15 Femme Arc Classique",
+          "target": "5B"
+        },
+        {
+          "name": "CANTOURNET Melyne",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Arc Classique U15 Femme",
+          "target": "5B"
         },
         {
           "name": "CAUX Jean-Michel",
