@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-21T01:23:11.736780+00:00",
+  "generated_at_utc": "2026-09-21T06:48:50.013530+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 98,
+      "entries_count": 100,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
@@ -107,6 +107,13 @@
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "BURY Yannig",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S1 Homme Arc Classique National",
           "target": ""
         },
         {
@@ -695,6 +702,13 @@
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "Arc Classique Senior 2 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "SUBLIME Erika",
+          "club": "1384151 - BOLLENE",
+          "category": "1384151 - BOLLENE",
+          "session": "S2 Femme Arc Classique",
           "target": ""
         },
         {
