@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-21T13:40:37.015874+00:00",
+  "generated_at_utc": "2026-09-21T19:05:53.985833+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 19,
+  "count": 20,
   "tournaments": [
     {
       "to_id": "29640",
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 100,
+      "entries_count": 109,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
@@ -334,6 +334,13 @@
           "target": ""
         },
         {
+          "name": "HAMACHER Olivier",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "HARRAND Florine",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
@@ -344,6 +351,13 @@
           "name": "HERRMANN Lilou",
           "club": "1313074 - MARIGNANE",
           "category": "1313074 - MARIGNANE",
+          "session": "U18 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "HONNORE Marion",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
           "session": "U18 Femme Arc Classique National",
           "target": ""
         },
@@ -589,6 +603,13 @@
           "name": "MENU Francois",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
+          "session": "S2 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "MENU Francois",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Homme Arc Classique National",
           "target": ""
         },
@@ -607,6 +628,13 @@
           "target": ""
         },
         {
+          "name": "MISENE Lilian",
+          "club": "1313077 - MIRAMAS CRAU",
+          "category": "1313077 - MIRAMAS CRAU",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "MORISCOT Aurore",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
@@ -618,6 +646,34 @@
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "Arc Classique Senior 1 Femmes National",
+          "target": ""
+        },
+        {
+          "name": "MOULIN Louis",
+          "club": "1313077 - MIRAMAS CRAU",
+          "category": "1313077 - MIRAMAS CRAU",
+          "session": "S1 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MOULIN Louis",
+          "club": "1313077 - MIRAMAS CRAU",
+          "category": "1313077 - MIRAMAS CRAU",
+          "session": "Arc Classique Senior 1 Hommes National",
+          "target": ""
+        },
+        {
+          "name": "MOULIN Raymond",
+          "club": "1313077 - MIRAMAS CRAU",
+          "category": "1313077 - MIRAMAS CRAU",
+          "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "MOULIN Raymond",
+          "club": "1313077 - MIRAMAS CRAU",
+          "category": "1313077 - MIRAMAS CRAU",
+          "session": "Arc Classique Senior 3 Hommes National",
           "target": ""
         },
         {
@@ -667,6 +723,13 @@
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "S2 Femme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "ROUX Adrien",
+          "club": "1134139 - MONTPELLIER",
+          "category": "1134139 - MONTPELLIER",
+          "session": "S1 Homme Arc Classique",
           "target": ""
         },
         {
@@ -746,6 +809,468 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/29643/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "30172",
+      "year": "2026",
+      "name": "Finale Run Archery Tour - Montigny Les Cormeilles",
+      "organizer": "Montigny Les Cormeilles",
+      "date_text": "26-27 Sep",
+      "end_date": "2026-09-27",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30172",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30172/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30172/IC.php",
+      "entries_count": 64,
+      "entries": [
+        {
+          "name": "ATP_Ait Haddou_Samir",
+          "club": "AIT HADDOU Samir",
+          "category": "AIT HADDOU Samir",
+          "session": "Promotion Adulte Homme",
+          "target": "62"
+        },
+        {
+          "name": "ATP_Wafaa_Amal",
+          "club": "AMAL Wafaa",
+          "category": "AMAL Wafaa",
+          "session": "Senior 2 Femme",
+          "target": "51"
+        },
+        {
+          "name": "0771886G",
+          "club": "ANTIGNY Stephane",
+          "category": "ANTIGNY Stephane",
+          "session": "Senior 2 Homme",
+          "target": "45"
+        },
+        {
+          "name": "ATP_Ardjoune_Marine",
+          "club": "ARDJOUNE Marine",
+          "category": "ARDJOUNE Marine",
+          "session": "Promotion Adulte Femme",
+          "target": "64"
+        },
+        {
+          "name": "0778553D",
+          "club": "BEAUMIER Erika",
+          "category": "BEAUMIER Erika",
+          "session": "Senior 2 Femme",
+          "target": "48"
+        },
+        {
+          "name": "1018619J",
+          "club": "BECUWE Arthur",
+          "category": "BECUWE Arthur",
+          "session": "Jeune Homme",
+          "target": "38"
+        },
+        {
+          "name": "0041756M",
+          "club": "BERGALA Raphael",
+          "category": "BERGALA Raphael",
+          "session": "Promotion Jeune Homme",
+          "target": "58"
+        },
+        {
+          "name": "0022772C",
+          "club": "BLANCHARD Johanne",
+          "category": "BLANCHARD Johanne",
+          "session": "Jeune Femme",
+          "target": "47"
+        },
+        {
+          "name": "1039531R",
+          "club": "BOUGEARD Damien",
+          "category": "BOUGEARD Damien",
+          "session": "Senior 1 Homme",
+          "target": "11"
+        },
+        {
+          "name": "1012771L",
+          "club": "BOURGES Thomas",
+          "category": "BOURGES Thomas",
+          "session": "Senior 2 Homme",
+          "target": "27"
+        },
+        {
+          "name": "0367365K",
+          "club": "CANNESON Damien",
+          "category": "CANNESON Damien",
+          "session": "Senior 2 Homme",
+          "target": "41"
+        },
+        {
+          "name": "0963523H",
+          "club": "CAQUERET Florian",
+          "category": "CAQUERET Florian",
+          "session": "Senior 1 Homme",
+          "target": "1"
+        },
+        {
+          "name": "0986865E",
+          "club": "CAQUERET Quentin",
+          "category": "CAQUERET Quentin",
+          "session": "Jeune Homme",
+          "target": "23"
+        },
+        {
+          "name": "0773833Y",
+          "club": "CELERAULT Ash",
+          "category": "CELERAULT Ash",
+          "session": "Senior 1 Femme",
+          "target": "17"
+        },
+        {
+          "name": "0971566A",
+          "club": "CHAMPENOIS Xavier",
+          "category": "CHAMPENOIS Xavier",
+          "session": "Senior 2 Homme",
+          "target": "55"
+        },
+        {
+          "name": "0030294D",
+          "club": "CHARLEMAGNE Julie",
+          "category": "CHARLEMAGNE Julie",
+          "session": "Senior 1 Femme",
+          "target": "24"
+        },
+        {
+          "name": "1061260K",
+          "club": "COINDET Justine",
+          "category": "COINDET Justine",
+          "session": "Senior 1 Femme",
+          "target": "49"
+        },
+        {
+          "name": "0963511V",
+          "club": "COURTES Frederic",
+          "category": "COURTES Frederic",
+          "session": "Senior 2 Homme",
+          "target": "37"
+        },
+        {
+          "name": "0860696P",
+          "club": "ESCOTTE Guillaume",
+          "category": "ESCOTTE Guillaume",
+          "session": "Senior 2 Homme",
+          "target": "4"
+        },
+        {
+          "name": "0947650E",
+          "club": "FOURNIER Paul",
+          "category": "FOURNIER Paul",
+          "session": "Senior 2 Homme",
+          "target": "5"
+        },
+        {
+          "name": "0015463H",
+          "club": "FROMENT Mayeul",
+          "category": "FROMENT Mayeul",
+          "session": "Jeune Homme",
+          "target": "54"
+        },
+        {
+          "name": "0002665X",
+          "club": "GIRARD Muriel",
+          "category": "GIRARD Muriel",
+          "session": "Senior 2 Femme",
+          "target": "25"
+        },
+        {
+          "name": "0063492N",
+          "club": "GRAS Isea",
+          "category": "GRAS Isea",
+          "session": "Jeune Femme",
+          "target": "19"
+        },
+        {
+          "name": "0037935J",
+          "club": "GRAS Jean-Philippe",
+          "category": "GRAS Jean-Philippe",
+          "session": "Senior 2 Homme",
+          "target": "30"
+        },
+        {
+          "name": "0965908A",
+          "club": "GUILLAUME Valentin",
+          "category": "GUILLAUME Valentin",
+          "session": "Senior 1 Homme",
+          "target": "44"
+        },
+        {
+          "name": "0047996V",
+          "club": "HAGUET Samuel",
+          "category": "HAGUET Samuel",
+          "session": "Senior 2 Homme",
+          "target": "53"
+        },
+        {
+          "name": "0830218L",
+          "club": "HARDY Zoe",
+          "category": "HARDY Zoe",
+          "session": "Senior 1 Femme",
+          "target": "8"
+        },
+        {
+          "name": "0935741K",
+          "club": "HIL Julien",
+          "category": "HIL Julien",
+          "session": "Senior 1 Homme",
+          "target": "43"
+        },
+        {
+          "name": "1047980Q",
+          "club": "INGE Caroline",
+          "category": "INGE Caroline",
+          "session": "Senior 2 Femme",
+          "target": "50"
+        },
+        {
+          "name": "ATP_Joly_Cyril",
+          "club": "JOLY Cyril",
+          "category": "JOLY Cyril",
+          "session": "Promotion Adulte Homme",
+          "target": "60"
+        },
+        {
+          "name": "1036626Y",
+          "club": "JOLY-VENDROT Leo",
+          "category": "JOLY-VENDROT Leo",
+          "session": "Jeune Homme",
+          "target": "32"
+        },
+        {
+          "name": "0968713z",
+          "club": "JOUBERT Olivier",
+          "category": "JOUBERT Olivier",
+          "session": "Senior 2 Homme",
+          "target": "2"
+        },
+        {
+          "name": "0018369S",
+          "club": "LAGNEAUX Quentin",
+          "category": "LAGNEAUX Quentin",
+          "session": "Senior 1 Homme",
+          "target": "21"
+        },
+        {
+          "name": "1052682M",
+          "club": "LAUMON Fabrice",
+          "category": "LAUMON Fabrice",
+          "session": "Senior 2 Homme",
+          "target": "33"
+        },
+        {
+          "name": "0253108T",
+          "club": "LEBRUNET Remi",
+          "category": "LEBRUNET Remi",
+          "session": "Senior 2 Homme",
+          "target": "14"
+        },
+        {
+          "name": "0437996H",
+          "club": "LEDOUX Laurence",
+          "category": "LEDOUX Laurence",
+          "session": "Senior 3 Femme",
+          "target": "56"
+        },
+        {
+          "name": "ATP_Levavasseur_Laura",
+          "club": "LEVAVASSEUR Laura",
+          "category": "LEVAVASSEUR Laura",
+          "session": "Promotion Adulte Femme",
+          "target": "61"
+        },
+        {
+          "name": "1027616K",
+          "club": "LIM Armand",
+          "category": "LIM Armand",
+          "session": "Senior 1 Homme",
+          "target": "57"
+        },
+        {
+          "name": "0963107F",
+          "club": "MARCAULT Rudy",
+          "category": "MARCAULT Rudy",
+          "session": "Jeune Homme",
+          "target": "52"
+        },
+        {
+          "name": "0860814T",
+          "club": "MATTEI Thomas",
+          "category": "MATTEI Thomas",
+          "session": "Senior 1 Homme",
+          "target": "22"
+        },
+        {
+          "name": "1075898K",
+          "club": "MONTARDIER Anais",
+          "category": "MONTARDIER Anais",
+          "session": "Senior 1 Femme",
+          "target": "26"
+        },
+        {
+          "name": "0011780E",
+          "club": "MOTHE Frederic",
+          "category": "MOTHE Frederic",
+          "session": "Senior 2 Homme",
+          "target": "34"
+        },
+        {
+          "name": "0802017H",
+          "club": "MOTHE Muriel",
+          "category": "MOTHE Muriel",
+          "session": "Senior 2 Femme",
+          "target": "6"
+        },
+        {
+          "name": "0969628U",
+          "club": "MOTHE Romane",
+          "category": "MOTHE Romane",
+          "session": "Senior 1 Femme",
+          "target": "18"
+        },
+        {
+          "name": "ATP_Neste_Aude",
+          "club": "NESTE Aude",
+          "category": "NESTE Aude",
+          "session": "Senior 1 Femme",
+          "target": "10"
+        },
+        {
+          "name": "1052605N",
+          "club": "ORIANO Clement",
+          "category": "ORIANO Clement",
+          "session": "Jeune Homme",
+          "target": "36"
+        },
+        {
+          "name": "1052607P",
+          "club": "ORIANO Julien",
+          "category": "ORIANO Julien",
+          "session": "Senior 2 Homme",
+          "target": "15"
+        },
+        {
+          "name": "0063421L",
+          "club": "OZ Ozgun",
+          "category": "OZ Ozgun",
+          "session": "Senior 1 Homme",
+          "target": "35"
+        },
+        {
+          "name": "0964747N",
+          "club": "PAQUEREAU Raphael",
+          "category": "PAQUEREAU Raphael",
+          "session": "Jeune Homme",
+          "target": "3"
+        },
+        {
+          "name": "1024743X",
+          "club": "PARIS LEBEGUE Julie",
+          "category": "PARIS LEBEGUE Julie",
+          "session": "Senior 2 Femme",
+          "target": "9"
+        },
+        {
+          "name": "1025852O",
+          "club": "PETITPREZ LUZON Raphael",
+          "category": "PETITPREZ LUZON Raphael",
+          "session": "Jeune Homme",
+          "target": "39"
+        },
+        {
+          "name": "0358806G",
+          "club": "PEULVAST Nicolas",
+          "category": "PEULVAST Nicolas",
+          "session": "Senior 2 Homme",
+          "target": "40"
+        },
+        {
+          "name": "ATP_Philippot_Gurvan",
+          "club": "PHILIPPOT Gurvan",
+          "category": "PHILIPPOT Gurvan",
+          "session": "Promotion Adulte Homme",
+          "target": "63"
+        },
+        {
+          "name": "1007528U",
+          "club": "POITEVIN Celine",
+          "category": "POITEVIN Celine",
+          "session": "Senior 1 Femme",
+          "target": "7"
+        },
+        {
+          "name": "1037618C",
+          "club": "RENARD Garance",
+          "category": "RENARD Garance",
+          "session": "Senior 1 Femme",
+          "target": "20"
+        },
+        {
+          "name": "0335837R",
+          "club": "RIFAUT Nicolas",
+          "category": "RIFAUT Nicolas",
+          "session": "Senior 2 Homme",
+          "target": "31"
+        },
+        {
+          "name": "0890185T",
+          "club": "RIGOULAY Maxime",
+          "category": "RIGOULAY Maxime",
+          "session": "Senior 2 Homme",
+          "target": "42"
+        },
+        {
+          "name": "0026944M",
+          "club": "SERNY Bruno",
+          "category": "SERNY Bruno",
+          "session": "Senior 2 Homme",
+          "target": "28"
+        },
+        {
+          "name": "1075899L",
+          "club": "SEVENANTS Camille",
+          "category": "SEVENANTS Camille",
+          "session": "Promotion Jeune Homme",
+          "target": "59"
+        },
+        {
+          "name": "0808645M",
+          "club": "SORIN Benjamin",
+          "category": "SORIN Benjamin",
+          "session": "Senior 1 Homme",
+          "target": "12"
+        },
+        {
+          "name": "0394631X",
+          "club": "SUSKI Daphne",
+          "category": "SUSKI Daphne",
+          "session": "Senior 1 Femme",
+          "target": "16"
+        },
+        {
+          "name": "0978912K",
+          "club": "THEBAUDEAU Jerome",
+          "category": "THEBAUDEAU Jerome",
+          "session": "Senior 2 Homme",
+          "target": "29"
+        },
+        {
+          "name": "0012557Z",
+          "club": "THOREAU Simon",
+          "category": "THOREAU Simon",
+          "session": "Senior 1 Homme",
+          "target": "13"
+        },
+        {
+          "name": "1000184I",
+          "club": "VILCOCQ Marie",
+          "category": "VILCOCQ Marie",
+          "session": "Senior 2 Femme",
+          "target": "46"
+        }
+      ]
     },
     {
       "to_id": "29391",
