@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-21T06:48:50.013530+00:00",
+  "generated_at_utc": "2026-09-21T13:40:37.015874+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 18,
+  "count": 19,
   "tournaments": [
     {
       "to_id": "29640",
@@ -3521,6 +3521,19 @@
           "target": ""
         }
       ]
+    },
+    {
+      "to_id": "30219",
+      "year": "2026",
+      "name": "Saint-Avertin multidepart 2026",
+      "organizer": "CASAS",
+      "date_text": "30 Oct - 1 Nov",
+      "end_date": "2026-11-01",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30219",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30219/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30219/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "29686",
