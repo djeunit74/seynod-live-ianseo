@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-21T19:05:53.985833+00:00",
+  "generated_at_utc": "2026-09-21T22:44:00.638014+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -4957,7 +4957,7 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 2 Homme",
-          "target": "3D"
+          "target": "4C"
         },
         {
           "name": "AIRAULT Julien",
@@ -4978,7 +4978,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S1 Femme Arc Classique",
-          "target": "3C"
+          "target": "7D"
         },
         {
           "name": "ANGEBAUD Damien",
@@ -4992,7 +4992,7 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc à Poulies Senior 2 Homme",
-          "target": "3A"
+          "target": "3C"
         },
         {
           "name": "BERTHOUD Murielle",
@@ -5055,20 +5055,20 @@
           "club": "1383100 - PUGET SUR ARGENS",
           "category": "1383100 - PUGET SUR ARGENS",
           "session": "S2 Homme Arc à Poulies",
-          "target": "2C"
-        },
-        {
-          "name": "BUSSOLON Adrien",
-          "club": "1383114 - OLLIOULES",
-          "category": "1383114 - OLLIOULES",
-          "session": "S1 Homme Arc Classique",
-          "target": "10A"
+          "target": "3B"
         },
         {
           "name": "BUSSOLON Adrien",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
+          "target": "4B"
+        },
+        {
+          "name": "BUSSOLON Adrien",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S1 Homme Arc Classique",
           "target": "8C"
         },
         {
@@ -5076,7 +5076,7 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
-          "target": "9B"
+          "target": "8C"
         },
         {
           "name": "CANTOURNET Melyne",
@@ -5111,7 +5111,7 @@
           "club": "1383106 - SANARY",
           "category": "1383106 - SANARY",
           "session": "S2 Homme Arc à Poulies",
-          "target": "2B"
+          "target": "3A"
         },
         {
           "name": "CHEMIN Theo",
@@ -5160,7 +5160,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U18 Femme Arc Classique",
-          "target": "2A"
+          "target": "7A"
         },
         {
           "name": "DECKER GARCIA Lea",
@@ -5216,7 +5216,7 @@
           "club": "1383100 - PUGET SUR ARGENS",
           "category": "1383100 - PUGET SUR ARGENS",
           "session": "S3 Homme Arc à Poulies",
-          "target": "3B"
+          "target": "3D"
         },
         {
           "name": "ESCHBACH Vincent",
@@ -5356,7 +5356,7 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S3 Homme Arc Classique",
-          "target": "8C"
+          "target": "10A"
         },
         {
           "name": "LAN Michel",
@@ -5447,7 +5447,7 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Scratch Homme Arc Nu",
-          "target": "8A"
+          "target": "12D"
         },
         {
           "name": "PEJO Benoit",
@@ -5475,7 +5475,7 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S1 Homme Arc Classique",
-          "target": "7A"
+          "target": "4A"
         },
         {
           "name": "PLANCON Christophe",
