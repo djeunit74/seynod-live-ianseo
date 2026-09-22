@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T01:27:42.970065+00:00",
+  "generated_at_utc": "2026-09-22T06:41:05.286030+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 109,
+      "entries_count": 114,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
@@ -89,6 +89,13 @@
           "target": ""
         },
         {
+          "name": "BELEC Anais",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "U13 Femme Arc Classique National",
+          "target": ""
+        },
+        {
           "name": "BERTHOUD Murielle",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
@@ -100,6 +107,20 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "BONNEAUD Jean Christophe",
+          "club": "1130062 - LAUDUN",
+          "category": "1130062 - LAUDUN",
+          "session": "S2 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "BONNEAUD Jean Christophe",
+          "club": "1130062 - LAUDUN",
+          "category": "1130062 - LAUDUN",
+          "session": "Arc Classique Senior 2 Hommes National",
           "target": ""
         },
         {
@@ -135,6 +156,20 @@
           "club": "1313081 - PELISSANNE",
           "category": "1313081 - PELISSANNE",
           "session": "S3 Homme Arc Classique National",
+          "target": ""
+        },
+        {
+          "name": "CAPDEPON Philippe",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "S3 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "CAPDEPON Philippe",
+          "club": "1384131 - VEDENE",
+          "category": "1384131 - VEDENE",
+          "session": "Arc Classique Senior 3 Hommes",
           "target": ""
         },
         {
