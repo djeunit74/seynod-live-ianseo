@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-22T17:09:44.099768+00:00",
+  "generated_at_utc": "2026-09-22T20:22:54.100830+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1331,7 +1331,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 137,
+      "entries_count": 138,
       "entries": [
         {
           "name": "AMBROSINO Loane",
@@ -1415,14 +1415,14 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Homme Arc Classique",
-          "target": "12A"
+          "target": "11D"
         },
         {
           "name": "BUREL Guillaume",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Homme Arc Classique",
-          "target": "11A"
+          "target": "2B"
         },
         {
           "name": "BUREL-BOSCHER Eileen",
@@ -1632,7 +1632,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "Scratch Homme Arc Nu",
-          "target": "10A"
+          "target": "10D"
         },
         {
           "name": "DORANGE Corinne",
@@ -1957,6 +1957,13 @@
           "target": "6D"
         },
         {
+          "name": "LEPERS Pierre",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S2 Homme Arc Classique",
+          "target": "11B"
+        },
+        {
           "name": "LESAFFRE Thierry",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
@@ -2227,7 +2234,7 @@
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
           "session": "Fédéral Arc à Poulies Senior 1 Homme",
-          "target": "5B"
+          "target": "6B"
         },
         {
           "name": "SENECHAL POILLOT Milia",
@@ -5391,7 +5398,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 86,
+      "entries_count": 88,
       "entries": [
         {
           "name": "AIRAULT Julien",
@@ -5434,6 +5441,13 @@
           "category": "1383124 - LA GARDE",
           "session": "Arc à Poulies Senior 2 Homme",
           "target": "3C"
+        },
+        {
+          "name": "APPY Claire",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S3 Femme Arc Classique",
+          "target": "6D"
         },
         {
           "name": "BERTHOUD Murielle",
@@ -5496,7 +5510,7 @@
           "club": "1383100 - PUGET SUR ARGENS",
           "category": "1383100 - PUGET SUR ARGENS",
           "session": "S2 Homme Arc à Poulies",
-          "target": "3B"
+          "target": "1D"
         },
         {
           "name": "BUSSOLON Adrien",
@@ -5721,6 +5735,13 @@
           "category": "1304013 - L'ESCALE",
           "session": "S2 Homme Arc à Poulies",
           "target": "2C"
+        },
+        {
+          "name": "GRANDJEAN Luc",
+          "club": "1383100 - PUGET SUR ARGENS",
+          "category": "1383100 - PUGET SUR ARGENS",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "3B"
         },
         {
           "name": "GRASSER Clara",
