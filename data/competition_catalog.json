@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-23T07:25:37.629113+00:00",
+  "generated_at_utc": "2026-09-23T12:55:45.251722+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,819 +30,833 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 116,
+      "entries_count": 118,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "14A"
         },
         {
           "name": "ANGEBAUD Damien",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S2 Homme Arc à Poulies National",
-          "target": ""
+          "target": "11A"
         },
         {
           "name": "ANGEBAUD Damien",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc à Poulies Senior 2 Hommes National",
-          "target": ""
+          "target": "16C"
         },
         {
           "name": "APOSTOLAKIS Olivier",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "S3 Homme Arc Classique",
-          "target": ""
+          "target": "3A"
         },
         {
           "name": "APOSTOLAKIS Olivier",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "Arc Classique Senior 3 Hommes",
-          "target": ""
+          "target": "3A"
+        },
+        {
+          "name": "AUBRY Corinne",
+          "club": "1304005 - DIGNE LES BAINS",
+          "category": "1304005 - DIGNE LES BAINS",
+          "session": "S3 Femme Arc à Poulies National",
+          "target": "17C"
+        },
+        {
+          "name": "AUBRY Corinne",
+          "club": "1304005 - DIGNE LES BAINS",
+          "category": "1304005 - DIGNE LES BAINS",
+          "session": "Arc à Poulies Senior 3 Femmes National",
+          "target": "9A"
         },
         {
           "name": "AZEMA Chloe",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "U13 Femme Arc Classique National",
-          "target": ""
+          "target": "25C"
         },
         {
           "name": "BARON Robert",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "12C"
         },
         {
           "name": "BARTHELEMY Jean Denis",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "10A"
         },
         {
           "name": "BELEC Anais",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "U13 Femme Arc Classique National",
-          "target": ""
+          "target": "25A"
         },
         {
           "name": "BERTHOUD Murielle",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S3 Femme Arc Classique National",
-          "target": ""
+          "target": "13B"
         },
         {
           "name": "BIGI Alexandre",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "17B"
         },
         {
           "name": "BONNEAUD Jean Christophe",
           "club": "1130062 - LAUDUN",
           "category": "1130062 - LAUDUN",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "16A"
         },
         {
           "name": "BONNEAUD Jean Christophe",
           "club": "1130062 - LAUDUN",
           "category": "1130062 - LAUDUN",
           "session": "Arc Classique Senior 2 Hommes National",
-          "target": ""
+          "target": "18B"
         },
         {
           "name": "BOUSCHBACHER Laurent",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "14A"
         },
         {
           "name": "BURY Yannig",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "16C"
         },
         {
           "name": "BUSSOLON Adrien",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "11B"
         },
         {
           "name": "BUSSOLON Adrien",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Hommes National",
-          "target": ""
-        },
-        {
-          "name": "BUTTIGIEG Roland",
-          "club": "1313081 - PELISSANNE",
-          "category": "1313081 - PELISSANNE",
-          "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "11B"
         },
         {
           "name": "CAPDEPON Philippe",
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "S3 Homme Arc Classique",
-          "target": ""
+          "target": "4B"
         },
         {
           "name": "CAPDEPON Philippe",
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "Arc Classique Senior 3 Hommes",
-          "target": ""
+          "target": "4B"
         },
         {
           "name": "CARRERE Christophe",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "Découverte",
-          "target": ""
+          "target": "23B"
         },
         {
           "name": "CARRERE Christophe",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "Arc Classique Découverte",
-          "target": ""
+          "target": "24B"
         },
         {
           "name": "CASTELLAN Jean-Daniel",
           "club": "1313074 - MARIGNANE",
           "category": "1313074 - MARIGNANE",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "18A"
         },
         {
           "name": "CEYLAN Eda",
           "club": "1313074 - MARIGNANE",
           "category": "1313074 - MARIGNANE",
           "session": "U13 Femme Arc Classique",
-          "target": ""
-        },
-        {
-          "name": "CHAUDRON Karine",
-          "club": "1304014 - CHATEAU ARNOUX ST AUBAN",
-          "category": "1304014 - CHATEAU ARNOUX ST AUBAN",
-          "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "23A"
         },
         {
           "name": "CHAUDRON Karine",
           "club": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "category": "1304014 - CHATEAU ARNOUX ST AUBAN",
           "session": "Arc Classique Senior 2 Femmes National",
-          "target": ""
+          "target": "7B"
+        },
+        {
+          "name": "CHAUDRON Karine",
+          "club": "1304014 - CHATEAU ARNOUX ST AUBAN",
+          "category": "1304014 - CHATEAU ARNOUX ST AUBAN",
+          "session": "S2 Femme Arc Classique National",
+          "target": "7C"
         },
         {
           "name": "CHENAVAS Francoise",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "13C"
         },
         {
           "name": "COQUEREL Yoann",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "S2 Homme Arc Classique",
-          "target": ""
+          "target": "1C"
         },
         {
           "name": "COQUEREL Yoann",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "Arc Classique Senior 2 Hommes",
-          "target": ""
+          "target": "1C"
         },
         {
           "name": "COQUEUGNIOT Melanie",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "10B"
         },
         {
           "name": "COQUEUGNIOT Melanie",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc Classique Senior 2 Femmes National",
-          "target": ""
+          "target": "10B"
         },
         {
           "name": "DAHMAN Nordine",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "14B"
         },
         {
           "name": "DEULOFEU Francois Xavier",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "6B"
         },
         {
           "name": "DIEUDONNE Erick",
           "club": "1383106 - SANARY",
           "category": "1383106 - SANARY",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "19B"
         },
         {
           "name": "DIEUDONNE Nathalie",
           "club": "1383106 - SANARY",
           "category": "1383106 - SANARY",
           "session": "S2 Femme Arc à Poulies National",
-          "target": ""
+          "target": "19C"
         },
         {
           "name": "DROUAN Doris",
           "club": "1304010 - MANOSQUE",
           "category": "1304010 - MANOSQUE",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "15C"
         },
         {
           "name": "DUSSAUD Jerome",
           "club": "1384139 - L'ISLE SUR LA SORGUE",
           "category": "1384139 - L'ISLE SUR LA SORGUE",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "14C"
         },
         {
           "name": "FINDIK Sinem",
           "club": "1313074 - MARIGNANE",
           "category": "1313074 - MARIGNANE",
           "session": "U13 Femme Arc Classique",
-          "target": ""
+          "target": "22C"
         },
         {
           "name": "FLOQUET Jean-Louis",
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
           "session": "S3 Homme Arc Classique",
-          "target": ""
+          "target": "3C"
         },
         {
           "name": "FLOQUET Jean-Louis",
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
           "session": "Arc Classique Senior 3 Hommes",
-          "target": ""
+          "target": "3C"
         },
         {
           "name": "GARCIA Guy",
           "club": "1384139 - L'ISLE SUR LA SORGUE",
           "category": "1384139 - L'ISLE SUR LA SORGUE",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "15A"
         },
         {
           "name": "GAUTHIER Chantal",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Femme Arc Classique National",
-          "target": ""
+          "target": "8C"
         },
         {
           "name": "GAUTHIER Chantal",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "Arc Classique Senior 3 Femmes National",
-          "target": ""
+          "target": "8C"
         },
         {
           "name": "GAUTHIER Michel",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
-        },
-        {
-          "name": "GAUTHIER Michel",
-          "club": "1383115 - BRIGNOLES",
-          "category": "1383115 - BRIGNOLES",
-          "session": "Arc Classique Senior 3 Hommes National",
-          "target": ""
+          "target": "9A"
         },
         {
           "name": "GOLAY Elodie",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "U18 Femme Arc Classique National",
-          "target": ""
+          "target": "9C"
         },
         {
           "name": "GOSSELIN Franck",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S3 Homme Arc Classique",
-          "target": ""
+          "target": "4C"
         },
         {
           "name": "GOWARD Thomas",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S1 Homme Arc à Poulies",
-          "target": ""
+          "target": "5A"
         },
         {
           "name": "GOWARD Thomas",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S1 Homme Arc à Poulies National",
-          "target": ""
+          "target": "6C"
+        },
+        {
+          "name": "GUENEAU Patrick",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "S2 Homme Arc Classique National",
+          "target": "15B"
         },
         {
           "name": "GUILMET Paul",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "Découverte",
-          "target": ""
+          "target": "24C"
         },
         {
           "name": "HAMACHER Olivier",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "18C"
         },
         {
           "name": "HARRAND Florine",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "10A"
         },
         {
           "name": "HERRMANN Lilou",
           "club": "1313074 - MARIGNANE",
           "category": "1313074 - MARIGNANE",
           "session": "U18 Femme Arc Classique National",
-          "target": ""
+          "target": "17C"
         },
         {
           "name": "HONNORE Marion",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "U18 Femme Arc Classique National",
-          "target": ""
+          "target": "8A"
         },
         {
           "name": "IMBERT Olivier",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "S1 Homme Arc à Poulies",
-          "target": ""
+          "target": "5C"
         },
         {
           "name": "JACQUES Aurelien",
           "club": "1313066 - GEMENOS",
           "category": "1313066 - GEMENOS",
           "session": "Scratch Homme Arc Nu National",
-          "target": ""
+          "target": "9B"
         },
         {
           "name": "JACQUES Aurelien",
           "club": "1313066 - GEMENOS",
           "category": "1313066 - GEMENOS",
           "session": "Arc Nu Senior 2 Hommes National",
-          "target": ""
+          "target": "9B"
         },
         {
           "name": "JACQUES Matteo",
           "club": "1313066 - GEMENOS",
           "category": "1313066 - GEMENOS",
           "session": "U15 Homme Arc Classique",
-          "target": ""
-        },
-        {
-          "name": "JACQUES Matteo",
-          "club": "1313066 - GEMENOS",
-          "category": "1313066 - GEMENOS",
-          "session": "Arc Classique U15 Hommes",
-          "target": ""
+          "target": "21B"
         },
         {
           "name": "JAFFRE Catherine",
           "club": "1304008 - BARCELONNETTE",
           "category": "1304008 - BARCELONNETTE",
           "session": "S3 Femme Arc Classique National",
-          "target": ""
+          "target": "7B"
         },
         {
           "name": "JAFFRE Catherine",
           "club": "1304008 - BARCELONNETTE",
           "category": "1304008 - BARCELONNETTE",
           "session": "Arc Classique Senior 3 Femmes National",
-          "target": ""
+          "target": "7C"
         },
         {
           "name": "JOBELIN Matthieu",
           "club": "1304010 - MANOSQUE",
           "category": "1304010 - MANOSQUE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "14B"
         },
         {
           "name": "JULLIEN Denis",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S3 Homme Arc Classique",
-          "target": ""
+          "target": "5C"
+        },
+        {
+          "name": "KOCHERT Sebastien",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "17A"
         },
         {
           "name": "KROUN Philippe",
-          "club": "1313090 - ST MARTIN DE CRAU",
-          "category": "1313090 - ST MARTIN DE CRAU",
+          "club": "1313081 - PELISSANNE",
+          "category": "1313081 - PELISSANNE",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "13A"
         },
         {
           "name": "LACOUR Barbara",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Scratch Femme Arc Nu National",
-          "target": ""
+          "target": "16A"
         },
         {
           "name": "LAGARDE Dominique",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "11A"
         },
         {
           "name": "LAHAYE Sacha",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "U18 Homme Arc Classique",
-          "target": ""
+          "target": "5A"
         },
         {
           "name": "LAHAYE Stephane",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "9C"
         },
         {
           "name": "LAMBERT Mathilde",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S1 Femme Arc Classique National",
-          "target": ""
+          "target": "13A"
         },
         {
           "name": "LEA Gerald",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "S2 Homme Arc à Poulies",
-          "target": ""
-        },
-        {
-          "name": "LEA Stephanie",
-          "club": "1383104 - LA VERDIERE",
-          "category": "1383104 - LA VERDIERE",
-          "session": "S2 Femme Arc à Poulies",
-          "target": ""
+          "target": "6A"
         },
         {
           "name": "LEBRE Olivier",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
-          "session": "Découverte",
-          "target": ""
+          "session": "HV Libre Arc Classique Senior 2 Hommes National",
+          "target": "22A"
         },
         {
           "name": "LEBRE Olivier",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
-          "session": "Arc Classique Découverte",
-          "target": ""
-        },
-        {
-          "name": "LEMAIRE Sebastien",
-          "club": "1384137 - BONNIEUX",
-          "category": "1384137 - BONNIEUX",
-          "session": "S2 Homme Arc à Poulies",
-          "target": ""
-        },
-        {
-          "name": "LEMAIRE Sebastien",
-          "club": "1384137 - BONNIEUX",
-          "category": "1384137 - BONNIEUX",
-          "session": "Arc à Poulies Senior 2 Hommes",
-          "target": ""
+          "session": "HV Libre Arc Classique National",
+          "target": "22B"
         },
         {
           "name": "LESAFFRE Thierry",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S3 Homme Arc à Poulies National",
-          "target": ""
+          "target": "10C"
         },
         {
           "name": "LESAFFRE Thierry",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc à Poulies Senior 3 Hommes National",
-          "target": ""
+          "target": "10C"
         },
         {
           "name": "LESTIENNE Thibaut",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "15B"
         },
         {
           "name": "LETELLIER Jean-Philippe",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "8B"
         },
         {
           "name": "LETELLIER Jean-Philippe",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "Arc Classique Senior 2 Hommes National",
-          "target": ""
+          "target": "8B"
         },
         {
           "name": "LOISY CADALEN Leona",
           "club": "1313074 - MARIGNANE",
           "category": "1313074 - MARIGNANE",
           "session": "U15 Femme Arc Classique",
-          "target": ""
+          "target": "21A"
         },
         {
           "name": "LUCE Damien",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "Découverte",
-          "target": ""
+          "target": "24A"
         },
         {
           "name": "LUCE LAURANS Leo",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "U18 Homme Arc Classique",
-          "target": ""
+          "target": "4C"
         },
         {
           "name": "LUCE LAURANS Thelio",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "U15 Homme Arc Classique National",
-          "target": ""
+          "target": "23C"
         },
         {
           "name": "MASSE Bertrand",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "11C"
         },
         {
           "name": "MASSE Bertrand",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "Arc Classique Senior 2 Hommes National",
-          "target": ""
+          "target": "11C"
         },
         {
           "name": "MAUSSIERE Florence",
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
           "session": "S2 Femme Arc Classique",
-          "target": ""
+          "target": "2C"
         },
         {
           "name": "MAUSSIERE Florence",
           "club": "0126060 - CHATEAUNEUF DU RHONE",
           "category": "0126060 - CHATEAUNEUF DU RHONE",
           "session": "Arc Classique Senior 2 Femmes",
-          "target": ""
+          "target": "2C"
+        },
+        {
+          "name": "MEMOLI Laurent",
+          "club": "1313051 - MARSEILLE",
+          "category": "1313051 - MARSEILLE",
+          "session": "S2 Homme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "MENU Francois",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S2 Homme Arc Classique National",
+          "target": "20B"
         },
         {
           "name": "MENU Francois",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Homme Arc Classique",
-          "target": ""
-        },
-        {
-          "name": "MENU Francois",
-          "club": "1313092 - AIX EN PROVENCE",
-          "category": "1313092 - AIX EN PROVENCE",
-          "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "2B"
         },
         {
           "name": "MICHAUX Xavier",
           "club": "1304008 - BARCELONNETTE",
           "category": "1304008 - BARCELONNETTE",
           "session": "S1 Homme Arc Classique",
-          "target": ""
+          "target": "1A"
         },
         {
           "name": "MICHAUX Xavier",
           "club": "1304008 - BARCELONNETTE",
           "category": "1304008 - BARCELONNETTE",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "8A"
         },
         {
           "name": "MISENE Lilian",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "16B"
         },
         {
           "name": "MORISCOT Aurore",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S1 Femme Arc Classique National",
-          "target": ""
+          "target": "12A"
         },
         {
           "name": "MORISCOT Aurore",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "Arc Classique Senior 1 Femmes National",
-          "target": ""
+          "target": "12A"
         },
         {
           "name": "MOULIN Louis",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "7A"
         },
         {
           "name": "MOULIN Louis",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "Arc Classique Senior 1 Hommes National",
-          "target": ""
+          "target": "7A"
         },
         {
           "name": "MOULIN Raymond",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "16B"
         },
         {
           "name": "MOULIN Raymond",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "Arc Classique Senior 3 Hommes National",
-          "target": ""
+          "target": "19A"
         },
         {
           "name": "PAILLASSON Raphael",
           "club": "1313051 - MARSEILLE",
           "category": "1313051 - MARSEILLE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "13B"
         },
         {
           "name": "PELLETIER Charlotte",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S1 Femme Arc Classique National",
-          "target": ""
+          "target": "12B"
         },
         {
           "name": "PELLETIER Charlotte",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "Arc Classique Senior 1 Femmes National",
-          "target": ""
+          "target": "12B"
         },
         {
           "name": "PERROT Jocelyne",
           "club": "1313081 - PELISSANNE",
           "category": "1313081 - PELISSANNE",
           "session": "S3 Femme Arc Classique",
-          "target": ""
+          "target": "4A"
+        },
+        {
+          "name": "PICAL Yann",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "S2 Homme Arc Classique",
+          "target": "2A"
         },
         {
           "name": "PLACHTA Thibaut",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S1 Homme Arc Classique National",
-          "target": ""
+          "target": "12C"
         },
         {
           "name": "PLACHTA Thibaut",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "Arc Classique Senior 1 Hommes National",
-          "target": ""
+          "target": "15C"
         },
         {
           "name": "REBOUL Angelique",
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "17A"
         },
         {
           "name": "ROUX Adrien",
           "club": "1134139 - MONTPELLIER",
           "category": "1134139 - MONTPELLIER",
           "session": "S1 Homme Arc Classique",
-          "target": ""
+          "target": "1A"
         },
         {
           "name": "SALLANDIER Alain",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S3 Homme Arc Classique National",
-          "target": ""
+          "target": "6A"
         },
         {
           "name": "SANAUR Sebastien",
           "club": "1313092 - AIX EN PROVENCE",
           "category": "1313092 - AIX EN PROVENCE",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "15A"
         },
         {
           "name": "SERTA Sandrine",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S2 Femme Arc Classique National",
-          "target": ""
+          "target": "13C"
         },
         {
           "name": "SUBE Christophe",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "S2 Homme Arc Classique National",
-          "target": ""
+          "target": "14C"
         },
         {
           "name": "SUBE Christophe",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
           "session": "Arc Classique Senior 2 Hommes National",
-          "target": ""
+          "target": "20C"
         },
         {
           "name": "SUBLIME Erika",
           "club": "1384151 - BOLLENE",
           "category": "1384151 - BOLLENE",
           "session": "S2 Femme Arc Classique",
-          "target": ""
-        },
-        {
-          "name": "TREILLE Odile",
-          "club": "1383124 - LA GARDE",
-          "category": "1383124 - LA GARDE",
-          "session": "S3 Femme Arc Classique",
-          "target": ""
+          "target": "2A"
         },
         {
           "name": "TREILLE Odile",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S3 Femme Arc Classique National",
-          "target": ""
+          "target": "20A"
+        },
+        {
+          "name": "TREILLE Odile",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Femme Arc Classique",
+          "target": "4A"
+        },
+        {
+          "name": "WELMANT Sandra",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S2 Femme Arc Classique",
+          "target": "1B"
+        },
+        {
+          "name": "WELMANT Sebastien",
+          "club": "1383104 - LA VERDIERE",
+          "category": "1383104 - LA VERDIERE",
+          "session": "S2 Homme Arc Classique",
+          "target": "2B"
         },
         {
           "name": "WILKES Jonathan",
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "S2 Homme Arc à Poulies",
-          "target": ""
+          "target": "6C"
         }
       ]
     },
