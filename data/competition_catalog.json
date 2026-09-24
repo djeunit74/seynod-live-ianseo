@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-24T18:34:19.443567+00:00",
+  "generated_at_utc": "2026-09-24T22:01:08.362563+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -890,15 +890,8 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30172",
       "ena_url": "https://www.ianseo.net/TourData/2026/30172/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30172/IC.php",
-      "entries_count": 64,
+      "entries_count": 57,
       "entries": [
-        {
-          "name": "ATP_Ait Haddou_Samir",
-          "club": "AIT HADDOU Samir",
-          "category": "AIT HADDOU Samir",
-          "session": "Promotion Adulte Homme",
-          "target": "62"
-        },
         {
           "name": "ATP_Wafaa_Amal",
           "club": "AMAL Wafaa",
@@ -914,13 +907,6 @@
           "target": "45"
         },
         {
-          "name": "ATP_Ardjoune_Marine",
-          "club": "ARDJOUNE Marine",
-          "category": "ARDJOUNE Marine",
-          "session": "Promotion Adulte Femme",
-          "target": "64"
-        },
-        {
           "name": "0778553D",
           "club": "BEAUMIER Erika",
           "category": "BEAUMIER Erika",
@@ -933,13 +919,6 @@
           "category": "BECUWE Arthur",
           "session": "Jeune Homme",
           "target": "38"
-        },
-        {
-          "name": "0041756M",
-          "club": "BERGALA Raphael",
-          "category": "BERGALA Raphael",
-          "session": "Promotion Jeune Homme",
-          "target": "58"
         },
         {
           "name": "0022772C",
@@ -1096,13 +1075,6 @@
           "target": "50"
         },
         {
-          "name": "ATP_Joly_Cyril",
-          "club": "JOLY Cyril",
-          "category": "JOLY Cyril",
-          "session": "Promotion Adulte Homme",
-          "target": "60"
-        },
-        {
           "name": "1036626Y",
           "club": "JOLY-VENDROT Leo",
           "category": "JOLY-VENDROT Leo",
@@ -1143,13 +1115,6 @@
           "category": "LEDOUX Laurence",
           "session": "Senior 3 Femme",
           "target": "56"
-        },
-        {
-          "name": "ATP_Levavasseur_Laura",
-          "club": "LEVAVASSEUR Laura",
-          "category": "LEVAVASSEUR Laura",
-          "session": "Promotion Adulte Femme",
-          "target": "61"
         },
         {
           "name": "1027616K",
@@ -1257,13 +1222,6 @@
           "target": "40"
         },
         {
-          "name": "ATP_Philippot_Gurvan",
-          "club": "PHILIPPOT Gurvan",
-          "category": "PHILIPPOT Gurvan",
-          "session": "Promotion Adulte Homme",
-          "target": "63"
-        },
-        {
           "name": "1007528U",
           "club": "POITEVIN Celine",
           "category": "POITEVIN Celine",
@@ -1297,13 +1255,6 @@
           "category": "SERNY Bruno",
           "session": "Senior 2 Homme",
           "target": "28"
-        },
-        {
-          "name": "1075899L",
-          "club": "SEVENANTS Camille",
-          "category": "SEVENANTS Camille",
-          "session": "Promotion Jeune Homme",
-          "target": "59"
         },
         {
           "name": "0808645M",
