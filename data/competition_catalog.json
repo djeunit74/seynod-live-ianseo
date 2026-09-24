@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-24T08:41:25.915449+00:00",
+  "generated_at_utc": "2026-09-24T14:04:01.958216+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1352,7 +1352,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 138,
+      "entries_count": 139,
       "entries": [
         {
           "name": "AMBROSINO Loane",
@@ -1362,11 +1362,25 @@
           "target": "6C"
         },
         {
+          "name": "AMBROSINOTUYTEN Angelina",
+          "club": "1383159 - VIDAUBAN",
+          "category": "1383159 - VIDAUBAN",
+          "session": "U21 Femme Arc à Poulies",
+          "target": "6C"
+        },
+        {
           "name": "ANDREANI Melanie",
           "club": "1383119 - PIERREFEU",
           "category": "1383119 - PIERREFEU",
           "session": "S2 Femme Arc à Poulies",
           "target": "7A"
+        },
+        {
+          "name": "APPY Claire",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S3 Femme Arc Classique",
+          "target": "11C"
         },
         {
           "name": "AUDIN Marie-Catherine",
@@ -1409,6 +1423,20 @@
           "category": "1383101 - GONFARON",
           "session": "U18 Femme Arc Classique",
           "target": "11D"
+        },
+        {
+          "name": "BERTHOUD Murielle",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Femme Arc Classique",
+          "target": "4D"
+        },
+        {
+          "name": "BERTHOUD Murielle",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "Arc Classique Senior 3 Femme",
+          "target": "9C"
         },
         {
           "name": "BIANCO Magali",
@@ -1530,6 +1558,13 @@
           "target": "2A"
         },
         {
+          "name": "CHARRIER Ludovic",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "6C"
+        },
+        {
           "name": "CHEMIN Theo",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
@@ -1542,13 +1577,6 @@
           "category": "1383114 - OLLIOULES",
           "session": "S1 Homme Arc Classique",
           "target": "8A"
-        },
-        {
-          "name": "CLAIRE Appy",
-          "club": "1383114 - OLLIOULES",
-          "category": "1383114 - OLLIOULES",
-          "session": "S3 Femme Arc Classique",
-          "target": "11C"
         },
         {
           "name": "COLOMBEL Fabrice",
@@ -1642,11 +1670,25 @@
           "target": "5B"
         },
         {
+          "name": "DEPUYDT Sylvain",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "6A"
+        },
+        {
           "name": "DIDI Yassine",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U21 Homme Arc Classique",
           "target": "4A"
+        },
+        {
+          "name": "DIEUDONNE Nathalie",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "5D"
         },
         {
           "name": "DJENNETIAN Pascal",
@@ -1894,6 +1936,13 @@
           "target": "8A"
         },
         {
+          "name": "ISTRIA Roger",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S3 Homme Arc Classique",
+          "target": "2C"
+        },
+        {
           "name": "JULLIEN Denis",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
@@ -1948,13 +1997,6 @@
           "category": "1383115 - BRIGNOLES",
           "session": "S3 Homme Arc Classique",
           "target": "3B"
-        },
-        {
-          "name": "LAURA Maeght Zucchetto",
-          "club": "1383120 - ROQUEBRUNE S/ARGENS CIE",
-          "category": "1383120 - ROQUEBRUNE S/ARGENS CIE",
-          "session": "S1 Femme Arc Classique",
-          "target": "2D"
         },
         {
           "name": "LEBEC DIT CONDILLAC Cedric",
@@ -2055,18 +2097,11 @@
           "target": "14C"
         },
         {
-          "name": "LUCIEN Sampedro",
-          "club": "1383124 - LA GARDE",
-          "category": "1383124 - LA GARDE",
-          "session": "S1 Homme Arc Classique",
-          "target": "8B"
-        },
-        {
-          "name": "LUDOVIC Charrier",
-          "club": "1383106 - SANARY",
-          "category": "1383106 - SANARY",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "6C"
+          "name": "MAEGHT ZUCCHETT Laura",
+          "club": "1383120 - ROQUEBRUNE S/ARGENS CIE",
+          "category": "1383120 - ROQUEBRUNE S/ARGENS CIE",
+          "session": "S1 Femme Arc Classique",
+          "target": "2D"
         },
         {
           "name": "MARLOT Kevin",
@@ -2095,27 +2130,6 @@
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "Critérium Homme Arc Classique",
           "target": "1A"
-        },
-        {
-          "name": "MURIELLE Berthoud",
-          "club": "1383124 - LA GARDE",
-          "category": "1383124 - LA GARDE",
-          "session": "S3 Femme Arc Classique",
-          "target": "4D"
-        },
-        {
-          "name": "MURIELLE Berthoud",
-          "club": "1383124 - LA GARDE",
-          "category": "1383124 - LA GARDE",
-          "session": "Arc Classique Senior 3 Femme",
-          "target": "9C"
-        },
-        {
-          "name": "NATHALIE Dieudonne",
-          "club": "1383106 - SANARY",
-          "category": "1383106 - SANARY",
-          "session": "S2 Femme Arc à Poulies",
-          "target": "5D"
         },
         {
           "name": "PELLAT Sylvianne",
@@ -2223,13 +2237,6 @@
           "target": "12C"
         },
         {
-          "name": "ROGER Istria",
-          "club": "1383114 - OLLIOULES",
-          "category": "1383114 - OLLIOULES",
-          "session": "S1 Homme Arc Classique",
-          "target": "2C"
-        },
-        {
           "name": "ROUSSEAU DUMARCET Remi",
           "club": "1383120 - ROQUEBRUNE S/ARGENS CIE",
           "category": "1383120 - ROQUEBRUNE S/ARGENS CIE",
@@ -2258,18 +2265,18 @@
           "target": "6B"
         },
         {
+          "name": "SAMPEDRO Lucien",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S1 Homme Arc Classique",
+          "target": "8B"
+        },
+        {
           "name": "SENECHAL POILLOT Milia",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U18 Femme Arc Classique",
           "target": "4C"
-        },
-        {
-          "name": "SYLVAIN Depuydt",
-          "club": "1383106 - SANARY",
-          "category": "1383106 - SANARY",
-          "session": "S2 Homme Arc à Poulies",
-          "target": "6A"
         },
         {
           "name": "TAILLEFER Kevin",
@@ -2332,7 +2339,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30101",
       "ena_url": "https://www.ianseo.net/TourData/2026/30101/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30101/IC.php",
-      "entries_count": 92,
+      "entries_count": 97,
       "entries": [
         {
           "name": "ALBENGE Sebastien",
@@ -2482,6 +2489,13 @@
           "target": ""
         },
         {
+          "name": "BOUNIC Sebastien",
+          "club": "1313155 - MALLEMORT",
+          "category": "1313155 - MALLEMORT",
+          "session": "S2 Homme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "BOUREZ Agnes",
           "club": "1384147 - CARPENTRAS",
           "category": "1384147 - CARPENTRAS",
@@ -2573,6 +2587,13 @@
           "target": ""
         },
         {
+          "name": "COMPAGON Marie",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "S1 Femme Arc Classique",
+          "target": ""
+        },
+        {
           "name": "COURATIER Chloe",
           "club": "1306038 - NICE AC",
           "category": "1306038 - NICE AC",
@@ -2632,7 +2653,7 @@
           "name": "GAILLARD Corinne",
           "club": "1313155 - MALLEMORT",
           "category": "1313155 - MALLEMORT",
-          "session": "S2 Femme Arc Classique",
+          "session": "Scratch Femme Arc Nu",
           "target": ""
         },
         {
@@ -2759,6 +2780,13 @@
           "club": "1313077 - MIRAMAS CRAU",
           "category": "1313077 - MIRAMAS CRAU",
           "session": "U18 Homme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "MENGUY Barbara",
+          "club": "1313155 - MALLEMORT",
+          "category": "1313155 - MALLEMORT",
+          "session": "Scratch Femme Arc Nu",
           "target": ""
         },
         {
@@ -2899,6 +2927,20 @@
           "club": "1384142 - CAVAILLON",
           "category": "1384142 - CAVAILLON",
           "session": "S2 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SARDIN- BOUCHET Valerie",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "S3 Femme Arc Classique",
+          "target": ""
+        },
+        {
+          "name": "SARDIN- BOUCHET Valerie",
+          "club": "1384132 - MORNAS",
+          "category": "1384132 - MORNAS",
+          "session": "Arc Classique Senior 3 Femme",
           "target": ""
         },
         {
