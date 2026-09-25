@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-25T19:51:48.627233+00:00",
+  "generated_at_utc": "2026-09-25T23:07:22.348762+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -1289,7 +1289,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 139,
+      "entries_count": 140,
       "entries": [
         {
           "name": "AMBROSINO Loane",
@@ -1906,6 +1906,13 @@
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Homme Arc Classique",
           "target": "2A"
+        },
+        {
+          "name": "KYCIA Cyrielle",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "S1 Femme Arc Classique",
+          "target": "12A"
         },
         {
           "name": "LACOUR Barbara",
