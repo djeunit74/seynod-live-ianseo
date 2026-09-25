@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-25T11:18:05.455374+00:00",
+  "generated_at_utc": "2026-09-25T15:53:31.772684+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -30,7 +30,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29622",
       "ena_url": "https://www.ianseo.net/TourData/2026/29622/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29622/IC.php",
-      "entries_count": 119,
+      "entries_count": 117,
       "entries": [
         {
           "name": "ANDRIASOLOMAHEFA Paul",
@@ -122,20 +122,6 @@
           "category": "1383114 - OLLIOULES",
           "session": "S2 Homme Arc Classique National",
           "target": "17B"
-        },
-        {
-          "name": "BONNEAUD Jean Christophe",
-          "club": "1130062 - LAUDUN",
-          "category": "1130062 - LAUDUN",
-          "session": "S2 Homme Arc Classique National",
-          "target": "16A"
-        },
-        {
-          "name": "BONNEAUD Jean Christophe",
-          "club": "1130062 - LAUDUN",
-          "category": "1130062 - LAUDUN",
-          "session": "Arc Classique Senior 2 Hommes National",
-          "target": "18B"
         },
         {
           "name": "BOUSCHBACHER Laurent",
@@ -600,6 +586,13 @@
           "target": "21A"
         },
         {
+          "name": "LOUIS Fabien",
+          "club": "1313092 - AIX EN PROVENCE",
+          "category": "1313092 - AIX EN PROVENCE",
+          "session": "Découverte",
+          "target": "24B"
+        },
+        {
           "name": "LUCE Damien",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
@@ -738,13 +731,6 @@
           "category": "1313051 - MARSEILLE",
           "session": "S2 Homme Arc Classique National",
           "target": "13B"
-        },
-        {
-          "name": "PELLETIER Charlotte",
-          "club": "1383124 - LA GARDE",
-          "category": "1383124 - LA GARDE",
-          "session": "S1 Femme Arc Classique National",
-          "target": "12B"
         },
         {
           "name": "PERROT Jocelyne",
@@ -6442,7 +6428,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 88,
+      "entries_count": 90,
       "entries": [
         {
           "name": "AIRAULT Julien",
@@ -6555,6 +6541,13 @@
           "category": "1383100 - PUGET SUR ARGENS",
           "session": "S2 Homme Arc à Poulies",
           "target": "1D"
+        },
+        {
+          "name": "BRAMARDI Michel",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S3 Homme Arc Classique",
+          "target": "10C"
         },
         {
           "name": "BUSSOLON Adrien",
@@ -6849,6 +6842,13 @@
           "category": "1383115 - BRIGNOLES",
           "session": "S2 Homme Arc Classique",
           "target": "11D"
+        },
+        {
+          "name": "KYCIA Cyrielle",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "S1 Femme Arc Classique",
+          "target": "10B"
         },
         {
           "name": "LACOUR Barbara",
