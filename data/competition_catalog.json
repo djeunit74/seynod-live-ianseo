@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-25T05:54:07.496841+00:00",
+  "generated_at_utc": "2026-09-25T11:18:05.455374+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 20,
+  "count": 21,
   "tournaments": [
     {
       "to_id": "29640",
@@ -3022,7 +3022,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30113",
       "ena_url": "https://www.ianseo.net/TourData/2026/30113/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30113/IC.php",
-      "entries_count": 340,
+      "entries_count": 359,
       "entries": [
         {
           "name": "ALLEGRE Michel",
@@ -3078,6 +3078,20 @@
           "club": "1384137 - BONNIEUX",
           "category": "1384137 - BONNIEUX",
           "session": "Arc Nu Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "BAUDIER Caroline",
+          "club": "1130036 - PUJAUT",
+          "category": "1130036 - PUJAUT",
+          "session": "Senior 2 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "BAUDIER Caroline",
+          "club": "1130036 - PUJAUT",
+          "category": "1130036 - PUJAUT",
+          "session": "Senior 2 Femme Arc Nu",
           "target": ""
         },
         {
@@ -3281,6 +3295,27 @@
           "club": "1384131 - VEDENE",
           "category": "1384131 - VEDENE",
           "session": "Arc Nu Senior 1 Homme",
+          "target": ""
+        },
+        {
+          "name": "CARJUZAA Cyril",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Senior 2 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "CARJUZAA Cyril",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Senior 2 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "CARJUZAA Cyril",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Senior 2 Homme Arc Nu",
           "target": ""
         },
         {
@@ -3673,6 +3708,20 @@
           "club": "0101018 - BELLEGARDE SUR VALSERINE",
           "category": "0101018 - BELLEGARDE SUR VALSERINE",
           "session": "Arc Chasse Senior 1 Femme",
+          "target": ""
+        },
+        {
+          "name": "FRANCOIS Eric",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "Senior 2 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "FRANCOIS Hugo",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "U13 Homme Arc Nu",
           "target": ""
         },
         {
@@ -4432,6 +4481,48 @@
           "target": ""
         },
         {
+          "name": "LABOREL Darius",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "U18-U21 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "LABOREL Darius",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "U18-U21 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "LABOREL Darius",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "U18-U21 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "LABOREL Marie Helene",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Senior 2 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "LABOREL Marie Helene",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Senior 2 Femme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "LABOREL Marie Helene",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "Senior 2 Femme Arc Nu",
+          "target": ""
+        },
+        {
           "name": "LEYDIER Guylaine",
           "club": "1384132 - MORNAS",
           "category": "1384132 - MORNAS",
@@ -4478,6 +4569,20 @@
           "club": "1384132 - MORNAS",
           "category": "1384132 - MORNAS",
           "session": "Arc Droit Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "LHERMITE Lionel",
+          "club": "1130036 - PUJAUT",
+          "category": "1130036 - PUJAUT",
+          "session": "Senior 2 Homme Arc Nu",
+          "target": ""
+        },
+        {
+          "name": "LHERMITE Lionel",
+          "club": "1130036 - PUJAUT",
+          "category": "1130036 - PUJAUT",
+          "session": "Senior 2 Homme Arc Nu",
           "target": ""
         },
         {
@@ -4779,6 +4884,34 @@
           "club": "0126066 - PORTES LES VALENCE",
           "category": "0126066 - PORTES LES VALENCE",
           "session": "Arc Chasse Senior 3 Homme",
+          "target": ""
+        },
+        {
+          "name": "PALADAN Christine",
+          "club": "1130068 - ROCHEFORT DU GARD",
+          "category": "1130068 - ROCHEFORT DU GARD",
+          "session": "Senior 2 Femme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "PALADAN Christine",
+          "club": "1130068 - ROCHEFORT DU GARD",
+          "category": "1130068 - ROCHEFORT DU GARD",
+          "session": "Senior 2 Femme Arc Chasse",
+          "target": ""
+        },
+        {
+          "name": "PALADAN Patrick",
+          "club": "1130068 - ROCHEFORT DU GARD",
+          "category": "1130068 - ROCHEFORT DU GARD",
+          "session": "Senior 3 Homme Arc Droit",
+          "target": ""
+        },
+        {
+          "name": "PALADAN Patrick",
+          "club": "1130068 - ROCHEFORT DU GARD",
+          "category": "1130068 - ROCHEFORT DU GARD",
+          "session": "Senior 3 Homme Arc Droit",
           "target": ""
         },
         {
@@ -6952,6 +7085,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29802",
       "ena_url": "https://www.ianseo.net/TourData/2026/29802/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29802/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "30328",
+      "year": "2026",
+      "name": "Concours tir à 18m Tremblay 2026",
+      "organizer": "Les Archers du Vert Galant",
+      "date_text": "21-22 Nov",
+      "end_date": "2026-11-22",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30328",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30328/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30328/IC.php",
       "entries_count": 0,
       "entries": []
     },
