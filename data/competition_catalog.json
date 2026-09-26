@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-26T07:07:35.985169+00:00",
+  "generated_at_utc": "2026-09-26T12:20:39.460276+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 20,
+  "count": 21,
   "tournaments": [
     {
       "to_id": "30172",
@@ -5555,6 +5555,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29801",
       "ena_url": "https://www.ianseo.net/TourData/2026/29801/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29801/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "30353",
+      "year": "2026",
+      "name": "Concours Massy Target 2x18 - 2026",
+      "organizer": "Les Archers de Massy",
+      "date_text": "7-8 Nov",
+      "end_date": "2026-11-08",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30353",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30353/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30353/IC.php",
       "entries_count": 0,
       "entries": []
     },
