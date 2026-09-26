@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-26T12:20:39.460276+00:00",
+  "generated_at_utc": "2026-09-26T16:35:31.051004+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 21,
+  "count": 22,
   "tournaments": [
     {
       "to_id": "30172",
@@ -6424,6 +6424,19 @@
           "target": "10A"
         }
       ]
+    },
+    {
+      "to_id": "30350",
+      "year": "2026",
+      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
+      "organizer": "Les Archers de Castelsarrasin",
+      "date_text": "14-15 Nov",
+      "end_date": "2026-11-15",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "29899",
