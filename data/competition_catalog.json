@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-26T16:35:31.051004+00:00",
+  "generated_at_utc": "2026-09-26T19:32:51.574948+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -5559,19 +5559,6 @@
       "entries": []
     },
     {
-      "to_id": "30353",
-      "year": "2026",
-      "name": "Concours Massy Target 2x18 - 2026",
-      "organizer": "Les Archers de Massy",
-      "date_text": "7-8 Nov",
-      "end_date": "2026-11-08",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30353",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30353/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30353/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
-    {
       "to_id": "30211",
       "year": "2026",
       "name": "LES ARCHERS DU SAM",
@@ -6426,6 +6413,19 @@
       ]
     },
     {
+      "to_id": "30353",
+      "year": "2026",
+      "name": "Concours Massy Target 2x18 - 2026",
+      "organizer": "Les Archers de Massy",
+      "date_text": "7-8 Nov",
+      "end_date": "2026-11-08",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30353",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30353/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30353/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "30350",
       "year": "2026",
       "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
@@ -6448,14 +6448,14 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 90,
+      "entries_count": 94,
       "entries": [
         {
           "name": "AIRAULT Julien",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 2 Homme",
-          "target": "4C"
+          "target": "5C"
         },
         {
           "name": "AIRAULT Julien",
@@ -6476,7 +6476,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S1 Femme Arc Classique",
-          "target": "7D"
+          "target": "11D"
         },
         {
           "name": "ANGEBAUD Damien",
@@ -6497,7 +6497,21 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S3 Femme Arc Classique",
-          "target": "6D"
+          "target": "7D"
+        },
+        {
+          "name": "BABOU Eric",
+          "club": "1383119 - PIERREFEU",
+          "category": "1383119 - PIERREFEU",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "2D"
+        },
+        {
+          "name": "BABOU Eric",
+          "club": "1383119 - PIERREFEU",
+          "category": "1383119 - PIERREFEU",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "4A"
         },
         {
           "name": "BERTHOUD Murielle",
@@ -6574,7 +6588,7 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
-          "target": "4B"
+          "target": "5B"
         },
         {
           "name": "BUSSOLON Adrien",
@@ -6602,7 +6616,7 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "Arc Classique U15 Femme",
-          "target": "5B"
+          "target": "6B"
         },
         {
           "name": "CAUX Jean-Michel",
@@ -6630,7 +6644,7 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "Arc Classique Senior 1 Homme",
-          "target": "7C"
+          "target": "11C"
         },
         {
           "name": "CHEMIN Theo",
@@ -6665,14 +6679,14 @@
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
           "session": "S2 Femme Arc Classique",
-          "target": "7B"
+          "target": "11B"
         },
         {
           "name": "COURDOUAN Olivia",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U18 Femme Arc Classique",
-          "target": "7A"
+          "target": "11A"
         },
         {
           "name": "DECKER GARCIA Lea",
@@ -6808,6 +6822,13 @@
           "target": "7C"
         },
         {
+          "name": "GUENEAU Patrick",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "S2 Homme Arc Classique",
+          "target": "6D"
+        },
+        {
           "name": "HERBIN Julien",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -6826,7 +6847,7 @@
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "Scratch Femme Arc Nu",
-          "target": "6A"
+          "target": "7A"
         },
         {
           "name": "HILLIER Patrice",
@@ -6855,6 +6876,13 @@
           "category": "1313066 - GEMENOS",
           "session": "U15 Homme Arc Classique",
           "target": "5A"
+        },
+        {
+          "name": "JULLIEN Denis",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S3 Homme Arc Classique",
+          "target": "9B"
         },
         {
           "name": "KAZAZIAN Jean Jacques",
@@ -6938,7 +6966,7 @@
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "S2 Homme Arc Classique",
-          "target": "6B"
+          "target": "7B"
         },
         {
           "name": "LUCE LAURANS Leo",
@@ -6952,14 +6980,14 @@
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "U15 Homme Arc Classique",
-          "target": "5A"
+          "target": "6A"
         },
         {
           "name": "MARQUEZ Marie-Josee",
           "club": "1383127 - FREJUS",
           "category": "1383127 - FREJUS",
           "session": "S3 Femme Arc Classique",
-          "target": "6C"
+          "target": "7C"
         },
         {
           "name": "MICHEL Stephane",
@@ -7001,7 +7029,7 @@
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
           "session": "S1 Homme Arc Classique",
-          "target": "4A"
+          "target": "5A"
         },
         {
           "name": "PLANCON Christophe",
