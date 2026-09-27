@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-27T17:09:57.396876+00:00",
+  "generated_at_utc": "2026-09-27T20:18:26.501784+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 147,
+      "entries_count": 149,
       "entries": [
         {
           "name": "AMBROSINO Loane",
@@ -839,6 +839,13 @@
           "target": "1A"
         },
         {
+          "name": "MOLE Dominique",
+          "club": "1383125 - LA VALETTE DU VAR",
+          "category": "1383125 - LA VALETTE DU VAR",
+          "session": "S3 Homme Arc Classique",
+          "target": "12C"
+        },
+        {
           "name": "PELLAT Sylvianne",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -1047,6 +1054,13 @@
           "category": "1383119 - PIERREFEU",
           "session": "Scratch Homme Arc Nu",
           "target": "10A"
+        },
+        {
+          "name": "ZANETTE Romain",
+          "club": "1383125 - LA VALETTE DU VAR",
+          "category": "1383125 - LA VALETTE DU VAR",
+          "session": "S1 Homme Arc Classique",
+          "target": "10B"
         }
       ]
     },
