@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-27T06:18:36.367106+00:00",
+  "generated_at_utc": "2026-09-27T12:19:03.907514+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -5167,19 +5167,6 @@
       "entries": []
     },
     {
-      "to_id": "30350",
-      "year": "2026",
-      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
-      "organizer": "Les Archers de Castelsarrasin",
-      "date_text": "14-15 Nov",
-      "end_date": "2026-11-15",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
-    {
       "to_id": "29899",
       "year": "2026",
       "name": "Concours des pistoles 2026",
@@ -5850,6 +5837,19 @@
           "target": "6C"
         }
       ]
+    },
+    {
+      "to_id": "30350",
+      "year": "2026",
+      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
+      "organizer": "Les Archers de Castelsarrasin",
+      "date_text": "14-15 Nov",
+      "end_date": "2026-11-15",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "29687",
