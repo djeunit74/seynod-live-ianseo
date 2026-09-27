@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-27T12:19:03.907514+00:00",
+  "generated_at_utc": "2026-09-27T17:09:57.396876+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 140,
+      "entries_count": 147,
       "entries": [
         {
           "name": "AMBROSINO Loane",
@@ -28,8 +28,8 @@
         },
         {
           "name": "AMBROSINOTUYTEN Angelina",
-          "club": "1383159 - VIDAUBAN",
-          "category": "1383159 - VIDAUBAN",
+          "club": "1383159 - LE MUY",
+          "category": "1383159 - LE MUY",
           "session": "U21 Femme Arc à Poulies",
           "target": "6C"
         },
@@ -74,6 +74,20 @@
           "category": "1383119 - PIERREFEU",
           "session": "Arc à Poulies Senior 2 Homme",
           "target": "5A"
+        },
+        {
+          "name": "BAILLION Marie-Noelle",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "Scratch Femme Arc Nu",
+          "target": "11D"
+        },
+        {
+          "name": "BAILLION Yvan",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "Scratch Homme Arc Nu",
+          "target": "11B"
         },
         {
           "name": "BAPIN Rubben",
@@ -244,6 +258,13 @@
           "target": "8A"
         },
         {
+          "name": "CILLARIO Jacques",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "S3 Homme Arc à Poulies",
+          "target": "7C"
+        },
+        {
           "name": "COLOMBEL Fabrice",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -401,15 +422,15 @@
           "name": "DURAND Gilbert",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
-          "session": "S3 Homme Arc Classique",
+          "session": "Arc Classique Senior 3 Homme",
           "target": "11B"
         },
         {
           "name": "DURAND Gilbert",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
-          "session": "Arc Classique Senior 3 Homme",
-          "target": "11B"
+          "session": "S3 Homme Arc Classique",
+          "target": "11C"
         },
         {
           "name": "DUVAL Thierry",
@@ -594,6 +615,13 @@
           "target": "8C"
         },
         {
+          "name": "HOVNANIAN Hailey",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "U18 Homme Arc Classique",
+          "target": "9C"
+        },
+        {
           "name": "HUY Carole",
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
@@ -648,6 +676,13 @@
           "category": "1383114 - OLLIOULES",
           "session": "Scratch Femme Arc Nu",
           "target": "10D"
+        },
+        {
+          "name": "LAFITTE Christian",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
+          "session": "S3 Homme Arc Classique",
+          "target": "4D"
         },
         {
           "name": "LAGARDE Dominique",
@@ -942,6 +977,20 @@
           "category": "1383124 - LA GARDE",
           "session": "S1 Homme Arc Classique",
           "target": "8B"
+        },
+        {
+          "name": "SCIOZARD Frederic",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "7C"
+        },
+        {
+          "name": "SCIOZARD Marley",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "U11 Homme Arc Classique",
+          "target": "1A"
         },
         {
           "name": "SENECHAL POILLOT Milia",
@@ -4309,14 +4358,21 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30211",
       "ena_url": "https://www.ianseo.net/TourData/2026/30211/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30211/IC.php",
-      "entries_count": 120,
+      "entries_count": 160,
       "entries": [
+        {
+          "name": "ARDOUIN Ghislain",
+          "club": "1033097 - LE BLASON DES PE2M",
+          "category": "1033097 - LE BLASON DES PE2M",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "5B"
+        },
         {
           "name": "AUBERT Quentin",
           "club": "1033111 - MERIGNAC",
           "category": "1033111 - MERIGNAC",
           "session": "Arc Classique Senior 1 Homme",
-          "target": "6D"
+          "target": "2D"
         },
         {
           "name": "BAZAILLACQ Sophie",
@@ -4330,7 +4386,7 @@
           "club": "1033111 - MERIGNAC",
           "category": "1033111 - MERIGNAC",
           "session": "Arc Classique Senior 2 Femme",
-          "target": "4A"
+          "target": "4B"
         },
         {
           "name": "BEHUET Jerome",
@@ -4354,18 +4410,32 @@
           "target": "9B"
         },
         {
+          "name": "BETAT Jean Marcel",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": "8A"
+        },
+        {
+          "name": "BETAT Michel",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "7D"
+        },
+        {
           "name": "BLERY Arnaud",
           "club": "1033100 - AMBARES",
           "category": "1033100 - AMBARES",
-          "session": "Arc Nu Senior 2 Homme",
-          "target": "2A"
+          "session": "Scratch Homme Arc Nu",
+          "target": "1B"
         },
         {
           "name": "BLERY Arnaud",
           "club": "1033100 - AMBARES",
           "category": "1033100 - AMBARES",
           "session": "Arc Nu Senior 2 Homme",
-          "target": "5A"
+          "target": "2C"
         },
         {
           "name": "BLUTEAU Annalia",
@@ -4386,7 +4456,35 @@
           "club": "1033100 - AMBARES",
           "category": "1033100 - AMBARES",
           "session": "Arc Classique Senior 2 Homme",
-          "target": "2C"
+          "target": "1D"
+        },
+        {
+          "name": "BOSREDON Mathilde",
+          "club": "0927046 - VERNON CIE",
+          "category": "0927046 - VERNON CIE",
+          "session": "Arc à Poulies Senior 1 Femme",
+          "target": "10D"
+        },
+        {
+          "name": "BOSREDON Mathilde",
+          "club": "0927046 - VERNON CIE",
+          "category": "0927046 - VERNON CIE",
+          "session": "Arc à Poulies Senior 1 Femme",
+          "target": "12B"
+        },
+        {
+          "name": "BRUNEAU Christine",
+          "club": "1033097 - LE BLASON DES PE2M",
+          "category": "1033097 - LE BLASON DES PE2M",
+          "session": "Arc Classique Senior 3 Femme",
+          "target": "11C"
+        },
+        {
+          "name": "BUILLES Julie",
+          "club": "1033100 - AMBARES",
+          "category": "1033100 - AMBARES",
+          "session": "Arc à Poulies Senior 2 Femme",
+          "target": "11B"
         },
         {
           "name": "BURRUS Raphael",
@@ -4501,11 +4599,18 @@
           "target": "4A"
         },
         {
+          "name": "CLOUET Wilfried",
+          "club": "0651041 - GUEUX",
+          "category": "0651041 - GUEUX",
+          "session": "Arc Nu Senior 3 Homme",
+          "target": "2D"
+        },
+        {
           "name": "CORDINA Sophie",
           "club": "1033094 - ST SULPICE ET CAMEYRAC",
           "category": "1033094 - ST SULPICE ET CAMEYRAC",
           "session": "Arc Classique Senior 2 Femme",
-          "target": "3B"
+          "target": "2B"
         },
         {
           "name": "CORNET Sandro",
@@ -4513,6 +4618,13 @@
           "category": "1033091 - CESTAS",
           "session": "Arc Classique Senior 2 Homme",
           "target": "3D"
+        },
+        {
+          "name": "COUTENOT Manon",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Classique U18 Femme",
+          "target": "4B"
         },
         {
           "name": "CRESPEAU Carla",
@@ -4533,7 +4645,7 @@
           "club": "1033091 - CESTAS",
           "category": "1033091 - CESTAS",
           "session": "Arc Classique Senior 2 Femme",
-          "target": "2B"
+          "target": "3B"
         },
         {
           "name": "DAVIAS Florine",
@@ -4541,6 +4653,20 @@
           "category": "1033100 - AMBARES",
           "session": "Arc Classique U15 Femme",
           "target": "1A"
+        },
+        {
+          "name": "DE BARBUAT Aymar",
+          "club": "1033093 - BORDEAUX",
+          "category": "1033093 - BORDEAUX",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "12C"
+        },
+        {
+          "name": "DEGREMONT Jonathan",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Classique U18 Homme",
+          "target": "8D"
         },
         {
           "name": "DELCROIX Maverick",
@@ -4578,6 +4704,27 @@
           "target": "3A"
         },
         {
+          "name": "DEVAUX Mathieu",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique U18 Homme",
+          "target": "1B"
+        },
+        {
+          "name": "DEVAUX Pierre-Emmanuel",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "9C"
+        },
+        {
+          "name": "DEVILLE Marie",
+          "club": "1033093 - BORDEAUX",
+          "category": "1033093 - BORDEAUX",
+          "session": "Arc Classique Senior 1 Femme",
+          "target": "6D"
+        },
+        {
           "name": "DI BACCO Giulia",
           "club": "1033093 - BORDEAUX",
           "category": "1033093 - BORDEAUX",
@@ -4585,11 +4732,25 @@
           "target": "3A"
         },
         {
-          "name": "DURAN Lionel",
-          "club": "1033111 - MERIGNAC",
-          "category": "1033111 - MERIGNAC",
-          "session": "Arc Nu Senior 3 Homme",
-          "target": "2D"
+          "name": "DUBEARN Clement",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "7C"
+        },
+        {
+          "name": "DUBEARN Clement",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "8B"
+        },
+        {
+          "name": "DURIEUX Jean",
+          "club": "1033091 - CESTAS",
+          "category": "1033091 - CESTAS",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "1D"
         },
         {
           "name": "DUROUX Dominique",
@@ -4604,6 +4765,13 @@
           "category": "1033093 - BORDEAUX",
           "session": "Arc à Poulies Senior 1 Homme",
           "target": "10B"
+        },
+        {
+          "name": "ELIE Severine",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique Senior 2 Femme",
+          "target": "2C"
         },
         {
           "name": "FABER Gabrielle",
@@ -4659,7 +4827,14 @@
           "club": "1033100 - AMBARES",
           "category": "1033100 - AMBARES",
           "session": "Arc Classique U13 Homme",
-          "target": "9C"
+          "target": "2A"
+        },
+        {
+          "name": "GABRIELLY Sandrine",
+          "club": "1033097 - LE BLASON DES PE2M",
+          "category": "1033097 - LE BLASON DES PE2M",
+          "session": "Arc Classique Senior 2 Femme",
+          "target": "9A"
         },
         {
           "name": "GAIGNARD Tifaine",
@@ -4681,6 +4856,13 @@
           "category": "1033100 - AMBARES",
           "session": "Arc Classique Senior 2 Homme",
           "target": "2A"
+        },
+        {
+          "name": "GALLET Pascal",
+          "club": "1033091 - CESTAS",
+          "category": "1033091 - CESTAS",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "9D"
         },
         {
           "name": "GALLOIS Dominique",
@@ -4718,11 +4900,25 @@
           "target": "4B"
         },
         {
+          "name": "GUICHARD Maxime",
+          "club": "1033096 - SAINT JEAN D'ILLAC",
+          "category": "1033096 - SAINT JEAN D'ILLAC",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "11A"
+        },
+        {
+          "name": "HUET Bastien",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "5D"
+        },
+        {
           "name": "ITOUA Sohel",
           "club": "1033100 - AMBARES",
           "category": "1033100 - AMBARES",
           "session": "Arc Classique U15 Homme",
-          "target": "1D"
+          "target": "2C"
         },
         {
           "name": "JEAN Karine",
@@ -4757,7 +4953,14 @@
           "club": "1033102 - ANDERNOS LES BAINS",
           "category": "1033102 - ANDERNOS LES BAINS",
           "session": "Arc Classique Senior 1 Femme",
-          "target": "10B"
+          "target": "10C"
+        },
+        {
+          "name": "LABROUCHE Laurent",
+          "club": "1033109 - ARSAC",
+          "category": "1033109 - ARSAC",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "8A"
         },
         {
           "name": "LACOSTE Laurine",
@@ -4771,7 +4974,7 @@
           "club": "1033091 - CESTAS",
           "category": "1033091 - CESTAS",
           "session": "Arc Classique Senior 3 Homme",
-          "target": "4D"
+          "target": "4A"
         },
         {
           "name": "LAGACHE Julien",
@@ -4788,11 +4991,11 @@
           "target": "7A"
         },
         {
-          "name": "LAMENIE Celine",
-          "club": "1033093 - BORDEAUX",
-          "category": "1033093 - BORDEAUX",
-          "session": "Arc Classique Senior 2 Femme",
-          "target": "8A"
+          "name": "LANGELUS Mathieu",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "8B"
         },
         {
           "name": "LANGLET Louise",
@@ -4806,7 +5009,7 @@
           "club": "1033093 - BORDEAUX",
           "category": "1033093 - BORDEAUX",
           "session": "Arc à Poulies Senior 2 Homme",
-          "target": "10C"
+          "target": "10B"
         },
         {
           "name": "LARGEAIS Leslie",
@@ -4821,6 +5024,13 @@
           "category": "1033080 - BEGLES",
           "session": "Arc Classique Senior 2 Homme",
           "target": "10B"
+        },
+        {
+          "name": "LEAL Lucas",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Nu Senior 1 Homme",
+          "target": "5C"
         },
         {
           "name": "LEBON Mike",
@@ -4858,6 +5068,20 @@
           "target": "6A"
         },
         {
+          "name": "LIMOUSY Lilian",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "1A"
+        },
+        {
+          "name": "LOMBARDO Maxime",
+          "club": "1033096 - SAINT JEAN D'ILLAC",
+          "category": "1033096 - SAINT JEAN D'ILLAC",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "6D"
+        },
+        {
           "name": "LOPEZ Lowil",
           "club": "1033080 - BEGLES",
           "category": "1033080 - BEGLES",
@@ -4893,6 +5117,13 @@
           "target": "2A"
         },
         {
+          "name": "MARCHANDON David",
+          "club": "1033109 - ARSAC",
+          "category": "1033109 - ARSAC",
+          "session": "Arc Nu Senior 2 Homme",
+          "target": "4C"
+        },
+        {
           "name": "MEDJDOUB Juba",
           "club": "1033111 - MERIGNAC",
           "category": "1033111 - MERIGNAC",
@@ -4914,6 +5145,20 @@
           "target": "7C"
         },
         {
+          "name": "MICHELET David",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "6C"
+        },
+        {
+          "name": "MICHELET David",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "7A"
+        },
+        {
           "name": "MOGA Lauryne",
           "club": "1033100 - AMBARES",
           "category": "1033100 - AMBARES",
@@ -4925,14 +5170,14 @@
           "club": "1033111 - MERIGNAC",
           "category": "1033111 - MERIGNAC",
           "session": "Arc à Poulies Senior 2 Homme",
-          "target": "10D"
+          "target": "12D"
         },
         {
           "name": "NIETO David",
           "club": "1033111 - MERIGNAC",
           "category": "1033111 - MERIGNAC",
-          "session": "Arc à Poulies Senior 2 Homme",
-          "target": "12D"
+          "session": "S2 Homme Arc à Poulies",
+          "target": "9A"
         },
         {
           "name": "NOULET Cecile",
@@ -4961,6 +5206,34 @@
           "category": "1033100 - AMBARES",
           "session": "Arc Classique Senior 1 Homme",
           "target": "12D"
+        },
+        {
+          "name": "PARET Jean-Luc",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "5A"
+        },
+        {
+          "name": "PASQUET Valerie",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc à Poulies Senior 3 Femme",
+          "target": "9C"
+        },
+        {
+          "name": "PAULIAT Mederic",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "Arc Classique Senior 3 Homme",
+          "target": "6B"
+        },
+        {
+          "name": "PAULIEN Martin",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Classique U18 Homme",
+          "target": "1C"
         },
         {
           "name": "PAUWELS David",
@@ -5019,6 +5292,20 @@
           "target": "11C"
         },
         {
+          "name": "PLOUZEN Albane",
+          "club": "1033078 - LE BOUSCAT",
+          "category": "1033078 - LE BOUSCAT",
+          "session": "Arc Classique Senior 1 Femme",
+          "target": "8C"
+        },
+        {
+          "name": "POITEVIN COPPIETERS DE TERGOND June",
+          "club": "1033108 - BASSIN D'ARCACHON",
+          "category": "1033108 - BASSIN D'ARCACHON",
+          "session": "Arc Classique U15 Femme",
+          "target": "1B"
+        },
+        {
           "name": "POUPARD-HASTINGS Michel",
           "club": "1033111 - MERIGNAC",
           "category": "1033111 - MERIGNAC",
@@ -5047,11 +5334,39 @@
           "target": "1C"
         },
         {
+          "name": "ROLLAND Elena",
+          "club": "1033100 - AMBARES",
+          "category": "1033100 - AMBARES",
+          "session": "Arc Classique U18 Femme",
+          "target": "4D"
+        },
+        {
           "name": "ROQUINCOURT Sophie",
           "club": "1033096 - SAINT JEAN D'ILLAC",
           "category": "1033096 - SAINT JEAN D'ILLAC",
           "session": "Arc Classique Senior 2 Femme",
           "target": "7B"
+        },
+        {
+          "name": "ROUSSEL Thomas",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "9B"
+        },
+        {
+          "name": "ROUSSEL-FAVENNEC Katy",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Classique Senior 2 Femme",
+          "target": "3B"
+        },
+        {
+          "name": "ROUSSEL-FAVENNEC Louis",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Classique U21 Homme",
+          "target": "4C"
         },
         {
           "name": "ROY Amelie",
@@ -5065,14 +5380,14 @@
           "club": "1033093 - BORDEAUX",
           "category": "1033093 - BORDEAUX",
           "session": "Arc Classique Senior 1 Homme",
-          "target": "4B"
+          "target": "4D"
         },
         {
           "name": "SEBELOUE Noemie",
           "club": "1033100 - AMBARES",
           "category": "1033100 - AMBARES",
           "session": "Arc Classique U15 Femme",
-          "target": "3D"
+          "target": "3B"
         },
         {
           "name": "SERIEYSSOL Benoit",
@@ -5093,7 +5408,7 @@
           "club": "1033111 - MERIGNAC",
           "category": "1033111 - MERIGNAC",
           "session": "Arc Classique Senior 2 Femme",
-          "target": "5B"
+          "target": "2D"
         },
         {
           "name": "SOUQUET Cyrille",
@@ -5101,6 +5416,13 @@
           "category": "1033078 - LE BOUSCAT",
           "session": "Arc Classique Senior 3 Homme",
           "target": "4A"
+        },
+        {
+          "name": "TAILLACOT Ilona",
+          "club": "1033111 - MERIGNAC",
+          "category": "1033111 - MERIGNAC",
+          "session": "Arc Classique Senior 1 Femme",
+          "target": "7D"
         },
         {
           "name": "THIBAULT Valentin",
@@ -5122,6 +5444,13 @@
           "category": "1033111 - MERIGNAC",
           "session": "Arc à Poulies Senior 2 Homme",
           "target": "11D"
+        },
+        {
+          "name": "THOREUX Sebastien",
+          "club": "1033093 - BORDEAUX",
+          "category": "1033093 - BORDEAUX",
+          "session": "Arc Classique Senior 2 Homme",
+          "target": "6B"
         },
         {
           "name": "TREARD Angelique",
@@ -5163,6 +5492,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30353",
       "ena_url": "https://www.ianseo.net/TourData/2026/30353/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30353/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "30350",
+      "year": "2026",
+      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
+      "organizer": "Les Archers de Castelsarrasin",
+      "date_text": "14-15 Nov",
+      "end_date": "2026-11-15",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
       "entries_count": 0,
       "entries": []
     },
@@ -5837,19 +6179,6 @@
           "target": "6C"
         }
       ]
-    },
-    {
-      "to_id": "30350",
-      "year": "2026",
-      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
-      "organizer": "Les Archers de Castelsarrasin",
-      "date_text": "14-15 Nov",
-      "end_date": "2026-11-15",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
-      "entries_count": 0,
-      "entries": []
     },
     {
       "to_id": "29687",
