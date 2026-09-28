@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-09-28T16:55:54.383096+00:00",
+  "generated_at_utc": "2026-09-28T22:25:28.978325+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 19,
+  "count": 20,
   "tournaments": [
     {
       "to_id": "29391",
@@ -4370,6 +4370,19 @@
       "entries": []
     },
     {
+      "to_id": "30385",
+      "year": "2026",
+      "name": "Compétition 2026 - Tir à 18m - Villefranche d'Allier",
+      "organizer": "Les Flèches de Villefranche",
+      "date_text": "7-8 Nov",
+      "end_date": "2026-11-08",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30385",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30385/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30385/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "30211",
       "year": "2026",
       "name": "LES ARCHERS DU SAM",
@@ -5526,7 +5539,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 98,
+      "entries_count": 102,
       "entries": [
         {
           "name": "AIRAULT Julien",
@@ -5865,6 +5878,20 @@
           "target": "1A"
         },
         {
+          "name": "FRIAS Damien",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "Arc Classique Senior 1 Homme",
+          "target": "8B"
+        },
+        {
+          "name": "FRIAS Damien",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S1 Homme Arc Classique",
+          "target": "9B"
+        },
+        {
           "name": "GALEAZZI Jean-Charles",
           "club": "1383114 - OLLIOULES",
           "category": "1383114 - OLLIOULES",
@@ -6187,10 +6214,24 @@
           "target": "10D"
         },
         {
+          "name": "SCIOZARD Frederic",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "2D"
+        },
+        {
+          "name": "SCIOZARD Marley",
+          "club": "1313066 - GEMENOS",
+          "category": "1313066 - GEMENOS",
+          "session": "U11 Homme Arc Classique",
+          "target": "15A"
+        },
+        {
           "name": "TREILLE Odile",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
-          "session": "Arc Classique Senior 3 Femme",
+          "session": "S3 Femme Arc Classique",
           "target": "8B"
         },
         {
