@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-28T08:18:02.067145+00:00",
+  "generated_at_utc": "2026-09-28T16:55:54.383096+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -5517,19 +5517,6 @@
       "entries": []
     },
     {
-      "to_id": "30350",
-      "year": "2026",
-      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
-      "organizer": "Les Archers de Castelsarrasin",
-      "date_text": "14-15 Nov",
-      "end_date": "2026-11-15",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
-    {
       "to_id": "29899",
       "year": "2026",
       "name": "Concours des pistoles 2026",
@@ -5539,7 +5526,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 94,
+      "entries_count": 98,
       "entries": [
         {
           "name": "AIRAULT Julien",
@@ -5652,6 +5639,13 @@
           "category": "1383115 - BRIGNOLES",
           "session": "Arc à Poulies Senior 3 Homme",
           "target": "1A"
+        },
+        {
+          "name": "BONNET Charles",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "U13 Homme Arc Classique",
+          "target": "6C"
         },
         {
           "name": "BORAKOVSKI Bruno",
@@ -5805,7 +5799,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Femme Arc à Poulies",
-          "target": "1D"
+          "target": "2A"
         },
         {
           "name": "DOSDA Damien",
@@ -5931,14 +5925,14 @@
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "Scratch Homme Arc Nu",
-          "target": "9C"
+          "target": "7A"
         },
         {
           "name": "HIDEUX Sylvie",
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "Scratch Femme Arc Nu",
-          "target": "7A"
+          "target": "9C"
         },
         {
           "name": "HILLIER Patrice",
@@ -6022,7 +6016,21 @@
           "club": "1383104 - LA VERDIERE",
           "category": "1383104 - LA VERDIERE",
           "session": "S2 Femme Arc à Poulies",
-          "target": "1D"
+          "target": "2D"
+        },
+        {
+          "name": "LEMAIRE Sebastien",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
+          "session": "Arc à Poulies Senior 2 Homme",
+          "target": "2A"
+        },
+        {
+          "name": "LEMAIRE Sebastien",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "2C"
         },
         {
           "name": "LEPERS Pierre",
@@ -6093,6 +6101,20 @@
           "category": "1383124 - LA GARDE",
           "session": "Scratch Homme Arc Nu",
           "target": "12D"
+        },
+        {
+          "name": "ORTEGA Laetitia",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "2B"
+        },
+        {
+          "name": "ORTEGA Laetitia",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
+          "session": "Arc à Poulies Senior 2 Femme",
+          "target": "2B"
         },
         {
           "name": "PEJO Benoit",
@@ -6168,13 +6190,6 @@
           "name": "TREILLE Odile",
           "club": "1383124 - LA GARDE",
           "category": "1383124 - LA GARDE",
-          "session": "S3 Femme Arc Classique",
-          "target": "10B"
-        },
-        {
-          "name": "TREILLE Odile",
-          "club": "1383124 - LA GARDE",
-          "category": "1383124 - LA GARDE",
           "session": "Arc Classique Senior 3 Femme",
           "target": "8B"
         },
@@ -6200,6 +6215,19 @@
           "target": "6C"
         }
       ]
+    },
+    {
+      "to_id": "30350",
+      "year": "2026",
+      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
+      "organizer": "Les Archers de Castelsarrasin",
+      "date_text": "14-15 Nov",
+      "end_date": "2026-11-15",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "29687",
