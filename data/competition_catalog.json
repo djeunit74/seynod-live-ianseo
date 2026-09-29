@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T15:24:31.167467+00:00",
+  "generated_at_utc": "2026-09-29T20:08:45.622275+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 153,
+      "entries_count": 155,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -552,6 +552,13 @@
           "target": "4B"
         },
         {
+          "name": "GELINET Vincent",
+          "club": "1383118 - LE LAVANDOU",
+          "category": "1383118 - LE LAVANDOU",
+          "session": "S2 Homme Arc Classique",
+          "target": "11A"
+        },
+        {
           "name": "GOSSELIN Franck",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -956,6 +963,13 @@
           "category": "1383115 - BRIGNOLES",
           "session": "S2 Homme Arc Classique",
           "target": "1A"
+        },
+        {
+          "name": "REGIS Alain",
+          "club": "1383118 - LE LAVANDOU",
+          "category": "1383118 - LE LAVANDOU",
+          "session": "Scratch Homme Arc Nu",
+          "target": "9D"
         },
         {
           "name": "RISSO Patrick",
