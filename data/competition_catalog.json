@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T02:11:29.948144+00:00",
+  "generated_at_utc": "2026-09-29T08:53:21.070464+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,8 +17,15 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 150,
+      "entries_count": 153,
       "entries": [
+        {
+          "name": "ALEXANDER Claire-Helene",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "S2 Femme Arc Classique",
+          "target": "12C"
+        },
         {
           "name": "AMBROSINO Loane",
           "club": "1383108 - TRANS EN PROVENCE",
@@ -135,8 +142,8 @@
           "name": "BONNET Charles",
           "club": "1383111 - TOULON",
           "category": "1383111 - TOULON",
-          "session": "Arc Classique U13 Homme",
-          "target": "1C"
+          "session": "U13 Homme Arc Classique",
+          "target": "3B"
         },
         {
           "name": "BOUTIN Laurent",
@@ -734,6 +741,13 @@
           "target": "6D"
         },
         {
+          "name": "LEFRANC David",
+          "club": "1383110 - CARCES",
+          "category": "1383110 - CARCES",
+          "session": "Scratch Homme Arc Nu",
+          "target": "10A"
+        },
+        {
           "name": "LEPERS Pierre",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -956,6 +970,13 @@
           "category": "1383104 - LA VERDIERE",
           "session": "S3 Homme Arc Classique",
           "target": "12C"
+        },
+        {
+          "name": "ROCHER Julien",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "S2 Homme Arc Classique",
+          "target": "14A"
         },
         {
           "name": "ROUSSEAU DUMARCET Remi",
@@ -4383,6 +4404,19 @@
       "entries": []
     },
     {
+      "to_id": "30353",
+      "year": "2026",
+      "name": "Concours Massy Target 2x18 - 2026",
+      "organizer": "Les Archers de Massy",
+      "date_text": "7-8 Nov",
+      "end_date": "2026-11-08",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30353",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30353/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30353/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "30211",
       "year": "2026",
       "name": "LES ARCHERS DU SAM",
@@ -5517,15 +5551,15 @@
       ]
     },
     {
-      "to_id": "30353",
+      "to_id": "30350",
       "year": "2026",
-      "name": "Concours Massy Target 2x18 - 2026",
-      "organizer": "Les Archers de Massy",
-      "date_text": "7-8 Nov",
-      "end_date": "2026-11-08",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30353",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30353/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30353/IC.php",
+      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
+      "organizer": "Les Archers de Castelsarrasin",
+      "date_text": "14-15 Nov",
+      "end_date": "2026-11-15",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
       "entries_count": 0,
       "entries": []
     },
@@ -6256,19 +6290,6 @@
           "target": "6C"
         }
       ]
-    },
-    {
-      "to_id": "30350",
-      "year": "2026",
-      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
-      "organizer": "Les Archers de Castelsarrasin",
-      "date_text": "14-15 Nov",
-      "end_date": "2026-11-15",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
-      "entries_count": 0,
-      "entries": []
     },
     {
       "to_id": "29687",
