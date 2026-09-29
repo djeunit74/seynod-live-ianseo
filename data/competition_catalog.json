@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T08:53:21.070464+00:00",
+  "generated_at_utc": "2026-09-29T15:24:31.167467+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -24,7 +24,7 @@
           "club": "1383109 - LORGUES",
           "category": "1383109 - LORGUES",
           "session": "S2 Femme Arc Classique",
-          "target": "12C"
+          "target": "2A"
         },
         {
           "name": "AMBROSINO Loane",
@@ -416,7 +416,7 @@
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "S2 Homme Arc Classique",
-          "target": "2A"
+          "target": "2D"
         },
         {
           "name": "DUBOURG Philippe",
@@ -976,7 +976,7 @@
           "club": "1383109 - LORGUES",
           "category": "1383109 - LORGUES",
           "session": "S2 Homme Arc Classique",
-          "target": "14A"
+          "target": "2C"
         },
         {
           "name": "ROUSSEAU DUMARCET Remi",
@@ -4391,32 +4391,6 @@
       "entries": []
     },
     {
-      "to_id": "30385",
-      "year": "2026",
-      "name": "Compétition 2026 - Tir à 18m - Villefranche d'Allier",
-      "organizer": "Les Flèches de Villefranche",
-      "date_text": "7-8 Nov",
-      "end_date": "2026-11-08",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30385",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30385/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30385/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
-    {
-      "to_id": "30353",
-      "year": "2026",
-      "name": "Concours Massy Target 2x18 - 2026",
-      "organizer": "Les Archers de Massy",
-      "date_text": "7-8 Nov",
-      "end_date": "2026-11-08",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30353",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30353/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30353/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
-    {
       "to_id": "30211",
       "year": "2026",
       "name": "LES ARCHERS DU SAM",
@@ -5551,15 +5525,28 @@
       ]
     },
     {
-      "to_id": "30350",
+      "to_id": "30353",
       "year": "2026",
-      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
-      "organizer": "Les Archers de Castelsarrasin",
-      "date_text": "14-15 Nov",
-      "end_date": "2026-11-15",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
+      "name": "Concours Massy Target 2x18 - 2026",
+      "organizer": "Les Archers de Massy",
+      "date_text": "7-8 Nov",
+      "end_date": "2026-11-08",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30353",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30353/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30353/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "30385",
+      "year": "2026",
+      "name": "Compétition 2026 - Tir à 18m - Villefranche d'Allier",
+      "organizer": "Les Flèches de Villefranche",
+      "date_text": "7-8 Nov",
+      "end_date": "2026-11-08",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30385",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30385/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30385/IC.php",
       "entries_count": 0,
       "entries": []
     },
@@ -6290,6 +6277,19 @@
           "target": "6C"
         }
       ]
+    },
+    {
+      "to_id": "30350",
+      "year": "2026",
+      "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
+      "organizer": "Les Archers de Castelsarrasin",
+      "date_text": "14-15 Nov",
+      "end_date": "2026-11-15",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30350",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30350/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30350/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "29687",
