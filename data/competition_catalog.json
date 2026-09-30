@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-29T23:53:46.575434+00:00",
+  "generated_at_utc": "2026-09-30T04:16:59.958987+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -5574,7 +5574,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 102,
+      "entries_count": 103,
       "entries": [
         {
           "name": "AIRAULT Julien",
@@ -5836,6 +5836,13 @@
           "target": "9C"
         },
         {
+          "name": "DEPUYDT Sylvain",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "S2 Homme Arc à Poulies",
+          "target": "2A"
+        },
+        {
           "name": "DORANGE Corinne",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -5959,7 +5966,7 @@
           "club": "1383100 - PUGET SUR ARGENS",
           "category": "1383100 - PUGET SUR ARGENS",
           "session": "S3 Homme Arc à Poulies",
-          "target": "3B"
+          "target": "2B"
         },
         {
           "name": "GRASSER Clara",
