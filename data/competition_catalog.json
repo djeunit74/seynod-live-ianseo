@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-30T10:39:33.005340+00:00",
+  "generated_at_utc": "2026-09-30T16:41:18.720709+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 155,
+      "entries_count": 157,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -153,6 +153,13 @@
           "target": "5C"
         },
         {
+          "name": "BRUNA Logan",
+          "club": "1383124 - LA GARDE",
+          "category": "1383124 - LA GARDE",
+          "session": "U15 Homme Arc Classique",
+          "target": "14B"
+        },
+        {
           "name": "BUEST Olivier",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -172,6 +179,13 @@
           "category": "1383108 - TRANS EN PROVENCE",
           "session": "U15 Femme Arc Classique",
           "target": "3C"
+        },
+        {
+          "name": "CADOU Elsa",
+          "club": "1383103 - COGOLIN",
+          "category": "1383103 - COGOLIN",
+          "session": "S1 Femme Arc Classique",
+          "target": "12B"
         },
         {
           "name": "CANTOURNET Melyne",
