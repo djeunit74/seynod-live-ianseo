@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-01T00:42:08.446402+00:00",
+  "generated_at_utc": "2026-10-01T06:54:32.817449+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -6050,7 +6050,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 103,
+      "entries_count": 106,
       "entries": [
         {
           "name": "AIRAULT Julien",
@@ -6267,7 +6267,7 @@
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
           "session": "S2 Homme Arc Classique",
-          "target": "7A"
+          "target": "13A"
         },
         {
           "name": "COLOMBEL Fabrice",
@@ -6317,6 +6317,13 @@
           "category": "1383106 - SANARY",
           "session": "S2 Homme Arc à Poulies",
           "target": "2A"
+        },
+        {
+          "name": "DIEUDONNE Nathalie",
+          "club": "1383106 - SANARY",
+          "category": "1383106 - SANARY",
+          "session": "S2 Femme Arc à Poulies",
+          "target": "4C"
         },
         {
           "name": "DORANGE Corinne",
@@ -6564,6 +6571,13 @@
           "target": "2D"
         },
         {
+          "name": "LEFRANC David",
+          "club": "1383110 - CARCES",
+          "category": "1383110 - CARCES",
+          "session": "Scratch Homme Arc Nu",
+          "target": "8C"
+        },
+        {
           "name": "LEMAIRE Sebastien",
           "club": "1383111 - TOULON",
           "category": "1383111 - TOULON",
@@ -6632,6 +6646,13 @@
           "category": "1383127 - FREJUS",
           "session": "S3 Femme Arc Classique",
           "target": "7C"
+        },
+        {
+          "name": "MASI Laurent",
+          "club": "1383108 - TRANS EN PROVENCE",
+          "category": "1383108 - TRANS EN PROVENCE",
+          "session": "Critérium Homme Arc Classique",
+          "target": "15A"
         },
         {
           "name": "MICHEL Stephane",
