@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-01T06:54:32.817449+00:00",
+  "generated_at_utc": "2026-10-01T14:15:22.638685+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -17,7 +17,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 157,
+      "entries_count": 161,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -475,6 +475,20 @@
           "target": "7A"
         },
         {
+          "name": "EROUT Clement",
+          "club": "1383118 - LE LAVANDOU",
+          "category": "1383118 - LE LAVANDOU",
+          "session": "U18 Homme Arc Nu",
+          "target": "3D"
+        },
+        {
+          "name": "ESCHBACH Vincent",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "S3 Homme Arc Classique",
+          "target": "12D"
+        },
+        {
           "name": "ESCOFFIER Bruno",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -494,6 +508,13 @@
           "category": "1306035 - MONACO",
           "session": "S3 Femme Arc Classique",
           "target": "9A"
+        },
+        {
+          "name": "ESQUIROL Annie",
+          "club": "1313083 - LA CIOTAT",
+          "category": "1313083 - LA CIOTAT",
+          "session": "S3 Femme Arc Classique",
+          "target": "12C"
         },
         {
           "name": "FARJANEL Dominique",
@@ -1040,6 +1061,13 @@
           "category": "1383124 - LA GARDE",
           "session": "S1 Homme Arc Classique",
           "target": "8B"
+        },
+        {
+          "name": "SANTIN Serge",
+          "club": "1383118 - LE LAVANDOU",
+          "category": "1383118 - LE LAVANDOU",
+          "session": "S3 Homme Arc Classique",
+          "target": "4D"
         },
         {
           "name": "SCIOZARD Frederic",
@@ -6382,13 +6410,6 @@
           "target": "8A"
         },
         {
-          "name": "FERDINAND Sandra",
-          "club": "1383114 - OLLIOULES",
-          "category": "1383114 - OLLIOULES",
-          "session": "Arc Classique Senior 2 Femme",
-          "target": "8A"
-        },
-        {
           "name": "FLORINEDA Pascal",
           "club": "1383106 - SANARY",
           "category": "1383106 - SANARY",
@@ -6681,6 +6702,13 @@
           "category": "1383111 - TOULON",
           "session": "Arc à Poulies Senior 2 Femme",
           "target": "2B"
+        },
+        {
+          "name": "PATRONE Carole",
+          "club": "1383103 - COGOLIN",
+          "category": "1383103 - COGOLIN",
+          "session": "Scratch Femme Arc Nu",
+          "target": "12A"
         },
         {
           "name": "PEJO Benoit",
