@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-01T19:42:20.163356+00:00",
+  "generated_at_utc": "2026-10-01T23:43:00.758197+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -7040,13 +7040,6 @@
           "target": "6C"
         },
         {
-          "name": "BORAKOVSKI Bruno",
-          "club": "1383127 - FREJUS",
-          "category": "1383127 - FREJUS",
-          "session": "S3 Homme Arc Classique",
-          "target": "8C"
-        },
-        {
           "name": "BOUTIN Laurent",
           "club": "1383100 - PUGET SUR ARGENS",
           "category": "1383100 - PUGET SUR ARGENS",
@@ -7362,6 +7355,13 @@
           "target": "9A"
         },
         {
+          "name": "HOVNANIAN Hailey",
+          "club": "1306037 - MOUANS SARTOUX",
+          "category": "1306037 - MOUANS SARTOUX",
+          "session": "U18 Homme Arc Classique",
+          "target": "5D"
+        },
+        {
           "name": "JACQUES Aurelien",
           "club": "1313066 - GEMENOS",
           "category": "1313066 - GEMENOS",
@@ -7502,13 +7502,6 @@
           "target": "6A"
         },
         {
-          "name": "MARQUEZ Marie-Josee",
-          "club": "1383127 - FREJUS",
-          "category": "1383127 - FREJUS",
-          "session": "S3 Femme Arc Classique",
-          "target": "7C"
-        },
-        {
           "name": "MASI Laurent",
           "club": "1383108 - TRANS EN PROVENCE",
           "category": "1383108 - TRANS EN PROVENCE",
@@ -7612,6 +7605,13 @@
           "category": "1383109 - LORGUES",
           "session": "S2 Homme Arc Classique",
           "target": "6C"
+        },
+        {
+          "name": "SABOUREAU Caroline",
+          "club": "1383114 - OLLIOULES",
+          "category": "1383114 - OLLIOULES",
+          "session": "S2 Femme Arc Classique",
+          "target": "10B"
         },
         {
           "name": "SALLANDIER Alain",
