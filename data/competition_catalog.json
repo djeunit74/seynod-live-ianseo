@@ -1,12 +1,25 @@
 {
-  "generated_at_utc": "2026-10-02T10:40:20.710649+00:00",
+  "generated_at_utc": "2026-10-02T16:31:16.007893+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 22,
+  "count": 24,
   "tournaments": [
+    {
+      "to_id": "30463",
+      "year": "2026",
+      "name": "CONCOURS SALLE 18M 11 OCTOBRE 2026 A LA FLECHE",
+      "organizer": "COMPAGNIE D'ARC DE LA FLECHE",
+      "date_text": "11 Oct",
+      "end_date": "2026-10-11",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30463",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30463/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30463/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
     {
       "to_id": "29391",
       "year": "2026",
@@ -923,13 +936,6 @@
           "target": "3C"
         },
         {
-          "name": "PELLETIER Charlotte",
-          "club": "1383124 - LA GARDE",
-          "category": "1383124 - LA GARDE",
-          "session": "S1 Femme Arc Classique",
-          "target": "3B"
-        },
-        {
           "name": "PELLETIER ULRICH David",
           "club": "1383119 - PIERREFEU",
           "category": "1383119 - PIERREFEU",
@@ -1138,6 +1144,13 @@
           "category": "1383119 - PIERREFEU",
           "session": "Scratch Homme Arc Nu",
           "target": "10A"
+        },
+        {
+          "name": "WASSERMANN Alice",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "U13 Femme Arc Classique",
+          "target": "14A"
         },
         {
           "name": "ZANETTE Romain",
@@ -2678,6 +2691,19 @@
           "target": "7A"
         }
       ]
+    },
+    {
+      "to_id": "30390",
+      "year": "2026",
+      "name": "concours tir en salle boé octobre 2026",
+      "organizer": "Les archers de Boé",
+      "date_text": "28 Oct",
+      "end_date": "2026-10-28",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30390",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30390/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30390/IC.php",
+      "entries_count": 0,
+      "entries": []
     },
     {
       "to_id": "29669",
@@ -6639,8 +6665,15 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30360",
       "ena_url": "https://www.ianseo.net/TourData/2026/30360/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30360/IC.php",
-      "entries_count": 36,
+      "entries_count": 38,
       "entries": [
+        {
+          "name": "BICHARD Nicolas",
+          "club": "0760171 - COMPIEGNE",
+          "category": "0760171 - COMPIEGNE",
+          "session": "S2 Homme Arc Classique",
+          "target": "1D"
+        },
         {
           "name": "BILLY Jean Jacques",
           "club": "0760171 - COMPIEGNE",
@@ -6653,7 +6686,7 @@
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "S1 Homme Arc Classique",
-          "target": "7A"
+          "target": "1B"
         },
         {
           "name": "CAMUS Romain",
@@ -6681,7 +6714,7 @@
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "S1 Homme Arc Classique",
-          "target": "6D"
+          "target": "2B"
         },
         {
           "name": "DOISY Arthur",
@@ -6709,14 +6742,14 @@
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "S1 Homme Arc Classique",
-          "target": "6C"
+          "target": "2D"
         },
         {
           "name": "HERY Guillaume",
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "S1 Homme Arc Classique",
-          "target": "5A"
+          "target": "3D"
         },
         {
           "name": "LANGLET Rozenn",
@@ -6765,7 +6798,7 @@
           "club": "0760171 - COMPIEGNE",
           "category": "0760171 - COMPIEGNE",
           "session": "S2 Homme Arc Classique",
-          "target": "5B"
+          "target": "3B"
         },
         {
           "name": "LEVEQUE Andrea",
@@ -6864,6 +6897,13 @@
           "category": "0760171 - COMPIEGNE",
           "session": "S1 Femme Arc Classique",
           "target": "12C"
+        },
+        {
+          "name": "VAN AUDEKERK Arnaud",
+          "club": "0877312 - COMPAGNIE D'ARC DE CHARNY",
+          "category": "0877312 - COMPAGNIE D'ARC DE CHARNY",
+          "session": "S2 Homme Arc Classique",
+          "target": "10D"
         },
         {
           "name": "VANANTI Catherine",
