@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-02T16:31:16.007893+00:00",
+  "generated_at_utc": "2026-10-02T21:11:06.587628+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -6958,7 +6958,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29899",
       "ena_url": "https://www.ianseo.net/TourData/2026/29899/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29899/IC.php",
-      "entries_count": 106,
+      "entries_count": 107,
       "entries": [
         {
           "name": "AIRAULT Julien",
@@ -7442,6 +7442,13 @@
           "category": "1383114 - OLLIOULES",
           "session": "Scratch Femme Arc Nu",
           "target": "11A"
+        },
+        {
+          "name": "LAFAGE Nicolas",
+          "club": "1383119 - PIERREFEU",
+          "category": "1383119 - PIERREFEU",
+          "session": "S1 Homme Arc Classique",
+          "target": "8A"
         },
         {
           "name": "LAGARDE Dominique",
