@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-10-03T15:49:18.367865+00:00",
+  "generated_at_utc": "2026-10-03T19:02:11.233190+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 25,
+  "count": 26,
   "tournaments": [
     {
       "to_id": "30430",
@@ -30,6 +30,19 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30463",
       "ena_url": "https://www.ianseo.net/TourData/2026/30463/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30463/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
+      "to_id": "30213",
+      "year": "2026",
+      "name": "Concours Sélectif Tir à 18m Lons le Saunier - Octobre 2026",
+      "organizer": "1ERE CIE DES ARCHERS DE MONTCIEL",
+      "date_text": "10-11 Oct",
+      "end_date": "2026-10-11",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30213",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30213/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30213/IC.php",
       "entries_count": 0,
       "entries": []
     },
