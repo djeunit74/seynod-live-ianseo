@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-10-03T19:02:11.233190+00:00",
+  "generated_at_utc": "2026-10-03T22:19:31.317235+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 26,
+  "count": 27,
   "tournaments": [
     {
       "to_id": "30430",
@@ -56,7 +56,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 163,
+      "entries_count": 168,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -521,6 +521,13 @@
           "target": "7A"
         },
         {
+          "name": "ENEMAN ORTEGA Alice",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "U13 Femme Arc Classique",
+          "target": "13D"
+        },
+        {
           "name": "EROUT Clement",
           "club": "1383118 - LE LAVANDOU",
           "category": "1383118 - LE LAVANDOU",
@@ -941,6 +948,13 @@
           "target": "13D"
         },
         {
+          "name": "MARTIN Lenny",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "U13 Homme Arc Classique",
+          "target": "13B"
+        },
+        {
           "name": "MARTY Henri",
           "club": "1383101 - GONFARON",
           "category": "1383101 - GONFARON",
@@ -960,6 +974,20 @@
           "category": "1383125 - LA VALETTE DU VAR",
           "session": "S3 Homme Arc Classique",
           "target": "12C"
+        },
+        {
+          "name": "MULLER Lola",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "U18 Femme Arc à Poulies",
+          "target": "6D"
+        },
+        {
+          "name": "NORTES ALCARAZ Michel",
+          "club": "1383123 - LE MUY",
+          "category": "1383123 - LE MUY",
+          "session": "Scratch Homme Arc Nu",
+          "target": "9B"
         },
         {
           "name": "PELLAT Sylvianne",
@@ -1088,6 +1116,13 @@
           "target": "4B"
         },
         {
+          "name": "ROVELON Maxence",
+          "club": "1383109 - LORGUES",
+          "category": "1383109 - LORGUES",
+          "session": "U13 Homme Arc Classique",
+          "target": "14C"
+        },
+        {
           "name": "SADEK Florent",
           "club": "1306041 - FA NICE",
           "category": "1306041 - FA NICE",
@@ -1120,7 +1155,7 @@
           "club": "1313066 - GEMENOS",
           "category": "1313066 - GEMENOS",
           "session": "S2 Homme Arc à Poulies",
-          "target": "7C"
+          "target": "5D"
         },
         {
           "name": "SCIOZARD Marley",
@@ -5547,6 +5582,559 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/29801/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "30467",
+      "year": "2026",
+      "name": "Rennes - Menhir Cup 27' - Stage 1",
+      "organizer": "Rennes Cie",
+      "date_text": "8 Nov",
+      "end_date": "2026-11-08",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30467",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30467/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30467/IC.php",
+      "entries_count": 77,
+      "entries": [
+        {
+          "name": "ANEST Antoine",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "BABLEE Agnes",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "0760224 - NANTEUIL LE HAUDOUIN",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "BARAER Edouard",
+          "club": "0356118 - LORIENT ASAL",
+          "category": "0356118 - LORIENT ASAL",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "BARAER Quentin",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "BEAULIEU Anne",
+          "club": "0335073 - LIFFRE",
+          "category": "0335073 - LIFFRE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "BEAULIEU Sylvain",
+          "club": "0335073 - LIFFRE",
+          "category": "0335073 - LIFFRE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "BERTIN Kevin",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "BIGOT Elodie",
+          "club": "0335057 - ST JOUAN DES GUERETS",
+          "category": "0335057 - ST JOUAN DES GUERETS",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "BISTER Damien",
+          "club": "0877037 - VENEUX LES SABLONS",
+          "category": "0877037 - VENEUX LES SABLONS",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "BONNAUD Yohann",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "BOUVET Claudine",
+          "club": "0950064 - AVRANCHES",
+          "category": "0950064 - AVRANCHES",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "BOUVET Frederic",
+          "club": "0950064 - AVRANCHES",
+          "category": "0950064 - AVRANCHES",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "CAILLAUD Antonin",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "CALVEZ Eric",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "CAPLOT Valentin",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "CHIRON Celine",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "CONGA Killian",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "COUPARD Anael",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "DEGOUILLES David",
+          "club": "0335083 - CESSON SEVIGNE",
+          "category": "0335083 - CESSON SEVIGNE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "DELAHAYE Megane",
+          "club": "0335083 - CESSON SEVIGNE",
+          "category": "0335083 - CESSON SEVIGNE",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "DELORAINE Aurelien",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "DEMANGE Guillaume",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "DUBOIS Francois",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "DUPUIS Olivier",
+          "club": "0335073 - LIFFRE",
+          "category": "0335073 - LIFFRE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "EVENO Ghislaine",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "FAUVEAU Guillaume",
+          "club": "1244001 - GUERANDE",
+          "category": "1244001 - GUERANDE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "FEBVAY Sarah",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "FOUACE-PEOUX Alexandra",
+          "club": "0950072 - CHERBOURG EN COTENTIN",
+          "category": "0950072 - CHERBOURG EN COTENTIN",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "FRIN Alexis",
+          "club": "0329053 - PLOURIN LES MORLAIX",
+          "category": "0329053 - PLOURIN LES MORLAIX",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "GESLOT Benjamin",
+          "club": "1253076 - EVRON",
+          "category": "1253076 - EVRON",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "HAUTTEMENT Fabrice",
+          "club": "0335091 - VEZIN LE COQUET",
+          "category": "0335091 - VEZIN LE COQUET",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "HELYE Thomas",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "HEMMERLE Lionel",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "HUE Alexandre",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "HUGUENIN Frederic",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "JEANTIL Paul",
+          "club": "0335091 - VEZIN LE COQUET",
+          "category": "0335091 - VEZIN LE COQUET",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "JUIN Andre",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "JULIEN Simon",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "KERRIEN Elodie",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "LABLANCHE-NEVEU Rozenn",
+          "club": "0322005 - FREHEL",
+          "category": "0322005 - FREHEL",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "LE BARS Antoine",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "LE BARS Antoine",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "LE LEVIER Genevieve",
+          "club": "0329040 - BREST",
+          "category": "0329040 - BREST",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "LE LEVIER Loic",
+          "club": "0329040 - BREST",
+          "category": "0329040 - BREST",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "LE ROUX Dorian",
+          "club": "1244005 - SAINT GEREON",
+          "category": "1244005 - SAINT GEREON",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "LEBAS Evan",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "LEFEUVRE Camille",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "MACE Emilie",
+          "club": "1244001 - GUERANDE",
+          "category": "1244001 - GUERANDE",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "MACE Sylvain",
+          "club": "1244001 - GUERANDE",
+          "category": "1244001 - GUERANDE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "MENARD Luke",
+          "club": "1306038 - NICE AC",
+          "category": "1306038 - NICE AC",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "MERCIER Patrick",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "MEYER BACH Lucie",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "MOURICOU Guillaume",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "NEVEU Anthony",
+          "club": "0335077 - DINARD",
+          "category": "0335077 - DINARD",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "PEDRON Maxime",
+          "club": "0335056 - TINTENIAC",
+          "category": "0335056 - TINTENIAC",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "PENHOUET Catherine",
+          "club": "0329053 - PLOURIN LES MORLAIX",
+          "category": "0329053 - PLOURIN LES MORLAIX",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "PEOUX Silvere",
+          "club": "0950072 - CHERBOURG EN COTENTIN",
+          "category": "0950072 - CHERBOURG EN COTENTIN",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "PETITEAU Patrick",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "PIGEAUD Damien",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "POIRIER Lucas",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "QUINQUENEL Clemence",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "QUINTO Frederic",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "QUINTO Julie",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "QUINTO Kaina",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "RAIMBAULT Thomas",
+          "club": "0335065 - DOMLOUP",
+          "category": "0335065 - DOMLOUP",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "RICHARD Noemie",
+          "club": "0335083 - CESSON SEVIGNE",
+          "category": "0335083 - CESSON SEVIGNE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "RIOU Yannick",
+          "club": "0322019 - ST QUAY PORTRIEUX",
+          "category": "0322019 - ST QUAY PORTRIEUX",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "ROTROU Anne Marie",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "SIMON Alexandre",
+          "club": "0335084 - LAILLE",
+          "category": "0335084 - LAILLE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "THOMAS Benoit",
+          "club": "1244005 - SAINT GEREON",
+          "category": "1244005 - SAINT GEREON",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "TILLIEZ Thomas",
+          "club": "0914003 - CAEN",
+          "category": "0914003 - CAEN",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "TREMAUDANT Pascal",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Nu Scratch Mixte",
+          "target": ""
+        },
+        {
+          "name": "VALLOGNES Mickael",
+          "club": "0356115 - VANNES",
+          "category": "0356115 - VANNES",
+          "session": "Arc à Poulies Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "VERZIER-ROUSSON Iewan",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "VIALA Yannick",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc Classique Scratch Homme",
+          "target": ""
+        },
+        {
+          "name": "VILLERET-SZAWROWSKI Emma",
+          "club": "0335067 - RENNES CIE",
+          "category": "0335067 - RENNES CIE",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        },
+        {
+          "name": "WALLART Benedicte",
+          "club": "0322019 - ST QUAY PORTRIEUX",
+          "category": "0322019 - ST QUAY PORTRIEUX",
+          "session": "Arc à Poulies Scratch Femme",
+          "target": ""
+        }
+      ]
     },
     {
       "to_id": "30211",
