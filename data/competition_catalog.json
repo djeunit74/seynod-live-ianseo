@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-03T06:04:56.963447+00:00",
+  "generated_at_utc": "2026-10-03T11:54:36.992286+00:00",
   "country": "FRA",
   "years": [
     2026,
@@ -43,7 +43,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=29391",
       "ena_url": "https://www.ianseo.net/TourData/2026/29391/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/29391/IC.php",
-      "entries_count": 161,
+      "entries_count": 163,
       "entries": [
         {
           "name": "ALEXANDER Claire-Helene",
@@ -466,6 +466,13 @@
           "target": "3D"
         },
         {
+          "name": "DUFFAUT Eric",
+          "club": "1383110 - CARCES",
+          "category": "1383110 - CARCES",
+          "session": "Scratch Homme Arc Nu",
+          "target": "10B"
+        },
+        {
           "name": "DUPUY Martine",
           "club": "1383101 - GONFARON",
           "category": "1383101 - GONFARON",
@@ -816,6 +823,13 @@
           "target": "10A"
         },
         {
+          "name": "LEPERS Angele",
+          "club": "1383115 - BRIGNOLES",
+          "category": "1383115 - BRIGNOLES",
+          "session": "U18 Femme Arc Classique",
+          "target": "13A"
+        },
+        {
           "name": "LEPERS Pierre",
           "club": "1383115 - BRIGNOLES",
           "category": "1383115 - BRIGNOLES",
@@ -901,8 +915,8 @@
         },
         {
           "name": "MARLOT Kevin",
-          "club": "1383106 - SANARY",
-          "category": "1383106 - SANARY",
+          "club": "1383111 - TOULON",
+          "category": "1383111 - TOULON",
           "session": "S1 Homme Arc Classique",
           "target": "4A"
         },
@@ -1170,7 +1184,7 @@
           "club": "1383125 - LA VALETTE DU VAR",
           "category": "1383125 - LA VALETTE DU VAR",
           "session": "S1 Homme Arc Classique",
-          "target": "10B"
+          "target": "12D"
         }
       ]
     },
