@@ -27,7 +27,8 @@ de licence ou d'inscription.
 ## Configuration
 
 Voir [la passerelle sécurisée](docs/admin-bridge.md) pour Cloudflare et
-l'authentification. Les champs vides de `data/admin_config.json` doivent être
+l'authentification. `wrangler.jsonc` permet aussi d'importer directement ce
+dépôt dans Cloudflare Workers avec `npx wrangler deploy`. Les champs vides de `data/admin_config.json` doivent être
 remplis après déploiement du Worker pour activer l'administration distante
 et le proxy HTML à faible délai. GitHub Pages ne peut pas exécuter le Worker.
 

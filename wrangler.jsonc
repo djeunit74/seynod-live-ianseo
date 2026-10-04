@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "arclive-api",
+  "main": "scripts/github_admin_bridge_worker.js",
+  "compatibility_date": "2026-10-04",
+  "workers_dev": true,
+  "vars": {
+    "GITHUB_OWNER": "djeunit74",
+    "GITHUB_REPO": "seynod-live-ianseo",
+    "GITHUB_REF": "main",
+    "ALLOWED_ORIGINS": "https://djeunit74.github.io,https://jourdecompette.pages.dev"
+  }
+}
