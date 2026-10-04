@@ -387,9 +387,10 @@
       return [...String(text||'').matchAll(/\b\d{6,7}\b/g)].map(m=>m[0]);
     }
     function clubKeysFromRaw(raw){
-      const codes=extractClubCodes(raw);
+      const codes=[];
       for(const part of splitList(raw)){
-        if(extractClubCodes(part).length) continue;
+        const direct=extractClubCodes(part);
+        if(direct.length){codes.push(...direct);continue;}
         const matches=state.clubCatalog.filter(c=>norm(c.label)===norm(part) || norm(c.label.replace(/^\d+\s*-\s*/,''))===norm(part));
         if(matches.length===1) codes.push(...extractClubCodes(matches[0].label));
       }

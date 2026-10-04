@@ -72,6 +72,7 @@ export default {
     if (raw.length > MAX_BODY) return wrap(json({error: 'Payload too large'}, 413));
     let body;
     try { body = JSON.parse(raw); } catch (_) { return wrap(json({error: 'Invalid JSON'}, 400)); }
+    if (!body || typeof body !== 'object' || Array.isArray(body)) return wrap(json({error: 'Invalid request object'}, 400));
     const workflowFile = Object.hasOwn(ACTIONS, body.action) ? ACTIONS[body.action] : null;
     if (!workflowFile) return wrap(json({error: 'Unsupported action'}, 400));
     const inputs = {};

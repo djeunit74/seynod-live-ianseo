@@ -12,6 +12,7 @@ const plain=expression=>JSON.parse(JSON.stringify(run(expression)));
 assert.deepEqual(plain("clubKeysFromRaw('0174246 - SEYNOD, 0335067 - RENNES')"),['0174246','0335067']);
 run("state.clubCatalog=[{label:'0174246 - SEYNOD'},{label:'0335067 - RENNES'}]");
 assert.deepEqual(plain("clubKeysFromRaw('Seynod')"),['0174246']);
+assert.deepEqual(plain("clubKeysFromRaw('Seynod, 0335067 - RENNES')"),['0174246','0335067']);
 assert.equal(run("addClubToRaw('0174246','0335067 - RENNES')"),'0174246, 0335067');
 run("state.selectionMode='archers';state.selectedArchers=[{name:'DUPONT Paul',club:'0335067 - RENNES',clubCode:'0335067'}]");
 assert.equal(run("matchesScope({name:'DUPONT Paul',club:'0335067 - RENNES'},['0174246'])"),true);
