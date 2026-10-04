@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 logs/
 .testtools/
+
+.wrangler/
+node_modules/
+.dev.vars*
+.env*

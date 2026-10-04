@@ -4,7 +4,31 @@ Le site statique peut rechercher dans les inscriptions déjà publiées sans acc
 FFTA. La publication partagée et la lecture HTML à faible délai utilisent le
 Worker fourni dans `scripts/github_admin_bridge_worker.js`.
 
-## Déploiement Cloudflare
+## Déploiement Cloudflare depuis GitHub
+
+La configuration `wrangler.jsonc` est prête dans la racine du dépôt.
+
+1. Ouvrir Cloudflare > Workers & Pages > Create application > Import a
+   repository, puis sélectionner `djeunit74/seynod-live-ianseo`.
+2. Garder la racine `/` du dépôt et le Worker `arclive-api` (ou choisir un nom
+   libre si un Worker portant ce nom existe déjà). Commande de déploiement :
+   `npx wrangler deploy`. Aucun build n'est nécessaire pour ce module JavaScript.
+3. Le proxy HTML peut être déployé sans secret. Les commandes d'administration
+   restent refusées tant que leurs secrets ne sont pas configurés.
+4. Dans le Worker > Settings > Variables and Secrets, ajouter `ADMIN_TOKEN`
+   (clé privée choisie pour l'admin) et `GITHUB_TOKEN` (token limité à ce dépôt,
+   permission Actions en écriture), tous deux de type **Secret**.
+5. Copier l'URL réelle `https://...workers.dev` affichée par Cloudflare et
+   l'utiliser dans `data/admin_config.json` selon l'exemple ci-dessous. Pour
+   activer seulement le proxy, renseigner `ianseoProxyUrl` et laisser
+   `adminBridgeUrl` vide jusqu'à la configuration des secrets.
+
+Ne pas coller de secret dans le dépôt ou dans le chat. Les variables publiques
+(GitHub owner, dépôt, branche et origines autorisées) sont déjà déclarées dans
+`wrangler.jsonc`. GitHub Pages continue à publier la page ; ce Worker fournit
+uniquement le proxy et les commandes sécurisées.
+
+## Déploiement manuel alternatif
 
 1. Créer un Worker et y déposer ce fichier JavaScript (module ES).
 2. Configurer les variables :
