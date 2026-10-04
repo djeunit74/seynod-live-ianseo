@@ -1,7 +1,10 @@
 {
-  "generatedAtUtc": "2026-10-04T01:50:54.010793+00:00",
+  "generatedAtUtc": "2026-10-04T07:37:17.882671+00:00",
+  "errors": [],
+  "sourceFetchedAtUtc": "2026-10-04T07:37:17.011781+00:00",
   "sourceUrl": "https://www.ianseo.net/TourData/2026/27251/IC.php",
   "places": [
+    "1313092",
     "Bonneville"
   ],
   "archers": [
@@ -16,6 +19,8 @@
       "progress": "Terminé (72 flèches)",
       "detail": "60m-1: 287, 60m-2: 298",
       "finished": true,
+      "arrows": 72,
+      "maxArrows": 72,
       "competitionId": "27251",
       "competitionName": "Concours TAE Les archers du Faucigny"
     },
@@ -30,6 +35,8 @@
       "progress": "Terminé (72 flèches)",
       "detail": "50m-1: 336, 50m-2: 344",
       "finished": true,
+      "arrows": 72,
+      "maxArrows": 72,
       "competitionId": "27251",
       "competitionName": "Concours TAE Les archers du Faucigny"
     },
@@ -44,6 +51,8 @@
       "progress": "Terminé (72 flèches)",
       "detail": "50m-1: 279, 50m-2: 294",
       "finished": true,
+      "arrows": 72,
+      "maxArrows": 72,
       "competitionId": "27251",
       "competitionName": "Concours TAE Les archers du Faucigny"
     }
@@ -65,7 +74,9 @@
           "category": "Arc Classique - U18 Femmes",
           "progress": "Terminé (72 flèches)",
           "detail": "60m-1: 287, 60m-2: 298",
-          "finished": true
+          "finished": true,
+          "arrows": 72,
+          "maxArrows": 72
         },
         {
           "place": "Bonneville",
@@ -77,7 +88,9 @@
           "category": "Arc à Poulies - Senior 2 Hommes",
           "progress": "Terminé (72 flèches)",
           "detail": "50m-1: 336, 50m-2: 344",
-          "finished": true
+          "finished": true,
+          "arrows": 72,
+          "maxArrows": 72
         },
         {
           "place": "Bonneville",
@@ -89,9 +102,20 @@
           "category": "Arc à Poulies - Senior 2 Hommes",
           "progress": "Terminé (72 flèches)",
           "detail": "50m-1: 279, 50m-2: 294",
-          "finished": true
+          "finished": true,
+          "arrows": 72,
+          "maxArrows": 72
         }
-      ]
+      ],
+      "fetchedAtUtc": "2026-10-04T07:37:17.011781+00:00"
+    },
+    {
+      "id": "27697",
+      "name": "Division Régionale Excellence - Manche n°1",
+      "place": "1313092",
+      "sourceUrl": "https://www.ianseo.net/TourData/2026/27697/IC.php",
+      "archers": [],
+      "fetchedAtUtc": "2026-10-04T07:37:17.882657+00:00"
     }
   ]
 }
