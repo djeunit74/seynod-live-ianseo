@@ -137,6 +137,8 @@
         <div class="muted" style="margin-top:12px">
           Dernière vérification: <strong id="lastCheck">-</strong><br>
           Dernier changement: <strong id="lastChange">-</strong><br>
+          Données récupérées: <strong id="sourceTime">-</strong><br>
+          <span id="freshnessInfo"></span><br>
           Prochaine vérification: <strong id="countdown">30 s</strong>
         </div>
         <div style="margin-top:12px">
@@ -225,7 +227,14 @@
               <div class="scope-note">Tu peux suivre plusieurs clubs en même temps. Ces clubs servent à chercher les compétitions et comme filtre par défaut.</div>
             </div>
             <div class="box">
-              <h3>Archers à suivre</h3>
+              <h3>Recherche et sélection d’archers</h3>
+              <label for="selectionMode">Afficher</label>
+              <select id="selectionMode"><option value="clubs">Les participants des clubs sélectionnés</option><option value="archers">Uniquement les archers sélectionnés</option></select>
+              <div class="row"><input id="archerSearchInput" placeholder="Nom ou prénom dans les inscriptions publiées"><button class="btn" id="searchArcherBtn">Rechercher</button></div>
+              <div class="muted" id="catalogCoverage"></div>
+              <div id="archerSearchResults" class="stack"></div>
+              <div id="selectedArcherList" class="chips"></div>
+              <h4>Noms à mettre en évidence</h4>
               <div class="row">
                 <input id="watchInput" placeholder="Nom ou prénom, séparés par virgules" />
                 <button class="btn green" id="addWatchBtn">Ajouter</button>
@@ -241,7 +250,7 @@
             <div class="box">
               <h3>Recherche automatique</h3>
               <div class="row">
-                <button class="btn" id="findNextBtn">Chercher prochaines compétitions</button>
+                <button class="btn" id="findNextBtn">Chercher compétitions du jour et à venir</button><button class="btn secondary" id="rebuildCatalogBtn">Actualiser le catalogue</button>
                 <select id="foundSelect"></select>
                 <button class="btn green" id="followFoundBtn">Suivre sélection</button>
               </div>
@@ -300,12 +309,23 @@
     const PROXY = 'https://r.jina.ai/http://';
     const REFRESH_MS = 30000;
     const DEPART_ACTIVE_WINDOW_MIN = 170;
-    const ADMIN_HASH = '75bc5fdb4d719459fbd068059933f6d3ed71e8f37fb740361e7c8e5704a3317c';
+
     const QUICK_CLUBS = ['0174246 - SEYNOD','0335067 - RENNES CIE','0163157 - RIOM','0163151 - CLERMONT FERRAND CIE','0221012 - AUXONNE','0895293 - SARCELLES'];
 
     const $ = id => document.getElementById(id);
     const state = {
-      clubRaw:'',
+      clubRaw:'0174246',
+      selectionMode:'clubs',
+      selectedArchers:[],
+      archerSearchMatches:[],
+      catalogMeta:{},
+      adminToken:'',
+      ianseoProxy:'',
+      sourceFetchedAt:'',
+      sourceMode:'',
+      refreshStartedAt:0,
+      sharedStateLoaded:false,
+      readWarnings:[],
       countryRaw:'FRA',
       clubKeys:[],
       watched:[],
@@ -367,12 +387,18 @@
       return [...String(text||'').matchAll(/\b\d{6,7}\b/g)].map(m=>m[0]);
     }
     function clubKeysFromRaw(raw){
-      const first=extractClubCodes(raw)[0];
-      return first ? [first] : [];
+      const codes=[];
+      for(const part of splitList(raw)){
+        const direct=extractClubCodes(part);
+        if(direct.length){codes.push(...direct);continue;}
+        const matches=[...state.clubCatalog,...QUICK_CLUBS.map(label=>({label}))].filter(c=>norm(c.label)===norm(part) || norm(c.label.replace(/^\d+\s*-\s*/,'')).includes(norm(part)));
+        const matchedCodes=[...new Set(matches.flatMap(c=>extractClubCodes(c.label)))];
+        if(matchedCodes.length===1) codes.push(matchedCodes[0]);
+      }
+      return [...new Set(codes)];
     }
     function addClubToRaw(raw, club){
-      const picked=extractClubCodes(club)[0] || extractClubCodes(raw)[0] || '';
-      return picked;
+      return [...new Set([...clubKeysFromRaw(raw),...clubKeysFromRaw(club)])].join(', ');
     }
     function removeClubFromRaw(raw, club){const key=norm(club); return splitList(raw).filter(c=>norm(c)!==key).join(', ');}
     function entryClubCodes(entry){
@@ -382,39 +408,52 @@
         ...extractClubCodes(entry?.session||'')
       ]).map(norm).filter(Boolean);
     }
+    function selectedArcherMatches(entry){
+      const name=norm(entry?.name||''), codes=extractClubCodes(entry?.club||'');
+      return state.selectedArchers.some(a=>norm(a.name)===name && (a.clubCode ? codes.includes(a.clubCode) : norm(a.club)===norm(entry?.club||'')));
+    }
     function matchesEntryScope(entry, scopeKeys){
+      if(state.selectionMode==='archers') return selectedArcherMatches(entry);
       const keys=(scopeKeys||[]).map(norm).filter(Boolean);
-      if(!keys.length) return false;
-      const rowCodes=entryClubCodes(entry);
-      return rowCodes.some(c=>keys.includes(c));
+      return entryClubCodes(entry).some(c=>keys.includes(c));
     }
     function setLog(msg){$('adminLog').innerHTML = msg;}
     function setStatus(kind,msg){$('statusDot').className='dot '+(kind||''); $('statusText').textContent=msg;}
-    function toProxy(url){return PROXY + String(url||'').replace(/^https?:\/\//i,'');}
+    function toProxy(url){
+      if(state.ianseoProxy) return state.ianseoProxy.replace(/\/$/,'')+'/ianseo?url='+encodeURIComponent(url);
+      return PROXY + String(url||'').replace(/^https?:\/\//i,'');
+    }
     async function fetchJson(url){const r=await fetch(url+'?t='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status); return r.json();}
-    async function fetchText(url){const r=await fetch(url,{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status); return r.text();}
-
-    async function sha256Hex(text){
-      if(!crypto?.subtle) return '';
-      const bytes=new TextEncoder().encode(String(text||''));
-      const hash=await crypto.subtle.digest('SHA-256',bytes);
-      return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('');
+    async function fetchText(url){
+      const r=await fetch(url,{cache:'no-store',signal:AbortSignal.timeout(15000)});
+      if(!r.ok) throw new Error('HTTP '+r.status);
+      const at=r.headers.get('x-arclive-fetched-at');
+      const source=new URL(url,location.href).searchParams.get('url')||url;
+      if(at && /\/I(?!NA)[A-Z0-9]*\.php/i.test(source) && (!state.sourceFetchedAt || at<state.sourceFetchedAt)) state.sourceFetchedAt=at;
+      return r.text();
     }
 
+
+
     async function resolveAdmin(){
-      if(location.hostname==='localhost') return state.admin=true;
-      if(sessionStorage.getItem('slc_admin_ok')==='1') return state.admin=true;
       const p=new URLSearchParams(location.search);
-      if(p.get('admin')==='seynod-admin'){sessionStorage.setItem('slc_admin_ok','1'); return state.admin=true;}
-      if(p.get('admin')==='1' && p.get('k')){
-        const hash=await sha256Hex(p.get('k'));
-        if(hash===ADMIN_HASH){sessionStorage.setItem('slc_admin_ok','1'); return state.admin=true;}
-      }
-      return false;
+      if(p.get('admin')!=='1') return false;
+      if(location.hostname==='localhost' || location.hostname==='127.0.0.1') return state.admin=true;
+      if(!state.adminBridge){setStatus('err','Administration non configurée. Configure la passerelle sécurisée.'); return false;}
+      const token=prompt('Clé administrateur ArcLive (conservée uniquement pour cette page) :');
+      if(!token) return false;
+      try{
+        const r=await fetch(state.adminBridge.replace(/\/$/,'')+'/auth',{method:'POST',headers:{Authorization:'Bearer '+token}});
+        if(!r.ok) throw new Error('Accès refusé');
+        state.adminToken=token;
+        return state.admin=true;
+      }catch(_){setStatus('err','Authentification administrateur refusée.'); return false;}
     }
 
     function loadLocal(){
-      state.clubRaw = localStorage.getItem('slc_club') || state.clubRaw;
+      state.selectionMode=localStorage.getItem('slc_selection_mode')==='archers'?'archers':'clubs';
+      state.selectedArchers=JSON.parse(localStorage.getItem('slc_selected_archers')||'[]');
+      state.clubRaw = localStorage.getItem('slc_club') ?? state.clubRaw;
       state.countryRaw = localStorage.getItem('slc_country') || state.countryRaw;
       state.clubKeys = clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
       state.watched = uniqueByNorm(JSON.parse(localStorage.getItem('slc_watched') || '[]'));
@@ -425,7 +464,10 @@
       state.publicControlled = localStorage.getItem('slc_public_control') === '1';
     }
     function saveLocal(){
+      state.lastGoodData=state.lastGoodData?filterData(state.lastGoodData):null;
       state.tracked = dedupeTrackedTournaments(state.tracked);
+      localStorage.setItem('slc_selection_mode',state.selectionMode);
+      localStorage.setItem('slc_selected_archers',JSON.stringify(state.selectedArchers));
       localStorage.setItem('slc_club',state.clubRaw);
       localStorage.setItem('slc_country',state.countryRaw);
       localStorage.setItem('slc_watched',JSON.stringify(state.watched));
@@ -438,11 +480,12 @@
     }
 
     async function loadAdminConfig(){
-      try{const cfg=await fetchJson(ADMIN_CONFIG_URL); state.adminBridge=String(cfg.adminBridgeUrl||'').trim();}catch(_){}
+      try{const cfg=await fetchJson(ADMIN_CONFIG_URL); state.adminBridge=String(cfg.adminBridgeUrl||'').trim(); state.ianseoProxy=String(cfg.ianseoProxyUrl||'').trim();}catch(_){}
     }
     async function loadClubCatalog(){
       try{
         const cat=await fetchJson(CATALOG_URL);
+        if(cat.country && cat.country!==state.countryRaw){state.catalogMeta=cat; state.catalogTournaments=[];state.clubCatalog=[];return;}
         const clubs=new Map();
         for(const t of cat.tournaments||[]){
           for(const e of t.entries||[]){
@@ -454,17 +497,24 @@
             clubs.set(key,old);
           }
         }
+        state.catalogMeta=cat;
         state.catalogTournaments=cat.tournaments||[];
         state.clubCatalog=[...clubs.values()].sort((a,b)=>a.label.localeCompare(b.label,'fr',{sensitivity:'base'}));
         hydrateTrackedEntries();
-      }catch(_){state.clubCatalog=[]; state.catalogTournaments=[];}
+      }catch(err){state.catalogMeta={error:err.message};}
     }
     async function loadSharedState(){
       try{
         const s=await fetchJson(ADMIN_STATE_URL);
-        if(!s || s.updatedAtUtc===state.lastAdminStamp) return;
+        if(!s || (state.sharedStateLoaded && s.updatedAtUtc===state.lastAdminStamp)) return;
+        state.sharedStateLoaded=true;
         state.lastAdminStamp=s.updatedAtUtc||'';
-        if(s.trackedClubRaw) state.clubRaw=s.trackedClubRaw;
+        if(state.admin && !s.updatedAtUtc) return;
+        if(typeof s.trackedClubRaw==='string') state.clubRaw=s.trackedClubRaw;
+        state.selectionMode=s.selectionMode==='archers'?'archers':'clubs';
+        state.selectedArchers=Array.isArray(s.selectedArchers)?s.selectedArchers:[];
+        state.ignoreDefaultFeed=!!s.ignoreDefaultFeed;
+        if(state.admin) state.publicControlled=!!s.publicControlledByAdmin;
         if(s.trackedCountryRaw) state.countryRaw=s.trackedCountryRaw;
         state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
         state.watched=uniqueByNorm(s.watchedArchers||[]);
@@ -479,6 +529,9 @@
         trackedCountryRaw:state.countryRaw,
         phaseOverrideMode:state.phaseOverride,
         publicControlledByAdmin:state.publicControlled,
+        ignoreDefaultFeed:state.ignoreDefaultFeed,
+        selectionMode:state.selectionMode,
+        selectedArchers:state.selectedArchers,
         watchedArchers:state.watched,
         trackedTournaments:state.tracked.map(t=>({id:t.id,name:t.name,date_text:t.date,details_url:t.details,url:t.url,urls:t.urls||[],ic_url:t.url,ena_url:t.ena,club_entries:t.entries||[],scopeRaw:t.scopeRaw||state.clubRaw,enaLoaded:!!t.enaLoaded,liveStatus:t.liveStatus||'',place:t.place||''})),
         trackedIcUrls:state.tracked.map(t=>t.url)
@@ -486,8 +539,8 @@
     }
     function b64Url(text){return btoa(unescape(encodeURIComponent(text))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
     async function publishState(){
-      if(!state.adminBridge){setLog('Passerelle admin non configurée: état gardé dans ce navigateur.'); return false;}
-      const r=await fetch(state.adminBridge,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'save_admin_state',state_b64:b64Url(JSON.stringify(statePayload()))})});
+      if(!state.admin || !state.adminBridge || !state.adminToken){setLog('Publication indisponible : configure la passerelle puis authentifie-toi.'); return false;}
+      const r=await fetch(state.adminBridge,{method:'POST',headers:{'content-type':'application/json','Authorization':'Bearer '+state.adminToken},body:JSON.stringify({action:'save_admin_state',state_b64:b64Url(JSON.stringify(statePayload()))})});
       if(!r.ok) throw new Error('Bridge HTTP '+r.status);
       setLog('État partagé publié. La vue publique va se synchroniser.');
       return true;
@@ -499,7 +552,8 @@
 
     function cleanTournament(raw){
       const url=normalizeLiveUrl(raw.url||raw.ic_url||raw.icUrl||'');
-      const urls=Array.isArray(raw.urls) ? raw.urls.map(normalizeLiveUrl).filter(Boolean) : [];
+      const identity=tourDataId(url)||detailsId(raw.details_url||raw.details||'');
+      const urls=Array.isArray(raw.urls) ? raw.urls.map(normalizeLiveUrl).filter(u=>u&&(!identity||tourDataId(u)===identity)) : [];
       if(url && !urls.includes(url)) urls.unshift(url);
       const idHint=String(raw.id||raw.to_id||detailsId(raw.details_url||raw.details||'')||tourDataId(url||urls[0]||raw.ena_url||raw.ena||'')||'').trim();
       const fallbackName=idHint ? `Tournoi ${idHint}` : 'Tournoi suivi';
@@ -581,7 +635,7 @@
     function normalizeUrl(raw){
       const v=String(raw||'').trim();
       if(!v) return '';
-      if(/^https?:\/\//i.test(v)) return v;
+      if(/^https?:\/\//i.test(v)){try{const u=new URL(v);return u.protocol==='https:'&&u.hostname==='www.ianseo.net'&&!u.username&&!u.password&&!u.port?u.href:'';}catch(_){return '';}}
       if(v.startsWith('/')) return 'https://www.ianseo.net'+v;
       return '';
     }
@@ -637,34 +691,12 @@
       const m=String(detailsText||'').match(new RegExp(`(?:https://www\\.ianseo\\.net)?/TourData/\\d+/${esc}/ENA\\.php`,'i'));
       return m ? normalizeUrl(m[0]) : '';
     }
-    function extractScorePdfUrls(detailsText,toId){
-      const out=[], seen=new Set();
-      const esc=String(toId).replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-      const pats=[
-        new RegExp(`https://www\\.ianseo\\.net/TourData/\\d+/${esc}/(?:IC|IQ[A-Z0-9]+)\\.pdf(?:\\?[^)\\s]*)?`,'gi'),
-        new RegExp(`/TourData/\\d+/${esc}/(?:IC|IQ[A-Z0-9]+)\\.pdf(?:\\?[^)\\s]*)?`,'gi')
-      ];
-      for(const p of pats){
-        let m;
-        while((m=p.exec(String(detailsText||'')))){
-          const u=normalizeUrl(m[0]);
-          if(u && !seen.has(u)){seen.add(u); out.push(u);}
-        }
-      }
-      const rank=u=>/\/IC\.pdf/i.test(u)?0:1;
-      return out.sort((a,b)=>rank(a)-rank(b)||a.localeCompare(b));
-    }
-    function deriveLiveUrlsFromPdfUrls(pdfUrls){
-      const out=[], seen=new Set();
-      for(const pdfUrl of pdfUrls||[]){
-        const liveUrl=normalizeLiveUrl(String(pdfUrl||'').replace(/\.pdf(?:\?.*)?$/i,'.php'));
-        if(liveUrl && !seen.has(liveUrl)){seen.add(liveUrl); out.push(liveUrl);}
-      }
-      return out;
-    }
+
+
     function extractDetailsName(detailsText,toId){
       const text=String(detailsText||'');
       const fallback=`Tournoi ${toId}`;
+      if(/<html\b/i.test(text)){const doc=new DOMParser().parseFromString(text,'text/html'); return sanitizeTournamentName(doc.querySelector('h1')?.textContent||doc.title||'',fallback);}
       const titleMatch=text.match(/^Title:\s*(.+)$/im);
       const title=sanitizeTournamentName((titleMatch?.[1]||'').trim(), '');
       if(title) return title;
@@ -704,27 +736,7 @@
         return extractLiveUrls(txt,id);
       }catch(_){return [];}
     }
-    async function tryAutoRepairDeadLiveSource(src, tournament){
-      const m=String(src||'').match(/(https?:\/\/www\.ianseo\.net\/TourData\/(\d+)\/)(\d+)(\/([A-Z0-9]+)\.php(?:\?.*)?)$/i);
-      if(!m) return {url:'',text:''};
-      const base=m[1], year=m[2], idNum=Number(m[3]), tail=m[4], code=(m[5]||'').toUpperCase();
-      if(!Number.isFinite(idNum)) return {url:'',text:''};
-      const candidates=[idNum-1,idNum+1].filter(n=>n>0).map(n=>`${base}${n}${tail}`);
-      for(const candidate of candidates){
-        try{
-          const txt=await fetchText(toProxy(candidate));
-          if(/file not found\./i.test(String(txt||''))) continue;
-          if(code==='IC' || code==='ICCM' || /^IQ/.test(code)){
-            tournament.url=candidate;
-            tournament.details=`https://www.ianseo.net/Details.php?toId=${candidate.match(/\/TourData\/\d+\/(\d+)\//i)?.[1]||''}`;
-            if(!Array.isArray(tournament.urls)) tournament.urls=[];
-            if(!tournament.urls.includes(candidate)) tournament.urls.unshift(candidate);
-          }
-          return {url:candidate,text:txt};
-        }catch(_){}
-      }
-      return {url:'',text:''};
-    }
+
     function liveLabel(t){
       if(t.liveStatus) return t.liveStatus;
       return t.url ? 'Live prêt, en attente de scores' : 'Départs publiés, résultats pas encore ouverts';
@@ -761,18 +773,10 @@
       return !!n && state.watched.some(w=>{const k=norm(w); return k && (n.includes(k)||k.includes(n));});
     }
     function matchesScope(a, scopeKeys=state.clubKeys){
-      const archerScopeRaw=String(a?._scopeRaw||a?.scopeRaw||'').trim();
-      const sourceKeys=archerScopeRaw
-        ? clubKeysFromRaw(archerScopeRaw).map(x=>x.toLowerCase())
-        : (Array.isArray(scopeKeys) ? scopeKeys : splitList(scopeKeys));
-      const keys=(sourceKeys||[])
-        .flatMap(v=>extractClubCodes(v))
-        .map(norm)
-        .filter(Boolean);
-      const rowClubCodes=extractClubCodes(a?.club||'').map(norm).filter(Boolean);
-      if(!keys.length) return false;
-      const clubMatch=rowClubCodes.some(code=>keys.includes(code));
-      return clubMatch;
+      if(state.selectionMode==='archers') return selectedArcherMatches(a);
+      const raw=String(a?._scopeRaw||a?.scopeRaw||'').trim();
+      const keys=raw ? clubKeysFromRaw(raw) : (Array.isArray(scopeKeys)?scopeKeys:clubKeysFromRaw(scopeKeys));
+      return extractClubCodes(a?.club||'').some(code=>keys.includes(code));
     }
     function normalizeData(raw){
       if(raw?.competitions?.length){
@@ -839,67 +843,86 @@
       return fixText(v).replace(/!\[[^\]]*]\([^)]*\)/g,'').replace(/\s+/g,' ').trim();
     }
     function parseEnaEntries(md){
-      const out=[];
+      if(/^\s*</.test(md) || /<html\b/i.test(md)) return parseHtmlEntries(md);
+      const out=[]; let currentClub='';
       for(const raw of String(md||'').split('\n')){
-        const line=raw.trim();
-        if(!line.startsWith('|')) continue;
-        const cells=line.split('|').map(v=>v.trim()).filter(Boolean);
-        if(cells.length<5) continue;
-        if(/athl[eè]te/i.test(cells[0]) || /^-+$/.test(cells[0]) || /^[A-Z]$/.test(cells[0])) continue;
-        const depart=stripMarkdownImages(cells[4]||'');
-        const time=(depart.match(/\b\d{1,2}h\d{2}\b|\b\d{1,2}:\d{2}\b/)||[])[0]||'';
-        out.push({
-          name:stripMarkdownImages(cells[0]||''),
-          target:stripMarkdownImages(cells[1]||''),
-          club:stripMarkdownImages(cells[2]||''),
-          category:stripMarkdownImages(cells[3]||''),
-          session:stripMarkdownImages(cells[3]||''),
-          depart,
-          time
-        });
+        if(!raw.trim().startsWith('|')) continue;
+        const cells=raw.trim().split('|').slice(1,-1).map(stripMarkdownImages);
+        const nonempty=cells.filter(Boolean);
+        if(nonempty.length===1 && /^\d{6,7}\s*-/.test(nonempty[0])){currentClub=nonempty[0]; continue;}
+        if(cells.length<4 || /athl[eè]te|archer|^nom$/i.test(cells[0]) || /^[-: ]+$/.test(cells[0])) continue;
+        const grouped=!!currentClub && !extractClubCodes(cells[2]||'').length;
+        const depart=cells[grouped?3:4]||'';
+        out.push({name:cells[0],target:cells[1],club:grouped?currentClub:cells[2],category:cells[grouped?2:3]||'',depart,time:(depart.match(/\b\d{1,2}[h:]\d{2}\b/)||[])[0]||''});
       }
       return out;
+    }
+    function parseHtmlEntries(html){
+      const doc=new DOMParser().parseFromString(html,'text/html');
+      const out=[]; let club='', headers={};
+      const labels={name:['athlete','archer','name','nom'],club:['country','nation','club','pays','societe'],target:['target','cible'],category:['class','category','categorie','division'],depart:['session','depart','start','departure']};
+      for(const row of doc.querySelectorAll('tr')){
+        const cells=[...row.querySelectorAll(':scope > td, :scope > th')].map(c=>c.textContent.replace(/\s+/g,' ').trim());
+        const nonempty=cells.filter(Boolean);
+        if(nonempty.length===1 && /^\d{6,7}\s*-/.test(nonempty[0])){club=nonempty[0];headers={};continue;}
+        const detected={}; cells.forEach((c,i)=>{for(const [k,v] of Object.entries(labels)) if(v.includes(norm(c))) detected[k]=i;});
+        if(detected.name!==undefined){headers=detected;continue;}
+        const layout=Object.keys(headers).length?headers:(club?{name:0,target:1,category:2,depart:3}:{name:0,target:1,club:2,category:3,depart:4});
+        const get=k=>cells[layout[k]]||'';
+        if(cells.length<3 || !get('name') || !(get('club')||club)) continue;
+        const depart=get('depart');
+        out.push({name:get('name'),target:get('target'),club:get('club')||club,category:get('category'),depart,time:(depart.match(/\b\d{1,2}[h:]\d{2}\b/)||[])[0]||''});
+      }
+      return out;
+    }
+    function arrowCount(text){
+      const values=[...String(text||'').matchAll(/(?:apr[eè]s|after)\s*(\d+)\s*(?:fl[èe]ches|arrows)/gi)].map(m=>Number(m[1]));
+      return values.length===1?values[0]:null;
+    }
+    function roundArrowLimit(context){return /salle|indoor|\b18\s*m\b/i.test(context||'')?60:72;}
+    function parseHtmlLive(html,url,tournament){
+      const doc=new DOMParser().parseFromString(html,'text/html');
+      const title=doc.querySelector('.results-header-center > div')?.textContent?.trim()||tournament?.name||'';
+      const place=doc.querySelector('.results-header-center > div:nth-child(2)')?.textContent?.trim()||tournament?.place||'-';
+      const rows=[];let category='',progress='',pending=null;
+      for(const row of doc.querySelectorAll('tr')){
+        const header=row.querySelector('th[colspan]');
+        if(header){const label=header.textContent.replace(/\s+/g,' ').trim();const m=label.match(/^(.*?)\s*\[([^\]]+)\]/);category=m?m[1]:label;progress=m?m[2]:'';pending=null;continue;}
+        const cells=[...row.querySelectorAll(':scope > td')].map(c=>c.textContent.replace(/\s+/g,' ').trim());
+        if(cells.length>=6 && /^\d+$/.test(cells[0]) && cells[1] && cells[2]){
+          const arrows=arrowCount(progress), maxArrows=roundArrowLimit(title+' '+category);
+          const score=Number((cells.at(-3).match(/\d+/)||[])[0]||0);
+          pending={name:cells[1],club:cells[2],position:cells[0],score,scoreLabel:String(score),category,progress:progress||'Progression non publiée',arrows,maxArrows,detail:'10+X: '+cells.at(-2)+' · X: '+cells.at(-1),finished:isFinalProgressText(progress,category,maxArrows)};
+          rows.push(pending);
+        }else if(pending && /results-secondary-lines/.test(row.className)) pending.detail=cells.at(-1)||pending.detail;
+      }
+      if(!doc.querySelector('table')) throw new Error('Page IANSEO sans tableau de résultats');
+      return {id:tourDataId(url),name:title,place,sourceUrl:url,archers:dedupeArchers(rows.filter(a=>matchesScope(a,clubKeysFromRaw(tournament?.scopeRaw||state.clubRaw))))};
     }
     async function enrichTrackedFromEna(){
       if(!state.tracked.length) return false;
       let changed=false;
       for(const t of state.tracked){
-        if(!t.ena || t.enaLoaded) continue;
+        if(!t.ena || (t.enaLoadedAt && Date.now()-t.enaLoadedAt<300000)) continue;
         try{
           const md=await fetchText(toProxy(t.ena));
           const entries=parseEnaEntries(md);
           if(entries.length){t.entries=entries; changed=true;}
-          t.enaLoaded=true;
-        }catch(_){}
+          t.enaLoaded=true; t.enaLoadedAt=Date.now();
+        }catch(err){state.readWarnings.push('Inscriptions '+t.name+': '+err.message);}
       }
       if(changed) localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
       return changed;
     }
     function entriesForScope(t){
-      const keys=clubKeysFromRaw(t.scopeRaw||state.clubRaw).map(norm);
-      const entries=t.entries||[];
-      if(!keys.length) return [];
-      return entries.filter(e=>matchesEntryScope(e, keys));
+      return (t.entries||[]).filter(e=>matchesEntryScope(e,clubKeysFromRaw(t.scopeRaw||state.clubRaw)));
     }
     function isInTrackedScope(a){
-      const compId=String(a?.competitionId||'');
-      const tracked=(state.tracked||[]).find(t=>String(t.id)===compId);
-      const scopeRaw=tracked ? (tracked.scopeRaw||state.clubRaw) : state.clubRaw;
-      const scopedCodes=clubKeysFromRaw(scopeRaw).map(norm).filter(Boolean);
-      if(!scopedCodes.length) return false;
-      const rowCodes=extractClubCodes(a?.club||'').map(norm).filter(Boolean);
-      return rowCodes.some(code=>scopedCodes.includes(code));
+      const tracked=state.tracked.find(t=>String(t.id)===String(a?.competitionId||''));
+      return matchesScope(a,clubKeysFromRaw(tracked?.scopeRaw||state.clubRaw));
     }
     function applyHardScopeFilter(rows){
-      return (rows||[]).filter(row=>{
-        const compId=String(row?.competitionId||'');
-        const tracked=(state.tracked||[]).find(t=>String(t.id)===compId);
-        const scopeRaw=tracked ? (tracked.scopeRaw||state.clubRaw) : state.clubRaw;
-        const allowed=clubKeysFromRaw(scopeRaw).map(norm).filter(Boolean);
-        if(!allowed.length) return false;
-        const rowCodes=extractClubCodes(row?.club||'').map(norm).filter(Boolean);
-        return rowCodes.some(c=>allowed.includes(c));
-      });
+      return (rows||[]).filter(isInTrackedScope);
     }
     function entryDepart(e){
       const raw=fixText(e?.depart||e?.departure||e?.start||'').trim();
@@ -1162,7 +1185,7 @@
         const depArrows=parseDepArrowState(`${a.progress||''} ${a.detail||''}`);
         if(depArrows.size){
           for(const [d,arrows] of depArrows.entries()){
-            if(arrows>=72 || arrows===60) finished.add(d);
+            if(arrows>=roundArrowLimit(a.category)) finished.add(d);
             else if(arrows>0) live.add(d);
           }
           continue;
@@ -1216,13 +1239,13 @@
           if(!key) continue;
           const cur=map.get(key);
           if(!cur) continue;
-          if(getScore(cur)<=0 && getScore(old)>0){
+          if(c.error && getScore(cur)<=0 && getScore(old)>0){
             map.set(key,{...cur,score:getScore(old),scoreLabel:String(getScore(old)),detail:cur.detail||old.detail||''});
           }
         }
         return {...c,archers:[...map.values()]};
       });
-      return {competitions};
+      return {...current,competitions};
     }
     function archers(data){
       const comps=(data?.competitions||[]);
@@ -1249,26 +1272,17 @@
       });
     }
     function signature(data){return JSON.stringify((data.competitions||[]).map(c=>[c.id,c.archers.map(a=>[a.name,a.score,a.position,a.progress,a.detail,a.finished])]));}
-    function getScore(a){const n=Number(a?.score); if(Number.isFinite(n)&&n>0) return n; const m=String(a?.scoreLabel||'').match(/\d+/); return m?Number(m[0]):0;}
-    function isFinalProgressText(text){
+    function getScore(a){const n=Number(a?.score); if(a?.score!==null && a?.score!==undefined && Number.isFinite(n)) return n; const m=String(a?.scoreLabel||'').match(/\d+/); return m?Number(m[0]):0;}
+    function isFinalProgressText(text,category='',maxArrows=null){
       const raw=String(text||'');
-      if(!raw.trim()) return false;
-      if(/termin|r[ée]sultat publi[ée]/i.test(raw)) return true;
-      const values=[...raw.matchAll(/apr[eè]s\s*(\d+)\s*fl[èe]ches/gi)].map(m=>Number(m[1]));
-      if(!values.length) return false;
-      return values.every(v=>v>=72 || v===60);
+      if(/termin[ée]|finished|final results/i.test(raw)) return true;
+      const count=arrowCount(raw);
+      return count!==null && count>=(maxArrows||roundArrowLimit(category));
     }
-    function hasCompletedDistanceBreakdown(text){
-      const raw=String(text||'');
-      const hasFirst=/-1\s*:\s*\d+/i.test(raw);
-      const hasSecond=/-2\s*:\s*\d+/i.test(raw);
-      return hasFirst && hasSecond;
-    }
+
     function isFinished(a){
-      if(!!a?.finished) return true;
-      if(isFinalProgressText(`${a?.progress||''} ${a?.detail||''}`)) return true;
-      if(hasCompletedDistanceBreakdown(`${a?.category||''} ${a?.detail||''}`)) return true;
-      return false;
+      if(a?.finished===true) return true;
+      return isFinalProgressText(a?.progress,a?.category,a?.maxArrows);
     }
     function compactProgressLabel(a){
       const raw=String(a?.progress||'').trim();
@@ -1351,7 +1365,7 @@
     function mergeRowsByArcher(rows){
       const groups=new Map();
       for(const row of rows||[]){
-        const key=norm(`${row?.competitionId||''}|${row?.name||''}`);
+        const key=norm(`${row?.competitionId||''}|${row?.name||''}|${row?.club||''}|${row?.category||''}`);
         if(!key) continue;
         if(!groups.has(key)) groups.set(key,[]);
         groups.get(key).push(row);
@@ -1383,10 +1397,12 @@
           }
         }
         const out={...base};
-        out.progress=formatDepartCellMap(depMap, v=>v.progress||'-');
+        out.progressHtml=formatDepartCellMap(depMap, v=>v.progress||'-');
+        out.progress=[...depMap.values()].map(v=>v.progress||'-').join(' · ');
         out.scoreHtml=formatDepartCellMap(depMap, v=>String(v.score||'-'));
         out.detailHtml=formatDepartCellMap(depMap, v=>v.detail||'-');
-        out.position=formatDepartCellMap(depMap, v=>v.position||'-');
+        out.positionHtml=formatDepartCellMap(depMap, v=>v.position||'-');
+        out.position=base.position;
         out.score=Math.max(...[...depMap.values()].map(v=>Number(v.score)||0),0);
         out.finished=[...depMap.values()].every(v=>v.finished);
         merged.push(out);
@@ -1398,7 +1414,15 @@
     }
     function allArchersFinished(data){
       const all=archers(data);
-      return all.length>0 && all.every(a=>isFinished(a));
+      if(!all.length || !all.every(isFinished) || state.readWarnings.length) return false;
+      const now=new Date();
+      for(const t of state.tracked){
+        const schedule=evaluateTournamentSchedule(t);
+        if(['future','upcoming','active'].includes(schedule.state)) return false;
+        const range=parseTournamentDateRange(t.date);
+        if(range && now<=range.end && (t.entries||[]).some(e=>matchesEntryScope(e,clubKeysFromRaw(t.scopeRaw||state.clubRaw)) && !all.some(a=>String(a.competitionId)===String(t.id) && norm(a.name)===norm(e.name) && extractClubCodes(a.club).join()===extractClubCodes(e.club).join()))) return false;
+      }
+      return true;
     }
     function updateChangeBadge(data){
       const sig=signature(data);
@@ -1419,8 +1443,11 @@
     function scheduleNextRefresh(){
       if(!state.autoRefreshEnabled) return;
       clearRefreshTimer();
-      state.nextRefresh=Date.now()+REFRESH_MS;
-      state.refreshTimer=setTimeout(()=>refresh({manual:false}),REFRESH_MS);
+      const active=hasLiveArchers(state.data)||state.tracked.some(t=>evaluateTournamentSchedule(t).state==='active');
+      const interval=active?REFRESH_MS:300000;
+      const delay=Math.max(0,interval-(Date.now()-state.refreshStartedAt));
+      state.nextRefresh=Date.now()+delay;
+      state.refreshTimer=setTimeout(()=>refresh({manual:false}),delay);
     }
     function stopAutoRefresh(statusText='Tous les archers sont terminés : actualisation automatique arrêtée'){
       state.autoRefreshEnabled=false;
@@ -1447,6 +1474,7 @@
     }
 
     function parseMarkdownLive(md, url, tournament=null){
+      if(/^\s*</.test(md) || /<html\b/i.test(md)) return parseHtmlLive(md,url,tournament);
       const lines=String(md||'').split('\n');
       const id=(String(url).match(/\/TourData\/(\d+)\/(\d+)\/([A-Z0-9]+)\.php/i)||[])[2]||url;
       const code=(String(url).match(/\/TourData\/(\d+)\/(\d+)\/([A-Z0-9]+)\.php/i)||[])[3]||'';
@@ -1487,7 +1515,7 @@
           }
           if(cells.length>=6 && /^\d+$/.test(cells[0])){
             const progress=categoryProgress || 'En cours';
-            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress,detail:`10+X: ${cells[cells.length-2]||'-'} · X: ${cells[cells.length-1]||'-'}`,finished:isFinalProgressText(progress)};
+            const a={position:cells[0],name:cells[1]||'',club:cells[2]||'',score:Number(String(cells[cells.length-3]).replace(/[^\d]/g,''))||0,scoreLabel:cells[cells.length-3]||'',category,progress,detail:`10+X: ${cells[cells.length-2]||'-'} · X: ${cells[cells.length-1]||'-'}`,finished:isFinalProgressText(progress,category)};
             pushRow(a);
           }
           continue;
@@ -1496,7 +1524,7 @@
         const mClassic=clean.match(/^(\d+)\s+(.+?)\s+([A-Z0-9]{2,12}\s*-\s*.+?)\s+(.+)$/);
         if(mClassic){
           const nums=(mClassic[4].match(/\b\d{1,3}\b/g)||[]).map(Number);
-          const a={position:mClassic[1],name:mClassic[2].trim(),club:mClassic[3].trim(),score:nums.length?Math.max(...nums):0,scoreLabel:nums.length?String(Math.max(...nums)):'',category,progress:categoryProgress||'Résultat publié',detail:mClassic[4].trim(),finished:true};
+          const a={position:mClassic[1],name:mClassic[2].trim(),club:mClassic[3].trim(),score:nums.length?Math.max(...nums):0,scoreLabel:nums.length?String(Math.max(...nums)):'',category,progress:categoryProgress||'Résultat publié',detail:mClassic[4].trim(),finished:isFinalProgressText(categoryProgress,category)};
           pushRow(a);
           continue;
         }
@@ -1516,94 +1544,19 @@
               category,
               progress,
               detail:rest,
-              finished:isFinalProgressText(progress)
+              finished:isFinalProgressText(progress,category)
             };
             pushRow(a);
           }
         }
       }
-      const output=(rows.length || !scopeKeys.length) ? rows : allRows;
+      for(const a of rows){a.arrows=arrowCount(a.progress);a.maxArrows=roundArrowLimit(title+' '+a.category);a.finished=isFinalProgressText(a.progress,a.category,a.maxArrows);}
+      const output=rows;
       return {id:String(id),name:title,place:info.place||tournament?.place||'-',sourceUrl:url,archers:dedupeArchers(output)};
     }
-    function parsePdfResultsMarkdown(md, tournament=null){
-      const lines=String(md||'').split('\n').map(l=>fixText(l).trim()).filter(Boolean);
-      const scopeKeys=clubKeysFromRaw(tournament?.scopeRaw || state.clubRaw).map(x=>x.toLowerCase());
-      const rows=[]; const allRows=[];
-      const pushRow=(a)=>{
-        allRows.push(a);
-        if(matchesScope(a, scopeKeys)) rows.push(a);
-      };
-      let category='Résultats';
-      let progress='Résultat publié';
-      for(const line of lines){
-        const cat=line.match(/^Après\s+(\d+)\s+fl[èe]ches\s+(.+)$/i);
-        if(cat){
-          progress=`Après ${cat[1]} flèches`;
-          category=cat[2].replace(/\s+suite$/i,'').trim();
-          continue;
-        }
-        const m=line.match(/^(\d+)\s+\d+\-\s+\S+\s+(.+?)\s+(\d{6,7})\s+(.+)$/);
-        if(!m) continue;
-        const tail=m[4].trim();
-        const score3=tail.match(/(\d{1,3})\s+(\d+)\s+(\d+)\s*$/);
-        const score1=tail.match(/(\d{1,3})\s*$/);
-        const scoreVal=score3 ? Number(score3[1]) : (score1 ? Number(score1[1]) : 0);
-        if(!scoreVal) continue;
-        const clubName=tail
-          .replace(/(?:\d{1,3}\s*\/\s*\d+\s+)+\d{1,3}\s+\d+\s+\d+\s*$/,'')
-          .replace(/\d{1,3}\s*$/,'')
-          .trim();
-        const detailParts=[tail.match(/(\d{1,3})\s*\/\s*\d+/g)?.join(' · ')||'', score3?`10+X: ${score3[2]} · X: ${score3[3]}`:''].filter(Boolean);
-        const a={
-          position:m[1],
-          name:m[2].trim(),
-          club:`${m[3]} - ${clubName||'-'}`,
-          score:scoreVal,
-          scoreLabel:String(scoreVal),
-          category,
-          progress,
-          detail:detailParts.join(' · ') || tail,
-          finished:isFinalProgressText(progress)
-        };
-        pushRow(a);
-      }
-      return dedupeArchers((rows.length || !scopeKeys.length) ? rows : allRows);
-    }
-    async function resolveResultPdfUrls(t){
-      if(Array.isArray(t?.resultPdfUrls) && t.resultPdfUrls.length) return t.resultPdfUrls;
-      const urls=[];
-      if(t?.url){
-        const byLive=String(t.url).replace(/\/(?:IC(?:CM)?|I(?!NA)[A-Z0-9]+)\.php(?:\?.*)?$/i,'/IC.pdf');
-        if(/\/IC\.pdf$/i.test(byLive)) urls.push(byLive);
-      }
-      if(t?.details){
-        try{
-          const detailsText=await fetchText(toProxy(t.details));
-          const toId=tournamentToId(t);
-          const found=extractScorePdfUrls(detailsText,toId);
-          for(const u of found){ if(!urls.includes(u)) urls.push(u); }
-        }catch(_){}
-      }
-      t.resultPdfUrls=urls;
-      return urls;
-    }
-    async function loadPdfResultsForTournament(t){
-      try{
-        const pdfUrls=await resolveResultPdfUrls(t);
-        if(!pdfUrls.length) return [];
-        let all=[];
-        for(const pdfUrl of pdfUrls){
-          try{
-            const pdfText=await fetchText(toProxy(pdfUrl));
-            const rows=parsePdfResultsMarkdown(pdfText,t);
-            all=dedupeArchers([...all,...rows]);
-          }catch(_){}
-        }
-        return all;
-      }catch(_){
-        return [];
-      }
-    }
+
+
+
     function dedupeArchers(list){
       const map=new Map();
       for(const a of list){const k=norm(`${a.name}|${a.club}|${a.category}`); const old=map.get(k); if(!old || getScore(a)>=getScore(old)) map.set(k,a);}
@@ -1677,11 +1630,7 @@
         for(const u of icCandidates){
           if(!t.urls.includes(u)) t.urls.unshift(u);
         }
-        const pdfUrlsForLive=await resolveResultPdfUrls(t);
-        const derivedLiveUrls=deriveLiveUrlsFromPdfUrls(pdfUrlsForLive);
-        for(const u of derivedLiveUrls){
-          if(!t.urls.includes(u)) t.urls.push(u);
-        }
+
         if(t.details){
           const foundUrls=await discoverLiveForTournament(t);
           if(foundUrls.length){
@@ -1705,26 +1654,17 @@
             try{
               let effectiveSrc=src;
               let md=await fetchText(toProxy(src));
-              if(/file not found\./i.test(String(md||''))){
-                const repaired=await tryAutoRepairDeadLiveSource(src,t);
-                if(!repaired.url || !repaired.text) continue;
-                effectiveSrc=repaired.url;
-                md=repaired.text;
-              }
-              if(!firstValidSource) firstValidSource=effectiveSrc;
+              if(/file not found\./i.test(String(md||''))) throw new Error('Page IANSEO non publiée');
               const part=parseMarkdownLive(md,effectiveSrc,t);
+              if(!firstValidSource) firstValidSource=effectiveSrc;
               mergedArchers=dedupeArchers([...mergedArchers,...cleanLiveRows(part.archers)]);
               if(!parsedName && part.name) parsedName=part.name;
               if(!parsedPlace && part.place && part.place!=='-') parsedPlace=part.place;
-            }catch(_){}
+            }catch(err){if(src===t.url) state.readWarnings.push(t.name+': '+err.message);}
           }
+          if(!firstValidSource) throw new Error('Aucune source HTML valide');
           if(firstValidSource && t.url!==firstValidSource) t.url=firstValidSource;
           const c={id:t.id,name:parsedName||t.name||'Tournoi suivi',place:parsedPlace||t.place||'-',sourceUrl:firstValidSource||t.url||sourceUrls[0]||'',archers:mergedArchers.map(a=>({...a,_scopeRaw:t.scopeRaw||state.clubRaw||''}))};
-          const needsPdfBackfill=!c.archers.length || !c.archers.some(a=>a.finished || getScore(a)>0);
-          if(needsPdfBackfill){
-            const pdfRows=await loadPdfResultsForTournament(t);
-            if(pdfRows.length) c.archers=dedupeArchers([...c.archers,...pdfRows]);
-          }
           const sched=evaluateTournamentSchedule(t);
           if(c.archers.length){
             t.liveStatus=c.archers.some(a=>isFinished(a)) ? 'Résultats publiés' : 'Scores live détectés';
@@ -1746,11 +1686,9 @@
         }catch(err){
           if(/HTTP 404/.test(err.message)) t.liveStatus='Départs publiés, résultats pas encore ouverts';
           else t.liveStatus='Live inaccessible pour le moment';
-          const fallback=[];
-          const pdfRows=await loadPdfResultsForTournament(t);
-          const merged=dedupeArchers([...fallback,...pdfRows]);
-          if(pdfRows.length) t.liveStatus='Résultats publiés';
-          comps.push({id:t.id,name:t.name||'Source erreur',place:t.place||'-',sourceUrl:t.url,archers:merged,error:err.message});
+          state.readWarnings.push(t.name+': '+err.message);
+          const old=state.lastGoodData?.competitions?.find(c=>String(c.id)===String(t.id));
+          comps.push({...(old||{}),id:t.id,name:t.name,place:t.place||'-',sourceUrl:t.url,archers:old?.archers||[],error:err.message});
         }
       }
       if(state.admin) localStorage.setItem('slc_tracked',JSON.stringify(state.tracked));
@@ -1789,19 +1727,20 @@
         const key=norm(`${a.name}|${a.competitionId}|${a.club||''}`);
         const score=getScore(a);
         if(!score) continue;
-        if(!state.volley[key]) state.volley[key]={name:`${a.name} · ${a.competitionName}`,last:null,history:[],config:getVolleyConfig(a)};
+        if(!state.volley[key]) state.volley[key]={name:`${a.name} · ${a.competitionName}`,last:null,lastArrows:null,history:[],config:getVolleyConfig(a)};
         const s=state.volley[key];
         s.name=`${a.name} · ${a.competitionName}`; s.config=getVolleyConfig(a);
+        const count=Number.isFinite(a.arrows)?a.arrows:arrowCount(a.progress);
         if(s.last===null){
-          s.last=score;
+          s.last=score; s.lastArrows=count;
           if(score>0 && !s.history.length){
             s.history.push({score,type:'grouped',mood:'',ts:new Date().toISOString(),initial:true});
           }
           continue;
         }
-        const delta=score-s.last; s.last=score;
+        const delta=score-s.last, arrowDelta=count!==null && s.lastArrows!==null?count-s.lastArrows:null; s.last=score; s.lastArrows=count;
         if(delta<=0) continue;
-        const type=delta<=s.config.maxVolleyScore?'volley':'grouped';
+        const type=arrowDelta===s.config.arrowsPerVolley && delta<=s.config.maxVolleyScore?'volley':'grouped';
         const previous=[...s.history].reverse().find(x=>x.type==='volley');
         const mood=type==='volley'&&previous ? (delta>previous.score?'good':delta<previous.score?'bad':'neutral') : '';
         s.history.push({score:delta,type,mood,ts:new Date().toISOString()});
@@ -1810,8 +1749,8 @@
     }
     function getVolleyConfig(a){
       const txt=norm(`${a.category||''} ${a.progress||''}`);
-      if(txt.includes('indoor')||txt.includes('salle')||txt.includes('18m')) return {maxVolleyScore:30,volleysPerSeries:10,label:'Salle: 2 séries de 10 volées de 3 flèches'};
-      return {maxVolleyScore:60,volleysPerSeries:6,label:'TAE: 2 séries de 6 volées de 6 flèches'};
+      if(txt.includes('indoor')||txt.includes('salle')||txt.includes('18m')) return {maxVolleyScore:30,arrowsPerVolley:3,volleysPerSeries:10,label:'Salle: 2 séries de 10 volées de 3 flèches'};
+      return {maxVolleyScore:60,arrowsPerVolley:6,volleysPerSeries:6,label:'TAE: 2 séries de 6 volées de 6 flèches'};
     }
     function moodHtml(type){return type?`<span class="mood ${type}"><i></i></span>`:'<span class="muted">-</span>';}
     function renderVolley(){
@@ -1858,22 +1797,13 @@
       let done=all.filter(a=>isFinished(a) && isInTrackedScope(a));
       $('statCompetitions').textContent=(data.competitions||[]).length || state.tracked.length;
       const phase=computePhase(data);
-      if(phase==='after'){
-        const scoredLive=live.filter(a=>getScore(a)>0);
-        if(scoredLive.length){
-          done=dedupeArchers([...done,...scoredLive]);
-          live=live.filter(a=>!(getScore(a)>0));
-        }
-      }
       live=dedupeDisplayRows(live);
       done=dedupeDisplayRows(done);
       live=mergeRowsByArcher(live);
       done=mergeRowsByArcher(done);
       live=sortDisplayRows(sanitizeDisplayRows(live));
       done=sortDisplayRows(sanitizeDisplayRows(done));
-      if(state.watched.length){
-        done=done.filter(isWatched);
-      }
+
       live=applyHardScopeFilter(live);
       done=applyHardScopeFilter(done);
       const allMerged=mergeRowsByArcher(dedupeDisplayRows(all.filter(isInTrackedScope)));
@@ -1899,6 +1829,7 @@
       document.querySelectorAll('[data-comp]').forEach(b=>b.onclick=()=>{state.selectedCompetition=b.dataset.comp; render();});
     }
     function updateFilterInfo(){
+      if(state.selectionMode==='archers'){$('filterScopeInfo').textContent='Sélection individuelle : '+state.selectedArchers.map(a=>a.name+' ('+a.club+')').join(', '); $('rejectCountInfo').textContent=''; return;}
       const stats=state.filterStats?.byCompetition||{};
       const tracked=state.tracked||[];
       if(!tracked.length){
@@ -1934,8 +1865,8 @@
         return;
       }
       $(id).innerHTML=rows.map(a=>{const w=isWatched(a); const badge=w?' <span class="badge green">Suivi</span>':''; return live
-        ? `<tr class="${w?'watch-row':'live-row'}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${a.progress||escapeHtml(compactProgressLabel(a))}</td><td>${a.position||escapeHtml(a.position||'')}</td><td><strong>${a.scoreHtml||escapeHtml(String(getScore(a)||''))}</strong></td><td>${a.detailHtml||escapeHtml(a.detail||'')}</td></tr>`
-        : `<tr class="${w?'watch-row':''}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${a.position||escapeHtml(a.position||'')}</td><td><strong>${a.scoreHtml||escapeHtml(String(getScore(a)||''))}</strong></td><td>${a.detailHtml||escapeHtml(a.detail||'')}</td></tr>`;}).join('');
+        ? `<tr class="${w?'watch-row':'live-row'}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${a.progressHtml||escapeHtml(a.progress||compactProgressLabel(a))}</td><td>${a.positionHtml||escapeHtml(a.position||'')}</td><td><strong>${a.scoreHtml||escapeHtml(String(getScore(a)||''))}</strong></td><td>${a.detailHtml||escapeHtml(a.detail||'')}</td></tr>`
+        : `<tr class="${w?'watch-row':''}"><td><strong>${escapeHtml(a.name||'')}</strong>${badge}<div class="muted">${escapeHtml(a.competitionName||'')}</div></td><td>${escapeHtml(a.club||'')}</td><td>${escapeHtml(a.category||'')}</td><td>${a.positionHtml||escapeHtml(a.position||'')}</td><td><strong>${a.scoreHtml||escapeHtml(String(getScore(a)||''))}</strong></td><td>${a.detailHtml||escapeHtml(a.detail||'')}</td></tr>`;}).join('');
     }
     function renderBefore(){
       $('beforeMeta').textContent=beforeSummary();
@@ -1980,8 +1911,39 @@
       document.querySelectorAll('[data-toggle-before]').forEach(b=>b.onclick=()=>{const id=b.dataset.toggleBefore; state.expandedBefore.has(id)?state.expandedBefore.delete(id):state.expandedBefore.add(id); renderBefore();});
       document.querySelectorAll('[data-remove-track]').forEach(b=>b.onclick=()=>{state.archived.unshift(...state.tracked.filter(t=>t.id===b.dataset.removeTrack)); state.tracked=state.tracked.filter(t=>t.id!==b.dataset.removeTrack); saveLocal(); refresh();});
     }
+    function searchTokens(value){return fixText(value).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').split(/[^a-z0-9]+/).filter(Boolean);}
+    function catalogArcherSearch(query){
+      const tokens=searchTokens(query);
+      if(!tokens.length) return [];
+      return state.catalogTournaments.flatMap(t=>(t.entries||[]).filter(e=>tokens.every(token=>searchTokens(e.name).some(part=>part.startsWith(token)))).map(e=>({...e,tournament:t})));
+    }
+    async function searchArchers(){
+      await loadClubCatalog(); renderCatalogCoverage();
+      state.archerSearchMatches=catalogArcherSearch($('archerSearchInput').value);
+      $('archerSearchResults').innerHTML=state.archerSearchMatches.slice(0,100).map((e,i)=>`<div class="card"><strong>${escapeHtml(e.name)}</strong> · ${escapeHtml(e.club)}<div class="muted">${escapeHtml(e.category)} · ${escapeHtml(e.tournament.name)} · ${escapeHtml(e.tournament.date_text)}</div><button class="btn small" data-select-archer="${i}">Sélectionner et suivre ce tournoi</button></div>`).join('')||'<div class="muted">Aucun nom trouvé dans les inscriptions disponibles. Cela ne signifie pas que cet archer n’est inscrit nulle part.</div>';
+      if(state.archerSearchMatches.length>100) $('archerSearchResults').insertAdjacentHTML('beforeend','<div class="muted">Plus de 100 résultats : précise le nom.</div>');
+      document.querySelectorAll('[data-select-archer]').forEach(b=>b.onclick=()=>{
+        const e=state.archerSearchMatches[Number(b.dataset.selectArcher)], t=e.tournament;
+        const clubCode=extractClubCodes(e.club)[0]||'';
+        if(!state.selectedArchers.some(a=>norm(a.name)===norm(e.name) && norm(a.club)===norm(e.club))) state.selectedArchers.push({name:e.name,club:e.club,clubCode});
+        state.selectionMode='archers';
+        upsertTrackedTournament({...t,id:t.to_id,club_entries:t.entries,scopeRaw:state.clubRaw});
+        state.ignoreDefaultFeed=false;
+        saveLocal(); refresh({manual:true}); syncPublicStateIfEnabled();
+      });
+    }
+    function renderCatalogCoverage(){
+      const meta=state.catalogMeta;
+      const withEntries=state.catalogTournaments.filter(t=>(t.entries||[]).length).length;
+      const failed=state.catalogTournaments.filter(t=>t.entries_status==='error').length;
+      $('catalogCoverage').textContent=`${meta.error?'Lecture du catalogue impossible : '+meta.error+' · ':''}${meta.country||'FRA'} · ${state.catalogTournaments.length} compétitions, ${withEntries} avec inscriptions détectées${failed?', '+failed+' lectures en erreur':''}. Catalogue du ${meta.generated_at_utc?new Date(meta.generated_at_utc).toLocaleString('fr-FR'):'date inconnue'}. Couverture limitée aux publications IANSEO ; aucun annuaire complet de licenciés.`;
+    }
     function renderAdmin(){
       if(!state.admin) return;
+      $('selectionMode').value=state.selectionMode;
+      renderCatalogCoverage();
+      $('selectedArcherList').innerHTML=state.selectedArchers.map((a,i)=>`<span class="chip">${escapeHtml(a.name)} · ${escapeHtml(a.club)} <button class="btn small secondary" data-remove-selected="${i}">Retirer</button></span>`).join('');
+      document.querySelectorAll('[data-remove-selected]').forEach(b=>b.onclick=()=>{state.selectedArchers.splice(Number(b.dataset.removeSelected),1); saveLocal(); refresh(); syncPublicStateIfEnabled();});
       $('clubInput').value=state.clubRaw; $('countryInput').value=state.countryRaw; $('phaseSelect').value=state.phaseOverride;
       $('togglePublicControlBtn').textContent='Contrôle public: '+(state.publicControlled?'ON':'OFF');
       $('togglePublicControlBtn').className='btn '+(state.publicControlled?'green':'secondary');
@@ -1997,18 +1959,21 @@
       $('adminStateInfo').textContent=`Bridge: ${state.adminBridge?'configuré':'non configuré'} · Contrôle public: ${state.publicControlled?'ON':'OFF'} · Clubs par défaut: ${state.clubRaw||'aucun'} · Archers: ${state.watched.length} · Sources: ${state.tracked.length}`;
     }
     function applyClub(){
-      const selected=clubKeysFromRaw($('clubInput').value.trim())[0]||'';
-      state.clubRaw=selected;
-      $('clubInput').value=selected;
-      for(const t of state.tracked){ t.scopeRaw=selected; }
-      state.countryRaw=$('countryInput').value.trim()||'FRA';
-      state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
-      saveLocal(); refresh(); syncPublicStateIfEnabled(); setLog(selected?'Club appliqué (mode club unique).':'Aucun code club détecté.');
+      const raw=$('clubInput').value.trim();
+      const country=$('countryInput').value.trim().toUpperCase()||'FRA';
+      if(!/^[A-Z]{3}$/.test(country)){setLog('Utilise un code pays IANSEO de trois lettres.');return;}
+      const unresolved=splitList(raw).filter(part=>!clubKeysFromRaw(part).length);
+      if(unresolved.length){setLog('Club inconnu ou ambigu : '+escapeHtml(unresolved.join(', '))+'. Choisis un nom avec son code dans les suggestions.');return;}
+      state.clubRaw=clubKeysFromRaw(raw).join(', ');
+      state.countryRaw=country;
+      state.clubKeys=clubKeysFromRaw(state.clubRaw);
+      saveLocal(); refresh({manual:true}); syncPublicStateIfEnabled(); setLog('Clubs appliqués : '+escapeHtml(state.clubRaw||'aucun'));
     }
 
     function addSearchedClub(){
       const v=$('clubSearchInput').value.trim();
       if(!v) return;
+      if(!clubKeysFromRaw(v).length){setLog('Club inconnu ou ambigu : choisis une suggestion avec son code.');return;}
       $('clubInput').value=addClubToRaw($('clubInput').value||state.clubRaw,v);
       $('clubSearchInput').value='';
       applyClub();
@@ -2018,6 +1983,7 @@
       const manual=!!options.manual;
       if(state.isRefreshing) return;
       state.isRefreshing=true;
+      state.refreshStartedAt=Date.now(); state.sourceFetchedAt=''; state.readWarnings=[];
       try{
         setStatus('', 'Actualisation en cours...');
         if(!state.admin) await loadSharedState();
@@ -2025,13 +1991,10 @@
         let raw;
         if(state.tracked.length){
           raw=await loadTrackedLive();
-          if(rawArchersCount(raw)===0){
-            const fallbackLive=buildFallbackLiveData();
-            if(rawArchersCount(fallbackLive)>0) raw=fallbackLive;
-          }
+
         }
         else if(state.ignoreDefaultFeed) raw={competitions:[]};
-        else raw=normalizeData(await fetchJson(API_URL));
+        else {const feed=await fetchJson(API_URL); state.sourceFetchedAt=feed.sourceFetchedAtUtc||feed.generatedAtUtc||''; raw=normalizeData(feed); state.readWarnings.push(...(feed.errors||[]).map(e=>e.message));}
         state.raw=raw;
         state.data=filterData(raw);
         state.data=stabilizeWithLastGood(state.data,state.lastGoodData);
@@ -2040,13 +2003,20 @@
         state.lastGoodData=JSON.parse(JSON.stringify(state.data));
         render();
         $('lastCheck').textContent=new Date().toLocaleString('fr-FR');
+        $('sourceTime').textContent=state.sourceFetchedAt?new Date(state.sourceFetchedAt).toLocaleString('fr-FR'):'Non fournie par le proxy';
+        const age=state.sourceFetchedAt?Date.now()-new Date(state.sourceFetchedAt).getTime():null;
+        $('freshnessInfo').textContent=state.tracked.length?(state.ianseoProxy?'Lecture HTML IANSEO, cache maximal 15 s.':'Proxy de secours Jina : fraîcheur des scores non garantie.'):'Flux de secours GitHub (actualisation programmée toutes les 5 min, délai possible).';
+        if(age!==null && age>90000) $('freshnessInfo').textContent+=' Données anciennes : '+Math.floor(age/60000)+' min.';
         if(changeInfo.changed){
           setStatus('ok','Mise à jour réussie');
         }else{
           setStatus('ok','Aucun nouveau changement détecté');
         }
+        if(state.readWarnings.length) setStatus('err','Lecture instable : '+state.readWarnings.join(' · '));
         if(allArchersFinished(state.data)){
           stopAutoRefresh();
+        }else if(!state.tracked.length && !archers(state.data).length && !state.readWarnings.length){
+          stopAutoRefresh('Aucun archer en cours : actualisation arrêtée');
         }else if(state.autoRefreshEnabled){
           scheduleNextRefresh();
         }else if(manual && hasLiveArchers(state.data)){
@@ -2070,8 +2040,10 @@
       try{
         setLog('Recherche dans le catalogue local...');
         const cat=await fetchJson(CATALOG_URL);
+        state.catalogMeta=cat; state.catalogTournaments=cat.country && cat.country!==state.countryRaw?[]:(cat.tournaments||[]); renderCatalogCoverage();
+        if(cat.country && cat.country!==state.countryRaw){setLog('Le catalogue couvre '+escapeHtml(cat.country)+'. Clique sur Actualiser le catalogue pour '+escapeHtml(state.countryRaw)+'.');return;}
         const keys=state.clubKeys.map(norm), countries=splitList(state.countryRaw).map(x=>x.toUpperCase());
-        if(!keys.length && !(state.tracked||[]).length){setLog('Ajoute au moins un club dans Configuration avant de chercher les compétitions.'); return;}
+        if(state.selectionMode==='clubs' && !keys.length && !(state.tracked||[]).length){setLog('Ajoute au moins un club dans Configuration avant de chercher les compétitions.'); return;}
         const today=new Date(); today.setHours(0,0,0,0);
         const matches=(cat.tournaments||[]).filter(t=>!t.country||!countries.length||countries.includes(String(t.country).toUpperCase())).filter(t=>!t.end_date||new Date(t.end_date+'T23:59:59')>=today).map(t=>{
           const entries=(t.entries||[]).filter(e=>matchesEntryScope(e, keys));
@@ -2102,7 +2074,7 @@
           const pinned=trackedIds.has(String(m?.to_id||''))?' · suivi':'';
           return `<option value="${escapeHtml(m.to_id)}">${escapeHtml(m.name)} · ${m.date_text||''} · ${m.club_entries.length} inscrit(s)${pinned}</option>`;
         }).join(''):'<option>Aucune compétition trouvée</option>';
-        setLog(ordered.length?`${ordered.length} compétition(s) trouvée(s), tournois suivis épinglés en tête.`:'Aucune compétition trouvée pour ce club dans le catalogue.');
+        setLog(ordered.length?`${ordered.length} compétition(s) trouvée(s), tournois suivis épinglés en tête.`:'Aucune compétition trouvée dans les inscriptions disponibles. Consulte la couverture du catalogue.');
       }catch(err){setLog('Recherche impossible: '+escapeHtml(err.message));}
     }
     function followFound(){
@@ -2141,12 +2113,16 @@
 
     function bind(){
       $('refreshBtn').onclick=()=>refresh({manual:true});
+      $('selectionMode').onchange=e=>{state.selectionMode=e.target.value; saveLocal(); refresh({manual:true}); syncPublicStateIfEnabled();};
+      $('searchArcherBtn').onclick=()=>searchArchers().catch(err=>setLog('Recherche impossible : '+escapeHtml(err.message)));
+      $('archerSearchInput').addEventListener('keydown',e=>{if(e.key==='Enter'){$('searchArcherBtn').click();}});
       $('volleySelect').onchange=e=>{state.selectedVolley=e.target.value; renderVolley();};
       $('applyClubBtn').onclick=applyClub;
       $('addClubSearchBtn').onclick=addSearchedClub;
       $('addWatchBtn').onclick=()=>{state.watched=uniqueByNorm([...state.watched,...splitList($('watchInput').value)]); $('watchInput').value=''; saveLocal(); refresh(); syncPublicStateIfEnabled(); setLog('Archer(s) ajouté(s) au suivi.');};
       $('clearWatchBtn').onclick=()=>{state.watched=[]; saveLocal(); refresh(); syncPublicStateIfEnabled();};
       $('findNextBtn').onclick=findNext;
+      $('rebuildCatalogBtn').onclick=async()=>{try{if(!state.adminToken||!state.adminBridge) throw new Error('Authentification et passerelle requises'); const r=await fetch(state.adminBridge,{method:'POST',headers:{'content-type':'application/json',Authorization:'Bearer '+state.adminToken},body:JSON.stringify({action:'find_next',club_keywords:state.clubRaw,country:state.countryRaw})}); if(!r.ok) throw new Error('HTTP '+r.status); setLog('Reconstruction demandée. Relance la recherche après la fin du workflow GitHub.');}catch(err){setLog(escapeHtml(err.message));}};
       $('followFoundBtn').onclick=followFound;
       $('addManualBtn').onclick=addManual;
       $('clearTrackedBtn').onclick=()=>{state.archived.unshift(...state.tracked); state.tracked=[]; state.ignoreDefaultFeed=true; saveLocal(); refresh(); syncPublicStateIfEnabled();};
@@ -2162,7 +2138,7 @@
         setLog('Vue locale nettoyée. Les anciens résultats ne reviendront plus tant qu aucun tournoi n est ajouté.');
       };
       $('applyPhaseBtn').onclick=()=>{state.phaseOverride=$('phaseSelect').value; saveLocal(); render(); syncPublicStateIfEnabled();};
-      $('togglePublicControlBtn').onclick=()=>{state.publicControlled=!state.publicControlled; saveLocal(); renderAdmin(); syncPublicStateIfEnabled(); setLog('Contrôle public: '+(state.publicControlled?'ON':'OFF'));};
+      $('togglePublicControlBtn').onclick=()=>{state.publicControlled=!state.publicControlled; saveLocal(); renderAdmin(); publishState().catch(err=>setLog(escapeHtml(err.message))); setLog('Contrôle public: '+(state.publicControlled?'ON':'OFF'));};
       $('publishStateBtn').onclick=()=>publishState().catch(err=>setLog('Publication impossible: '+escapeHtml(err.message)));
       $('competitionModeBtn').onclick=()=>{
         if(state.autoRefreshEnabled){
@@ -2186,5 +2162,5 @@
     init();
   </script>
 </body>
-</html> 
+</html>
 

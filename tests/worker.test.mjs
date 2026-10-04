@@ -1,0 +1,30 @@
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+import {webcrypto} from 'node:crypto';
+globalThis.crypto ||= webcrypto;
+const code=readFileSync('scripts/github_admin_bridge_worker.js','utf8');
+const worker=(await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'))).default;
+const env={ADMIN_TOKEN:'test-secret',GITHUB_OWNER:'owner',GITHUB_REPO:'repo',GITHUB_TOKEN:'github-secret',ALLOWED_ORIGINS:'https://viewer.example'};
+let calls=[];
+globalThis.fetch=async (url,options)=>{calls.push({url:String(url),options});return String(url).includes('api.github.com')?new Response(null,{status:204}):new Response('<table><tr><td>Test</td></tr></table>');};
+const request=(path,body,token='',origin='https://viewer.example')=>new Request('https://worker.example'+path,{method:'POST',headers:{Origin:origin,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:JSON.stringify(body)});
+assert.equal((await worker.fetch(request('/',{action:'save_admin_state',state_b64:'a'}),env)).status,401);
+assert.equal(calls.length,0);
+assert.equal((await worker.fetch(request('/auth',{},'wrong'),env)).status,401);
+assert.equal((await worker.fetch(request('/auth',{},'test-secret'),env)).status,200);
+assert.equal((await worker.fetch(request('/auth',{},'test-secret','https://evil.example'),env)).status,403);
+assert.equal((await worker.fetch(request('/',{action:'find_next',country:'FRA',club_keywords:'0174246'},'test-secret'),env)).status,200);
+assert.equal(JSON.parse(calls[0].options.body).inputs.country,'FRA');
+assert.equal((await worker.fetch(request('/',{action:'reset_live',country:'FRA',club_keywords:'0174246'},'test-secret'),env)).status,200);
+assert.deepEqual(JSON.parse(calls[1].options.body).inputs,{});
+assert.equal((await worker.fetch(request('/',{action:'save_admin_state',state_b64:'$()'},'test-secret'),env)).status,400);
+assert.equal((await worker.fetch(request('/',{action:'update_live',club_keywords:'x'.repeat(501)},'test-secret'),env)).status,400);
+assert.equal((await worker.fetch(request('/',{action:'__proto__'},'test-secret'),env)).status,400);
+for(const url of ['http://www.ianseo.net/TourData/2026/1/IC.php','https://evil.example/TourData/2026/1/IC.php','https://www.ianseo.net.evil.example/TourData/2026/1/IC.php','https://www.ianseo.net/TourData/2026/1/IC.pdf','https://www.ianseo.net/TourData/2026/1/IC.php?redirect=evil']) {
+ const response=await worker.fetch(new Request('https://worker.example/ianseo?url='+encodeURIComponent(url)),env);assert.equal(response.status,400,url);
+}
+const response=await worker.fetch(new Request('https://worker.example/ianseo?url='+encodeURIComponent('https://www.ianseo.net/TourData/2026/1/IC.php'),{headers:{Origin:'https://viewer.example'}}),env);
+assert.equal(response.status,200);assert.equal(response.headers.get('cache-control'),'public, max-age=15');assert(response.headers.get('x-arclive-fetched-at'));assert.equal(response.headers.get('Access-Control-Allow-Origin'),'https://viewer.example');
+globalThis.fetch=async()=>new Response(null,{status:302,headers:{Location:'https://evil.example'}});
+assert.equal((await worker.fetch(new Request('https://worker.example/ianseo?url='+encodeURIComponent('https://www.ianseo.net/TourData/2026/1/IC.php')),env)).status,502);
+console.log('Worker authentication, dispatch, CORS and proxy checks passed');

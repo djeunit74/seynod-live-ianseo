@@ -12,6 +12,10 @@ on:
         required: false
         default: ""
 
+concurrency:
+  group: arclive-data-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -31,11 +35,14 @@ jobs:
           python-version: "3.11"
 
       - name: Reset live data
+        env:
+          WF_SOURCE_URL: ${{ github.event.inputs.source_url }}
+          WF_PLACE: ${{ github.event.inputs.place }}
         run: |
           python scripts/reset_live_data.py \
             --output data/live.json \
-            --source-url "${{ github.event.inputs.source_url }}" \
-            --place "${{ github.event.inputs.place }}"
+            --source-url "$WF_SOURCE_URL" \
+            --place "$WF_PLACE"
 
       - name: Commit and push
         run: |

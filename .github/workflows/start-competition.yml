@@ -12,6 +12,10 @@ on:
         required: false
         default: "FRA"
 
+concurrency:
+  group: arclive-data-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 

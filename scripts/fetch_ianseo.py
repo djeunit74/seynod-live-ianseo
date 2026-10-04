@@ -7,6 +7,7 @@ import re
 import sys
 import urllib.request
 from typing import Any, Dict, List
+from ianseo_entries import club_matches
 
 
 DEFAULT_URL = "https://www.ianseo.net/TourData/2026/27251/IC.php"
@@ -73,14 +74,15 @@ def parse_competition_name(page_html: str) -> str:
     return strip_tags(m.group(1))
 
 
-def parse_category_meta(category_title: str) -> Dict[str, Any]:
+def parse_category_meta(category_title: str, context: str = "") -> Dict[str, Any]:
     title = strip_tags(category_title)
     category = title.split("[", 1)[0].strip()
     arrows = None
     arr_match = re.search(r"Apr(?:è|Ã¨|e)s\s+(\d+)\s+fl(?:è|Ã¨|e)ches", title, flags=re.IGNORECASE)
     if arr_match:
         arrows = int(arr_match.group(1))
-    finished = bool(arrows is not None and arrows >= 72)
+    max_arrows = 60 if re.search(r"salle|indoor|\b18\s*m\b", context + " " + title, re.I) else 72
+    finished = bool(re.search(r"termin[ée]|finished|final results", title, re.I) or (arrows is not None and arrows >= max_arrows))
     progress = (
         f"Terminé ({arrows} flèches)"
         if finished and arrows is not None
@@ -88,7 +90,7 @@ def parse_category_meta(category_title: str) -> Dict[str, Any]:
         if arrows is not None
         else "En cours"
     )
-    return {"category": category, "arrows": arrows, "finished": finished, "progress": progress}
+    return {"category": category, "arrows": arrows, "finished": finished, "progress": progress, "maxArrows": max_arrows}
 
 
 def parse_table_rows(tbody_html: str, category_meta: Dict[str, Any], place: str) -> List[Dict[str, Any]]:
@@ -101,7 +103,7 @@ def parse_table_rows(tbody_html: str, category_meta: Dict[str, Any], place: str)
         class_name = class_match.group(1) if class_match else ""
         class_lc = class_name.lower()
 
-        if "compressed-group" in class_lc:
+        if "compressed-group" in class_lc or re.match(r"\s*<tr[^>]*>\s*<td[^>]*>\s*\d+\s*</td>", row, re.I):
             cols_raw = re.findall(r"<td[^>]*>(.*?)</td>", row, flags=re.IGNORECASE | re.DOTALL)
             cols = [strip_tags(c) for c in cols_raw]
             if len(cols) < 6:
@@ -128,6 +130,8 @@ def parse_table_rows(tbody_html: str, category_meta: Dict[str, Any], place: str)
                 "progress": category_meta["progress"],
                 "detail": "",
                 "finished": category_meta["finished"],
+                "arrows": category_meta["arrows"],
+                "maxArrows": category_meta["maxArrows"],
             }
             archers.append(pending)
             continue
@@ -142,31 +146,33 @@ def parse_table_rows(tbody_html: str, category_meta: Dict[str, Any], place: str)
 
 
 def parse_ianseo(page_html: str, club_keywords: List[str], source_url: str) -> Dict[str, Any]:
+    if re.search(r"file not found\.", page_html, re.I):
+        raise ValueError("IANSEO page not published")
+    if not re.search(r"<table\b", page_html, re.I):
+        raise ValueError("IANSEO response contains no results table")
     place = parse_place(page_html)
     competition_name = parse_competition_name(page_html)
     results = []
 
     blocks = re.findall(
-        r"<thead>\s*<tr[^>]*>\s*<th[^>]*colspan=\"20\"[^>]*>(.*?)</th>.*?</thead>\s*<tbody>(.*?)</tbody>",
+        r"<thead>\s*<tr[^>]*>\s*<th[^>]*colspan=[\"\']?\d+[\"\']?[^>]*>(.*?)</th>.*?</thead>\s*<tbody>(.*?)</tbody>",
         page_html,
         flags=re.IGNORECASE | re.DOTALL,
     )
 
     for category_title, tbody in blocks:
-        if not re.search(r"Apr(?:è|Ã¨|e)s", category_title, flags=re.IGNORECASE):
-            continue
-        meta = parse_category_meta(category_title)
+        meta = parse_category_meta(category_title, competition_name)
         rows = parse_table_rows(tbody, meta, place)
         for row in rows:
             club_lc = row["club"].lower()
-            if any(k in club_lc for k in club_keywords):
+            if club_matches(row["club"], club_keywords):
                 results.append(row)
 
     # Deduplicate same athlete/category on one competition.
     # Keep the most relevant row: live first, otherwise highest score.
     dedup: Dict[str, Dict[str, Any]] = {}
     for row in results:
-        key = f"{row.get('name','').strip().upper()}|{row.get('category','').strip().upper()}"
+        key = f"{row.get('name','').strip().upper()}|{row.get('club','').strip().upper()}|{row.get('category','').strip().upper()}"
         existing = dedup.get(key)
         if existing is None:
             dedup[key] = row
