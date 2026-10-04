@@ -1,25 +1,12 @@
 {
-  "generated_at_utc": "2026-10-03T22:19:31.317235+00:00",
+  "generated_at_utc": "2026-10-04T01:50:31.470699+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 27,
+  "count": 26,
   "tournaments": [
-    {
-      "to_id": "30430",
-      "year": "2026",
-      "name": "PREMIER TAE 2026-2027",
-      "organizer": "GOSIER",
-      "date_text": "3-4 Oct",
-      "end_date": "2026-10-04",
-      "details_url": "https://www.ianseo.net/Details.php?toId=30430",
-      "ena_url": "https://www.ianseo.net/TourData/2026/30430/ENA.php",
-      "ic_url": "https://www.ianseo.net/TourData/2026/30430/IC.php",
-      "entries_count": 0,
-      "entries": []
-    },
     {
       "to_id": "30463",
       "year": "2026",
