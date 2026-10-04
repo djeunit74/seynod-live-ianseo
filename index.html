@@ -391,8 +391,9 @@
       for(const part of splitList(raw)){
         const direct=extractClubCodes(part);
         if(direct.length){codes.push(...direct);continue;}
-        const matches=state.clubCatalog.filter(c=>norm(c.label)===norm(part) || norm(c.label.replace(/^\d+\s*-\s*/,''))===norm(part));
-        if(matches.length===1) codes.push(...extractClubCodes(matches[0].label));
+        const matches=[...state.clubCatalog,...QUICK_CLUBS.map(label=>({label}))].filter(c=>norm(c.label)===norm(part) || norm(c.label.replace(/^\d+\s*-\s*/,'')).includes(norm(part)));
+        const matchedCodes=[...new Set(matches.flatMap(c=>extractClubCodes(c.label)))];
+        if(matchedCodes.length===1) codes.push(matchedCodes[0]);
       }
       return [...new Set(codes)];
     }
@@ -513,6 +514,7 @@
         state.selectionMode=s.selectionMode==='archers'?'archers':'clubs';
         state.selectedArchers=Array.isArray(s.selectedArchers)?s.selectedArchers:[];
         state.ignoreDefaultFeed=!!s.ignoreDefaultFeed;
+        if(state.admin) state.publicControlled=!!s.publicControlledByAdmin;
         if(s.trackedCountryRaw) state.countryRaw=s.trackedCountryRaw;
         state.clubKeys=clubKeysFromRaw(state.clubRaw).map(x=>x.toLowerCase());
         state.watched=uniqueByNorm(s.watchedArchers||[]);

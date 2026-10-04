@@ -11,6 +11,7 @@ from find_next_competition import find_next_competition
 from build_competition_catalog import build_catalog
 from build_live_data import build_payload, load_urls
 from skip_unchanged_data import semantic
+from save_admin_state import validate
 
 GROUPED = '<table><tr><td colspan="4">0174246 - SEYNOD</td></tr><tr><td>DUPONT Rennes</td><td>1A</td><td>U18</td><td>Départ 2 - 14h00</td></tr></table>'
 FLAT = '<table><tr><th>Target</th><th>Athlete</th><th>Country</th><th>Class</th><th>Session</th></tr><tr><td>2B</td><td>Élodie Martin</td><td>0335067 - RENNES</td><td>U21</td><td>Départ 1 - 09:00</td></tr></table>'
@@ -70,6 +71,24 @@ class DiscoveryTests(unittest.TestCase):
             data=build_catalog('FRA',[self.today.year])
         self.assertEqual(data['tournaments'][0]['entries_status'],'error')
         self.assertEqual(data['coverage_status'],'partial')
+    def test_catalog_preserves_previous_entries_on_error(self):
+        previous={'country':'FRA','tournaments':[{**self.t,'entries':[{'name':'Paul','club':'0174246'}]}]}
+        with patch('build_competition_catalog.list_tournaments',return_value=[self.t]), patch('build_competition_catalog.fetch_text',side_effect=OSError('offline')):
+            data=build_catalog('FRA',[self.today.year],previous=previous)
+        self.assertEqual(data['tournaments'][0]['entries'][0]['name'],'Paul')
+        self.assertTrue(data['tournaments'][0]['stale'])
+    def test_year_failure_preserves_catalog(self):
+        previous={'country':'FRA','tournaments':[{**self.t,'year':str(self.today.year),'entries':[]}]}
+        with patch('build_competition_catalog.list_tournaments',side_effect=OSError('offline')):
+            data=build_catalog('FRA',[self.today.year],previous=previous)
+        self.assertEqual(data['count'],1)
+        self.assertEqual(data['coverage_status'],'partial')
+    def test_shared_state_rejects_external_source(self):
+        with self.assertRaises(ValueError): validate({'trackedTournaments':[{'url':'https://evil.example/IC.php'}]})
+    def test_shared_state_preserves_archer_selection(self):
+        data=validate({'selectionMode':'archers','selectedArchers':[{'name':'Paul','club':'0174246'}]})
+        self.assertEqual(data['selectedArchers'][0]['name'],'Paul')
+        self.assertTrue(data['updatedAtUtc'])
     def test_skip_timestamp_only_changes(self):
         self.assertEqual(semantic({'generatedAtUtc':'a','archers':[{'score':10,'fetchedAtUtc':'a'}]}),semantic({'generatedAtUtc':'b','archers':[{'score':10,'fetchedAtUtc':'b'}]}))
         self.assertNotEqual(semantic({'score':10}),semantic({'score':11}))

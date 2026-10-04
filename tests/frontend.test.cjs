@@ -10,6 +10,7 @@ vm.runInContext(code,context);
 const run=expression=>vm.runInContext(expression,context);
 const plain=expression=>JSON.parse(JSON.stringify(run(expression)));
 assert.deepEqual(plain("clubKeysFromRaw('0174246 - SEYNOD, 0335067 - RENNES')"),['0174246','0335067']);
+assert.deepEqual(plain("clubKeysFromRaw('Seynod')"),['0174246']);
 run("state.clubCatalog=[{label:'0174246 - SEYNOD'},{label:'0335067 - RENNES'}]");
 assert.deepEqual(plain("clubKeysFromRaw('Seynod')"),['0174246']);
 assert.deepEqual(plain("clubKeysFromRaw('Seynod, 0335067 - RENNES')"),['0174246','0335067']);
