@@ -10,6 +10,10 @@ on:
   schedule:
     - cron: "*/5 * * * *"
 
+concurrency:
+  group: arclive-data-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -35,7 +39,7 @@ jobs:
           IANSEO_URLS: ${{ vars.IANSEO_URLS }}
           IANSEO_CLUB_KEYWORDS: ${{ vars.IANSEO_CLUB_KEYWORDS }}
         run: |
-          URLS="${IANSEO_URLS:-${IANSEO_URL:-https://www.ianseo.net/TourData/2026/27251/IC.php}}"
+          URLS="${IANSEO_URLS:-${IANSEO_URL:-}}"
           CLUBS="${WF_CLUB_KEYWORDS:-${IANSEO_CLUB_KEYWORDS:-Seynod,0174246}}"
           python scripts/build_live_data.py --urls "$URLS" --sources-file data/competition_sources.json --club-keywords "$CLUBS" --output data/live.json
 
@@ -43,6 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python scripts/skip_unchanged_data.py
           git add data/live.json
           if git diff --cached --quiet; then
             echo "No changes to commit."

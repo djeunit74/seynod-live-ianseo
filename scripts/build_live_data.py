@@ -35,15 +35,28 @@ def load_urls(urls_arg: str, sources_file: str) -> List[str]:
     return []
 
 
-def build_payload(urls: List[str], club_keywords: List[str]) -> Dict[str, Any]:
+def build_payload(urls: List[str], club_keywords: List[str], previous=None) -> Dict[str, Any]:
+    errors = []
+    previous_by_url = {c.get("sourceUrl"): c for c in (previous or {}).get("competitions", [])}
     competitions: List[Dict[str, Any]] = []
     flat_archers: List[Dict[str, Any]] = []
     places = set()
     seen_competitions = set()
 
     for url in urls:
-        page_html = fetch_html(url)
-        parsed = parse_ianseo(page_html, club_keywords, url)
+        try:
+            page_html = fetch_html(url)
+            parsed = parse_ianseo(page_html, club_keywords, url)
+        except Exception as exc:
+            errors.append({"sourceUrl": url, "message": str(exc)})
+            if url in previous_by_url:
+                saved = dict(previous_by_url[url])
+                saved["stale"] = True
+                saved["error"] = str(exc)
+                competitions.append(saved)
+                for a in saved.get("archers", []):
+                    flat_archers.append({**a, "competitionId": saved["id"], "competitionName": saved["name"]})
+            continue
         comp_id = extract_competition_id(url)
         key = (comp_id, url)
         if key in seen_competitions:
@@ -58,6 +71,7 @@ def build_payload(urls: List[str], club_keywords: List[str]) -> Dict[str, Any]:
             "place": place,
             "sourceUrl": url,
             "archers": parsed.get("archers", []),
+            "fetchedAtUtc": dt.datetime.now(dt.timezone.utc).isoformat(),
         }
         competitions.append(competition)
 
@@ -73,6 +87,8 @@ def build_payload(urls: List[str], club_keywords: List[str]) -> Dict[str, Any]:
 
     return {
         "generatedAtUtc": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "errors": errors,
+        "sourceFetchedAtUtc": min((c.get("fetchedAtUtc", "") for c in competitions), default=""),
         "sourceUrl": source_url,
         "places": sorted(places),
         "archers": flat_archers,
@@ -93,7 +109,8 @@ def main() -> int:
         raise SystemExit("No IANSEO URLs provided. Set --urls or create data/competition_sources.json.")
 
     club_keywords = [k.strip().lower() for k in args.club_keywords.split(",") if k.strip()]
-    payload = build_payload(urls, club_keywords)
+    previous = json.loads(Path(args.output).read_text(encoding="utf-8")) if Path(args.output).exists() else None
+    payload = build_payload(urls, club_keywords, previous=previous)
 
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)

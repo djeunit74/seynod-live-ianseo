@@ -3,6 +3,7 @@ import argparse
 import datetime as dt
 import json
 from pathlib import Path
+from zoneinfo import ZoneInfo
 from typing import Dict, List, Any
 
 from build_live_data import build_payload
@@ -31,7 +32,7 @@ def main() -> int:
     parser.add_argument("--sources-output", default="data/competition_sources.json")
     args = parser.parse_args()
 
-    today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
+    today = dt.date.fromisoformat(args.today) if args.today else dt.datetime.now(ZoneInfo("Europe/Paris")).date()
     keywords = parse_keywords(args.keywords)
 
     result = find_next_competition(today=today, keywords=keywords, country=args.country)

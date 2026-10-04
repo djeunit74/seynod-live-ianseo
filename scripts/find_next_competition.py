@@ -5,6 +5,8 @@ import html
 import json
 import re
 import urllib.request
+from zoneinfo import ZoneInfo
+from ianseo_entries import extract_entries
 from typing import Dict, List, Optional, Tuple
 
 
@@ -127,82 +129,63 @@ def _is_club_header(text: str) -> bool:
 
 
 def extract_club_entries(ena_html: str, keywords: List[str]) -> List[Dict[str, str]]:
-    entries: List[Dict[str, str]] = []
-    rows = re.findall(r"<tr[^>]*>(.*?)</tr>", ena_html, flags=re.IGNORECASE | re.DOTALL)
-    current_club = ""
-    lower_keywords = [k.lower() for k in keywords if k]
-
-    for row in rows:
-        cells = [clean_text(c) for c in re.findall(r"<td[^>]*>(.*?)</td>", row, flags=re.IGNORECASE | re.DOTALL)]
-        if not cells:
-            continue
-
-        # ENA often groups athletes under a dedicated club header row:
-        # "0163157 - RIOM". Keep this club for following athlete rows.
-        if len(cells) == 1 and _is_club_header(cells[0]):
-            current_club = cells[0]
-            continue
-
-        row_text = " | ".join(cells).lower()
-        club_text = current_club.lower()
-        if lower_keywords and not any(k in row_text or k in club_text for k in lower_keywords):
-            continue
-
-        name = cells[0] if len(cells) > 0 else ""
-        if not name or _is_club_header(name):
-            continue
-
-        entries.append(
-            {
-                "name": name,
-                "target": cells[1] if len(cells) > 1 else "",
-                "club": current_club or (cells[2] if len(cells) > 2 else ""),
-                "category": cells[2] if len(cells) > 2 else (cells[3] if len(cells) > 3 else ""),
-                "session": cells[3] if len(cells) > 3 else (cells[4] if len(cells) > 4 else ""),
-            }
-        )
-    return entries
+    return extract_entries(ena_html, keywords)
 
 
 def find_next_competition(today: dt.date, keywords: List[str], country: str) -> Dict[str, object]:
     candidate_years = [today.year, today.year + 1]
     candidates: List[Tuple[dt.date, Dict[str, str]]] = []
 
+    errors = []
     for year in candidate_years:
-        for tournament in list_tournaments(year, country):
+        try:
+            tournaments = list_tournaments(year, country)
+        except Exception as exc:
+            errors.append({"year": year, "message": str(exc)})
+            continue
+        for tournament in tournaments:
             end_date = dt.date.fromisoformat(tournament["end_date"])
-            if end_date > today:
+            if end_date >= today:
                 candidates.append((end_date, tournament))
 
     candidates.sort(key=lambda x: x[0])
 
+    checked = 0
     for _, tournament in candidates:
-        details_html = fetch_text(tournament["details_url"])
-        ena_url = extract_ena_url(details_html, tournament["to_id"])
-        if not ena_url:
-            continue
+        checked += 1
+        try:
+            details_html = fetch_text(tournament["details_url"])
+            ena_url = extract_ena_url(details_html, tournament["to_id"])
+            if not ena_url:
+                continue
 
-        ena_html = fetch_text(ena_url)
-        entries = extract_club_entries(ena_html, keywords)
-        if not entries:
-            continue
+            ena_html = fetch_text(ena_url)
+            entries = extract_club_entries(ena_html, keywords)
+            if not entries:
+                continue
 
-        ic_url = extract_ic_url(details_html, tournament["to_id"])
-        return {
-            "found": True,
-            "next_competition": {
-                **tournament,
-                "ena_url": ena_url,
-                "ic_url": ic_url,
-                "club_entries": entries,
-                "seynod_entries": entries,
-            },
-        }
+            ic_url = extract_ic_url(details_html, tournament["to_id"])
+            return {
+                "found": True,
+                "checked_candidates": checked,
+                "errors": errors,
+                "next_competition": {
+                    **tournament,
+                    "ena_url": ena_url,
+                    "ic_url": ic_url,
+                    "club_entries": entries,
+                    "seynod_entries": entries,
+                },
+            }
+        except Exception as exc:
+            errors.append({"to_id": tournament["to_id"], "message": str(exc)})
 
     return {
         "found": False,
         "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
-        "checked_candidates": len(candidates),
+        "checked_candidates": checked,
+        "errors": errors,
+        "coverage_status": "partial" if errors else "published_entries_only",
     }
 
 
@@ -214,7 +197,7 @@ def main() -> int:
     parser.add_argument("--today", default="")
     args = parser.parse_args()
 
-    today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
+    today = dt.date.fromisoformat(args.today) if args.today else dt.datetime.now(ZoneInfo("Europe/Paris")).date()
     keywords = [k.strip().lower() for k in args.keywords.split(",") if k.strip()]
 
     result = find_next_competition(today=today, keywords=keywords, country=args.country)

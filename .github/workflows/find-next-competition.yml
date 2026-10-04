@@ -14,6 +14,10 @@ on:
   schedule:
     - cron: "*/30 * * * *"
 
+concurrency:
+  group: arclive-data-${{ github.ref }}
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -100,6 +104,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python scripts/skip_unchanged_data.py
           git add data/next_competition.json data/competition_catalog.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
