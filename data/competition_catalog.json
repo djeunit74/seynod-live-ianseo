@@ -1,14 +1,18 @@
 {
-  "generated_at_utc": "2026-10-26T00:34:41.136656+00:00",
+  "generated_at_utc": "2026-10-26T12:22:35.983024+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 37,
+  "count": 39,
   "errors": [
     {
       "to_id": "30489",
+      "message": "HTTP Error 404: Not Found"
+    },
+    {
+      "to_id": "30849",
       "message": "HTTP Error 404: Not Found"
     },
     {
@@ -97,13 +101,13 @@
     }
   ],
   "coverage_status": "partial",
-  "entries_tournaments": 0,
+  "entries_tournaments": 1,
   "tournaments": [
     {
       "to_id": "30390",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:02.442940+00:00",
+      "checked_at_utc": "2026-10-26T12:21:49.667823+00:00",
       "year": "2026",
       "name": "concours tir en salle boé octobre 2026",
       "organizer": "Les archers de Boé",
@@ -119,7 +123,7 @@
       "to_id": "29669",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:03.443830+00:00",
+      "checked_at_utc": "2026-10-26T12:21:51.108575+00:00",
       "year": "2026",
       "name": "Rennes - Tir à 18 m",
       "organizer": "Rennes Cie",
@@ -135,7 +139,7 @@
       "to_id": "30489",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:04.466287+00:00",
+      "checked_at_utc": "2026-10-26T12:21:52.274840+00:00",
       "year": "2026",
       "name": "TOURNOIS 100% FEMININ AUCH",
       "organizer": "L'ARC AUSCITAIN",
@@ -153,7 +157,7 @@
       "to_id": "30113",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:05.383523+00:00",
+      "checked_at_utc": "2026-10-26T12:21:53.363077+00:00",
       "year": "2026",
       "name": "Nature Yelloh! Village",
       "organizer": "Compagnie d'Arc de Vedène",
@@ -169,7 +173,7 @@
       "to_id": "30484",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:06.832826+00:00",
+      "checked_at_utc": "2026-10-26T12:21:54.838391+00:00",
       "year": "2026",
       "name": "Tir à 18m de la Compagnie d'Arc de Villepreux",
       "organizer": "Compagnie d'Arc de Villepreux",
@@ -182,10 +186,27 @@
       "entries": []
     },
     {
+      "to_id": "30849",
+      "country": "FRA",
+      "entries_status": "error",
+      "checked_at_utc": "2026-10-26T12:21:56.084287+00:00",
+      "year": "2026",
+      "name": "Compétition 18m Vieux-Condé",
+      "organizer": "Les Archers de Vieux-Condé",
+      "date_text": "31 Oct - 1 Nov",
+      "end_date": "2026-11-01",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30849",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30849/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30849/IC.php",
+      "entries_count": 0,
+      "entries": [],
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
       "to_id": "30219",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:08.019910+00:00",
+      "checked_at_utc": "2026-10-26T12:21:57.136645+00:00",
       "year": "2026",
       "name": "Saint-Avertin multidepart 2026",
       "organizer": "CASAS",
@@ -203,7 +224,7 @@
       "to_id": "29686",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:09.069967+00:00",
+      "checked_at_utc": "2026-10-26T12:21:58.209216+00:00",
       "year": "2026",
       "name": "Rennes - Tir à 18 m",
       "organizer": "Rennes Cie",
@@ -221,7 +242,7 @@
       "to_id": "29801",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:09.970943+00:00",
+      "checked_at_utc": "2026-10-26T12:21:59.270141+00:00",
       "year": "2026",
       "name": "Carcassonne - concours sélectif 2 x 18 m",
       "organizer": "Carcassonne",
@@ -239,7 +260,7 @@
       "to_id": "30467",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:10.997372+00:00",
+      "checked_at_utc": "2026-10-26T12:22:00.378184+00:00",
       "year": "2026",
       "name": "Rennes - Menhir Cup 27' - Stage 1",
       "organizer": "Rennes Cie",
@@ -255,7 +276,7 @@
       "to_id": "30211",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:12.104970+00:00",
+      "checked_at_utc": "2026-10-26T12:22:01.537146+00:00",
       "year": "2026",
       "name": "LES ARCHERS DU SAM",
       "organizer": "LES ARCHERS DU SAM",
@@ -271,7 +292,7 @@
       "to_id": "30353",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:13.235186+00:00",
+      "checked_at_utc": "2026-10-26T12:22:02.877601+00:00",
       "year": "2026",
       "name": "Concours Massy Target 2x18 - 2026",
       "organizer": "Les Archers de Massy",
@@ -287,7 +308,7 @@
       "to_id": "30360",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:14.358861+00:00",
+      "checked_at_utc": "2026-10-26T12:22:04.200169+00:00",
       "year": "2026",
       "name": "Concours sélectif Tir à 18m 2026",
       "organizer": "Compagnie Arc Crepy en valois",
@@ -303,7 +324,7 @@
       "to_id": "30385",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:15.570968+00:00",
+      "checked_at_utc": "2026-10-26T12:22:05.518575+00:00",
       "year": "2026",
       "name": "Compétition 2026 - Tir à 18m - Villefranche d'Allier",
       "organizer": "Les Flèches de Villefranche",
@@ -319,7 +340,7 @@
       "to_id": "30594",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:16.739533+00:00",
+      "checked_at_utc": "2026-10-26T12:22:06.851547+00:00",
       "year": "2026",
       "name": "2X18 NOVEMBRE",
       "organizer": "ARC CLUB DE BLAGNAC",
@@ -337,7 +358,7 @@
       "to_id": "30675",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:17.838780+00:00",
+      "checked_at_utc": "2026-10-26T12:22:08.050547+00:00",
       "year": "2026",
       "name": "souvenir Paul chevalier",
       "organizer": "1313046 Les archers de Châteaurenard",
@@ -353,7 +374,7 @@
       "to_id": "30686",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:18.998429+00:00",
+      "checked_at_utc": "2026-10-26T12:22:09.336377+00:00",
       "year": "2026",
       "name": "2x18m Chouzy Sur Cisse",
       "organizer": "MARECHAL",
@@ -371,7 +392,7 @@
       "to_id": "29899",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:19.956548+00:00",
+      "checked_at_utc": "2026-10-26T12:22:10.410992+00:00",
       "year": "2026",
       "name": "Concours des pistoles 2026",
       "organizer": "CBTA Brignoles",
@@ -387,7 +408,7 @@
       "to_id": "30350",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:21.095211+00:00",
+      "checked_at_utc": "2026-10-26T12:22:11.790313+00:00",
       "year": "2026",
       "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
       "organizer": "Les Archers de Castelsarrasin",
@@ -405,7 +426,7 @@
       "to_id": "30488",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:22.137511+00:00",
+      "checked_at_utc": "2026-10-26T12:22:12.838058+00:00",
       "year": "2026",
       "name": "MIRAMAS CRAU",
       "organizer": "MIRAMAS CRAU",
@@ -421,7 +442,7 @@
       "to_id": "30504",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:23.207604+00:00",
+      "checked_at_utc": "2026-10-26T12:22:14.096977+00:00",
       "year": "2026",
       "name": "tir salle 2 x18 m Hagondange",
       "organizer": "les archers de l esh",
@@ -439,7 +460,7 @@
       "to_id": "30578",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:24.109554+00:00",
+      "checked_at_utc": "2026-10-26T12:22:15.157513+00:00",
       "year": "2026",
       "name": "CONCOURS TIR À 18M",
       "organizer": "LA COMPAGNIE DES ARCHERS DU LOUDUNOIS",
@@ -457,7 +478,7 @@
       "to_id": "30643",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:25.018408+00:00",
+      "checked_at_utc": "2026-10-26T12:22:16.154682+00:00",
       "year": "2026",
       "name": "18m Toulouse TAC nov 2026",
       "organizer": "1131081 Toulouse TAC",
@@ -473,7 +494,7 @@
       "to_id": "30737",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:26.079336+00:00",
+      "checked_at_utc": "2026-10-26T12:22:17.414473+00:00",
       "year": "2026",
       "name": "COMPETITION DE TIR A 18 METRES DE WERVICQ-SUD 2026",
       "organizer": "Association Sportive de Tir à l'Arc de WERVICQ-SUD",
@@ -491,7 +512,7 @@
       "to_id": "29687",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:27.008984+00:00",
+      "checked_at_utc": "2026-10-26T12:22:18.549084+00:00",
       "year": "2026",
       "name": "Rennes - Tir à 18 m",
       "organizer": "Rennes Cie",
@@ -509,7 +530,7 @@
       "to_id": "29802",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:27.911566+00:00",
+      "checked_at_utc": "2026-10-26T12:22:19.545900+00:00",
       "year": "2026",
       "name": "Carcassonne - concours sélectif 2 x 18 m",
       "organizer": "Carcassonne",
@@ -527,7 +548,7 @@
       "to_id": "30328",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:28.796763+00:00",
+      "checked_at_utc": "2026-10-26T12:22:20.598841+00:00",
       "year": "2026",
       "name": "Concours tir à 18m Tremblay 2026",
       "organizer": "Les Archers du Vert Galant",
@@ -543,7 +564,7 @@
       "to_id": "30827",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:30.008880+00:00",
+      "checked_at_utc": "2026-10-26T12:22:21.973461+00:00",
       "year": "2026",
       "name": "TIR 2X 18 + CRJ",
       "organizer": "LES SAGITTAIRES DE SEYNOD",
@@ -561,7 +582,7 @@
       "to_id": "29688",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:30.941359+00:00",
+      "checked_at_utc": "2026-10-26T12:22:22.938569+00:00",
       "year": "2026",
       "name": "Rennes - Tir à 18 m",
       "organizer": "Rennes Cie",
@@ -579,7 +600,7 @@
       "to_id": "30214",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:31.898568+00:00",
+      "checked_at_utc": "2026-10-26T12:22:23.961042+00:00",
       "year": "2026",
       "name": "Concours Sélectif Tir à 18m Meursault 2026",
       "organizer": "MEURSAULT ARCHERS CLUB",
@@ -597,7 +618,7 @@
       "to_id": "30215",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:32.817999+00:00",
+      "checked_at_utc": "2026-10-26T12:22:25.158405+00:00",
       "year": "2026",
       "name": "Concours Qualificatif + Finales Tir à 18m Meursault 2026",
       "organizer": "MEURSAULT ARCHERS CLUB",
@@ -615,7 +636,7 @@
       "to_id": "30468",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:33.885668+00:00",
+      "checked_at_utc": "2026-10-26T12:22:26.224553+00:00",
       "year": "2026",
       "name": "Concours selectif au championnat de France a Luneville",
       "organizer": "Archers de Varangeville avec l'aide informatique du CD54",
@@ -633,7 +654,7 @@
       "to_id": "29803",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:34.808110+00:00",
+      "checked_at_utc": "2026-10-26T12:22:27.276416+00:00",
       "year": "2026",
       "name": "Carcassonne - concours sélectif 2 x 18 m",
       "organizer": "Carcassonne",
@@ -651,7 +672,7 @@
       "to_id": "30494",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:35.734698+00:00",
+      "checked_at_utc": "2026-10-26T12:22:28.353362+00:00",
       "year": "2026",
       "name": "Tir à 18m - Salle 2026 FLECHE PICTAVE",
       "organizer": "LA FLECHE PICTAVE",
@@ -669,7 +690,7 @@
       "to_id": "30560",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:36.610546+00:00",
+      "checked_at_utc": "2026-10-26T12:22:29.371050+00:00",
       "year": "2026",
       "name": "LES ARCHERS DU SAM",
       "organizer": "LES ARCHERS DU SAM",
@@ -687,7 +708,7 @@
       "to_id": "30841",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:37.521766+00:00",
+      "checked_at_utc": "2026-10-26T12:22:30.519734+00:00",
       "year": "2026",
       "name": "Concours 2x18m GUYANCOURT 2026 + Finales",
       "organizer": "Compagnie des Archers de Guyancourt",
@@ -702,10 +723,1791 @@
       "stale": true
     },
     {
+      "to_id": "30879",
+      "country": "FRA",
+      "entries_status": "published",
+      "checked_at_utc": "2026-10-26T12:22:31.564253+00:00",
+      "year": "2026",
+      "name": "Salle d'ESBLY 2026",
+      "organizer": "COMPAGNIE D'ARC D'ESBLY",
+      "date_text": "19-20 Dec",
+      "end_date": "2026-12-20",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30879",
+      "ena_url": "https://www.ianseo.net/TourData/2026/30879/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2026/30879/IC.php",
+      "entries_count": 196,
+      "entries": [
+        {
+          "name": "ADAMIDES Selene",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "AKSOY Ilyas",
+          "club": "0877054 - LE MEE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "ALLAM Michel",
+          "club": "0894264 - VINCENNES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "ANDING-MALANDIN Laetitia",
+          "club": "0875004 - PARIS ARC 18 LA CHAPELLE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "ARTIGOLE Sebastien",
+          "club": "0877082 - OZOIR LA FERRIERE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "BARONE Michael",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "BARRES Yann",
+          "club": "0893221 - TREMBLAY EN FRANCE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "BARRET Jean-Marc",
+          "club": "0893237 - COUBRON VAUJOURS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "BARRET Mathieu",
+          "club": "0893237 - COUBRON VAUJOURS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "BARTOLINI Florence",
+          "club": "0893233 - MONTFERMEIL",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "BENSOUSSAN Anne-Laure",
+          "club": "0877082 - OZOIR LA FERRIERE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "BERNARD Catherine",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "BIDAUD Yves",
+          "club": "0877032 - MEAUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "BIERRY Melanie",
+          "club": "0877078 - LAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "BLADOU Martine",
+          "club": "0877029 - PONTAULT COMBAULT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "BONALD Antoine",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "BOUCHAND Caroline",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "BOULLIOU Eloine",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "BRIDARD Yann",
+          "club": "0894264 - VINCENNES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "BROSSE Nicolas",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "BROSSE Nicolas",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "BRUNI Oriane",
+          "club": "0893221 - TREMBLAY EN FRANCE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "CHABRAISON Eric",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "CHAFFAUX Thibaud",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "CHAPELLE Gilbert",
+          "club": "0893233 - MONTFERMEIL",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "CHEBAUX Stephane",
+          "club": "0877091 - SAINT PATHUS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "CHIATANTE Giovanni",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "CICHOSTEPSKI Robert",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "CORCY Jonathan",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "CORCY Jonathan",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "CORNU Jean-Michel",
+          "club": "0760224 - NANTEUIL LE HAUDOUIN",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "CORREIA Mario",
+          "club": "0894247 - CHENNEVIERES SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "COUPE Quentin",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "COUPE Quentin",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "COUPE Quentin",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "COUTZAC Sophie",
+          "club": "0893227 - GAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "DALICIER Olivier",
+          "club": "0877029 - PONTAULT COMBAULT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "DASS Achille",
+          "club": "0893237 - COUBRON VAUJOURS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "DASS Ivan Alfred",
+          "club": "0893237 - COUBRON VAUJOURS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "DE FREITAS MENDES Nuno Filipe",
+          "club": "0893219 - CLICHY SOUS BOIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "DELAGRANDA Dominique",
+          "club": "0877078 - LAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "DELOMENIE Helena",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "DEMIRKOL Erva",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "DEO VAN Lang",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "DERIOT Christian",
+          "club": "0877057 - MOUROUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "DERIOT Eric",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "DERRUETTE Mathis",
+          "club": "0877078 - LAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "DESRAVINES Tyssia",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "DESRUTIN Clemence",
+          "club": "0894264 - VINCENNES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "DHENNIN Thibault",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "DIEU Pascal",
+          "club": "0877083 - VERNOU LA CELLE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "DJORDJEVIC Raphael",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "DJORDJEVIC Raphael",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "DOGHRI Ibtissem",
+          "club": "0877032 - MEAUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "DUPUIS Juan",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "ELKOUCHE Myriam",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "EVRAERT Sandrine",
+          "club": "0877039 - CREGY LES MEAUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "FILIPPONE Christelle",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "GACOUGNOLLE Erwan",
+          "club": "0877054 - LE MEE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GACOUGNOLLE Lou-Anne",
+          "club": "0877054 - LE MEE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GADBIN Laurent",
+          "club": "0877045 - LE CHATELET EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GALLAIS-DUTRIEZ Alban",
+          "club": "0894254 - FONTENAY S/BOIS 1ER CIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GALLAIS-DUTRIEZ Alexandra",
+          "club": "0894254 - FONTENAY S/BOIS 1ER CIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GALY Melyssandre",
+          "club": "0702080 - ESSOMES SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "GARENNE Martin",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "GARNIER Emilie",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "GARRIGUES Marie",
+          "club": "0877031 - BOIS LE ROI",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "GARRIGUES Marie",
+          "club": "0877031 - BOIS LE ROI",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GAUTIER Alexis",
+          "club": "0895293 - SARCELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "GAUTIER Alexis",
+          "club": "0895293 - SARCELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GAUTIER Alexis",
+          "club": "0895293 - SARCELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "GAUTIER Ingrid",
+          "club": "0877076 - VERT ST DENIS - CESSON",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GAUTIER Ingrid",
+          "club": "0877076 - VERT ST DENIS - CESSON",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "GAUTIER Maurice",
+          "club": "0877076 - VERT ST DENIS - CESSON",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GELIN Michel",
+          "club": "0877028 - TORCY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "GELIN Nina",
+          "club": "0877028 - TORCY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "GHILBERT-SIMON Auxane",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "GOMES Carlos",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "GREINSCHGL Julien",
+          "club": "0877032 - MEAUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "GRISOLET Angelique",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "GUIBE Gwenmael",
+          "club": "0877045 - LE CHATELET EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "HABRAN Franck",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "HACHEMI Rhamid",
+          "club": "0878097 - GARGENVILLE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "HEMONET Dorian",
+          "club": "0877054 - LE MEE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "HERANVAL Sabine",
+          "club": "0877043 - CHAUMES EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "HERRERA Gilles",
+          "club": "0894247 - CHENNEVIERES SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "HOULLEBEY Kevin",
+          "club": "0893221 - TREMBLAY EN FRANCE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "HOUNZA Alixe",
+          "club": "0877043 - CHAUMES EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "HOUNZA Audrey",
+          "club": "0877043 - CHAUMES EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "HOUSSIN Sophie",
+          "club": "0894243 - ST GEORGES LE PERREUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "HUGUENIN Alexia",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "HUMANN Emilien",
+          "club": "0894264 - VINCENNES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "HUYNH TRINH Thang",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "HUYNH TRINH Thang",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "ISAMBARD Didier",
+          "club": "0877078 - LAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "JEANNEY Martial",
+          "club": "0877040 - SAINT GERMAIN SUR MORIN",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "JENNEPIN Pierre-Alain",
+          "club": "0877083 - VERNOU LA CELLE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "JURADO Eric",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "JURADO Eric",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "JURADO Nathalie",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "JURADO Nathalie",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "KIS Christelle",
+          "club": "0877028 - TORCY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LACOURCELLE Ingrid",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "LANOIS Julien",
+          "club": "0877073 - COMPAGNIE D'ARC LE PIN",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "LATAPY Amelie",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "LE LEZ Jean-Marc",
+          "club": "0877028 - TORCY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LECLAIRE Thierry",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "LEE Carine",
+          "club": "0877078 - LAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "LEGER Sandra",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "LEGRAIN Annabel",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "LEGRAIN Annabel",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "LEGRAIN Annabel",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "LEMAIRE Corinne",
+          "club": "0893233 - MONTFERMEIL",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LEMAIRE Guillaume",
+          "club": "0894261 - NOGENT S/MARNE 1ER",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LEMAIRE Penelope",
+          "club": "0894261 - NOGENT S/MARNE 1ER",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LENOIR Jacques",
+          "club": "0877043 - CHAUMES EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LENOIR Jerome",
+          "club": "0877043 - CHAUMES EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LERCHE Antonine",
+          "club": "0877082 - OZOIR LA FERRIERE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "LEROY Arnaud",
+          "club": "0877078 - LAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "LEROY Stephane",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "LEROY Stephane",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "LETERRIER Laurent",
+          "club": "0894247 - CHENNEVIERES SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "LEVI Ophelia",
+          "club": "0877045 - LE CHATELET EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "LIBERT Eric",
+          "club": "0877040 - SAINT GERMAIN SUR MORIN",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LIBERT Karin",
+          "club": "0702080 - ESSOMES SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LOGANATHAN Hamsana",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LOISEAU Sandrine",
+          "club": "0893219 - CLICHY SOUS BOIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "LOMBARD Maxime",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "LOMBARD Maxime",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "LONGATTE Frederic",
+          "club": "0877083 - VERNOU LA CELLE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "MAHOUDAUX Gerald",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "MARIAGE Valentin",
+          "club": "0877031 - BOIS LE ROI",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "MARIAGE Valentin",
+          "club": "0877031 - BOIS LE ROI",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "MARTINS Jennifer",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "MARTINS Jennifer",
+          "club": "0877059 - BUSSY ST GEORGES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "MARTZ Patricia",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "MEILLAN Margot",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "MEILLAN Pascal",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "METAJ-LEVINE Deshira",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "MEURA Sebastien",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "MONTENOISE Guy",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "MORVAN Denis",
+          "club": "0877043 - CHAUMES EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "MOUTON Michel",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "NANOTTI Emmanuel",
+          "club": "0877054 - LE MEE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "NICOLAS Quentin",
+          "club": "0893237 - COUBRON VAUJOURS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "NIEAUX Christophe",
+          "club": "0893237 - COUBRON VAUJOURS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "NOEL Mathieu",
+          "club": "0877043 - CHAUMES EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "PALLINI Cedric",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "PALLINI Milena",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "PASQUET Valerie",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "PEDRO Antony",
+          "club": "0877082 - OZOIR LA FERRIERE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "PEDROSA Christian",
+          "club": "0877039 - CREGY LES MEAUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "PELC Franzy",
+          "club": "0877041 - CHELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "PERAUD Marie",
+          "club": "0893237 - COUBRON VAUJOURS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "PETIT Marine",
+          "club": "0877043 - CHAUMES EN BRIE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "PHILIBERT David",
+          "club": "0877028 - TORCY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "PIAVOUX Marc",
+          "club": "0877044 - CHAMPS SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "PINTART Gregory",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "POCHELU Gilles",
+          "club": "0877031 - BOIS LE ROI",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "POP Cezar Stefan",
+          "club": "0893221 - TREMBLAY EN FRANCE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "POTTIER-LANOIS Delphine",
+          "club": "0877073 - COMPAGNIE D'ARC LE PIN",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "PREVOST Damien",
+          "club": "0877044 - CHAMPS SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "PRUDHOMME Arnaud",
+          "club": "0877082 - OZOIR LA FERRIERE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "RAVAUDET Jeremy",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "REGEASSE Alain",
+          "club": "0877086 - QUINCY VOISINS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "REIGOTA Manon",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "RENAULT David",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "RENAULT Laetitia",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "RICHARD Julie",
+          "club": "0893227 - GAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "RIVARD Daniel",
+          "club": "0877058 - SOUILLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "ROUSSEL Quentin",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "ROUTIER Pascal",
+          "club": "0702080 - ESSOMES SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "SELHAMI Sakina",
+          "club": "0893221 - TREMBLAY EN FRANCE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "SHEN Delphine",
+          "club": "0877082 - OZOIR LA FERRIERE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "SIMON Alexis",
+          "club": "0893219 - CLICHY SOUS BOIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "SIMON Marc",
+          "club": "0891175 - DRAVEIL SENART",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "SIMONET Lea",
+          "club": "0893227 - GAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "SOREL Benjamin",
+          "club": "0894257 - VILLIERS SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "SOUSA DE ARAUJO Sandrine",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "SUN Zoe",
+          "club": "0893227 - GAGNY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "TAOURIT Yassine",
+          "club": "0893221 - TREMBLAY EN FRANCE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "THEVELIN Marc",
+          "club": "0894248 - VITRY SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "THOMASSIER Estelle",
+          "club": "0894247 - CHENNEVIERES SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "THONGSAVATH Sarah",
+          "club": "0877044 - CHAMPS SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "TOUPART Agathe",
+          "club": "0702082 - CHARLY SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "TOUPART Veronique",
+          "club": "0702082 - CHARLY SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "TOUPART Xavier",
+          "club": "0702082 - CHARLY SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "TRINH-VAN Jean - Louis",
+          "club": "0877073 - COMPAGNIE D'ARC LE PIN",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "ULDRY Dorothee",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "VABRE Didier",
+          "club": "0877029 - PONTAULT COMBAULT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "VAN HOUTTE Christophe",
+          "club": "0877039 - CREGY LES MEAUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "VERDREL Sebastien",
+          "club": "0893221 - TREMBLAY EN FRANCE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "VERNIERE Lionel",
+          "club": "0893233 - MONTFERMEIL",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "VERPLANCKE Cedric",
+          "club": "0702082 - CHARLY SUR MARNE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "VINCHON BIENFAIT Julia",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "WEBER Katniss",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        }
+      ]
+    },
+    {
       "to_id": "29804",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-10-26T00:34:39.073222+00:00",
+      "checked_at_utc": "2026-10-26T12:22:33.583732+00:00",
       "year": "2027",
       "name": "Carcassonne - concours sélectif 2 x 18 m",
       "organizer": "Carcassonne",
@@ -723,7 +2525,7 @@
       "to_id": "30610",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-10-26T00:34:39.976919+00:00",
+      "checked_at_utc": "2026-10-26T12:22:34.621370+00:00",
       "year": "2027",
       "name": "VEGAS LE SAUNIER 2027",
       "organizer": "1ERE CIE DES ARCHERS DE MONTCIEL",
