@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-12T23:58:57.803019+00:00",
+  "generated_at_utc": "2026-11-13T06:22:37.316213+00:00",
   "today": "2026-11-13",
   "country": "FRA",
   "keywords": [
@@ -8,7 +8,7 @@
   ],
   "found": false,
   "message": "Aucune competition future avec inscrits du club recherche trouvee pour le moment.",
-  "checked_candidates": 46,
+  "checked_candidates": 47,
   "errors": [],
   "coverage_status": "published_entries_only"
 }
