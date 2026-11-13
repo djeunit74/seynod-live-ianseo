@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-11-13T06:23:34.819203+00:00",
+  "generated_at_utc": "2026-11-13T14:49:29.010324+00:00",
   "country": "FRA",
   "years": [
     2026,
     2027
   ],
-  "count": 47,
+  "count": 50,
   "errors": [
     {
       "to_id": "30504",
@@ -114,6 +114,10 @@
     {
       "to_id": "31145",
       "message": "HTTP Error 404: Not Found"
+    },
+    {
+      "to_id": "30503",
+      "message": "HTTP Error 404: Not Found"
     }
   ],
   "coverage_status": "partial",
@@ -123,7 +127,7 @@
       "to_id": "31195",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:22:38.934856+00:00",
+      "checked_at_utc": "2026-11-13T14:48:34.064875+00:00",
       "year": "2026",
       "name": "100% MASCULIN AUCH 2026",
       "organizer": "ARC AUSCITAIN",
@@ -139,7 +143,7 @@
       "to_id": "29899",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:22:40.131120+00:00",
+      "checked_at_utc": "2026-11-13T14:48:35.120415+00:00",
       "year": "2026",
       "name": "Concours des pistoles 2026",
       "organizer": "CBTA Brignoles",
@@ -155,7 +159,7 @@
       "to_id": "30350",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:22:41.595959+00:00",
+      "checked_at_utc": "2026-11-13T14:48:36.352645+00:00",
       "year": "2026",
       "name": "Castelsarrasin 2x18m 4 mises 14-15-nov-2026",
       "organizer": "Les Archers de Castelsarrasin",
@@ -171,7 +175,7 @@
       "to_id": "30488",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:22:42.947697+00:00",
+      "checked_at_utc": "2026-11-13T14:48:37.629945+00:00",
       "year": "2026",
       "name": "MIRAMAS CRAU",
       "organizer": "MIRAMAS CRAU",
@@ -187,7 +191,7 @@
       "to_id": "30504",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:44.338662+00:00",
+      "checked_at_utc": "2026-11-13T14:48:38.865685+00:00",
       "year": "2026",
       "name": "tir salle 2 x18 m Hagondange",
       "organizer": "les archers de l esh",
@@ -205,7 +209,7 @@
       "to_id": "30578",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:45.186398+00:00",
+      "checked_at_utc": "2026-11-13T14:48:39.802282+00:00",
       "year": "2026",
       "name": "CONCOURS TIR À 18M",
       "organizer": "LA COMPAGNIE DES ARCHERS DU LOUDUNOIS",
@@ -223,7 +227,7 @@
       "to_id": "30643",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:22:46.155384+00:00",
+      "checked_at_utc": "2026-11-13T14:48:40.779328+00:00",
       "year": "2026",
       "name": "18m Toulouse TAC nov 2026",
       "organizer": "1131081 Toulouse TAC",
@@ -239,7 +243,7 @@
       "to_id": "30737",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:47.267901+00:00",
+      "checked_at_utc": "2026-11-13T14:48:42.054552+00:00",
       "year": "2026",
       "name": "COMPETITION DE TIR A 18 METRES DE WERVICQ-SUD 2026",
       "organizer": "Association Sportive de Tir à l'Arc de WERVICQ-SUD",
@@ -257,7 +261,7 @@
       "to_id": "30882",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:22:48.385637+00:00",
+      "checked_at_utc": "2026-11-13T14:48:42.996783+00:00",
       "year": "2026",
       "name": "Concours 2x18 Exc. Chaponost",
       "organizer": "Excelsior CHAPONOST",
@@ -273,7 +277,7 @@
       "to_id": "30975",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:49.600590+00:00",
+      "checked_at_utc": "2026-11-13T14:48:44.134329+00:00",
       "year": "2026",
       "name": "Concours selectif Nancy 2026",
       "organizer": "1ere Compagnie de tir a l 'arc de Nancy avec l aide du CD54 pour informatique",
@@ -284,13 +288,14 @@
       "ic_url": "https://www.ianseo.net/TourData/2026/30975/IC.php",
       "entries_count": 0,
       "entries": [],
-      "error": "HTTP Error 404: Not Found"
+      "error": "HTTP Error 404: Not Found",
+      "stale": true
     },
     {
       "to_id": "31051",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:22:50.708201+00:00",
+      "checked_at_utc": "2026-11-13T14:48:45.058019+00:00",
       "year": "2026",
       "name": "Concours sélectif - Tir à 18m 2026",
       "organizer": "Compagnie d'Arc d'Abbeville",
@@ -306,7 +311,7 @@
       "to_id": "29687",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:51.941526+00:00",
+      "checked_at_utc": "2026-11-13T14:48:46.233661+00:00",
       "year": "2026",
       "name": "Rennes - Tir à 18 m",
       "organizer": "Rennes Cie",
@@ -324,7 +329,7 @@
       "to_id": "29802",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:53.029838+00:00",
+      "checked_at_utc": "2026-11-13T14:48:47.183504+00:00",
       "year": "2026",
       "name": "Carcassonne - concours sélectif 2 x 18 m",
       "organizer": "Carcassonne",
@@ -342,7 +347,7 @@
       "to_id": "31026",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:54.059343+00:00",
+      "checked_at_utc": "2026-11-13T14:48:48.176979+00:00",
       "year": "2026",
       "name": "rencontre débutant",
       "organizer": "les sagittaires de seynod",
@@ -360,7 +365,7 @@
       "to_id": "30328",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:22:55.139627+00:00",
+      "checked_at_utc": "2026-11-13T14:48:49.106536+00:00",
       "year": "2026",
       "name": "Concours tir à 18m Tremblay 2026",
       "organizer": "Les Archers du Vert Galant",
@@ -376,7 +381,7 @@
       "to_id": "30827",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:56.500858+00:00",
+      "checked_at_utc": "2026-11-13T14:48:50.475515+00:00",
       "year": "2026",
       "name": "TIR 2X 18 + CRJ",
       "organizer": "LES SAGITTAIRES DE SEYNOD",
@@ -394,7 +399,7 @@
       "to_id": "30891",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:57.712156+00:00",
+      "checked_at_utc": "2026-11-13T14:48:51.482550+00:00",
       "year": "2026",
       "name": "9e Challenge Christian Dubreuil d'Yzeure - Compétition 2x18m sélective pour les championnats de France",
       "organizer": "Compagnie d'Arc Yzeure",
@@ -412,7 +417,7 @@
       "to_id": "30914",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:58.859369+00:00",
+      "checked_at_utc": "2026-11-13T14:48:52.518951+00:00",
       "year": "2026",
       "name": "SALLE 2X18M + PARA - 21/22 NOVEMBRE 2026",
       "organizer": "1ERE COMPAGNIE D'ARC DE DIJON",
@@ -430,7 +435,7 @@
       "to_id": "29688",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:22:59.922400+00:00",
+      "checked_at_utc": "2026-11-13T14:48:53.520117+00:00",
       "year": "2026",
       "name": "Rennes - Tir à 18 m",
       "organizer": "Rennes Cie",
@@ -448,7 +453,7 @@
       "to_id": "30214",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:00.940730+00:00",
+      "checked_at_utc": "2026-11-13T14:48:54.921865+00:00",
       "year": "2026",
       "name": "Concours Sélectif Tir à 18m Meursault 2026",
       "organizer": "MEURSAULT ARCHERS CLUB",
@@ -464,7 +469,7 @@
       "to_id": "31126",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:02.192763+00:00",
+      "checked_at_utc": "2026-11-13T14:48:56.030099+00:00",
       "year": "2026",
       "name": "Championnat départemental jeunes - Le Mans",
       "organizer": "SOM Tir à l'Arc",
@@ -480,7 +485,7 @@
       "to_id": "31127",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:03.290803+00:00",
+      "checked_at_utc": "2026-11-13T14:48:57.006026+00:00",
       "year": "2026",
       "name": "Championnat départemental para - Le Mans",
       "organizer": "SOM Tir à l'Arc",
@@ -496,7 +501,7 @@
       "to_id": "30215",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:04.434772+00:00",
+      "checked_at_utc": "2026-11-13T14:48:58.072745+00:00",
       "year": "2026",
       "name": "Concours Qualificatif + Finales Tir à 18m Meursault 2026",
       "organizer": "MEURSAULT ARCHERS CLUB",
@@ -512,7 +517,7 @@
       "to_id": "30468",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:05.847258+00:00",
+      "checked_at_utc": "2026-11-13T14:48:59.269287+00:00",
       "year": "2026",
       "name": "Concours selectif au championnat de France a Luneville",
       "organizer": "Archers de Varangeville avec l'aide informatique du CD54",
@@ -530,7 +535,7 @@
       "to_id": "30932",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:06.908890+00:00",
+      "checked_at_utc": "2026-11-13T14:49:00.275917+00:00",
       "year": "2026",
       "name": "Rencontre Tremplin + passage de Flèches + 1ere étape Challenge par équipe Saintongeais Tir sélectifs Championnat de France 2027 Aulnay",
       "organizer": "Foyer Rural Aulnay | Les archers du Donjon",
@@ -548,7 +553,7 @@
       "to_id": "31105",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:07.931665+00:00",
+      "checked_at_utc": "2026-11-13T14:49:01.312892+00:00",
       "year": "2026",
       "name": "Championnat de l'Ain jeunes et concours annuel",
       "organizer": "Union Sportive Tir à l'Arc Oyonnax",
@@ -564,7 +569,7 @@
       "to_id": "31128",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:09.322643+00:00",
+      "checked_at_utc": "2026-11-13T14:49:02.568104+00:00",
       "year": "2026",
       "name": "Tir à 18m - Le Mans",
       "organizer": "SOM Tir à l'Arc",
@@ -580,7 +585,7 @@
       "to_id": "31152",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:10.455770+00:00",
+      "checked_at_utc": "2026-11-13T14:49:03.568910+00:00",
       "year": "2026",
       "name": "Concours de Tir à 18 m Novembre 2026 - GUILERS",
       "organizer": "Les Archers de Kéroual",
@@ -596,7 +601,7 @@
       "to_id": "31165",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:11.818673+00:00",
+      "checked_at_utc": "2026-11-13T14:49:04.759643+00:00",
       "year": "2026",
       "name": "Concours salle 2x18m + CRJ JAI 28 et 29 novembre 2026",
       "organizer": "LA JEANNE D'ARC D'IZIEUX",
@@ -614,7 +619,7 @@
       "to_id": "31053",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:12.882704+00:00",
+      "checked_at_utc": "2026-11-13T14:49:05.700539+00:00",
       "year": "2026",
       "name": "Rennes - Tournoi poussin (U11 - U13*)",
       "organizer": "Rennes Cie",
@@ -632,7 +637,7 @@
       "to_id": "29803",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:14.000626+00:00",
+      "checked_at_utc": "2026-11-13T14:49:06.793146+00:00",
       "year": "2026",
       "name": "Carcassonne - concours sélectif 2 x 18 m",
       "organizer": "Carcassonne",
@@ -650,7 +655,7 @@
       "to_id": "31054",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:15.158749+00:00",
+      "checked_at_utc": "2026-11-13T14:49:07.819445+00:00",
       "year": "2026",
       "name": "Rennes - Concours Débutants",
       "organizer": "Rennes Cie",
@@ -668,7 +673,7 @@
       "to_id": "30768",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:16.270247+00:00",
+      "checked_at_utc": "2026-11-13T14:49:08.797300+00:00",
       "year": "2026",
       "name": "Les Archers du Donjon Aulnay de Saintonge 2027 Passage de Flèche + Challenge Saintongeais + Tir à 18m",
       "organizer": "Les Archers du Donjon 17 | Foyer Rural Aulnay de Saintonge",
@@ -686,7 +691,7 @@
       "to_id": "30781",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:17.390017+00:00",
+      "checked_at_utc": "2026-11-13T14:49:09.790700+00:00",
       "year": "2026",
       "name": "Concours Salle - OHS Cherbourg en Cotentin - 2026",
       "organizer": "OHS Cherbourg en Cotentin",
@@ -702,7 +707,7 @@
       "to_id": "30935",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:18.491206+00:00",
+      "checked_at_utc": "2026-11-13T14:49:10.779396+00:00",
       "year": "2026",
       "name": "SALLE 2X18M + PARA - 05/06 DECEMBRE 2026",
       "organizer": "1ERE COMPAGNIE D'ARC DE DIJON",
@@ -720,7 +725,7 @@
       "to_id": "31135",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:19.657638+00:00",
+      "checked_at_utc": "2026-11-13T14:49:11.806762+00:00",
       "year": "2026",
       "name": "CONCOURS SALLE QUINCY VOISINS",
       "organizer": "COMPAGNIE D'ARC DE QUINCY VOISINS",
@@ -738,7 +743,7 @@
       "to_id": "31052",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:20.760300+00:00",
+      "checked_at_utc": "2026-11-13T14:49:12.868657+00:00",
       "year": "2026",
       "name": "Rennes - Tir à 18 m",
       "organizer": "Rennes Cie",
@@ -756,7 +761,7 @@
       "to_id": "31094",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:21.819890+00:00",
+      "checked_at_utc": "2026-11-13T14:49:13.789907+00:00",
       "year": "2026",
       "name": "Rennes - Tir à 18 m",
       "organizer": "Rennes Cie",
@@ -774,7 +779,7 @@
       "to_id": "30494",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:22.892470+00:00",
+      "checked_at_utc": "2026-11-13T14:49:14.791522+00:00",
       "year": "2026",
       "name": "Tir à 18m - Salle 2026 FLECHE PICTAVE",
       "organizer": "LA FLECHE PICTAVE",
@@ -792,7 +797,7 @@
       "to_id": "30560",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:24.004778+00:00",
+      "checked_at_utc": "2026-11-13T14:49:15.772903+00:00",
       "year": "2026",
       "name": "LES ARCHERS DU SAM",
       "organizer": "LES ARCHERS DU SAM",
@@ -808,7 +813,7 @@
       "to_id": "30841",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:25.374286+00:00",
+      "checked_at_utc": "2026-11-13T14:49:17.084372+00:00",
       "year": "2026",
       "name": "Concours 2x18m GUYANCOURT 2026 + Finales",
       "organizer": "Compagnie des Archers de Guyancourt",
@@ -826,7 +831,7 @@
       "to_id": "30879",
       "country": "FRA",
       "entries_status": "published",
-      "checked_at_utc": "2026-11-13T06:23:26.447027+00:00",
+      "checked_at_utc": "2026-11-13T14:49:18.048966+00:00",
       "year": "2026",
       "name": "Salle d'ESBLY 2026",
       "organizer": "COMPAGNIE D'ARC D'ESBLY",
@@ -835,7 +840,7 @@
       "details_url": "https://www.ianseo.net/Details.php?toId=30879",
       "ena_url": "https://www.ianseo.net/TourData/2026/30879/ENA.php",
       "ic_url": "https://www.ianseo.net/TourData/2026/30879/IC.php",
-      "entries_count": 230,
+      "entries_count": 255,
       "entries": [
         {
           "name": "ADAMIDES Selene",
@@ -1032,7 +1037,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 15H30",
+          "depart": "DIMANCHE 12H",
           "time": ""
         },
         {
@@ -1041,7 +1046,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 12H",
+          "depart": "DIMANCHE 15H30",
           "time": ""
         },
         {
@@ -1054,12 +1059,48 @@
           "time": ""
         },
         {
-          "name": "CASSESE Enzo",
-          "club": "0877063 - NANGIS",
+          "name": "CALVET Julien",
+          "club": "0877072 - BRIE COMTE ROBERT",
           "category": "",
           "session": "",
           "target": "",
           "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "CAMPION Clara",
+          "club": "0895293 - SARCELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "CAMPION Clara",
+          "club": "0895293 - SARCELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "CAMPION Paul",
+          "club": "0895293 - SARCELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "CAMPION Paul",
+          "club": "0895293 - SARCELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
           "time": ""
         },
         {
@@ -1069,6 +1110,15 @@
           "session": "",
           "target": "",
           "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "CASSESE Enzo",
+          "club": "0877063 - NANGIS",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
           "time": ""
         },
         {
@@ -1105,6 +1155,15 @@
           "session": "",
           "target": "",
           "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "CHARNIER Philippe",
+          "club": "0877031 - BOIS LE ROI",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 8H30",
           "time": ""
         },
         {
@@ -1180,6 +1239,24 @@
           "time": ""
         },
         {
+          "name": "COSTA Antoine",
+          "club": "0877092 - FUBLAINES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
+          "name": "COSTA Gabriel",
+          "club": "0877092 - FUBLAINES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
           "name": "COUPE Quentin",
           "club": "0877063 - NANGIS",
           "category": "",
@@ -1194,7 +1271,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 15H30",
+          "depart": "DIMANCHE 8H30",
           "time": ""
         },
         {
@@ -1203,7 +1280,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 8H30",
+          "depart": "DIMANCHE 15H30",
           "time": ""
         },
         {
@@ -1284,7 +1361,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "SAMEDI 17H",
+          "depart": "SAMEDI 9H",
           "time": ""
         },
         {
@@ -1365,7 +1442,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "SAMEDI 9H",
+          "depart": "SAMEDI 17H",
           "time": ""
         },
         {
@@ -1374,7 +1451,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "SAMEDI 17H",
+          "depart": "SAMEDI 9H",
           "time": ""
         },
         {
@@ -1389,6 +1466,15 @@
         {
           "name": "DRIGNY Valerie",
           "club": "0894243 - ST GEORGES LE PERREUX",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "DUBOIS Abigaelle",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
           "category": "",
           "session": "",
           "target": "",
@@ -1441,12 +1527,30 @@
           "time": ""
         },
         {
+          "name": "FONTAINE Emie",
+          "club": "0877054 - LE MEE SUR SEINE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
           "name": "FOURMONT Gregory",
           "club": "0877040 - SAINT GERMAIN SUR MORIN",
           "category": "",
           "session": "",
           "target": "",
-          "depart": "Ses. 0",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "FRARE Christophe",
+          "club": "0877076 - VERT ST DENIS - CESSON",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
           "time": ""
         },
         {
@@ -1527,21 +1631,12 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 15H30",
+          "depart": "DIMANCHE 12H",
           "time": ""
         },
         {
           "name": "GARRIGUES Marie",
           "club": "0877031 - BOIS LE ROI",
-          "category": "",
-          "session": "",
-          "target": "",
-          "depart": "DIMANCHE 12H",
-          "time": ""
-        },
-        {
-          "name": "GAUTIER Alexis",
-          "club": "0895293 - SARCELLES",
           "category": "",
           "session": "",
           "target": "",
@@ -1564,6 +1659,15 @@
           "session": "",
           "target": "",
           "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "GAUTIER Alexis",
+          "club": "0895293 - SARCELLES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 15H30",
           "time": ""
         },
         {
@@ -1639,6 +1743,15 @@
           "time": ""
         },
         {
+          "name": "GODON Maxime",
+          "club": "0877062 - CLAYE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
+          "time": ""
+        },
+        {
           "name": "GOMES Carlos",
           "club": "0894257 - VILLIERS SUR MARNE",
           "category": "",
@@ -1693,6 +1806,24 @@
           "time": ""
         },
         {
+          "name": "HARDOUIN Cyrille",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "HARDOUIN Manon",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
           "name": "HEMONET Dorian",
           "club": "0877054 - LE MEE SUR SEINE",
           "category": "",
@@ -1717,6 +1848,15 @@
           "session": "",
           "target": "",
           "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "HORNEZ Stephane",
+          "club": "0877092 - FUBLAINES",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
           "time": ""
         },
         {
@@ -1770,7 +1910,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 12H",
+          "depart": "DIMANCHE 15H30",
           "time": ""
         },
         {
@@ -1779,7 +1919,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 15H30",
+          "depart": "DIMANCHE 12H",
           "time": ""
         },
         {
@@ -1810,6 +1950,24 @@
           "time": ""
         },
         {
+          "name": "JACQUIN Ethan",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
+          "name": "JACQUIN Loic",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
           "name": "JEANNEY Martial",
           "club": "0877040 - SAINT GERMAIN SUR MORIN",
           "category": "",
@@ -1833,7 +1991,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 8H30",
+          "depart": "DIMANCHE 12H",
           "time": ""
         },
         {
@@ -1842,7 +2000,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 12H",
+          "depart": "DIMANCHE 8H30",
           "time": ""
         },
         {
@@ -1870,6 +2028,15 @@
           "session": "",
           "target": "",
           "depart": "SAMEDI 13H",
+          "time": ""
+        },
+        {
+          "name": "LACOUR Tom",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
           "time": ""
         },
         {
@@ -1927,6 +2094,15 @@
           "time": ""
         },
         {
+          "name": "LATAPY Camille",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
           "name": "LE HERISSE Matthias",
           "club": "0894243 - ST GEORGES LE PERREUX",
           "category": "",
@@ -1950,7 +2126,7 @@
           "category": "",
           "session": "",
           "target": "",
-          "depart": "SAMEDI 17H",
+          "depart": "SAMEDI 9H",
           "time": ""
         },
         {
@@ -1960,6 +2136,15 @@
           "session": "",
           "target": "",
           "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
+          "name": "LEFEVRE Christophe",
+          "club": "0877062 - CLAYE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 17H",
           "time": ""
         },
         {
@@ -2080,12 +2265,12 @@
           "time": ""
         },
         {
-          "name": "LEROY Stephane",
-          "club": "0877072 - BRIE COMTE ROBERT",
+          "name": "LEROY Guillaume",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
           "category": "",
           "session": "",
           "target": "",
-          "depart": "DIMANCHE 12H",
+          "depart": "SAMEDI 9H",
           "time": ""
         },
         {
@@ -2095,6 +2280,15 @@
           "session": "",
           "target": "",
           "depart": "DIMANCHE 15H30",
+          "time": ""
+        },
+        {
+          "name": "LEROY Stephane",
+          "club": "0877072 - BRIE COMTE ROBERT",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
           "time": ""
         },
         {
@@ -2257,6 +2451,15 @@
           "session": "",
           "target": "",
           "depart": "DIMANCHE 8H30",
+          "time": ""
+        },
+        {
+          "name": "MEILLAN Malo",
+          "club": "0877042 - ESBLY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
           "time": ""
         },
         {
@@ -2575,6 +2778,15 @@
           "time": ""
         },
         {
+          "name": "RENAULD Patricia",
+          "club": "0877028 - TORCY",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
           "name": "RENAULT David",
           "club": "0877072 - BRIE COMTE ROBERT",
           "category": "",
@@ -2755,6 +2967,15 @@
           "time": ""
         },
         {
+          "name": "THEBAUD Jean Claude",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "DIMANCHE 12H",
+          "time": ""
+        },
+        {
           "name": "THEVELIN Marc",
           "club": "0894248 - VITRY SUR SEINE",
           "category": "",
@@ -2890,6 +3111,15 @@
           "time": ""
         },
         {
+          "name": "VILLOING Maxim",
+          "club": "0877080 - CONDE SAINTE LIBIAIRE",
+          "category": "",
+          "session": "",
+          "target": "",
+          "depart": "SAMEDI 9H",
+          "time": ""
+        },
+        {
           "name": "VINCHON BIENFAIT Julia",
           "club": "0877042 - ESBLY",
           "category": "",
@@ -2913,7 +3143,7 @@
       "to_id": "31110",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:27.899001+00:00",
+      "checked_at_utc": "2026-11-13T14:49:19.290958+00:00",
       "year": "2026",
       "name": "Concours de Noël de Chambray les Tours - 202612- sélectif",
       "organizer": "US Chambray Les Tours - Tir à l'Arc",
@@ -2931,7 +3161,7 @@
       "to_id": "29804",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:29.913772+00:00",
+      "checked_at_utc": "2026-11-13T14:49:21.049665+00:00",
       "year": "2027",
       "name": "Carcassonne - concours sélectif 2 x 18 m",
       "organizer": "Carcassonne",
@@ -2946,10 +3176,26 @@
       "stale": true
     },
     {
+      "to_id": "31237",
+      "country": "FRA",
+      "entries_status": "not_published",
+      "checked_at_utc": "2026-11-13T14:49:21.974202+00:00",
+      "year": "2027",
+      "name": "COMPETTTION SALLE 2x18m LES ARCHERS DE PEROLS",
+      "organizer": "1134135 - Les Archers de Pérols",
+      "date_text": "10 Jan",
+      "end_date": "2027-01-10",
+      "details_url": "https://www.ianseo.net/Details.php?toId=31237",
+      "ena_url": "https://www.ianseo.net/TourData/2027/31237/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/31237/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "31020",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:31.040528+00:00",
+      "checked_at_utc": "2026-11-13T14:49:23.515196+00:00",
       "year": "2027",
       "name": "Tir en salle 2027 - Villers-Bretonneux",
       "organizer": "VILLERS-BRETONNEUX",
@@ -2965,7 +3211,7 @@
       "to_id": "31145",
       "country": "FRA",
       "entries_status": "error",
-      "checked_at_utc": "2026-11-13T06:23:32.276081+00:00",
+      "checked_at_utc": "2026-11-13T14:49:24.621696+00:00",
       "year": "2027",
       "name": "Concours salle 2x18m - Arc En Ciel Saint Priest",
       "organizer": "Arc En Ciel Saint Priest",
@@ -2980,10 +3226,26 @@
       "stale": true
     },
     {
+      "to_id": "31238",
+      "country": "FRA",
+      "entries_status": "not_published",
+      "checked_at_utc": "2026-11-13T14:49:25.675436+00:00",
+      "year": "2027",
+      "name": "COMPETTTION SALLE 2x18m LES ARCHERS DE PEROLS",
+      "organizer": "1134135 - Les Archers de Pérols",
+      "date_text": "31 Jan",
+      "end_date": "2027-01-31",
+      "details_url": "https://www.ianseo.net/Details.php?toId=31238",
+      "ena_url": "https://www.ianseo.net/TourData/2027/31238/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/31238/IC.php",
+      "entries_count": 0,
+      "entries": []
+    },
+    {
       "to_id": "30610",
       "country": "FRA",
       "entries_status": "not_published",
-      "checked_at_utc": "2026-11-13T06:23:33.401864+00:00",
+      "checked_at_utc": "2026-11-13T14:49:26.785038+00:00",
       "year": "2027",
       "name": "VEGAS LE SAUNIER 2027",
       "organizer": "1ERE CIE DES ARCHERS DE MONTCIEL",
@@ -2994,6 +3256,23 @@
       "ic_url": "https://www.ianseo.net/TourData/2027/30610/IC.php",
       "entries_count": 0,
       "entries": []
+    },
+    {
+      "to_id": "30503",
+      "country": "FRA",
+      "entries_status": "error",
+      "checked_at_utc": "2026-11-13T14:49:28.004739+00:00",
+      "year": "2027",
+      "name": "Championnat de France Jeune Tir à 18m 2027",
+      "organizer": "Comité Départemental du Finistère / FFTA",
+      "date_text": "26-28 Feb",
+      "end_date": "2027-02-28",
+      "details_url": "https://www.ianseo.net/Details.php?toId=30503",
+      "ena_url": "https://www.ianseo.net/TourData/2027/30503/ENA.php",
+      "ic_url": "https://www.ianseo.net/TourData/2027/30503/IC.php",
+      "entries_count": 0,
+      "entries": [],
+      "error": "HTTP Error 404: Not Found"
     }
   ]
 }
